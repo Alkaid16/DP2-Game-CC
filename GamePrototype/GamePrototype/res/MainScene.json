@@ -1,0 +1,207 @@
+{
+  "ID": "a2ee0952-26b5-49ae-8bf9-4f1d6279b798",
+  "Version": "2.3.2.3",
+  "Name": "MainScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "mapa.tmx",
+              "Plist": ""
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 1.1844,
+              "Y": 2.4342
+            },
+            "Scale": {
+              "ScaleX": 1.5005,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0012,
+              "Y": 0.0038
+            },
+            "PreSize": {
+              "X": 0.6667,
+              "Y": 1.0
+            },
+            "LeftMargin": 1.1844,
+            "RightMargin": 318.8156,
+            "TopMargin": -2.4342,
+            "BottomMargin": 2.4342,
+            "Tag": 6,
+            "ActionTag": -1727214161,
+            "Size": {
+              "X": 640.0,
+              "Y": 640.0
+            },
+            "Name": "Map_1",
+            "ctype": "GameMapObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "block.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 357.5235,
+              "Y": 308.0269
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3724,
+              "Y": 0.4813
+            },
+            "PreSize": {
+              "X": 0.0667,
+              "Y": 0.1
+            },
+            "LeftMargin": 325.5235,
+            "RightMargin": 570.4765,
+            "TopMargin": 299.9731,
+            "BottomMargin": 276.0269,
+            "Tag": 10,
+            "ActionTag": -1581637909,
+            "Size": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "Name": "Sprite_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "block.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.645,
+              "ScaleY": 0.3698
+            },
+            "Position": {
+              "X": 628.8551,
+              "Y": 419.1643
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": -1.0566
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6551,
+              "Y": 0.6549
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 587.5739,
+            "RightMargin": 308.4261,
+            "TopMargin": 180.5016,
+            "BottomMargin": 395.4984,
+            "Tag": 11,
+            "ActionTag": -2002391910,
+            "Size": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "Name": "Sprite_3",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "block.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 183.2511,
+              "Y": 483.9706
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1909,
+              "Y": 0.7562
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 160.2511,
+            "RightMargin": 753.7489,
+            "TopMargin": 133.0294,
+            "BottomMargin": 460.9706,
+            "Tag": 12,
+            "ActionTag": 1541501121,
+            "Size": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "Name": "Sprite_4",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "block.png",
+        "mapa.tmx",
+        "res_map/tile1.jpg",
+        "res_map/tile2.jpg"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

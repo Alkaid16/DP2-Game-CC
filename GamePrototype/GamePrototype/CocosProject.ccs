@@ -1,0 +1,30 @@
+<Solution>
+  <PropertyGroup Name="CocosProject" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Image Name="HelloWorld.png" />
+        <Image Name="Bola.png" />
+        <Image Name="block.png" />
+        <TmxFile Name="mapa.tmx" />
+        <PlistInfo Name="boy_up.csi" Type="Plist" />
+        <PlistInfo Name="boy_down.csi" Type="Plist" />
+        <Folder Name="boy_up">
+          <Image Name="person1-up.png" />
+          <Image Name="person2-up.png" />
+          <Image Name="person3-up.png" />
+          <Image Name="person4-up.png" />
+        </Folder>
+        <Folder Name="boy_down">
+          <Image Name="person1-down.png" />
+          <Image Name="person2-down.png" />
+          <Image Name="person3-down.png" />
+          <Image Name="person4-down.png" />
+        </Folder>
+        <Project Name="boy_up_animation.csd" Type="Node" />
+        <Project Name="boy_down_animation.csd" Type="Node" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

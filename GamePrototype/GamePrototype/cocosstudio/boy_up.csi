@@ -1,0 +1,12 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Type="Plist" Name="boy_up" ID="eb99c2a3-77ec-4e3c-ab90-3c2825503ab3" Version="2.3.2.3" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="False" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="boy_up/person1-up.png" />
+      <FilePathData Path="boy_up/person2-up.png" />
+      <FilePathData Path="boy_up/person3-up.png" />
+      <FilePathData Path="boy_up/person4-up.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>
