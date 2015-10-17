@@ -1,4 +1,5 @@
 var intersectionHandler = {
+    //Test de GIT
     detectIntersection: function(tilePosX, tilePosY, direction, tileMatrix){
         var targetPoint = [];
         var factor = 1;
