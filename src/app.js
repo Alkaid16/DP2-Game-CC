@@ -1,5 +1,6 @@
-var intersectionHandler = {
-    //Test de GIT
+var gameplayLayer;
+
+var interHandler = {
     detectIntersection: function(tilePosX, tilePosY, direction, tileMatrix){
         var targetPoint = [];
         var factor = 1;
@@ -7,10 +8,10 @@ var intersectionHandler = {
 
         switch(direction) {
             case 0 :
-                targetPoint = [tilePosX, tilePosY +offset];
+                targetPoint = [tilePosX, tilePosY -offset];
                 break;
             case 1 :
-                targetPoint = [tilePosX, tilePosY -offset];
+                targetPoint = [tilePosX, tilePosY +offset];
                 break;
             case 2 :
                 targetPoint = [tilePosX-offset, tilePosY];
@@ -27,8 +28,10 @@ var intersectionHandler = {
 
         for(var i=tilePosY + factor*((horizontal+1)%2); i!=targetPoint[1] + factor; i+= factor){
             for(var j=tilePosX + factor*horizontal; j!=targetPoint[0] + factor; j+= factor){
-                if(tileMatrix[j][i] == 2 && this.intersectTile==null && !this.choiceAvailable) {
+                if(tileMatrix[j][i] == 2 && !this.sameTileDetected && !this.choiceAvailable) {
                     this.choiceAvailable = true;
+                    this.sameTileDetected = true;
+                    gameplayLayer.sprite.setColor(new cc.Color(255,100,100,0));
                     return;
                 }
                 if(tileMatrix[j][i] == 1){
@@ -37,6 +40,13 @@ var intersectionHandler = {
             }
         }
 
+    },
+
+    intersectionExited : function(){
+        this.intersectTile = null;
+        this.sameTileDetected = false;
+        this.choiceExecuted = false;
+        gameplayLayer.sprite.setColor(new cc.Color(255,255,255,0));
     },
 
     executeChoice: function(){
@@ -68,6 +78,7 @@ var intersectionHandler = {
         }
 
         this.storedDecision = -1;
+        this.choiceExecuted = true;
     },
 
     recordChoice: function(keyCode){
@@ -76,17 +87,21 @@ var intersectionHandler = {
     },
 
     choiceAvailable : false,
+    choiceExecuted : false,
     storedDecision: -1,
-    intersectTile: null
+    intersectTile: null,
+    sameTileDetected : false,
+    collisionDelay : 0
 };
 
 var childMoveAction = (function(){
     var tileWidth = 0;
-    var speed = 1;
-    var choiceExecuted = false;
+    var speed = 2;
     var collisionDelay = 0;
     var mainLayer = {};
     var pub = {};
+    pub.childPosX = 0;
+    pub.childPosY = 0;
 
     pub.keyState = new Array(1,0,0,0);
 
@@ -110,31 +125,19 @@ var childMoveAction = (function(){
         pub.keyState[3]=0;
     }
 
-    //Metodo principal
-    pub.update = function(){
-        var sprite = mainLayer.sprite;
-        var monstruo = mainLayer.monstruo;
-
-        var x = sprite.getPositionX();
-        var y = sprite.getPositionY();
-        var xAnt = x;
-        var yAnt = y;
-        var monstX = monstruo.getPositionX();
-        var monstY = monstruo.getPositionY();
-        var lastMov = -1;
+    var updatePosition = function(){
+        var x = pub.childPosX;
+        var y = pub.childPosY;
 
         y += speed*pub.keyState[0];
         y -= speed*pub.keyState[1];
         x -= speed*pub.keyState[2];
         x += speed*pub.keyState[3];
 
-        var rect1 = cc.rect(x-sprite.width/2,y - sprite.height/2,30,30);
+        return new Array(x,y);
+    }
 
-        var posX = 0;
-        var posY = 0;
-        posX = mainLayer.getMatrixPosX(xAnt, tileWidth);
-        posY = mainLayer.getMatrixPosY(yAnt, tileWidth);
-
+    var getCurrentDirection = function(){
         var direction = -1;
         for(var i=0; i<4 ; i++){
             if(pub.keyState[i]==1) {
@@ -142,15 +145,102 @@ var childMoveAction = (function(){
                 break;
             }
         }
+        return direction;
+    }
 
-        intersectionHandler.detectIntersection(posX,posY,direction, mainLayer.tileMatrix);
+    var getMovementVector = function(){
+        var dir = getCurrentDirection();
+        switch(dir) {
+            case 0:
+                return new Array(0,speed);
+            case 1:
+                return new Array(0,-speed);
+            case 2:
+                return new Array(-speed,0);
+            case 3:
+                return new Array(speed,0);
+        }
+    }
+
+    var isTrueCollision = function(sprRect, rect){
+        var vector = getMovementVector();
+        var dir = getCurrentDirection();
+        var newSprRect = cc.rect(sprRect);
+        newSprRect.x = newSprRect.x - vector[0];
+        newSprRect.y = newSprRect.y - vector[1];
+
+        switch(dir){
+            case 0:{
+                var dif = rect.y - newSprRect.y - newSprRect.height;
+                if(dif!=1){
+                    pub.childPosY += dif-1;
+                    mainLayer.sprite.setPositionY(pub.childPosY);
+                    return false;
+                }
+                break;
+            }
+            case 1:{
+                var dif = newSprRect.y - rect.y - rect.height;
+                if(dif!=1){
+                    pub.childPosY -= dif-1;
+                    mainLayer.sprite.setPositionY(pub.childPosY);
+                    return false;
+                }
+                break;
+            }
+            case 2:{
+                var dif = newSprRect.x - rect.x - rect.width;
+                if(dif!=1){
+                    pub.childPosX -= dif-1;
+                    mainLayer.sprite.setPositionX(pub.childPosX);
+                    return false;
+                }
+                break;
+            }
+            case 3:{
+                var dif = rect.x - newSprRect.x - newSprRect.width;
+                if(dif!=1){
+                    pub.childPosX += dif-1;
+                    mainLayer.sprite.setPositionX(pub.childPosX);
+                    return false;
+                }
+                break;
+            }
+        }
+        return true;
+    }
+
+    //Metodo principal
+    pub.update = function(){
+        var sprite = mainLayer.sprite;
+        var monstruo = mainLayer.monster;
+        pub.childPosX = sprite.getPositionX();
+        pub.childPosY = sprite.getPositionY();
+
+        var monstX = monstruo.getPositionX();
+        var monstY = monstruo.getPositionY();
+        var lastMov = -1;
+
+        var array =updatePosition();
+        var xNew = array[0];
+        var yNew = array[1];
+
+
+
+        var rect1 = cc.rect(xNew-sprite.width/2,yNew - sprite.height/2,30,30);
+
+        var posX = mainLayer.getMatrixPosX(pub.childPosX, tileWidth);
+        var posY = mainLayer.getMatrixPosY(pub.childPosY, tileWidth);
+
+        var direction = getCurrentDirection();
+
+        interHandler.detectIntersection(posX,posY,direction, mainLayer.tileMatrix);
 
         //Si la acción ya se ejecuto, se debe esperar a salir completamente del tile de interseccion
-        if(choiceExecuted==true){
-            var collBox = cc.rect(xAnt-sprite.width/2,yAnt - sprite.height/2,30,30);
-            if(!cc.rectIntersectsRect(collBox,intersectionHandler.intersectTile.rect)){
-                intersectionHandler.intersectTile = null;
-                choiceExecuted = false;
+        if(interHandler.choiceExecuted==true){
+            var collBox = cc.rect(pub.childPosX-sprite.width/2,pub.childPosY - sprite.height/2,30,30);
+            if(!cc.rectIntersectsRect(collBox,interHandler.intersectTile.rect)){
+                interHandler.intersectionExited();
             }
         }
 
@@ -163,30 +253,27 @@ var childMoveAction = (function(){
 
                 //Si choca con una interseccion
                 if(tile.typeTerr == 2){
-                    if(intersectionHandler.intersectTile==null){
-                        intersectionHandler.intersectTile = tile;
+                    if(interHandler.intersectTile==null){
+                        interHandler.intersectTile = tile;
                         collisionDelay = tileWidth;
-                        intersectionHandler.choiceAvailable=false;
+                        interHandler.choiceAvailable=false;
+                        mainLayer.sprite.setColor(new cc.Color(255,255,255,0));
                     }else{
                         //Delay para activar la decision tomada por el jugador
                         collisionDelay = collisionDelay>0? collisionDelay - speed : 0;
 
                         //Si se acabo el delay se ejecuta la acción y se cambia de direccion
-                        if(collisionDelay==0 && !choiceExecuted) {
-                            intersectionHandler.executeChoice();
-                            choiceExecuted = true;
-
-                            x = xAnt;
-                            y = yAnt;
-
-                            y += speed*pub.keyState[0];
-                            y -= speed*pub.keyState[1];
-                            x -= speed*pub.keyState[2];
-                            x += speed*pub.keyState[3];
+                        if(collisionDelay==0 && !interHandler.choiceExecuted) {
+                            interHandler.executeChoice();
+                            var array = updatePosition();
+                            xNew = array[0];
+                            yNew = array[1];
                         }
                     }
                     break;
                 }
+
+                if(!isTrueCollision(rect1, tile.rect)) return;
 
                 //Frenar
                 stopMovement();
@@ -237,12 +324,11 @@ var childMoveAction = (function(){
             if(cc.rectIntersectsRect(rectM,rect1)){
                 alert("You Lose");
                 return;
-
             }
 
         }
 
-        mainLayer.sprite.setPosition(x,y);
+        mainLayer.sprite.setPosition(xNew,yNew);
         monstruo.setPosition(monstX,monstY);
     }
 
@@ -251,16 +337,15 @@ var childMoveAction = (function(){
 })();
 
 
-var HelloWorldLayer = cc.TMXTiledMap.extend({
+var GameplayLayer = cc.TMXTiledMap.extend({
     sprite:null,
-    monstruo:null,
-    keyState: new Array(1,0,0,0),
+    monster:null,
     tileMatrix:null,
     intersections: [],
 
-    ctor:function () {
+    ctor:function (levelName) {
         this._super();
-        this.initWithTMXFile("res/mapa.tmx");
+        this.initWithTMXFile("res/" + levelName);
 
         var mapHeight = this.getMapSize().height;
         var mapWidth = this.getMapSize().width;
@@ -284,8 +369,8 @@ var HelloWorldLayer = cc.TMXTiledMap.extend({
         this.initObstacles();
 
         this.sprite= new cc.Sprite("res/Bola.png");
-        this.monstruo = new cc.Sprite("res/monster.jpg");
-        this.monstruo.setPosition(size.width/2,-100);
+        this.monster = new cc.Sprite("res/monster.jpg");
+        this.monster.setPosition(size.width/2,-200);
 
         this.getMatrixPosX = function(pixelX, tileWidth){
             var modX = pixelX % tileWidth;
@@ -315,14 +400,12 @@ var HelloWorldLayer = cc.TMXTiledMap.extend({
         cc.eventManager.addListener({
             event: cc.EventListener.KEYBOARD,
             onKeyPressed:  function(keyCode, event){
-                if(!intersectionHandler.choiceAvailable) return;
-                intersectionHandler.recordChoice(keyCode);
+                if(!interHandler.choiceAvailable) return;
+                interHandler.recordChoice(keyCode);
             }
 
         }, this);
 
-        //Setup de la animaci�n que se va a reproducir en el sprite. Esto funciona mejor con un
-        //spritesheet y un archivo .plist
         var animFrames = [];
         //Se crean los frames de la animaci�n
         for(var i=1;i<5;i++){
@@ -338,7 +421,7 @@ var HelloWorldLayer = cc.TMXTiledMap.extend({
         var infiniteAction = new cc.RepeatForever(animate);
 
         this.addChild(this.sprite);
-        this.addChild(this.monstruo);
+        this.addChild(this.monster);
         this.sprite.runAction(infiniteAction);
         return true;
     },
@@ -405,7 +488,8 @@ var HelloWorldLayer = cc.TMXTiledMap.extend({
 var HelloWorldScene = cc.Scene.extend({
     onEnter:function () {
         this._super();
-        var layer = new HelloWorldLayer();
+        var layer = new GameplayLayer("mapa.tmx");
+        gameplayLayer = layer;
         childMoveAction.setMainLayer(layer);
         layer.schedule(childMoveAction.update);
         this.addChild(layer);
