@@ -7,7 +7,6 @@
         <Image Name="HelloWorld.png" />
         <Image Name="Bola.png" />
         <Image Name="block.png" />
-        <TmxFile Name="mapa.tmx" />
         <PlistInfo Name="boy_up.csi" Type="Plist" />
         <PlistInfo Name="boy_down.csi" Type="Plist" />
         <Folder Name="boy_up">
@@ -24,6 +23,10 @@
         </Folder>
         <Project Name="boy_up_animation.csd" Type="Node" />
         <Project Name="boy_down_animation.csd" Type="Node" />
+        <TmxFile Name="mapa.tmx" />
+        <Folder Name="levels">
+          <TmxFile Name="map2.tmx" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -6,25 +6,14 @@
  <tileset firstgid="49" name="Walls" tilewidth="32" tileheight="32" tilecount="49">
   <image source="res_map/tile1.jpg" width="225" height="225"/>
  </tileset>
- <tileset firstgid="98" name="Finish" tilewidth="32" tileheight="32" tilecount="1224">
-  <image source="res_map/tile4.jpg" width="590" height="2180"/>
- </tileset>
- <layer name="Background" width="20" height="20" visible="0">
+ <layer name="Background" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJztk8EWABAIBGv//6Nd8aRtc3TYE8akuJn5zxJMecnqMqPzKhMHNkQmLHas1p55VB2ZuhS/236GV5kNdn3vw4nN3lfpK/N2mZ86J1FvlT/HeimO3ZpVB9WHyQDvYwIM
-  </data>
- </layer>
- <layer name="Intersection" width="20" height="20">
-  <data encoding="base64" compression="zlib">
-   eJxjYBg4wDRA5jGRYTcx6gfKP9TWOwrwA1xhS4o4EwF5cuwfKEAt9ww2f9EaDAf/AgCCyAAj
+   eJxjZGBgYBzFo3gUj+JRPIpJxADrnAGR
   </data>
  </layer>
  <layer name="Collidable Walls" width="20" height="20">
-  <properties>
-   <property name="Collidable" value="true"/>
-  </properties>
   <data encoding="base64" compression="zlib">
-   eJytlFEKACAIQ72S979c/+I2pwkRFD1fkmVE5OfRBVpn+xte54H8mHeWGe2pezFezY08WJ0rj53tfJCn8mM89R5cnlqf8lT9HB7yUfd2+0B5On1QeagfJl4o2DuY/BMTnhMs75ancm3jUqcL/zIeytQflg==
+   eJytlFsKQCEIRN2S+99cvyHNSxIisBpP3jt1VfXn8QqUV+ub/ORAfIy7x4zW1L2Y3qyNOFifpx47++JBnIiP1XLq3ntdPZXf9CL9vi6PunfqA8WZ+GDqIT84XCjYf4D679bd9k/5P9VjexP/qvcoeV+ccFjScQByBCGA
   </data>
  </layer>
 </map>

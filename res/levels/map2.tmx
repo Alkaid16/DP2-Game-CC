@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="70" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="t1" tilewidth="32" tileheight="32" tilecount="483">
+  <image source="terrain.png" width="672" height="736"/>
+  <tile id="67">
+   <properties>
+    <property name="Start" value="0"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="StartFinish" width="20" height="70">
+  <properties>
+   <property name="finish" value="19,7"/>
+   <property name="start" value="0,60"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2DENAAAMw7CCG39MQ7C7mmQjyJ0EOqYdAAAAALzgIcBtARFKAIk=
+  </data>
+ </layer>
+ <layer name="Background" width="20" height="70">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMBKFL/tmXY6Dgqqmqqqqq+u4B0PmxLw==
+  </data>
+ </layer>
+ <layer name="Maze" width="20" height="70">
+  <data encoding="base64" compression="zlib">
+   eJzt2G0OgjAMBuBdRO4gnMA/4v1PhCaamLJ2/Xg7wWxJEzLg2QejI6yllJUJT+Gs4Y3yKjcSCC/Sfi2Q7R/Bk8bofQac8U+eZs6sXqu+p9da+9b14lm7Z/U0ecSSXxC5MNuLjjHS9vB+46Gf75HGdnYP8f5pcru0L3i+Lax5O9PT9hu95jM89J6E6GuGN/Yg2UPMg/abr6cnva/R3Be5podnzbEar3Wc6XFjs3qeOfH0D+Fl5Oascn3GTGKpnFuqd++tqez/j13exkTqJJOzpPi0Q12P9R0P4t0DVpa3AS2dXNQ=
+  </data>
+ </layer>
+ <layer name="Collision" width="20" height="70">
+  <data encoding="base64" compression="zlib">
+   eJy9WEtOAzEMdWEBAvbtAiRYt5UKgq4jJP7rUglK6VEQl+AqHI8ExtS1nhNnWtXSk0ZO8mLPOLYzRETfHaKbiLvO3zM1untaykPEowO89iVitkE+iXX5LMnxHUa8A2jbpI2Sbx5xJPieDBtmGbypudJGi69G5rT0axHRjxgoXBF9aIyd/AHo0DdiX9D+Er1m3k7Ec4McH9ofybXTPuaT+0vsOvhSXC0UXxf4OhTjOT4ZB4FWRcbmdQu+ifJrR/lYy6ft1Bw1fDJWemJdLd9pxJhwrHj4UI5YEI6VqYOPRZ+FnprbB/ocXwA6OVePe/n0WZga49p3iw+NWePWmvRu+L2gszUwxvU71vu0FYvPyiMlTFfpsnnEwjBjb8iMWcI+XtJvzSBZIziPeKBzKNe8tvUuKD6ueYsN8a0rHj5+p/q9onppxbAUq48IcPb6fCjOUwyjWEmi+xLNZ9lSGyslvtpYkXylXiZ3/hBfsKf9z6HCvqhW6G+jz1+axz1Ebm9pq+VDkgmt9hNWfuN1MqdZPZG1N7LDY7eHD+U0q8axriY/584z8qVWJJ/0pfRtSjXJ6lusHrckIeKAyjGofdLCucZTi1Afr4Xvdx4Jgg+dz2Fj31kLvgDGk55zYVs+3beW/C314/ocl/wNQJfzl3N1iU/7hWLfU9uZL/dN5ZwavgDGS/24hy/5Xrq/JWF/hlS+Z1jPLNZaAjoPn7VW3jMmhPMx4pPfvUt194Zt3Rdq+mfPfWFbgv6R6bG2MoprzwUuKrh4X8lxErEX8Rqx3/wbHQley1bWf9LfP9VbgcTB+uNmD9aV+L4MPq1nHa/7AZ1zxFs=
+  </data>
+ </layer>
+ <layer name="Intersection" width="20" height="70">
+  <data encoding="base64" compression="zlib">
+   eJzt17ENADAIAzBe6/9PMTF3AyHsC8KSiAigvOkAwAq/rtAlAHS6tjvX7gX28jfQJQFQtwHI
+  </data>
+ </layer>
+</map>

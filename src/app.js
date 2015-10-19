@@ -226,8 +226,8 @@ var childMoveAction = (function(){
         var yNew = array[1];
 
 
-
-        var rect1 = cc.rect(xNew-sprite.width/2,yNew - sprite.height/2,30,30);
+        var spriteWidth = sprite.width;
+        var rect1 = cc.rect(xNew-spriteWidth/2,yNew - spriteWidth/2,spriteWidth,spriteWidth);
 
         var posX = mainLayer.getMatrixPosX(pub.childPosX, tileWidth);
         var posY = mainLayer.getMatrixPosY(pub.childPosY, tileWidth);
@@ -279,8 +279,8 @@ var childMoveAction = (function(){
                 stopMovement();
 
                 //Hallar direccion inversa antes del choque
-                var lastMovInv=0;
-                switch(lastMov) {
+                var lastMovInv=-1;
+                switch(direction) {
                     case 0 :
                         lastMovInv = 1;
                         break;
@@ -297,10 +297,10 @@ var childMoveAction = (function(){
 
                 var movements = new Array(0,0,0,0);
 
-                if(mainLayer.tileMatrix[posX+1][posY]!=1) movements[3]=1; //derecha
-                if(mainLayer.tileMatrix[posX-1][posY]!=1) movements[2]=1; //izquierda
-                if(mainLayer.tileMatrix[posX][posY-1]!=1) movements[0]=1; //arriba
-                if(mainLayer.tileMatrix[posX][posY+1]!=1) movements[1]=1; //abajo
+                if(posX<mainLayer.getMapSize().width-1 && mainLayer.tileMatrix[posX+1][posY]!=1) movements[3]=1; //derecha
+                if(posX>0 && mainLayer.tileMatrix[posX-1][posY]!=1) movements[2]=1; //izquierda
+                if(posY>0 && mainLayer.tileMatrix[posX][posY-1]!=1) movements[0]=1; //arriba
+                if(posY<mainLayer.getMapSize().height-1 && mainLayer.tileMatrix[posX][posY+1]!=1) movements[1]=1; //abajo
 
                 var possibleMovements = [];
 
@@ -325,7 +325,6 @@ var childMoveAction = (function(){
                 alert("You Lose");
                 return;
             }
-
         }
 
         mainLayer.sprite.setPosition(xNew,yNew);
@@ -354,17 +353,7 @@ var GameplayLayer = cc.TMXTiledMap.extend({
         var size = cc.winSize;
 
         this.obstacles = [];
-        this.tileMatrix = new Array(20);
-
-        for (var i=0;i<20;i++){
-            this.tileMatrix[i] = new Array(20);
-        }
-
-        for(var i=0;i<20;i++){
-            for(var j=0;j<20;j++){
-                this.tileMatrix[i][j]=0;
-            }
-        }
+        this.initTileMatrix();
 
         this.initObstacles();
 
@@ -390,11 +379,9 @@ var GameplayLayer = cc.TMXTiledMap.extend({
             }
         }
 
-        this.sprite.setVisible(true);
-        this.sprite.setPosition(525,570);
+        this.initStartnFinish();
 
-        //Se agenda la funci�n para que se ejecute cada loop del juego
-        //this.schedule(childMoveAction.update());
+        this.sprite.setVisible(true);
 
         //Se crea el listener para el teclado, se podria usar tambien un CASE en vez de IFs
         cc.eventManager.addListener({
@@ -410,7 +397,7 @@ var GameplayLayer = cc.TMXTiledMap.extend({
         //Se crean los frames de la animaci�n
         for(var i=1;i<5;i++){
             var str = "res/bola"+i+".png";
-            var animFrame = new cc.AnimationFrame(new cc.SpriteFrame(str,cc.rect(0,0,32,32)), 1,null);
+            var animFrame = new cc.AnimationFrame(new cc.SpriteFrame(str,cc.rect(0,0,30,30)), 1,null);
             animFrames.push(animFrame);
         }
         //Se crea la animaci�n que reproduce en secuencia los frames agregados al array animFrames.
@@ -420,8 +407,11 @@ var GameplayLayer = cc.TMXTiledMap.extend({
         //En este caso, se crea una acci�n infinita para que la animacion se reproduzca siempre
         var infiniteAction = new cc.RepeatForever(animate);
 
-        this.addChild(this.sprite);
+        this.addChild(this.sprite, 20);
         this.addChild(this.monster);
+
+        //Ejecutar acciones de animacion y seguimiento de camara
+        this.runAction(cc.follow(this.sprite));
         this.sprite.runAction(infiniteAction);
         return true;
     },
@@ -431,8 +421,9 @@ var GameplayLayer = cc.TMXTiledMap.extend({
         var mapHeight = this.getMapSize().height;
         var tileWidth = this.getTileSize().width;
         var tileHeight = this.getTileSize().height;
-        var collidableLayer = this.getLayer("Collidable Walls");
+        var collidableLayer = this.getLayer("Collision");
         var intersectionLayer = this.getLayer("Intersection");
+
         var i, j;
 
         for (i = 0; i < mapWidth; i++) {
@@ -480,15 +471,39 @@ var GameplayLayer = cc.TMXTiledMap.extend({
             }
         }
 
-    }
+    },
 
+    initStartnFinish : function (){
+        var startFinishLayer = this.getLayer("StartFinish");
+        var tileWidth = this.getTileSize().width;
+        var start = startFinishLayer.properties.start.split(",");
+        this.sprite.setPosition(start[0]*tileWidth + tileWidth/2 , (this.getMapSize().height - start[1] -1)*tileWidth + tileWidth/2 );
+        var finish = startFinishLayer.properties.finish;
+    },
+
+    initTileMatrix : function(){
+        var mapWidth = this.getMapSize().width;
+        var mapHeight = this.getMapSize().height;
+        var tileWidth = this.getTileSize().width;
+        this.tileMatrix = new Array(mapWidth);
+
+        for (var i=0;i<mapWidth;i++){
+            this.tileMatrix[i] = new Array(mapHeight);
+        }
+
+        for(var i=0;i<mapWidth;i++){
+            for(var j=0;j<mapHeight;j++){
+                this.tileMatrix[i][j]=0;
+            }
+        }
+    }
 
 });
 
 var HelloWorldScene = cc.Scene.extend({
     onEnter:function () {
         this._super();
-        var layer = new GameplayLayer("mapa.tmx");
+        var layer = new GameplayLayer("levels/map2.tmx");
         gameplayLayer = layer;
         childMoveAction.setMainLayer(layer);
         layer.schedule(childMoveAction.update);
