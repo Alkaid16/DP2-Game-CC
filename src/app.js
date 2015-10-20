@@ -1,11 +1,17 @@
 var gameplayLayer;
 
+//Objeto manejador de detecciones de intersecciones y variables asociadas
 var interHandler = {
+
+    //Función que hace un scan de [offset] tiles en adelante, buscando si se aproxima una interseccion
     detectIntersection: function(tilePosX, tilePosY, direction, tileMatrix){
         var targetPoint = [];
         var factor = 1;
         var offset = 3;
+        var mapSizeX = gameplayLayer.getMapSize().width;
+        var mapSizeY = gameplayLayer.getMapSize().height;
 
+        //Dependiendo de la dirección del niño se scanea hacia arriba, abajo, izquierda o derecha.
         switch(direction) {
             case 0 :
                 targetPoint = [tilePosX, tilePosY -offset];
@@ -23,17 +29,28 @@ var interHandler = {
                 return;
         }
 
+        //El factor es 1 o -1. Es para saber si se sumara en el eje x/y, o se restara.
         factor = ((targetPoint[0] - tilePosX) + (targetPoint[1] - tilePosY))/offset;
+
+        //Variable que indica si el scan se hace horizontal o vertical
         var horizontal = tilePosX == targetPoint[0] ? 0 : 1;
 
+        //El scan propiamente implementado
         for(var i=tilePosY + factor*((horizontal+1)%2); i!=targetPoint[1] + factor; i+= factor){
             for(var j=tilePosX + factor*horizontal; j!=targetPoint[0] + factor; j+= factor){
+                //Validación de los limites del mapa
+                if(j<0 || j>mapSizeX-1 || i<0 || i>mapSizeY-1) continue;
+
+                //Si se encontro una intersección aproximandose, se activa el flag choiceAvailable y sameTileDetected
+                //Estas indican que el usuario puede realizar una decision y que el tile encontrado es el mismo
                 if(tileMatrix[j][i] == 2 && !this.sameTileDetected && !this.choiceAvailable) {
                     this.choiceAvailable = true;
                     this.sameTileDetected = true;
                     gameplayLayer.sprite.setColor(new cc.Color(255,100,100,0));
                     return;
                 }
+
+                //Si el scan se encuentra con una pared, se detiene.
                 if(tileMatrix[j][i] == 1){
                     return;
                 }
@@ -42,6 +59,7 @@ var interHandler = {
 
     },
 
+    //Metodo indicando que se salio del tile de intersección, y la variable sameTileDetected se libera
     intersectionExited : function(){
         this.intersectTile = null;
         this.sameTileDetected = false;
@@ -49,6 +67,7 @@ var interHandler = {
         gameplayLayer.sprite.setColor(new cc.Color(255,255,255,0));
     },
 
+    //Método que ejecuta la función seleccionada por el usuario con el teclado
     executeChoice: function(){
         var keyCode = this.storedDecision;
 
@@ -81,6 +100,8 @@ var interHandler = {
         this.choiceExecuted = true;
     },
 
+    //Método que guarda la selección hecha por el usuario. Se considera que en el momento que decide ya no puede
+    //cambiar su elección
     recordChoice: function(keyCode){
         this.storedDecision = keyCode;
         this.choiceAvailable = false;
@@ -94,6 +115,7 @@ var interHandler = {
     collisionDelay : 0
 };
 
+//Módulo de movimiento del niño
 var childMoveAction = (function(){
     var tileWidth = 0;
     var speed = 2;
@@ -118,6 +140,7 @@ var childMoveAction = (function(){
         tileWidth = val;
     }
 
+    //Método para detener el movimiento del niño
     var stopMovement= function(){
         pub.keyState[0]=0;
         pub.keyState[1]=0;
@@ -125,6 +148,7 @@ var childMoveAction = (function(){
         pub.keyState[3]=0;
     }
 
+    //Método que halla la nueva posición del niño y la devuelve en un array con la posición x, y.
     var updatePosition = function(){
         var x = pub.childPosX;
         var y = pub.childPosY;
@@ -137,6 +161,7 @@ var childMoveAction = (function(){
         return new Array(x,y);
     }
 
+    //Consigue la dirección actual en la que se mueve el niño
     var getCurrentDirection = function(){
         var direction = -1;
         for(var i=0; i<4 ; i++){
@@ -148,6 +173,7 @@ var childMoveAction = (function(){
         return direction;
     }
 
+    //Consigue el movimiento del niño pero en un vector x y.
     var getMovementVector = function(){
         var dir = getCurrentDirection();
         switch(dir) {
@@ -162,13 +188,18 @@ var childMoveAction = (function(){
         }
     }
 
+    //Verifica que el choque con un tile se realiza de forma perfecta: entre los extremos de los 2 rectangulos
+    //que se estan chocando debe haber un espacio de 1 pixel.
     var isTrueCollision = function(sprRect, rect){
         var vector = getMovementVector();
         var dir = getCurrentDirection();
+        //El sprRect es un rect con la posición futura del sprite. A este se le resta el vector de dirección para
+        //conseguir el rectangulo actual.
         var newSprRect = cc.rect(sprRect);
         newSprRect.x = newSprRect.x - vector[0];
         newSprRect.y = newSprRect.y - vector[1];
 
+        //Dependiendo de la dirección, se evalua que solo halla una diferencia de 1 pixel entre los extremos en contacto
         switch(dir){
             case 0:{
                 var dif = rect.y - newSprRect.y - newSprRect.height;
@@ -210,7 +241,7 @@ var childMoveAction = (function(){
         return true;
     }
 
-    //Metodo principal
+    //Metodo principal de movimiento
     pub.update = function(){
         var sprite = mainLayer.sprite;
         var monstruo = mainLayer.monster;
@@ -221,6 +252,7 @@ var childMoveAction = (function(){
         var monstY = monstruo.getPositionY();
         var lastMov = -1;
 
+        //Se halla la nueva posición del niño
         var array =updatePosition();
         var xNew = array[0];
         var yNew = array[1];
@@ -232,11 +264,18 @@ var childMoveAction = (function(){
         var posX = mainLayer.getMatrixPosX(pub.childPosX, tileWidth);
         var posY = mainLayer.getMatrixPosY(pub.childPosY, tileWidth);
 
+        //Condicion de victoria
+        if(posX == mainLayer.finishPoint[0] && posY == mainLayer.finishPoint[1]){
+            alert("YOU WIN!");
+            close();
+        }
+
         var direction = getCurrentDirection();
 
+        //Se ejecuta el método de scan de intersecciones.
         interHandler.detectIntersection(posX,posY,direction, mainLayer.tileMatrix);
 
-        //Si la acción ya se ejecuto, se debe esperar a salir completamente del tile de interseccion
+        //Si la elección ya se ejecuto, se debe esperar a salir completamente del tile de interseccion
         if(interHandler.choiceExecuted==true){
             var collBox = cc.rect(pub.childPosX-sprite.width/2,pub.childPosY - sprite.height/2,30,30);
             if(!cc.rectIntersectsRect(collBox,interHandler.intersectTile.rect)){
@@ -253,11 +292,15 @@ var childMoveAction = (function(){
 
                 //Si choca con una interseccion
                 if(tile.typeTerr == 2){
+                    //Si es el primer contacto con el tile de intersección, se registra el mismo y se inicializa
+                    //el delay para ejecutar la decisión del usuario
                     if(interHandler.intersectTile==null){
                         interHandler.intersectTile = tile;
                         collisionDelay = tileWidth;
                         interHandler.choiceAvailable=false;
                         mainLayer.sprite.setColor(new cc.Color(255,255,255,0));
+
+                    //Si ya está dentro del tile, se disminuye el valor el contador collisionDelay
                     }else{
                         //Delay para activar la decision tomada por el jugador
                         collisionDelay = collisionDelay>0? collisionDelay - speed : 0;
@@ -297,6 +340,7 @@ var childMoveAction = (function(){
 
                 var movements = new Array(0,0,0,0);
 
+                //Evalua posibles movimientos en caso de choque con pared
                 if(posX<mainLayer.getMapSize().width-1 && mainLayer.tileMatrix[posX+1][posY]!=1) movements[3]=1; //derecha
                 if(posX>0 && mainLayer.tileMatrix[posX-1][posY]!=1) movements[2]=1; //izquierda
                 if(posY>0 && mainLayer.tileMatrix[posX][posY-1]!=1) movements[0]=1; //arriba
@@ -339,6 +383,7 @@ var childMoveAction = (function(){
 var GameplayLayer = cc.TMXTiledMap.extend({
     sprite:null,
     monster:null,
+    finishPoint: null,
     tileMatrix:null,
     intersections: [],
 
@@ -473,14 +518,16 @@ var GameplayLayer = cc.TMXTiledMap.extend({
 
     },
 
+    //Método de inicialización de los puntos de inicio y fin
     initStartnFinish : function (){
         var startFinishLayer = this.getLayer("StartFinish");
         var tileWidth = this.getTileSize().width;
         var start = startFinishLayer.properties.start.split(",");
         this.sprite.setPosition(start[0]*tileWidth + tileWidth/2 , (this.getMapSize().height - start[1] -1)*tileWidth + tileWidth/2 );
-        var finish = startFinishLayer.properties.finish;
+        this.finishPoint = startFinishLayer.properties.finish.split(",");
     },
 
+    //Inicialización de la matriz de tiles
     initTileMatrix : function(){
         var mapWidth = this.getMapSize().width;
         var mapHeight = this.getMapSize().height;
