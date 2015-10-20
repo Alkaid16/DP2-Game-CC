@@ -27,6 +27,7 @@
         <Folder Name="levels">
           <TmxFile Name="map2.tmx" />
         </Folder>
+        <Image Name="GameFog.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

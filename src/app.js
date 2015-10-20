@@ -1,4 +1,4 @@
-var gameplayLayer;
+var gameplayMap;
 
 //Objeto manejador de detecciones de intersecciones y variables asociadas
 var interHandler = {
@@ -8,8 +8,8 @@ var interHandler = {
         var targetPoint = [];
         var factor = 1;
         var offset = 3;
-        var mapSizeX = gameplayLayer.getMapSize().width;
-        var mapSizeY = gameplayLayer.getMapSize().height;
+        var mapSizeX = gameplayMap.getMapSize().width;
+        var mapSizeY = gameplayMap.getMapSize().height;
 
         //Dependiendo de la dirección del niño se scanea hacia arriba, abajo, izquierda o derecha.
         switch(direction) {
@@ -46,7 +46,7 @@ var interHandler = {
                 if(tileMatrix[j][i] == 2 && !this.sameTileDetected && !this.choiceAvailable) {
                     this.choiceAvailable = true;
                     this.sameTileDetected = true;
-                    gameplayLayer.sprite.setColor(new cc.Color(255,100,100,0));
+                    gameplayMap.sprite.setColor(new cc.Color(255,100,100,0));
                     return;
                 }
 
@@ -64,7 +64,7 @@ var interHandler = {
         this.intersectTile = null;
         this.sameTileDetected = false;
         this.choiceExecuted = false;
-        gameplayLayer.sprite.setColor(new cc.Color(255,255,255,0));
+        gameplayMap.sprite.setColor(new cc.Color(255,255,255,0));
     },
 
     //Método que ejecuta la función seleccionada por el usuario con el teclado
@@ -124,6 +124,7 @@ var childMoveAction = (function(){
     var pub = {};
     pub.childPosX = 0;
     pub.childPosY = 0;
+
 
     pub.keyState = new Array(1,0,0,0);
 
@@ -380,7 +381,7 @@ var childMoveAction = (function(){
 })();
 
 
-var GameplayLayer = cc.TMXTiledMap.extend({
+var GameplayMap = cc.TMXTiledMap.extend({
     sprite:null,
     monster:null,
     finishPoint: null,
@@ -452,11 +453,9 @@ var GameplayLayer = cc.TMXTiledMap.extend({
         //En este caso, se crea una acci�n infinita para que la animacion se reproduzca siempre
         var infiniteAction = new cc.RepeatForever(animate);
 
-        this.addChild(this.sprite, 20);
         this.addChild(this.monster);
 
-        //Ejecutar acciones de animacion y seguimiento de camara
-        this.runAction(cc.follow(this.sprite));
+        //Ejecutar acciones de animacion
         this.sprite.runAction(infiniteAction);
         return true;
     },
@@ -547,14 +546,44 @@ var GameplayLayer = cc.TMXTiledMap.extend({
 
 });
 
+//Funcion para inicializar la osucridad que rodea al niño
+function initFog(map){
+
+    //Se carga el sprite que representa la oscuridad
+    var fog = new cc.Sprite("res/GameFog.png");
+
+    //El sprite que representa la oscuridad siempre esta encima del niño
+    fog.setPosition(map.sprite.getPositionX(), map.sprite.getPositionY());
+    fog.schedule(function (){
+        this.setPositionX(gameplayMap.sprite.getPositionX());
+        this.setPositionY(gameplayMap.sprite.getPositionY());
+    });
+
+    return fog;
+};
+
+
 var HelloWorldScene = cc.Scene.extend({
     onEnter:function () {
         this._super();
-        var layer = new GameplayLayer("levels/map2.tmx");
-        gameplayLayer = layer;
-        childMoveAction.setMainLayer(layer);
-        layer.schedule(childMoveAction.update);
-        this.addChild(layer);
+        var gameplayLayer = new cc.Layer();
+
+        var map = new GameplayMap("levels/map2.tmx");
+        var fog = initFog(map);
+        gameplayMap = map;
+        gameplayLayer.addChild(map,0);
+        gameplayLayer.addChild(map.sprite, 5);
+        gameplayLayer.addChild(fog, 20);
+
+        //Accion que permite a la camara seguir al niño
+        gameplayLayer.runAction(cc.follow(map.sprite));
+
+        //Se inicializa el modulo de movimiento del niño
+        childMoveAction.setMainLayer(map);
+        map.schedule(childMoveAction.update);
+
+        //Por ultimo, se añade el layer de gameplay a la scene, en el orden Z mas bajo.
+        this.addChild(gameplayLayer, 0);
     }
 });
 
