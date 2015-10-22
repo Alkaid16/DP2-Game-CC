@@ -1,0 +1,153 @@
+{
+  "ID": "05de7bf9-d226-4462-94d9-cda4172073d1",
+  "Version": "2.3.2.3",
+  "Name": "MainScreen",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 5,
+        "Children": [
+          {
+            "FontSize": 20,
+            "IsCustomSize": true,
+            "LabelText": "",
+            "PlaceHolderText": " Ingresar ID",
+            "MaxLengthText": 10,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 480.0,
+              "Y": 306.457
+            },
+            "Scale": {
+              "ScaleX": 2.2352,
+              "ScaleY": 2.3644
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.4788
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 430.0,
+            "RightMargin": 430.0,
+            "TopMargin": 320.043,
+            "BottomMargin": 292.957,
+            "Tag": 6,
+            "ActionTag": 89597851,
+            "Size": {
+              "X": 100.0,
+              "Y": 27.0
+            },
+            "Name": "txtID",
+            "ctype": "TextFieldObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "buttonPressed.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "buttonNormal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 30,
+            "Scale9OriginY": 11,
+            "Scale9Width": 142,
+            "Scale9Height": 28,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 480.0,
+              "Y": 204.6828
+            },
+            "Scale": {
+              "ScaleX": 1.0643,
+              "ScaleY": 1.1782
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.3198
+            },
+            "PreSize": {
+              "X": 0.2083,
+              "Y": 0.0781
+            },
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 380.0,
+            "RightMargin": 380.0,
+            "TopMargin": 410.3172,
+            "BottomMargin": 179.6828,
+            "Tag": 7,
+            "ActionTag": -1184364594,
+            "Size": {
+              "X": 200.0,
+              "Y": 50.0
+            },
+            "Name": "btnStart",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "buttonNormal.png",
+        "buttonPressed.png",
+        "Default/Button_Disable.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

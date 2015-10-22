@@ -34,8 +34,9 @@
           <FilePathData Path="MainScene.csd" />
           <FilePathData Path="boy_up_animation.csd" />
           <FilePathData Path="boy_down_animation.csd" />
+          <FilePathData Path="MainScreen.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="boy_down_animation.csd" />
+        <ActiveDocument Path="MainScreen.csd" />
       </Value>
     </Item>
   </Properties>

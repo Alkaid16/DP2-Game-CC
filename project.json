@@ -14,6 +14,7 @@
         "src/resource.js",
         "src/app.js",
         "src/webServices.js",
-        "src/jquery-2.1.4.min.js"
+        "src/jquery-2.1.4.min.js",
+        "src/MainScreenC.js"
     ]
 }

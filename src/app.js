@@ -118,7 +118,7 @@ var interHandler = {
 //Módulo de movimiento del niño
 var childMoveAction = (function(){
     var tileWidth = 0;
-    var speed = 2;
+    var speed = 2.5;
     var collisionDelay = 0;
     var mainLayer = {};
     var pub = {};
@@ -303,15 +303,38 @@ var childMoveAction = (function(){
 
                     //Si ya está dentro del tile, se disminuye el valor el contador collisionDelay
                     }else{
-                        //Delay para activar la decision tomada por el jugador
-                        collisionDelay = collisionDelay>0? collisionDelay - speed : 0;
+                        if(interHandler.choiceExecuted) break;
 
                         //Si se acabo el delay se ejecuta la acción y se cambia de direccion
-                        if(collisionDelay==0 && !interHandler.choiceExecuted) {
+                        if(collisionDelay==0){
                             interHandler.executeChoice();
                             var array = updatePosition();
                             xNew = array[0];
                             yNew = array[1];
+                        }
+                        //Si el delay es negativo, se debe retroceder la cantidad excedida en la direccion contraria
+                        else if(collisionDelay - speed<0){
+                            var excess = speed - collisionDelay + 1;
+                            collisionDelay = 0;
+                            switch(direction){
+                                case 0:
+                                    yNew -= excess;
+                                    break;
+                                case 1:
+                                    yNew += excess;
+                                    break;
+                                case 2:
+                                    xNew += excess;
+                                    break;
+                                case 3:
+                                    xNew -=excess;
+                                    break;
+                            }
+                            break;
+                        }
+                        else{
+                            //Delay para activar la decision tomada por el jugador
+                            collisionDelay =collisionDelay - speed ;
                         }
                     }
                     break;
@@ -405,7 +428,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
         this.sprite= new cc.Sprite("res/Bola.png");
         this.monster = new cc.Sprite("res/monster.jpg");
-        this.monster.setPosition(size.width/2,-200);
+        this.monster.setPosition(size.width/2,-300);
 
         this.getMatrixPosX = function(pixelX, tileWidth){
             var modX = pixelX % tileWidth;
@@ -564,7 +587,7 @@ function initFog(map){
 
 
 var HelloWorldScene = cc.Scene.extend({
-    onEnter:function () {
+    ctor: function(){
         this._super();
         var gameplayLayer = new cc.Layer();
 
@@ -580,10 +603,14 @@ var HelloWorldScene = cc.Scene.extend({
 
         //Se inicializa el modulo de movimiento del niño
         childMoveAction.setMainLayer(map);
-        map.schedule(childMoveAction.update);
 
         //Por ultimo, se añade el layer de gameplay a la scene, en el orden Z mas bajo.
         this.addChild(gameplayLayer, 0);
+    },
+
+    onEnter:function () {
+        this._super();
+        gameplayMap.schedule(childMoveAction.update);
     }
 });
 

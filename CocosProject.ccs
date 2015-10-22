@@ -28,6 +28,9 @@
           <TmxFile Name="map2.tmx" />
         </Folder>
         <Image Name="GameFog.png" />
+        <Project Name="MainScreen.csd" Type="Scene" />
+        <Image Name="buttonNormal.png" />
+        <Image Name="buttonPressed.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>
