@@ -107,6 +107,29 @@ var interHandler = {
         this.choiceAvailable = false;
     },
 
+    excessInIntersection: function(dir, sprRect, rect){
+        var dif;
+        switch(dir){
+            case 0:{
+                dif =   sprRect.y + sprRect.height - rect.y;
+                break;
+            }
+            case 1:{
+                dif =  rect.y + rect.height - sprRect.y;
+                break;
+            }
+            case 2:{
+                dif = rect.x + rect.width - sprRect.x;
+                break;
+            }
+            case 3:{
+                dif =  sprRect.x + sprRect.width - rect.x;
+                break;
+            }
+        }
+        return dif
+    },
+
     choiceAvailable : false,
     choiceExecuted : false,
     storedDecision: -1,
@@ -297,7 +320,8 @@ var childMoveAction = (function(){
                     //el delay para ejecutar la decisión del usuario
                     if(interHandler.intersectTile==null){
                         interHandler.intersectTile = tile;
-                        collisionDelay = tileWidth;
+                        collisionDelay = tileWidth-1;
+                        collisionDelay -= interHandler.excessInIntersection(direction, rect1, tile.rect);
                         interHandler.choiceAvailable=false;
                         mainLayer.sprite.setColor(new cc.Color(255,255,255,0));
 
@@ -314,7 +338,7 @@ var childMoveAction = (function(){
                         }
                         //Si el delay es negativo, se debe retroceder la cantidad excedida en la direccion contraria
                         else if(collisionDelay - speed<0){
-                            var excess = speed - collisionDelay + 1;
+                            var excess = speed - collisionDelay;
                             collisionDelay = 0;
                             switch(direction){
                                 case 0:

@@ -16,7 +16,9 @@ var MainSceneC = (function(){
         txtID = mainScreen.getChildByName("txtID");
 
         btnStart.addClickEventListener(function (event){
-            alert(txtID.getString());
+            var ID = txtID.getString();
+            var player = WSHandler.getPlayerInfo(ID);
+            alert(player);
             btnAction();
         });
     }

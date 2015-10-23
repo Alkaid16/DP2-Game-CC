@@ -4,8 +4,9 @@ var WSHandler = (function(){
     //Funcion que obtiene el objeto Player, con toda la informacion del jugador. Si la llamada falla, se retorna -1.
     pub.getPlayerInfo= function(fbID){
         $.ajax({
-            url: "http://jsonplaceholder.typicode.com/posts/1",
+            url: "http://200.16.7.111/afiperularavel/public/game/player?facebookID=" + fbID + "",
             dataType: "json",
+            crossDomain: true,
             success: function (data){
                 var player = data;
                 return player;
@@ -20,8 +21,9 @@ var WSHandler = (function(){
     //Funcion para registrar un nuevo jugador en la base de datos
     pub.registerPlayer = function(player){
         $.ajax({
-            url: "alguna_url",
+            url: "http://200.16.7.111/afiperularavel/public/game/player",
             type: "POST",
+            crossDomain: true,
             data: JSON.stringify(player),
             contentType: "application/json",
             complete: function(){
