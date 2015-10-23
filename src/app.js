@@ -1,5 +1,6 @@
 var gameplayMap;
 
+
 //Objeto manejador de detecciones de intersecciones y variables asociadas
 var interHandler = {
 
@@ -267,6 +268,12 @@ var childMoveAction = (function(){
 
     //Metodo principal de movimiento
     pub.update = function(){
+
+        if(zoomGame.autoZoomIn())
+            return;
+        /*if(!zoomGame.zoomMap())
+            return;*/
+
         var sprite = mainLayer.sprite;
         var monstruo = mainLayer.monster;
         pub.childPosX = sprite.getPositionX();
@@ -281,12 +288,13 @@ var childMoveAction = (function(){
         var xNew = array[0];
         var yNew = array[1];
 
-
         var spriteWidth = sprite.width;
         var rect1 = cc.rect(xNew-spriteWidth/2,yNew - spriteWidth/2,spriteWidth,spriteWidth);
 
         var posX = mainLayer.getMatrixPosX(pub.childPosX, tileWidth);
         var posY = mainLayer.getMatrixPosY(pub.childPosY, tileWidth);
+
+
 
         //Condicion de victoria
         if(posX == mainLayer.finishPoint[0] && posY == mainLayer.finishPoint[1]){
@@ -609,27 +617,115 @@ function initFog(map){
     return fog;
 };
 
+var zoomGame = {
+
+    //Funcion para generar el efecto de zoom sobre el mapa
+    //typeZoom:     0 = in, 1 = out
+    //zoom_Range:   indica el incremento del zoom
+    //initZoom:     indica el zoom inicial del mapa
+    //time_Zoom:    indica el tiempo de zoom
+    ctor: function(type_Zoom, zoom_Range, time_Zoom, init_Zoom)
+    {
+        gameplayMap.setScale(init_Zoom);
+        this.typeZoom = type_Zoom;
+        this.zoomRange= zoom_Range;
+        this.timeZoom = time_Zoom;
+        this.scaleInit = init_Zoom;
+        this.timeLeft = this.timeZoom;
+        this.currentScale = init_Zoom;
+        if(time_Zoom==0)
+            this.zoomActivate = false;
+    },
+
+    autoZoomIn:function()
+    {
+          if(this.currentScale<1)
+          {
+              console.log(this.currentScale);
+              this.currentScale+=this.zoomRange;
+              gameplayMap.setScale(this.currentScale);
+              return true;
+          }else
+            return false;
+
+    },
+
+    //funcion que realiza el zoom sobre el mapa
+    zoomMap:function()
+    {
+        if(this.zoomActivate)
+        {
+            console.log("printing: "+this.timeLeft);
+            if(this.typeZoom == 0)            {
+                this.currentScale += this.zoomRange;
+            }else
+                this.currentScale -= this.zoomRange;
+
+            gameplayMap.setScale(this.currentScale);
+            this.timeLeft--;
+
+
+            if(this.timeLeft==0)
+                this.zoomActivate=false;
+        }
+
+        return this.zoomActivate;
+    },
+
+    //Permite resetear el zoom
+    //una vez acabado el zoom, se debe usar esta variable para poder ejecutar
+    //nuevamente el efecto
+    resetZoom:function(){
+
+        this.timeLeft=this.timeZoom;
+        zoomActivate=true;
+    },
+
+    changeTypeZoom:function(type_Zoom)
+    {
+        this.typeZoom=type_Zoom;
+    },
+
+    zoomRange:0.01,
+    typeZoom:1,
+    scaleInit:1,
+    currentScale:0.1,
+    timeZoom:180,
+    timeLeft:180,
+
+    zoomActivate:true,
+
+}
+
+
+
 
 var HelloWorldScene = cc.Scene.extend({
+
     ctor: function(){
         this._super();
         var gameplayLayer = new cc.Layer();
 
         var map = new GameplayMap("levels/map2.tmx");
-        var fog = initFog(map);
+        //var fog = initFog(map);
         gameplayMap = map;
         gameplayLayer.addChild(map,0);
         gameplayLayer.addChild(map.sprite, 5);
-        gameplayLayer.addChild(fog, 20);
+        //gameplayLayer.addChild(fog, 20);
 
         //Accion que permite a la camara seguir al niño
-        gameplayLayer.runAction(cc.follow(map.sprite));
+        //gameplayLayer.runAction(cc.follow(map.sprite));
+
+        //inicializo el zoom
+        zoomGame.ctor(0,0.01,0,0.285);
 
         //Se inicializa el modulo de movimiento del niño
         childMoveAction.setMainLayer(map);
 
         //Por ultimo, se añade el layer de gameplay a la scene, en el orden Z mas bajo.
         this.addChild(gameplayLayer, 0);
+
+
     },
 
     onEnter:function () {
