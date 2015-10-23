@@ -1,4 +1,5 @@
 var gameplayMap;
+var currentGameplayScene;
 
 
 //Objeto manejador de detecciones de intersecciones y variables asociadas
@@ -144,6 +145,7 @@ var childMoveAction = (function(){
     var tileWidth = 0;
     var speed = 2.5;
     var collisionDelay = 0;
+    var gameStarted = false;
     var mainLayer = {};
     var pub = {};
     pub.childPosX = 0;
@@ -268,11 +270,13 @@ var childMoveAction = (function(){
 
     //Metodo principal de movimiento
     pub.update = function(){
-
-        if(zoomGame.autoZoomIn())
-            return;
-        /*if(!zoomGame.zoomMap())
-            return;*/
+        if(!gameStarted){
+            if(zoomGame.autoZoomIn()) return;
+            else{
+                gameStarted = true;
+                currentGameplayScene.startMaze();
+            }
+        }
 
         var sprite = mainLayer.sprite;
         var monstruo = mainLayer.monster;
@@ -459,6 +463,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this.initObstacles();
 
         this.sprite= new cc.Sprite("res/Bola.png");
+        this.sprite.setVisible(false);
         this.monster = new cc.Sprite("res/monster.jpg");
         this.monster.setPosition(size.width/2,-300);
 
@@ -481,8 +486,6 @@ var GameplayMap = cc.TMXTiledMap.extend({
         }
 
         this.initStartnFinish();
-
-        this.sprite.setVisible(true);
 
         //Se crea el listener para el teclado, se podria usar tambien un CASE en vez de IFs
         cc.eventManager.addListener({
@@ -701,20 +704,21 @@ var zoomGame = {
 
 
 var HelloWorldScene = cc.Scene.extend({
+    gameplayLayer : null,
+    fog : null,
 
     ctor: function(){
         this._super();
-        var gameplayLayer = new cc.Layer();
+        this.gameplayLayer = new cc.Layer();
 
         var map = new GameplayMap("levels/map2.tmx");
-        //var fog = initFog(map);
-        gameplayMap = map;
-        gameplayLayer.addChild(map,0);
-        gameplayLayer.addChild(map.sprite, 5);
-        //gameplayLayer.addChild(fog, 20);
+        this.fog = initFog(map);
+        this.fog.setVisible(false);
 
-        //Accion que permite a la camara seguir al niño
-        //gameplayLayer.runAction(cc.follow(map.sprite));
+        gameplayMap = map;
+        this.gameplayLayer.addChild(map,0);
+        this.gameplayLayer.addChild(map.sprite, 5);
+        this.gameplayLayer.addChild(this.fog, 20);
 
         //inicializo el zoom
         zoomGame.ctor(0,0.01,0,0.285);
@@ -723,14 +727,22 @@ var HelloWorldScene = cc.Scene.extend({
         childMoveAction.setMainLayer(map);
 
         //Por ultimo, se añade el layer de gameplay a la scene, en el orden Z mas bajo.
-        this.addChild(gameplayLayer, 0);
-
+        this.addChild(this.gameplayLayer, 0);
 
     },
 
     onEnter:function () {
         this._super();
+        currentGameplayScene = this;
         gameplayMap.schedule(childMoveAction.update);
+    },
+
+    startMaze: function(){
+        gameplayMap.sprite.setVisible(true);
+        this.fog.setOpacity(0);
+        this.fog.setVisible(true);
+        this.fog.runAction(cc.fadeIn(1.5));
+        this.gameplayLayer.runAction(cc.follow(gameplayMap.sprite));
     }
 });
 
