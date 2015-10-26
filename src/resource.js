@@ -1,7 +1,7 @@
 var res = {
     HelloWorld_png : "res/HelloWorld.png",
-    ButtonNormal_png : "res/ButtonNormal.png",
-    ButtonPressed_png : "res/ButtonPressed.png",
+    ButtonNormal_png : "res/buttonNormal.png",
+    ButtonPressed_png : "res/buttonPressed.png",
     MainScreen_json: "res/MainScreen.json",
     MainScene_json : "res/MainScene.json",
     map2_tmx: "res/levels/map2.tmx",

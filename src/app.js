@@ -462,7 +462,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
         this.initObstacles();
 
-        this.sprite= new cc.Sprite("res/Bola.png");
+        this.sprite= new cc.Sprite("res/Bola1.png");
         this.sprite.setVisible(false);
         this.monster = new cc.Sprite("res/monster.jpg");
         this.monster.setPosition(size.width/2,-300);
@@ -500,7 +500,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         var animFrames = [];
         //Se crean los frames de la animaci�n
         for(var i=1;i<5;i++){
-            var str = "res/bola"+i+".png";
+            var str = "res/Bola"+i+".png";
             var animFrame = new cc.AnimationFrame(new cc.SpriteFrame(str,cc.rect(0,0,30,30)), 1,null);
             animFrames.push(animFrame);
         }
