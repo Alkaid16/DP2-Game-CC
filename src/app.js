@@ -609,6 +609,7 @@ function initFog(map){
 
     //Se carga el sprite que representa la oscuridad
     var fog = new cc.Sprite("res/GameFog.png");
+    fog.setScale(1.5, 1.5);
 
     //El sprite que representa la oscuridad siempre esta encima del niño
     fog.setPosition(map.sprite.getPositionX(), map.sprite.getPositionY());
@@ -711,7 +712,7 @@ var HelloWorldScene = cc.Scene.extend({
         this._super();
         this.gameplayLayer = new cc.Layer();
 
-        var map = new GameplayMap("levels/map2.tmx");
+        var map = new GameplayMap("levels/Level3.tmx");
         this.fog = initFog(map);
         this.fog.setVisible(false);
 
