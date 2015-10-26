@@ -144,6 +144,7 @@ var interHandler = {
 var childMoveAction = (function(){
     var tileWidth = 0;
     var speed = 2.5;
+    var dummyBool = false;
     var collisionDelay = 0;
     var gameStarted = false;
     var mainLayer = {};
