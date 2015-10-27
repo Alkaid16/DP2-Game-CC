@@ -31,6 +31,11 @@
     <frame tileid="1212" duration="100"/>
    </animation>
   </tile>
+  <tile id="1462">
+   <properties>
+    <property name="powerup" value="3"/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="Background" width="90" height="25">
   <data>

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="70" tilewidth="32" tileheight="32" nextobjectid="1">
  <tileset firstgid="1" name="t1" tilewidth="32" tileheight="32" tilecount="483">
-  <image source="terrain.png" width="672" height="736"/>
+  <image source="Tilesets/terrain.png" width="672" height="736"/>
   <tile id="67">
    <properties>
     <property name="Start" value="0"/>
+   </properties>
+  </tile>
+  <tile id="129">
+   <properties>
+    <property name="powerup" value="2"/>
    </properties>
   </tile>
  </tileset>
@@ -35,6 +40,11 @@
  <layer name="Intersection" width="20" height="70">
   <data encoding="base64" compression="zlib">
    eJzt17ENADAIAzBe6/9PMTF3AyHsC8KSiAigvOkAwAq/rtAlAHS6tjvX7gX28jfQJQFQtwHI
+  </data>
+ </layer>
+ <layer name="Powerups" width="20" height="70">
+  <data encoding="base64" compression="zlib">
+   eJzt0jENAAAIBLHXjnI8wEBIWgU3XAIAAAB8V9cBMOBb2GvMrAEF
   </data>
  </layer>
 </map>

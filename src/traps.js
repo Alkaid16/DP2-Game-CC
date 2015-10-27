@@ -1,1 +1,1 @@
-/* Los IDs de las trampas son: Huecos:1, Pizarra:2, Malla:3, Lonchera:4
+/* Los IDs de las trampas son: Huecos:0, Pizarra:1, Malla:2, Lonchera:3

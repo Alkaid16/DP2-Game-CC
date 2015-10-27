@@ -231,7 +231,7 @@ var childMoveAction = (function(){
         switch(dir){
             case 0:{
                 var dif = rect.y - newSprRect.y - newSprRect.height;
-                if(dif!=1){
+                if(dif>1){
                     pub.childPosY += dif-1;
                     mainLayer.sprite.setPositionY(pub.childPosY);
                     return false;
@@ -240,7 +240,7 @@ var childMoveAction = (function(){
             }
             case 1:{
                 var dif = newSprRect.y - rect.y - rect.height;
-                if(dif!=1){
+                if(dif>1){
                     pub.childPosY -= dif-1;
                     mainLayer.sprite.setPositionY(pub.childPosY);
                     return false;
@@ -249,7 +249,7 @@ var childMoveAction = (function(){
             }
             case 2:{
                 var dif = newSprRect.x - rect.x - rect.width;
-                if(dif!=1){
+                if(dif>1){
                     pub.childPosX -= dif-1;
                     mainLayer.sprite.setPositionX(pub.childPosX);
                     return false;
@@ -258,7 +258,7 @@ var childMoveAction = (function(){
             }
             case 3:{
                 var dif = rect.x - newSprRect.x - newSprRect.width;
-                if(dif!=1){
+                if(dif>1){
                     pub.childPosX += dif-1;
                     mainLayer.sprite.setPositionX(pub.childPosX);
                     return false;
@@ -326,6 +326,11 @@ var childMoveAction = (function(){
             var rectM = cc.rect(monstX - monstruo.width/2, monstY - monstruo.height/2,550,550);
 
             if(cc.rectIntersectsRect(rect1,tile.rect)){
+                //Si choca contra un powerup
+                if('powerup' in tile){
+                    executePowerup(tile, tile.x, tile.y);
+                    break;
+                }
 
                 //Si choca con una interseccion
                 if(tile.typeTerr == 2){
@@ -340,7 +345,7 @@ var childMoveAction = (function(){
 
                     //Si ya está dentro del tile, se disminuye el valor el contador collisionDelay
                     }else{
-                        if(interHandler.choiceExecuted) break;
+                        if(interHandler.choiceExecuted) continue;
 
                         //Si se acabo el delay se ejecuta la acción y se cambia de direccion
                         if(collisionDelay==0){
@@ -524,8 +529,12 @@ var GameplayMap = cc.TMXTiledMap.extend({
         var mapHeight = this.getMapSize().height;
         var tileWidth = this.getTileSize().width;
         var tileHeight = this.getTileSize().height;
+        var tileProps = this._tileProperties;
+
         var collidableLayer = this.getLayer("Collision");
         var intersectionLayer = this.getLayer("Intersection");
+        var powerupLayer = this.getLayer("Powerups");
+        var trapLayer = this.getLayer("Traps");
 
         var i, j;
 
@@ -533,8 +542,8 @@ var GameplayMap = cc.TMXTiledMap.extend({
             for (j = 0; j < mapHeight; j++) {
                 var tileCoord = new cc.Point(i, j);
 
+                //Paredes
                 var gid = collidableLayer.getTileGIDAt(tileCoord);
-
                 if (gid) {
                     var tileXPosition = i * tileWidth;
                     var tileYPosition = (mapHeight * tileHeight)
@@ -548,21 +557,15 @@ var GameplayMap = cc.TMXTiledMap.extend({
                     this.obstacles.push(cTile);
                     this.tileMatrix[i][j]=1;
                 }
-            }
-        }
 
-        for (i = 0; i < mapWidth; i++) {
-            for (j = 0; j < mapHeight; j++) {
-                var tileCoord = new cc.Point(i, j);
-
-                var gid = intersectionLayer.getTileGIDAt(tileCoord);
-
+                //Intersecciones
+                gid = intersectionLayer.getTileGIDAt(tileCoord);
                 if (gid) {
-                    var tileXPosition = i * tileWidth;
-                    var tileYPosition = (mapHeight * tileHeight)
+                    tileXPosition = i * tileWidth;
+                    tileYPosition = (mapHeight * tileHeight)
                         - ((j + 1) * tileHeight);
 
-                    var cTile = {};
+                    cTile = {};
                     cTile.typeTerr = 2;
                     cTile.rect = cc.rect(tileXPosition, tileYPosition,
                         tileWidth, tileHeight);
@@ -571,6 +574,29 @@ var GameplayMap = cc.TMXTiledMap.extend({
                     this.intersections.push(cTile);
                     this.tileMatrix[i][j]=2;
                 }
+
+                //Powerups
+                gid = powerupLayer.getTileGIDAt(tileCoord);
+                if (gid) {
+                    if(!(gid in tileProps)) continue;
+                    var tilePropEntry = tileProps[""+gid];
+                    if(!('powerup' in tilePropEntry)) continue;
+
+                    var idPowerup = tilePropEntry['powerup'];
+                    tileXPosition = i * tileWidth;
+                    tileYPosition = (mapHeight * tileHeight)
+                        - ((j + 1) * tileHeight);
+
+                    cTile = {};
+                    cTile.powerup = idPowerup;
+                    cTile.x = i;
+                    cTile.y = j;
+                    cTile.rect = cc.rect(tileXPosition, tileYPosition,
+                        tileWidth, tileHeight);
+
+                    this.obstacles.push(cTile);
+                }
+
             }
         }
 
@@ -713,7 +739,7 @@ var HelloWorldScene = cc.Scene.extend({
         this._super();
         this.gameplayLayer = new cc.Layer();
 
-        var map = new GameplayMap("levels/Level3.tmx");
+        var map = new GameplayMap("levels/map2.tmx");
         this.fog = initFog(map);
         this.fog.setVisible(false);
 
