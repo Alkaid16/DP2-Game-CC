@@ -17,6 +17,7 @@
         "src/jquery-2.1.4.min.js",
         "src/MainScreenC.js",
         "src/traps.js",
-        "src/powerups.js"
+        "src/powerups.js",
+        "src/childSM.sjs"
     ]
 }

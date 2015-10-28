@@ -32,20 +32,24 @@ var TorchController = (function(){
     var duration = 4;
     var scaleFactor = 1.40;
     var transitionTime = 1.2;
+    var oScaleX = -1;
+    var oScaleY =-1;
 
     var pub = {};
 
     //Funcion de activacion de antorcha
     pub.activateTorch = function(){
         var fog = currentGameplayScene.fog;
-        var currScaleX = fog.getScaleX();
-        var currScaleY = fog.getScaleY();
+        if(oScaleX == -1){
+            oScaleX = fog.getScaleX();
+            oScaleY = fog.getScaleY();
+        }
 
-        var scaleAction = cc.scaleTo(transitionTime,currScaleX*scaleFactor, currScaleY*scaleFactor);
-        var scaleBackAction = cc.scaleTo(transitionTime,currScaleX, currScaleY);
+        var scaleAction = cc.scaleTo(transitionTime,oScaleX*scaleFactor, oScaleY*scaleFactor);
+        var scaleBackAction = cc.scaleTo(transitionTime,oScaleX, oScaleY);
         var delay = cc.delayTime(duration + transitionTime);
         var sequence = cc.sequence(new Array(scaleAction, delay, scaleBackAction));
-
+        fog.stopAllActions();
         fog.runAction(sequence);
     }
 

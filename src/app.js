@@ -465,13 +465,14 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
         this.obstacles = [];
         this.initTileMatrix();
-
         this.initObstacles();
 
         this.sprite= new cc.Sprite("res/Bola1.png");
         this.sprite.setVisible(false);
         this.monster = new cc.Sprite("res/monster.jpg");
         this.monster.setPosition(size.width/2,-300);
+
+        ChildSM.setChild(sprite);
 
         this.getMatrixPosX = function(pixelX, tileWidth){
             var modX = pixelX % tileWidth;
@@ -749,7 +750,7 @@ var HelloWorldScene = cc.Scene.extend({
         this.gameplayLayer.addChild(this.fog, 20);
 
         //inicializo el zoom
-        zoomGame.ctor(0,0.01,0,0.285);
+        zoomGame.ctor(0,0.01,0,0.280);
 
         //Se inicializa el modulo de movimiento del niño
         childMoveAction.setMainLayer(map);
