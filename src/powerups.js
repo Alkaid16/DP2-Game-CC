@@ -13,7 +13,7 @@ function executePowerup(tile, x,y){
             //TODO
             break;
         case '1':
-            //TODO
+            clockController.activateClock();
             break;
         case '2':
             TorchController.activateTorch();
@@ -26,6 +26,41 @@ function executePowerup(tile, x,y){
     powerupLayer.setTileGID(0,x,y);
     powerupLayer.removeTileAt(cc.p(x,y));
 }
+
+//objetivo: relantizar el objeto monstruo un tiempo n en milisengundos
+var clockController = {
+
+    activateClock: function(){
+        this.flag_avtivatePowerUp=true;
+        console.log("Clock activado");
+    },
+
+    getSpeed: function(){
+        console.log(this.currentSpeed);
+        console.log(this.currentTime);
+
+        if(this.flag_avtivatePowerUp)
+        {
+            this.currentSpeed = this.monster_speed*(1-this.porcentajeDis/100);
+            this.currentTime--;
+            if(this.currentTime==0)
+            {
+                this.currentTime= this.timeMiliseg;
+                this.flag_avtivatePowerUp=false;
+                this.currentSpeed = this.monster_speed;
+            }
+        }
+
+        return this.currentSpeed;
+    },
+
+    flag_avtivatePowerUp:false,
+    timeMiliseg:200,
+    currentTime:200,
+    porcentajeDis:30,//Porcentaje de la velocidad que se disminuirá del monstruo
+    monster_speed:0.75,
+    currentSpeed:0.75,
+};
 
 var TorchController = (function(){
     //Variables de antorcha
