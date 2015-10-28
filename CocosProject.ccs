@@ -31,6 +31,32 @@
         <Project Name="MainScreen.csd" Type="Scene" />
         <Image Name="buttonNormal.png" />
         <Image Name="buttonPressed.png" />
+        <Folder Name="res_views">
+          <Image Name="button-left.jpg" />
+          <Image Name="button-left.png" />
+          <Image Name="button-right.png" />
+          <Image Name="foto1.jpg" />
+          <Image Name="foto2.jpg" />
+          <Image Name="foto3.jpg" />
+          <Image Name="lock.png" />
+          <Image Name="logo.png" />
+          <Image Name="wallpaper.jpg" />
+          <Image Name="wallpaper.png" />
+          <Image Name="wallpaper1.png" />
+          <Image Name="wallpaper_selector.jpg" />
+        </Folder>
+        <Folder Name="views">
+          <Project Name="ranking_result_view.csd" Type="Scene" />
+          <Project Name="level_selector_view.csd" Type="Scene" />
+          <Project Name="main_view.csd" Type="Scene" />
+          <Project Name="pause.csd" Type="Scene" />
+          <Project Name="splash_view.csd" Type="Scene" />
+          <Project Name="loading_view.csd" Type="Scene" />
+          <Project Name="cinematic_view.csd" Type="Scene" />
+          <Project Name="invitation_view.csd" Type="Scene" />
+          <Project Name="credits_view.csd" Type="Scene" />
+          <Project Name="options_view.csd" Type="Scene" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

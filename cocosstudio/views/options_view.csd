@@ -1,0 +1,135 @@
+<GameProjectFile>
+  <PropertyGroup Type="Scene" Name="options_view" ID="8c91939a-14a1-434a-94a4-27b318aea1c8" Version="2.3.2.3" />
+  <Content ctype="GameProjectContent">
+    <Content>
+      <Animation Duration="0" Speed="1.0000" />
+      <ObjectData Name="Scene" Tag="77" ctype="GameNodeObjectData">
+        <Size X="640.0000" Y="640.0000" />
+        <Children>
+          <AbstractNodeData Name="wallpaper_selector_3" ActionTag="-82604212" Tag="96" IconVisible="False" LeftMargin="0.6411" RightMargin="380.3589" TopMargin="217.6868" BottomMargin="228.3132" ctype="SpriteObjectData">
+            <Size X="259.0000" Y="194.0000" />
+            <AnchorPoint ScaleY="0.5000" />
+            <Position X="0.6411" Y="325.3132" />
+            <Scale ScaleX="2.4645" ScaleY="3.3262" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.0010" Y="0.5083" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <FileData Type="Normal" Path="res_views/wallpaper_selector.jpg" Plist="" />
+            <BlendFunc Src="770" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Panel_2" ActionTag="-617356215" Tag="97" IconVisible="False" LeftMargin="99.6813" RightMargin="340.3187" TopMargin="5.3315" BottomMargin="434.6685" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+            <Size X="200.0000" Y="200.0000" />
+            <Children>
+              <AbstractNodeData Name="Text_2" ActionTag="1531033150" Tag="98" IconVisible="False" LeftMargin="60.1885" RightMargin="56.8114" TopMargin="35.3369" BottomMargin="118.6631" FontSize="20" LabelText="Opciones&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="83.0000" Y="46.0000" />
+                <AnchorPoint ScaleX="0.4999" ScaleY="1.1659" />
+                <Position X="101.6836" Y="172.2933" />
+                <Scale ScaleX="1.9446" ScaleY="2.5665" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5084" Y="0.8615" />
+                <PreSize X="0.0000" Y="0.0000" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint ScaleY="0.5000" />
+            <Position X="99.6813" Y="534.6685" />
+            <Scale ScaleX="2.2597" ScaleY="0.7231" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.1558" Y="0.8354" />
+            <PreSize X="0.3125" Y="0.3125" />
+            <SingleColor A="255" R="150" G="200" B="255" />
+            <FirstColor A="255" R="150" G="200" B="255" />
+            <EndColor A="255" R="255" G="255" B="255" />
+            <ColorVector ScaleY="1.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Panel_3" ActionTag="758573096" Tag="99" IconVisible="False" LeftMargin="214.5871" RightMargin="225.4129" TopMargin="226.8192" BottomMargin="213.1808" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+            <Size X="200.0000" Y="200.0000" />
+            <Children>
+              <AbstractNodeData Name="Text_3" ActionTag="1655676636" Tag="100" IconVisible="False" LeftMargin="23.4235" RightMargin="116.5765" TopMargin="34.8219" BottomMargin="142.1781" FontSize="20" LabelText="Sonido" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="60.0000" Y="23.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="53.4235" Y="153.6781" />
+                <Scale ScaleX="1.3392" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2671" Y="0.7684" />
+                <PreSize X="0.0000" Y="0.0000" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="TextField_1" ActionTag="-1041161259" CallBackType="Click" Tag="101" IconVisible="False" LeftMargin="110.2575" RightMargin="-10.2575" TopMargin="35.9904" BottomMargin="137.0096" TouchEnable="True" FontSize="20" IsCustomSize="True" LabelText="" PlaceHolderText="On" MaxLengthText="10" ctype="TextFieldObjectData">
+                <Size X="100.0000" Y="27.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="160.2575" Y="150.5096" />
+                <Scale ScaleX="0.7153" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="165" B="0" />
+                <PrePosition X="0.8013" Y="0.7525" />
+                <PreSize X="0.0000" Y="0.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Text_3_0" ActionTag="317232426" Tag="102" IconVisible="False" LeftMargin="22.4151" RightMargin="117.5849" TopMargin="88.5197" BottomMargin="88.4803" FontSize="20" LabelText="Música" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="63.0000" Y="23.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="52.4151" Y="99.9803" />
+                <Scale ScaleX="1.3392" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2621" Y="0.4999" />
+                <PreSize X="0.0000" Y="0.0000" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="TextField_1_0" ActionTag="276911335" CallBackType="Click" Tag="103" IconVisible="False" LeftMargin="112.0504" RightMargin="-12.0504" TopMargin="91.4329" BottomMargin="81.5671" TouchEnable="True" FontSize="20" IsCustomSize="True" LabelText="" PlaceHolderText="On" MaxLengthText="10" ctype="TextFieldObjectData">
+                <Size X="100.0000" Y="27.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="162.0504" Y="95.0671" />
+                <Scale ScaleX="0.7153" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="165" B="0" />
+                <PrePosition X="0.8103" Y="0.4753" />
+                <PreSize X="0.0000" Y="0.0000" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
+            <Position X="314.5871" Y="413.1808" />
+            <Scale ScaleX="2.1767" ScaleY="1.4395" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.4915" Y="0.6456" />
+            <PreSize X="0.3125" Y="0.3125" />
+            <SingleColor A="255" R="150" G="200" B="255" />
+            <FirstColor A="255" R="150" G="200" B="255" />
+            <EndColor A="255" R="255" G="255" B="255" />
+            <ColorVector ScaleY="1.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Panel_4" ActionTag="-2099956342" Tag="104" IconVisible="False" LeftMargin="97.4803" RightMargin="342.5197" TopMargin="480.2115" BottomMargin="-40.2115" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+            <Size X="200.0000" Y="200.0000" />
+            <Children>
+              <AbstractNodeData Name="Button_1" ActionTag="-1253401132" Tag="105" IconVisible="False" LeftMargin="49.8776" RightMargin="50.1224" TopMargin="14.7339" BottomMargin="149.2661" TouchEnable="True" FontSize="14" ButtonText="Regresar" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="100.0000" Y="36.0000" />
+                <AnchorPoint ScaleX="0.5016" ScaleY="1.2613" />
+                <Position X="100.0345" Y="194.6714" />
+                <Scale ScaleX="1.7016" ScaleY="3.8520" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.5002" Y="0.9734" />
+                <PreSize X="0.5000" Y="0.1800" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+                <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint ScaleY="0.5000" />
+            <Position X="97.4803" Y="59.7885" />
+            <Scale ScaleX="2.1210" ScaleY="0.4517" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.1523" Y="0.0934" />
+            <PreSize X="0.3125" Y="0.3125" />
+            <SingleColor A="255" R="150" G="200" B="255" />
+            <FirstColor A="255" R="150" G="200" B="255" />
+            <EndColor A="255" R="255" G="255" B="255" />
+            <ColorVector ScaleY="1.0000" />
+          </AbstractNodeData>
+        </Children>
+      </ObjectData>
+    </Content>
+  </Content>
+</GameProjectFile>
