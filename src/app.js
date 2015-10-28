@@ -149,6 +149,8 @@ var childMoveAction = (function(){
     var gameStarted = false;
     var mainLayer = {};
     var pub = {};
+    var xNew;
+    var yNew;
     pub.childPosX = 0;
     pub.childPosY = 0;
 
@@ -269,15 +271,66 @@ var childMoveAction = (function(){
         return true;
     }
 
+    var interCollision = function(direction, sprRect, tile){
+        //Si es el primer contacto con el tile de intersección, se registra el mismo y se inicializa
+        //el delay para ejecutar la decisión del usuario
+        if(interHandler.intersectTile==null){
+            interHandler.intersectTile = tile;
+            collisionDelay = tileWidth-1;
+            collisionDelay -= interHandler.excessInIntersection(direction, sprRect, tile.rect);
+            interHandler.choiceAvailable=false;
+            mainLayer.sprite.setColor(new cc.Color(255,255,255,0));
+
+            //Si ya está dentro del tile, se disminuye el valor el contador collisionDelay
+        }else{
+            if(interHandler.choiceExecuted) return 1;
+
+            //Si se acabo el delay se ejecuta la acción y se cambia de direccion
+            if(collisionDelay==0){
+                interHandler.executeChoice();
+                var array = updatePosition();
+                xNew = array[0];
+                yNew = array[1];
+            }
+            //Si el delay es negativo, se debe retroceder la cantidad excedida en la direccion contraria
+            else if(collisionDelay - speed<0){
+                var excess = speed - collisionDelay;
+                collisionDelay = 0;
+                switch(direction){
+                    case 0:
+                        yNew -= excess;
+                        break;
+                    case 1:
+                        yNew += excess;
+                        break;
+                    case 2:
+                        xNew += excess;
+                        break;
+                    case 3:
+                        xNew -=excess;
+                        break;
+                }
+            }
+            else{
+                //Delay para activar la decision tomada por el jugador
+                collisionDelay =collisionDelay - speed ;
+            }
+        }
+        return 0;
+    }
+
     //Metodo principal de movimiento
     pub.update = function(){
         if(!gameStarted){
             if(zoomGame.autoZoomIn()) return;
             else{
                 gameStarted = true;
+                ChildSM.startRunning();
                 currentGameplayScene.startMaze();
             }
         }
+
+        if(ChildSM.isStopped()) return;
 
         var sprite = mainLayer.sprite;
         var monstruo = mainLayer.monster;
@@ -290,16 +343,14 @@ var childMoveAction = (function(){
 
         //Se halla la nueva posición del niño
         var array =updatePosition();
-        var xNew = array[0];
-        var yNew = array[1];
+        xNew = array[0];
+        yNew = array[1];
 
         var spriteWidth = sprite.width;
         var rect1 = cc.rect(xNew-spriteWidth/2,yNew - spriteWidth/2,spriteWidth,spriteWidth);
 
         var posX = mainLayer.getMatrixPosX(pub.childPosX, tileWidth);
         var posY = mainLayer.getMatrixPosY(pub.childPosY, tileWidth);
-
-
 
         //Condicion de victoria
         if(posX == mainLayer.finishPoint[0] && posY == mainLayer.finishPoint[1]){
@@ -328,58 +379,21 @@ var childMoveAction = (function(){
             if(cc.rectIntersectsRect(rect1,tile.rect)){
                 //Si choca contra un powerup
                 if('powerup' in tile){
-                    executePowerup(tile, tile.x, tile.y);
+                    executePowerup(tile);
                     break;
+                }
+
+                //Si choca contra una trampa
+                if('trap' in tile){
+                    executeTrap(tile);
+                    break
                 }
 
                 //Si choca con una interseccion
                 if(tile.typeTerr == 2){
-                    //Si es el primer contacto con el tile de intersección, se registra el mismo y se inicializa
-                    //el delay para ejecutar la decisión del usuario
-                    if(interHandler.intersectTile==null){
-                        interHandler.intersectTile = tile;
-                        collisionDelay = tileWidth-1;
-                        collisionDelay -= interHandler.excessInIntersection(direction, rect1, tile.rect);
-                        interHandler.choiceAvailable=false;
-                        mainLayer.sprite.setColor(new cc.Color(255,255,255,0));
-
-                    //Si ya está dentro del tile, se disminuye el valor el contador collisionDelay
-                    }else{
-                        if(interHandler.choiceExecuted) continue;
-
-                        //Si se acabo el delay se ejecuta la acción y se cambia de direccion
-                        if(collisionDelay==0){
-                            interHandler.executeChoice();
-                            var array = updatePosition();
-                            xNew = array[0];
-                            yNew = array[1];
-                        }
-                        //Si el delay es negativo, se debe retroceder la cantidad excedida en la direccion contraria
-                        else if(collisionDelay - speed<0){
-                            var excess = speed - collisionDelay;
-                            collisionDelay = 0;
-                            switch(direction){
-                                case 0:
-                                    yNew -= excess;
-                                    break;
-                                case 1:
-                                    yNew += excess;
-                                    break;
-                                case 2:
-                                    xNew += excess;
-                                    break;
-                                case 3:
-                                    xNew -=excess;
-                                    break;
-                            }
-                            break;
-                        }
-                        else{
-                            //Delay para activar la decision tomada por el jugador
-                            collisionDelay =collisionDelay - speed ;
-                        }
-                    }
-                    break;
+                    var result = interCollision(direction, rect1, tile);
+                    if(result==0)break;
+                    else continue;
                 }
 
                 if(!isTrueCollision(rect1, tile.rect)) return;
@@ -500,6 +514,13 @@ var GameplayMap = cc.TMXTiledMap.extend({
             onKeyPressed:  function(keyCode, event){
                 if(!interHandler.choiceAvailable) return;
                 interHandler.recordChoice(keyCode);
+            },
+
+            onKeyReleased: function(keyCode, event){
+                if(BoardController.isActivated() && keyCode>=65 && keyCode<=90){
+                    var letter = String.fromCharCode(keyCode);
+                    BoardController.keyboardInput(letter);
+                }
             }
 
         }, this);
@@ -542,14 +563,13 @@ var GameplayMap = cc.TMXTiledMap.extend({
         for (i = 0; i < mapWidth; i++) {
             for (j = 0; j < mapHeight; j++) {
                 var tileCoord = new cc.Point(i, j);
+                var tileXPosition = i * tileWidth;
+                var tileYPosition = (mapHeight * tileHeight)
+                    - ((j + 1) * tileHeight);
 
                 //Paredes
                 var gid = collidableLayer.getTileGIDAt(tileCoord);
                 if (gid) {
-                    var tileXPosition = i * tileWidth;
-                    var tileYPosition = (mapHeight * tileHeight)
-                        - ((j + 1) * tileHeight);
-
                     var cTile = {};
                     cTile.typeTerr = 1;
                     cTile.rect = cc.rect(tileXPosition, tileYPosition,
@@ -562,10 +582,6 @@ var GameplayMap = cc.TMXTiledMap.extend({
                 //Intersecciones
                 gid = intersectionLayer.getTileGIDAt(tileCoord);
                 if (gid) {
-                    tileXPosition = i * tileWidth;
-                    tileYPosition = (mapHeight * tileHeight)
-                        - ((j + 1) * tileHeight);
-
                     cTile = {};
                     cTile.typeTerr = 2;
                     cTile.rect = cc.rect(tileXPosition, tileYPosition,
@@ -584,12 +600,28 @@ var GameplayMap = cc.TMXTiledMap.extend({
                     if(!('powerup' in tilePropEntry)) continue;
 
                     var idPowerup = tilePropEntry['powerup'];
-                    tileXPosition = i * tileWidth;
-                    tileYPosition = (mapHeight * tileHeight)
-                        - ((j + 1) * tileHeight);
 
                     cTile = {};
                     cTile.powerup = idPowerup;
+                    cTile.x = i;
+                    cTile.y = j;
+                    cTile.rect = cc.rect(tileXPosition, tileYPosition,
+                        tileWidth, tileHeight);
+
+                    this.obstacles.push(cTile);
+                }
+
+                //Traps
+                gid = trapLayer.getTileGIDAt(tileCoord);
+                if (gid) {
+                    if(!(gid in tileProps)) continue;
+                    var tilePropEntry = tileProps[""+gid];
+                    if(!('trap' in tilePropEntry)) continue;
+
+                    var idTrap = tilePropEntry['trap'];
+
+                    cTile = {};
+                    cTile.trap = idTrap;
                     cTile.x = i;
                     cTile.y = j;
                     cTile.rect = cc.rect(tileXPosition, tileYPosition,

@@ -2,6 +2,11 @@
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="70" tilewidth="32" tileheight="32" nextobjectid="1">
  <tileset firstgid="1" name="t1" tilewidth="32" tileheight="32" tilecount="483">
   <image source="Tilesets/terrain.png" width="672" height="736"/>
+  <tile id="15">
+   <properties>
+    <property name="trap" value="0"/>
+   </properties>
+  </tile>
   <tile id="67">
    <properties>
     <property name="Start" value="0"/>
@@ -15,6 +20,11 @@
  </tileset>
  <tileset firstgid="484" name="random" tilewidth="32" tileheight="32" tilecount="3072">
   <image source="Tilesets/random.png" width="2048" height="1536"/>
+  <tile id="742">
+   <properties>
+    <property name="trap" value="2"/>
+   </properties>
+  </tile>
   <tile id="1209">
    <properties>
     <property name="powerup" value="2"/>
@@ -23,6 +33,16 @@
   <tile id="1292">
    <properties>
     <property name="powerup" value="1"/>
+   </properties>
+  </tile>
+  <tile id="2924">
+   <properties>
+    <property name="trap" value="3"/>
+   </properties>
+  </tile>
+  <tile id="2983">
+   <properties>
+    <property name="trap" value="1"/>
    </properties>
   </tile>
  </tileset>
@@ -63,6 +83,11 @@
  <layer name="Debug" width="20" height="70">
   <data encoding="base64" compression="zlib">
    eJztlFsKhTAMRN3/ptyavxfJ40ymIng7IAjVM9M0zXFsbcU6g8fluf5RHpqP+qvfkXxv8rK1CS+q+5T3y3V5VV9MeZmHw+t6uPPOemHC63JG/h1PyUl5NCfNTmdJxXOU8ci8q7K7PJqXiMweJZdb83uuL/JW1++pnlD7j/BW6Emec/8y3grvO4/Mb5Kzm53Uu5vPkQ/JGq25PHr/pvO54zki9Z3mVHg0p7Kn7ht1L65ITR1etu7wJudU1W/FuTv7VWfO27xo3eVV75EXPdOK192nSb7qX5qb+qu8Ki8VPQ/l2foPXRTjXTw=
+  </data>
+ </layer>
+ <layer name="Traps" width="20" height="70">
+  <data encoding="base64" compression="zlib">
+   eJzt1aENACAQBEEEloTS6IvOqAqJwJEnb2Yq2OTElQIAAESZLbsAjp4dwBd2JcKq2QW34UPhyQZxEwHk
   </data>
  </layer>
 </map>
