@@ -6,16 +6,15 @@
       <ObjectData Name="Scene" Tag="8" ctype="GameNodeObjectData">
         <Size X="640.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="wallpaper1_1" ActionTag="-1675221034" Tag="11" IconVisible="False" LeftMargin="3.7708" RightMargin="239.2292" TopMargin="220.7624" BottomMargin="219.2376" ctype="SpriteObjectData">
+          <AbstractNodeData Name="Image_2" ActionTag="1916385062" Tag="69" IconVisible="False" LeftMargin="3.5804" RightMargin="239.4196" TopMargin="218.6906" BottomMargin="221.3094" Scale9Width="397" Scale9Height="200" ctype="ImageViewObjectData">
             <Size X="397.0000" Y="200.0000" />
             <AnchorPoint ScaleY="0.5000" />
-            <Position X="3.7708" Y="319.2376" />
-            <Scale ScaleX="1.5954" ScaleY="3.1933" />
+            <Position X="3.5804" Y="321.3094" />
+            <Scale ScaleX="1.5905" ScaleY="3.1623" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0059" Y="0.4988" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="0.0056" Y="0.5020" />
+            <PreSize X="0.6203" Y="0.3125" />
             <FileData Type="Normal" Path="res_views/wallpaper1.png" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="Text_1" ActionTag="382820312" Tag="14" IconVisible="False" LeftMargin="259.0748" RightMargin="257.9252" TopMargin="57.7871" BottomMargin="567.2129" FontSize="12" LabelText="&lt;&lt;Nombre del Juego&gt;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="123.0000" Y="15.0000" />

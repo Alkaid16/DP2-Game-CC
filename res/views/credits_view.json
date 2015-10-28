@@ -1,0 +1,28 @@
+{
+  "ID": "b587e14c-8f17-4735-ba44-2936d2830703",
+  "Version": "2.3.2.3",
+  "Name": "credits_view",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 76,
+        "Size": {
+          "X": 640.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

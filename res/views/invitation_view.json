@@ -1,0 +1,294 @@
+{
+  "ID": "46a05952-6b1c-404e-a878-6e6f9bf79808",
+  "Version": "2.3.2.3",
+  "Name": "invitation_view",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 75,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res_views/wallpaper_selector.jpg",
+              "Plist": ""
+            },
+            "Scale9Width": 259,
+            "Scale9Height": 194,
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 1.4272,
+              "Y": 320.9501
+            },
+            "Scale": {
+              "ScaleX": 2.4752,
+              "ScaleY": 3.2877
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0022,
+              "Y": 0.5015
+            },
+            "PreSize": {
+              "X": 0.4047,
+              "Y": 0.3031
+            },
+            "LeftMargin": 1.4272,
+            "RightMargin": 379.5728,
+            "TopMargin": 222.0499,
+            "BottomMargin": 223.9501,
+            "Tag": 28,
+            "ActionTag": 1708567202,
+            "Size": {
+              "X": 259.0,
+              "Y": 194.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Muchas gracias por jugar <<Nombre del Juego>>!!",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.4981,
+              "ScaleY": 0.5217
+            },
+            "Position": {
+              "X": 329.7327,
+              "Y": 469.8445
+            },
+            "Scale": {
+              "ScaleX": 1.3801,
+              "ScaleY": 1.6508
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5152,
+              "Y": 0.7341
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 106.6029,
+            "RightMargin": 85.3971,
+            "TopMargin": 159.1552,
+            "BottomMargin": 457.8448,
+            "Tag": 29,
+            "ActionTag": -414286772,
+            "Size": {
+              "X": 448.0,
+              "Y": 23.0
+            },
+            "Name": "Text_1",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Texto de Invitación",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 103.3438,
+              "Y": 390.0053
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.4411
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1615,
+              "Y": 0.6094
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 22.3438,
+            "RightMargin": 455.6562,
+            "TopMargin": 238.4947,
+            "BottomMargin": 378.5053,
+            "Tag": 30,
+            "ActionTag": 796398798,
+            "Size": {
+              "X": 162.0,
+              "Y": 23.0
+            },
+            "Name": "Text_2",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
+              "Plist": ""
+            },
+            "Scale9Width": 46,
+            "Scale9Height": 46,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 308.6884,
+              "Y": 299.0786
+            },
+            "Scale": {
+              "ScaleX": 3.5154,
+              "ScaleY": 2.3835
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4823,
+              "Y": 0.4673
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 285.6884,
+            "RightMargin": 308.3116,
+            "TopMargin": 317.9214,
+            "BottomMargin": 276.0786,
+            "Tag": 31,
+            "ActionTag": 297076349,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "Name": "Image_2",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "Visita AFI Perú",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 323.9517,
+              "Y": 162.5627
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5062,
+              "Y": 0.254
+            },
+            "PreSize": {
+              "X": 0.3125,
+              "Y": 0.0562
+            },
+            "LeftMargin": 223.9517,
+            "RightMargin": 216.0483,
+            "TopMargin": 459.4373,
+            "BottomMargin": 144.5627,
+            "Tag": 32,
+            "ActionTag": -366999809,
+            "Size": {
+              "X": 200.0,
+              "Y": 36.0
+            },
+            "Name": "Button_1",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../Default/Button_Disable.png",
+        "../Default/Button_Normal.png",
+        "../Default/Button_Press.png",
+        "../Default/ImageFile.png",
+        "../res_views/wallpaper_selector.jpg"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

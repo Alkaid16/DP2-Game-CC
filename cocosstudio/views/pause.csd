@@ -6,16 +6,15 @@
       <ObjectData Name="Scene" Tag="9" ctype="GameNodeObjectData">
         <Size X="640.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="wallpaper_selector_1" ActionTag="-1511091280" Tag="10" IconVisible="False" LeftMargin="1.3247" RightMargin="379.6753" TopMargin="227.4678" BottomMargin="218.5322" ctype="SpriteObjectData">
+          <AbstractNodeData Name="Image_1" ActionTag="1816586795" Tag="90" IconVisible="False" LeftMargin="-0.1769" RightMargin="381.1769" TopMargin="225.7295" BottomMargin="220.2705" Scale9Width="259" Scale9Height="194" ctype="ImageViewObjectData">
             <Size X="259.0000" Y="194.0000" />
             <AnchorPoint ScaleY="0.5000" />
-            <Position X="1.3247" Y="315.5322" />
-            <Scale ScaleX="2.4679" ScaleY="3.2863" />
+            <Position X="-0.1769" Y="317.2705" />
+            <Scale ScaleX="2.4669" ScaleY="3.2709" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0021" Y="0.4930" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="-0.0003" Y="0.4957" />
+            <PreSize X="0.4047" Y="0.3031" />
             <FileData Type="Normal" Path="res_views/wallpaper_selector.jpg" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="Panel_1" ActionTag="-430506184" Tag="61" IconVisible="False" LeftMargin="102.3518" RightMargin="337.6482" TopMargin="125.6262" BottomMargin="314.3738" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="200.0000" Y="200.0000" />

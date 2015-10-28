@@ -7,22 +7,6 @@
         <Image Name="HelloWorld.png" />
         <Image Name="Bola.png" />
         <Image Name="block.png" />
-        <PlistInfo Name="boy_up.csi" Type="Plist" />
-        <PlistInfo Name="boy_down.csi" Type="Plist" />
-        <Folder Name="boy_up">
-          <Image Name="person1-up.png" />
-          <Image Name="person2-up.png" />
-          <Image Name="person3-up.png" />
-          <Image Name="person4-up.png" />
-        </Folder>
-        <Folder Name="boy_down">
-          <Image Name="person1-down.png" />
-          <Image Name="person2-down.png" />
-          <Image Name="person3-down.png" />
-          <Image Name="person4-down.png" />
-        </Folder>
-        <Project Name="boy_up_animation.csd" Type="Node" />
-        <Project Name="boy_down_animation.csd" Type="Node" />
         <TmxFile Name="mapa.tmx" />
         <Folder Name="levels">
           <TmxFile Name="map2.tmx" />
@@ -32,18 +16,11 @@
         <Image Name="buttonNormal.png" />
         <Image Name="buttonPressed.png" />
         <Folder Name="res_views">
-          <Image Name="button-left.jpg" />
-          <Image Name="button-left.png" />
-          <Image Name="button-right.png" />
-          <Image Name="foto1.jpg" />
-          <Image Name="foto2.jpg" />
-          <Image Name="foto3.jpg" />
-          <Image Name="lock.png" />
           <Image Name="logo.png" />
-          <Image Name="wallpaper.jpg" />
-          <Image Name="wallpaper.png" />
           <Image Name="wallpaper1.png" />
           <Image Name="wallpaper_selector.jpg" />
+          <Image Name="modal_level_wallpaper.jpg" />
+          <Image Name="exit.png" />
         </Folder>
         <Folder Name="views">
           <Project Name="ranking_result_view.csd" Type="Scene" />
@@ -56,6 +33,7 @@
           <Project Name="invitation_view.csd" Type="Scene" />
           <Project Name="credits_view.csd" Type="Scene" />
           <Project Name="options_view.csd" Type="Scene" />
+          <Project Name="level_modal.csd" Type="Layer" />
         </Folder>
       </RootFolder>
     </Group>

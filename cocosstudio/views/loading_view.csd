@@ -6,24 +6,23 @@
       <ObjectData Name="Scene" Tag="73" ctype="GameNodeObjectData">
         <Size X="640.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="wallpaper1_1" ActionTag="-1787569803" Tag="83" IconVisible="False" LeftMargin="0.8491" RightMargin="242.1509" TopMargin="222.9933" BottomMargin="217.0067" ctype="SpriteObjectData">
-            <Size X="397.0000" Y="200.0000" />
-            <AnchorPoint ScaleY="0.5000" />
-            <Position X="0.8491" Y="317.0067" />
-            <Scale ScaleX="1.6067" ScaleY="3.2287" />
+          <AbstractNodeData Name="Image_1" ActionTag="-1418057157" Tag="59" IconVisible="False" LeftMargin="-0.1573" RightMargin="381.1573" TopMargin="221.4901" BottomMargin="224.5100" Scale9Width="259" Scale9Height="194" ctype="ImageViewObjectData">
+            <Size X="259.0000" Y="194.0000" />
+            <AnchorPoint ScaleY="0.5094" />
+            <Position X="-0.1573" Y="323.3405" />
+            <Scale ScaleX="2.4825" ScaleY="3.3126" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0013" Y="0.4953" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="res_views/wallpaper1.png" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
+            <PrePosition X="-0.0002" Y="0.5052" />
+            <PreSize X="0.4047" Y="0.3031" />
+            <FileData Type="Normal" Path="res_views/wallpaper_selector.jpg" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="logo_2" ActionTag="-257226806" Tag="84" IconVisible="False" LeftMargin="235.6298" RightMargin="244.3702" TopMargin="213.9263" BottomMargin="266.0737" ctype="SpriteObjectData">
+          <AbstractNodeData Name="logo_2" ActionTag="-257226806" Tag="84" IconVisible="False" LeftMargin="235.6298" RightMargin="244.3702" TopMargin="141.1746" BottomMargin="338.8254" ctype="SpriteObjectData">
             <Size X="160.0000" Y="160.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="315.6298" Y="346.0737" />
+            <Position X="315.6298" Y="418.8254" />
             <Scale ScaleX="1.4499" ScaleY="1.4499" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4932" Y="0.5407" />
+            <PrePosition X="0.4932" Y="0.6544" />
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="res_views/logo.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
@@ -52,30 +51,6 @@
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Panel_2" ActionTag="2036947141" Tag="95" IconVisible="False" LeftMargin="63.6819" RightMargin="376.3181" TopMargin="-5.7427" BottomMargin="445.7427" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
-            <Size X="200.0000" Y="200.0000" />
-            <AnchorPoint ScaleY="0.5000" />
-            <Position X="63.6819" Y="545.7427" />
-            <Scale ScaleX="2.3843" ScaleY="0.5847" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0995" Y="0.8527" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <SingleColor A="255" R="150" G="200" B="255" />
-            <FirstColor A="255" R="150" G="200" B="255" />
-            <EndColor A="255" R="255" G="255" B="255" />
-            <ColorVector ScaleY="1.0000" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Text_1" ActionTag="1736834453" Tag="86" IconVisible="False" LeftMargin="250.9399" RightMargin="279.0601" TopMargin="39.1957" BottomMargin="577.8043" FontSize="20" LabelText="Cargando ..." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="110.0000" Y="23.0000" />
-            <AnchorPoint ScaleX="0.4897" ScaleY="1.1788" />
-            <Position X="304.8068" Y="604.9160" />
-            <Scale ScaleX="3.7065" ScaleY="3.8479" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4763" Y="0.9452" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
