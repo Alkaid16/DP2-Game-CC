@@ -472,7 +472,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this.monster = new cc.Sprite("res/monster.jpg");
         this.monster.setPosition(size.width/2,-300);
 
-        ChildSM.setChild(sprite);
+        ChildSM.setChild(this.sprite);
 
         this.getMatrixPosX = function(pixelX, tileWidth){
             var modX = pixelX % tileWidth;

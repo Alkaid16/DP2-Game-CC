@@ -13,6 +13,19 @@
    </properties>
   </tile>
  </tileset>
+ <tileset firstgid="484" name="random" tilewidth="32" tileheight="32" tilecount="3072">
+  <image source="Tilesets/random.png" width="2048" height="1536"/>
+  <tile id="1209">
+   <properties>
+    <property name="powerup" value="2"/>
+   </properties>
+  </tile>
+  <tile id="1292">
+   <properties>
+    <property name="powerup" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
  <layer name="StartFinish" width="20" height="70">
   <properties>
    <property name="finish" value="19,7"/>
@@ -44,7 +57,12 @@
  </layer>
  <layer name="Powerups" width="20" height="70">
   <data encoding="base64" compression="zlib">
-   eJzt0jENAAAIBLHXjnI8wEBIWgU3XAIAAAB8V9cBMOBb2GvMrAEF
+   eJzt1EENACAMBMG+6t8AHpHQDw5o0hBmFNxjcxEAAAB/2Tm9APotXXO89HG6hXsFS7YDMw==
+  </data>
+ </layer>
+ <layer name="Debug" width="20" height="70">
+  <data encoding="base64" compression="zlib">
+   eJztlFsKhTAMRN3/ptyavxfJ40ymIng7IAjVM9M0zXFsbcU6g8fluf5RHpqP+qvfkXxv8rK1CS+q+5T3y3V5VV9MeZmHw+t6uPPOemHC63JG/h1PyUl5NCfNTmdJxXOU8ci8q7K7PJqXiMweJZdb83uuL/JW1++pnlD7j/BW6Emec/8y3grvO4/Mb5Kzm53Uu5vPkQ/JGq25PHr/pvO54zki9Z3mVHg0p7Kn7ht1L65ITR1etu7wJudU1W/FuTv7VWfO27xo3eVV75EXPdOK192nSb7qX5qb+qu8Ki8VPQ/l2foPXRTjXTw=
   </data>
  </layer>
 </map>

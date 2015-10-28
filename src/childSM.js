@@ -7,7 +7,7 @@ var ChildSM = (function(){
     //Arreglo con las 4 animaciones para correr
     var runAnims;
 
-    var animFrames = [];
+    /*var animFrames = [];
     //Se crean los frames de la animaci?n
     for(var i=1;i<5;i++){
         var str = "res/Bola"+i+".png";
@@ -16,7 +16,7 @@ var ChildSM = (function(){
     }
 
     var animation = new cc.Animation(animFrames, 0.08, 100);
-    var animate   = cc.animate(animation);
+    var animate   = cc.animate(animation);*/
 
     pub.setDirection = function(direction){
         dir = direction;
