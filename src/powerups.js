@@ -14,14 +14,12 @@ function executePowerup(tile){
             TorchController.activateTorch();
             break;
         case '2':
-            //TODO
             ShieldController.activateShield();
             break;
         case '3':
             clockController.activateClock();
             break;
         case '4':
-            //TODO
             ShoesController.activeShoes();
             break;
     }
