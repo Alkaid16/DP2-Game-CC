@@ -147,6 +147,7 @@ var childMoveAction = (function(){
     var dummyBool = false;
     var collisionDelay = 0;
     var gameStarted = false;
+    var haveShield = false;
     var mainLayer = {};
     var pub = {};
     var xNew;
@@ -160,6 +161,19 @@ var childMoveAction = (function(){
     pub.setMainLayer = function(layer) {
         mainLayer = layer;
     };
+
+    pub.getSpeedSprite = function(){
+        return speed;
+    }
+
+    pub.updateSpeed = function(spd){
+        speed = spd;
+    }
+
+    pub.updateShield = function(val){
+        haveShield = val;
+    }
+
 
     //monstY += speed; ESTO SE DEBE SACAR Y PONER EN OTRO MODULO
     //if(monstY >= size.height){

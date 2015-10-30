@@ -7,6 +7,7 @@ function executeTrap(tile){
     switch(idTrap){
         case '1':
             //TODO
+            HoleController.ativateHole();
             break;
         case '2':
             BoardController.activateBoard();
@@ -104,6 +105,29 @@ var BoardController = (function(){
     }
 
     return pub;
+})();
+
+var HoleController = (function(){
+    var jump = gameplayMap.sprite;
+    var sizeFactor = 1.20;
+    var keycode = this.storedDecision;
+    var scX = jump.getScaleX();
+    var scY = jump.getScaleY();
+
+    pub.activateHole = function(){
+        if (keycode == cc.KEY.space){
+            jump.scaleX *= sizefactor;
+            jump.scaleY *= sizeFactor;
+        }
+        setTimeout(resetSprite,1000);
+        resetSprite = function(){
+            jump.scaleX = scX;
+            jump.scaleY = scY;
+        }
+    }
+    return pub;
+
+
 })();
 
 var MeshController = (function(){

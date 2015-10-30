@@ -15,12 +15,14 @@ function executePowerup(tile){
             break;
         case '2':
             //TODO
+            ShieldController.activateShield();
             break;
         case '3':
             clockController.activateClock();
             break;
         case '4':
             //TODO
+            ShoesController.activeShoes();
             break;
     }
 
@@ -73,7 +75,7 @@ var clockController = {
     currentTime:200,
     porcentajeDis:30,//Porcentaje de la velocidad que se disminuir? del monstruo
     monster_speed:0.75,
-    currentSpeed:0.75,
+    currentSpeed:0.75
 }
 
 
@@ -105,4 +107,44 @@ var TorchController = (function(){
 
 
     return pub;
+})();
+
+var ShoesController = (function(){
+    //se definen las variables
+    var shoesFactor = 1.50;
+    var aux;
+
+    var pub = {};
+
+    pub.activeShoes = function(){
+        aux = childMoveAction.getSpeedSprite();
+        childMoveAction.updateSpeed(aux*shoesFactor);
+        setTimeout(resetSpeed,5000);
+        function resetSpeed(){
+            childMoveAction.updateSpeed(aux);
+        }
+    }
+
+    return pub;
+
+}) ();
+
+var ShieldController = (function(){
+    var aux;
+    var pub = {};
+
+    pub.activateShield = function(){
+        aux = gameplayMap.sprite;
+        aux.setColor(new cc.Color(46, 138, 138, 1));
+        childMoveAction.updateShield(true);
+        setTimeout(resetShield, 5000);
+        function resetShield(){
+            aux.setColor(new cc.Color(255,255,255,0));
+            childMoveAction.updateShield(false);
+        }
+    }
+
+    return pub;
+
+
 })();
