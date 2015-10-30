@@ -456,7 +456,7 @@ var childMoveAction = (function(){
                 return;
             }
         }
-
+        monstY+=clockController.getSpeed();
         mainLayer.sprite.setPosition(xNew,yNew);
         monstruo.setPosition(monstX,monstY);
     }
@@ -527,9 +527,15 @@ var GameplayMap = cc.TMXTiledMap.extend({
             },
 
             onKeyReleased: function(keyCode, event){
+
                 if(BoardController.isActivated() && keyCode>=65 && keyCode<=90){
                     var letter = String.fromCharCode(keyCode);
                     BoardController.keyboardInput(letter);
+                }
+
+                if(MeshController.isActivated()){
+
+                    MeshController.keyboardInput(keyCode);
                 }
             }
 
@@ -549,7 +555,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         //En este caso, se crea una acci�n infinita para que la animacion se reproduzca siempre
         var infiniteAction = new cc.RepeatForever(animate);
 
-        this.addChild(this.monster);
+        this.addChild(this.monster,10);
 
         //Ejecutar acciones de animacion
         this.sprite.runAction(infiniteAction);
@@ -733,66 +739,35 @@ var zoomGame = {
 
     autoZoomIn:function()
     {
-          if(this.currentScale<1)
-          {
-              console.log(this.currentScale);
-              this.currentScale+=this.zoomRange;
-              gameplayMap.setScale(this.currentScale);
-              return true;
-          }else
-            return false;
-
-    },
-
-    //funcion que realiza el zoom sobre el mapa
-    zoomMap:function()
-    {
         if(this.zoomActivate)
         {
-            console.log("printing: "+this.timeLeft);
-            if(this.typeZoom == 0)            {
-                this.currentScale += this.zoomRange;
-            }else
-                this.currentScale -= this.zoomRange;
+            var date = new Date();
+            var curDate = null;
 
-            gameplayMap.setScale(this.currentScale);
-            this.timeLeft--;
-
-
-            if(this.timeLeft==0)
-                this.zoomActivate=false;
+            do { curDate = new Date(); }
+            while(curDate-date < this.timeZoom);
+            this.zoomActivate=false;
         }
 
-        return this.zoomActivate;
-    },
+        if(this.currentScale<1)
+        {
+            this.currentScale+=this.zoomRange;
+            gameplayMap.setScale(this.currentScale);
+            return true;
+        }else
+            return false;
 
-    //Permite resetear el zoom
-    //una vez acabado el zoom, se debe usar esta variable para poder ejecutar
-    //nuevamente el efecto
-    resetZoom:function(){
-
-        this.timeLeft=this.timeZoom;
-        zoomActivate=true;
-    },
-
-    changeTypeZoom:function(type_Zoom)
-    {
-        this.typeZoom=type_Zoom;
     },
 
     zoomRange:0.01,
     typeZoom:1,
     scaleInit:1,
     currentScale:0.1,
-    timeZoom:180,
+    timeZoom:1800,
     timeLeft:180,
 
     zoomActivate:true,
-
 }
-
-
-
 
 var HelloWorldScene = cc.Scene.extend({
     gameplayLayer : null,
