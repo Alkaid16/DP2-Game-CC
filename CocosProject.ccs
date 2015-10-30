@@ -21,6 +21,7 @@
           <Image Name="wallpaper_selector.jpg" />
           <Image Name="modal_level_wallpaper.jpg" />
           <Image Name="exit.png" />
+          <Image Name="willpoint.png" />
         </Folder>
         <Folder Name="views">
           <Project Name="ranking_result_view.csd" Type="Scene" />
@@ -34,6 +35,7 @@
           <Project Name="credits_view.csd" Type="Scene" />
           <Project Name="options_view.csd" Type="Scene" />
           <Project Name="level_modal.csd" Type="Layer" />
+          <Project Name="gameHUD.csd" Type="Layer" />
         </Folder>
       </RootFolder>
     </Group>

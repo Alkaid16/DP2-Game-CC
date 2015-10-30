@@ -20,6 +20,9 @@ var MainSceneC = (function(){
             var ajax = WSHandler.getPlayerInfo(ID);
             $.when(ajax).done( function(){
                 playerInfo = ajax.player;
+                if('idPlayer' in playerInfo) {
+                    WSHandler.getLevelGraph(playerInfo.idPlayer);
+                }
                 alert(playerInfo.childName);
                 btnAction();
             });

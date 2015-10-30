@@ -33,7 +33,22 @@ var WSHandler = (function(){
         });
 
         return -1;
-    }
+    };
+
+    pub.getLevelGraph= function(idPlayer){
+        var func = $.ajax({
+            url: "http://200.16.7.111/afiperularavel/public/game/level/graph?idPlayer=" + idPlayer + "",
+            dataType: "json",
+            crossDomain: true,
+            success: function (data){
+                levelGraph = data;
+            },
+            error: function(xhr){
+                return -1;
+            }
+        });
+        return func;
+    };
 
     return pub;
 })();

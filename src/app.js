@@ -389,6 +389,12 @@ var childMoveAction = (function(){
                     break
                 }
 
+                //Si choca contra un collectable
+                if('collectable' in tile){
+                    pickCollectable(tile);
+                    break
+                }
+
                 //Si choca con una interseccion
                 if(tile.typeTerr == 2){
                     var result = interCollision(direction, rect1, tile);
@@ -465,6 +471,8 @@ var GameplayMap = cc.TMXTiledMap.extend({
     monster:null,
     finishPoint: null,
     tileMatrix:null,
+    collectables: null,
+    willPoints:0,
     intersections: [],
 
     ctor:function (levelName) {
@@ -478,6 +486,8 @@ var GameplayMap = cc.TMXTiledMap.extend({
         var size = cc.winSize;
 
         this.obstacles = [];
+        this.collectables=new Array(0,0,0,0,0);
+        this.willPoints = 2;
         this.initTileMatrix();
         this.initObstacles();
 
@@ -555,6 +565,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
         var collidableLayer = this.getLayer("Collision");
         var intersectionLayer = this.getLayer("Intersection");
+        var collectableLayer = this.getLayer("Collectables");
         var powerupLayer = this.getLayer("Powerups");
         var trapLayer = this.getLayer("Traps");
 
@@ -622,6 +633,25 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
                     cTile = {};
                     cTile.trap = idTrap;
+                    cTile.x = i;
+                    cTile.y = j;
+                    cTile.rect = cc.rect(tileXPosition, tileYPosition,
+                        tileWidth, tileHeight);
+
+                    this.obstacles.push(cTile);
+                }
+
+                //Collectables
+                gid = collectableLayer.getTileGIDAt(tileCoord);
+                if (gid) {
+                    if(!(gid in tileProps)) continue;
+                    var tilePropEntry = tileProps[""+gid];
+                    if(!('collectableId' in tilePropEntry)) continue;
+
+                    var idCollectable = tilePropEntry['collectableId'];
+
+                    cTile = {};
+                    cTile.collectable = idCollectable;
                     cTile.x = i;
                     cTile.y = j;
                     cTile.rect = cc.rect(tileXPosition, tileYPosition,
@@ -766,13 +796,16 @@ var zoomGame = {
 
 var HelloWorldScene = cc.Scene.extend({
     gameplayLayer : null,
+    hudLayer: null,
     fog : null,
 
     ctor: function(){
         this._super();
         this.gameplayLayer = new cc.Layer();
+        var root = ccs.load(res.gameHUD_json);
+        this.hudLayer = root.node;
 
-        var map = new GameplayMap("levels/Level1.tmx");
+        var map = new GameplayMap("levels/map2.tmx");
         this.fog = initFog(map);
         this.fog.setVisible(false);
 
@@ -789,7 +822,7 @@ var HelloWorldScene = cc.Scene.extend({
 
         //Por ultimo, se añade el layer de gameplay a la scene, en el orden Z mas bajo.
         this.addChild(this.gameplayLayer, 0);
-
+        this.addChild(this.hudLayer, 1);
     },
 
     onEnter:function () {

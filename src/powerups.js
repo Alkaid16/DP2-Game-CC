@@ -1,4 +1,5 @@
 //Los IDs de los powerups son: Zapato:4, Reloj:3, Antorcha:1, Escudo:2
+//Collectables: Manzana:1, Libro:2, Cepillo:3, Botella:4, Pelota:5
 
 function executePowerup(tile){
     var powerupLayer = gameplayMap.getLayer("Powerups");
@@ -25,6 +26,20 @@ function executePowerup(tile){
 
     powerupLayer.setTileGID(0,tile.x,tile.y);
     powerupLayer.removeTileAt(cc.p(tile.x,tile.y));
+}
+
+function pickCollectable(tile){
+    var collectableLayer = gameplayMap.getLayer("Collectables");
+    var idCollectable = tile.collectable;
+
+    delete tile.collectable;
+    tile.rect.width=0;
+    tile.rect.height=0;
+
+    gameplayMap.collectables[idCollectable-1] += 1;
+
+    collectableLayer.setTileGID(0,tile.x,tile.y);
+    collectableLayer.removeTileAt(cc.p(tile.x,tile.y));
 }
 
 var TorchController = (function(){

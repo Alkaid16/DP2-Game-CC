@@ -28,6 +28,23 @@ function executeTrap(tile){
     }
 }
 
+function loseWillPoint(){
+    gameplayMap.willPoints -= 1;
+    var points = [];
+    var count = gameplayMap.willPoints;
+    points[0] = currentGameplayScene.hudLayer.getChildByName("pnlWillPoint").getChildByName("wp1");
+    points[1] = currentGameplayScene.hudLayer.getChildByName("pnlWillPoint").getChildByName("wp2");
+
+    for(var i=0; i<points.length; i++){
+        if(count>0){
+            points[i].setVisible(true);
+            count--;
+        }else{
+            points[i].setVisible(false);
+        }
+    }
+}
+
 var BoardController = (function(){
     //Variables de pizarra
     var words = new Array("RESPETO", "CONFIANZA", "SOLIDARIDAD", "AMOR", "TOLERANCIA", "HONESTIDAD");
@@ -52,8 +69,8 @@ var BoardController = (function(){
         charPos = 0;
         var rand = parseInt(Math.random()*words.length);
         selWord = words[rand];
-        label = new cc.LabelTTF(selWord, 'Arial', 18, cc.size(100,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
-        labelTyped = new cc.LabelTTF("", 'Arial', 18, cc.size(100,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        label = new cc.LabelTTF(selWord, 'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        labelTyped = new cc.LabelTTF("", 'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
         labelTyped.setColor(new cc.Color(255,0,0));
 
         label.setPosition(gameplayMap.sprite.getPositionX(), gameplayMap.sprite.getPositionY() + 40);
@@ -62,7 +79,10 @@ var BoardController = (function(){
         currentGameplayScene.gameplayLayer.addChild(labelTyped,21);
         started = true;
 
-        setTimeout(boardCleanup, 8000);
+        setTimeout(function(){
+            boardCleanup();
+            loseWillPoint();
+        }, 6000);
     }
 
     pub.keyboardInput = function(letter){
