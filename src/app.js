@@ -547,13 +547,40 @@ var GameplayMap = cc.TMXTiledMap.extend({
                     BoardController.keyboardInput(letter);
                 }
 
-                if(MeshController.isActivated()){
-
+                if(MeshController.isActivated())
                     MeshController.keyboardInput(keyCode);
-                }
             }
 
         }, this);
+
+        //Eventos Touch
+
+        cc.eventManager.addListener({
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            // When "swallow touches" is true, then returning 'true' from the onTouchBegan method will "swallow" the touch event, preventing other listeners from using it.
+            swallowTouches: true,
+            //onTouchBegan event callback function
+            onTouchBegan: function (touch, event) {
+
+                if(lunchBoxController.isActivated())
+                {
+                    //Obtengo la posición X e Y respecto del mapa
+                    // event.getCurrentTarget() returns the *listener's* sceneGraphPriority node.
+                    var target = event.getCurrentTarget();
+
+                    //Get the position of the current point relative to the button
+                    var locationInNode = target.convertToNodeSpace(touch.getLocation());
+                    var s = target.getContentSize();
+                    var rect = cc.rect(0, 0, s.width, s.height);
+                    //Check the click area
+                    if (cc.rectContainsPoint(rect, locationInNode)) {
+                        lunchBoxController.onClickMouse(locationInNode.x,locationInNode.y);
+                    }
+                }
+            },
+
+        },this);
+
 
         var animFrames = [];
         //Se crean los frames de la animaci�n
@@ -777,9 +804,8 @@ var zoomGame = {
     typeZoom:1,
     scaleInit:1,
     currentScale:0.1,
-    timeZoom:1800,
-    timeLeft:180,
-
+    timeZoom:38000,
+    timeLeft:38000,
     zoomActivate:true,
 }
 
@@ -804,7 +830,7 @@ var HelloWorldScene = cc.Scene.extend({
         this.gameplayLayer.addChild(this.fog, 20);
 
         //inicializo el zoom
-        zoomGame.ctor(0,0.01,0,0.280);
+        zoomGame.ctor(0,0.01,1600,0.280);
 
         //Se inicializa el modulo de movimiento del niño
         childMoveAction.setMainLayer(map);

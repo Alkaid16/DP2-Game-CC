@@ -3104,7 +3104,11 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+<<<<<<< HEAD
    <tile gid="317"/>
+=======
+   <tile gid="0"/>
+>>>>>>> 2ccbfa2c1c3c71c63c48778b20579090429aed5a
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
