@@ -1,0 +1,161 @@
+{
+  "ID": "d9bd42f8-d64a-4383-adca-638a78acae91",
+  "Version": "2.3.2.3",
+  "Name": "cinematic_view",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 74,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
+              "Plist": ""
+            },
+            "Scale9Width": 46,
+            "Scale9Height": 46,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 129.154,
+              "Y": 506.8951
+            },
+            "Scale": {
+              "ScaleX": -4.192,
+              "ScaleY": 3.6489
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2018,
+              "Y": 0.792
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 106.154,
+            "RightMargin": 487.846,
+            "TopMargin": 110.1049,
+            "BottomMargin": 483.8951,
+            "Tag": 108,
+            "ActionTag": 1598585872,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
+              "Plist": ""
+            },
+            "Scale9Width": 46,
+            "Scale9Height": 46,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 1.0
+            },
+            "Position": {
+              "X": 341.1761,
+              "Y": 415.3477
+            },
+            "Scale": {
+              "ScaleX": 5.0264,
+              "ScaleY": 4.0198
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5331,
+              "Y": 0.649
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 318.1761,
+            "RightMargin": 275.8239,
+            "TopMargin": 224.6523,
+            "BottomMargin": 369.3477,
+            "Tag": 109,
+            "ActionTag": 1550759524,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "Name": "Image_2",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
+              "Plist": ""
+            },
+            "Scale9Width": 46,
+            "Scale9Height": 46,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 521.5177,
+              "Y": 124.2835
+            },
+            "Scale": {
+              "ScaleX": 4.3907,
+              "ScaleY": -4.1919
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8149,
+              "Y": 0.1942
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 498.5177,
+            "RightMargin": 95.4823,
+            "TopMargin": 492.7165,
+            "BottomMargin": 101.2835,
+            "Tag": 110,
+            "ActionTag": 443397217,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "Name": "Image_3",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../Default/ImageFile.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

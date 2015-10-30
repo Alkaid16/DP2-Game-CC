@@ -4,18 +4,10 @@
     <Content>
       <Animation Duration="15" Speed="1.0000">
         <Timeline ActionTag="-921782748" Property="FileData">
-          <TextureFrame FrameIndex="0" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="boy_up/person1-up.png" Plist="boy_up.plist" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="5" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="boy_up/person2-up.png" Plist="boy_up.plist" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="10" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="boy_up/person3-up.png" Plist="boy_up.plist" />
-          </TextureFrame>
-          <TextureFrame FrameIndex="15" Tween="False">
-            <TextureFile Type="MarkedSubImage" Path="boy_up/person4-up.png" Plist="boy_up.plist" />
-          </TextureFrame>
+          <TextureFrame FrameIndex="0" Tween="False" />
+          <TextureFrame FrameIndex="5" Tween="False" />
+          <TextureFrame FrameIndex="10" Tween="False" />
+          <TextureFrame FrameIndex="15" Tween="False" />
         </Timeline>
       </Animation>
       <ObjectData Name="Node" Tag="11" ctype="GameNodeObjectData">
@@ -29,7 +21,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="MarkedSubImage" Path="boy_up/person1-up.png" Plist="boy_up.plist" />
+            <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
