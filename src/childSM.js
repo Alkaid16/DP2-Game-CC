@@ -22,6 +22,10 @@ var ChildSM = (function(){
         dir = direction;
     }
 
+    pub.isStopped = function(){
+        return state==0;
+    }
+
     pub.stop = function(){
         state = 0;
     }

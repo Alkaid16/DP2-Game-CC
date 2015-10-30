@@ -5,6 +5,7 @@ var res = {
     MainScreen_json: "res/MainScreen.json",
     MainScene_json : "res/MainScene.json",
     map2_tmx: "res/levels/map2.tmx",
+    Level1_tmx: "res/levels/Level1.tmx",
     Level4_tmx: "res/levels/Level4.tmx",
     Level3_tmx: "res/levels/Level3.tmx",
     Level7_tmx: "res/levels/Level7.tmx",
@@ -12,6 +13,7 @@ var res = {
     Level10_tmx: "res/levels/Level10.tmx",
     GameFog_png: "res/GameFog.png",
     terrain_png: "res/levels/Tilesets/terrain.png",
+    gameHUD_json: "res/views/gameHUD.json",
     random_png: "res/levels/Tilesets/random.png",
     boy_up_plist:"res/boy_up.plist",
     boy_down_plist:"res/boy_down.plist"

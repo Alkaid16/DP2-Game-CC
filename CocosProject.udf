@@ -31,12 +31,9 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="MainScene.csd" />
-          <FilePathData Path="boy_up_animation.csd" />
-          <FilePathData Path="boy_down_animation.csd" />
-          <FilePathData Path="MainScreen.csd" />
+          <FilePathData Path="views/gameHUD.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="MainScreen.csd" />
+        <ActiveDocument Path="views/gameHUD.csd" />
       </Value>
     </Item>
   </Properties>

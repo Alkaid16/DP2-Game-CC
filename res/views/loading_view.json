@@ -1,0 +1,215 @@
+{
+  "ID": "fcb80885-8a1d-458c-aceb-ced090f88841",
+  "Version": "2.3.2.3",
+  "Name": "loading_view",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 73,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res_views/wallpaper_selector.jpg",
+              "Plist": ""
+            },
+            "Scale9Width": 259,
+            "Scale9Height": 194,
+            "AnchorPoint": {
+              "ScaleY": 0.5094
+            },
+            "Position": {
+              "X": -0.1573,
+              "Y": 323.3405
+            },
+            "Scale": {
+              "ScaleX": 2.4825,
+              "ScaleY": 3.3126
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.0002,
+              "Y": 0.5052
+            },
+            "PreSize": {
+              "X": 0.4047,
+              "Y": 0.3031
+            },
+            "LeftMargin": -0.1573,
+            "RightMargin": 381.1573,
+            "TopMargin": 221.4901,
+            "BottomMargin": 224.51,
+            "Tag": 59,
+            "ActionTag": -1418057157,
+            "Size": {
+              "X": 259.0,
+              "Y": 194.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res_views/logo.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 315.6298,
+              "Y": 418.8254
+            },
+            "Scale": {
+              "ScaleX": 1.4499,
+              "ScaleY": 1.4499
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4932,
+              "Y": 0.6544
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 235.6298,
+            "RightMargin": 244.3702,
+            "TopMargin": 141.1746,
+            "BottomMargin": 338.8254,
+            "Tag": 84,
+            "ActionTag": -257226806,
+            "Size": {
+              "X": 160.0,
+              "Y": 160.0
+            },
+            "Name": "logo_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 1.0
+            },
+            "Position": {
+              "X": 321.4944,
+              "Y": 200.0008
+            },
+            "Scale": {
+              "ScaleX": 2.9934,
+              "ScaleY": 0.7093
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5023,
+              "Y": 0.3125
+            },
+            "PreSize": {
+              "X": 0.3125,
+              "Y": 0.3125
+            },
+            "LeftMargin": 221.4944,
+            "RightMargin": 218.5056,
+            "TopMargin": 439.9992,
+            "BottomMargin": 0.0008,
+            "Tag": 85,
+            "Children": [
+              {
+                "ImageFileData": {
+                  "Type": "Default",
+                  "Path": "Default/LoadingBarFile.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 98.9683,
+                  "Y": 101.4863
+                },
+                "Scale": {
+                  "ScaleX": 0.8335,
+                  "ScaleY": 4.9033
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4948,
+                  "Y": 0.5074
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -1.0317,
+                "RightMargin": 1.0317,
+                "TopMargin": 91.5137,
+                "BottomMargin": 94.4863,
+                "Tag": 94,
+                "ActionTag": 1159869421,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 14.0
+                },
+                "Name": "LoadingBar_1",
+                "ctype": "LoadingBarObjectData"
+              }
+            ],
+            "ActionTag": -438199518,
+            "Size": {
+              "X": 200.0,
+              "Y": 200.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../Default/LoadingBarFile.png",
+        "../res_views/logo.png",
+        "../res_views/wallpaper_selector.jpg"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}
