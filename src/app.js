@@ -794,7 +794,7 @@ var HelloWorldScene = cc.Scene.extend({
         var root = ccs.load(res.gameHUD_json);
         this.hudLayer = root.node;
 
-        var map = new GameplayMap("levels/map2.tmx");
+        var map = new GameplayMap("levels/Level6.tmx");
         this.fog = initFog(map);
         this.fog.setVisible(false);
 
