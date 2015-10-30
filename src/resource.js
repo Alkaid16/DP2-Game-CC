@@ -5,6 +5,7 @@ var res = {
     MainScreen_json: "res/MainScreen.json",
     MainScene_json : "res/MainScene.json",
     map2_tmx: "res/levels/map2.tmx",
+    Level1_tmx: "res/levels/Level1.tmx",
     Level4_tmx: "res/levels/Level4.tmx",
     Level3_tmx: "res/levels/Level3.tmx",
     Level7_tmx: "res/levels/Level7.tmx",

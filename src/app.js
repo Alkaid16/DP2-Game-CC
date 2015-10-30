@@ -597,9 +597,9 @@ var GameplayMap = cc.TMXTiledMap.extend({
                 if (gid) {
                     if(!(gid in tileProps)) continue;
                     var tilePropEntry = tileProps[""+gid];
-                    if(!('powerup' in tilePropEntry)) continue;
+                    if(!('powerupId' in tilePropEntry)) continue;
 
-                    var idPowerup = tilePropEntry['powerup'];
+                    var idPowerup = tilePropEntry['powerupId'];
 
                     cTile = {};
                     cTile.powerup = idPowerup;
@@ -616,9 +616,9 @@ var GameplayMap = cc.TMXTiledMap.extend({
                 if (gid) {
                     if(!(gid in tileProps)) continue;
                     var tilePropEntry = tileProps[""+gid];
-                    if(!('trap' in tilePropEntry)) continue;
+                    if(!('trapId' in tilePropEntry)) continue;
 
-                    var idTrap = tilePropEntry['trap'];
+                    var idTrap = tilePropEntry['trapId'];
 
                     cTile = {};
                     cTile.trap = idTrap;
@@ -669,7 +669,7 @@ function initFog(map){
 
     //Se carga el sprite que representa la oscuridad
     var fog = new cc.Sprite("res/GameFog.png");
-    fog.setScale(1.5, 1.5);
+    fog.setScale(1.25, 1.25);
 
     //El sprite que representa la oscuridad siempre esta encima del niño
     fog.setPosition(map.sprite.getPositionX(), map.sprite.getPositionY());
@@ -772,7 +772,7 @@ var HelloWorldScene = cc.Scene.extend({
         this._super();
         this.gameplayLayer = new cc.Layer();
 
-        var map = new GameplayMap("levels/map2.tmx");
+        var map = new GameplayMap("levels/Level1.tmx");
         this.fog = initFog(map);
         this.fog.setVisible(false);
 

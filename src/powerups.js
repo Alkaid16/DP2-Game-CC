@@ -1,4 +1,4 @@
-//Los IDs de los powerups son: Zapato:0, Reloj:1, Antorcha:2, Escudo:3
+//Los IDs de los powerups son: Zapato:4, Reloj:3, Antorcha:1, Escudo:2
 
 function executePowerup(tile){
     var powerupLayer = gameplayMap.getLayer("Powerups");
@@ -9,16 +9,16 @@ function executePowerup(tile){
     tile.rect.height=0;
 
     switch(idPowerup){
-        case '0':
-            //TODO
-            break;
         case '1':
-            //TODO
-            break;
-        case '2':
             TorchController.activateTorch();
             break;
+        case '2':
+            //TODO
+            break;
         case '3':
+            //TODO
+            break;
+        case '4':
             //TODO
             break;
     }

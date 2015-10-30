@@ -3,19 +3,20 @@ var WSHandler = (function(){
 
     //Funcion que obtiene el objeto Player, con toda la informacion del jugador. Si la llamada falla, se retorna -1.
     pub.getPlayerInfo= function(fbID){
-        $.ajax({
-            url: "http://200.16.7.111/afiperularavel/public/game/player?facebookID=" + fbID + "",
+        var func = $.ajax({
+            url: "http://200.16.7.111/afiperularavel/public/game/player?idFacebook=" + fbID + "",
             dataType: "json",
             crossDomain: true,
             success: function (data){
                 var player = data;
-                return player;
+                func.player = player;
             },
             error: function(xhr){
                 return -1;
             }
 
         });
+        return func;
     };
 
     //Funcion para registrar un nuevo jugador en la base de datos

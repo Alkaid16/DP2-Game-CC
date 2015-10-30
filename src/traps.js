@@ -1,35 +1,36 @@
-// Los IDs de las trampas son: Huecos:0, Pizarra:1, Malla:2, Lonchera:3
+// Los IDs de las trampas son: Huecos:1, Pizarra:2, Malla:3, Lonchera:4
 
 function executeTrap(tile){
     var trapLayer = gameplayMap.getLayer("Traps");
     var idTrap = tile.trap;
 
-    delete tile.trap;
-    tile.rect.width=0;
-    tile.rect.height=0;
-
     switch(idTrap){
-        case '0':
-            //TODO
-            break;
         case '1':
-            BoardController.activateBoard();
+            //TODO
             break;
         case '2':
-            //TODO
+            BoardController.activateBoard();
             break;
         case '3':
             //TODO
             break;
+        case '4':
+            //TODO
+            break;
     }
 
-    trapLayer.setTileGID(0,tile.x,tile.y);
-    trapLayer.removeTileAt(cc.p(tile.x,tile.y));
+    if(idTrap!=1){
+        delete tile.trap;
+        tile.rect.width=0;
+        tile.rect.height=0;
+        trapLayer.setTileGID(0,tile.x,tile.y);
+        trapLayer.removeTileAt(cc.p(tile.x,tile.y));
+    }
 }
 
 var BoardController = (function(){
     //Variables de pizarra
-    var words = new Array("RESPETO", "CONFIANZA", "SOLIDARIDAD", "AMOR", "TOLERANCIA");
+    var words = new Array("RESPETO", "CONFIANZA", "SOLIDARIDAD", "AMOR", "TOLERANCIA", "HONESTIDAD");
     var labelTyped;
     var started = false;
     var label;
@@ -51,8 +52,8 @@ var BoardController = (function(){
         charPos = 0;
         var rand = parseInt(Math.random()*words.length);
         selWord = words[rand];
-        label = new cc.LabelTTF(selWord, 'Arial', 18, cc.size(120,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
-        labelTyped = new cc.LabelTTF("", 'Arial', 18, cc.size(120,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        label = new cc.LabelTTF(selWord, 'Arial', 18, cc.size(100,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        labelTyped = new cc.LabelTTF("", 'Arial', 18, cc.size(100,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
         labelTyped.setColor(new cc.Color(255,0,0));
 
         label.setPosition(gameplayMap.sprite.getPositionX(), gameplayMap.sprite.getPositionY() + 40);

@@ -17,9 +17,12 @@ var MainSceneC = (function(){
 
         btnStart.addClickEventListener(function (event){
             var ID = txtID.getString();
-            var player = WSHandler.getPlayerInfo(ID);
-            alert(player);
-            btnAction();
+            var ajax = WSHandler.getPlayerInfo(ID);
+            $.when(ajax).done( function(){
+                playerInfo = ajax.player;
+                alert(playerInfo.childName);
+                btnAction();
+            });
         });
     }
 
