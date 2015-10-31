@@ -80,8 +80,8 @@ var BoardController = (function(){
         started = true;
 
         setTimeout(function(){
+            if(pub.isActivated()) loseWillPoint();
             boardCleanup();
-            loseWillPoint();
         }, 6000);
     }
 
@@ -218,7 +218,10 @@ var MeshController = (function(){
         }
 
         started = true;
-        setTimeout(boardCleanup, 8000);
+        setTimeout(function(){
+            if(pub.isActivated()) loseWillPoint();
+            boardCleanup();
+        }, 5500);
     }
 
     pub.keyboardInput = function(keyPress){
@@ -436,8 +439,8 @@ var lunchBoxController = (function(){
 
         started = true;
         setTimeout(function(){
+            if(pub.isActivated())loseWillPoint();
             boardCleanup();
-            loseWillPoint();
         }, 8000);
     }
 

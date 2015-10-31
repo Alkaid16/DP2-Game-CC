@@ -553,34 +553,6 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
         }, this);
 
-        //Eventos Touch
-
-        cc.eventManager.addListener({
-            event: cc.EventListener.TOUCH_ONE_BY_ONE,
-            // When "swallow touches" is true, then returning 'true' from the onTouchBegan method will "swallow" the touch event, preventing other listeners from using it.
-            swallowTouches: true,
-            //onTouchBegan event callback function
-            onTouchBegan: function (touch, event) {
-
-                if(lunchBoxController.isActivated())
-                {
-                    //Obtengo la posición X e Y respecto del mapa
-                    // event.getCurrentTarget() returns the *listener's* sceneGraphPriority node.
-                    var target = event.getCurrentTarget();
-
-                    //Get the position of the current point relative to the button
-                    var locationInNode = target.convertToNodeSpace(touch.getLocation());
-                    var s = target.getContentSize();
-                    var rect = cc.rect(0, 0, s.width, s.height);
-                    //Check the click area
-                    if (cc.rectContainsPoint(rect, locationInNode)) {
-                        lunchBoxController.onClickMouse(locationInNode.x,locationInNode.y);
-                    }
-                }
-            },
-
-        },this);
-
 
         var animFrames = [];
         //Se crean los frames de la animaci�n
@@ -843,6 +815,32 @@ var HelloWorldScene = cc.Scene.extend({
     onEnter:function () {
         this._super();
         currentGameplayScene = this;
+
+        //Eventos Touch
+        cc.eventManager.addListener({
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            // When "swallow touches" is true, then returning 'true' from the onTouchBegan method will "swallow" the touch event, preventing other listeners from using it.
+            swallowTouches: true,
+            //onTouchBegan event callback function
+            onTouchBegan: function (touch, event) {
+
+                if(lunchBoxController.isActivated())
+                {
+                    //Obtengo la posición X e Y respecto del mapa
+                    // event.getCurrentTarget() returns the *listener's* sceneGraphPriority node.
+                    var target = event.getCurrentTarget();
+
+                    //Get the position of the current point relative to the button
+                    var locationInNode = target.convertToNodeSpace(touch.getLocation());
+                    var s = target.getContentSize();
+                    var rect = cc.rect(0, 0, s.width, s.height);
+                    //Check the click area
+                    lunchBoxController.onClickMouse(locationInNode.x,locationInNode.y);
+                }
+            },
+
+        },this.gameplayLayer);
+
         gameplayMap.schedule(childMoveAction.update);
     },
 
