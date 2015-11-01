@@ -201,6 +201,7 @@ var childMoveAction = (function(){
         y -= speed*pub.keyState[1];
         x -= speed*pub.keyState[2];
         x += speed*pub.keyState[3];
+        ChildSM.updateAnimation(gameplayMap.sprite,getCurrentDirection());
 
         return new Array(x,y);
     }
@@ -826,6 +827,8 @@ var HelloWorldScene = cc.Scene.extend({
         this.fog.setVisible(true);
         this.fog.runAction(cc.fadeIn(1.5));
         this.gameplayLayer.runAction(cc.follow(gameplayMap.sprite));
+        gameplayMap.sprite.stopAllActions();
+        ChildSM.runAnimation(gameplayMap.sprite, 0);
     }
 });
 

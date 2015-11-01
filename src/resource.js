@@ -16,7 +16,8 @@ var res = {
     gameHUD_json: "res/views/gameHUD.json",
     random_png: "res/levels/Tilesets/random.png",
     boy_up_plist:"res/boy_up.plist",
-    boy_down_plist:"res/boy_down.plist"
+    boy_down_plist:"res/boy_down.plist",
+    spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist"
 };
 
 var g_resources = [];
