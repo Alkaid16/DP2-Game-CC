@@ -80,8 +80,8 @@ var BoardController = (function(){
         started = true;
 
         setTimeout(function(){
+            if(pub.isActivated()) loseWillPoint();
             boardCleanup();
-            loseWillPoint();
         }, 6000);
     }
 
@@ -218,7 +218,10 @@ var MeshController = (function(){
         }
 
         started = true;
-        setTimeout(boardCleanup, 8000);
+        setTimeout(function(){
+            if(pub.isActivated()) loseWillPoint();
+            boardCleanup();
+        }, 5500);
     }
 
     pub.keyboardInput = function(keyPress){
@@ -290,18 +293,30 @@ var lunchBoxController = (function(){
 
     var numSprites=6;
 
-    var numBoxBoard;
-    var boxBoardCtrol = {};
+    var numBoxBoard;//Cantidad de espacios en los que se ha dividido la pantalla
+    var boxBoardCtrol = {};//Esta variable indica si la posición ha sido usada| -1 = no usada, otro valor es el índice de spritesLunchBox
     var flagChargeBox = false;
     var numBoxBoardUsed;//Esta variable indica la cantidad de Box usados
+
+    var numElmentNutri;//Numero de elementos nutritivos
+    var numRemElmentNutri;//Numero de elementos nutritivos restantes
+
+    var boxXinf = {};
+    var boxYinf = {};
 
     var spritesLunchBox = {};
     var flagNutritious = {};//Indica si el alimento es nutritivo| 0 = No nutritivo, 1 = Nutritivo
     var spritesLunchBoxCtrl = {};//Usado para indicar que Sprites se encuentran o no activos
-    var posXLunchBox = {};
-    var posYLunchBox = {};
+
     var flagChargeSprites = false;
 
+    //cantidad de filas y columnas en la que se ha divido la pantalla
+
+    var rows;
+    var colu;
+
+    //aprox de HxW de los sprites
+    var aproxWH;
     var pub = {};
 
     //Esta función unicamente carga los spritres
@@ -320,23 +335,48 @@ var lunchBoxController = (function(){
         spritesLunchBox[5] = new cc.Sprite("res/sandwich.png");
         flagNutritious[5]=1;
 
+        numElmentNutri = 4;
+        numRemElmentNutri = 4;
         flagChargeSprites = true;
     }
 
     //función que tiene como objetivo dividir la pantalla en segmentos para luego insertar los objetos
-    //Pizarra de 640*640
-    var prepareBoard = function()
-    {
+    //Pizarra de 600*600
+    var prepareBoard = function(){
         var W = 640;
         var H = 640;
         //Aproximado de wxh = 100x100
-        var aproxWH=100;
+        aproxWH = 100;
         //Num de Espacios
-        numBoxBoard = parseInt(W/aproxWH)*parseInt(H/aproxWH);
+        rows = parseInt(H/aproxWH);
+        colu = parseInt(W/aproxWH);
+        numBoxBoard = rows*colu;
+
+        var currentRow = 0;
+        var currentColumn = 0;
+
+        var X00 = gameplayMap.sprite.getPositionX() - parseInt(W/2);
+        var Y00 = gameplayMap.sprite.getPositionY() - parseInt(H/2);
+
+        console.log(gameplayMap.sprite.getPositionX()+" - "+gameplayMap.sprite.getPositionY());
+        console.log(X00+" - "+Y00);
 
         for(var i=0; i<numBoxBoard; i++)
-            boxBoardCtrol=0;
+        {
+            boxBoardCtrol[i]=-1;
 
+            boxXinf[i] = X00 + currentColumn   *   aproxWH;
+            boxYinf[i] = Y00 + currentRow*   aproxWH;
+
+            currentColumn++;
+
+            if(currentColumn==colu)
+            {
+                currentRow++;
+                currentColumn = 0;
+            }
+            console.log(boxXinf[i]+" - "+boxYinf[i])
+        }
 
         numBoxBoardUsed=0;
 
@@ -370,40 +410,82 @@ var lunchBoxController = (function(){
             spritesLunchBoxCtrl[i]=1;
             spritesLunchBox[i].setScale(0.4);
 
-            //Se escoge una posición vacú} de forma aleatoria
-            var rand= parseInt(Math.random()*(numBoxBoard.length-numBoxBoardUsed));
+            //Se escoge una posición vacía de forma aleatoria
+            //Esto en base a la cantidad de espacios en los que se ha divido la pizarra
+            //menos la cantidad de posiciones usadas, luego se escoge la posición ignorando las posiciones que fueron usadas
+            var rand= parseInt(Math.random()*(numBoxBoard-numBoxBoardUsed));
             var posBox=0;
 
-            for(var i=0;i<numBoxBoard.length;i++)
+            for(var j=0;j<numBoxBoard;j++)
             {
-                if(numBoxBoard[i]==1)
+                console.log(boxBoardCtrol[j]);
+                if(boxBoardCtrol[j]==-1)
                     posBox++;
 
                 if(posBox==rand)
+                {
+                    //En esta variable se guarda el índice del Sprite usado en la pizarra
+                    boxBoardCtrol[j]=i;
+                    numBoxBoardUsed++;
+                    posBox=j;
                     break;
+                }
+
             }
-
-            var PosX = gameplayMap.sprite.getPositionX()+(randXLeft==1?1:-1)*randX;
-            var PosY = gameplayMap.sprite.getPositionY()+(randYRight==1?1:-1)*randY;
-
-            posXLunchBox[i] = PosX;
-            posYLunchBox[i] = PosY;
-
-            spritesLunchBox[i].setPosition(PosX, PosY);
+            console.log(posBox);
+            spritesLunchBox[i].setPosition(boxXinf[posBox]+aproxWH/2, boxYinf[posBox]+aproxWH/2);
             currentGameplayScene.gameplayLayer.addChild(spritesLunchBox[i],30+i);
         }
 
         started = true;
-        setTimeout(boardCleanup, 8000);
+        setTimeout(function(){
+            if(pub.isActivated())loseWillPoint();
+            boardCleanup();
+        }, 8000);
     }
 
-    pub.keyboardInput = function(keyPress){
+    pub.onClickMouse = function(xCord, yCord){
 
 
+        //Obtengo el box en el que se ha realizado el click
 
-            boardCleanup();
-            started = false;
+        var boxSelected=-1;
 
+        for(var i=0;i<numBoxBoard;i++)
+        {
+            if(boxXinf[i]<xCord && (boxXinf[i]+aproxWH)>=xCord)
+                if(boxYinf[i]<yCord && (boxYinf[i]+aproxWH)>=yCord)
+                {
+                    boxSelected = i;
+                    break;
+                }
+        }
+
+        var elementSelected=-1;
+
+        if(boxBoardCtrol[boxSelected]!=-1)
+            elementSelected=boxBoardCtrol[boxSelected];
+
+        //Verifico que sea un alimento saludable
+        if(elementSelected!=-1)
+            if(flagNutritious[elementSelected]==1){
+                //En este caso el elemtno es retirado de pantalla
+                currentGameplayScene.gameplayLayer.removeChild(spritesLunchBox[elementSelected]);
+                numRemElmentNutri--;
+
+                //Caso en que sea el ultimo elemento
+                //Caso Win
+                if(numRemElmentNutri==0)
+                {
+                    boardCleanup();
+                    started = false;
+                    console.log("ganaste");
+                }
+
+            }else//Caso en que un elemento no sea saludable
+            {
+                console.log("Este no es un elemento nutritivo");
+            }
     }
 
     pub.isActivated = function(){
