@@ -1,7 +1,7 @@
 var ChildSM = (function(){
     var pub = {};
     var child;
-    var currDir = 0;
+    var currDir = -1;
     //0:Stopped, 1:Running
     var state = 0;
     //Arreglo con las 4 animaciones para correr

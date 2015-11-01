@@ -506,7 +506,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this.initTileMatrix();
         this.initObstacles();
 
-        this.sprite= new cc.Sprite("res/Bola1.png");
+        this.sprite= new cc.Sprite("#ninoPost1.png");
         this.sprite.setVisible(false);
         this.monster = new cc.Sprite("res/monster.jpg");
         this.monster.setPosition(size.width/2,-300);
@@ -554,25 +554,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
         }, this);
 
-
-        var animFrames = [];
-        //Se crean los frames de la animaci�n
-        for(var i=1;i<5;i++){
-            var str = "res/Bola"+i+".png";
-            var animFrame = new cc.AnimationFrame(new cc.SpriteFrame(str,cc.rect(0,0,30,30)), 1,null);
-            animFrames.push(animFrame);
-        }
-        //Se crea la animaci�n que reproduce en secuencia los frames agregados al array animFrames.
-        var animation = new cc.Animation(animFrames, 0.08, 100);
-        var animate   = cc.animate(animation);
-
-        //En este caso, se crea una acci�n infinita para que la animacion se reproduzca siempre
-        var infiniteAction = new cc.RepeatForever(animate);
-
         this.addChild(this.monster,10);
-
-        //Ejecutar acciones de animacion
-        this.sprite.runAction(infiniteAction);
         return true;
     },
 
@@ -851,8 +833,7 @@ var HelloWorldScene = cc.Scene.extend({
         this.fog.setVisible(true);
         this.fog.runAction(cc.fadeIn(1.5));
         this.gameplayLayer.runAction(cc.follow(gameplayMap.sprite));
-        gameplayMap.sprite.stopAllActions();
-        ChildSM.runAnimation(gameplayMap.sprite, 0);
+        ChildSM.updateAnimation(gameplayMap.sprite,0);
     }
 });
 
