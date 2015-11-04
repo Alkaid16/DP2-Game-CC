@@ -32,8 +32,9 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="views/gameHUD.csd" />
+          <FilePathData Path="views/level_selector_view.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="views/gameHUD.csd" />
+        <ActiveDocument Path="views/level_selector_view.csd" />
       </Value>
     </Item>
   </Properties>

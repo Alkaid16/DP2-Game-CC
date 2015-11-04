@@ -66,7 +66,7 @@ cc.game.onStart = function(){
         var mainScreen = new cc.Scene();
         ChildSM.initAnimations();
         var mainScreenLayer = MainSceneC.loadMainScreen(function(){
-            var newScene = new HelloWorldScene();
+            var newScene =LevelSelectionC.loadScene();
             cc.director.runScene(newScene);
         });
 

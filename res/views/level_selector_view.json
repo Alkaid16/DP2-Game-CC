@@ -17,7 +17,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "res_views/wallpaper_selector.jpg",
+              "Path": "../res_views/wallpaper_selector.jpg",
               "Plist": ""
             },
             "Scale9Width": 259,
@@ -143,8 +143,8 @@
                 "Tag": 26,
                 "ActionTag": 480696710,
                 "Size": {
-                  "X": 168.0,
-                  "Y": 23.0
+                  "X": 163.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_2",
                 "ctype": "TextObjectData"
@@ -241,13 +241,13 @@
                 "RightMargin": 15.7233,
                 "TopMargin": 0.4724,
                 "BottomMargin": 176.5276,
-                "Tag": 23,
+                "Tag": 1,
                 "ActionTag": 624745090,
                 "Size": {
-                  "X": 11.0,
-                  "Y": 23.0
+                  "X": 10.0,
+                  "Y": 20.0
                 },
-                "Name": "Text_1",
+                "Name": "btn1",
                 "ctype": "TextObjectData"
               },
               {
@@ -289,11 +289,11 @@
                 "RightMargin": 93.6851,
                 "TopMargin": 18.3922,
                 "BottomMargin": 158.6078,
-                "Tag": 24,
+                "Tag": 2,
                 "ActionTag": 1294485161,
                 "Size": {
-                  "X": 11.0,
-                  "Y": 23.0
+                  "X": 10.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0",
                 "ctype": "TextObjectData"
@@ -338,11 +338,11 @@
                 "RightMargin": 151.478,
                 "TopMargin": 32.2361,
                 "BottomMargin": 144.7639,
-                "Tag": 25,
+                "Tag": 3,
                 "ActionTag": -196132688,
                 "Size": {
-                  "X": 11.0,
-                  "Y": 23.0
+                  "X": 10.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0",
                 "ctype": "TextObjectData"
@@ -386,11 +386,11 @@
                 "RightMargin": 26.2559,
                 "TopMargin": 32.4418,
                 "BottomMargin": 144.5582,
-                "Tag": 26,
+                "Tag": 4,
                 "ActionTag": 957161769,
                 "Size": {
-                  "X": 11.0,
-                  "Y": 23.0
+                  "X": 10.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_1",
                 "ctype": "TextObjectData"
@@ -435,11 +435,11 @@
                 "RightMargin": 152.1483,
                 "TopMargin": 53.6164,
                 "BottomMargin": 123.3836,
-                "Tag": 27,
+                "Tag": 5,
                 "ActionTag": -211576611,
                 "Size": {
-                  "X": 11.0,
-                  "Y": 23.0
+                  "X": 10.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0",
                 "ctype": "TextObjectData"
@@ -484,11 +484,11 @@
                 "RightMargin": 54.62,
                 "TopMargin": 52.7549,
                 "BottomMargin": 124.2451,
-                "Tag": 28,
+                "Tag": 6,
                 "ActionTag": -169596419,
                 "Size": {
-                  "X": 11.0,
-                  "Y": 23.0
+                  "X": 10.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0",
                 "ctype": "TextObjectData"
@@ -533,11 +533,11 @@
                 "RightMargin": 5.2314,
                 "TopMargin": 51.1684,
                 "BottomMargin": 125.8316,
-                "Tag": 29,
+                "Tag": 7,
                 "ActionTag": 1156881295,
                 "Size": {
-                  "X": 11.0,
-                  "Y": 23.0
+                  "X": 10.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_1",
                 "ctype": "TextObjectData"
@@ -585,8 +585,8 @@
                 "Tag": 30,
                 "ActionTag": -1314764777,
                 "Size": {
-                  "X": 22.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0",
                 "ctype": "TextObjectData"
@@ -634,8 +634,8 @@
                 "Tag": 31,
                 "ActionTag": -365542816,
                 "Size": {
-                  "X": 21.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_1_0",
                 "ctype": "TextObjectData"
@@ -683,8 +683,8 @@
                 "Tag": 32,
                 "ActionTag": -753747312,
                 "Size": {
-                  "X": 22.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_1_1",
                 "ctype": "TextObjectData"
@@ -729,11 +729,11 @@
                 "RightMargin": 166.6316,
                 "TopMargin": 73.2452,
                 "BottomMargin": 103.7548,
-                "Tag": 33,
+                "Tag": 8,
                 "ActionTag": -856271328,
                 "Size": {
-                  "X": 11.0,
-                  "Y": 23.0
+                  "X": 10.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0_0",
                 "ctype": "TextObjectData"
@@ -781,8 +781,8 @@
                 "Tag": 34,
                 "ActionTag": 558196759,
                 "Size": {
-                  "X": 11.0,
-                  "Y": 23.0
+                  "X": 10.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0_0_0",
                 "ctype": "TextObjectData"
@@ -830,8 +830,8 @@
                 "Tag": 35,
                 "ActionTag": 1724465519,
                 "Size": {
-                  "X": 22.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0_0_0_0",
                 "ctype": "TextObjectData"
@@ -879,8 +879,8 @@
                 "Tag": 36,
                 "ActionTag": -1673439189,
                 "Size": {
-                  "X": 22.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0_0_0_0_0",
                 "ctype": "TextObjectData"
@@ -928,8 +928,8 @@
                 "Tag": 37,
                 "ActionTag": 1477658849,
                 "Size": {
-                  "X": 22.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0_1",
                 "ctype": "TextObjectData"
@@ -977,8 +977,8 @@
                 "Tag": 38,
                 "ActionTag": 1005079404,
                 "Size": {
-                  "X": 22.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0_2",
                 "ctype": "TextObjectData"
@@ -1026,8 +1026,8 @@
                 "Tag": 39,
                 "ActionTag": -884880093,
                 "Size": {
-                  "X": 22.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0_2_0",
                 "ctype": "TextObjectData"
@@ -1075,8 +1075,8 @@
                 "Tag": 40,
                 "ActionTag": 979224221,
                 "Size": {
-                  "X": 22.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0_2_0_0",
                 "ctype": "TextObjectData"
@@ -1124,8 +1124,8 @@
                 "Tag": 41,
                 "ActionTag": 1851901219,
                 "Size": {
-                  "X": 22.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0_2_0_0_0",
                 "ctype": "TextObjectData"
@@ -1173,8 +1173,8 @@
                 "Tag": 42,
                 "ActionTag": -1976866710,
                 "Size": {
-                  "X": 22.0,
-                  "Y": 23.0
+                  "X": 20.0,
+                  "Y": 20.0
                 },
                 "Name": "Text_1_0_0_0_0_0_2_0_0_0_0",
                 "ctype": "TextObjectData"
@@ -1198,17 +1198,17 @@
             },
             "DisabledFileData": {
               "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Path": "../Default/Button_Disable.png",
               "Plist": ""
             },
             "PressedFileData": {
               "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Path": "../Default/Button_Press.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Default",
-              "Path": "Default/Button_Normal.png",
+              "Path": "../Default/Button_Normal.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -1233,7 +1233,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 330.7427,
+              "X": 331.5815,
               "Y": 89.0948
             },
             "Scale": {
@@ -1243,15 +1243,15 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5168,
+              "X": 0.5181,
               "Y": 0.1392
             },
             "PreSize": {
               "X": 0.3125,
               "Y": 0.0562
             },
-            "LeftMargin": 230.7427,
-            "RightMargin": 209.2573,
+            "LeftMargin": 231.5815,
+            "RightMargin": 208.4185,
             "TopMargin": 532.9052,
             "BottomMargin": 71.0948,
             "Tag": 43,
