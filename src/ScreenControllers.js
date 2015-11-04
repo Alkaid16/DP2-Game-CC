@@ -21,7 +21,7 @@ var MainSceneC = (function(){
             $.when(ajax).done( function(){
                 playerInfo = ajax.player;
                 if('idPlayer' in playerInfo) {
-                    WSHandler.getLevelGraph(playerInfo.idPlayer);
+                    LevelGraphC.load(playerInfo.idPlayer);
                 }
                 alert(playerInfo.childName);
                 btnAction();
@@ -41,15 +41,19 @@ var LevelSelectionC = (function(){
 
     var startLevel = function(){
         var id = this.getTag();
-        var scene = new HelloWorldScene(id);
-        cc.director.runScene(scene);
+        LevelModalC.show(id);
     }
 
     pub.loadScene = function(){
         var root = ccs.load(res.level_selector_view_json);
         scene = root.node;
+        LevelModalC.load(scene);
         elementsSetup();
         return root.node;
+    }
+
+    pub.getScene = function(){
+        return scene;
     }
 
     var elementsSetup = function(){
@@ -64,30 +68,81 @@ var LevelSelectionC = (function(){
     return pub;
 })();
 
+
 var LevelModalC = (function(){
     var pub = {};
     var layer;
+    var cLayer;
+    var pScene;
+    var visiblePos = cc.p(80,80);
+    var disabledPos = cc.p(650, 80);
     var level = 1;
 
-    pub.load = function(){
+    function createCoverLayer(){
+        cLayer = new cc.LayerColor(cc.color(0,0,0), 640,640);
+        cLayer.setOpacity(0);
+        cLayer.setPosition(cc.p(0,0));
+        pScene.addChild(cLayer,9);
+        cLayer.cListener = cc.EventListener.create({
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            swallowTouches: false,
+            onTouchBegan: function (touch, event) {
+                return true;
+            }
+        });
+        cc.eventManager.addListener(cLayer.cListener,cLayer);
+    }
+
+    pub.load = function(parentScene){
         var obj =  ccs.load(res.level_modal_json);
+        pScene = parentScene;
+
         layer = obj.node;
+        layer.setVisible(false);
         layer.setScale(1.5);
-        layer.setPosition(cc.p(80,80));
+        layer.setPosition(disabledPos);
+        pScene.addChild(layer,10);
+        createCoverLayer();
+
         var btnExit = layer.getChildByName("btnExit");
         btnExit.addClickEventListener(function(){
-           layer.removeFromParent();
+           pub.hide();
         });
 
         var btnCont = layer.getChildByName("btnContinue");
         btnCont.addClickEventListener(function(){
             alert("TO DO");
-        })
+        });
+
+        var btnStart = layer.getChildByName("btnStart");
+        btnStart.addClickEventListener(function(){
+            var scene = new HelloWorldScene(level);
+            cc.director.runScene(scene);
+        });
+    };
+
+    pub.show = function(lvlNum){
+        var levelInfo = LevelGraphC.getLevelInfo(lvlNum);
+        if(levelInfo == null) return;
+        level = levelInfo.idLevel;
+        cLayer.cListener.swallowTouches = true;
+        layer.setVisible(true);
+        layer.runAction(cc.moveTo(0.4,visiblePos));
+        cLayer.runAction(cc.fadeTo(0.4,160));
+    }
+
+    pub.hide = function(){
+        layer.runAction(cc.moveTo(0.4,disabledPos));
+        cLayer.runAction(cc.fadeTo(0.4,0));
+        setTimeout(function(){
+            layer.setVisible(false);
+            cLayer.cListener.swallowTouches = false;
+        },400);
     }
 
     pub.getLayer = function(){
         return layer;
-    }
+    };
 
     return pub;
 })();

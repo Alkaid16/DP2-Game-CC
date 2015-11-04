@@ -62,9 +62,9 @@ cc.game.onStart = function(){
 
     //load resources
     cc.LoaderScene.preload(g_resources, function () {
-        //cc.director.runScene(new HelloWorldScene());
         var mainScreen = new cc.Scene();
         ChildSM.initAnimations();
+
         var mainScreenLayer = MainSceneC.loadMainScreen(function(){
             var newScene =LevelSelectionC.loadScene();
             cc.director.runScene(newScene);
