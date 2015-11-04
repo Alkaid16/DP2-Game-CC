@@ -32,6 +32,38 @@ var MainSceneC = (function(){
     return pub;
 })();
 
+var LevelSelectionC = (function(){
+    var pub = {};
+    var levelBtns = [];
+    var scene;
+    var btnStart;
+    var txtID;
+
+    var startLevel = function(){
+        var id = this.getTag();
+        var scene = new HelloWorldScene(id);
+        cc.director.runScene(scene);
+    }
+
+    pub.loadScene = function(){
+        var root = ccs.load(res.level_selector_view_json);
+        scene = root.node;
+        elementsSetup();
+        return root.node;
+    }
+
+    var elementsSetup = function(){
+        var panel = scene.getChildByName("Panel_2");
+        for(var i=1; i<7; i++){
+            levelBtns[i-1] = panel.getChildByTag(i);
+            levelBtns[i-1].addClickEventListener(startLevel);
+            levelBtns[i-1].setTouchEnabled(true);
+        }
+    }
+
+    return pub;
+})();
+
 var LevelModalC = (function(){
     var pub = {};
     var layer;

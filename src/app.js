@@ -61,6 +61,39 @@ var interHandler = {
 
     },
 
+    //Metodo que elige aleatoriamente una direcci'on en caso el usuario no lo haya hecho
+    randomDirection: function(){
+        var currentDirection=childMoveAction.lastDirection;
+        var opDirection=-1;
+        var posibleDirection = [];
+
+        switch(currentDirection) {
+            case 0:
+                opDirection=1;
+                break;
+            case 1:
+                opDirection=0;
+                break;
+            case 2:
+                opDirection=3;
+                break;
+            case 3:
+                opDirection=2;
+                break;
+        }
+
+        for(var i=0;i<4;i++) {
+            if(i!=1 && i!=opDirection){
+                posibleDirection.push(i);
+                console.log("     push: "+i);
+            }
+        }
+
+        var directionSelected = parseInt(Math.random()*posibleDirection.length);
+        console.log("directionSelected: "+posibleDirection[directionSelected]);
+        return posibleDirection[directionSelected];
+    },
+
     //Metodo indicando que se salio del tile de intersección, y la variable sameTileDetected se libera
     intersectionExited : function(){
         this.intersectTile = null;
@@ -97,6 +130,14 @@ var interHandler = {
             childMoveAction.keyState[2]=0;
             childMoveAction.keyState[1]=0;
         }
+        /*if(keyCode == -1){
+            childMoveAction.keyState[3]=0;
+            childMoveAction.keyState[0]=0;
+            childMoveAction.keyState[2]=0;
+            childMoveAction.keyState[1]=0;
+            var dirSelected = this.randomDirection();
+            childMoveAction.keyState[dirSelected] = 1;
+        }*/
 
         this.storedDecision = -1;
         this.choiceExecuted = true;
@@ -154,7 +195,7 @@ var childMoveAction = (function(){
     var yNew;
     pub.childPosX = 0;
     pub.childPosY = 0;
-
+    pub.lastDirection = 0;
 
     pub.keyState = new Array(1,0,0,0);
 
@@ -215,6 +256,8 @@ var childMoveAction = (function(){
                 break;
             }
         }
+        if(direction!=-1)
+            pub.lastDirection = direction;
         return direction;
     }
 
@@ -769,13 +812,13 @@ var HelloWorldScene = cc.Scene.extend({
     hudLayer: null,
     fog : null,
 
-    ctor: function(){
+    ctor: function(levelNum){
         this._super();
         this.gameplayLayer = new cc.Layer();
         var root = ccs.load(res.gameHUD_json);
         this.hudLayer = root.node;
 
-        var map = new GameplayMap("levels/Level6.tmx");
+        var map = new GameplayMap("levels/Level" + levelNum + ".tmx");
         this.fog = initFog(map);
         this.fog.setVisible(false);
 
