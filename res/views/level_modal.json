@@ -17,7 +17,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "res_views/modal_level_wallpaper.jpg",
+              "Path": "../res_views/modal_level_wallpaper.jpg",
               "Plist": ""
             },
             "BlendFunc": {
@@ -46,8 +46,8 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 32.5254,
-            "RightMargin": 28.4746,
+            "LeftMargin": 32.5219,
+            "RightMargin": 28.4781,
             "TopMargin": -1.8608,
             "BottomMargin": 127.8608,
             "Tag": 117,
@@ -57,51 +57,6 @@
               "Y": 194.0
             },
             "Name": "modal_level_wallpaper_2",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "res_views/exit.png",
-              "Plist": ""
-            },
-            "BlendFunc": {
-              "Src": 770,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 311.6228,
-              "Y": 308.5523
-            },
-            "Scale": {
-              "ScaleX": 0.0359,
-              "ScaleY": 0.0415
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.9738,
-              "Y": 0.9642
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": 160.6228,
-            "RightMargin": -142.6228,
-            "TopMargin": -144.5523,
-            "BottomMargin": 152.5523,
-            "Tag": 149,
-            "ActionTag": -412164458,
-            "Size": {
-              "X": 302.0,
-              "Y": 312.0
-            },
-            "Name": "exit_3",
             "ctype": "SpriteObjectData"
           },
           {
@@ -150,7 +105,7 @@
               "X": 60.0,
               "Y": 23.0
             },
-            "Name": "Text_23",
+            "Name": "lblLevel",
             "ctype": "TextObjectData"
           },
           {
@@ -172,7 +127,7 @@
               "ScaleY": 0.595
             },
             "Position": {
-              "X": 88.9478,
+              "X": 87.1163,
               "Y": 225.237
             },
             "Scale": {
@@ -182,17 +137,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.278,
+              "X": 0.2722,
               "Y": 0.7039
             },
             "PreSize": {
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 17.3953,
-            "RightMargin": 154.6047,
-            "TopMargin": 85.4471,
-            "BottomMargin": 211.5529,
+            "LeftMargin": 15.5583,
+            "RightMargin": 156.4417,
+            "TopMargin": 85.448,
+            "BottomMargin": 211.552,
             "Tag": 151,
             "ActionTag": -394469845,
             "Size": {
@@ -217,12 +172,12 @@
             "ShadowOffsetX": 2.0,
             "ShadowOffsetY": -2.0,
             "AnchorPoint": {
-              "ScaleX": 0.4977,
-              "ScaleY": 0.4412
+              "ScaleX": 0.4077,
+              "ScaleY": 0.4743
             },
             "Position": {
-              "X": 68.6446,
-              "Y": 167.0343
+              "X": 48.9252,
+              "Y": 168.0
             },
             "Scale": {
               "ScaleX": 1.4646,
@@ -231,24 +186,24 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.2145,
-              "Y": 0.522
+              "X": 0.1529,
+              "Y": 0.525
             },
             "PreSize": {
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 39.7759,
-            "RightMargin": 222.2241,
-            "TopMargin": 140.113,
-            "BottomMargin": 156.887,
+            "LeftMargin": 25.2781,
+            "RightMargin": 236.7219,
+            "TopMargin": 139.9099,
+            "BottomMargin": 157.0901,
             "Tag": 152,
             "ActionTag": -1383551644,
             "Size": {
               "X": 58.0,
               "Y": 23.0
             },
-            "Name": "Text_23_0_0",
+            "Name": "lvlScore",
             "ctype": "TextObjectData"
           },
           {
@@ -297,7 +252,7 @@
               "X": 79.0,
               "Y": 23.0
             },
-            "Name": "Text_23_0_0_0",
+            "Name": "lblDefeatPos",
             "ctype": "TextObjectData"
           },
           {
@@ -412,17 +367,17 @@
             },
             "DisabledFileData": {
               "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Path": "../Default/Button_Disable.png",
               "Plist": ""
             },
             "PressedFileData": {
               "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Path": "../Default/Button_Press.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Default",
-              "Path": "Default/Button_Normal.png",
+              "Path": "../Default/Button_Normal.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -474,7 +429,7 @@
               "X": 100.0,
               "Y": 36.0
             },
-            "Name": "Button_2",
+            "Name": "btnContinue",
             "ctype": "ButtonObjectData"
           },
           {
@@ -487,17 +442,17 @@
             },
             "DisabledFileData": {
               "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Path": "../Default/Button_Disable.png",
               "Plist": ""
             },
             "PressedFileData": {
               "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Path": "../Default/Button_Press.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Default",
-              "Path": "Default/Button_Normal.png",
+              "Path": "../Default/Button_Normal.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -549,7 +504,82 @@
               "X": 100.0,
               "Y": 36.0
             },
-            "Name": "Button_2_0",
+            "Name": "btnStart",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Normal",
+              "Path": "../res_views/exit.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "../res_views/exit.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "../res_views/exit.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 272,
+            "Scale9Height": 290,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5308,
+              "ScaleY": 0.4369
+            },
+            "Position": {
+              "X": 311.3289,
+              "Y": 312.3135
+            },
+            "Scale": {
+              "ScaleX": 0.0355,
+              "ScaleY": 0.0349
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9729,
+              "Y": 0.976
+            },
+            "PreSize": {
+              "X": 0.9438,
+              "Y": 0.975
+            },
+            "LeftMargin": 151.0369,
+            "RightMargin": -133.0369,
+            "TopMargin": -167.9957,
+            "BottomMargin": 175.9957,
+            "Tag": 16,
+            "ActionTag": -1224243608,
+            "Size": {
+              "X": 302.0,
+              "Y": 312.0
+            },
+            "Name": "btnExit",
             "ctype": "ButtonObjectData"
           }
         ],

@@ -31,3 +31,31 @@ var MainSceneC = (function(){
 
     return pub;
 })();
+
+var LevelModalC = (function(){
+    var pub = {};
+    var layer;
+    var level = 1;
+
+    pub.load = function(){
+        var obj =  ccs.load(res.level_modal_json);
+        layer = obj.node;
+        layer.setScale(1.5);
+        layer.setPosition(cc.p(80,80));
+        var btnExit = layer.getChildByName("btnExit");
+        btnExit.addClickEventListener(function(){
+           layer.removeFromParent();
+        });
+
+        var btnCont = layer.getChildByName("btnContinue");
+        btnCont.addClickEventListener(function(){
+            alert("TO DO");
+        })
+    }
+
+    pub.getLayer = function(){
+        return layer;
+    }
+
+    return pub;
+})();

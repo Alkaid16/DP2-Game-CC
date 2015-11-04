@@ -56,7 +56,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "../res_views/willpoint.png",
+                  "Path": "res_views/willpoint.png",
                   "Plist": ""
                 },
                 "BlendFunc": {
@@ -98,7 +98,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "../res_views/willpoint.png",
+                  "Path": "res_views/willpoint.png",
                   "Plist": ""
                 },
                 "BlendFunc": {
