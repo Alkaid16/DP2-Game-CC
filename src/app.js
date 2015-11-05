@@ -186,7 +186,6 @@ var childMoveAction = (function(){
     var tileWidth = 0;
     var speed = 2.5;
     var dummyBool = false;
-    var isJumping = false;
     var collisionDelay = 0;
     var gameStarted = false;
     var haveShield = false;
@@ -502,7 +501,9 @@ var childMoveAction = (function(){
 
         //Condicion de victoria
         if(posX == mainLayer.finishPoint[0] && posY == mainLayer.finishPoint[1]){
-            alert("YOU WIN! Your Score: " + gameplayMap.coins);
+            var current = new Date();
+            var numMs = current.getTime() - gameplayMap.currentTime.getTime();
+            alert("YOU WIN! Your get " + gameplayMap.coins + " coins with " + numMs + " ms spend");
             close();
         }
 
@@ -600,7 +601,8 @@ var childMoveAction = (function(){
             }
 
             if(cc.rectIntersectsRect(rectM,rect1)){
-                alert("You Lose. Your score: " + gameplayMap.coins);
+
+                alert("You Lose. Your get: " + gameplayMap.coins + " coins");
                 return;
             }
         }
@@ -624,6 +626,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
     willPoints:0,
     coins:0,
     intersections: [],
+    currentTime:null,
 
     ctor:function (levelName) {
         this._super();
@@ -647,6 +650,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this.monster.setPosition(size.width/2,-300);
         this.scoreLabel = new cc.LabelTTF(this.coins,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
         this.scoreLabel.setPosition(this.sprite.getPositionX(), this.sprite.getPositionY() + 40);
+        this.currentTime = new Date();
 
         ChildSM.setChild(this.sprite);
 

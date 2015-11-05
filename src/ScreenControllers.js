@@ -57,7 +57,7 @@ var LevelSelectionC = (function(){
     }
 
     var elementsSetup = function(){
-        var panel = scene.getChildByName("Panel_2");
+        var panel = scene.getChildByName("pnlMap");
         for(var i=1; i<7; i++){
             levelBtns[i-1] = panel.getChildByTag(i);
             levelBtns[i-1].addClickEventListener(startLevel);
