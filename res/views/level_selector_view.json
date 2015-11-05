@@ -53,7 +53,7 @@
               "X": 259.0,
               "Y": 194.0
             },
-            "Name": "Image_1",
+            "Name": "imgSelectWallpaper",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -143,10 +143,10 @@
                 "Tag": 26,
                 "ActionTag": 480696710,
                 "Size": {
-                  "X": 163.0,
-                  "Y": 20.0
+                  "X": 168.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_2",
+                "Name": "lblTitle",
                 "ctype": "TextObjectData"
               }
             ],
@@ -155,7 +155,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_1",
+            "Name": "pnlTitle",
             "ctype": "PanelObjectData"
           },
           {
@@ -244,8 +244,8 @@
                 "Tag": 1,
                 "ActionTag": 624745090,
                 "Size": {
-                  "X": 10.0,
-                  "Y": 20.0
+                  "X": 11.0,
+                  "Y": 23.0
                 },
                 "Name": "btn1",
                 "ctype": "TextObjectData"
@@ -292,10 +292,10 @@
                 "Tag": 2,
                 "ActionTag": 1294485161,
                 "Size": {
-                  "X": 10.0,
-                  "Y": 20.0
+                  "X": 11.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0",
+                "Name": "btn2",
                 "ctype": "TextObjectData"
               },
               {
@@ -341,10 +341,10 @@
                 "Tag": 3,
                 "ActionTag": -196132688,
                 "Size": {
-                  "X": 10.0,
-                  "Y": 20.0
+                  "X": 11.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0",
+                "Name": "btn3",
                 "ctype": "TextObjectData"
               },
               {
@@ -389,10 +389,10 @@
                 "Tag": 4,
                 "ActionTag": 957161769,
                 "Size": {
-                  "X": 10.0,
-                  "Y": 20.0
+                  "X": 11.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_1",
+                "Name": "btn4",
                 "ctype": "TextObjectData"
               },
               {
@@ -438,10 +438,10 @@
                 "Tag": 5,
                 "ActionTag": -211576611,
                 "Size": {
-                  "X": 10.0,
-                  "Y": 20.0
+                  "X": 11.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0",
+                "Name": "btn5",
                 "ctype": "TextObjectData"
               },
               {
@@ -487,10 +487,10 @@
                 "Tag": 6,
                 "ActionTag": -169596419,
                 "Size": {
-                  "X": 10.0,
-                  "Y": 20.0
+                  "X": 11.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0",
+                "Name": "btn6",
                 "ctype": "TextObjectData"
               },
               {
@@ -536,10 +536,10 @@
                 "Tag": 7,
                 "ActionTag": 1156881295,
                 "Size": {
-                  "X": 10.0,
-                  "Y": 20.0
+                  "X": 11.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_1",
+                "Name": "btn7",
                 "ctype": "TextObjectData"
               },
               {
@@ -585,10 +585,10 @@
                 "Tag": 30,
                 "ActionTag": -1314764777,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 22.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0",
+                "Name": "btn10",
                 "ctype": "TextObjectData"
               },
               {
@@ -634,10 +634,10 @@
                 "Tag": 31,
                 "ActionTag": -365542816,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 21.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_1_0",
+                "Name": "btn11",
                 "ctype": "TextObjectData"
               },
               {
@@ -683,10 +683,10 @@
                 "Tag": 32,
                 "ActionTag": -753747312,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 22.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_1_1",
+                "Name": "btn15",
                 "ctype": "TextObjectData"
               },
               {
@@ -732,10 +732,10 @@
                 "Tag": 8,
                 "ActionTag": -856271328,
                 "Size": {
-                  "X": 10.0,
-                  "Y": 20.0
+                  "X": 11.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0_0",
+                "Name": "btn8",
                 "ctype": "TextObjectData"
               },
               {
@@ -781,10 +781,10 @@
                 "Tag": 34,
                 "ActionTag": 558196759,
                 "Size": {
-                  "X": 10.0,
-                  "Y": 20.0
+                  "X": 11.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0_0_0",
+                "Name": "btn9",
                 "ctype": "TextObjectData"
               },
               {
@@ -830,10 +830,10 @@
                 "Tag": 35,
                 "ActionTag": 1724465519,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 22.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0_0_0_0",
+                "Name": "btn12",
                 "ctype": "TextObjectData"
               },
               {
@@ -879,10 +879,10 @@
                 "Tag": 36,
                 "ActionTag": -1673439189,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 22.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0_0_0_0_0",
+                "Name": "btn16",
                 "ctype": "TextObjectData"
               },
               {
@@ -928,10 +928,10 @@
                 "Tag": 37,
                 "ActionTag": 1477658849,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 22.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0_1",
+                "Name": "btn13",
                 "ctype": "TextObjectData"
               },
               {
@@ -977,10 +977,10 @@
                 "Tag": 38,
                 "ActionTag": 1005079404,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 22.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0_2",
+                "Name": "btn14",
                 "ctype": "TextObjectData"
               },
               {
@@ -1026,10 +1026,10 @@
                 "Tag": 39,
                 "ActionTag": -884880093,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 22.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0_2_0",
+                "Name": "btn17",
                 "ctype": "TextObjectData"
               },
               {
@@ -1075,10 +1075,10 @@
                 "Tag": 40,
                 "ActionTag": 979224221,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 22.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0_2_0_0",
+                "Name": "btn18",
                 "ctype": "TextObjectData"
               },
               {
@@ -1124,10 +1124,10 @@
                 "Tag": 41,
                 "ActionTag": 1851901219,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 22.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0_2_0_0_0",
+                "Name": "btn19",
                 "ctype": "TextObjectData"
               },
               {
@@ -1173,10 +1173,10 @@
                 "Tag": 42,
                 "ActionTag": -1976866710,
                 "Size": {
-                  "X": 20.0,
-                  "Y": 20.0
+                  "X": 22.0,
+                  "Y": 23.0
                 },
-                "Name": "Text_1_0_0_0_0_0_2_0_0_0_0",
+                "Name": "btn20",
                 "ctype": "TextObjectData"
               }
             ],
@@ -1185,7 +1185,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_2",
+            "Name": "pnlMap",
             "ctype": "PanelObjectData"
           },
           {
@@ -1260,7 +1260,7 @@
               "X": 200.0,
               "Y": 36.0
             },
-            "Name": "Button_1",
+            "Name": "btnBack",
             "ctype": "ButtonObjectData"
           }
         ],

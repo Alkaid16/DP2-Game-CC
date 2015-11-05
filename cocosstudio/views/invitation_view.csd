@@ -6,7 +6,7 @@
       <ObjectData Name="Scene" Tag="75" ctype="GameNodeObjectData">
         <Size X="640.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="Image_1" ActionTag="1708567202" Tag="28" IconVisible="False" LeftMargin="1.4272" RightMargin="379.5728" TopMargin="222.0499" BottomMargin="223.9501" Scale9Width="259" Scale9Height="194" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="imgInvitationWallpaper" ActionTag="1708567202" Tag="28" IconVisible="False" LeftMargin="1.4272" RightMargin="379.5728" TopMargin="222.0499" BottomMargin="223.9501" Scale9Width="259" Scale9Height="194" ctype="ImageViewObjectData">
             <Size X="259.0000" Y="194.0000" />
             <AnchorPoint ScaleY="0.5000" />
             <Position X="1.4272" Y="320.9501" />
@@ -16,7 +16,7 @@
             <PreSize X="0.4047" Y="0.3031" />
             <FileData Type="Normal" Path="res_views/wallpaper_selector.jpg" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_1" ActionTag="-414286772" Tag="29" IconVisible="False" LeftMargin="106.6029" RightMargin="85.3971" TopMargin="159.1552" BottomMargin="457.8448" FontSize="20" LabelText="Muchas gracias por jugar &lt;&lt;Nombre del Juego&gt;&gt;!!" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="lblTitle" ActionTag="-414286772" Tag="29" IconVisible="False" LeftMargin="106.6029" RightMargin="85.3971" TopMargin="159.1552" BottomMargin="457.8448" FontSize="20" LabelText="Muchas gracias por jugar &lt;&lt;Nombre del Juego&gt;&gt;!!" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="448.0000" Y="23.0000" />
             <AnchorPoint ScaleX="0.4981" ScaleY="0.5217" />
             <Position X="329.7327" Y="469.8445" />
@@ -27,7 +27,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2" ActionTag="796398798" Tag="30" IconVisible="False" LeftMargin="22.3438" RightMargin="455.6562" TopMargin="238.4947" BottomMargin="378.5053" FontSize="20" LabelText="Texto de Invitación" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="lblDescription" ActionTag="796398798" Tag="30" IconVisible="False" LeftMargin="22.3438" RightMargin="455.6562" TopMargin="238.4947" BottomMargin="378.5053" FontSize="20" LabelText="Texto de Invitación" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="162.0000" Y="23.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="103.3438" Y="390.0053" />
@@ -38,7 +38,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_2" ActionTag="297076349" Tag="31" IconVisible="False" LeftMargin="285.6884" RightMargin="308.3116" TopMargin="317.9214" BottomMargin="276.0786" Scale9Width="46" Scale9Height="46" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="imgLogo" ActionTag="297076349" Tag="31" IconVisible="False" LeftMargin="285.6884" RightMargin="308.3116" TopMargin="317.9214" BottomMargin="276.0786" Scale9Width="46" Scale9Height="46" ctype="ImageViewObjectData">
             <Size X="46.0000" Y="46.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="308.6884" Y="299.0786" />
@@ -48,7 +48,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Button_1" ActionTag="-366999809" Tag="32" IconVisible="False" LeftMargin="223.9517" RightMargin="216.0483" TopMargin="459.4373" BottomMargin="144.5627" TouchEnable="True" FontSize="14" ButtonText="Visita AFI Perú" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnInvitation" ActionTag="-366999809" Tag="32" IconVisible="False" LeftMargin="223.9517" RightMargin="216.0483" TopMargin="459.4373" BottomMargin="144.5627" TouchEnable="True" FontSize="14" ButtonText="Visita AFI Perú" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="200.0000" Y="36.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="323.9517" Y="162.5627" />

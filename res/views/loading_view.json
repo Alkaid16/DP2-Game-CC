@@ -53,7 +53,7 @@
               "X": 259.0,
               "Y": 194.0
             },
-            "Name": "Image_1",
+            "Name": "loading_wallpaper",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -98,7 +98,7 @@
               "X": 160.0,
               "Y": 160.0
             },
-            "Name": "logo_2",
+            "Name": "imgLogo",
             "ctype": "SpriteObjectData"
           },
           {
@@ -183,7 +183,7 @@
                   "X": 200.0,
                   "Y": 14.0
                 },
-                "Name": "LoadingBar_1",
+                "Name": "barLoading",
                 "ctype": "LoadingBarObjectData"
               }
             ],
@@ -192,7 +192,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_1",
+            "Name": "pnlLoadingBar",
             "ctype": "PanelObjectData"
           }
         ],

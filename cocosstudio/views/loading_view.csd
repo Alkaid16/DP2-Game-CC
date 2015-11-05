@@ -6,7 +6,7 @@
       <ObjectData Name="Scene" Tag="73" ctype="GameNodeObjectData">
         <Size X="640.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="Image_1" ActionTag="-1418057157" Tag="59" IconVisible="False" LeftMargin="-0.1573" RightMargin="381.1573" TopMargin="221.4901" BottomMargin="224.5100" Scale9Width="259" Scale9Height="194" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="loading_wallpaper" ActionTag="-1418057157" Tag="59" IconVisible="False" LeftMargin="-0.1573" RightMargin="381.1573" TopMargin="221.4901" BottomMargin="224.5100" Scale9Width="259" Scale9Height="194" ctype="ImageViewObjectData">
             <Size X="259.0000" Y="194.0000" />
             <AnchorPoint ScaleY="0.5094" />
             <Position X="-0.1573" Y="323.3405" />
@@ -16,7 +16,7 @@
             <PreSize X="0.4047" Y="0.3031" />
             <FileData Type="Normal" Path="res_views/wallpaper_selector.jpg" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="logo_2" ActionTag="-257226806" Tag="84" IconVisible="False" LeftMargin="235.6298" RightMargin="244.3702" TopMargin="141.1746" BottomMargin="338.8254" ctype="SpriteObjectData">
+          <AbstractNodeData Name="imgLogo" ActionTag="-257226806" Tag="84" IconVisible="False" LeftMargin="235.6298" RightMargin="244.3702" TopMargin="141.1746" BottomMargin="338.8254" ctype="SpriteObjectData">
             <Size X="160.0000" Y="160.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="315.6298" Y="418.8254" />
@@ -27,10 +27,10 @@
             <FileData Type="Normal" Path="res_views/logo.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Panel_1" ActionTag="-438199518" Tag="85" IconVisible="False" LeftMargin="221.4944" RightMargin="218.5056" TopMargin="439.9992" BottomMargin="0.0008" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="pnlLoadingBar" ActionTag="-438199518" Tag="85" IconVisible="False" LeftMargin="221.4944" RightMargin="218.5056" TopMargin="439.9992" BottomMargin="0.0008" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="200.0000" Y="200.0000" />
             <Children>
-              <AbstractNodeData Name="LoadingBar_1" ActionTag="1159869421" Tag="94" IconVisible="False" LeftMargin="-1.0317" RightMargin="1.0317" TopMargin="91.5137" BottomMargin="94.4863" ctype="LoadingBarObjectData">
+              <AbstractNodeData Name="barLoading" ActionTag="1159869421" Tag="94" IconVisible="False" LeftMargin="-1.0317" RightMargin="1.0317" TopMargin="91.5137" BottomMargin="94.4863" ctype="LoadingBarObjectData">
                 <Size X="200.0000" Y="14.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="98.9683" Y="101.4863" />
