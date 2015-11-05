@@ -6,10 +6,13 @@ function executeTrap(tile){
 
     switch(idTrap){
         case '1':
-            //HoleController.activateHole();
+            HoleController.activateHole();
+            //BoardController.activateBoard();
+
             break;
         case '2':
             BoardController.activateBoard();
+
             break;
         case '3':
             MeshController.activateMesh();
@@ -104,34 +107,75 @@ var BoardController = (function(){
     }
 
     return pub;
+
 })();
 
-/*var HoleController = (function(){
+var HoleController = (function(){
 
     var pub = {};
-    var sizeFactor = 1.20;
-    var keycode = this.storedDecision;
-    var scX = jump.getScaleX();
-    var scY = jump.getScaleY();
-
-    var resetSprite = function(){
-        var jump = gameplayMap.sprite;
-        jump.scaleX = scX;
-        jump.scaleY = scY;
-    }
+    var salto = false;
 
     pub.activateHole = function(){
-        var jump = gameplayMap.sprite;
-        if (keycode == cc.KEY.space){
-            jump.scaleX *= sizeFactor;
-            jump.scaleY *= sizeFactor;
+        //jump = false;
+        var ch = gameplayMap.sprite;
+        var aux = childMoveAction.keyState;
+        var posY;
+        var posX;
+        //Lo que hace es solamente desplazarse hasta una posici?n cuando se oprime la barra espaciadora dependiendo
+        //de la direcci?n del ni?o. Al final no logre una mejor animaci?n de esto.Pido disculpas
+        function keyPress (evt){
+            if(evt.keyCode == 32){
+                salto = true;
+                console.log("Salto");
+                if(aux[1] == 1){
+                    posY = ch.getPositionY();
+                    console.log("posY1Up: " + posY);
+                    posY -= 3;
+                    console.log("posY2Up: " + posY);
+                    ch.setPositionY(posY);
+                }
+                else if(aux[0] == 1){
+                    posY = ch.getPositionY();
+                    console.log("posY1Down: " + posY);
+                    posY += 3;
+                    console.log("posY2Down: " + posY);
+                    ch.setPositionY(posY);
+                }
+                else if(aux[2] == 1){
+                    posX = ch.getPositionX();
+                    console.log("posX1Left: " + posX);
+                    posX -= 10;
+                    console.log("posX2Left: " + posX);
+                    ch.setPositionX(posX);
+                }
+                else if(aux[3] == 1){
+                    posX = ch.getPositionX();
+                    console.log("posX1Right: " + posX);
+                    posX += 5;
+                    console.log("posX2Right: " + posX);
+                    ch.setPositionX(posX);
+                }
+            }
+            else
+                loseWillPoint();
         }
-        setTimeout(resetSprite,1000);
+
+        function keyUp(evt){
+            if(evt.keyCode == 32){
+                salto = false;
+                console.log("Dejo de saltar");
+            }
+
+        }
+        window.addEventListener('keydown', keyPress,true);
+        window.addEventListener('keyup', keyUp,true);
     }
+
+
     return pub;
 
 
-})();*/
+})();
 
 var MeshController = (function(){
     //Variables de malla
@@ -294,7 +338,7 @@ var lunchBoxController = (function(){
     var numSprites=6;
 
     var numBoxBoard;//Cantidad de espacios en los que se ha dividido la pantalla
-    var boxBoardCtrol = {};//Esta variable indica si la posición ha sido usada| -1 = no usada, otro valor es el índice de spritesLunchBox
+    var boxBoardCtrol = {};//Esta variable indica si la posición ha sido usada| -1 = no usada, otro valor es el ú‹dice de spritesLunchBox
     var flagChargeBox = false;
     var numBoxBoardUsed;//Esta variable indica la cantidad de Box usados
 
@@ -411,7 +455,7 @@ var lunchBoxController = (function(){
             spritesLunchBoxCtrl[i]=1;
             spritesLunchBox[i].setScale(0.4);
 
-            //Se escoge una posición vacía de forma aleatoria
+            //Se escoge una posición vacú} de forma aleatoria
             //Esto en base a la cantidad de espacios en los que se ha divido la pizarra
             //menos la cantidad de posiciones usadas, luego se escoge la posición ignorando las posiciones que fueron usadas
             var rand= parseInt(Math.random()*(numBoxBoard-numBoxBoardUsed));
@@ -425,7 +469,7 @@ var lunchBoxController = (function(){
 
                 if(posBox==rand)
                 {
-                    //En esta variable se guarda el índice del Sprite usado en la pizarra
+                    //En esta variable se guarda el ú‹dice del Sprite usado en la pizarra
                     boxBoardCtrol[j]=i;
                     numBoxBoardUsed++;
                     posBox=j;
