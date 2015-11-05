@@ -641,14 +641,12 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this.initTileMatrix();
         this.initObstacles();
 
-
         this.sprite= new cc.Sprite("#ninoPost1.png");
         this.sprite.setVisible(false);
-        this.monster = new cc.Sprite("res/monster.jpg");
+        this.monster = new cc.Sprite("#monstruo1.png");
         this.monster.setPosition(size.width/2,-300);
         this.scoreLabel = new cc.LabelTTF(this.coins,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
         this.scoreLabel.setPosition(this.sprite.getPositionX(), this.sprite.getPositionY() + 40);
-
 
         ChildSM.setChild(this.sprite);
 
@@ -967,6 +965,7 @@ var HelloWorldScene = cc.Scene.extend({
 
         },this.gameplayLayer);
 
+        DefeatModalC.setParentScene(this);
         gameplayMap.schedule(childMoveAction.update);
     },
 

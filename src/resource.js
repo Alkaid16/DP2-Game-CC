@@ -4,6 +4,7 @@ var res = {
     ButtonPressed_png : "res/buttonPressed.png",
     MainScreen_json: "res/MainScreen.json",
     MainScene_json : "res/MainScene.json",
+    defeat_view_json: "res/views/defeat_view.json",
     level_selector_view_json : "res/views/level_selector_view.json",
     level_modal_json : "res/views/level_modal.json",
     map2_tmx: "res/levels/map2.tmx",

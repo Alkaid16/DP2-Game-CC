@@ -64,6 +64,7 @@ cc.game.onStart = function(){
     cc.LoaderScene.preload(g_resources, function () {
         var mainScreen = new cc.Scene();
         ChildSM.initAnimations();
+        DefeatModalC.load();
 
         var mainScreenLayer = MainSceneC.loadMainScreen(function(){
             var newScene =LevelSelectionC.loadScene();

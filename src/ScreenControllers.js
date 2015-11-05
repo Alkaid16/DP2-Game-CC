@@ -146,3 +146,76 @@ var LevelModalC = (function(){
 
     return pub;
 })();
+
+var DefeatModalC = (function(){
+    var pub = {};
+    var layer;
+    var pScene;
+    var cLayer;
+
+    pub.load = function(){
+        var obj =  ccs.load(res.defeat_view_json);
+
+        layer = obj.node;
+        layer.setVisible(false);
+        layer.setOpacity(0);
+
+        createCoverLayer();
+
+        var btnExit = layer.getChildByName("btnExit");
+        btnExit.addClickEventListener(function(){
+            alert("TO DO");
+        });
+
+        var btnRetry = layer.getChildByName("btnRetry");
+        btnRetry.addClickEventListener(function(){
+            alert("TO DO");
+        });
+
+        var btnHelp = layer.getChildByName("btnHelp");
+        btnHelp.addClickEventListener(function(){
+            alert("TO DO");
+        });
+    };
+
+    pub.executeDefeat = function(){
+        cLayer.runAction(cc.fadeIn(1.5));
+        cLayer.cListener.swallowTouches = true;
+        layer.runAction(cc.delayTime(1.5));
+        layer.runAction(cc.fadeIn(0.5));
+    };
+
+    pub.setParentScene = function(parentScene){
+        if(pScene != null){
+            layer.removeFromParent();
+            cLayer.removeFromParent();
+        }
+        pScene = parentScene;
+        setupCoverLayer(50);
+        pScene.addChild(layer, 51);
+    };
+
+    function createCoverLayer(){
+        cLayer = new cc.LayerColor(cc.color(0,0,0), 640,640);
+        cLayer.setOpacity(0);
+        cLayer.setPosition(cc.p(0,0));
+    }
+
+    function setupCoverLayer(zOrder){
+        pScene.addChild(cLayer, zOrder);
+        if(!("cListener" in cLayer)) {
+            cLayer.cListener = cc.EventListener.create({
+                event: cc.EventListener.TOUCH_ONE_BY_ONE,
+                swallowTouches: false,
+                onTouchBegan: function (touch, event) {
+                    return true;
+                }
+            });
+            cc.eventManager.addListener(cLayer.cListener, cLayer);
+        }else{
+            cLayer.cListener.swallowTouches = false;
+        }
+    }
+
+    return pub;
+})();
