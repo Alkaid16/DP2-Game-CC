@@ -376,6 +376,87 @@ var childMoveAction = (function(){
         }
         return 0;
     }
+    //CAMBIO
+    var randomDirection = function(posX, posY)
+    {   
+        var ScannerSize = 60;
+        var direction = getCurrentDirection();
+        console.log("initial direction: "+direction);
+
+        //Frenar
+        stopMovement();
+
+        //Hallar direccion inversa antes del choque
+        var lastMovInv=-1;
+        switch(direction) {
+            case 0 :
+                posY+=ScannerSize;
+                lastMovInv = 1;
+                break;
+            case 1 :
+                posY-=ScannerSize;
+                lastMovInv = 0;
+                break;
+            case 2 :
+                posX+=ScannerSize;
+                lastMovInv = 3;
+                break;
+            case 3 :
+                posX-=ScannerSize;
+                lastMovInv = 2;
+                break;
+        }
+
+        var movements = new Array(0,0,0,0);
+        //var movements = new Array(1,1,1,1);
+
+        //Evalua posibles movimientos en caso de choque con pared
+        if(posX<mainLayer.getMapSize().width-1 && mainLayer.tileMatrix[posX+1][posY]!=1) movements[3]=1; //derecha
+        if(posX>0 && mainLayer.tileMatrix[posX-1][posY]!=1) movements[2]=1; //izquierda
+        if(posY>0 && mainLayer.tileMatrix[posX][posY-1]!=1) movements[0]=1; //arriba
+        if(posY<mainLayer.getMapSize().height-1 && mainLayer.tileMatrix[posX][posY+1]!=1) movements[1]=1; //abajo
+
+        var possibleMovements = [];
+
+        for(var i=0;i<4;i++) {
+            console.log("   movements["+i+"]: "+movements[i]);
+            if (movements[i] == 1 && i!=lastMovInv) {
+                possibleMovements.push(i);
+                console.log("   push: "+i);
+            }
+        }
+
+        if(possibleMovements.length==0)
+            possibleMovements.push(lastMovInv);
+
+        var random = Math.random();
+        var realRandom = parseInt(random*possibleMovements.length);
+
+        pub.keyState[possibleMovements[realRandom]]= 1;
+        lastMov = possibleMovements[realRandom];
+
+        console.log("final direction: "+lastMov);
+
+        var keyCode = -1;
+        switch(lastMov)
+        {
+            case 1:
+                keyCode = cc.KEY.down;
+                break;
+            case 0:
+                keyCode = cc.KEY.up;
+                break;
+            case 2:
+                keyCode = cc.KEY.left;
+                break;
+            case 3:
+                keyCode = cc.KEY.right;
+                break;
+        }
+
+        
+        interHandler.recordChoice(keyCode);
+    }//FIN CAMBIO
 
     //Metodo principal de movimiento
     pub.update = function(){
@@ -455,6 +536,15 @@ var childMoveAction = (function(){
 
                 //Si choca con una interseccion
                 if(tile.typeTerr == 2){
+                    //CAMBIO
+                    console.log("chocando con intersección");
+                    //En caso no se haya seleccionado una dirección por el usuario
+                    if(interHandler.choiceAvailable)
+                    {//Se procede a elegir una al azar
+                        console.log("Inicializando elección aleatoria");
+                        randomDirection(posX, posY);
+                    }
+                    //FIN CAMBIO
                     var result = interCollision(direction, rect1, tile);
                     if(result==0)break;
                     else continue;

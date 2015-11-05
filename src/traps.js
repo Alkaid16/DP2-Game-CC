@@ -391,6 +391,7 @@ var lunchBoxController = (function(){
         }
 
         ChildSM.startRunning();
+        flagChargeBox=false;
         started = false;
     }
 
