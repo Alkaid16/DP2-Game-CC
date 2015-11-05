@@ -21,7 +21,8 @@ var res = {
     random_png: "res/levels/Tilesets/random.png",
     boy_up_plist:"res/boy_up.plist",
     boy_down_plist:"res/boy_down.plist",
-    spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist"
+    spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist",
+    monstruo_plist: "res/spritesheets/monstruo.plist"
 };
 
 var g_resources = [];

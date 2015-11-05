@@ -338,14 +338,19 @@ var childMoveAction = (function(){
         return true;
     }
 
-    var interCollision = function(direction, sprRect, tile){
+    var interCollision = function(direction, sprRect, tile, posX, posY){
         //Si es el primer contacto con el tile de intersección, se registra el mismo y se inicializa
         //el delay para ejecutar la decisión del usuario
         if(interHandler.intersectTile==null){
             interHandler.intersectTile = tile;
             collisionDelay = tileWidth-1;
             collisionDelay -= interHandler.excessInIntersection(direction, sprRect, tile.rect);
-            interHandler.choiceAvailable=false;
+
+            //En caso no se haya seleccionado una dirección por el usuario, Se procede a elegir una al azar
+            if(interHandler.choiceAvailable){
+                console.log("Inicializando elección aleatoria");
+                randomDirection(posX, posY);
+            }
             mainLayer.sprite.setColor(new cc.Color(255,255,255,0));
 
             //Si ya está dentro del tile, se disminuye el valor el contador collisionDelay
@@ -385,39 +390,35 @@ var childMoveAction = (function(){
         }
         return 0;
     }
-    //CAMBIO
+
     var randomDirection = function(posX, posY)
     {   
-        var ScannerSize = 60;
+        var ScannerSize = 1;
         var direction = getCurrentDirection();
         console.log("initial direction: "+direction);
-
-        //Frenar
-        stopMovement();
 
         //Hallar direccion inversa antes del choque
         var lastMovInv=-1;
         switch(direction) {
             case 0 :
-                posY+=ScannerSize;
+                posY-=ScannerSize;
                 lastMovInv = 1;
                 break;
             case 1 :
-                posY-=ScannerSize;
+                posY+=ScannerSize;
                 lastMovInv = 0;
                 break;
             case 2 :
-                posX+=ScannerSize;
+                posX-=ScannerSize;
                 lastMovInv = 3;
                 break;
             case 3 :
-                posX-=ScannerSize;
+                posX+=ScannerSize;
                 lastMovInv = 2;
                 break;
         }
 
         var movements = new Array(0,0,0,0);
-        //var movements = new Array(1,1,1,1);
 
         //Evalua posibles movimientos en caso de choque con pared
         if(posX<mainLayer.getMapSize().width-1 && mainLayer.tileMatrix[posX+1][posY]!=1) movements[3]=1; //derecha
@@ -441,8 +442,7 @@ var childMoveAction = (function(){
         var random = Math.random();
         var realRandom = parseInt(random*possibleMovements.length);
 
-        pub.keyState[possibleMovements[realRandom]]= 1;
-        lastMov = possibleMovements[realRandom];
+        var lastMov = possibleMovements[realRandom];
 
         console.log("final direction: "+lastMov);
 
@@ -465,7 +465,7 @@ var childMoveAction = (function(){
 
         
         interHandler.recordChoice(keyCode);
-    }//FIN CAMBIO
+    }
 
     //Metodo principal de movimiento
     pub.update = function(){
@@ -545,16 +545,7 @@ var childMoveAction = (function(){
 
                 //Si choca con una interseccion
                 if(tile.typeTerr == 2){
-                    //CAMBIO
-                    console.log("chocando con intersección");
-                    //En caso no se haya seleccionado una dirección por el usuario
-                    if(interHandler.choiceAvailable)
-                    {//Se procede a elegir una al azar
-                        console.log("Inicializando elección aleatoria");
-                        randomDirection(posX, posY);
-                    }
-                    //FIN CAMBIO
-                    var result = interCollision(direction, rect1, tile);
+                    var result = interCollision(direction, rect1, tile, posX, posY);
                     if(result==0)break;
                     else continue;
                 }
