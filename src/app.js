@@ -186,6 +186,7 @@ var childMoveAction = (function(){
     var tileWidth = 0;
     var speed = 2.5;
     var dummyBool = false;
+    var isJumping = false;
     var collisionDelay = 0;
     var gameStarted = false;
     var haveShield = false;
@@ -205,6 +206,14 @@ var childMoveAction = (function(){
 
     pub.getSpeedSprite = function(){
         return speed;
+    }
+
+    pub.getIsJumping = function(){
+        return isJumping;
+    }
+
+    pub.updateIsJumping = function(val){
+        isJumping = val;
     }
 
     pub.updateSpeed = function(spd){
@@ -493,7 +502,7 @@ var childMoveAction = (function(){
 
         //Condicion de victoria
         if(posX == mainLayer.finishPoint[0] && posY == mainLayer.finishPoint[1]){
-            alert("YOU WIN!");
+            alert("YOU WIN! Your Score: " + gameplayMap.coins);
             close();
         }
 
@@ -600,7 +609,7 @@ var childMoveAction = (function(){
             }
 
             if(cc.rectIntersectsRect(rectM,rect1)){
-                alert("You Lose");
+                alert("You Lose. Your score: " + gameplayMap.coins);
                 return;
             }
         }
@@ -615,12 +624,14 @@ var childMoveAction = (function(){
 
 
 var GameplayMap = cc.TMXTiledMap.extend({
+    scoreLabel:0,
     sprite:null,
     monster:null,
     finishPoint: null,
     tileMatrix:null,
     collectables: null,
     willPoints:0,
+    coins:0,
     intersections: [],
 
     ctor:function (levelName) {
@@ -639,10 +650,14 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this.initTileMatrix();
         this.initObstacles();
 
+
         this.sprite= new cc.Sprite("#ninoPost1.png");
         this.sprite.setVisible(false);
         this.monster = new cc.Sprite("res/monster.jpg");
         this.monster.setPosition(size.width/2,-300);
+        this.scoreLabel = new cc.LabelTTF(this.coins,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        this.scoreLabel.setPosition(this.sprite.getPositionX(), this.sprite.getPositionY() + 40);
+
 
         ChildSM.setChild(this.sprite);
 
@@ -672,6 +687,8 @@ var GameplayMap = cc.TMXTiledMap.extend({
             onKeyPressed:  function(keyCode, event){
                 if(!interHandler.choiceAvailable) return;
                 interHandler.recordChoice(keyCode);
+
+
             },
 
             onKeyReleased: function(keyCode, event){
@@ -683,6 +700,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
                 if(MeshController.isActivated())
                     MeshController.keyboardInput(keyCode);
+
             }
 
         }, this);
@@ -894,7 +912,7 @@ var zoomGame = {
     currentScale:0.1,
     timeZoom:38000,
     timeLeft:38000,
-    zoomActivate:true,
+    zoomActivate:true
 }
 
 var HelloWorldScene = cc.Scene.extend({
@@ -916,6 +934,7 @@ var HelloWorldScene = cc.Scene.extend({
         this.gameplayLayer.addChild(map,0);
         this.gameplayLayer.addChild(map.sprite, 5);
         this.gameplayLayer.addChild(this.fog, 20);
+        this.gameplayLayer.addChild(map.scoreLabel,20);
 
         //inicializo el zoom
         zoomGame.ctor(0,0.01,1600,0.280);
@@ -953,7 +972,7 @@ var HelloWorldScene = cc.Scene.extend({
                     //Check the click area
                     lunchBoxController.onClickMouse(locationInNode.x,locationInNode.y);
                 }
-            },
+            }
 
         },this.gameplayLayer);
 
