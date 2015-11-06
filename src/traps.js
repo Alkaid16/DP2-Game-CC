@@ -113,46 +113,39 @@ var BoardController = (function(){
 var HoleController = (function(){
 
     var pub = {};
-    var salto = false;
-
+    var getHole = true;
     pub.activateHole = function(){
         //jump = false;
         var ch = gameplayMap.sprite;
         var aux = childMoveAction.keyState;
+        var auxJmp = childMoveAction;
         var posY;
         var posX;
+
         //Lo que hace es solamente desplazarse hasta una posici?n cuando se oprime la barra espaciadora dependiendo
         //de la direcci?n del ni?o. Al final no logre una mejor animaci?n de esto.Pido disculpas
         function keyPress (evt){
-            if(evt.keyCode == 32){
-                salto = true;
-                console.log("Salto");
+            if(evt.keyCode == 32 && auxJmp.getIsJumping() == false && getHole == true){
+                auxJmp.updateIsJumping(true);
+                console.log("Salto : " + auxJmp.getIsJumping());
                 if(aux[1] == 1){
                     posY = ch.getPositionY();
-                    console.log("posY1Up: " + posY);
-                    posY -= 3;
-                    console.log("posY2Up: " + posY);
+                    posY -= 20;
                     ch.setPositionY(posY);
                 }
                 else if(aux[0] == 1){
                     posY = ch.getPositionY();
-                    console.log("posY1Down: " + posY);
-                    posY += 3;
-                    console.log("posY2Down: " + posY);
+                    posY += 20;
                     ch.setPositionY(posY);
                 }
                 else if(aux[2] == 1){
                     posX = ch.getPositionX();
-                    console.log("posX1Left: " + posX);
-                    posX -= 10;
-                    console.log("posX2Left: " + posX);
+                    posX -= 20;
                     ch.setPositionX(posX);
                 }
                 else if(aux[3] == 1){
                     posX = ch.getPositionX();
-                    console.log("posX1Right: " + posX);
-                    posX += 5;
-                    console.log("posX2Right: " + posX);
+                    posX += 20;
                     ch.setPositionX(posX);
                 }
             }
@@ -161,16 +154,19 @@ var HoleController = (function(){
         }
 
         function keyUp(evt){
-            if(evt.keyCode == 32){
-                salto = false;
+            if(evt.keyCode == 32 && auxJmp.getIsJumping() == true){
+                auxJmp.updateIsJumping(false);
+                getHole = false;
+                //window.addEventListener('keydown', keyPress, auxJmp.getIsJumping());
+                //window.addEventListener('keyup', keyUp, auxJmp.getIsJumping());
                 console.log("Dejo de saltar");
             }
 
         }
-        window.addEventListener('keydown', keyPress,true);
-        window.addEventListener('keyup', keyUp,true);
-    }
+        window.addEventListener('keydown', keyPress, true);
+        window.addEventListener('keyup', keyUp, true);
 
+    }
 
     return pub;
 

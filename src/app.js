@@ -186,6 +186,7 @@ var childMoveAction = (function(){
     var tileWidth = 0;
     var speed = 2.5;
     var dummyBool = false;
+    var isJumping = false;
     var collisionDelay = 0;
     var gameStarted = false;
     var haveShield = false;
@@ -196,6 +197,7 @@ var childMoveAction = (function(){
     pub.childPosX = 0;
     pub.childPosY = 0;
     pub.lastDirection = 0;
+
 
     pub.keyState = new Array(1,0,0,0);
 
