@@ -113,7 +113,7 @@ var BoardController = (function(){
 var HoleController = (function(){
 
     var pub = {};
-    var getHole = true;
+    var getHole;
     pub.activateHole = function(){
         //jump = false;
         var ch = gameplayMap.sprite;
@@ -121,10 +121,11 @@ var HoleController = (function(){
         var auxJmp = childMoveAction;
         var posY;
         var posX;
-
+        getHole = true;
         //Lo que hace es solamente desplazarse hasta una posici?n cuando se oprime la barra espaciadora dependiendo
         //de la direcci?n del ni?o. Al final no logre una mejor animaci?n de esto.Pido disculpas
         function keyPress (evt){
+
             if(evt.keyCode == 32 && auxJmp.getIsJumping() == false && getHole == true){
                 auxJmp.updateIsJumping(true);
                 console.log("Salto : " + auxJmp.getIsJumping());
@@ -148,15 +149,19 @@ var HoleController = (function(){
                     posX += 20;
                     ch.setPositionX(posX);
                 }
+                getHole = false;
             }
             else
                 loseWillPoint();
+
         }
+
 
         function keyUp(evt){
             if(evt.keyCode == 32 && auxJmp.getIsJumping() == true){
                 auxJmp.updateIsJumping(false);
-                getHole = false;
+                console.log("hueco: "+getHole);
+
                 //window.addEventListener('keydown', keyPress, auxJmp.getIsJumping());
                 //window.addEventListener('keyup', keyUp, auxJmp.getIsJumping());
                 console.log("Dejo de saltar");
