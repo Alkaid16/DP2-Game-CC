@@ -814,6 +814,7 @@ var HelloWorldScene = cc.Scene.extend({
 
     ctor: function(levelNum){
         this._super();
+        ChildSM.initSM();
         this.gameplayLayer = new cc.Layer();
         var root = ccs.load(res.gameHUD_json);
         this.hudLayer = root.node;

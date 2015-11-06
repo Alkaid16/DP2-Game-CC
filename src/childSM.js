@@ -7,6 +7,11 @@ var ChildSM = (function(){
     //Arreglo con las 4 animaciones para correr
     var runAnims = [];
 
+    pub.initSM = function(){
+        currDir = -1;
+        state = 0;
+    }
+
     pub.initAnimations= function(){
         cc.spriteFrameCache.addSpriteFrames(res.spritesheetNino_plist);
         loadAnimation(1,8,"ninoFrente");
