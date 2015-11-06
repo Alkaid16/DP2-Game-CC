@@ -157,6 +157,7 @@ var DefeatModalC = (function(){
         var obj =  ccs.load(res.defeat_view_json);
 
         layer = obj.node;
+        layer.setPosition(cc.p(80,80));
         layer.setVisible(false);
         layer.setOpacity(0);
 
@@ -179,10 +180,11 @@ var DefeatModalC = (function(){
     };
 
     pub.executeDefeat = function(){
+        layer.setVisible(true);
         cLayer.runAction(cc.fadeIn(1.5));
         cLayer.cListener.swallowTouches = true;
-        layer.runAction(cc.delayTime(1.5));
-        layer.runAction(cc.fadeIn(0.5));
+        var seq = cc.sequence(new Array(cc.delayTime(1.5),cc.fadeIn(0.5)));
+        layer.runAction(seq);
     };
 
     pub.setParentScene = function(parentScene){
@@ -191,8 +193,8 @@ var DefeatModalC = (function(){
             cLayer.removeFromParent();
         }
         pScene = parentScene;
-        setupCoverLayer(50);
         pScene.addChild(layer, 51);
+        setupCoverLayer(50);
     };
 
     function createCoverLayer(){

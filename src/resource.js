@@ -19,6 +19,7 @@ var res = {
     GameFog_png: "res/GameFog.png",
     terrain_png: "res/levels/Tilesets/terrain.png",
     gameHUD_json: "res/views/gameHUD.json",
+    exMark_png: "res/exMark.png",
     random_png: "res/levels/Tilesets/random.png",
     boy_up_plist:"res/boy_up.plist",
     boy_down_plist:"res/boy_down.plist",

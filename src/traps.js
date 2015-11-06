@@ -7,12 +7,9 @@ function executeTrap(tile){
     switch(idTrap){
         case '1':
             HoleController.activateHole();
-            //BoardController.activateBoard();
-
             break;
         case '2':
             BoardController.activateBoard();
-
             break;
         case '3':
             MeshController.activateMesh();
@@ -37,6 +34,11 @@ function loseWillPoint(){
     var count = gameplayMap.willPoints;
     points[0] = currentGameplayScene.hudLayer.getChildByName("pnlWillPoint").getChildByName("wp1");
     points[1] = currentGameplayScene.hudLayer.getChildByName("pnlWillPoint").getChildByName("wp2");
+
+    if(gameplayMap.willPoints == 0){
+        gameplayMap.gameOver();
+        return;
+    }
 
     for(var i=0; i<points.length; i++){
         if(count>0){
@@ -72,8 +74,8 @@ var BoardController = (function(){
         charPos = 0;
         var rand = parseInt(Math.random()*words.length);
         selWord = words[rand];
-        label = new cc.LabelTTF(selWord, 'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
-        labelTyped = new cc.LabelTTF("", 'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        label = new cc.LabelTTF(selWord, 'Arial', 18, cc.size(selWord.length*15,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        labelTyped = new cc.LabelTTF("", 'Arial', 18, cc.size(selWord.length*15,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
         labelTyped.setColor(new cc.Color(255,0,0));
 
         label.setPosition(gameplayMap.sprite.getPositionX(), gameplayMap.sprite.getPositionY() + 40);
@@ -85,7 +87,7 @@ var BoardController = (function(){
         setTimeout(function(){
             if(pub.isActivated()) loseWillPoint();
             boardCleanup();
-        }, 6000);
+        }, 5000);
     }
 
     pub.keyboardInput = function(letter){
@@ -111,70 +113,41 @@ var BoardController = (function(){
 })();
 
 var HoleController = (function(){
-
     var pub = {};
-    var salto = false;
+    pub.exMark;
+    pub.canJump = false;
+    pub.jumped = false;
 
     pub.activateHole = function(){
-        //jump = false;
-        var ch = gameplayMap.sprite;
+        var child = gameplayMap.sprite;
         var aux = childMoveAction.keyState;
         var posY;
         var posX;
+
         //Lo que hace es solamente desplazarse hasta una posici?n cuando se oprime la barra espaciadora dependiendo
         //de la direcci?n del ni?o. Al final no logre una mejor animaci?n de esto.Pido disculpas
-        function keyPress (evt){
-            if(evt.keyCode == 32){
-                salto = true;
-                console.log("Salto");
-                if(aux[1] == 1){
-                    posY = ch.getPositionY();
-                    console.log("posY1Up: " + posY);
-                    posY -= 3;
-                    console.log("posY2Up: " + posY);
-                    ch.setPositionY(posY);
-                }
-                else if(aux[0] == 1){
-                    posY = ch.getPositionY();
-                    console.log("posY1Down: " + posY);
-                    posY += 3;
-                    console.log("posY2Down: " + posY);
-                    ch.setPositionY(posY);
-                }
-                else if(aux[2] == 1){
-                    posX = ch.getPositionX();
-                    console.log("posX1Left: " + posX);
-                    posX -= 10;
-                    console.log("posX2Left: " + posX);
-                    ch.setPositionX(posX);
-                }
-                else if(aux[3] == 1){
-                    posX = ch.getPositionX();
-                    console.log("posX1Right: " + posX);
-                    posX += 5;
-                    console.log("posX2Right: " + posX);
-                    ch.setPositionX(posX);
-                }
-            }
-            else
-                loseWillPoint();
+        if(pub.jumped == false) loseWillPoint();
+        else pub.jumped = false;
+        pub.canJump = false;
+
+        pub.exMark.removeFromParent(false);
+
+        if(aux[1] == 1){
+            child.setPositionY(child.getPositionY() - gameplayMap.getTileSize().width*2);
+        }
+        else if(aux[0] == 1){
+            child.setPositionY(child.getPositionY() + gameplayMap.getTileSize().width*2);
+        }
+        else if(aux[2] == 1){
+            child.setPositionX(child.getPositionX() - gameplayMap.getTileSize().width*2);
+        }
+        else if(aux[3] == 1){
+            child.setPositionX(child.getPositionX() +  gameplayMap.getTileSize().width*2);
         }
 
-        function keyUp(evt){
-            if(evt.keyCode == 32){
-                salto = false;
-                console.log("Dejo de saltar");
-            }
-
-        }
-        window.addEventListener('keydown', keyPress,true);
-        window.addEventListener('keyup', keyUp,true);
     }
 
-
     return pub;
-
-
 })();
 
 var MeshController = (function(){

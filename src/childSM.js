@@ -43,6 +43,10 @@ var ChildSM = (function(){
         monstAnim = cc.repeatForever(cc.animate(animation));
     }
 
+    pub.runMonsterAnimation = function(sprite){
+        sprite.runAction(monstAnim);
+    }
+
     pub.setDirection = function(direction){
         dir = direction;
     }

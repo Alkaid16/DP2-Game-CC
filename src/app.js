@@ -36,10 +36,24 @@ var interHandler = {
 
         //Variable que indica si el scan se hace horizontal o vertical
         var horizontal = tilePosX == targetPoint[0] ? 0 : 1;
+        var initValueY = tilePosY + factor*((horizontal+1)%2);
+        var initValueX = tilePosX + factor*horizontal;
+        var initValueY2 = tilePosY + 2*factor*((horizontal+1)%2);
+        var initValueX2 = tilePosX + 2*factor*horizontal;
+
+        //Metodo para controlar cuando puede saltar los huecos
+        if(typeof tileMatrix[initValueX2] != 'undefined' && typeof tileMatrix[initValueX2][initValueY2] != 'undefined'
+        && tileMatrix[initValueX2][initValueY2] == 3){
+            if(!HoleController.jumped && !HoleController.canJump) {
+                HoleController.canJump = true;
+                gameplayMap.sprite.addChild(HoleController.exMark,50);
+                HoleController.exMark.setPosition(cc.p(15, 55));
+            }
+        }
 
         //El scan propiamente implementado
-        for(var i=tilePosY + factor*((horizontal+1)%2); i!=targetPoint[1] + factor; i+= factor){
-            for(var j=tilePosX + factor*horizontal; j!=targetPoint[0] + factor; j+= factor){
+        for(var i=initValueY; i!=targetPoint[1] + factor; i+= factor){
+            for(var j=initValueX; j!=targetPoint[0] + factor; j+= factor){
                 //Validación de los limites del mapa
                 if(j<0 || j>mapSizeX-1 || i<0 || i>mapSizeY-1) continue;
 
@@ -224,11 +238,6 @@ var childMoveAction = (function(){
     }
 
 
-    //monstY += speed; ESTO SE DEBE SACAR Y PONER EN OTRO MODULO
-    //if(monstY >= size.height){
-    //    monstY = 0;
-    //}
-
     pub.setTileWidth = function(val){
         tileWidth = val;
     }
@@ -390,8 +399,7 @@ var childMoveAction = (function(){
         return 0;
     }
 
-    var randomDirection = function(posX, posY)
-    {   
+    var randomDirection = function(posX, posY) {
         var ScannerSize = 1;
         var direction = getCurrentDirection();
         console.log("initial direction: "+direction);
@@ -462,7 +470,7 @@ var childMoveAction = (function(){
                 break;
         }
 
-        
+
         interHandler.recordChoice(keyCode);
     }
 
@@ -523,7 +531,8 @@ var childMoveAction = (function(){
         //Verificacion de colisión
         for(var i=1; i < mainLayer.obstacles.length ; i++ ){
             var tile = mainLayer.obstacles[i];
-            var rectM = cc.rect(monstX - monstruo.width/2, monstY - monstruo.height/2,550,550);
+            var rectM = gameplayMap.monster.getBoundingBox();
+            rectM.height = rectM.height*0.9;
 
             if(cc.rectIntersectsRect(rect1,tile.rect)){
                 //Si choca contra un powerup
@@ -535,6 +544,7 @@ var childMoveAction = (function(){
                 //Si choca contra una trampa
                 if('trap' in tile){
                     executeTrap(tile);
+                    if(tile.trap == 1) return;
                     break
                 }
 
@@ -601,8 +611,7 @@ var childMoveAction = (function(){
             }
 
             if(cc.rectIntersectsRect(rectM,rect1)){
-
-                alert("You Lose. Your get: " + gameplayMap.coins + " coins");
+                gameplayMap.gameOver();
                 return;
             }
         }
@@ -646,8 +655,15 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
         this.sprite= new cc.Sprite("#ninoPost1.png");
         this.sprite.setVisible(false);
+
         this.monster = new cc.Sprite("#monstruo1.png");
-        this.monster.setPosition(size.width/2,-300);
+        var cSize = this.monster.getContentSize();
+        var monsterScale = mapWidth*32/cSize.width;
+        this.monster.setScale(monsterScale);
+        this.monster.setContentSize(cSize.width*monsterScale, cSize.height*monsterScale);
+        this.monster.setPosition(cc.p(mapWidth*32/2, - cSize.height*monsterScale/2 - 50));
+        ChildSM.runMonsterAnimation(this.monster);
+
         this.scoreLabel = new cc.LabelTTF(this.coins,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
         this.scoreLabel.setPosition(this.sprite.getPositionX(), this.sprite.getPositionY() + 40);
         this.currentTime = new Date();
@@ -678,10 +694,13 @@ var GameplayMap = cc.TMXTiledMap.extend({
         cc.eventManager.addListener({
             event: cc.EventListener.KEYBOARD,
             onKeyPressed:  function(keyCode, event){
+                //Si presiona la barra espaciadora, se registra el salto
+                if(keyCode == 32 && HoleController.canJump && !HoleController.jumped){
+                    HoleController.jumped = true;
+                }
+
                 if(!interHandler.choiceAvailable) return;
                 interHandler.recordChoice(keyCode);
-
-
             },
 
             onKeyReleased: function(keyCode, event){
@@ -697,8 +716,6 @@ var GameplayMap = cc.TMXTiledMap.extend({
             }
 
         }, this);
-
-        this.addChild(this.monster,10);
         return true;
     },
 
@@ -784,6 +801,8 @@ var GameplayMap = cc.TMXTiledMap.extend({
                     cTile.rect = cc.rect(tileXPosition, tileYPosition,
                         tileWidth, tileHeight);
 
+                    if(idTrap == 1) this.tileMatrix[i][j] = 3;
+
                     this.obstacles.push(cTile);
                 }
 
@@ -836,6 +855,11 @@ var GameplayMap = cc.TMXTiledMap.extend({
                 this.tileMatrix[i][j]=0;
             }
         }
+    },
+
+    gameOver: function(){
+        gameplayMap.unscheduleAllCallbacks();
+        DefeatModalC.executeDefeat();
     }
 
 });
@@ -920,12 +944,14 @@ var HelloWorldScene = cc.Scene.extend({
         this.hudLayer = root.node;
 
         var map = new GameplayMap("levels/Level" + levelNum + ".tmx");
+        HoleController.exMark = new cc.Sprite(res.exMark_png);
         this.fog = initFog(map);
         this.fog.setVisible(false);
 
         gameplayMap = map;
         this.gameplayLayer.addChild(map,0);
         this.gameplayLayer.addChild(map.sprite, 5);
+        this.gameplayLayer.addChild(map.monster, 10);
         this.gameplayLayer.addChild(this.fog, 20);
         this.gameplayLayer.addChild(map.scoreLabel,20);
 

@@ -7,106 +7,106 @@
             <key>monstruo1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,1036},{870,466}}</string>
+                <string>{{2,1460},{803,432}}</string>
                 <key>offset</key>
-                <string>{7,-129}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{84,258},{870,466}}</string>
+                <string>{{0,0},{803,432}}</string>
                 <key>sourceSize</key>
-                <string>{1024,724}</string>
+                <string>{803,432}</string>
             </dict>
             <key>monstruo2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,3030},{858,500}}</string>
+                <string>{{2,2804},{795,462}}</string>
                 <key>offset</key>
-                <string>{2,-111}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{85,223},{858,500}}</string>
+                <string>{{0,0},{795,462}}</string>
                 <key>sourceSize</key>
-                <string>{1024,724}</string>
+                <string>{795,462}</string>
             </dict>
             <key>monstruo3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2516},{858,512}}</string>
+                <string>{{2,2328},{795,474}}</string>
                 <key>offset</key>
-                <string>{1,-105}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{84,211},{858,512}}</string>
+                <string>{{0,0},{795,474}}</string>
                 <key>sourceSize</key>
-                <string>{1024,724}</string>
+                <string>{795,474}</string>
             </dict>
             <key>monstruo4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,3532},{858,500}}</string>
+                <string>{{2,3268},{795,462}}</string>
                 <key>offset</key>
-                <string>{1,-111}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{84,223},{858,500}}</string>
+                <string>{{0,0},{795,462}}</string>
                 <key>sourceSize</key>
-                <string>{1024,724}</string>
+                <string>{795,462}</string>
             </dict>
             <key>monstruo5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,566},{870,468}}</string>
+                <string>{{2,1894},{803,432}}</string>
                 <key>offset</key>
-                <string>{7,-127}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{84,255},{870,468}}</string>
+                <string>{{0,0},{803,432}}</string>
                 <key>sourceSize</key>
-                <string>{1024,724}</string>
+                <string>{803,432}</string>
             </dict>
             <key>monstruo6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,1504},{868,504}}</string>
+                <string>{{2,2},{805,466}}</string>
                 <key>offset</key>
-                <string>{6,-109}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{84,219},{868,504}}</string>
+                <string>{{0,0},{805,466}}</string>
                 <key>sourceSize</key>
-                <string>{1024,724}</string>
+                <string>{805,466}</string>
             </dict>
             <key>monstruo7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{870,562}}</string>
+                <string>{{2,938},{803,520}}</string>
                 <key>offset</key>
-                <string>{8,-80}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{85,161},{870,562}}</string>
+                <string>{{0,0},{803,520}}</string>
                 <key>sourceSize</key>
-                <string>{1024,724}</string>
+                <string>{803,520}</string>
             </dict>
             <key>monstruo8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2010},{868,504}}</string>
+                <string>{{2,470},{805,466}}</string>
                 <key>offset</key>
-                <string>{6,-109}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{84,219},{868,504}}</string>
+                <string>{{0,0},{805,466}}</string>
                 <key>sourceSize</key>
-                <string>{1024,724}</string>
+                <string>{805,466}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -116,9 +116,9 @@
             <key>realTextureFileName</key>
             <string>monstruo.png</string>
             <key>size</key>
-            <string>{874,4034}</string>
+            <string>{809,3732}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:27c2dd75660ef88e013da0e273dc6e5e:3dd6ba6df81aca1c10f07228d0fa2bf2:132a40247b67db338d95494ce14a3ab1$</string>
+            <string>$TexturePacker:SmartUpdate:1f5c621fcb44e635caf91eaca63d74f5:3dd6ba6df81aca1c10f07228d0fa2bf2:132a40247b67db338d95494ce14a3ab1$</string>
             <key>textureFileName</key>
             <string>monstruo.png</string>
         </dict>
