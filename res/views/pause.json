@@ -53,7 +53,7 @@
               "X": 259.0,
               "Y": 194.0
             },
-            "Name": "Image_1",
+            "Name": "imgPauseWallpaper",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -145,7 +145,7 @@
                   "X": 77.0,
                   "Y": 54.0
                 },
-                "Name": "Text_1",
+                "Name": "lblPause",
                 "ctype": "TextObjectData"
               }
             ],
@@ -154,7 +154,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_1",
+            "Name": "pnlPause",
             "ctype": "PanelObjectData"
           },
           {
@@ -273,7 +273,7 @@
                   "X": 200.0,
                   "Y": 36.0
                 },
-                "Name": "Button_1",
+                "Name": "btnContinue",
                 "ctype": "ButtonObjectData"
               },
               {
@@ -348,7 +348,7 @@
                   "X": 200.0,
                   "Y": 36.0
                 },
-                "Name": "Button_1_0",
+                "Name": "btnLevels",
                 "ctype": "ButtonObjectData"
               },
               {
@@ -423,7 +423,7 @@
                   "X": 200.0,
                   "Y": 36.0
                 },
-                "Name": "Button_1_1",
+                "Name": "btnOptions",
                 "ctype": "ButtonObjectData"
               }
             ],
@@ -432,7 +432,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_1_0",
+            "Name": "pnlButtons",
             "ctype": "PanelObjectData"
           }
         ],

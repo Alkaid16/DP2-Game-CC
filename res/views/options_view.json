@@ -53,7 +53,7 @@
               "X": 259.0,
               "Y": 194.0
             },
-            "Name": "Image_1",
+            "Name": "imgOptionsWallpaper",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -145,7 +145,7 @@
                   "X": 83.0,
                   "Y": 46.0
                 },
-                "Name": "Text_2",
+                "Name": "lblTitle",
                 "ctype": "TextObjectData"
               }
             ],
@@ -154,7 +154,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_2",
+            "Name": "pnlTitle",
             "ctype": "PanelObjectData"
           },
           {
@@ -247,7 +247,7 @@
                   "X": 60.0,
                   "Y": 23.0
                 },
-                "Name": "Text_3",
+                "Name": "lblSound",
                 "ctype": "TextObjectData"
               },
               {
@@ -293,7 +293,7 @@
                   "X": 100.0,
                   "Y": 27.0
                 },
-                "Name": "TextField_1",
+                "Name": "txtSound",
                 "ctype": "TextFieldObjectData"
               },
               {
@@ -342,7 +342,7 @@
                   "X": 63.0,
                   "Y": 23.0
                 },
-                "Name": "Text_3_0",
+                "Name": "lblMusic",
                 "ctype": "TextObjectData"
               },
               {
@@ -388,7 +388,7 @@
                   "X": 100.0,
                   "Y": 27.0
                 },
-                "Name": "TextField_1_0",
+                "Name": "txtMusic",
                 "ctype": "TextFieldObjectData"
               }
             ],
@@ -397,7 +397,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_3",
+            "Name": "pnlOptions",
             "ctype": "PanelObjectData"
           },
           {
@@ -515,7 +515,7 @@
                   "X": 100.0,
                   "Y": 36.0
                 },
-                "Name": "Button_1",
+                "Name": "btnBack",
                 "ctype": "ButtonObjectData"
               }
             ],
@@ -524,7 +524,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_4",
+            "Name": "pnlBtnBack",
             "ctype": "PanelObjectData"
           }
         ],

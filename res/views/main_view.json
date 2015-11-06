@@ -53,7 +53,7 @@
               "X": 397.0,
               "Y": 200.0
             },
-            "Name": "Image_2",
+            "Name": "imgWallpaper",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -102,7 +102,7 @@
               "X": 123.0,
               "Y": 15.0
             },
-            "Name": "Text_1",
+            "Name": "lblGameName",
             "ctype": "TextObjectData"
           },
           {
@@ -145,7 +145,7 @@
               "X": 46.0,
               "Y": 46.0
             },
-            "Name": "Image_1",
+            "Name": "imgGame",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -262,7 +262,7 @@
                   "X": 46.0,
                   "Y": 36.0
                 },
-                "Name": "Button_4",
+                "Name": "btnStart",
                 "ctype": "ButtonObjectData"
               }
             ],
@@ -271,7 +271,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_1",
+            "Name": "pnlBtnStart",
             "ctype": "PanelObjectData"
           },
           {
@@ -389,7 +389,7 @@
                   "X": 46.0,
                   "Y": 36.0
                 },
-                "Name": "Button_5",
+                "Name": "pnlBtnOptions",
                 "ctype": "ButtonObjectData"
               }
             ],
@@ -398,7 +398,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_1_0",
+            "Name": "pnlBtnOptions",
             "ctype": "PanelObjectData"
           },
           {
@@ -447,7 +447,7 @@
               "X": 164.0,
               "Y": 46.0
             },
-            "Name": "Text_2",
+            "Name": "lblCopyright",
             "ctype": "TextObjectData"
           }
         ],

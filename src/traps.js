@@ -6,7 +6,7 @@ function executeTrap(tile){
 
     switch(idTrap){
         case '1':
-            //HoleController.activateHole();
+            HoleController.activateHole();
             break;
         case '2':
             BoardController.activateBoard();
@@ -34,6 +34,11 @@ function loseWillPoint(){
     var count = gameplayMap.willPoints;
     points[0] = currentGameplayScene.hudLayer.getChildByName("pnlWillPoint").getChildByName("wp1");
     points[1] = currentGameplayScene.hudLayer.getChildByName("pnlWillPoint").getChildByName("wp2");
+
+    if(gameplayMap.willPoints == 0){
+        gameplayMap.gameOver();
+        return;
+    }
 
     for(var i=0; i<points.length; i++){
         if(count>0){
@@ -69,8 +74,8 @@ var BoardController = (function(){
         charPos = 0;
         var rand = parseInt(Math.random()*words.length);
         selWord = words[rand];
-        label = new cc.LabelTTF(selWord, 'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
-        labelTyped = new cc.LabelTTF("", 'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        label = new cc.LabelTTF(selWord, 'Arial', 18, cc.size(selWord.length*15,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        labelTyped = new cc.LabelTTF("", 'Arial', 18, cc.size(selWord.length*15,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
         labelTyped.setColor(new cc.Color(255,0,0));
 
         label.setPosition(gameplayMap.sprite.getPositionX(), gameplayMap.sprite.getPositionY() + 40);
@@ -82,7 +87,7 @@ var BoardController = (function(){
         setTimeout(function(){
             if(pub.isActivated()) loseWillPoint();
             boardCleanup();
-        }, 6000);
+        }, 5000);
     }
 
     pub.keyboardInput = function(letter){
@@ -104,34 +109,46 @@ var BoardController = (function(){
     }
 
     return pub;
+
 })();
 
-/*var HoleController = (function(){
-
+var HoleController = (function(){
     var pub = {};
-    var sizeFactor = 1.20;
-    var keycode = this.storedDecision;
-    var scX = jump.getScaleX();
-    var scY = jump.getScaleY();
-
-    var resetSprite = function(){
-        var jump = gameplayMap.sprite;
-        jump.scaleX = scX;
-        jump.scaleY = scY;
-    }
+    pub.exMark;
+    pub.canJump = false;
+    pub.jumped = false;
 
     pub.activateHole = function(){
-        var jump = gameplayMap.sprite;
-        if (keycode == cc.KEY.space){
-            jump.scaleX *= sizeFactor;
-            jump.scaleY *= sizeFactor;
+        var child = gameplayMap.sprite;
+        var aux = childMoveAction.keyState;
+        var posY;
+        var posX;
+
+        //Lo que hace es solamente desplazarse hasta una posici?n cuando se oprime la barra espaciadora dependiendo
+        //de la direcci?n del ni?o. Al final no logre una mejor animaci?n de esto.Pido disculpas
+        if(pub.jumped == false) loseWillPoint();
+        else pub.jumped = false;
+        pub.canJump = false;
+
+        pub.exMark.removeFromParent(false);
+
+        if(aux[1] == 1){
+            child.setPositionY(child.getPositionY() - gameplayMap.getTileSize().width*2);
         }
-        setTimeout(resetSprite,1000);
+        else if(aux[0] == 1){
+            child.setPositionY(child.getPositionY() + gameplayMap.getTileSize().width*2);
+        }
+        else if(aux[2] == 1){
+            child.setPositionX(child.getPositionX() - gameplayMap.getTileSize().width*2);
+        }
+        else if(aux[3] == 1){
+            child.setPositionX(child.getPositionX() +  gameplayMap.getTileSize().width*2);
+        }
+
     }
+
     return pub;
-
-
-})();*/
+})();
 
 var MeshController = (function(){
     //Variables de malla
@@ -294,7 +311,7 @@ var lunchBoxController = (function(){
     var numSprites=6;
 
     var numBoxBoard;//Cantidad de espacios en los que se ha dividido la pantalla
-    var boxBoardCtrol = {};//Esta variable indica si la posición ha sido usada| -1 = no usada, otro valor es el índice de spritesLunchBox
+    var boxBoardCtrol = {};//Esta variable indica si la posición ha sido usada| -1 = no usada, otro valor es el ú‹dice de spritesLunchBox
     var flagChargeBox = false;
     var numBoxBoardUsed;//Esta variable indica la cantidad de Box usados
 
@@ -391,6 +408,7 @@ var lunchBoxController = (function(){
         }
 
         ChildSM.startRunning();
+        flagChargeBox=false;
         started = false;
     }
 
@@ -410,7 +428,7 @@ var lunchBoxController = (function(){
             spritesLunchBoxCtrl[i]=1;
             spritesLunchBox[i].setScale(0.4);
 
-            //Se escoge una posición vacía de forma aleatoria
+            //Se escoge una posición vacú} de forma aleatoria
             //Esto en base a la cantidad de espacios en los que se ha divido la pizarra
             //menos la cantidad de posiciones usadas, luego se escoge la posición ignorando las posiciones que fueron usadas
             var rand= parseInt(Math.random()*(numBoxBoard-numBoxBoardUsed));
@@ -424,7 +442,7 @@ var lunchBoxController = (function(){
 
                 if(posBox==rand)
                 {
-                    //En esta variable se guarda el índice del Sprite usado en la pizarra
+                    //En esta variable se guarda el ú‹dice del Sprite usado en la pizarra
                     boxBoardCtrol[j]=i;
                     numBoxBoardUsed++;
                     posBox=j;

@@ -57,7 +57,7 @@ var LevelSelectionC = (function(){
     }
 
     var elementsSetup = function(){
-        var panel = scene.getChildByName("Panel_2");
+        var panel = scene.getChildByName("pnlMap");
         for(var i=1; i<7; i++){
             levelBtns[i-1] = panel.getChildByTag(i);
             levelBtns[i-1].addClickEventListener(startLevel);
@@ -143,6 +143,91 @@ var LevelModalC = (function(){
     pub.getLayer = function(){
         return layer;
     };
+
+    return pub;
+})();
+
+var DefeatModalC = (function(){
+    var pub = {};
+    var layer;
+    var pScene;
+    var cLayer;
+
+    pub.load = function(){
+        var obj =  ccs.load(res.defeat_view_json);
+
+        layer = obj.node;
+        layer.setPosition(cc.p(80,80));
+        layer.setVisible(false);
+        layer.setOpacity(0);
+
+        createCoverLayer();
+
+        var btnExit = layer.getChildByName("btnExit");
+        btnExit.addClickEventListener(function(){
+            currentGameplayScene.customCleanup();
+            LevelModalC.hide();
+            cc.director.runScene(LevelSelectionC.getScene());
+        });
+
+        var btnRetry = layer.getChildByName("btnRetry");
+        btnRetry.addClickEventListener(function(){
+            currentGameplayScene.customCleanup();
+            var newScene = new HelloWorldScene(LevelGraphC.getCurrentLevel().idLevel);
+            cc.director.runScene(newScene);
+        });
+
+        var btnHelp = layer.getChildByName("btnHelp");
+        btnHelp.addClickEventListener(function(){
+            alert("TO DO");
+        });
+    };
+
+    pub.executeDefeat = function(){
+        layer.setVisible(true);
+        cLayer.runAction(cc.fadeIn(1.5));
+        cLayer.cListener.swallowTouches = true;
+        var seq = cc.sequence(new Array(cc.delayTime(1.5),cc.fadeIn(0.5)));
+        layer.runAction(seq);
+    };
+
+    pub.setParentScene = function(parentScene){
+        if(pScene != null){
+            pub.cleanup();
+        }
+        pScene = parentScene;
+        pScene.addChild(layer, 51);
+        setupCoverLayer(50);
+    };
+
+    pub.cleanup = function(){
+        layer.removeFromParent();
+        layer.setOpacity(0);
+        cLayer.removeFromParent();
+        cLayer.setOpacity(0);
+    }
+
+    function createCoverLayer(){
+        cLayer = new cc.LayerColor(cc.color(0,0,0), 640,640);
+        cLayer.setOpacity(0);
+        cLayer.setPosition(cc.p(0,0));
+    }
+
+    function setupCoverLayer(zOrder){
+        pScene.addChild(cLayer, zOrder);
+        if(!("cListener" in cLayer)) {
+            cLayer.cListener = cc.EventListener.create({
+                event: cc.EventListener.TOUCH_ONE_BY_ONE,
+                swallowTouches: false,
+                onTouchBegan: function (touch, event) {
+                    return true;
+                }
+            });
+            cc.eventManager.addListener(cLayer.cListener, cLayer);
+        }else{
+            cLayer.cListener.swallowTouches = false;
+        }
+    }
 
     return pub;
 })();

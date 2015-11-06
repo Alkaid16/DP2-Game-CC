@@ -31,10 +31,9 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="views/gameHUD.csd" />
-          <FilePathData Path="views/level_modal.csd" />
+          <FilePathData Path="views/defeat_view.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="views/level_modal.csd" />
+        <ActiveDocument Path="views/defeat_view.csd" />
       </Value>
     </Item>
   </Properties>

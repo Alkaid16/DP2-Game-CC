@@ -32,6 +32,9 @@ function executePowerup(tile){
 function pickCollectable(tile){
     var collectableLayer = gameplayMap.getLayer("Collectables");
     var idCollectable = tile.collectable;
+    console.log("id de objeto: " + idCollectable);
+    var coins = gameplayMap.coins;
+    var coinsLabel = new cc.LabelTTF(gameplayMap.coins,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
 
     delete tile.collectable;
     tile.rect.width=0;
@@ -41,6 +44,21 @@ function pickCollectable(tile){
 
     collectableLayer.setTileGID(0,tile.x,tile.y);
     collectableLayer.removeTileAt(cc.p(tile.x,tile.y));
+    gameplayMap.coins += LevelGraphC.getCurrencyWeight(idCollectable);
+
+    var coinsLabel = new cc.LabelTTF(gameplayMap.coins,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+    coinsLabel.setPosition(gameplayMap.sprite.getPositionX(), gameplayMap.sprite.getPositionY() + 40);
+    currentGameplayScene.gameplayLayer.addChild(coinsLabel,20);
+
+}
+
+function showScore(){
+    var colectables = gameplayMap.collectables;
+    var total = 0;
+    for(var num in colectables){
+        total = total + colectables[num]*100;
+    }
+    return total;
 }
 
 

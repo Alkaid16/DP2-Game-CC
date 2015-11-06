@@ -53,7 +53,7 @@
               "X": 259.0,
               "Y": 194.0
             },
-            "Name": "Image_1",
+            "Name": "imgInvitationWallpaper",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -102,7 +102,7 @@
               "X": 448.0,
               "Y": 23.0
             },
-            "Name": "Text_1",
+            "Name": "lblTitle",
             "ctype": "TextObjectData"
           },
           {
@@ -151,7 +151,7 @@
               "X": 162.0,
               "Y": 23.0
             },
-            "Name": "Text_2",
+            "Name": "lblDescription",
             "ctype": "TextObjectData"
           },
           {
@@ -194,7 +194,7 @@
               "X": 46.0,
               "Y": 46.0
             },
-            "Name": "Image_2",
+            "Name": "imgLogo",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -269,7 +269,7 @@
               "X": 200.0,
               "Y": 36.0
             },
-            "Name": "Button_1",
+            "Name": "btnInvitation",
             "ctype": "ButtonObjectData"
           }
         ],

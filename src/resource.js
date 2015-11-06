@@ -4,6 +4,7 @@ var res = {
     ButtonPressed_png : "res/buttonPressed.png",
     MainScreen_json: "res/MainScreen.json",
     MainScene_json : "res/MainScene.json",
+    defeat_view_json: "res/views/defeat_view.json",
     level_selector_view_json : "res/views/level_selector_view.json",
     level_modal_json : "res/views/level_modal.json",
     map2_tmx: "res/levels/map2.tmx",
@@ -18,10 +19,12 @@ var res = {
     GameFog_png: "res/GameFog.png",
     terrain_png: "res/levels/Tilesets/terrain.png",
     gameHUD_json: "res/views/gameHUD.json",
+    exMark_png: "res/exMark.png",
     random_png: "res/levels/Tilesets/random.png",
     boy_up_plist:"res/boy_up.plist",
     boy_down_plist:"res/boy_down.plist",
-    spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist"
+    spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist",
+    monstruo_plist: "res/spritesheets/monstruo.plist"
 };
 
 var g_resources = [];

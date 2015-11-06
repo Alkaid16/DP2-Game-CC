@@ -36,10 +36,24 @@ var interHandler = {
 
         //Variable que indica si el scan se hace horizontal o vertical
         var horizontal = tilePosX == targetPoint[0] ? 0 : 1;
+        var initValueY = tilePosY + factor*((horizontal+1)%2);
+        var initValueX = tilePosX + factor*horizontal;
+        var initValueY2 = tilePosY + 2*factor*((horizontal+1)%2);
+        var initValueX2 = tilePosX + 2*factor*horizontal;
+
+        //Metodo para controlar cuando puede saltar los huecos
+        if(typeof tileMatrix[initValueX2] != 'undefined' && typeof tileMatrix[initValueX2][initValueY2] != 'undefined'
+        && tileMatrix[initValueX2][initValueY2] == 3){
+            if(!HoleController.jumped && !HoleController.canJump) {
+                HoleController.canJump = true;
+                gameplayMap.sprite.addChild(HoleController.exMark,50);
+                HoleController.exMark.setPosition(cc.p(15, 55));
+            }
+        }
 
         //El scan propiamente implementado
-        for(var i=tilePosY + factor*((horizontal+1)%2); i!=targetPoint[1] + factor; i+= factor){
-            for(var j=tilePosX + factor*horizontal; j!=targetPoint[0] + factor; j+= factor){
+        for(var i=initValueY; i!=targetPoint[1] + factor; i+= factor){
+            for(var j=initValueX; j!=targetPoint[0] + factor; j+= factor){
                 //Validación de los limites del mapa
                 if(j<0 || j>mapSizeX-1 || i<0 || i>mapSizeY-1) continue;
 
@@ -186,8 +200,8 @@ var childMoveAction = (function(){
     var tileWidth = 0;
     var speed = 2.5;
     var dummyBool = false;
+    var isJumping = false;
     var collisionDelay = 0;
-    var gameStarted = false;
     var haveShield = false;
     var mainLayer = {};
     var pub = {};
@@ -196,6 +210,7 @@ var childMoveAction = (function(){
     pub.childPosX = 0;
     pub.childPosY = 0;
     pub.lastDirection = 0;
+
 
     pub.keyState = new Array(1,0,0,0);
 
@@ -207,6 +222,14 @@ var childMoveAction = (function(){
         return speed;
     }
 
+    pub.getIsJumping = function(){
+        return isJumping;
+    }
+
+    pub.updateIsJumping = function(val){
+        isJumping = val;
+    }
+
     pub.updateSpeed = function(spd){
         speed = spd;
     }
@@ -215,11 +238,6 @@ var childMoveAction = (function(){
         haveShield = val;
     }
 
-
-    //monstY += speed; ESTO SE DEBE SACAR Y PONER EN OTRO MODULO
-    //if(monstY >= size.height){
-    //    monstY = 0;
-    //}
 
     pub.setTileWidth = function(val){
         tileWidth = val;
@@ -329,14 +347,19 @@ var childMoveAction = (function(){
         return true;
     }
 
-    var interCollision = function(direction, sprRect, tile){
+    var interCollision = function(direction, sprRect, tile, posX, posY){
         //Si es el primer contacto con el tile de intersección, se registra el mismo y se inicializa
         //el delay para ejecutar la decisión del usuario
         if(interHandler.intersectTile==null){
             interHandler.intersectTile = tile;
             collisionDelay = tileWidth-1;
             collisionDelay -= interHandler.excessInIntersection(direction, sprRect, tile.rect);
-            interHandler.choiceAvailable=false;
+
+            //En caso no se haya seleccionado una dirección por el usuario, Se procede a elegir una al azar
+            if(interHandler.choiceAvailable){
+                console.log("Inicializando elección aleatoria");
+                randomDirection(posX, posY);
+            }
             mainLayer.sprite.setColor(new cc.Color(255,255,255,0));
 
             //Si ya está dentro del tile, se disminuye el valor el contador collisionDelay
@@ -377,12 +400,87 @@ var childMoveAction = (function(){
         return 0;
     }
 
+    var randomDirection = function(posX, posY) {
+        var ScannerSize = 1;
+        var direction = getCurrentDirection();
+        console.log("initial direction: "+direction);
+
+        //Hallar direccion inversa antes del choque
+        var lastMovInv=-1;
+        switch(direction) {
+            case 0 :
+                posY-=ScannerSize;
+                lastMovInv = 1;
+                break;
+            case 1 :
+                posY+=ScannerSize;
+                lastMovInv = 0;
+                break;
+            case 2 :
+                posX-=ScannerSize;
+                lastMovInv = 3;
+                break;
+            case 3 :
+                posX+=ScannerSize;
+                lastMovInv = 2;
+                break;
+        }
+
+        var movements = new Array(0,0,0,0);
+
+        //Evalua posibles movimientos en caso de choque con pared
+        if(posX<mainLayer.getMapSize().width-1 && mainLayer.tileMatrix[posX+1][posY]!=1) movements[3]=1; //derecha
+        if(posX>0 && mainLayer.tileMatrix[posX-1][posY]!=1) movements[2]=1; //izquierda
+        if(posY>0 && mainLayer.tileMatrix[posX][posY-1]!=1) movements[0]=1; //arriba
+        if(posY<mainLayer.getMapSize().height-1 && mainLayer.tileMatrix[posX][posY+1]!=1) movements[1]=1; //abajo
+
+        var possibleMovements = [];
+
+        for(var i=0;i<4;i++) {
+            console.log("   movements["+i+"]: "+movements[i]);
+            if (movements[i] == 1 && i!=lastMovInv) {
+                possibleMovements.push(i);
+                console.log("   push: "+i);
+            }
+        }
+
+        if(possibleMovements.length==0)
+            possibleMovements.push(lastMovInv);
+
+        var random = Math.random();
+        var realRandom = parseInt(random*possibleMovements.length);
+
+        var lastMov = possibleMovements[realRandom];
+
+        console.log("final direction: "+lastMov);
+
+        var keyCode = -1;
+        switch(lastMov)
+        {
+            case 1:
+                keyCode = cc.KEY.down;
+                break;
+            case 0:
+                keyCode = cc.KEY.up;
+                break;
+            case 2:
+                keyCode = cc.KEY.left;
+                break;
+            case 3:
+                keyCode = cc.KEY.right;
+                break;
+        }
+
+
+        interHandler.recordChoice(keyCode);
+    }
+
     //Metodo principal de movimiento
     pub.update = function(){
-        if(!gameStarted){
+        if(!gameplayMap.gameStarted){
             if(zoomGame.autoZoomIn()) return;
             else{
-                gameStarted = true;
+                gameplayMap.gameStarted = true;
                 ChildSM.startRunning();
                 currentGameplayScene.startMaze();
             }
@@ -412,7 +510,9 @@ var childMoveAction = (function(){
 
         //Condicion de victoria
         if(posX == mainLayer.finishPoint[0] && posY == mainLayer.finishPoint[1]){
-            alert("YOU WIN!");
+            var current = new Date();
+            var numMs = current.getTime() - gameplayMap.currentTime.getTime();
+            alert("YOU WIN! Your get " + gameplayMap.coins + " coins with " + numMs + " ms spend");
             close();
         }
 
@@ -432,7 +532,8 @@ var childMoveAction = (function(){
         //Verificacion de colisión
         for(var i=1; i < mainLayer.obstacles.length ; i++ ){
             var tile = mainLayer.obstacles[i];
-            var rectM = cc.rect(monstX - monstruo.width/2, monstY - monstruo.height/2,550,550);
+            var rectM = gameplayMap.monster.getBoundingBox();
+            rectM.height = rectM.height*0.9;
 
             if(cc.rectIntersectsRect(rect1,tile.rect)){
                 //Si choca contra un powerup
@@ -444,6 +545,7 @@ var childMoveAction = (function(){
                 //Si choca contra una trampa
                 if('trap' in tile){
                     executeTrap(tile);
+                    if(tile.trap == 1) return;
                     break
                 }
 
@@ -455,7 +557,7 @@ var childMoveAction = (function(){
 
                 //Si choca con una interseccion
                 if(tile.typeTerr == 2){
-                    var result = interCollision(direction, rect1, tile);
+                    var result = interCollision(direction, rect1, tile, posX, posY);
                     if(result==0)break;
                     else continue;
                 }
@@ -510,7 +612,7 @@ var childMoveAction = (function(){
             }
 
             if(cc.rectIntersectsRect(rectM,rect1)){
-                alert("You Lose");
+                gameplayMap.gameOver();
                 return;
             }
         }
@@ -525,13 +627,17 @@ var childMoveAction = (function(){
 
 
 var GameplayMap = cc.TMXTiledMap.extend({
+    scoreLabel:0,
     sprite:null,
+    gameStarted:false,
     monster:null,
     finishPoint: null,
     tileMatrix:null,
     collectables: null,
     willPoints:0,
+    coins:0,
     intersections: [],
+    currentTime:null,
 
     ctor:function (levelName) {
         this._super();
@@ -551,8 +657,18 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
         this.sprite= new cc.Sprite("#ninoPost1.png");
         this.sprite.setVisible(false);
-        this.monster = new cc.Sprite("res/monster.jpg");
-        this.monster.setPosition(size.width/2,-300);
+
+        this.monster = new cc.Sprite("#monstruo1.png");
+        var cSize = this.monster.getContentSize();
+        var monsterScale = mapWidth*32/cSize.width;
+        this.monster.setScale(monsterScale);
+        this.monster.setContentSize(cSize.width*monsterScale, cSize.height*monsterScale);
+        this.monster.setPosition(cc.p(mapWidth*32/2, - cSize.height*monsterScale/2 - 50));
+        ChildSM.runMonsterAnimation(this.monster);
+
+        this.scoreLabel = new cc.LabelTTF(this.coins,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        this.scoreLabel.setPosition(this.sprite.getPositionX(), this.sprite.getPositionY() + 40);
+        this.currentTime = new Date();
 
         ChildSM.setChild(this.sprite);
 
@@ -580,6 +696,11 @@ var GameplayMap = cc.TMXTiledMap.extend({
         cc.eventManager.addListener({
             event: cc.EventListener.KEYBOARD,
             onKeyPressed:  function(keyCode, event){
+                //Si presiona la barra espaciadora, se registra el salto
+                if(keyCode == 32 && HoleController.canJump && !HoleController.jumped){
+                    HoleController.jumped = true;
+                }
+
                 if(!interHandler.choiceAvailable) return;
                 interHandler.recordChoice(keyCode);
             },
@@ -593,11 +714,10 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
                 if(MeshController.isActivated())
                     MeshController.keyboardInput(keyCode);
+
             }
 
         }, this);
-
-        this.addChild(this.monster,10);
         return true;
     },
 
@@ -683,6 +803,8 @@ var GameplayMap = cc.TMXTiledMap.extend({
                     cTile.rect = cc.rect(tileXPosition, tileYPosition,
                         tileWidth, tileHeight);
 
+                    if(idTrap == 1) this.tileMatrix[i][j] = 3;
+
                     this.obstacles.push(cTile);
                 }
 
@@ -735,6 +857,11 @@ var GameplayMap = cc.TMXTiledMap.extend({
                 this.tileMatrix[i][j]=0;
             }
         }
+    },
+
+    gameOver: function(){
+        gameplayMap.unscheduleAllCallbacks();
+        DefeatModalC.executeDefeat();
     }
 
 });
@@ -804,7 +931,7 @@ var zoomGame = {
     currentScale:0.1,
     timeZoom:38000,
     timeLeft:38000,
-    zoomActivate:true,
+    zoomActivate:true
 }
 
 var HelloWorldScene = cc.Scene.extend({
@@ -820,13 +947,16 @@ var HelloWorldScene = cc.Scene.extend({
         this.hudLayer = root.node;
 
         var map = new GameplayMap("levels/Level" + levelNum + ".tmx");
+        HoleController.exMark = new cc.Sprite(res.exMark_png);
         this.fog = initFog(map);
         this.fog.setVisible(false);
 
         gameplayMap = map;
         this.gameplayLayer.addChild(map,0);
         this.gameplayLayer.addChild(map.sprite, 5);
+        this.gameplayLayer.addChild(map.monster, 10);
         this.gameplayLayer.addChild(this.fog, 20);
+        this.gameplayLayer.addChild(map.scoreLabel,20);
 
         //inicializo el zoom
         zoomGame.ctor(0,0.01,1600,0.280);
@@ -864,10 +994,11 @@ var HelloWorldScene = cc.Scene.extend({
                     //Check the click area
                     lunchBoxController.onClickMouse(locationInNode.x,locationInNode.y);
                 }
-            },
+            }
 
         },this.gameplayLayer);
 
+        DefeatModalC.setParentScene(this);
         gameplayMap.schedule(childMoveAction.update);
     },
 
@@ -878,6 +1009,13 @@ var HelloWorldScene = cc.Scene.extend({
         this.fog.runAction(cc.fadeIn(1.5));
         this.gameplayLayer.runAction(cc.follow(gameplayMap.sprite));
         ChildSM.updateAnimation(gameplayMap.sprite,0);
+    },
+
+    customCleanup: function(){
+        this.gameplayLayer.removeAllChildren();
+        this.hudLayer.removeAllChildren();
+        DefeatModalC.cleanup();
+        this.removeAllChildren();
     }
 });
 

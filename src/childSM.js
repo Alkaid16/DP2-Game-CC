@@ -6,6 +6,7 @@ var ChildSM = (function(){
     var state = 0;
     //Arreglo con las 4 animaciones para correr
     var runAnims = [];
+    var monstAnim;
 
     pub.initSM = function(){
         currDir = -1;
@@ -14,9 +15,11 @@ var ChildSM = (function(){
 
     pub.initAnimations= function(){
         cc.spriteFrameCache.addSpriteFrames(res.spritesheetNino_plist);
+        cc.spriteFrameCache.addSpriteFrames(res.monstruo_plist);
         loadAnimation(1,8,"ninoFrente");
         loadAnimation(1,8,"ninoPost");
         loadAnimation(1,9,"ninoPerf");
+        loadMonsterAnimation();
     }
 
     function loadAnimation(ini, end, name){
@@ -31,6 +34,22 @@ var ChildSM = (function(){
         }
         animation = new cc.Animation(animFrames, 0.05, 100);
         runAnims.push(cc.animate(animation));
+    }
+
+    function loadMonsterAnimation(){
+        var animFrames = [];
+
+        for(var i=1; i<9; i++){
+            var str = "monstruo" + i + ".png";
+            var frame = cc.spriteFrameCache.getSpriteFrame(str);
+            animFrames.push(frame);
+        }
+        var animation = new cc.Animation(animFrames, 0.1, 100);
+        monstAnim = cc.repeatForever(cc.animate(animation));
+    }
+
+    pub.runMonsterAnimation = function(sprite){
+        sprite.runAction(monstAnim);
     }
 
     pub.setDirection = function(direction){

@@ -53,7 +53,7 @@
               "X": 259.0,
               "Y": 194.0
             },
-            "Name": "Image_1",
+            "Name": "imgRankingWallpaper",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -146,7 +146,7 @@
                   "X": 87.0,
                   "Y": 23.0
                 },
-                "Name": "Text_1",
+                "Name": "lblVictory",
                 "ctype": "TextObjectData"
               }
             ],
@@ -155,7 +155,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_1",
+            "Name": "pnlVictory",
             "ctype": "PanelObjectData"
           },
           {
@@ -248,7 +248,7 @@
                   "X": 193.0,
                   "Y": 14.0
                 },
-                "Name": "Text_1",
+                "Name": "lblDescription",
                 "ctype": "TextObjectData"
               }
             ],
@@ -257,7 +257,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_1_0",
+            "Name": "pnlDescription",
             "ctype": "PanelObjectData"
           },
           {
@@ -350,7 +350,7 @@
                   "X": 71.0,
                   "Y": 23.0
                 },
-                "Name": "Text_3",
+                "Name": "lblScore",
                 "ctype": "TextObjectData"
               },
               {
@@ -399,7 +399,7 @@
                   "X": 70.0,
                   "Y": 23.0
                 },
-                "Name": "Text_3_0",
+                "Name": "lblTime",
                 "ctype": "TextObjectData"
               },
               {
@@ -441,7 +441,7 @@
                   "X": 100.0,
                   "Y": 27.0
                 },
-                "Name": "TextField_1",
+                "Name": "txtScore",
                 "ctype": "TextFieldObjectData"
               },
               {
@@ -483,7 +483,7 @@
                   "X": 100.0,
                   "Y": 27.0
                 },
-                "Name": "TextField_1_0",
+                "Name": "txtTime",
                 "ctype": "TextFieldObjectData"
               }
             ],
@@ -492,7 +492,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_3",
+            "Name": "pnlResult",
             "ctype": "PanelObjectData"
           },
           {
@@ -585,7 +585,7 @@
                   "X": 140.0,
                   "Y": 23.0
                 },
-                "Name": "Text_3",
+                "Name": "lblRanking",
                 "ctype": "TextObjectData"
               }
             ],
@@ -594,7 +594,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_3_0",
+            "Name": "pnlRanking",
             "ctype": "PanelObjectData"
           },
           {
@@ -712,7 +712,7 @@
                   "X": 200.0,
                   "Y": 36.0
                 },
-                "Name": "Button_1",
+                "Name": "btnLevels",
                 "ctype": "ButtonObjectData"
               }
             ],
@@ -721,7 +721,7 @@
               "X": 200.0,
               "Y": 200.0
             },
-            "Name": "Panel_3_0_0",
+            "Name": "pnlButton",
             "ctype": "PanelObjectData"
           }
         ],
