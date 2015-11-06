@@ -165,12 +165,16 @@ var DefeatModalC = (function(){
 
         var btnExit = layer.getChildByName("btnExit");
         btnExit.addClickEventListener(function(){
-            alert("TO DO");
+            currentGameplayScene.customCleanup();
+            LevelModalC.hide();
+            cc.director.runScene(LevelSelectionC.getScene());
         });
 
         var btnRetry = layer.getChildByName("btnRetry");
         btnRetry.addClickEventListener(function(){
-            alert("TO DO");
+            currentGameplayScene.customCleanup();
+            var newScene = new HelloWorldScene(LevelGraphC.getCurrentLevel().idLevel);
+            cc.director.runScene(newScene);
         });
 
         var btnHelp = layer.getChildByName("btnHelp");
@@ -189,13 +193,19 @@ var DefeatModalC = (function(){
 
     pub.setParentScene = function(parentScene){
         if(pScene != null){
-            layer.removeFromParent();
-            cLayer.removeFromParent();
+            pub.cleanup();
         }
         pScene = parentScene;
         pScene.addChild(layer, 51);
         setupCoverLayer(50);
     };
+
+    pub.cleanup = function(){
+        layer.removeFromParent();
+        layer.setOpacity(0);
+        cLayer.removeFromParent();
+        cLayer.setOpacity(0);
+    }
 
     function createCoverLayer(){
         cLayer = new cc.LayerColor(cc.color(0,0,0), 640,640);

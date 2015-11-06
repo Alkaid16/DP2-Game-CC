@@ -202,7 +202,6 @@ var childMoveAction = (function(){
     var dummyBool = false;
     var isJumping = false;
     var collisionDelay = 0;
-    var gameStarted = false;
     var haveShield = false;
     var mainLayer = {};
     var pub = {};
@@ -478,10 +477,10 @@ var childMoveAction = (function(){
 
     //Metodo principal de movimiento
     pub.update = function(){
-        if(!gameStarted){
+        if(!gameplayMap.gameStarted){
             if(zoomGame.autoZoomIn()) return;
             else{
-                gameStarted = true;
+                gameplayMap.gameStarted = true;
                 ChildSM.startRunning();
                 currentGameplayScene.startMaze();
             }
@@ -630,6 +629,7 @@ var childMoveAction = (function(){
 var GameplayMap = cc.TMXTiledMap.extend({
     scoreLabel:0,
     sprite:null,
+    gameStarted:false,
     monster:null,
     finishPoint: null,
     tileMatrix:null,
@@ -1008,6 +1008,13 @@ var HelloWorldScene = cc.Scene.extend({
         this.fog.runAction(cc.fadeIn(1.5));
         this.gameplayLayer.runAction(cc.follow(gameplayMap.sprite));
         ChildSM.updateAnimation(gameplayMap.sprite,0);
+    },
+
+    customCleanup: function(){
+        this.gameplayLayer.removeAllChildren();
+        this.hudLayer.removeAllChildren();
+        DefeatModalC.cleanup();
+        this.removeAllChildren();
     }
 });
 
