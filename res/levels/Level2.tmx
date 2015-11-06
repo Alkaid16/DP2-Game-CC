@@ -1458,6 +1458,7 @@
  <layer name="StartFinish" width="20" height="70">
   <properties>
    <property name="finish" value="9,0"/>
+   <property name="orientation" value="1"/>
    <property name="start" value="3,69"/>
   </properties>
   <data>

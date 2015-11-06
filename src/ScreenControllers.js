@@ -58,7 +58,7 @@ var LevelSelectionC = (function(){
 
     var elementsSetup = function(){
         var panel = scene.getChildByName("pnlMap");
-        for(var i=1; i<7; i++){
+        for(var i=1; i<12; i++){
             levelBtns[i-1] = panel.getChildByTag(i);
             levelBtns[i-1].addClickEventListener(startLevel);
             levelBtns[i-1].setTouchEnabled(true);
@@ -72,6 +72,7 @@ var LevelSelectionC = (function(){
 var LevelModalC = (function(){
     var pub = {};
     var layer;
+    var lblLevel; var lblDefeatPos; var lblScore;
     var cLayer;
     var pScene;
     var visiblePos = cc.p(80,80);
@@ -104,6 +105,10 @@ var LevelModalC = (function(){
         pScene.addChild(layer,10);
         createCoverLayer();
 
+        lblLevel = layer.getChildByName("lblLevel");
+        lblScore = layer.getChildByName("lvlScore");
+        lblDefeatPos = layer.getChildByName("lblDefeatPos");
+
         var btnExit = layer.getChildByName("btnExit");
         btnExit.addClickEventListener(function(){
            pub.hide();
@@ -125,15 +130,23 @@ var LevelModalC = (function(){
         var levelInfo = LevelGraphC.getLevelInfo(lvlNum);
         if(levelInfo == null) return;
         level = levelInfo.idLevel;
+
+        lblLevel.setString("Nivel " + level);
+        if(levelInfo.score!= null) lblScore.setString("Score: " + levelInfo.score);
+        else lblScore.setString("Score: -");
+        if(levelInfo.defeatPosX != null || levelInfo.defeatPosX == -1)lblDefeatPos.setString(
+            "Posicion: (" + levelInfo.defeatPosX + ","+ levelInfo.defeatPosY + ")");
+        else lblDefeatPos.setString("Posicion: -");
+
         cLayer.cListener.swallowTouches = true;
         layer.setVisible(true);
-        layer.runAction(cc.moveTo(0.4,visiblePos));
-        cLayer.runAction(cc.fadeTo(0.4,160));
+        layer.runAction(cc.moveTo(0.3,visiblePos));
+        cLayer.runAction(cc.fadeTo(0.3,160));
     }
 
     pub.hide = function(){
-        layer.runAction(cc.moveTo(0.4,disabledPos));
-        cLayer.runAction(cc.fadeTo(0.4,0));
+        layer.runAction(cc.moveTo(0.3,disabledPos));
+        cLayer.runAction(cc.fadeTo(0.3,0));
         setTimeout(function(){
             layer.setVisible(false);
             cLayer.cListener.swallowTouches = false;

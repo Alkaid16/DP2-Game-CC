@@ -1459,7 +1459,8 @@
  <layer name="StartFinish" width="20" height="70">
   <properties>
    <property name="finish" value="3,0"/>
-   <property name="start" value="9,69"/>
+   <property name="orientation" value="1"/>
+   <property name="start" value="9,68"/>
   </properties>
   <data>
    <tile gid="0"/>
@@ -2851,7 +2852,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="317"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -7063,7 +7064,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="319"/>
-   <tile gid="0"/>
+   <tile gid="317"/>
    <tile gid="321"/>
    <tile gid="0"/>
    <tile gid="0"/>

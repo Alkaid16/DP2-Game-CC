@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="161" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="integrado" tilewidth="32" tileheight="32" tilecount="630">
+  <image source="Tilesets/integrado.png" width="672" height="960"/>
+  <tile id="15">
+   <properties>
+    <property name="trapId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="484">
+   <properties>
+    <property name="powerupId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="485">
+   <properties>
+    <property name="powerupId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="490">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="496">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="507">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Background" width="30" height="161">
+  <data encoding="base64" compression="zlib">
+   eJztxrENAAAEADDOxf87d0iHJq2M6DOn3N3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3Z9+Afuk4zQ=
+  </data>
+ </layer>
+ <layer name="StartFinish" width="30" height="161">
+  <properties>
+   <property name="finish" value="15,0"/>
+   <property name="orientation" value="1"/>
+   <property name="start" value="15,160"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt3DEBAAAIw7BZw78pNMDe5K+FJn9TtAAAAAAAAAAAAAAAAAAAAAAAAHDV/K8Wdg0Agw==
+  </data>
+ </layer>
+ <layer name="Intersection" width="30" height="161">
+  <data encoding="base64" compression="zlib">
+   eJzt2zEOgCAMBVCv5v0v5WhiNAEFKfS9yclg2w8Lblts++gFwA/MOdGZ0bXN1t+79c72DaOpVz56DjFcs/g2m63eA5STMzjJAz2Yq+/UEADK9DozncUAJ3tiTvoOY8ngnNyBeqe2RlFrGnVdxGZuvlG/e+qyjlZ30YD/yS8AGTnHctHvnPz7RHb7wzOspGa2I+fgANYfCmo=
+  </data>
+ </layer>
+ <layer name="Maze" width="30" height="161">
+  <data encoding="base64" compression="zlib">
+   eJzt1lFuxCAMBNC9Wm+2R28/WimqYBmPx8RJBglptQE/IBjyep1fvjbUmftpTNlyNTeydio3GusqLrqGzLqjY2Ri2N3nZnOu+hz5i1OxN6NjULSpcjNnJusq+x37M3OpmG9m7TPjruwXjbnLZb6fznznq+cVc0HcaDnTXa3Lrvle1VXlDeMyxW5ft7Ki42RL9Dy1a/dublWu7phvNLZdu6M+Z99Hqvva7n4XiYnuowqXKZ3cSC4q8zd6p0Vid3CzdzjjVsawex83mr9Kt6LYtbvT/fn/PcifN2mMYg3zcmRk3Exbu3av4E6+u+w2dn/PxFFFv6tpd9Xm0La9O6rV7qRvxl3Oo8pF29rt46L7ROlGnnd3mXxbuGVndnQtn+gi7/JO82Xd2T5Fa8Zly8wF37nU/T8Gtq/dHu5sHwH3asq9Yt/o2aBwM/F2upH1Qb41UDfa1+7nvpk9jp4d6FjIfnZPdpG9U+Wu/nuCq6oRV1Xs2n2Sy+QfGkM9XqadXbvVriqPGBd9pszTqKsqXV3FuRd12bbIWKtcpA26T3edI59cRd6zLtKum5s5r3a5aLuoq7oXGJcprKv+/us+3+NvZu7K/WxX71ZUZcnE+wZTDyNe
+  </data>
+ </layer>
+ <layer name="Collision" width="30" height="161">
+  <data encoding="base64" compression="zlib">
+   eJztm2ty2zAMhDXtIZo7tL4Dx3dwc/+bNJ4ULYMAiwUIqXGjnfEPiwQ+ii+BFLVtr/r+8vuR+D39tvuWtLtsbzW2Y3R1uF9efj/V7ytIY3/iw+Pq63OaV6e67ix5/hmuJ8umg3vbcnVX4eq6tOpQ+r7Xpy2biKvVVe8eV9clqkPxofs3YxO1CcrnpVVsOrnWeHtybDq5SLONNTej8nlcb7zNv2eynCttFWkup56Ln438wrXakZkzLYlPdC8DpFXrQHyie7HaMTNnIq4lpg5QHIDaQOznuYi5F1ReEWN/Da55dlZ5UR8V3Yw84hPVoTXemfIijTDHX2W4USwp94LqEM1HHnc417WqbR5xo3iRbfOLyhNxM+0/QNpV5dmDi8Z5lsusWZhxk+UOO5upPbhRP4vGTZWbnWcejStjsbq21Xbzf7SG2FMoTmP6EbPGZZ/dA6RlZPlBvk/u5+Bmx+tqjDWMayvKclfHbzbGQmmrOrlrXHb/trJvgDTCHG/VxUV7BFEfX+F22H9ErvQfZq0+z7Mre9JRms4zi7n3Lu7cr9DaHvlGe8zeO5HsnorFHe+z/ZG+d5TXs4m4TGyI9iWZeHKup659EmQzjGuiPbmonjL7JFnunj7+Z252376LO5zrR3Gt5zAzb65yu+O0k/tvuZlnZiQ0FrXfYdiLqjFXpOuWe2ay3GiN+LzZ9W9dy3Cr8dnJfUyutX44gssyTu57sXNiJq5muAOkeerkRnOiN+8i7sp7PKuMLNfSVeXJcKO1FHP2oMK1FNlrToVbiVU7uJUY6qNxV87JrXC1LN+d3MrZuohbWRsi35IWnYEam68VbuRP8s3jLYptEZc9A2X5QH6ZdC//6j5UlWvpCG7Ulpbfud9n37OvxCBjW1f03EflY2KOTH9my9cx/93Fnsns5rLpj8z1+n/3uzptG2kvbjQWsmd8j4hBInXXFXq+zfUndcXOqxeVt+v9XaSryrsas0Zn2ee587b1fFPCSNtmfEnelT6uz55luJEy7c9ws30c2Xadf8/aV+325KKzIJU9CZY7jGuiynjIclE8uicXxYWrZ0mz3C6xXOabomqsi7hdQr5P7ufgVr9dusuba5nxixTVReQjGzOxz0/hejF89j2/+GO5XX3k5PZxUbzR8R1tZIMk/irjNOJaY8CLO6LyZbjMHIrKmB2nDLey7ujgakVcqx945y+ZOTQ7b6KySh7meYTKaPlE6ymrbF5ZZ+7quM88j2ZuprxZzRyPe69LvU5l+gE6Y+1x731hrktUPk8oj+dvVgdX9xXdP6y+YJ1NynKHkyf7PMpw5zbT8+8e75aHcS3b/1e483hY/TYgw/Xal7n3Va71PuQILnO9m+udBWL2NLxvYrP9uUvV5xGzT5l5p/ELpuh0FQ==
+  </data>
+ </layer>
+ <layer name="Traps" width="30" height="161">
+  <data encoding="base64" compression="zlib">
+   eJzt1bkRgDAMBECXQP/VkkKmAdlwsFuB5vSNASTZni7gpeQCAJn8cDizE/fJMF9yD5NrB6DOvYd17BsAafyuGjll0CeYw24B9HJX8+khAH/g33GV2amRUx9ZAlDlZwBHbgIdzFGGL/ZpB8o1AXE=
+  </data>
+ </layer>
+ <layer name="Powerups" width="30" height="161">
+  <data encoding="base64" compression="zlib">
+   eJzt2MERABAMBED6r5M6vPPPDIndChgSJ2MAt615ewXAzzr1oN1oL5CpU50DahpeIHeSQT8HAACAyMwF3mJ+BRDpizXIlAD5vIH1ODOoRYYFALqq9jeRy/iFuw4QHfM2D04=
+  </data>
+ </layer>
+ <layer name="Collectables" width="30" height="161">
+  <data encoding="base64" compression="zlib">
+   eJzt3EsOhCAMAFDn/kedlXsXszWGoIxF+bx3AIKlLWCMy9Kf9RMzzjdonLfGjxYVV6Bci/W37ebU4vyY135/3eTmX9R036LWTx6UO8ZspBiO9CwANdztk/osI8m985TrpFy5u6/u+lCV/gzM5Kzn1eqJeu2cnF0ZSWQ+64noj+T09k1ly6LeqVkTeE6qVu2b3OHsnZeLz+z73+zPP5K7aykXmEnNfdOZ7hnizBvk3Zyu7hnuZGVaradW58V73JPiqK9zJfkmnvRK7o7v2MtSa976vyF+kjg4Tw==
+  </data>
+ </layer>
+</map>
