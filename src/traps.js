@@ -35,11 +35,6 @@ function loseWillPoint(){
     points[0] = currentGameplayScene.hudLayer.getChildByName("pnlWillPoint").getChildByName("wp1");
     points[1] = currentGameplayScene.hudLayer.getChildByName("pnlWillPoint").getChildByName("wp2");
 
-    if(gameplayMap.willPoints == 0){
-        gameplayMap.gameOver();
-        return;
-    }
-
     for(var i=0; i<points.length; i++){
         if(count>0){
             points[i].setVisible(true);
@@ -47,6 +42,11 @@ function loseWillPoint(){
         }else{
             points[i].setVisible(false);
         }
+    }
+
+    if(gameplayMap.willPoints == 0){
+        gameplayMap.gameOver();
+        return;
     }
 }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="35" height="225" tilewidth="32" tileheight="32" nextobjectid="1">
  <tileset firstgid="1" name="integrado" tilewidth="32" tileheight="32" tilecount="630">
-  <image source="../Tutorial/Tilesets/integrado.png" width="672" height="960"/>
+  <image source="Tilesets/integrado.png" width="672" height="960"/>
   <tile id="15">
    <properties>
     <property name="trapId" value="1"/>
@@ -130,6 +130,11 @@
   <tile id="510">
    <properties>
     <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="512">
+   <properties>
+    <property name="trapId" value="2"/>
    </properties>
   </tile>
   <tile id="514">

@@ -4,6 +4,12 @@ var currentGameplayScene;
 
 //Objeto manejador de detecciones de intersecciones y variables asociadas
 var interHandler = {
+    choiceAvailable : false,
+    choiceExecuted : false,
+    storedDecision: -1,
+    intersectTile: null,
+    sameTileDetected : false,
+    collisionDelay : 0,
 
     //Función que hace un scan de [offset] tiles en adelante, buscando si se aproxima una interseccion
     detectIntersection: function(tilePosX, tilePosY, direction, tileMatrix){
@@ -73,39 +79,6 @@ var interHandler = {
             }
         }
 
-    },
-
-    //Metodo que elige aleatoriamente una direcci'on en caso el usuario no lo haya hecho
-    randomDirection: function(){
-        var currentDirection=childMoveAction.lastDirection;
-        var opDirection=-1;
-        var posibleDirection = [];
-
-        switch(currentDirection) {
-            case 0:
-                opDirection=1;
-                break;
-            case 1:
-                opDirection=0;
-                break;
-            case 2:
-                opDirection=3;
-                break;
-            case 3:
-                opDirection=2;
-                break;
-        }
-
-        for(var i=0;i<4;i++) {
-            if(i!=1 && i!=opDirection){
-                posibleDirection.push(i);
-                console.log("     push: "+i);
-            }
-        }
-
-        var directionSelected = parseInt(Math.random()*posibleDirection.length);
-        console.log("directionSelected: "+posibleDirection[directionSelected]);
-        return posibleDirection[directionSelected];
     },
 
     //Metodo indicando que se salio del tile de intersección, y la variable sameTileDetected se libera
@@ -186,20 +159,12 @@ var interHandler = {
         }
         return dif
     },
-
-    choiceAvailable : false,
-    choiceExecuted : false,
-    storedDecision: -1,
-    intersectTile: null,
-    sameTileDetected : false,
-    collisionDelay : 0
 };
 
 //Módulo de movimiento del niño
 var childMoveAction = (function(){
     var tileWidth = 0;
     var speed = 2.5;
-    var dummyBool = false;
     var isJumping = false;
     var collisionDelay = 0;
     var haveShield = false;
@@ -238,9 +203,15 @@ var childMoveAction = (function(){
         haveShield = val;
     }
 
-
-    pub.setTileWidth = function(val){
-        tileWidth = val;
+    pub.init = function(oTileWidth){
+        pub.keyState = new Array(1,0,0,0);
+        tileWidth = oTileWidth;
+        isJumping = false;
+        collisionDelay = 0;
+        haveShield = false;
+        pub.childPosX = 0;
+        pub.childPosY = 0;
+        pub.lastDirection = 0;
     }
 
     //Método para detener el movimiento del niño
@@ -646,7 +617,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         var mapHeight = this.getMapSize().height;
         var mapWidth = this.getMapSize().width;
         var tileWidth= this.getTileSize().height;
-        childMoveAction.setTileWidth(tileWidth);
+        childMoveAction.init(tileWidth);
         var size = cc.winSize;
 
         this.obstacles = [];
@@ -679,7 +650,6 @@ var GameplayMap = cc.TMXTiledMap.extend({
             else
                 return parseInt(pixelX / tileWidth);
         }
-
         this.getMatrixPosY = function(pixelY, tileWidth){
             var modY = pixelY % tileWidth;
             if(pixelY!=0) {
@@ -689,7 +659,6 @@ var GameplayMap = cc.TMXTiledMap.extend({
                     return this.getMapSize().height -1 -parseInt(pixelY / tileWidth);
             }
         }
-
         this.initStartnFinish();
 
         //Se crea el listener para el teclado, se podria usar tambien un CASE en vez de IFs
@@ -934,7 +903,7 @@ var zoomGame = {
     zoomActivate:true
 }
 
-var HelloWorldScene = cc.Scene.extend({
+var GameplayScene = cc.Scene.extend({
     gameplayLayer : null,
     hudLayer: null,
     fog : null,

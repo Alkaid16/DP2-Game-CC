@@ -31,7 +31,6 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="views/defeat_view.csd" />
           <FilePathData Path="views/level_modal.csd" />
         </OpenedDocuments>
         <ActiveDocument Path="views/level_modal.csd" />

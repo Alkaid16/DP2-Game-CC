@@ -121,7 +121,7 @@ var LevelModalC = (function(){
 
         var btnStart = layer.getChildByName("btnStart");
         btnStart.addClickEventListener(function(){
-            var scene = new HelloWorldScene(level);
+            var scene = new GameplayScene(level);
             cc.director.runScene(scene);
         });
     };
@@ -134,7 +134,7 @@ var LevelModalC = (function(){
         lblLevel.setString("Nivel " + level);
         if(levelInfo.score!= null) lblScore.setString("Score: " + levelInfo.score);
         else lblScore.setString("Score: -");
-        if(levelInfo.defeatPosX != null || levelInfo.defeatPosX == -1)lblDefeatPos.setString(
+        if(levelInfo.defeatPosX != null || levelInfo.defeatPosX != -1)lblDefeatPos.setString(
             "Posicion: (" + levelInfo.defeatPosX + ","+ levelInfo.defeatPosY + ")");
         else lblDefeatPos.setString("Posicion: -");
 
@@ -186,7 +186,7 @@ var DefeatModalC = (function(){
         var btnRetry = layer.getChildByName("btnRetry");
         btnRetry.addClickEventListener(function(){
             currentGameplayScene.customCleanup();
-            var newScene = new HelloWorldScene(LevelGraphC.getCurrentLevel().idLevel);
+            var newScene = new GameplayScene(LevelGraphC.getCurrentLevel().idLevel);
             cc.director.runScene(newScene);
         });
 

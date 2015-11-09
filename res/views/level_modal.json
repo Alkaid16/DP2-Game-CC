@@ -158,6 +158,7 @@
             "ctype": "TextObjectData"
           },
           {
+            "IsCustomSize": true,
             "FontSize": 20,
             "LabelText": "Score:",
             "OutlineColor": {
@@ -176,8 +177,8 @@
               "ScaleY": 0.4743
             },
             "Position": {
-              "X": 48.9252,
-              "Y": 168.0
+              "X": 74.0035,
+              "Y": 168.9998
             },
             "Scale": {
               "ScaleX": 1.4646,
@@ -186,27 +187,28 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.1529,
-              "Y": 0.525
+              "X": 0.2313,
+              "Y": 0.5281
             },
             "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.3125,
+              "Y": 0.0719
             },
-            "LeftMargin": 25.2781,
-            "RightMargin": 236.7219,
-            "TopMargin": 139.9099,
-            "BottomMargin": 157.0901,
+            "LeftMargin": 33.2335,
+            "RightMargin": 186.7665,
+            "TopMargin": 138.9091,
+            "BottomMargin": 158.0909,
             "Tag": 152,
             "ActionTag": -1383551644,
             "Size": {
-              "X": 58.0,
+              "X": 100.0,
               "Y": 23.0
             },
             "Name": "lvlScore",
             "ctype": "TextObjectData"
           },
           {
+            "IsCustomSize": true,
             "FontSize": 20,
             "LabelText": "Posición:",
             "OutlineColor": {
@@ -225,7 +227,7 @@
               "ScaleY": 0.4412
             },
             "Position": {
-              "X": 71.8773,
+              "X": 87.1849,
               "Y": 116.4283
             },
             "Scale": {
@@ -235,21 +237,21 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.2246,
+              "X": 0.2725,
               "Y": 0.3638
             },
             "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.3125,
+              "Y": 0.0719
             },
-            "LeftMargin": 32.5561,
-            "RightMargin": 208.4439,
-            "TopMargin": 190.719,
-            "BottomMargin": 106.281,
+            "LeftMargin": 37.4149,
+            "RightMargin": 182.5851,
+            "TopMargin": 190.7193,
+            "BottomMargin": 106.2807,
             "Tag": 153,
             "ActionTag": -801968946,
             "Size": {
-              "X": 79.0,
+              "X": 100.0,
               "Y": 23.0
             },
             "Name": "lblDefeatPos",

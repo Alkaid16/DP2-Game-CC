@@ -39,25 +39,25 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lvlScore" ActionTag="-1383551644" Tag="152" IconVisible="False" LeftMargin="25.2781" RightMargin="236.7219" TopMargin="139.9099" BottomMargin="157.0901" FontSize="20" LabelText="Score:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="58.0000" Y="23.0000" />
+          <AbstractNodeData Name="lvlScore" ActionTag="-1383551644" Tag="152" IconVisible="False" LeftMargin="33.2335" RightMargin="186.7665" TopMargin="138.9091" BottomMargin="158.0909" IsCustomSize="True" FontSize="20" LabelText="Score:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="100.0000" Y="23.0000" />
             <AnchorPoint ScaleX="0.4077" ScaleY="0.4743" />
-            <Position X="48.9252" Y="168.0000" />
+            <Position X="74.0035" Y="168.9998" />
             <Scale ScaleX="1.4646" ScaleY="1.2668" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1529" Y="0.5250" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="0.2313" Y="0.5281" />
+            <PreSize X="0.3125" Y="0.0719" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDefeatPos" ActionTag="-801968946" Tag="153" IconVisible="False" LeftMargin="32.5561" RightMargin="208.4439" TopMargin="190.7190" BottomMargin="106.2810" FontSize="20" LabelText="Posición:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="79.0000" Y="23.0000" />
+          <AbstractNodeData Name="lblDefeatPos" ActionTag="-801968946" Tag="153" IconVisible="False" LeftMargin="37.4149" RightMargin="182.5851" TopMargin="190.7193" BottomMargin="106.2807" IsCustomSize="True" FontSize="20" LabelText="Posición:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="100.0000" Y="23.0000" />
             <AnchorPoint ScaleX="0.4977" ScaleY="0.4412" />
-            <Position X="71.8773" Y="116.4283" />
+            <Position X="87.1849" Y="116.4283" />
             <Scale ScaleX="1.4646" ScaleY="1.2668" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2246" Y="0.3638" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="0.2725" Y="0.3638" />
+            <PreSize X="0.3125" Y="0.0719" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
