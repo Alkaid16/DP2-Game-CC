@@ -618,6 +618,11 @@ var GameplayMap = cc.TMXTiledMap.extend({
                 //Si presiona la barra espaciadora, se registra el salto
                 if(keyCode == 32 && HoleController.canJump && !HoleController.jumped){
                     HoleController.jumped = true;
+                }else if(keyCode == 13){
+                    //se mostrará el modal de Pausa, además se quitará el gameplay fueran del schedule
+                    PauseModalC.show();
+
+
                 }
 
                 if(!interHandler.choiceAvailable) return;
@@ -924,6 +929,8 @@ var GameplayScene = cc.Scene.extend({
         //Por ultimo, se añade el layer de gameplay a la scene, en el orden Z mas bajo.
         this.addChild(this.gameplayLayer, 0);
         this.addChild(this.hudLayer, 1);
+        PauseModalC.load(this,gameplayMap);
+
     },
 
     onEnter:function () {

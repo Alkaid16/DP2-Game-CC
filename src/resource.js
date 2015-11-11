@@ -31,7 +31,9 @@ var res = {
     boy_up_plist:"res/boy_up.plist",
     boy_down_plist:"res/boy_down.plist",
     spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist",
-    monstruo_plist: "res/spritesheets/monstruo.plist"
+    monstruo_plist: "res/spritesheets/monstruo.plist",
+    pause_modal_json: "res/views/pause_modal.json",
+    options_json: "res/views/options_modal.json"
 };
 
 var g_resources = [];

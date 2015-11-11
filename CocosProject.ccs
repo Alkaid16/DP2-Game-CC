@@ -27,16 +27,16 @@
           <Project Name="ranking_result_view.csd" Type="Scene" />
           <Project Name="level_selector_view.csd" Type="Scene" />
           <Project Name="main_view.csd" Type="Scene" />
-          <Project Name="pause.csd" Type="Scene" />
           <Project Name="splash_view.csd" Type="Scene" />
           <Project Name="loading_view.csd" Type="Scene" />
           <Project Name="cinematic_view.csd" Type="Scene" />
           <Project Name="invitation_view.csd" Type="Scene" />
           <Project Name="credits_view.csd" Type="Scene" />
-          <Project Name="options_view.csd" Type="Scene" />
           <Project Name="level_modal.csd" Type="Layer" />
           <Project Name="gameHUD.csd" Type="Layer" />
           <Project Name="defeat_view.csd" Type="Layer" />
+          <Project Name="pause_modal.csd" Type="Layer" />
+          <Project Name="options_modal.csd" Type="Layer" />
         </Folder>
       </RootFolder>
     </Group>

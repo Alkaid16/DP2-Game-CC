@@ -1,7 +1,7 @@
 {
-  "ID": "8c91939a-14a1-434a-94a4-27b318aea1c8",
+  "ID": "e0825dc4-7717-4162-bbc3-d9fd77a774b4",
   "Version": "2.3.2.3",
-  "Name": "options_view",
+  "Name": "options_modal",
   "Content": {
     "Content": {
       "Animation": {
@@ -12,7 +12,7 @@
       },
       "AnimationList": [],
       "ObjectData": {
-        "Tag": 77,
+        "Tag": 19,
         "Children": [
           {
             "FileData": {
@@ -47,8 +47,8 @@
             "RightMargin": 381.1886,
             "TopMargin": 223.7174,
             "BottomMargin": 222.2826,
-            "Tag": 81,
-            "ActionTag": -727036902,
+            "Tag": 29,
+            "ActionTag": -607677520,
             "Size": {
               "X": 259.0,
               "Y": 194.0
@@ -97,7 +97,7 @@
             "RightMargin": 340.3187,
             "TopMargin": 5.3315,
             "BottomMargin": 434.6685,
-            "Tag": 97,
+            "Tag": 20,
             "Children": [
               {
                 "FontSize": 20,
@@ -139,8 +139,8 @@
                 "RightMargin": 56.8114,
                 "TopMargin": 35.3369,
                 "BottomMargin": 118.6631,
-                "Tag": 98,
-                "ActionTag": 1531033150,
+                "Tag": 21,
+                "ActionTag": 1487045513,
                 "Size": {
                   "X": 83.0,
                   "Y": 46.0
@@ -149,7 +149,7 @@
                 "ctype": "TextObjectData"
               }
             ],
-            "ActionTag": -617356215,
+            "ActionTag": -660683514,
             "Size": {
               "X": 200.0,
               "Y": 200.0
@@ -199,7 +199,7 @@
             "RightMargin": 225.4129,
             "TopMargin": 226.8192,
             "BottomMargin": 213.1808,
-            "Tag": 99,
+            "Tag": 22,
             "Children": [
               {
                 "FontSize": 20,
@@ -241,8 +241,8 @@
                 "RightMargin": 116.5765,
                 "TopMargin": 34.8219,
                 "BottomMargin": 142.1781,
-                "Tag": 100,
-                "ActionTag": 1655676636,
+                "Tag": 23,
+                "ActionTag": 1550137827,
                 "Size": {
                   "X": 60.0,
                   "Y": 23.0
@@ -287,8 +287,8 @@
                 "TopMargin": 35.9904,
                 "BottomMargin": 137.0096,
                 "CallBackType": "Click",
-                "Tag": 101,
-                "ActionTag": -1041161259,
+                "Tag": 24,
+                "ActionTag": 340662474,
                 "Size": {
                   "X": 100.0,
                   "Y": 27.0
@@ -336,8 +336,8 @@
                 "RightMargin": 117.5849,
                 "TopMargin": 88.5197,
                 "BottomMargin": 88.4803,
-                "Tag": 102,
-                "ActionTag": 317232426,
+                "Tag": 25,
+                "ActionTag": 1425744888,
                 "Size": {
                   "X": 63.0,
                   "Y": 23.0
@@ -382,8 +382,8 @@
                 "TopMargin": 91.4329,
                 "BottomMargin": 81.5671,
                 "CallBackType": "Click",
-                "Tag": 103,
-                "ActionTag": 276911335,
+                "Tag": 26,
+                "ActionTag": -918644193,
                 "Size": {
                   "X": 100.0,
                   "Y": 27.0
@@ -392,7 +392,7 @@
                 "ctype": "TextFieldObjectData"
               }
             ],
-            "ActionTag": 758573096,
+            "ActionTag": -150182719,
             "Size": {
               "X": 200.0,
               "Y": 200.0
@@ -441,7 +441,7 @@
             "RightMargin": 342.5197,
             "TopMargin": 480.2115,
             "BottomMargin": -40.2115,
-            "Tag": 104,
+            "Tag": 27,
             "Children": [
               {
                 "FontSize": 14,
@@ -453,12 +453,12 @@
                 },
                 "DisabledFileData": {
                   "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Path": "../Default/Button_Disable.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
                   "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Path": "../Default/Button_Press.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -509,8 +509,8 @@
                 "RightMargin": 50.1224,
                 "TopMargin": 14.7339,
                 "BottomMargin": 149.2661,
-                "Tag": 105,
-                "ActionTag": -1253401132,
+                "Tag": 28,
+                "ActionTag": 1187510147,
                 "Size": {
                   "X": 100.0,
                   "Y": 36.0
@@ -519,7 +519,7 @@
                 "ctype": "ButtonObjectData"
               }
             ],
-            "ActionTag": -2099956342,
+            "ActionTag": 1650699470,
             "Size": {
               "X": 200.0,
               "Y": 200.0
@@ -532,8 +532,8 @@
           "X": 640.0,
           "Y": 640.0
         },
-        "Name": "Scene",
-        "ctype": "SingleNodeObjectData"
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
       },
       "UsedResources": [
         "../Default/Button_Disable.png",
@@ -544,5 +544,5 @@
       "ctype": "GameProjectData"
     }
   },
-  "Type": "Scene"
+  "Type": "Layer"
 }
