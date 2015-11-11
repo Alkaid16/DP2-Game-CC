@@ -453,9 +453,7 @@ var childMoveAction = (function(){
 
         //Condicion de victoria
         if(posX == mainLayer.finishPoint[0] && posY == mainLayer.finishPoint[1]){
-            var current = new Date();
-            var numMs = current.getTime() - gameplayMap.currentTime.getTime();
-            alert("YOU WIN! Your get " + gameplayMap.coins + " coins with " + numMs + " ms spend");
+            alert("YOU WIN! Your get " + gameplayMap.coins);
             close();
         }
 
@@ -547,7 +545,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
     coins:0,
     intersections: [],
     currentTime:null,
-
+    
     ctor:function (levelName) {
         this._super();
         this.initWithTMXFile("res/" + levelName);

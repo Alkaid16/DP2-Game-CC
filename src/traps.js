@@ -19,6 +19,7 @@ function executeTrap(tile){
             break;
     }
 
+
     if(idTrap!=1){
         delete tile.trap;
         tile.rect.width=0;
@@ -59,17 +60,22 @@ var BoardController = (function(){
     var selWord;
     var charPos;
 
+
     var pub = {};
+    var timeBoard = null;
 
     var boardCleanup = function(){
         label.removeFromParent();
         labelTyped.removeFromParent();
         ChildSM.startRunning();
         started = false;
+
     }
 
     //Funcion de activacion de antorcha
     pub.activateBoard = function(){
+        timeBoard = new Date();
+
         ChildSM.stop();
         charPos = 0;
         var rand = parseInt(Math.random()*words.length);
@@ -88,6 +94,7 @@ var BoardController = (function(){
             if(pub.isActivated()) loseWillPoint();
             boardCleanup();
         }, 5000);
+
     }
 
     pub.keyboardInput = function(letter){
@@ -96,6 +103,21 @@ var BoardController = (function(){
             charPos++;
             if(charPos==selWord.length){
                 boardCleanup();
+                var endTime = new Date();
+                var totalTime = endTime.getTime() - timeBoard.getTime();
+                var coinsLabel = new cc.LabelTTF(5000 - totalTime,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+                coinsLabel.setPosition(gameplayMap.sprite.getPositionX(), gameplayMap.sprite.getPositionY() + 40);
+                currentGameplayScene.gameplayLayer.addChild(coinsLabel,20);
+                var currentFontSize = coinsLabel.getFontSize();
+
+                for(var i = 1;i<=currentFontSize;i++){
+                    (function (x) {
+                        setTimeout(function () {
+                            coinsLabel.setFontSize(currentFontSize - x);
+                        },i*100);
+                    })(i);
+                }
+                gameplayMap.coins += 5000 - totalTime;
                 return;
             }
         }else{
@@ -114,7 +136,7 @@ var BoardController = (function(){
 
 var HoleController = (function(){
     var pub = {};
-    pub.exMark;
+    pub.exMark = null;
     pub.canJump = false;
     pub.jumped = false;
 
@@ -163,6 +185,8 @@ var MeshController = (function(){
 
     var pub = {};
     var currentArrow;
+    var timeMesh = null;
+
 
     var boardCleanup = function(){
 
@@ -177,6 +201,7 @@ var MeshController = (function(){
         }
         ChildSM.startRunning();
         started = false;
+
     }
 
     var createArrayArrow = function()
@@ -191,7 +216,9 @@ var MeshController = (function(){
         ChildSM.stop();
         createArrayArrow();
         currentArrow=0;
+        timeMesh = new Date();
 
+        var endTime;
         //Inserta en pantalla las flechas
 
         for(var i=0; i<numArrows; i++)
@@ -239,6 +266,9 @@ var MeshController = (function(){
             if(pub.isActivated()) loseWillPoint();
             boardCleanup();
         }, 5500);
+
+
+
     }
 
     pub.keyboardInput = function(keyPress){
@@ -291,6 +321,21 @@ var MeshController = (function(){
         if(currentArrow==numArrows)
         {
             boardCleanup();
+            var endTime = new Date();
+            var totalTime = endTime.getTime() - timeMesh.getTime();
+            var coinsLabel = new cc.LabelTTF(5500 - totalTime,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+            coinsLabel.setPosition(gameplayMap.sprite.getPositionX(), gameplayMap.sprite.getPositionY() + 40);
+            currentGameplayScene.gameplayLayer.addChild(coinsLabel,20);
+            var currentFontSize = coinsLabel.getFontSize();
+
+            for(var i = 1;i<=currentFontSize;i++){
+                (function (x) {
+                    setTimeout(function () {
+                        coinsLabel.setFontSize(currentFontSize - x);
+                    },i*100);
+                })(i);
+            }
+            gameplayMap.coins += 5500 - totalTime;
             started = false;
         }
 
@@ -335,6 +380,8 @@ var lunchBoxController = (function(){
     //aprox de HxW de los sprites
     var aproxWH;
     var pub = {};
+    var timeLunch = null;
+
 
     //Esta función unicamente carga los spritres
     var chargeSprites = function(){
@@ -410,10 +457,13 @@ var lunchBoxController = (function(){
         ChildSM.startRunning();
         flagChargeBox=false;
         started = false;
+
+
     }
 
     //Funcion de activacion de lonchera
     pub.activateLunchBox = function(){
+        timeLunch = new Date();
 
         ChildSM.stop();
         //Carga de los Sprites
@@ -460,6 +510,10 @@ var lunchBoxController = (function(){
             if(pub.isActivated())loseWillPoint();
             boardCleanup();
         }, 8000);
+
+
+
+
     }
 
     pub.onClickMouse = function(xCord, yCord){
@@ -496,6 +550,21 @@ var lunchBoxController = (function(){
                 if(numRemElmentNutri==0)
                 {
                     boardCleanup();
+                    var endTime = new Date();
+                    var totalTime = endTime.getTime() - timeLunch.getTime();
+                    var coinsLabel = new cc.LabelTTF(8000 - totalTime,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+                    coinsLabel.setPosition(gameplayMap.sprite.getPositionX(), gameplayMap.sprite.getPositionY() + 40);
+                    currentGameplayScene.gameplayLayer.addChild(coinsLabel,20);
+                    var currentFontSize = coinsLabel.getFontSize();
+
+                    for(var i = 1;i<=currentFontSize;i++){
+                        (function (x) {
+                            setTimeout(function () {
+                                coinsLabel.setFontSize(currentFontSize - x);
+                            },i*100);
+                        })(i);
+                    }
+                    gameplayMap.coins += 8000 - totalTime;
                     started = false;
                     console.log("ganaste");
                 }
