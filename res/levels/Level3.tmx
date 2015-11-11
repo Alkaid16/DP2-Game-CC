@@ -40,27 +40,27 @@
  </layer>
  <layer name="StartFinish" width="25" height="126">
   <properties>
-   <property name="finish" value="21,0"/>
+   <property name="finish" value="23,0"/>
    <property name="orientation" value="1"/>
    <property name="start" value="6,125"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2zEBAAAIw7BZw78pTIyLREAdNOmbgyYAAAAAAAAAAAAAAPBD80tYrxwAgw==
+   eJzt20ERAAAIw7BZw78pTLAPlwiogyY9U2wDAAAAAAAAAAAAAAA/Xf4IC60UAIM=
   </data>
  </layer>
  <layer name="Intersection" width="25" height="126">
   <data encoding="base64" compression="zlib">
-   eJzt2jEOgCAQBEC+5v8/ZYylR6RA9M6Zzg53EUikNQ7bzTM5RT32utX5SQ5ktXruZv5WMo/9TXIDYIT9AuA/rPkA81ReU6v/k6jyHlXpZz6ZPku+MbnAetXPcFy5N/ZtGfrIMEaIjNyvNL+BSnZ8qQde
+   eJzt2rsNwCAMBUBWy/5LRVFaR3FBPsZ3HR3yA4MEY3DYbsbUFOV4la3MT+oAOfZKPzIHIMN5AdCHng8wz8o91ZsEX7LO5lPTZ6lvTF3gfe5w/fg39m8V8qgwR4hk/lda38BKdvWgBps=
   </data>
  </layer>
  <layer name="Maze" width="25" height="126">
   <data encoding="base64" compression="zlib">
-   eJzt2FEOg0AIBFCv5v0v1d/GdAWGGaw6JH7U6j5kcbXdNn7sgjEZxg5szLyO36F1srE+h7GhOWePi76bMFbuWT0qtVoZUX6VXpoyopp0jUwOq3xUhiKeaijm5Ow6GEaUN8uofL6TwZhzdf2jcWzMGNE8M9aOO9fnjQby7lkxWOfYqB2PbIxQvevYwA3lfEe2DRs25oyJ+336vwYb80a2fzp91vm9ms1FYbDirkalNzoG87iugb4/M/tvylDfR1fXCrmuTq0UvfwkgzUfFfPJRna9umJdq4z1j8ZErSrrWZQX08iOg+aEGoyYMla1YPb60Vz5CiOz3wbPYK/r2dwy59uYNabnvHtfvM3orL/IdTCezV0D2WfDBtK7ymfgWS7qsPF7LNWcfhvqsGGjEx+TR4LE
+   eJzt2FkOgzAMBFCu1vtfqr8VauJtxpBkLPFRSPOMs0B7XWvHJ9g2eyDyuV+L9CvD1x/iyObsbWdd6zBG7qwekVqNDCu/6lpjGFZNqoYnh1E+LIMRuxqMMZndB8Kw8kYZkc8rGYgxZ9ff6kdGj2GNM2LvWLk+JxqZd8+IgfqOjFj7zIEI1ruOjLzBHG/LliFDRp/Rsd67/2uQ0W94509lnlV+r3pzYRioWNWIzI2KgWxXNbLvz8j512Ww19HTtcrcV6VWjLm8k4Eaj4i5s+Hdr57Y1yJ9vdHoqFVkP7PyQhrefrI5ZQ1EdBmjWiDn+t0c+QzDc14GzkDv697cPN+X0Wt0j3l1XZxmVPbfzH0gns1VI3NOhozM3GU+A2e5sEPG/75YY/prsEPGeQYyvn/vgsQ=
   </data>
  </layer>
  <layer name="Collision" width="25" height="126">
   <data encoding="base64" compression="zlib">
-   eJztmo1NAzEMhQ8YouwA7GB1B2BVxqNIWArue/5J3NJCLZ2qJr58ziW2k9xtW6/I9+++cM/T4XouXI8TDAk1sMww7g/Xm7keTN34/32CgeyydZ7uORlofHUMd4m68f9LYHNFPu5wOerL02AHGl9vrFGd92zHeuYbow9YHc8/lDHOOwF6o+wdncwcsVz0fN437j/IP1R3nD9jv5ENzDYm4tRZxjgGlfj0uvF5ND4TNgZV30aCGHZsTsHosD1i2PjC4scKw8pKv8Y4s9uOY44XP7IioOwrFq7mDcRgdncybJs2b1QZni8LumGCgdqxjEwczDCQL2vdqg967Vw6wxvn2XjO7BvFm0srDG+cV+O5tnON41xloDVpJXdkGEyy/fMYbE1RzR0eo+ueczLYuHbsMSXU4JJlROPq7UtW13BStPXSGas+nmEw6ehfl4/PiNwYN8aVMNjZiPr/tfi7MmyM7/R3Zdi2WPl/YmTP2JQxc+4gpJwxIj3v3DXaW9r8wuYZswXpRqJtMQZa38zuiX9zbnTtI0/FiOaG6mXW03beZ+2ToH6U2WfA5vg9KLN9nT0TQLbJsdoP6WSw/FGNVx6DPSsr2TmQfVZfZ5jav2xeRIzs2hrdm2VEutUzzBmGlU5GNn+sMLL3RmvAjnfPsvVLJQ9WryifZ5+/9+6+Kw9KqJFfh7HYpvoo9msZy4MZe5hNkX+jWJR9h5yxiYm24zFW12PaDso9Hr8iQsr3hD+zH/RiHeJ373FG/n/fD1a+NUHlK/u0rFRytBePVs//lIHWV979GZ1LYXg5vrKG9xgZWWXYde1s7PUY1XVtB2P2+4wKwwrqlxc3MozMvoPZk2Vkxsfaw2zqYEQ+fWOcl4HWlV4Z+1+duzOCGN63cNX3navvPMWxs0s6GZnvRFdFgvpOBhvb7m8RTyU3xt9mfAIDhNM6
+   eJztmgtOwzAMhgscYtxhcIdod4BdleOxSlgKnn+/NzZWSxUscfM5TWwnaZflMjJ+/h4cuvvT9Za4XgOMYWroEmE8n65Pdr2wOv57vY4BhmQPr9N0r8mQxpfGbueom3+/GzZH5OtJLpf6sp/skMZXG2upTnu2cz3yjXnucx3NL4ix2nZkZUgOio5njnAumvtDKEd+Qbrz/Jn7LdmAbEMylDrOmMcgEpc+FjyP5meCxiDq25JIjGhcyjA6bLcYPL6g+FFhcKn0a44zu+U85mjxwytj+n+NgRQHq3lDYiC7Oxm8TZ43ogzNl4d0Q4IhtcMZnjjoYUi+THVVH9TauXWGNs7ZeI7sm0WbSxWGNs7VeE7t3OM4RxnSmjSSOzwMJN7+aQy0pojmDo3Rdc81GWhcq3vLmZERL8MaV21fUl3DjaCtt86o+riHgaSjf10+npGxMTbGnTDQ2Qj5/734OzF4jO/0d2LwtlD5IzG8Z2zEyJw7DFCOGJaedu5q7S15fkHzDNki6VpCbSGGtL7J7on/cm507SMvxbDmBul51tN83nvtG0b9LNlngOb4s1DG+5o9E5BsG+dqv6STgfJHNF5pDPSsuHjngPdZreeY1D9vXpQY3rW1dK+XYelGzzAzDC6dDG/+qDC891prwI53zmPpl0gejF5WPvc+f+3dfVceHKaGfx2GYhvpS7GfylAe9NiDbLL8W4pF3nfIHpuQUDsao7oeo3ak3KPxIzJA+QHwM/tBLdZJ/O49zsx/9P1g5FsTqbyyT/NKJEdr8ah6/kcMaX2l3e/RuRWGluMz349F1u2zVBl8XZuNvRojuq7tYGS/z4gwuEj90uKGh+HZdyB7vAzP+HB7kE0dDMunN8Z1GdK6UitDv6NzNyMSQ/sWLvq+s/rOcyh2dkknw/OdaFWGUd/JQGPb/S3ipWRj/G/GN4ER1Pc=
   </data>
  </layer>
  <layer name="Traps" width="25" height="126">
@@ -70,7 +70,7 @@
  </layer>
  <layer name="Powerups" width="25" height="126">
   <data encoding="base64" compression="zlib">
-   eJzt2cENACAIBDDcf06dwxHUl/FsJyA8gBxVAMBvertdAQBkGnYsAAAAxNrN1uUDa3pEAv+2XGYUAK9wjwCcmZMWBzU=
+   eJzt2bENACAIBEDcf06dwwVMxFiJdxU1BZAnAgD4SW/rGgC4N+xWAAAAKCubqcsH9vSICvzZ6jKjAHiFewTgzASZ+Agb
   </data>
  </layer>
  <layer name="Collectables" width="25" height="126">
