@@ -348,7 +348,6 @@ var childMoveAction = (function(){
 
             //En caso no se haya seleccionado una dirección por el usuario, Se procede a elegir una al azar
             if(interHandler.choiceAvailable){
-                console.log("Inicializando elección aleatoria");
                 randomDirection(posX, posY);
             }
             mainLayer.sprite.setColor(new cc.Color(255,255,255,0));
@@ -394,6 +393,21 @@ var childMoveAction = (function(){
     var randomDirection = function(posX, posY) {
         var ScannerSize = 1;
         var direction = getCurrentDirection();
+
+        switch(direction) {
+            case 0 :
+                posY-=ScannerSize;
+                break;
+            case 1 :
+                posY+=ScannerSize;
+                break;
+            case 2 :
+                posX-=ScannerSize;
+                break;
+            case 3 :
+                posX+=ScannerSize;
+                break;
+        }
 
         var possibleMovements = gameplayMap.getPossibleChoices(posX,posY,direction, false)
         var random = Math.random();
@@ -480,7 +494,7 @@ var childMoveAction = (function(){
                 //Si choca contra un powerup
                 if('powerup' in tile){
                     executePowerup(tile);
-                    break;
+                    continue;
                 }
 
                 //Si choca contra una trampa
@@ -493,7 +507,7 @@ var childMoveAction = (function(){
                 //Si choca contra un collectable
                 if('collectable' in tile){
                     pickCollectable(tile);
-                    break
+                    continue;
                 }
 
                 //Si choca con una interseccion

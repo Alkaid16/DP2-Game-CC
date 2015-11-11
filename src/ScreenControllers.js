@@ -92,6 +92,10 @@ var LevelSelectionC = (function(){
 
 var LevelModalC = (function(){
     var pub = {};
+    var btnBuy;
+    var btnCont;
+    var btnExit;
+    var btnStart;
     var layer;
     var lblLevel; var lblDefeatPos; var lblScore;
     var cLayer;
@@ -115,6 +119,15 @@ var LevelModalC = (function(){
         cc.eventManager.addListener(cLayer.cListener,cLayer);
     }
 
+    pub.updateButtons = function(levelInfo){
+        var canBuy = (levelInfo.cost > 0 && levelInfo.bought == 0);
+        btnBuy.setTitleText("Comprar: " + levelInfo.cost + "pt.");
+        btnBuy.setVisible(canBuy);
+        btnBuy.setTouchEnabled(canBuy);
+        btnStart.setVisible(!canBuy);
+        btnCont.setVisible(!canBuy);
+    }
+
     pub.load = function(parentScene){
         var obj =  ccs.load(res.level_modal_json);
         pScene = parentScene;
@@ -130,17 +143,27 @@ var LevelModalC = (function(){
         lblScore = layer.getChildByName("lvlScore");
         lblDefeatPos = layer.getChildByName("lblDefeatPos");
 
-        var btnExit = layer.getChildByName("btnExit");
+        btnExit = layer.getChildByName("btnExit");
         btnExit.addClickEventListener(function(){
            pub.hide();
         });
 
-        var btnCont = layer.getChildByName("btnContinue");
+        btnCont = layer.getChildByName("btnContinue");
         btnCont.addClickEventListener(function(){
             alert("TO DO");
         });
 
-        var btnStart = layer.getChildByName("btnStart");
+        btnBuy = layer.getChildByName("btnBuy");
+        btnBuy.setTouchEnabled(false);
+        btnBuy.addClickEventListener(function(){
+            if(parseInt(playerInfo.coins) >= parseInt(LevelGraphC.getLevelInfo(level).cost)){
+                alert("you can buy me");
+            }else{
+                alert("No tiene suficientes puntos para comprar el nivel.")
+            }
+        });
+
+        btnStart = layer.getChildByName("btnStart");
         btnStart.addClickEventListener(function(){
             layer.setVisible(false);
             var scene = new GameplayScene(level);
@@ -152,6 +175,8 @@ var LevelModalC = (function(){
         var levelInfo = LevelGraphC.getLevelInfo(lvlNum);
         if(levelInfo == null) return;
         level = levelInfo.idLevel;
+
+        pub.updateButtons(levelInfo);
 
         lblLevel.setString("Nivel " + level);
         if(levelInfo.score!= null) lblScore.setString("Score: " + levelInfo.score);
