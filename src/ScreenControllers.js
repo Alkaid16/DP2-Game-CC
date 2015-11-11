@@ -58,7 +58,7 @@ var LevelSelectionC = (function(){
 
     var elementsSetup = function(){
         var panel = scene.getChildByName("pnlMap");
-        for(var i=1; i<12; i++){
+        for(var i=1; i<16; i++){
             levelBtns[i-1] = panel.getChildByTag(i);
             levelBtns[i-1].addClickEventListener(startLevel);
             levelBtns[i-1].setTouchEnabled(true);
@@ -121,6 +121,7 @@ var LevelModalC = (function(){
 
         var btnStart = layer.getChildByName("btnStart");
         btnStart.addClickEventListener(function(){
+            layer.setVisible(false);
             var scene = new GameplayScene(level);
             cc.director.runScene(scene);
         });
@@ -168,6 +169,7 @@ var DefeatModalC = (function(){
     var btnExit;
     var btnRetry;
     var btnHelp;
+    var lblDesc;
 
     function setListenerState(bool){
         btnExit.setTouchEnabled(bool);
@@ -185,6 +187,7 @@ var DefeatModalC = (function(){
 
         createCoverLayer();
 
+        lblDesc = layer.getChildByName("lblDescription");
         btnExit = layer.getChildByName("btnExit");
         btnExit.addClickEventListener(function(){
             currentGameplayScene.customCleanup();
@@ -201,12 +204,28 @@ var DefeatModalC = (function(){
 
         btnHelp = layer.getChildByName("btnHelp");
         btnHelp.addClickEventListener(function(){
-            alert("TO DO");
+            var child = gameplayMap.sprite;
+            var tileWidth = gameplayMap.getTileSize().width;
+            var posX = gameplayMap.getMatrixPosX(child.getPositionX(), tileWidth);
+            var posY = gameplayMap.getMatrixPosY(child.getPositionY(), tileWidth);
+            WSHandler.registerDefeat(playerInfo.idPlayer, LevelGraphC.getCurrentLevel().idLevel, posX, posY);
+            currentGameplayScene.customCleanup();
+            LevelModalC.hide();
+            cc.director.runScene(LevelSelectionC.getScene());
         });
         setListenerState(false);
     };
 
-    pub.executeDefeat = function(){
+    pub.executeDefeat = function(byMonster){
+        if(byMonster){
+            btnHelp.setVisible(false);
+            lblDesc.setString("El monstruo ha alcanzado a " + playerInfo.childName + ".\n" +
+            "?Que desea hacer?");
+        }else{
+            btnHelp.setVisible(true);
+            lblDesc.setString(playerInfo.childName + " no tiene suficiente voluntad para seguir avanzando.\n" +
+                "?Que desea hacer?");
+        }
         layer.setVisible(true);
         cLayer.runAction(cc.fadeIn(1.5));
         cLayer.cListener.swallowTouches = true;

@@ -1,10 +1,11 @@
 var WSHandler = (function(){
     var pub = {};
+    var host = "http://200.16.7.111/afiperularavel/public/game";
 
     //Funcion que obtiene el objeto Player, con toda la informacion del jugador. Si la llamada falla, se retorna -1.
     pub.getPlayerInfo= function(fbID){
         var func = $.ajax({
-            url: "http://200.16.7.111/afiperularavel/public/game/player?idFacebook=" + fbID + "",
+            url: host + "/player?idFacebook=" + fbID + "",
             dataType: "json",
             crossDomain: true,
             success: function (data){
@@ -22,10 +23,14 @@ var WSHandler = (function(){
     //Funcion para registrar un nuevo jugador en la base de datos
     pub.registerPlayer = function(player){
         $.ajax({
-            url: "http://200.16.7.111/afiperularavel/public/game/player",
+            url: host + "/player?" + "childName=" + player.childName + "&"
+            + "idFacebook=" + player.idFacebook + "&"
+            + "coins=" + player.coins + "&"
+            + "hairVariation=" + player.hairVariation + "&"
+            + "clothesVariation=" + player.clothesVariation + "&"
+            + "continues=" + player.continues,
             type: "POST",
             crossDomain: true,
-            data: JSON.stringify(player),
             contentType: "application/json",
             complete: function(){
                 return 1;
@@ -37,7 +42,7 @@ var WSHandler = (function(){
 
     pub.getLevelGraph= function(idPlayer){
         var func = $.ajax({
-            url: "http://200.16.7.111/afiperularavel/public/game/level/graph?idPlayer=" + idPlayer + "",
+            url: host + "/level/graph?idPlayer=" + idPlayer + "",
             dataType: "json",
             crossDomain: true,
             success: function (data){
@@ -48,6 +53,24 @@ var WSHandler = (function(){
             }
         });
         return func;
+    };
+
+    pub.registerDefeat = function(idPlayer, idLevel, defeatedPosX, defeatedPosY){
+
+        $.ajax({
+            url: host + "/level/defeat?" + "idPlayer=" + idPlayer + "&"
+            + "idLevel=" + idLevel + "&"
+            + "defeatPosX=" + defeatedPosX + "&"
+            + "defeatPosY=" + defeatedPosY,
+            type: "POST",
+            crossDomain: true,
+            contentType: "application/json",
+            complete: function(){
+                return 1;
+            }
+        });
+
+        return -1;
     };
 
     return pub;

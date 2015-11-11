@@ -6,58 +6,58 @@
       <ObjectData Name="Layer" Tag="113" ctype="GameLayerObjectData">
         <Size X="320.0000" Y="320.0000" />
         <Children>
-          <AbstractNodeData Name="modal_level_wallpaper_2" ActionTag="-190797799" Tag="117" IconVisible="False" LeftMargin="32.5219" RightMargin="28.4781" TopMargin="-1.8608" BottomMargin="127.8608" ctype="SpriteObjectData">
+          <AbstractNodeData Name="modal_level_wallpaper_2" ActionTag="-190797799" Tag="117" IconVisible="False" LeftMargin="31.9567" RightMargin="29.0433" TopMargin="-1.8609" BottomMargin="127.8609" ctype="SpriteObjectData">
             <Size X="259.0000" Y="194.0000" />
             <AnchorPoint ScaleX="0.5183" ScaleY="1.0000" />
-            <Position X="166.7616" Y="321.8608" />
+            <Position X="166.1964" Y="321.8609" />
             <Scale ScaleX="1.2271" ScaleY="1.6550" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5211" Y="1.0058" />
+            <PrePosition X="0.5194" Y="1.0058" />
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="res_views/modal_level_wallpaper.jpg" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblLevel" ActionTag="-88717324" Tag="150" IconVisible="False" LeftMargin="45.9804" RightMargin="214.0197" TopMargin="22.6620" BottomMargin="274.3380" FontSize="20" LabelText="Nivel X" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="60.0000" Y="23.0000" />
+          <AbstractNodeData Name="lblLevel" ActionTag="-88717324" Tag="150" IconVisible="False" LeftMargin="16.2405" RightMargin="153.7595" TopMargin="11.5738" BottomMargin="273.4262" IsCustomSize="True" FontSize="36" LabelText="Nivel X" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="150.0000" Y="35.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="75.9804" Y="285.8380" />
-            <Scale ScaleX="1.3158" ScaleY="1.5885" />
+            <Position X="91.2405" Y="290.9262" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2374" Y="0.8932" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="0.2851" Y="0.9091" />
+            <PreSize X="0.4688" Y="0.1094" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_23_0" ActionTag="-394469845" Tag="151" IconVisible="False" LeftMargin="15.5583" RightMargin="156.4417" TopMargin="85.4480" BottomMargin="211.5520" FontSize="20" LabelText="Nombre del Nivel" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="148.0000" Y="23.0000" />
+          <AbstractNodeData Name="Text_23_0" ActionTag="-394469845" Tag="151" IconVisible="False" LeftMargin="13.9724" RightMargin="164.0276" TopMargin="86.6630" BottomMargin="213.3370" FontSize="20" LabelText="Nombre del Nivel" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="142.0000" Y="20.0000" />
             <AnchorPoint ScaleX="0.4835" ScaleY="0.5950" />
-            <Position X="87.1163" Y="225.2370" />
+            <Position X="82.6294" Y="225.2370" />
             <Scale ScaleX="1.0177" ScaleY="1.3957" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2722" Y="0.7039" />
+            <PrePosition X="0.2582" Y="0.7039" />
             <PreSize X="0.0000" Y="0.0000" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lvlScore" ActionTag="-1383551644" Tag="152" IconVisible="False" LeftMargin="33.2335" RightMargin="186.7665" TopMargin="138.9091" BottomMargin="158.0909" IsCustomSize="True" FontSize="20" LabelText="Score:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="100.0000" Y="23.0000" />
+          <AbstractNodeData Name="lvlScore" ActionTag="-1383551644" Tag="152" IconVisible="False" LeftMargin="12.7571" RightMargin="157.2429" TopMargin="136.0414" BottomMargin="158.9586" IsCustomSize="True" FontSize="24" LabelText="Score:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="150.0000" Y="25.0000" />
             <AnchorPoint ScaleX="0.4077" ScaleY="0.4743" />
-            <Position X="74.0035" Y="168.9998" />
-            <Scale ScaleX="1.4646" ScaleY="1.2668" />
+            <Position X="73.9121" Y="170.8161" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2313" Y="0.5281" />
-            <PreSize X="0.3125" Y="0.0719" />
+            <PrePosition X="0.2310" Y="0.5338" />
+            <PreSize X="0.4688" Y="0.0781" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDefeatPos" ActionTag="-801968946" Tag="153" IconVisible="False" LeftMargin="37.4149" RightMargin="182.5851" TopMargin="190.7193" BottomMargin="106.2807" IsCustomSize="True" FontSize="20" LabelText="Posición:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="100.0000" Y="23.0000" />
-            <AnchorPoint ScaleX="0.4977" ScaleY="0.4412" />
-            <Position X="87.1849" Y="116.4283" />
-            <Scale ScaleX="1.4646" ScaleY="1.2668" />
+          <AbstractNodeData Name="lblDefeatPos" ActionTag="-801968946" Tag="153" IconVisible="False" LeftMargin="12.7571" RightMargin="157.2429" TopMargin="185.7109" BottomMargin="109.2891" IsCustomSize="True" FontSize="24" LabelText="Posición:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="150.0000" Y="25.0000" />
+            <AnchorPoint ScaleX="0.5045" ScaleY="0.4745" />
+            <Position X="88.4254" Y="121.1526" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2725" Y="0.3638" />
-            <PreSize X="0.3125" Y="0.0719" />
+            <PrePosition X="0.2763" Y="0.3786" />
+            <PreSize X="0.4688" Y="0.0781" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -65,7 +65,7 @@
             <Size X="200.0000" Y="200.0000" />
             <Children>
               <AbstractNodeData Name="Text_27" ActionTag="-1631867381" Tag="155" IconVisible="False" LeftMargin="13.1404" RightMargin="96.8596" TopMargin="5.7721" BottomMargin="171.2279" FontSize="20" LabelText="Ranking" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="70.0000" Y="23.0000" />
+                <Size X="65.0000" Y="20.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="58.1404" Y="182.7279" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
