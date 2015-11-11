@@ -165,6 +165,15 @@ var DefeatModalC = (function(){
     var layer;
     var pScene;
     var cLayer;
+    var btnExit;
+    var btnRetry;
+    var btnHelp;
+
+    function setListenerState(bool){
+        btnExit.setTouchEnabled(bool);
+        btnRetry.setTouchEnabled(bool);
+        btnHelp.setTouchEnabled(bool);
+    }
 
     pub.load = function(){
         var obj =  ccs.load(res.defeat_view_json);
@@ -176,24 +185,25 @@ var DefeatModalC = (function(){
 
         createCoverLayer();
 
-        var btnExit = layer.getChildByName("btnExit");
+        btnExit = layer.getChildByName("btnExit");
         btnExit.addClickEventListener(function(){
             currentGameplayScene.customCleanup();
             LevelModalC.hide();
             cc.director.runScene(LevelSelectionC.getScene());
         });
 
-        var btnRetry = layer.getChildByName("btnRetry");
+        btnRetry = layer.getChildByName("btnRetry");
         btnRetry.addClickEventListener(function(){
             currentGameplayScene.customCleanup();
             var newScene = new GameplayScene(LevelGraphC.getCurrentLevel().idLevel);
             cc.director.runScene(newScene);
         });
 
-        var btnHelp = layer.getChildByName("btnHelp");
+        btnHelp = layer.getChildByName("btnHelp");
         btnHelp.addClickEventListener(function(){
             alert("TO DO");
         });
+        setListenerState(false);
     };
 
     pub.executeDefeat = function(){
@@ -202,6 +212,7 @@ var DefeatModalC = (function(){
         cLayer.cListener.swallowTouches = true;
         var seq = cc.sequence(new Array(cc.delayTime(1.5),cc.fadeIn(0.5)));
         layer.runAction(seq);
+        setListenerState(true);
     };
 
     pub.setParentScene = function(parentScene){
@@ -218,6 +229,7 @@ var DefeatModalC = (function(){
         layer.setOpacity(0);
         cLayer.removeFromParent();
         cLayer.setOpacity(0);
+        setListenerState(false);
     }
 
     function createCoverLayer(){

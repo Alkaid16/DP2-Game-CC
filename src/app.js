@@ -161,6 +161,10 @@ var interHandler = {
     },
 };
 
+var monsterMoveAction = function(){
+
+}
+
 //Módulo de movimiento del niño
 var childMoveAction = (function(){
     var tileWidth = 0;
@@ -538,41 +542,7 @@ var childMoveAction = (function(){
                 //Frenar
                 stopMovement();
 
-                //Hallar direccion inversa antes del choque
-                var lastMovInv=-1;
-                switch(direction) {
-                    case 0 :
-                        lastMovInv = 1;
-                        break;
-                    case 1 :
-                        lastMovInv = 0;
-                        break;
-                    case 2 :
-                        lastMovInv = 3;
-                        break;
-                    case 3 :
-                        lastMovInv = 2;
-                        break;
-                }
-
-                var movements = new Array(0,0,0,0);
-
-                //Evalua posibles movimientos en caso de choque con pared
-                if(posX<mainLayer.getMapSize().width-1 && mainLayer.tileMatrix[posX+1][posY]!=1) movements[3]=1; //derecha
-                if(posX>0 && mainLayer.tileMatrix[posX-1][posY]!=1) movements[2]=1; //izquierda
-                if(posY>0 && mainLayer.tileMatrix[posX][posY-1]!=1) movements[0]=1; //arriba
-                if(posY<mainLayer.getMapSize().height-1 && mainLayer.tileMatrix[posX][posY+1]!=1) movements[1]=1; //abajo
-
-                var possibleMovements = [];
-
-                for(var i=0;i<4;i++) {
-                    if (movements[i] == 1 && i!=lastMovInv) {
-                        possibleMovements.push(i);
-                    }
-                }
-
-                if(possibleMovements.length==0)
-                    possibleMovements.push(lastMovInv);
+                var possibleMovements = gameplayMap.getPossibleChoices(posX,posY, direction,false);
 
                 var random = Math.random();
                 var realRandom = parseInt(random*possibleMovements.length);
@@ -826,6 +796,44 @@ var GameplayMap = cc.TMXTiledMap.extend({
                 this.tileMatrix[i][j]=0;
             }
         }
+    },
+
+    getPossibleChoices: function(posX, posY, dir, incInverse){
+        var movements = new Array(0,0,0,0);
+        var lastMovInv=-1;
+        switch(dir) {
+            case 0 :
+                lastMovInv = 1;
+                break;
+            case 1 :
+                lastMovInv = 0;
+                break;
+            case 2 :
+                lastMovInv = 3;
+                break;
+            case 3 :
+                lastMovInv = 2;
+                break;
+        }
+
+        //Evalua posibles movimientos en caso de choque con pared
+        if(posX<this.getMapSize().width-1 && this.tileMatrix[posX+1][posY]!=1) movements[3]=1; //derecha
+        if(posX>0 && this.tileMatrix[posX-1][posY]!=1) movements[2]=1; //izquierda
+        if(posY>0 && this.tileMatrix[posX][posY-1]!=1) movements[0]=1; //arriba
+        if(posY<this.getMapSize().height-1 && this.tileMatrix[posX][posY+1]!=1) movements[1]=1; //abajo
+
+        var possibleMovements = [];
+
+        for(var i=0;i<4;i++) {
+            if (movements[i] == 1 && (i!=lastMovInv || incInverse)) {
+                possibleMovements.push(i);
+            }
+        }
+
+        if(possibleMovements.length==0)
+            possibleMovements.push(lastMovInv);
+
+        return possibleMovements;
     },
 
     gameOver: function(){
