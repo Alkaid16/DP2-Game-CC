@@ -158,7 +158,7 @@ var interHandler = {
             }
         }
         return dif
-    },
+    }
 };
 
 var monsterMoveAction = function(){
@@ -485,9 +485,7 @@ var childMoveAction = (function(){
 
         //Condicion de victoria
         if(posX == mainLayer.finishPoint[0] && posY == mainLayer.finishPoint[1]){
-            var current = new Date();
-            var numMs = current.getTime() - gameplayMap.currentTime.getTime();
-            alert("YOU WIN! Your get " + gameplayMap.coins + " coins with " + numMs + " ms spend");
+            alert("YOU WIN! Your get " + gameplayMap.coins);
             close();
         }
 
@@ -579,6 +577,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
     coins:0,
     intersections: [],
     currentTime:null,
+
 
     ctor:function (levelName) {
         this._super();
@@ -924,7 +923,7 @@ var GameplayScene = cc.Scene.extend({
         this.hudLayer = root.node;
 
         var map = new GameplayMap("levels/Level" + levelNum + ".tmx");
-        HoleController.exMark = new cc.Sprite(res.exMark_png);
+        HoleController.exMark = new cc.Sprite("res/exMark.png");
         this.fog = initFog(map);
         this.fog.setVisible(false);
 
