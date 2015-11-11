@@ -21,10 +21,12 @@ var MainSceneC = (function(){
             $.when(ajax).done( function(){
                 playerInfo = ajax.player;
                 if('idPlayer' in playerInfo) {
-                    LevelGraphC.load(playerInfo.idPlayer);
+                    var ajax2 = WSHandler.getLevelGraph(playerInfo.idPlayer);
+                    $.when(ajax2).done(function(){
+                        LevelGraphC.setLevelGraph(ajax2.responseJSON.levels);
+                        btnAction();
+                    })
                 }
-                alert(playerInfo.childName);
-                btnAction();
             });
         });
     }
@@ -49,6 +51,7 @@ var LevelSelectionC = (function(){
         scene = root.node;
         LevelModalC.load(scene);
         elementsSetup();
+        pub.updateLevelStatus();
         return root.node;
     }
 
@@ -62,6 +65,24 @@ var LevelSelectionC = (function(){
             levelBtns[i-1] = panel.getChildByTag(i);
             levelBtns[i-1].addClickEventListener(startLevel);
             levelBtns[i-1].setTouchEnabled(true);
+        }
+    }
+
+    pub.updateLevelStatus =  function(){
+        for(var i=1; i<16; i++){
+            var btn = levelBtns[i-1];
+            var levelInfo = LevelGraphC.getLevelInfo(i);
+            if(levelInfo.unlocked!=null && levelInfo.unlocked == 1){
+                btn.setTouchEnabled(true);
+                if(btn.getChildrenCount()>0) btn.removeAllChildrenWithCleanup(true);
+            }else{
+                btn.setTouchEnabled(false);
+                var lock = new cc.Sprite(res.lock_png);
+                lock.setScale(0.5);
+                lock.setAnchorPoint(0,0);
+                lock.setPosition(-5,0);
+                btn.addChild(lock, 5);
+            }
         }
     }
 
@@ -135,7 +156,7 @@ var LevelModalC = (function(){
         lblLevel.setString("Nivel " + level);
         if(levelInfo.score!= null) lblScore.setString("Score: " + levelInfo.score);
         else lblScore.setString("Score: -");
-        if(levelInfo.defeatPosX != null || levelInfo.defeatPosX != -1)lblDefeatPos.setString(
+        if(levelInfo.defeatPosX != null && levelInfo.defeatPosX != -1)lblDefeatPos.setString(
             "Posicion: (" + levelInfo.defeatPosX + ","+ levelInfo.defeatPosY + ")");
         else lblDefeatPos.setString("Posicion: -");
 

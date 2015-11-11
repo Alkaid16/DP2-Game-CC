@@ -11,6 +11,10 @@ var LevelGraphC = (function(){
         });
     }
 
+    pub.setLevelGraph = function(graph){
+        levelGraph = graph;
+    }
+
     pub.getLevelInfo = function(lvlNum){
         for(var i=0; i<levelGraph.length; i++){
             if(levelGraph[i].idLevel == lvlNum) {

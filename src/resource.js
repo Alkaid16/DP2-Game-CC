@@ -24,6 +24,7 @@ var res = {
     gameHUD_json: "res/views/gameHUD.json",
     exMark_png: "res/exMark.png",
     arrow_png: "res/arrow.png",
+    lock_png: "res/lock.png",
     integrado_png:"res/levels/Tilesets/integrado.png",
     random_png: "res/levels/Tilesets/random.png",
     boy_up_plist:"res/boy_up.plist",
