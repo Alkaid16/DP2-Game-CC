@@ -6,11 +6,14 @@ var ChildSM = (function(){
     var state = 0;
     //Arreglo con las 4 animaciones para correr
     var runAnims = [];
+    var arrows = [];
+    var currShownArrows = [];
     var monstAnim;
 
     pub.initSM = function(){
         currDir = -1;
         state = 0;
+        pub.hideArrows()
     }
 
     pub.initAnimations= function(){
@@ -20,6 +23,7 @@ var ChildSM = (function(){
         loadAnimation(1,8,"ninoPost");
         loadAnimation(1,9,"ninoPerf");
         loadMonsterAnimation();
+        loadArrows();
     }
 
     function loadAnimation(ini, end, name){
@@ -46,6 +50,28 @@ var ChildSM = (function(){
         }
         var animation = new cc.Animation(animFrames, 0.1, 100);
         monstAnim = cc.repeatForever(cc.animate(animation));
+    }
+
+    function loadArrows(){
+        var arrow = new cc.Sprite(res.arrow_png);
+        arrow.setPosition(cc.p(15,85));
+        arrow.setScale(0.25);
+        arrow.setRotation(90);
+        arrows.push(arrow);
+        arrow = new cc.Sprite(res.arrow_png);
+        arrow.setPosition(cc.p(15,55));
+        arrow.setScale(0.25);
+        arrow.setRotation(-90);
+        arrows.push(arrow);
+        arrow = new cc.Sprite(res.arrow_png);
+        arrow.setPosition(cc.p(0,70));
+        arrow.setScale(0.25);
+        arrows.push(arrow);
+        arrow = new cc.Sprite(res.arrow_png);
+        arrow.setPosition(cc.p(30,70));
+        arrow.setScale(0.25);
+        arrow.setRotation(180);
+        arrows.push(arrow);
     }
 
     pub.runMonsterAnimation = function(sprite){
@@ -105,7 +131,18 @@ var ChildSM = (function(){
         sprite.setAnchorPoint(anchor);
     }
 
+    pub.showArrows = function(arr){
+        for(var i= 0; i<arr.length; i++ ){
+            if(i>=0 && i<4) child.addChild(arrows[arr[i]], 10);
+        }
+        currShownArrows = arr;
+    }
 
+    pub.hideArrows = function(){
+        for(var i= 0; i<currShownArrows.length; i++ ){
+            if(i>=0 && i<4) child.removeChild(arrows[currShownArrows[i]], 10);
+        }
+    }
 
     return pub;
 })();

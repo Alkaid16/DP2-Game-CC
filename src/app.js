@@ -6,6 +6,7 @@ var currentGameplayScene;
 var interHandler = {
     choiceAvailable : false,
     choiceExecuted : false,
+    currentChoices: [],
     storedDecision: -1,
     intersectTile: null,
     sameTileDetected : false,
@@ -68,7 +69,8 @@ var interHandler = {
                 if(tileMatrix[j][i] == 2 && !this.sameTileDetected && !this.choiceAvailable) {
                     this.choiceAvailable = true;
                     this.sameTileDetected = true;
-                    gameplayMap.sprite.setColor(new cc.Color(255,100,100,0));
+                    this.currentChoices = gameplayMap.getPossibleChoices(j,i, direction, true);
+                    ChildSM.showArrows(this.currentChoices);
                     return;
                 }
 
@@ -117,14 +119,6 @@ var interHandler = {
             childMoveAction.keyState[2]=0;
             childMoveAction.keyState[1]=0;
         }
-        /*if(keyCode == -1){
-            childMoveAction.keyState[3]=0;
-            childMoveAction.keyState[0]=0;
-            childMoveAction.keyState[2]=0;
-            childMoveAction.keyState[1]=0;
-            var dirSelected = this.randomDirection();
-            childMoveAction.keyState[dirSelected] = 1;
-        }*/
 
         this.storedDecision = -1;
         this.choiceExecuted = true;
@@ -133,8 +127,10 @@ var interHandler = {
     //Método que guarda la selección hecha por el usuario. Se considera que en el momento que decide ya no puede
     //cambiar su elección
     recordChoice: function(keyCode){
-        this.storedDecision = keyCode;
-        this.choiceAvailable = false;
+        if(this.validChoice(keyCode)){
+            this.storedDecision = keyCode;
+            this.choiceAvailable = false;
+        }
     },
 
     excessInIntersection: function(dir, sprRect, rect){
@@ -159,6 +155,25 @@ var interHandler = {
         }
         return dif
     },
+
+    validChoice : function(keyCode){
+        var choice;
+        switch(keyCode){
+            case cc.KEY.up : choice=0;
+                break;
+            case cc.KEY.down : choice=1;
+                break;
+            case cc.KEY.left : choice=2;
+                break;
+            case cc.KEY.right : choice=3;
+                break;
+        }
+
+        for(var i=0;i<this.currentChoices.length; i++)
+            if(this.currentChoices[i] == choice) return true;
+
+        return false;
+    }
 };
 
 var monsterMoveAction = function(){
@@ -327,6 +342,7 @@ var childMoveAction = (function(){
         //el delay para ejecutar la decisión del usuario
         if(interHandler.intersectTile==null){
             interHandler.intersectTile = tile;
+            ChildSM.hideArrows();
             collisionDelay = tileWidth-1;
             collisionDelay -= interHandler.excessInIntersection(direction, sprRect, tile.rect);
 
@@ -378,60 +394,14 @@ var childMoveAction = (function(){
     var randomDirection = function(posX, posY) {
         var ScannerSize = 1;
         var direction = getCurrentDirection();
-        console.log("initial direction: "+direction);
 
-        //Hallar direccion inversa antes del choque
-        var lastMovInv=-1;
-        switch(direction) {
-            case 0 :
-                posY-=ScannerSize;
-                lastMovInv = 1;
-                break;
-            case 1 :
-                posY+=ScannerSize;
-                lastMovInv = 0;
-                break;
-            case 2 :
-                posX-=ScannerSize;
-                lastMovInv = 3;
-                break;
-            case 3 :
-                posX+=ScannerSize;
-                lastMovInv = 2;
-                break;
-        }
-
-        var movements = new Array(0,0,0,0);
-
-        //Evalua posibles movimientos en caso de choque con pared
-        if(posX<mainLayer.getMapSize().width-1 && mainLayer.tileMatrix[posX+1][posY]!=1) movements[3]=1; //derecha
-        if(posX>0 && mainLayer.tileMatrix[posX-1][posY]!=1) movements[2]=1; //izquierda
-        if(posY>0 && mainLayer.tileMatrix[posX][posY-1]!=1) movements[0]=1; //arriba
-        if(posY<mainLayer.getMapSize().height-1 && mainLayer.tileMatrix[posX][posY+1]!=1) movements[1]=1; //abajo
-
-        var possibleMovements = [];
-
-        for(var i=0;i<4;i++) {
-            console.log("   movements["+i+"]: "+movements[i]);
-            if (movements[i] == 1 && i!=lastMovInv) {
-                possibleMovements.push(i);
-                console.log("   push: "+i);
-            }
-        }
-
-        if(possibleMovements.length==0)
-            possibleMovements.push(lastMovInv);
-
+        var possibleMovements = gameplayMap.getPossibleChoices(posX,posY,direction, false)
         var random = Math.random();
         var realRandom = parseInt(random*possibleMovements.length);
-
         var lastMov = possibleMovements[realRandom];
 
-        console.log("final direction: "+lastMov);
-
         var keyCode = -1;
-        switch(lastMov)
-        {
+        switch(lastMov) {
             case 1:
                 keyCode = cc.KEY.down;
                 break;
@@ -445,8 +415,6 @@ var childMoveAction = (function(){
                 keyCode = cc.KEY.right;
                 break;
         }
-
-
         interHandler.recordChoice(keyCode);
     }
 
