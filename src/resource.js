@@ -20,6 +20,7 @@ var res = {
     Level10_tmx: "res/levels/Level10.tmx",
     Level11_tmx: "res/levels/Level11.tmx",
     Level12_tmx: "res/levels/Level12.tmx",
+    Level13_tmx: "res/levels/Level13.tmx",
     GameFog_png: "res/GameFog.png",
     terrain_png: "res/levels/Tilesets/terrain.png",
     gameHUD_json: "res/views/gameHUD.json",

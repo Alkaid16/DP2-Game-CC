@@ -88,7 +88,9 @@ var interHandler = {
         this.intersectTile = null;
         this.sameTileDetected = false;
         this.choiceExecuted = false;
-        gameplayMap.sprite.setColor(new cc.Color(255,255,255,0));
+        if(childMoveAction.getShield() == false) {
+            gameplayMap.sprite.setColor(new cc.Color(255, 255, 255, 0));
+        }
     },
 
     //Método que ejecuta la función seleccionada por el usuario con el teclado
@@ -222,6 +224,10 @@ var childMoveAction = (function(){
         haveShield = val;
     }
 
+    pub.getShield = function(){
+        return haveShield;
+    }
+
     pub.init = function(oTileWidth){
         pub.keyState = new Array(1,0,0,0);
         tileWidth = oTileWidth;
@@ -350,7 +356,9 @@ var childMoveAction = (function(){
             if(interHandler.choiceAvailable){
                 randomDirection(posX, posY);
             }
-            mainLayer.sprite.setColor(new cc.Color(255,255,255,0));
+            if(haveShield == false) {
+                mainLayer.sprite.setColor(new cc.Color(255, 255, 255, 0));
+            }
 
             //Si ya está dentro del tile, se disminuye el valor el contador collisionDelay
         }else{
@@ -499,8 +507,11 @@ var childMoveAction = (function(){
 
                 //Si choca contra una trampa
                 if('trap' in tile){
-                    executeTrap(tile);
-                    if(tile.trap == 1) return;
+                    if(haveShield == false) {
+                        executeTrap(tile);
+                        if(tile.trap == 1) return;
+                    }
+
                     break
                 }
 
