@@ -354,6 +354,7 @@ PauseModalC = (function(){
         });
 
         btnLevels.addClickEventListener(function(){
+            LevelModalC.hide();
             cc.director.runScene(LevelSelectionC.getScene());
         });
 
