@@ -127,6 +127,7 @@ var LevelModalC = (function(){
         btnBuy.setTouchEnabled(canBuy);
         btnStart.setVisible(!canBuy);
         btnCont.setVisible(!canBuy);
+        btnCont.setEnabled(levelInfo.defeatPosX!=null && levelInfo.defeatPosX!="-1");
     }
 
     pub.load = function(parentScene){
@@ -151,7 +152,22 @@ var LevelModalC = (function(){
 
         btnCont = layer.getChildByName("btnContinue");
         btnCont.addClickEventListener(function(){
-            alert("TO DO");
+            if(playerInfo.continues<=0 ){
+                alert("No tienes puntos para continuar este nivel.")
+                return;
+            }
+            layer.pause();
+            var ajax = WSHandler.registerContinue(playerInfo.idPlayer, level);
+            $.when(ajax).then(function(){
+                layer.setVisible(false);
+                var scene = new GameplayScene(level, true);
+                cc.director.runScene(scene);
+                layer.resume();
+            }, function(){
+                alert("Error de comunicaci?n con el servidor. Verifique su conexi?n a internet.");
+                layer.resume();
+            });
+
         });
 
         btnBuy = layer.getChildByName("btnBuy");
@@ -168,7 +184,7 @@ var LevelModalC = (function(){
                     pub.updateButtons();
                     alert("Compra exitosa");
                 }, function(){
-                    alert("Error en el servidor");
+                    alert("Error de comunicaci?n con el servidor. Verifique su conexi?n a internet.");
                     layer.resume();
                 });
             }else{
@@ -264,10 +280,16 @@ var DefeatModalC = (function(){
         btnHelp = layer.getChildByName("btnHelp");
         btnHelp.addClickEventListener(function(){
             var child = gameplayMap.sprite;
+            var lvlInfo = LevelGraphC.getCurrentLevel();
             var tileWidth = gameplayMap.getTileSize().width;
             var posX = gameplayMap.getMatrixPosX(child.getPositionX(), tileWidth);
             var posY = gameplayMap.getMatrixPosY(child.getPositionY(), tileWidth);
-            WSHandler.registerDefeat(playerInfo.idPlayer, LevelGraphC.getCurrentLevel().idLevel, posX, posY);
+            var ajax = WSHandler.registerDefeat(playerInfo.idPlayer,lvlInfo.idLevel, posX, posY);
+            $.when(ajax).done(function(){
+                lvlInfo.defeatPosX = posX;
+                lvlInfo.defeatPosY = posY;
+                lvlInfo.defeated = 1;
+            });
             currentGameplayScene.customCleanup();
             LevelModalC.hide();
             cc.director.runScene(LevelSelectionC.getScene());

@@ -46,7 +46,7 @@ function loseWillPoint(){
     }
 
     if(gameplayMap.willPoints == 0){
-        gameplayMap.gameOver();
+        gameplayMap.gameOver(false);
         return;
     }
 }

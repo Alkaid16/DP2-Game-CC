@@ -57,7 +57,7 @@ var WSHandler = (function(){
 
     pub.registerDefeat = function(idPlayer, idLevel, defeatedPosX, defeatedPosY){
 
-        $.ajax({
+        var ajax = $.ajax({
             url: host + "/level/defeat?" + "idPlayer=" + idPlayer + "&"
             + "idLevel=" + idLevel + "&"
             + "defeatPosX=" + defeatedPosX + "&"
@@ -70,13 +70,24 @@ var WSHandler = (function(){
             }
         });
 
-        return -1;
+        return ajax;
     };
 
     pub.registerPurchase = function(idPlayer, idLevel){
 
         var ajax = $.ajax({
             url: host + "/level/purchase?" + "idPlayer=" + idPlayer + "&"
+            + "idLevel=" + idLevel,
+            type: "POST",
+            crossDomain: true,
+            contentType: "application/json",
+        });
+        return ajax;
+    };
+
+    pub.registerContinue = function(idPlayer, idLevel){
+        var ajax = $.ajax({
+            url: host + "/level/continue?" + "idPlayer=" + idPlayer + "&"
             + "idLevel=" + idLevel,
             type: "POST",
             crossDomain: true,

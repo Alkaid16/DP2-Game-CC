@@ -533,7 +533,7 @@ var childMoveAction = (function(){
             }
 
             if(cc.rectIntersectsRect(rectM,rect1)){
-                gameplayMap.gameOver();
+                gameplayMap.gameOver(true);
                 return;
             }
         }
@@ -580,6 +580,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this.sprite.setVisible(false);
 
         this.monster = new cc.Sprite("#monstruo1.png");
+        this.monster.setOpacity(0);
         var cSize = this.monster.getContentSize();
         var monsterScale = mapWidth*32/cSize.width;
         this.monster.setScale(monsterScale);
@@ -821,9 +822,9 @@ var GameplayMap = cc.TMXTiledMap.extend({
         return possibleMovements;
     },
 
-    gameOver: function(){
+    gameOver: function(byMonster){
         gameplayMap.unscheduleAllCallbacks();
-        DefeatModalC.executeDefeat();
+        DefeatModalC.executeDefeat(byMonster);
     }
 
 });
@@ -901,7 +902,9 @@ var GameplayScene = cc.Scene.extend({
     hudLayer: null,
     fog : null,
 
-    ctor: function(levelNum){
+    ctor: function(levelNum, cont){
+        if(cont === undefined) cont = false;
+
         this._super();
         ChildSM.initSM();
         this.gameplayLayer = new cc.Layer();
@@ -914,6 +917,7 @@ var GameplayScene = cc.Scene.extend({
         this.fog.setVisible(false);
 
         gameplayMap = map;
+        if(cont) this.configContinue(levelNum);
         this.gameplayLayer.addChild(map,0);
         this.gameplayLayer.addChild(map.sprite, 5);
         this.gameplayLayer.addChild(map.monster, 10);
@@ -968,11 +972,22 @@ var GameplayScene = cc.Scene.extend({
 
     startMaze: function(){
         gameplayMap.sprite.setVisible(true);
+        gameplayMap.monster.runAction(cc.fadeIn(0.5));
         this.fog.setOpacity(0);
         this.fog.setVisible(true);
         this.fog.runAction(cc.fadeIn(1.5));
         this.gameplayLayer.runAction(cc.follow(gameplayMap.sprite));
         ChildSM.updateAnimation(gameplayMap.sprite,0);
+    },
+
+    configContinue: function(lvl){
+        var lvlInfo = LevelGraphC.getLevelInfo(lvl);
+        var monster = gameplayMap.monster;
+        var child = gameplayMap.sprite;
+        var tileWidth = gameplayMap.getTileSize().width;
+        child.setPosition(lvlInfo.defeatPosX*tileWidth + tileWidth/2 ,
+            (gameplayMap.getMapSize().height - lvlInfo.defeatPosY -1)*tileWidth + tileWidth/2 );
+        monster.setPositionY(child.getPositionY() - monster.getContentSize().height/2 * 1.5);
     },
 
     customCleanup: function(){
