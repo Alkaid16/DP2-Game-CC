@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="35" height="225" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="integrado" tilewidth="32" tileheight="32" tilecount="630">
+  <image source="Tilesets/integrado.png" width="672" height="960"/>
+  <tile id="18">
+   <properties>
+    <property name="trapId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="483">
+   <properties>
+    <property name="powerupId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="484">
+   <properties>
+    <property name="powerupId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="485">
+   <properties>
+    <property name="powerupId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="491">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="496">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="498">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="499">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="501">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="504">
+   <properties>
+    <property name="trapId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="505">
+   <properties>
+    <property name="trapId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="506">
+   <properties>
+    <property name="powerupId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="507">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="509">
+   <properties>
+    <property name="collectableId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="512">
+   <properties>
+    <property name="trapId" value="2"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Background" width="35" height="225">
+  <data encoding="base64" compression="zlib">
+   eJztzrENACAQA7EfHJgdFqC+xkWk6+I1M/vtvK24638WFhYWFhYWFhYWFhYWFhYWFpa6638WFhYWFhYWFhYWFhYWFhYWFpa6638WFhYWFhYWFhYWFhYWFhYWFpa6638WFhYWFhYWFhYWFhYWFhYWFpa6638WFhYWFhYWFhYWFhYWFhYWFpa6638WFhYWFhYWFhYWFhYWFhYWFpa6638WFhYWFhaWf19Y+wU4
+  </data>
+ </layer>
+ <layer name="StartFinish" width="35" height="225">
+  <properties>
+   <property name="finish" value="31,0"/>
+   <property name="orientation" value="1"/>
+   <property name="start" value="4,224"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt3QENADAMw7Ae2LgO6mFUk2wCgZCkZ162mAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADih+YT+MfcBvQ==
+  </data>
+ </layer>
+ <layer name="Intersection" width="35" height="225">
+  <data encoding="base64" compression="zlib">
+   eJzt3EESgyAMBVB7sN7/Wl23A04poEn63toFg8lXQT0OIIrn4+4R1GEu/5dzD/GN9GnvWL1Oi7pghHoBWKeVqRlzNuOYgT49DfHM3DPoaWCXKs8zUZ3NpXmmOjUOtFS7NmYcMzmptbW8iwMxfXuf8HmcnoZ89CcVqWvosydOVmoX2EVuMGJVvag7AAB4N/vPF/vUwNV+yZeRrPJtEcC8Xbkrj4EMZB1ATHIXYA1rqgDXss4AcD9ZCjDuBQ+AEHk=
+  </data>
+ </layer>
+ <layer name="Maze" width="35" height="225">
+  <data encoding="base64" compression="zlib">
+   eJzt11tuxCAMheF0Yd1L97+KaqQ+RXSC7XMcmPyWeEm4fKDgwHEQr/j+On5W6ReLro2r36rl1f6/Eh1bYYk8X9kSXUuXRdEGS82SKRVL1HhH/ztYVEYsa1qye9Cxj6/Gi76rrguW+Hid+TzbJxZtO0efjrNCx7rsalHcfVR1M22xYFFYRs93tGTvXC6Lup77H+DO41iwPNniPtc5+nO3xVILLHVLR7lrbspxK2NgqdWrxK778umWHfPLbhZHHlety7s2WLCoLI78UrHM1MOCBYvfMpsXrt6pLDPvzvWunKp/fNRy9RzLZ1lm91GHJVNvNUukuC2V/rBg+TRLR8nMVzXHTGCJj4cl/s4R7n3aEVjG8XTLSt+z43+cDSzjeKKlsjc69pH6jlcJLLUxHJauO8mM/VzHtS5YsGC5z+I4TzrXJRpYapbqd+C6r6i+ScX6YsGiskT2R4dF0Q+WfS2RXB21VO8kqrqZtliwYMHitHQV5VxHdZXnFyxYsKxtieYYVw5TrstsX1iwYMGyi+WuM2XFv/O/EQsWLPdYukrUFp2Xcl2wYMGCZQXLX/48TkWeZ2ctM8/ePceCBQuW1SyVc+yT/kdYsGDBkhm3o2Rs78yOupnAUu8fS71uJrDU+89YVsqz7rWMBJZxYBkHlnGsZLkzfgGlebz7
+  </data>
+ </layer>
+ <layer name="Collision" width="35" height="225">
+  <data encoding="base64" compression="zlib">
+   eJztnAFu2zAMRZszdHfYeodid+h6/6tsS1EYMQRK+p/8lBKEHzCGNbL87EgkRSp+edmj98v3v78v2n5/Xvv7dT3eiH6zWDz9FksOyzEu2uMH0G87pqIs75PzRv2211ax/L0efy634x/B8ko8S4SlPR+5x94z3cHyceGfZRYL2peK5RgLyJE9XjxCWCwfc3znnx2Wdn4hR9uXJeb77LX1+MwsFpXPKZabzr7vmHPtPLW++96cZvro9TmSdY/snGaetTU3RzZ75jPbv0fnseezyHhBrmfZ+Z49z2YZqT2vZ6ejLK3PV/p/liXjvEwWJmaY2ZgoC6PZNaIsSMyAjq3Rsx49U4Xv6rWzxKx9FCzWvGXWPkoW77nFwrWx4t1dLNbfURYrp9GLzbx+WjGnESHrSXS9iNpPNF7z2qvzuep21r3NYposlqw5UyyPzdLap5Ft8sR1I/sXyQl57pexEb384HlOs3GdxaKyEZFxoB5/u1isdeMuFvQao3aWX2XWYYq8bjRmYORZBzAxA9POk3uwtMIHPBuLKheuYNltI1azoOuZaN0IYcnIN3tZRjkKNmbo1cEVdpwdL6tybpGaLVsbULAg/bD9FctNs3qYx75E6zczrWT5GvOq+EVR11L5nmIplpnQWnmvnvJ20bEgtuF8jdFnr4P7YfIvM3/YtrM+Q+4JYWHHwfn/Hwa/Kv/Cssz6U6ytdrHM9gmsZBlpNcsof/A5YEH24kTidqTdqridYUH34mTWSZjxgqpYHodllj9t52rPHyv89ApFbB2aR0WPyJxekZMslsdkGcUvo/muyh+fWbxSPjO0TuLNma3Q6rE00g6W2W+hPH7Hq4xY0quMWDLKooxTigUXUieZ7TVRzSNmjvRYkLaI0FrUaB9d1cTzWZi9V552zLheuSb5ElJzbPOTkf0c3ngHXZvOzpsJaV8sxaJgQe3LChZUK1hQu4H6wczxwoph8b4rAN23gvQ7qpchUo6v6LsC2DWLqnbPtFeMu2LhWTz747NYmHXIKhZkHbKKBen/0Vl6axIVC/M+AsYHeFiQfttzEFvNsHh8y6rx6IlfiqVYisXPguR0Ir8FisTeWfLYXTT/04uxPbF3dLwoY8xiKZZ7YmHqKFFb5/n9cO++Vbaux8LUUdg8AZrPVo6XaD6zWIqlWPayMHsZkXaR32JlycOSFWPek58ulmJ5JpZojKl4r+o9rad7e0OjeywUtaxDO3xjsRRLsaxlYd6NqHyfyMj3MMpmyYoxPSxZfrpYiqVY8llmsW3mnpO2L1QrWFbmVGcs9+qni6VYiqUv7zu+1XmG8z2s0Ow5qd/Xqc4zWIrmsJQqlmIpFlued2QyueBnqGV5jszfJmSqWGwVi61isbWb5T8B3TfI
+  </data>
+ </layer>
+ <layer name="Traps" width="35" height="225">
+  <data encoding="base64" compression="zlib">
+   eJzt2jsOgCAQBUD1Ct7/olbWFhJ/sCzOVDQmZAm/J9MEkN82R/eA1uYlugd8zTwGABjXGt2BDrjDAJS93SsicgVZBgBPuBsAtchfxlQaV2Oe23rSBoCv2WfiqD0AAAAAHHl3SQ+83wJgRP5NxlB3AABKnpwXz765mq3KYIEM3ub0cn6APjh71ieDhn9qMfetL3WoK1CL9QXI6k6WK2cAgNx2CtwKPw==
+  </data>
+ </layer>
+ <layer name="Powerups" width="35" height="225">
+  <data encoding="base64" compression="zlib">
+   eJzt2zsWQDAQBVD2v01sQqNQKeNkJkbuXYFCXubDshBpX0c/AX9zeqegu63ouZIHAPCeXg3g6QjOxap9FwDwTu+7Xw8HVDZTP2R3Bcwoeq4GACOZyeRQTwAAEE1tD/TQkiVyB6Au80oARtBDQC41H1lm+o4eyOf/FQCYgz01X5I1U1HrAn9kLg3QpmJu6smAVvbJOdkpnwFu7h2AWBcvVR4W
+  </data>
+ </layer>
+ <layer name="Collectables" width="35" height="225">
+  <data encoding="base64" compression="zlib">
+   eJzt20sOgjAQAFC8/1XdGI0rY1zowmCLLd+hvLecBCNpZwrt0HXA2p6ndPyaiQPl5BHEl1sHa9x7v3GR++FsMSatrwGt3x8A+1C6xns+A7amDsE+yFVga+oQsJSH+gJ8lJ7x9etG/0w8in/1Ler/pl3m3Hz0JEBcQ7WuJnflOaxHvtGqmh5w+2Mc0RzfSXyTR7GcDzIeS9+neQ3TqUe0zLjD9uQhUcz17mBOA6SN6aHP1VS1FljDmD7B3DWpeGkMgHqpZ8/S2FAcIJJUz2hpbCgOQLnUPmVu73LuXs8o9ObBMpyDsJRW1yNguluiPpTGhuIA/KrpK8jF9RYAvL0ARTJCEQ==
+  </data>
+ </layer>
+</map>
