@@ -321,3 +321,101 @@ var DefeatModalC = (function(){
 
     return pub;
 })();
+
+PauseModalC = (function(){
+    var pub = {};
+    var layer;
+    var pScene;
+    var btnContinue;
+    var btnLevels;
+    var btnOptions;
+    var pScene;
+    var gameplay;
+
+
+    pub.load = function(parentScene,gameplayScene){
+        var obj =  ccs.load(res.pause_modal_json);
+        pScene = parentScene;
+        gameplay = gameplayScene;
+        layer = obj.node;
+        layer.setPosition(cc.p(150,160));
+        layer.setVisible(false);
+        pScene.addChild(layer,9);
+
+        var pnlButtons = layer.getChildByName("pnlButtons");
+        var btnContinue = pnlButtons.getChildByName("btnContinue");
+        var btnLevels = pnlButtons.getChildByName("btnLevels");
+        var btnOptions = pnlButtons.getChildByName("btnOptions");
+
+        OptionsModalC.load(layer);
+
+        btnContinue.addClickEventListener(function(){
+            pub.hide();
+        });
+
+        btnLevels.addClickEventListener(function(){
+            cc.director.runScene(LevelSelectionC.getScene());
+        });
+
+        btnOptions.addClickEventListener(function(){
+            OptionsModalC.show();
+        });
+    };
+
+    pub.show = function(){
+       layer.setVisible(true);
+       gameplay.pause();
+    }
+
+    pub.hide = function(){
+        layer.setVisible(false);
+        gameplay.resume();
+    }
+
+    pub.getLayer = function(){
+        return layer;
+    };
+    return pub;
+})();
+
+OptionsModalC = (function(){
+    var pub = {};
+    var layer;
+    var pScene;
+    var btnBack;
+    var pScene;
+
+
+    pub.load = function(parentScene){
+        var obj =  ccs.load(res.options_json);
+        pScene = parentScene;
+        layer = obj.node;
+        layer.setPosition(cc.p(-140,-160));
+        layer.setVisible(false);
+        pScene.addChild(layer,9);
+
+        var pnlBack = layer.getChildByName("pnlBtnBack");
+        var btnBack = pnlBack.getChildByName("btnBack");
+
+        btnBack.addClickEventListener(function(){
+            pub.hide();
+        });
+
+
+    };
+
+    pub.show = function(){
+        layer.setVisible(true);
+
+    }
+
+    pub.hide = function(){
+        layer.setVisible(false);
+    }
+
+    pub.getLayer = function(){
+        return layer;
+    };
+
+    return pub;
+})();
