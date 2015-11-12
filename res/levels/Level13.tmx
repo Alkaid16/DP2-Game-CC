@@ -110,17 +110,17 @@
  </layer>
  <layer name="Traps" width="35" height="225">
   <data encoding="base64" compression="zlib">
-   eJzt2jsOgCAQBUD1Ct7/olbWFhJ/sCzOVDQmZAm/J9MEkN82R/eA1uYlugd8zTwGABjXGt2BDrjDAJS93SsicgVZBgBPuBsAtchfxlQaV2Oe23rSBoCv2WfiqD0AAAAAHHl3SQ+83wJgRP5NxlB3AABKnpwXz765mq3KYIEM3ub0cn6APjh71ieDhn9qMfetL3WoK1CL9QXI6k6WK2cAgNx2CtwKPw==
+   eJzt2ksSRDAQAFDmCu5/0VlNzR5FPlon761slEiiuzXLAmTyXaNHAO+wfqJHQGsR8W17/pI0IgZALPET4jxVM7V+zsUN9Qu0IJaMrXZ9I/oKerUAlPBuAPTinWlMZ+tqzXPbDo4BoDV5Jo65p1TJ9wc9JwDgTw0KQISr+adHnpL78vHfJW+gl8ZMznLlnZgs5zKKkXOA5zRG1nmvGXfWe+Ya68ueXnWj/QbMoCTWHZ1zNR7rwQIZ1PZoRu7xALxRbY1KOf0TZjX73n/i/mef417MK1nNvnfVtQD93OnliscAkNsPYbwQcg==
   </data>
  </layer>
  <layer name="Powerups" width="35" height="225">
   <data encoding="base64" compression="zlib">
-   eJzt2zsWQDAQBVD2v01sQqNQKeNkJkbuXYFCXubDshBpX0c/AX9zeqegu63ouZIHAPCeXg3g6QjOxap9FwDwTu+7Xw8HVDZTP2R3Bcwoeq4GACOZyeRQTwAAEE1tD/TQkiVyB6Au80oARtBDQC41H1lm+o4eyOf/FQCYgz01X5I1U1HrAn9kLg3QpmJu6smAVvbJOdkpnwFu7h2AWBcvVR4W
+   eJzt27kRgDAMBEDTf5tQBQkBFdjjV9qtwCSHzk8pjPRcq1cAkMvdkLvvoVl96roBYAe6GkA/LT0MAIit93ygwwEny9SZnF0BAEAs9mQAACAGsz3QQ02WyB0Aesh05wYgOx0CICYzPTCS9yvAKmYcmMs5NRmZdQEA9mZv4KeDwTxRcyfqd9WYkaXyGuDnvwMw1gfC4Rpy
   </data>
  </layer>
  <layer name="Collectables" width="35" height="225">
   <data encoding="base64" compression="zlib">
-   eJzt20sOgjAQAFC8/1XdGI0rY1zowmCLLd+hvLecBCNpZwrt0HXA2p6ndPyaiQPl5BHEl1sHa9x7v3GR++FsMSatrwGt3x8A+1C6xns+A7amDsE+yFVga+oQsJSH+gJ8lJ7x9etG/0w8in/1Ler/pl3m3Hz0JEBcQ7WuJnflOaxHvtGqmh5w+2Mc0RzfSXyTR7GcDzIeS9+neQ3TqUe0zLjD9uQhUcz17mBOA6SN6aHP1VS1FljDmD7B3DWpeGkMgHqpZ8/S2FAcIJJUz2hpbCgOQLnUPmVu73LuXs8o9ObBMpyDsJRW1yNguluiPpTGhuIA/KrpK8jF9RYAvL0ARTJCEQ==
+   eJzt28FugzAMANDu/3+1l2nTTlO10zTEQggNpMa8d6pcVS3gOCG4t9vrfL298MsD+3Beij4TnZfH5Fjuk9eufRyZ8o0/D9f1MO/OLStqObJH/qjb8Yy4Jt+z78i+lsp+fJHNc41+6jacV+vaLcs9gvkXzitLHcoseo21lziGscpZ3eVuGurQsaLP9xE5Z3nYVwZ+1Wr79HnJvG5E7a1cq29Rfzd5ybn9WItCXKVat9Z3UXrfOIdxWu8D5uwnEN2WZ6jymStqGSNb1mTGUSxXeUZ89HHKa+iXsR6V5tCMx8m63uuu7xP6qb9Esde9g5wGKHumh36ppqq1wAjP9AkufaYUb40BsF1p7dkaq8UBIin1A7XGanEA2pX2KZf2LrP2FujNY6Qr7Z15DmK9epSs8xHQr/T/09ZYLQ7Af1v6CpbiV7o/Aqj5AWLtWSk=
   </data>
  </layer>
 </map>
