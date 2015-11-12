@@ -119,7 +119,8 @@ var LevelModalC = (function(){
         cc.eventManager.addListener(cLayer.cListener,cLayer);
     }
 
-    pub.updateButtons = function(levelInfo){
+    pub.updateButtons = function(){
+        var levelInfo = LevelGraphC.getLevelInfo(level);
         var canBuy = (levelInfo.cost > 0 && levelInfo.bought == 0);
         btnBuy.setTitleText("Comprar: " + levelInfo.cost + "pt.");
         btnBuy.setVisible(canBuy);
@@ -156,8 +157,20 @@ var LevelModalC = (function(){
         btnBuy = layer.getChildByName("btnBuy");
         btnBuy.setTouchEnabled(false);
         btnBuy.addClickEventListener(function(){
-            if(parseInt(playerInfo.coins) >= parseInt(LevelGraphC.getLevelInfo(level).cost)){
-                alert("you can buy me");
+            var lvlInfo = LevelGraphC.getLevelInfo(level);
+            if(parseInt(playerInfo.coins) >= parseInt(lvlInfo.cost)){
+                var ajax = WSHandler.registerPurchase(playerInfo.idPlayer, level);
+                layer.pause();
+                $.when(ajax).then(function(){
+                    lvlInfo.bought = 1;
+                    LevelSelectionC.updateLevelStatus();
+                    layer.resume();
+                    pub.updateButtons();
+                    alert("Compra exitosa");
+                }, function(){
+                    alert("Error en el servidor");
+                    layer.resume();
+                });
             }else{
                 alert("No tiene suficientes puntos para comprar el nivel.")
             }
@@ -176,7 +189,7 @@ var LevelModalC = (function(){
         if(levelInfo == null) return;
         level = levelInfo.idLevel;
 
-        pub.updateButtons(levelInfo);
+        pub.updateButtons();
 
         lblLevel.setString("Nivel " + level);
         if(levelInfo.score!= null) lblScore.setString("Score: " + levelInfo.score);
