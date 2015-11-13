@@ -22,6 +22,8 @@ var res = {
     Level11_tmx: "res/levels/Level11.tmx",
     Level12_tmx: "res/levels/Level12.tmx",
     Level13_tmx: "res/levels/Level13.tmx",
+    Level14_tmx: "res/levels/Level14.tmx",
+    Level15_tmx: "res/levels/Level15.tmx",
     GameFog_png: "res/GameFog.png",
     terrain_png: "res/levels/Tilesets/terrain.png",
     gameHUD_json: "res/views/gameHUD.json",
