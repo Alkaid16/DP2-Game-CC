@@ -76,7 +76,7 @@ var WSHandler = (function(){
     pub.registerLevelClear = function(idPlayer, idLevel, score, coinsWon){
 
         var ajax = $.ajax({
-            url: host + "/level/defeat?" + "idPlayer=" + idPlayer + "&"
+            url: host + "/level/clear?" + "idPlayer=" + idPlayer + "&"
             + "idLevel=" + idLevel + "&"
             + "score=" + score + "&"
             + "coinsWon=" + coinsWon,

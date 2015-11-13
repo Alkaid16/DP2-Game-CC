@@ -1460,7 +1460,7 @@
   <properties>
    <property name="finish" value="3,0"/>
    <property name="orientation" value="1"/>
-   <property name="start" value="9,68"/>
+   <property name="start" value="9,69"/>
   </properties>
   <data>
    <tile gid="0"/>
@@ -2852,7 +2852,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="317"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -7064,7 +7064,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="319"/>
-   <tile gid="317"/>
+   <tile gid="0"/>
    <tile gid="321"/>
    <tile gid="0"/>
    <tile gid="0"/>

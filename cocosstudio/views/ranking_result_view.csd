@@ -115,7 +115,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="txtScore" ActionTag="-741406828" Tag="51" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="250.0000" RightMargin="100.0000" TopMargin="14.0000" BottomMargin="90.0000" TouchEnable="True" FontSize="36" IsCustomSize="True" LabelText="112266" PlaceHolderText="" MaxLengthText="10" ctype="TextFieldObjectData">
+              <AbstractNodeData Name="txtScore" ActionTag="-741406828" Tag="51" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="250.0000" RightMargin="100.0000" TopMargin="14.0000" BottomMargin="90.0000" TouchEnable="True" FontSize="36" IsCustomSize="True" LabelText="" PlaceHolderText="" MaxLengthText="10" ctype="TextFieldObjectData">
                 <Size X="150.0000" Y="36.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="250.0000" Y="126.0000" />
@@ -124,7 +124,7 @@
                 <PrePosition X="0.5000" Y="0.9000" />
                 <PreSize X="0.2344" Y="0.0562" />
               </AbstractNodeData>
-              <AbstractNodeData Name="txtTime" ActionTag="-648030882" Tag="52" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="250.0000" RightMargin="100.0000" TopMargin="56.0000" BottomMargin="48.0000" TouchEnable="True" FontSize="36" IsCustomSize="True" LabelText="60" PlaceHolderText="" MaxLengthText="10" ctype="TextFieldObjectData">
+              <AbstractNodeData Name="txtTime" ActionTag="-648030882" Tag="52" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="250.0000" RightMargin="100.0000" TopMargin="56.0000" BottomMargin="48.0000" TouchEnable="True" FontSize="36" IsCustomSize="True" LabelText="" PlaceHolderText="" MaxLengthText="10" ctype="TextFieldObjectData">
                 <Size X="150.0000" Y="36.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="250.0000" Y="84.0000" />
@@ -133,7 +133,7 @@
                 <PrePosition X="0.5000" Y="0.6000" />
                 <PreSize X="0.2344" Y="0.0562" />
               </AbstractNodeData>
-              <AbstractNodeData Name="txtCoins" ActionTag="1657556530" Tag="26" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="250.0000" RightMargin="100.0000" TopMargin="98.0000" BottomMargin="6.0000" TouchEnable="True" FontSize="36" IsCustomSize="True" LabelText="60" PlaceHolderText="" MaxLengthText="10" ctype="TextFieldObjectData">
+              <AbstractNodeData Name="txtCoins" ActionTag="1657556530" Tag="26" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="250.0000" RightMargin="100.0000" TopMargin="98.0000" BottomMargin="6.0000" TouchEnable="True" FontSize="36" IsCustomSize="True" LabelText="" PlaceHolderText="" MaxLengthText="10" ctype="TextFieldObjectData">
                 <Size X="150.0000" Y="36.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="250.0000" Y="42.0000" />

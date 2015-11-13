@@ -540,7 +540,7 @@
               {
                 "FontSize": 36,
                 "IsCustomSize": true,
-                "LabelText": "112266",
+                "LabelText": "",
                 "PlaceHolderText": "",
                 "MaxLengthText": 10,
                 "TouchEnable": true,
@@ -583,7 +583,7 @@
               {
                 "FontSize": 36,
                 "IsCustomSize": true,
-                "LabelText": "60",
+                "LabelText": "",
                 "PlaceHolderText": "",
                 "MaxLengthText": 10,
                 "TouchEnable": true,
@@ -626,7 +626,7 @@
               {
                 "FontSize": 36,
                 "IsCustomSize": true,
-                "LabelText": "60",
+                "LabelText": "",
                 "PlaceHolderText": "",
                 "MaxLengthText": 10,
                 "TouchEnable": true,

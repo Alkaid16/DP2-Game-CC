@@ -470,24 +470,27 @@ VictoryScreenC = (function(){
         var pnl = scene.getChildByName("pnlGeneral");
 
         txtScore = pnl.getChildByName("txtScore");
-        txtScore.setString(score);
+        txtScore.setString("" + score);
         txtTime = pnl.getChildByName("txtTime");
-        txtScore.setString(time);
+        txtTime.setString("" +time);
         txtCoins = pnl.getChildByName("txtCoins");
-        txtScore.setString(coins);
+        txtCoins.setString("" + coins);
 
         btnReturn = scene.getChildByName("btnLevels");
         btnReturn.addClickEventListener(function(){
             scene = null;
             LevelModalC.hide();
+            LevelSelectionC.updateLevelStatus();
             cc.director.runScene(LevelSelectionC.getScene());
         });
         btnReturn.setEnabled(false);
 
         cc.director.runScene(scene);
 
-        var ajax = WSHandler.registerLevelClear(playerInfo.idPlayer, LevelGraphC.getCurrentLevel(), score, coins);
+        var lvlInfo = LevelGraphC.getCurrentLevel();
+        var ajax = WSHandler.registerLevelClear(playerInfo.idPlayer, lvlInfo.idLevel, score, coins);
         $.when(ajax).then(function(){
+            if(score > lvlInfo.score) lvlInfo.score = score;
             LevelGraphC.clearLevel();
             btnReturn.setEnabled(true);
         }, function(){
