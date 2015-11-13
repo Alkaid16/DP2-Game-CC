@@ -231,6 +231,7 @@ var childMoveAction = (function(){
     pub.init = function(oTileWidth){
         pub.keyState = new Array(1,0,0,0);
         tileWidth = oTileWidth;
+        speed = 2.5;
         isJumping = false;
         collisionDelay = 0;
         haveShield = false;
@@ -633,8 +634,6 @@ var GameplayMap = cc.TMXTiledMap.extend({
                 }else if(keyCode == 13){
                     //se mostrará el modal de Pausa, además se quitará el gameplay fueran del schedule
                     PauseModalC.show();
-
-
                 }
 
                 if(!interHandler.choiceAvailable) return;

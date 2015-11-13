@@ -136,17 +136,29 @@ var TorchController = (function(){
 var ShoesController = (function(){
     //se definen las variables
     var shoesFactor = 1.50;
-    var aux;
+    var delay = 5;
+    var prevAction = null;
+    var aux = -1;
 
     var pub = {};
 
+    pub.resetPrevAction = function(){
+        prevAction=null;
+    }
+
     pub.activeShoes = function(){
-        aux = childMoveAction.getSpeedSprite();
+        if(aux==-1) aux = childMoveAction.getSpeedSprite();
         childMoveAction.updateSpeed(aux*shoesFactor);
-        setTimeout(resetSpeed,5000);
-        function resetSpeed(){
-            childMoveAction.updateSpeed(aux);
-        }
+        var seqArr = new Array(cc.delayTime(delay),cc.callFunc(resetSpeed));
+        var seq = cc.sequence(seqArr);
+        if(prevAction!=null) gameplayMap.stopAction(prevAction);
+        gameplayMap.runAction(seq);
+        prevAction = seq;
+    }
+
+    var resetSpeed = function(){
+        childMoveAction.updateSpeed(aux);
+        ShoesController.resetPrevAction();
     }
 
     return pub;
