@@ -16,7 +16,7 @@
             <PreSize X="0.4047" Y="0.3031" />
             <FileData Type="Normal" Path="wallpaper_selector.jpg" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="pnlMap" ActionTag="-1571574184" Tag="22" IconVisible="False" LeftMargin="228.0867" RightMargin="211.9133" TopMargin="113.3527" BottomMargin="326.6473" TouchEnable="True" BackColorAlpha="137" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="pnlMap" ActionTag="-1571574184" Tag="22" IconVisible="False" LeftMargin="228.0867" RightMargin="211.9133" TopMargin="113.3527" BottomMargin="326.6473" TouchEnable="True" BackColorAlpha="137" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="200.0000" Y="200.0000" />
             <Children>
               <AbstractNodeData Name="Image_3" ActionTag="-718499982" Tag="116" IconVisible="False" LeftMargin="-2.2067" RightMargin="-1756.7932" TopMargin="-761.6100" BottomMargin="-760.3900" Scale9Width="1959" Scale9Height="1722" ctype="ImageViewObjectData">
@@ -282,7 +282,7 @@
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
           <AbstractNodeData Name="Text_1" ActionTag="1814634778" Tag="112" IconVisible="False" LeftMargin="278.4379" RightMargin="271.5621" TopMargin="43.6289" BottomMargin="573.3711" FontSize="48" LabelText="Seleccione un Nivel" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="108.0000" Y="15.0000" />
+            <Size X="422.0000" Y="55.0000" />
             <AnchorPoint ScaleX="0.5013" ScaleY="0.4724" />
             <Position X="323.5506" Y="584.2365" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />

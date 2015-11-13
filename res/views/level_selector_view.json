@@ -58,7 +58,6 @@
           },
           {
             "BackColorAlpha": 137,
-            "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 150,
               "G": 200
@@ -1399,8 +1398,8 @@
             "Tag": 112,
             "ActionTag": 1814634778,
             "Size": {
-              "X": 108.0,
-              "Y": 15.0
+              "X": 422.0,
+              "Y": 55.0
             },
             "Name": "Text_1",
             "ctype": "TextObjectData"

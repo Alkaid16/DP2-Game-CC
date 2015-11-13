@@ -24,11 +24,12 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.9200" />
             <PreSize X="0.5000" Y="0.0703" />
+            <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
           <AbstractNodeData Name="lblDescription" ActionTag="1415416434" Tag="47" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="188.0000" RightMargin="188.0000" TopMargin="120.0000" BottomMargin="504.0000" FontSize="16" LabelText="Has logrado que &lt;&lt;niño&gt;&gt; &lt;&lt;objetivo&gt;&gt;." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="264.0000" Y="16.0000" />
+            <Size X="282.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="320.0000" Y="512.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -57,7 +58,7 @@
             <Size X="500.0000" Y="200.0000" />
             <Children>
               <AbstractNodeData Name="lblRanking" ActionTag="-270504741" Tag="54" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="25.0000" RightMargin="319.0000" TopMargin="10.0000" BottomMargin="166.0000" FontSize="24" LabelText="Ranking Amigos" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="156.0000" Y="24.0000" />
+                <Size X="174.0000" Y="27.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="25.0000" Y="190.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -82,36 +83,39 @@
           <AbstractNodeData Name="pnlGeneral" ActionTag="-1305833367" Tag="25" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="70.0000" RightMargin="70.0000" TopMargin="154.0000" BottomMargin="346.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="500.0000" Y="140.0000" />
             <Children>
-              <AbstractNodeData Name="lblScore" ActionTag="-852286057" Tag="49" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="114.0000" RightMargin="265.0000" TopMargin="14.0000" BottomMargin="90.0000" FontSize="36" LabelText="Puntaje:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="121.0000" Y="36.0000" />
-                <AnchorPoint ScaleY="1.0000" />
-                <Position X="114.0000" Y="126.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2280" Y="0.9000" />
-                <PreSize X="0.0000" Y="0.0000" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="lblTime" ActionTag="-172652360" Tag="50" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="119.0000" RightMargin="265.0000" TopMargin="56.0000" BottomMargin="48.0000" FontSize="36" LabelText="Tiempo:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="116.0000" Y="36.0000" />
+              <AbstractNodeData Name="lblScore" ActionTag="-852286057" Tag="49" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="94.0000" RightMargin="275.0000" TopMargin="14.0000" BottomMargin="85.0000" FontSize="36" LabelText="Puntaje:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="131.0000" Y="41.0000" />
                 <AnchorPoint ScaleX="1.0000" ScaleY="1.0000" />
-                <Position X="235.0000" Y="84.0000" />
+                <Position X="225.0000" Y="126.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4700" Y="0.6000" />
-                <PreSize X="0.0000" Y="0.0000" />
+                <PrePosition X="0.4500" Y="0.9000" />
+                <PreSize X="0.2620" Y="0.2929" />
+                <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="lblCoins" ActionTag="504288472" Tag="24" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="TopEdge" LeftMargin="122.0000" RightMargin="265.0000" TopMargin="98.0000" BottomMargin="6.0000" FontSize="36" LabelText="Puntos:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="113.0000" Y="36.0000" />
-                <AnchorPoint ScaleY="1.0000" />
-                <Position X="122.0000" Y="42.0000" />
+              <AbstractNodeData Name="lblTime" ActionTag="-172652360" Tag="50" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="97.0000" RightMargin="275.0000" TopMargin="56.0000" BottomMargin="43.0000" FontSize="36" LabelText="Tiempo:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="128.0000" Y="41.0000" />
+                <AnchorPoint ScaleX="1.0000" ScaleY="1.0000" />
+                <Position X="225.0000" Y="84.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2440" Y="0.3000" />
-                <PreSize X="0.0000" Y="0.0000" />
+                <PrePosition X="0.4500" Y="0.6000" />
+                <PreSize X="0.2560" Y="0.2929" />
+                <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="lblCoins" ActionTag="504288472" Tag="24" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="TopEdge" LeftMargin="105.0000" RightMargin="275.0000" TopMargin="98.0000" BottomMargin="1.0000" FontSize="36" LabelText="Puntos:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="120.0000" Y="41.0000" />
+                <AnchorPoint ScaleX="1.0000" ScaleY="1.0000" />
+                <Position X="225.0000" Y="42.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.4500" Y="0.3000" />
+                <PreSize X="0.2400" Y="0.2929" />
+                <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

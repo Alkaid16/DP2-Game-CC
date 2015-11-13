@@ -31,10 +31,11 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="views/level_modal.csd" />
           <FilePathData Path="views/ranking_result_view.csd" />
+          <FilePathData Path="views/level_selector_view.csd" />
+          <FilePathData Path="views/level_modal.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="views/ranking_result_view.csd" />
+        <ActiveDocument Path="views/level_modal.csd" />
       </Value>
     </Item>
   </Properties>

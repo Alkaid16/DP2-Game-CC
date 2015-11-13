@@ -54,6 +54,11 @@
             "IsCustomSize": true,
             "FontSize": 48,
             "LabelText": "¡Ganaste!",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
             "HorizontalAlignmentType": "HT_Center",
             "OutlineColor": {
               "G": 0,
@@ -148,8 +153,8 @@
             "Tag": 47,
             "ActionTag": 1415416434,
             "Size": {
-              "X": 264.0,
-              "Y": 16.0
+              "X": 282.0,
+              "Y": 18.0
             },
             "Name": "lblDescription",
             "ctype": "TextObjectData"
@@ -271,7 +276,7 @@
               "Y": 0.35
             },
             "PreSize": {
-              "X": 0.7812,
+              "X": 0.7813,
               "Y": 0.3125
             },
             "HorizontalEdge": "BothEdge",
@@ -326,8 +331,8 @@
                 "Tag": 54,
                 "ActionTag": -270504741,
                 "Size": {
-                  "X": 156.0,
-                  "Y": 24.0
+                  "X": 174.0,
+                  "Y": 27.0
                 },
                 "Name": "lblRanking",
                 "ctype": "TextObjectData"
@@ -375,7 +380,7 @@
               "Y": 0.65
             },
             "PreSize": {
-              "X": 0.7812,
+              "X": 0.7813,
               "Y": 0.2188
             },
             "HorizontalEdge": "BothEdge",
@@ -389,6 +394,11 @@
               {
                 "FontSize": 36,
                 "LabelText": "Puntaje:",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -401,10 +411,11 @@
                 "ShadowOffsetX": 2.0,
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {
+                  "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
                 "Position": {
-                  "X": 114.0,
+                  "X": 225.0,
                   "Y": 126.0
                 },
                 "Scale": {
@@ -414,24 +425,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.228,
+                  "X": 0.45,
                   "Y": 0.9
                 },
                 "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
+                  "X": 0.262,
+                  "Y": 0.2929
                 },
                 "HorizontalEdge": "BothEdge",
                 "VerticalEdge": "BothEdge",
-                "LeftMargin": 114.0,
-                "RightMargin": 265.0,
+                "LeftMargin": 94.0,
+                "RightMargin": 275.0,
                 "TopMargin": 14.0,
-                "BottomMargin": 90.0,
+                "BottomMargin": 85.0,
                 "Tag": 49,
                 "ActionTag": -852286057,
                 "Size": {
-                  "X": 121.0,
-                  "Y": 36.0
+                  "X": 131.0,
+                  "Y": 41.0
                 },
                 "Name": "lblScore",
                 "ctype": "TextObjectData"
@@ -439,6 +450,11 @@
               {
                 "FontSize": 36,
                 "LabelText": "Tiempo:",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -455,7 +471,7 @@
                   "ScaleY": 1.0
                 },
                 "Position": {
-                  "X": 235.0,
+                  "X": 225.0,
                   "Y": 84.0
                 },
                 "Scale": {
@@ -465,24 +481,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.47,
+                  "X": 0.45,
                   "Y": 0.6
                 },
                 "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
+                  "X": 0.256,
+                  "Y": 0.2929
                 },
                 "HorizontalEdge": "BothEdge",
                 "VerticalEdge": "BothEdge",
-                "LeftMargin": 119.0,
-                "RightMargin": 265.0,
+                "LeftMargin": 97.0,
+                "RightMargin": 275.0,
                 "TopMargin": 56.0,
-                "BottomMargin": 48.0,
+                "BottomMargin": 43.0,
                 "Tag": 50,
                 "ActionTag": -172652360,
                 "Size": {
-                  "X": 116.0,
-                  "Y": 36.0
+                  "X": 128.0,
+                  "Y": 41.0
                 },
                 "Name": "lblTime",
                 "ctype": "TextObjectData"
@@ -490,6 +506,11 @@
               {
                 "FontSize": 36,
                 "LabelText": "Puntos:",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -502,10 +523,11 @@
                 "ShadowOffsetX": 2.0,
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {
+                  "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
                 "Position": {
-                  "X": 122.0,
+                  "X": 225.0,
                   "Y": 42.0
                 },
                 "Scale": {
@@ -515,24 +537,24 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.244,
+                  "X": 0.45,
                   "Y": 0.3
                 },
                 "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
+                  "X": 0.24,
+                  "Y": 0.2929
                 },
                 "HorizontalEdge": "BothEdge",
                 "VerticalEdge": "TopEdge",
-                "LeftMargin": 122.0,
-                "RightMargin": 265.0,
+                "LeftMargin": 105.0,
+                "RightMargin": 275.0,
                 "TopMargin": 98.0,
-                "BottomMargin": 6.0,
+                "BottomMargin": 1.0,
                 "Tag": 24,
                 "ActionTag": 504288472,
                 "Size": {
-                  "X": 113.0,
-                  "Y": 36.0
+                  "X": 120.0,
+                  "Y": 41.0
                 },
                 "Name": "lblCoins",
                 "ctype": "TextObjectData"
@@ -687,7 +709,8 @@
         "../Default/Button_Disable.png",
         "../Default/Button_Press.png",
         "../modal_level_wallpaper.jpg",
-        "../pantallas-13.png"
+        "../pantallas-13.png",
+        "../THE MINION.ttf"
       ],
       "ctype": "GameProjectData"
     }
