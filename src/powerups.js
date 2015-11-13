@@ -167,17 +167,33 @@ var ShoesController = (function(){
 
 var ShieldController = (function(){
     var aux;
+    var delay = 5;
+    var prevAction = null;
+    var shieldActivated = false;
     var pub = {};
+
+    pub.isActivated = function(){
+        return shieldActivated;
+    }
+
+    pub.setShieldState = function(state){
+        shieldActivated = state;
+    }
 
     pub.activateShield = function(){
         aux = gameplayMap.sprite;
         aux.setColor(new cc.Color(46, 138, 138, 1));
-        childMoveAction.updateShield(true);
-        setTimeout(resetShield, 5000);
-        function resetShield(){
-            aux.setColor(new cc.Color(255,255,255,0));
-            childMoveAction.updateShield(false);
-        }
+        shieldActivated = true;
+        var seqArr = new Array(cc.delayTime(delay),cc.callFunc(resetShield));
+        var seq = cc.sequence(seqArr);
+        if(prevAction!=null) gameplayMap.stopAction(prevAction);
+        gameplayMap.runAction(seq);
+        prevAction = seq;
+    }
+
+    function resetShield(){
+        aux.setColor(new cc.Color(255,255,255,0));
+        shieldActivated = false;
     }
 
     return pub;

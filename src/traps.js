@@ -4,21 +4,26 @@ function executeTrap(tile){
     var trapLayer = gameplayMap.getLayer("Traps");
     var idTrap = tile.trap;
 
-    switch(idTrap){
-        case '1':
-            HoleController.activateHole();
-            break;
-        case '2':
-            BoardController.activateBoard();
-            break;
-        case '3':
-            MeshController.activateMesh();
-            break;
-        case '4':
-            lunchBoxController.activateLunchBox();
-            break;
+    if(!ShieldController.isActivated() || idTrap == 1){
+        switch(idTrap){
+            case '1':
+                HoleController.activateHole();
+                break;
+            case '2':
+                BoardController.activateBoard();
+                break;
+            case '3':
+                MeshController.activateMesh();
+                break;
+            case '4':
+                lunchBoxController.activateLunchBox();
+                break;
+        }
+        if(ShieldController.isActivated() && idTrap !=1) {
+            ShieldController.setShieldState(false);
+            gameplayMap.sprite.setColor(new cc.Color(255,255,255));
+        }
     }
-
 
     if(idTrap!=1){
         delete tile.trap;
@@ -148,7 +153,10 @@ var HoleController = (function(){
 
         //Lo que hace es solamente desplazarse hasta una posici?n cuando se oprime la barra espaciadora dependiendo
         //de la direcci?n del ni?o. Al final no logre una mejor animaci?n de esto.Pido disculpas
-        if(pub.jumped == false) loseWillPoint();
+        if(pub.jumped == false){
+            if(ShieldController.isActivated()) ShieldController.setShieldState(false);
+            else loseWillPoint();
+        }
         else pub.jumped = false;
         pub.canJump = false;
 

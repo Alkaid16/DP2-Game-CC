@@ -88,9 +88,6 @@ var interHandler = {
         this.intersectTile = null;
         this.sameTileDetected = false;
         this.choiceExecuted = false;
-        if(childMoveAction.getShield() == false) {
-            gameplayMap.sprite.setColor(new cc.Color(255, 255, 255, 0));
-        }
     },
 
     //Método que ejecuta la función seleccionada por el usuario con el teclado
@@ -188,7 +185,6 @@ var childMoveAction = (function(){
     var speed = 2.5;
     var isJumping = false;
     var collisionDelay = 0;
-    var haveShield = false;
     var mainLayer = {};
     var pub = {};
     var xNew;
@@ -218,14 +214,6 @@ var childMoveAction = (function(){
 
     pub.updateSpeed = function(spd){
         speed = spd;
-    }
-
-    pub.updateShield = function(val){
-        haveShield = val;
-    }
-
-    pub.getShield = function(){
-        return haveShield;
     }
 
     pub.init = function(oTileWidth){
@@ -356,9 +344,6 @@ var childMoveAction = (function(){
             //En caso no se haya seleccionado una dirección por el usuario, Se procede a elegir una al azar
             if(interHandler.choiceAvailable){
                 randomDirection(posX, posY);
-            }
-            if(haveShield == false) {
-                mainLayer.sprite.setColor(new cc.Color(255, 255, 255, 0));
             }
 
             //Si ya está dentro del tile, se disminuye el valor el contador collisionDelay
@@ -508,11 +493,8 @@ var childMoveAction = (function(){
 
                 //Si choca contra una trampa
                 if('trap' in tile){
-                    if(haveShield == false) {
-                        executeTrap(tile);
-                        if(tile.trap == 1) return;
-                    }
-
+                    executeTrap(tile);
+                    if(tile.trap == 1) return;
                     break
                 }
 

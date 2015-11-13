@@ -96,5 +96,23 @@ var WSHandler = (function(){
         return ajax;
     };
 
+    pub.getFriendsScore = function(idPlayers, idLevel, numPlayers){
+        var string = "";
+        for(var i=0; i<idPlayers.length; i++){
+            string += "idPlayers[]=" + idPlayers[i] + "&";
+        }
+
+        var ajax = $.ajax({
+            url: host + "/friends/score?" + string
+            + "idLevel=" + idLevel + "&"
+            + "numPlayers=" + numPlayers,
+            type: "GET",
+            crossDomain: true,
+            contentType: "application/json",
+        });
+
+        return ajax;
+    };
+
     return pub;
 })();
