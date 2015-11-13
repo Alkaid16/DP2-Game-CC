@@ -17,7 +17,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "../res_views/wallpaper_selector.jpg",
+              "Path": "wallpaper_selector.jpg",
               "Plist": ""
             },
             "Scale9Width": 259,
@@ -26,506 +26,364 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": -0.1886,
-              "Y": 319.2826
+              "X": 2.2467,
+              "Y": 324.9132
             },
             "Scale": {
-              "ScaleX": 2.4981,
-              "ScaleY": 3.2917
+              "ScaleX": 2.4315,
+              "ScaleY": 3.301
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": -0.0003,
-              "Y": 0.4989
+              "X": 0.0035,
+              "Y": 0.5077
             },
             "PreSize": {
               "X": 0.4047,
               "Y": 0.3031
             },
-            "LeftMargin": -0.1886,
-            "RightMargin": 381.1886,
-            "TopMargin": 223.7174,
-            "BottomMargin": 222.2826,
-            "Tag": 29,
-            "ActionTag": -607677520,
+            "LeftMargin": 2.2467,
+            "RightMargin": 378.7533,
+            "TopMargin": 218.0868,
+            "BottomMargin": 227.9132,
+            "Tag": 67,
+            "ActionTag": -1087728245,
             "Size": {
               "X": 259.0,
               "Y": 194.0
             },
-            "Name": "imgOptionsWallpaper",
+            "Name": "imgWallpaper",
             "ctype": "ImageViewObjectData"
           },
           {
-            "BackColorAlpha": 102,
-            "ComboBoxIndex": 1,
-            "SingleColor": {
-              "R": 150,
-              "G": 200
+            "FontSize": 48,
+            "LabelText": "Opciones\n",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
             },
-            "FirstColor": {
-              "R": 150,
-              "G": 200
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
             },
-            "EndColor": {},
-            "ColorVector": {
-              "ScaleY": 1.0
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
             },
-            "TouchEnable": true,
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
             "AnchorPoint": {
-              "ScaleY": 0.5
+              "ScaleX": 0.4999,
+              "ScaleY": 1.1659
             },
             "Position": {
-              "X": 99.6813,
-              "Y": 534.6685
+              "X": 324.5234,
+              "Y": 583.7219
             },
             "Scale": {
-              "ScaleX": 2.2597,
-              "ScaleY": 0.7231
+              "ScaleX": 1.9446,
+              "ScaleY": 1.6136
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.1558,
-              "Y": 0.8354
+              "X": 0.5071,
+              "Y": 0.9121
             },
             "PreSize": {
-              "X": 0.3125,
-              "Y": 0.3125
+              "X": 0.3172,
+              "Y": 0.1719
             },
-            "LeftMargin": 99.6813,
-            "RightMargin": 340.3187,
-            "TopMargin": 5.3315,
-            "BottomMargin": 434.6685,
-            "Tag": 20,
-            "Children": [
-              {
-                "FontSize": 20,
-                "LabelText": "Opciones\n",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.4999,
-                  "ScaleY": 1.1659
-                },
-                "Position": {
-                  "X": 101.6836,
-                  "Y": 172.2933
-                },
-                "Scale": {
-                  "ScaleX": 1.9446,
-                  "ScaleY": 2.5665
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5084,
-                  "Y": 0.8615
-                },
-                "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "LeftMargin": 60.1885,
-                "RightMargin": 56.8114,
-                "TopMargin": 35.3369,
-                "BottomMargin": 118.6631,
-                "Tag": 21,
-                "ActionTag": 1487045513,
-                "Size": {
-                  "X": 83.0,
-                  "Y": 46.0
-                },
-                "Name": "lblTitle",
-                "ctype": "TextObjectData"
-              }
-            ],
-            "ActionTag": -660683514,
+            "LeftMargin": 223.0437,
+            "RightMargin": 213.9563,
+            "TopMargin": 74.5272,
+            "BottomMargin": 455.4729,
+            "Tag": 21,
+            "ActionTag": 1487045513,
             "Size": {
-              "X": 200.0,
-              "Y": 200.0
+              "X": 203.0,
+              "Y": 110.0
             },
-            "Name": "pnlTitle",
-            "ctype": "PanelObjectData"
+            "Name": "lblTitle",
+            "ctype": "TextObjectData"
           },
           {
-            "BackColorAlpha": 102,
-            "ComboBoxIndex": 1,
-            "SingleColor": {
-              "R": 150,
-              "G": 200
-            },
-            "FirstColor": {
-              "R": 150,
-              "G": 200
-            },
-            "EndColor": {},
-            "ColorVector": {
-              "ScaleY": 1.0
-            },
+            "FontSize": 20,
+            "IsCustomSize": true,
+            "LabelText": "",
+            "PlaceHolderText": "On",
+            "MaxLengthText": 10,
             "TouchEnable": true,
             "AnchorPoint": {
               "ScaleX": 0.5,
-              "ScaleY": 1.0
-            },
-            "Position": {
-              "X": 314.5871,
-              "Y": 413.1808
-            },
-            "Scale": {
-              "ScaleX": 2.1767,
-              "ScaleY": 1.4395
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4915,
-              "Y": 0.6456
-            },
-            "PreSize": {
-              "X": 0.3125,
-              "Y": 0.3125
-            },
-            "LeftMargin": 214.5871,
-            "RightMargin": 225.4129,
-            "TopMargin": 226.8192,
-            "BottomMargin": 213.1808,
-            "Tag": 22,
-            "Children": [
-              {
-                "FontSize": 20,
-                "LabelText": "Sonido",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 53.4235,
-                  "Y": 153.6781
-                },
-                "Scale": {
-                  "ScaleX": 1.3392,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.2671,
-                  "Y": 0.7684
-                },
-                "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "LeftMargin": 23.4235,
-                "RightMargin": 116.5765,
-                "TopMargin": 34.8219,
-                "BottomMargin": 142.1781,
-                "Tag": 23,
-                "ActionTag": 1550137827,
-                "Size": {
-                  "X": 60.0,
-                  "Y": 23.0
-                },
-                "Name": "lblSound",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "IsCustomSize": true,
-                "LabelText": "",
-                "PlaceHolderText": "On",
-                "MaxLengthText": 10,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 160.2575,
-                  "Y": 150.5096
-                },
-                "Scale": {
-                  "ScaleX": 0.7153,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "G": 165,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.8013,
-                  "Y": 0.7525
-                },
-                "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "LeftMargin": 110.2575,
-                "RightMargin": -10.2575,
-                "TopMargin": 35.9904,
-                "BottomMargin": 137.0096,
-                "CallBackType": "Click",
-                "Tag": 24,
-                "ActionTag": 340662474,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 27.0
-                },
-                "Name": "txtSound",
-                "ctype": "TextFieldObjectData"
-              },
-              {
-                "FontSize": 20,
-                "LabelText": "Música",
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 52.4151,
-                  "Y": 99.9803
-                },
-                "Scale": {
-                  "ScaleX": 1.3392,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.2621,
-                  "Y": 0.4999
-                },
-                "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "LeftMargin": 22.4151,
-                "RightMargin": 117.5849,
-                "TopMargin": 88.5197,
-                "BottomMargin": 88.4803,
-                "Tag": 25,
-                "ActionTag": 1425744888,
-                "Size": {
-                  "X": 63.0,
-                  "Y": 23.0
-                },
-                "Name": "lblMusic",
-                "ctype": "TextObjectData"
-              },
-              {
-                "FontSize": 20,
-                "IsCustomSize": true,
-                "LabelText": "",
-                "PlaceHolderText": "On",
-                "MaxLengthText": 10,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 162.0504,
-                  "Y": 95.0671
-                },
-                "Scale": {
-                  "ScaleX": 0.7153,
-                  "ScaleY": 1.0
-                },
-                "CColor": {
-                  "G": 165,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.8103,
-                  "Y": 0.4753
-                },
-                "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "LeftMargin": 112.0504,
-                "RightMargin": -12.0504,
-                "TopMargin": 91.4329,
-                "BottomMargin": 81.5671,
-                "CallBackType": "Click",
-                "Tag": 26,
-                "ActionTag": -918644193,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 27.0
-                },
-                "Name": "txtMusic",
-                "ctype": "TextFieldObjectData"
-              }
-            ],
-            "ActionTag": -150182719,
-            "Size": {
-              "X": 200.0,
-              "Y": 200.0
-            },
-            "Name": "pnlOptions",
-            "ctype": "PanelObjectData"
-          },
-          {
-            "BackColorAlpha": 102,
-            "ComboBoxIndex": 1,
-            "SingleColor": {
-              "R": 150,
-              "G": 200
-            },
-            "FirstColor": {
-              "R": 150,
-              "G": 200
-            },
-            "EndColor": {},
-            "ColorVector": {
-              "ScaleY": 1.0
-            },
-            "TouchEnable": true,
-            "AnchorPoint": {
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 97.4803,
-              "Y": 59.7885
+              "X": 482.438,
+              "Y": 209.3723
             },
             "Scale": {
-              "ScaleX": 2.121,
-              "ScaleY": 0.4517
+              "ScaleX": 1.1908,
+              "ScaleY": 2.3196
+            },
+            "CColor": {
+              "G": 165,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7538,
+              "Y": 0.3271
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 432.438,
+            "RightMargin": 107.562,
+            "TopMargin": 417.1277,
+            "BottomMargin": 195.8723,
+            "CallBackType": "Click",
+            "Tag": 26,
+            "ActionTag": -918644193,
+            "Size": {
+              "X": 100.0,
+              "Y": 27.0
+            },
+            "Name": "txtMusic",
+            "ctype": "TextFieldObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Música",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.4996,
+              "ScaleY": 0.4131
+            },
+            "Position": {
+              "X": 196.0596,
+              "Y": 213.9456
+            },
+            "Scale": {
+              "ScaleX": 2.9291,
+              "ScaleY": 3.3097
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.1523,
-              "Y": 0.0934
+              "X": 0.3063,
+              "Y": 0.3343
             },
             "PreSize": {
-              "X": 0.3125,
-              "Y": 0.3125
+              "X": 0.0984,
+              "Y": 0.0359
             },
-            "LeftMargin": 97.4803,
-            "RightMargin": 342.5197,
-            "TopMargin": 480.2115,
-            "BottomMargin": -40.2115,
-            "Tag": 27,
-            "Children": [
-              {
-                "FontSize": 14,
-                "ButtonText": "Regresar",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "../Default/Button_Disable.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "../Default/Button_Press.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "../Default/Button_Normal.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5016,
-                  "ScaleY": 1.2613
-                },
-                "Position": {
-                  "X": 100.0345,
-                  "Y": 194.6714
-                },
-                "Scale": {
-                  "ScaleX": 1.7016,
-                  "ScaleY": 3.852
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5002,
-                  "Y": 0.9734
-                },
-                "PreSize": {
-                  "X": 0.5,
-                  "Y": 0.18
-                },
-                "LeftMargin": 49.8776,
-                "RightMargin": 50.1224,
-                "TopMargin": 14.7339,
-                "BottomMargin": 149.2661,
-                "Tag": 28,
-                "ActionTag": 1187510147,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 36.0
-                },
-                "Name": "btnBack",
-                "ctype": "ButtonObjectData"
-              }
-            ],
-            "ActionTag": 1650699470,
+            "LeftMargin": 164.5828,
+            "RightMargin": 412.4172,
+            "TopMargin": 412.5567,
+            "BottomMargin": 204.4433,
+            "Tag": 25,
+            "ActionTag": 1425744888,
             "Size": {
-              "X": 200.0,
-              "Y": 200.0
+              "X": 63.0,
+              "Y": 23.0
             },
-            "Name": "pnlBtnBack",
-            "ctype": "PanelObjectData"
+            "Name": "lblMusic",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "IsCustomSize": true,
+            "LabelText": "",
+            "PlaceHolderText": "On",
+            "MaxLengthText": 10,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 477.2956,
+              "Y": 313.707
+            },
+            "Scale": {
+              "ScaleX": 1.1161,
+              "ScaleY": 2.4845
+            },
+            "CColor": {
+              "G": 165,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7458,
+              "Y": 0.4902
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 427.2956,
+            "RightMargin": 112.7044,
+            "TopMargin": 312.793,
+            "BottomMargin": 300.207,
+            "CallBackType": "Click",
+            "Tag": 24,
+            "ActionTag": 340662474,
+            "Size": {
+              "X": 100.0,
+              "Y": 27.0
+            },
+            "Name": "txtSound",
+            "ctype": "TextFieldObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Sonido",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 201.6176,
+              "Y": 330.1204
+            },
+            "Scale": {
+              "ScaleX": 3.5523,
+              "ScaleY": 2.9559
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.315,
+              "Y": 0.5158
+            },
+            "PreSize": {
+              "X": 0.0938,
+              "Y": 0.0359
+            },
+            "LeftMargin": 171.6176,
+            "RightMargin": 408.3824,
+            "TopMargin": 298.3796,
+            "BottomMargin": 318.6204,
+            "Tag": 23,
+            "ActionTag": 1550137827,
+            "Size": {
+              "X": 60.0,
+              "Y": 23.0
+            },
+            "Name": "lblSound",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "pantallas-11.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 752,
+            "Scale9Height": 217,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.4961,
+              "ScaleY": 0.5118
+            },
+            "Position": {
+              "X": 333.2975,
+              "Y": 76.0863
+            },
+            "Scale": {
+              "ScaleX": 0.5523,
+              "ScaleY": 0.3577
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5208,
+              "Y": 0.1189
+            },
+            "PreSize": {
+              "X": 1.2219,
+              "Y": 0.3734
+            },
+            "LeftMargin": -54.6875,
+            "RightMargin": -87.3125,
+            "TopMargin": 447.2326,
+            "BottomMargin": -46.2326,
+            "Tag": 28,
+            "ActionTag": 1187510147,
+            "Size": {
+              "X": 782.0,
+              "Y": 239.0
+            },
+            "Name": "btnBack",
+            "ctype": "ButtonObjectData"
           }
         ],
         "Size": {
@@ -537,9 +395,10 @@
       },
       "UsedResources": [
         "../Default/Button_Disable.png",
-        "../Default/Button_Normal.png",
         "../Default/Button_Press.png",
-        "../res_views/wallpaper_selector.jpg"
+        "../pantallas-11.png",
+        "../THE MINION.ttf",
+        "../wallpaper_selector.jpg"
       ],
       "ctype": "GameProjectData"
     }

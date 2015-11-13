@@ -16,8 +16,8 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
-              "Path": "res_views/wallpaper1.png",
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
               "Plist": ""
             },
             "Scale9Width": 397,
@@ -209,8 +209,7 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../Default/ImageFile.png",
-        "../res_views/wallpaper1.png"
+        "../Default/ImageFile.png"
       ],
       "ctype": "GameProjectData"
     }

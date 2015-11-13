@@ -15,14 +15,6 @@
         <Project Name="MainScreen.csd" Type="Scene" />
         <Image Name="buttonNormal.png" />
         <Image Name="buttonPressed.png" />
-        <Folder Name="res_views">
-          <Image Name="logo.png" />
-          <Image Name="wallpaper1.png" />
-          <Image Name="wallpaper_selector.jpg" />
-          <Image Name="modal_level_wallpaper.jpg" />
-          <Image Name="exit.png" />
-          <Image Name="willpoint.png" />
-        </Folder>
         <Folder Name="views">
           <Project Name="ranking_result_view.csd" Type="Scene" />
           <Project Name="level_selector_view.csd" Type="Scene" />
@@ -38,6 +30,38 @@
           <Project Name="pause_modal.csd" Type="Layer" />
           <Project Name="options_modal.csd" Type="Layer" />
         </Folder>
+        <Image Name="pantallas-12.png" />
+        <Image Name="pantallas-13.png" />
+        <Image Name="pantallas-10.png" />
+        <TTF Name="THE MINION.ttf" />
+        <Image Name="pantallas-15.png" />
+        <Image Name="pantallas-11.png" />
+        <Image Name="Marco.png" />
+        <Image Name="wallpaper_selector.jpg" />
+        <Image Name="caja-02.png" />
+        <Image Name="1.png" />
+        <Image Name="2-19.png" />
+        <Image Name="3-19.png" />
+        <Image Name="4-19.png" />
+        <Image Name="5-19.png" />
+        <Image Name="6-19.png" />
+        <Image Name="7-19.png" />
+        <Image Name="8-19.png" />
+        <Image Name="9-19.png" />
+        <Image Name="10-19.png" />
+        <Image Name="11-19.png" />
+        <Image Name="12-19.png" />
+        <Image Name="13-19.png" />
+        <Image Name="14-19.png" />
+        <Image Name="15-19.png" />
+        <Image Name="modal_level_wallpaper.jpg" />
+        <Image Name="exit.png" />
+        <Image Name="pantallas-09.png" />
+        <Image Name="pantallas-14.png" />
+        <Image Name="willpoint.png" />
+        <Image Name="pantalla-16.png" />
+        <Image Name="pantalla-15.png" />
+        <Image Name="pantalla-17.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

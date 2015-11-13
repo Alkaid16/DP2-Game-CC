@@ -56,7 +56,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "../res_views/willpoint.png",
+                  "Path": "willpoint.png",
                   "Plist": ""
                 },
                 "BlendFunc": {
@@ -98,7 +98,7 @@
               {
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "../res_views/willpoint.png",
+                  "Path": "willpoint.png",
                   "Plist": ""
                 },
                 "BlendFunc": {
@@ -155,7 +155,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "../res_views/willpoint.png"
+        "../willpoint.png"
       ],
       "ctype": "GameProjectData"
     }

@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.3750" Y="0.2333" />
                 <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="Normal" Path="res_views/willpoint.png" Plist="" />
+                <FileData Type="Normal" Path="willpoint.png" Plist="" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="wp2" ActionTag="-462966397" Tag="5" IconVisible="False" LeftMargin="112.0000" RightMargin="16.0000" TopMargin="14.0000" BottomMargin="14.0000" ctype="SpriteObjectData">
@@ -28,7 +28,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7000" Y="0.2333" />
                 <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="Normal" Path="res_views/willpoint.png" Plist="" />
+                <FileData Type="Normal" Path="willpoint.png" Plist="" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
             </Children>

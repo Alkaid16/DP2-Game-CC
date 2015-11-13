@@ -14,7 +14,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0056" Y="0.5020" />
             <PreSize X="0.6203" Y="0.3125" />
-            <FileData Type="Normal" Path="res_views/wallpaper1.png" Plist="" />
+            <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="lblGameName" ActionTag="382820312" Tag="14" IconVisible="False" LeftMargin="259.0748" RightMargin="257.9252" TopMargin="57.7871" BottomMargin="567.2129" FontSize="12" LabelText="&lt;&lt;Nombre del Juego&gt;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="123.0000" Y="15.0000" />

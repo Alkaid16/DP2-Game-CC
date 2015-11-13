@@ -14,7 +14,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="-0.0002" Y="0.5052" />
             <PreSize X="0.4047" Y="0.3031" />
-            <FileData Type="Normal" Path="res_views/wallpaper_selector.jpg" Plist="" />
+            <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="imgLogo" ActionTag="-257226806" Tag="84" IconVisible="False" LeftMargin="235.6298" RightMargin="244.3702" TopMargin="141.1746" BottomMargin="338.8254" ctype="SpriteObjectData">
             <Size X="160.0000" Y="160.0000" />
@@ -24,7 +24,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4932" Y="0.6544" />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="res_views/logo.png" Plist="" />
+            <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="pnlLoadingBar" ActionTag="-438199518" Tag="85" IconVisible="False" LeftMargin="221.4944" RightMargin="218.5056" TopMargin="439.9992" BottomMargin="0.0008" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
