@@ -122,7 +122,7 @@ var BoardController = (function(){
                         },i*100);
                     })(i);
                 }
-                gameplayMap.coins += 5000 - totalTime;
+                gameplayMap.score += 5000 - totalTime;
                 return;
             }
         }else{
@@ -343,7 +343,7 @@ var MeshController = (function(){
                     },i*100);
                 })(i);
             }
-            gameplayMap.coins += 5500 - totalTime;
+            gameplayMap.score += 5500 - totalTime;
             started = false;
         }
 
@@ -572,7 +572,7 @@ var lunchBoxController = (function(){
                             },i*100);
                         })(i);
                     }
-                    gameplayMap.coins += 8000 - totalTime;
+                    gameplayMap.score += 8000 - totalTime;
                     started = false;
                     console.log("ganaste");
                 }

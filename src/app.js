@@ -461,8 +461,7 @@ var childMoveAction = (function(){
 
         //Condicion de victoria
         if(posX == mainLayer.finishPoint[0] && posY == mainLayer.finishPoint[1]){
-            alert("YOU WIN! Your get " + gameplayMap.coins);
-            close();
+            gameplayMap.victory();
         }
 
         var direction = getCurrentDirection();
@@ -550,6 +549,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
     tileMatrix:null,
     collectables: null,
     willPoints:0,
+    score:0,
     coins:0,
     intersections: [],
     currentTime:null,
@@ -582,7 +582,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this.monster.setPosition(cc.p(mapWidth*32/2, - cSize.height*monsterScale/2 - 50));
         ChildSM.runMonsterAnimation(this.monster);
 
-        this.scoreLabel = new cc.LabelTTF(this.coins,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+        this.scoreLabel = new cc.LabelTTF(this.score,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
         this.scoreLabel.setPosition(this.sprite.getPositionX(), this.sprite.getPositionY() + 40);
         this.currentTime = new Date();
 
@@ -817,6 +817,12 @@ var GameplayMap = cc.TMXTiledMap.extend({
     gameOver: function(byMonster){
         gameplayMap.unscheduleAllCallbacks();
         DefeatModalC.executeDefeat(byMonster);
+    },
+
+    victory: function(){
+        this.unscheduleAllCallbacks();
+        currentGameplayScene.customCleanup();
+        VictoryScreenC.loadAndRun(this.score,0, this.coins);
     }
 
 });

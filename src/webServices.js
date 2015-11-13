@@ -73,6 +73,21 @@ var WSHandler = (function(){
         return ajax;
     };
 
+    pub.registerLevelClear = function(idPlayer, idLevel, score, coinsWon){
+
+        var ajax = $.ajax({
+            url: host + "/level/defeat?" + "idPlayer=" + idPlayer + "&"
+            + "idLevel=" + idLevel + "&"
+            + "score=" + score + "&"
+            + "coinsWon=" + coinsWon,
+            type: "POST",
+            crossDomain: true,
+            contentType: "application/json"
+        });
+
+        return ajax;
+    };
+
     pub.registerPurchase = function(idPlayer, idLevel){
 
         var ajax = $.ajax({

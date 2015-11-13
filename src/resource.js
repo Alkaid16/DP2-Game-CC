@@ -7,6 +7,7 @@ var res = {
     defeat_view_json: "res/views/defeat_view.json",
     level_selector_view_json : "res/views/level_selector_view.json",
     level_modal_json : "res/views/level_modal.json",
+    ranking_result_view_json : "res/views/ranking_result_view.json",
     map2_tmx: "res/levels/map2.tmx",
     Level1_tmx: "res/levels/Level1.tmx",
     Level2_tmx: "res/levels/Level2.tmx",

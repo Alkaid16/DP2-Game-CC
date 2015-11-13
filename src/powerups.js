@@ -34,7 +34,7 @@ function pickCollectable(tile){
     var idCollectable = tile.collectable;
     var collVal = 10;
     console.log("id de objeto: " + idCollectable);
-    var coinsLabel = new cc.LabelTTF(gameplayMap.coins,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+    var coinsLabel = new cc.LabelTTF(gameplayMap.score,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
 
 
     delete tile.collectable;
@@ -45,7 +45,8 @@ function pickCollectable(tile){
 
     collectableLayer.setTileGID(0,tile.x,tile.y);
     collectableLayer.removeTileAt(cc.p(tile.x,tile.y));
-    gameplayMap.coins += LevelGraphC.getCurrencyWeight(idCollectable)*collVal;
+    gameplayMap.score += LevelGraphC.getCurrencyWeight(idCollectable)*collVal;
+    gameplayMap.coins += LevelGraphC.getCurrencyWeight(idCollectable);
 
     coinsLabel.setPosition(gameplayMap.sprite.getPositionX(), gameplayMap.sprite.getPositionY() + 40);
     currentGameplayScene.gameplayLayer.addChild(coinsLabel,20);

@@ -1,3 +1,5 @@
+var networkErrorMsg = "Error de comunicaci?n con el servidor. Verifique su conexi?n a internet."
+
 var MainSceneC = (function(){
     var pub = {};
     var mainScreen;
@@ -164,7 +166,7 @@ var LevelModalC = (function(){
                 cc.director.runScene(scene);
                 layer.resume();
             }, function(){
-                alert("Error de comunicaci?n con el servidor. Verifique su conexi?n a internet.");
+                alert(networkErrorMsg);
                 layer.resume();
             });
 
@@ -184,7 +186,7 @@ var LevelModalC = (function(){
                     pub.updateButtons();
                     alert("Compra exitosa");
                 }, function(){
-                    alert("Error de comunicaci?n con el servidor. Verifique su conexi?n a internet.");
+                    alert(networkErrorMsg);
                     layer.resume();
                 });
             }else{
@@ -450,6 +452,50 @@ OptionsModalC = (function(){
     pub.getLayer = function(){
         return layer;
     };
+
+    return pub;
+})();
+
+VictoryScreenC = (function(){
+    var scene;
+    var txtScore;
+    var txtCoins;
+    var txtTime;
+    var btnReturn;
+    var pub = {};
+
+    pub.loadAndRun = function(score, time, coins){
+        var obj = ccs.load(res.ranking_result_view_json);
+        scene = obj.node;
+        var pnl = scene.getChildByName("pnlGeneral");
+
+        txtScore = pnl.getChildByName("txtScore");
+        txtScore.setString(score);
+        txtTime = pnl.getChildByName("txtTime");
+        txtScore.setString(time);
+        txtCoins = pnl.getChildByName("txtCoins");
+        txtScore.setString(coins);
+
+        btnReturn = scene.getChildByName("btnLevels");
+        btnReturn.addClickEventListener(function(){
+            scene = null;
+            LevelModalC.hide();
+            cc.director.runScene(LevelSelectionC.getScene());
+        });
+        btnReturn.setEnabled(false);
+
+        cc.director.runScene(scene);
+
+        var ajax = WSHandler.registerLevelClear(playerInfo.idPlayer, LevelGraphC.getCurrentLevel(), score, coins);
+        $.when(ajax).then(function(){
+            LevelGraphC.clearLevel();
+            btnReturn.setEnabled(true);
+        }, function(){
+            alert(networkErrorMsg);
+            btnReturn.setEnabled(true);
+        });
+
+    }
 
     return pub;
 })();
