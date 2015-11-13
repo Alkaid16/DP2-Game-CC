@@ -142,7 +142,7 @@ var LevelModalC = (function(){
         createCoverLayer();
 
         lblLevel = layer.getChildByName("lblLevel");
-        lblScore = layer.getChildByName("lvlScore");
+        lblScore = layer.getChildByName("lblScore");
         lblDefeatPos = layer.getChildByName("lblDefeatPos");
 
         btnExit = layer.getChildByName("btnExit");
@@ -377,10 +377,9 @@ PauseModalC = (function(){
         layer.setVisible(false);
         pScene.addChild(layer,9);
 
-        var pnlButtons = layer.getChildByName("pnlButtons");
-        var btnContinue = pnlButtons.getChildByName("btnContinue");
-        var btnLevels = pnlButtons.getChildByName("btnLevels");
-        var btnOptions = pnlButtons.getChildByName("btnOptions");
+       var btnContinue = layer.getChildByName("btnContinue");
+        var btnLevels = layer.getChildByName("btnReturnLevelSelector");
+        var btnOptions = layer.getChildByName("btnOptions");
 
         OptionsModalC.load(layer);
 
@@ -430,8 +429,7 @@ OptionsModalC = (function(){
         layer.setVisible(false);
         pScene.addChild(layer,9);
 
-        var pnlBack = layer.getChildByName("pnlBtnBack");
-        var btnBack = pnlBack.getChildByName("btnBack");
+        var btnBack = layer.getChildByName("btnBack");
 
         btnBack.addClickEventListener(function(){
             pub.hide();

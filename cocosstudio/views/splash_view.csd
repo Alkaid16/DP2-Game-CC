@@ -14,7 +14,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="-0.0070" Y="0.4989" />
             <PreSize X="0.6203" Y="0.3125" />
-            <FileData Type="Normal" Path="res_views/wallpaper1.png" Plist="" />
+            <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="pnlTitle" ActionTag="1016432033" Tag="79" IconVisible="False" LeftMargin="121.8615" RightMargin="318.1385" TopMargin="19.1729" BottomMargin="420.8271" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="200.0000" Y="200.0000" />

@@ -16,8 +16,8 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
-              "Path": "res_views/wallpaper_selector.jpg",
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
               "Plist": ""
             },
             "Scale9Width": 259,
@@ -736,7 +736,7 @@
         "../Default/Button_Disable.png",
         "../Default/Button_Normal.png",
         "../Default/Button_Press.png",
-        "../res_views/wallpaper_selector.jpg"
+        "../Default/ImageFile.png"
       ],
       "ctype": "GameProjectData"
     }

@@ -16,8 +16,8 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
-              "Path": "res_views/wallpaper_selector.jpg",
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
               "Plist": ""
             },
             "Scale9Width": 259,
@@ -58,8 +58,8 @@
           },
           {
             "FileData": {
-              "Type": "Normal",
-              "Path": "res_views/logo.png",
+              "Type": "Default",
+              "Path": "Default/Sprite.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -204,9 +204,9 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
+        "../Default/ImageFile.png",
         "../Default/LoadingBarFile.png",
-        "../res_views/logo.png",
-        "../res_views/wallpaper_selector.jpg"
+        "../Default/Sprite.png"
       ],
       "ctype": "GameProjectData"
     }
