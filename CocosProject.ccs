@@ -27,8 +27,8 @@
           <Project Name="level_modal.csd" Type="Layer" />
           <Project Name="gameHUD.csd" Type="Layer" />
           <Project Name="defeat_view.csd" Type="Layer" />
-          <Project Name="pause_modal.csd" Type="Layer" />
           <Project Name="options_modal.csd" Type="Layer" />
+          <Project Name="pause_modal.csd" Type="Layer" />
         </Folder>
         <Image Name="pantallas-12.png" />
         <Image Name="pantallas-13.png" />

@@ -427,12 +427,14 @@ var lunchBoxController = (function(){
         var currentRow = 0;
         var currentColumn = 0;
 
+        //coordenadas base
         var X00 = gameplayMap.sprite.getPositionX() - parseInt(W/2);
         var Y00 = gameplayMap.sprite.getPositionY() - parseInt(H/2);
 
-        console.log(gameplayMap.sprite.getPositionX()+" - "+gameplayMap.sprite.getPositionY());
-        console.log(X00+" - "+Y00);
+        /*console.log(gameplayMap.sprite.getPositionX()+" - "+gameplayMap.sprite.getPositionY());
+        console.log(X00+" - "+Y00);*/
 
+        //División de la pantalla
         for(var i=0; i<numBoxBoard; i++)
         {
             boxBoardCtrol[i]=-1;
@@ -447,7 +449,7 @@ var lunchBoxController = (function(){
                 currentRow++;
                 currentColumn = 0;
             }
-            console.log(boxXinf[i]+" - "+boxYinf[i])
+            /*console.log(boxXinf[i]+" - "+boxYinf[i])*/
         }
 
         numBoxBoardUsed=0;
@@ -455,18 +457,23 @@ var lunchBoxController = (function(){
         flagChargeBox = true;
     }
 
+    //Esta función limpia la pantalla
     var boardCleanup = function(){
 
+        //limpia de pantalla todos aquellos tiles que no hayan sido removidos
         for(var i=0;i<numSprites;i++) {
             if(spritesLunchBoxCtrl[i]==1)
                 currentGameplayScene.gameplayLayer.removeChild(spritesLunchBox[i]);
         }
 
+        //limpia la variable de control de posiciones de pantalla
+        for(var j=0;j<numBoxBoard;j++)
+            boxBoardCtrol[j]==-1
+
         ChildSM.startRunning();
         flagChargeBox=false;
         started = false;
-
-
+        numRemElmentNutri=numElmentNutri;
     }
 
     //Funcion de activacion de lonchera
@@ -486,15 +493,15 @@ var lunchBoxController = (function(){
             spritesLunchBoxCtrl[i]=1;
             spritesLunchBox[i].setScale(0.4);
 
-            //Se escoge una posición vacú} de forma aleatoria
+            //Se escoge una posición vacía de forma aleatoria
             //Esto en base a la cantidad de espacios en los que se ha divido la pizarra
             //menos la cantidad de posiciones usadas, luego se escoge la posición ignorando las posiciones que fueron usadas
-            var rand= parseInt(Math.random()*(numBoxBoard-numBoxBoardUsed));
+            var rand= parseInt(Math.random()*(numBoxBoard-numBoxBoardUsed-5));
             var posBox=0;
 
             for(var j=0;j<numBoxBoard;j++)
             {
-                console.log(boxBoardCtrol[j]);
+                //console.log(boxBoardCtrol[j]);
                 if(boxBoardCtrol[j]==-1)
                     posBox++;
 
@@ -508,12 +515,13 @@ var lunchBoxController = (function(){
                 }
 
             }
-            console.log(posBox);
+            //console.log(posBox);
             spritesLunchBox[i].setPosition(boxXinf[posBox]+aproxWH/2, boxYinf[posBox]+aproxWH/2);
             currentGameplayScene.gameplayLayer.addChild(spritesLunchBox[i],30+i);
         }
 
         started = true;
+        
         setTimeout(function(){
             if(pub.isActivated())loseWillPoint();
             boardCleanup();
@@ -526,6 +534,7 @@ var lunchBoxController = (function(){
 
     pub.onClickMouse = function(xCord, yCord){
 
+        //console.log("coordenadas: "+xCord+"-"+yCord);
 
         //Obtengo el box en el que se ha realizado el click
 
@@ -558,6 +567,10 @@ var lunchBoxController = (function(){
                 if(numRemElmentNutri==0)
                 {
                     boardCleanup();
+                    started = false;
+                    //console.log("ganaste---");
+
+                    //inicio puntaje
                     var endTime = new Date();
                     var totalTime = endTime.getTime() - timeLunch.getTime();
                     var coinsLabel = new cc.LabelTTF(8000 - totalTime,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
@@ -572,9 +585,10 @@ var lunchBoxController = (function(){
                             },i*100);
                         })(i);
                     }
-                    gameplayMap.score += 8000 - totalTime;
-                    started = false;
-                    console.log("ganaste");
+                    gameplayMap.coins += 8000 - totalTime;
+                    //fin puntaje
+
+                    
                 }
 
             }else//Caso en que un elemento no sea saludable
