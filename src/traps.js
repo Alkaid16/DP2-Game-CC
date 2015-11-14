@@ -96,8 +96,11 @@ var BoardController = (function(){
         started = true;
 
         setTimeout(function(){
-            if(pub.isActivated()) loseWillPoint();
-            boardCleanup();
+            if(pub.isActivated()){
+                loseWillPoint();
+                boardCleanup();
+            }
+
         }, 5000);
 
     }

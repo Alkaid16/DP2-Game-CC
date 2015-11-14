@@ -160,7 +160,7 @@
  </layer>
  <layer name="Intersection" width="25" height="144">
   <data encoding="base64" compression="zlib">
-   eJzt2TEOgCAMBVDufyxP5uhEsCqxbd7bDAux/KIwBm8dD8eoS11zUQ+Yu5sPOYKeZtmWeTKI/EdZs8CfnPuwYt+CPvT8ntQO8pJPgIueGFPp/iPjnNjL/QdQRfQsTM/ay/sFvrD63ow+A9DLCZhrGoc=
+   eJzt2TEOgCAMBVDufyxPxuhEoCqxNO9thoVYflFojbeuh2OcS11zUQ8YW82HHEFNo2xnzHzGObFX5D/K+gD+5NyHGfsW1KHn16R2kJd8Atz0xBj3H2Tm/gM4RfQsTM/ay/sFvjD73ow+A1BLB6+qG0k=
   </data>
  </layer>
  <layer name="Maze" width="25" height="144">
