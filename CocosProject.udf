@@ -28,15 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="views/ranking_result_view.csd" />
-          <FilePathData Path="views/level_selector_view.csd" />
-          <FilePathData Path="views/level_modal.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="views/level_modal.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

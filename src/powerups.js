@@ -99,8 +99,8 @@ var clockController = {
     timeMiliseg:200,
     currentTime:200,
     porcentajeDis:30,//Porcentaje de la velocidad que se disminuir? del monstruo
-    monster_speed:0.75,
-    currentSpeed:0.75
+    monster_speed:1.05,
+    currentSpeed:1.05
 }
 
 

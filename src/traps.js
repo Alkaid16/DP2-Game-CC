@@ -34,6 +34,12 @@ function executeTrap(tile){
     }
 }
 
+function initTraps(){
+    HoleController.init();
+    BoardController.init();
+    MeshController.init();
+}
+
 function loseWillPoint(){
     gameplayMap.willPoints -= 1;
     var points = [];
@@ -70,11 +76,16 @@ var BoardController = (function(){
     var timeBoard = null;
 
     var boardCleanup = function(){
-        label.removeFromParent();
-        labelTyped.removeFromParent();
+        if(label) label.removeFromParent();
+        if(labelTyped) labelTyped.removeFromParent();
         ChildSM.startRunning();
         started = false;
+    }
 
+    pub.init = function(){
+        if(label) label.removeFromParent();
+        if(labelTyped)labelTyped.removeFromParent();
+        started = false;
     }
 
     //Funcion de activacion de antorcha
@@ -148,6 +159,12 @@ var HoleController = (function(){
     pub.canJump = false;
     pub.jumped = false;
 
+    pub.init = function(){
+        pub.exMark = null;
+        pub.canJump = false;
+        pub.jumped = false;
+    }
+
     pub.activateHole = function(){
         var child = gameplayMap.sprite;
         var aux = childMoveAction.keyState;
@@ -198,6 +215,13 @@ var MeshController = (function(){
     var currentArrow;
     var timeMesh = null;
 
+    pub.init = function(){
+         arrowsImg = {};
+         arrowsImgPress = {};
+         arrowsImgCtrl = {};
+         arrowsImgPressCtrl = {};
+         timeMesh = null;
+    }
 
     var boardCleanup = function(){
 

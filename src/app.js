@@ -176,7 +176,28 @@ var interHandler = {
 };
 
 var monsterMoveAction = function(){
+    if(!gameplayMap.gameStarted){
+        return;
+    }
 
+    var monster =gameplayMap.monster;
+    var child = gameplayMap.sprite;
+    var spriteWidth = child.width;
+    var monstX = monster.getPositionX();
+    var monstY = monster.getPositionY();
+
+    monstY+=clockController.getSpeed();
+    monster.setPosition(monstX,monstY);
+
+    var rectM = gameplayMap.monster.getBoundingBox();
+    var rect1 = cc.rect(child.getPositionX()-spriteWidth/2,
+        child.getPositionY() - spriteWidth/2,spriteWidth,spriteWidth);
+    rectM.height = rectM.height*0.85;
+
+    if(cc.rectIntersectsRect(rectM,rect1)){
+        gameplayMap.gameOver(true);
+        return;
+    }
 }
 
 //Módulo de movimiento del niño
@@ -192,7 +213,6 @@ var childMoveAction = (function(){
     pub.childPosX = 0;
     pub.childPosY = 0;
     pub.lastDirection = 0;
-
 
     pub.keyState = new Array(1,0,0,0);
 
@@ -222,7 +242,6 @@ var childMoveAction = (function(){
         speed = 2.5;
         isJumping = false;
         collisionDelay = 0;
-        haveShield = false;
         pub.childPosX = 0;
         pub.childPosY = 0;
         pub.lastDirection = 0;
@@ -444,8 +463,6 @@ var childMoveAction = (function(){
         pub.childPosX = sprite.getPositionX();
         pub.childPosY = sprite.getPositionY();
 
-        var monstX = monstruo.getPositionX();
-        var monstY = monstruo.getPositionY();
         var lastMov = -1;
 
         //Se halla la nueva posición del niño
@@ -480,8 +497,6 @@ var childMoveAction = (function(){
         //Verificacion de colisión
         for(var i=1; i < mainLayer.obstacles.length ; i++ ){
             var tile = mainLayer.obstacles[i];
-            var rectM = gameplayMap.monster.getBoundingBox();
-            rectM.height = rectM.height*0.9;
 
             if(cc.rectIntersectsRect(rect1,tile.rect)){
                 //Si choca contra un powerup
@@ -524,15 +539,8 @@ var childMoveAction = (function(){
                 lastMov = possibleMovements[realRandom];
                 return;
             }
-
-            if(cc.rectIntersectsRect(rectM,rect1)){
-                gameplayMap.gameOver(true);
-                return;
-            }
         }
-        monstY+=clockController.getSpeed();
         mainLayer.sprite.setPosition(xNew,yNew);
-        monstruo.setPosition(monstX,monstY);
     }
 
     return pub;
@@ -557,6 +565,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
     ctor:function (levelName) {
         this._super();
         this.initWithTMXFile("res/" + levelName);
+        initTraps();
 
         var mapHeight = this.getMapSize().height;
         var mapWidth = this.getMapSize().width;
@@ -815,7 +824,8 @@ var GameplayMap = cc.TMXTiledMap.extend({
     },
 
     gameOver: function(byMonster){
-        gameplayMap.unscheduleAllCallbacks();
+        this.unscheduleAllCallbacks();
+        currentGameplayScene.unscheduleAllCallbacks();
         DefeatModalC.executeDefeat(byMonster);
     },
 
@@ -966,6 +976,8 @@ var GameplayScene = cc.Scene.extend({
 
         DefeatModalC.setParentScene(this);
         gameplayMap.schedule(childMoveAction.update);
+        gameplayMap.schedule(monsterMoveAction);
+        this.schedule(this.updateScoreLabel);
     },
 
     startMaze: function(){
@@ -989,10 +1001,16 @@ var GameplayScene = cc.Scene.extend({
     },
 
     customCleanup: function(){
+        this.unscheduleAllCallbacks();
         this.gameplayLayer.removeAllChildren();
         this.hudLayer.removeAllChildren();
         DefeatModalC.cleanup();
         this.removeAllChildren();
+    },
+
+    updateScoreLabel: function(){
+        var lbl = this.hudLayer.getChildByName("lblScore");
+        lbl.setString("" + gameplayMap.score);
     }
 });
 

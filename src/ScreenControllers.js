@@ -1,4 +1,4 @@
-var networkErrorMsg = "Error de comunicaci?n con el servidor. Verifique su conexi?n a internet."
+var networkErrorMsg = "Error de comunicaci?n con el servidor. Verifique su conexion a internet."
 
 var MainSceneC = (function(){
     var pub = {};
@@ -303,11 +303,11 @@ var DefeatModalC = (function(){
         if(byMonster){
             btnHelp.setVisible(false);
             lblDesc.setString("El monstruo ha alcanzado a " + playerInfo.childName + ".\n" +
-            "?Que desea hacer?");
+            "Que desea hacer?");
         }else{
             btnHelp.setVisible(true);
-            lblDesc.setString(playerInfo.childName + " no tiene suficiente voluntad para seguir avanzando.\n" +
-                "?Que desea hacer?");
+            lblDesc.setString(playerInfo.childName + " no tiene suficiente voluntad\npara seguir avanzando.\n" +
+                "Que desea hacer?");
         }
         layer.setVisible(true);
         cLayer.runAction(cc.fadeIn(1.5));
