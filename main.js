@@ -68,8 +68,8 @@ cc.game.onStart = function(){
         DefeatModalC.load();
 
         var mainScreenLayer = MainSceneC.loadMainScreen(function(){
-            var newScene =LevelSelectionC.loadScene();
-            cc.director.runScene(newScene);
+            TitleScreenC.loadScene();
+            cc.director.runScene(TitleScreenC.getScene());
         });
 
         mainScreen.addChild(mainScreenLayer);
