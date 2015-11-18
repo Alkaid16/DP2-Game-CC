@@ -3,11 +3,9 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Project Name="MainScene.csd" Type="Scene" />
         <Image Name="HelloWorld.png" />
         <Image Name="Bola.png" />
         <Image Name="block.png" />
-        <TmxFile Name="mapa.tmx" />
         <Folder Name="levels">
           <TmxFile Name="map2.tmx" />
         </Folder>
@@ -29,6 +27,7 @@
           <Project Name="defeat_view.csd" Type="Layer" />
           <Project Name="options_modal.csd" Type="Layer" />
           <Project Name="pause_modal.csd" Type="Layer" />
+          <Project Name="character_view.csd" Type="Scene" />
         </Folder>
         <Image Name="pantallas-12.png" />
         <Image Name="pantallas-13.png" />
@@ -63,6 +62,8 @@
         <Image Name="pantalla-15.png" />
         <Image Name="pantalla-17.png" />
         <Image Name="botonGenerico.png" />
+        <Image Name="ninaFrente1.png" />
+        <Image Name="ninoFrente1.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -192,7 +192,7 @@ var monsterMoveAction = function(){
     var rectM = gameplayMap.monster.getBoundingBox();
     var rect1 = cc.rect(child.getPositionX()-spriteWidth/2,
         child.getPositionY() - spriteWidth/2,spriteWidth,spriteWidth);
-    rectM.height = rectM.height*0.85;
+    rectM.height = rectM.height*0.75;
 
     if(cc.rectIntersectsRect(rectM,rect1)){
         gameplayMap.gameOver(true);
@@ -622,7 +622,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
                 //Si presiona la barra espaciadora, se registra el salto
                 if(keyCode == 32 && HoleController.canJump && !HoleController.jumped){
                     HoleController.jumped = true;
-                }else if(keyCode == 13){
+                }else if(keyCode == 13 && gameplayMap.gameStarted){
                     //se mostrará el modal de Pausa, además se quitará el gameplay fueran del schedule
                     PauseModalC.show();
                 }

@@ -21,14 +21,15 @@ var WSHandler = (function(){
     };
 
     //Funcion para registrar un nuevo jugador en la base de datos
-    pub.registerPlayer = function(player){
+    pub.registerPlayer = function(childName, idFacebook, clothesVariation){
+
         $.ajax({
-            url: host + "/player?" + "childName=" + player.childName + "&"
-            + "idFacebook=" + player.idFacebook + "&"
-            + "coins=" + player.coins + "&"
-            + "hairVariation=" + player.hairVariation + "&"
-            + "clothesVariation=" + player.clothesVariation + "&"
-            + "continues=" + player.continues,
+            url: host + "/player?" + "childName=" + childName + "&"
+            + "idFacebook=" + idFacebook + "&"
+            + "coins=" + 0 + "&"
+            + "hairVariation=" + 0 + "&"
+            + "clothesVariation=" + clothesVariation + "&"
+            + "continues=" + 0,
             type: "POST",
             crossDomain: true,
             contentType: "application/json",
