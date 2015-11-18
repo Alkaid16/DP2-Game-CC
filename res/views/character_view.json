@@ -1,0 +1,526 @@
+{
+  "ID": "5e74bf31-f830-4967-97c2-070bc615d1b4",
+  "Version": "2.3.2.3",
+  "Name": "character_view",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 9,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "wallpaper_selector.jpg",
+              "Plist": ""
+            },
+            "Scale9Width": 259,
+            "Scale9Height": 194,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 1.3006,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.002,
+              "Y": 0.0
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PercentWidthEnabled": true,
+            "PercentHeightEnabled": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": 1.3006,
+            "RightMargin": -1.3007,
+            "Tag": 94,
+            "ActionTag": 517391132,
+            "Size": {
+              "X": 640.0,
+              "Y": 640.0
+            },
+            "Name": "Image_2",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 125,
+              "G": 197,
+              "B": 214
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 192.0,
+              "Y": 300.8
+            },
+            "Scale": {
+              "ScaleX": 0.6,
+              "ScaleY": 0.6
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3,
+              "Y": 0.47
+            },
+            "PreSize": {
+              "X": 0.3438,
+              "Y": 0.8062
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 82.0,
+            "RightMargin": 338.0,
+            "TopMargin": 81.2,
+            "BottomMargin": 42.8,
+            "Tag": 108,
+            "ActionTag": -542383906,
+            "Size": {
+              "X": 220.0,
+              "Y": 516.0
+            },
+            "VisibleForFrame": false,
+            "Name": "pnlGirl",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 125,
+              "G": 197,
+              "B": 214
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 448.0,
+              "Y": 300.8
+            },
+            "Scale": {
+              "ScaleX": 0.6,
+              "ScaleY": 0.6
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7,
+              "Y": 0.47
+            },
+            "PreSize": {
+              "X": 0.3438,
+              "Y": 0.8062
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 338.0,
+            "RightMargin": 82.0,
+            "TopMargin": 81.2,
+            "BottomMargin": 42.8,
+            "Tag": 109,
+            "ActionTag": -779791345,
+            "Size": {
+              "X": 220.0,
+              "Y": 516.0
+            },
+            "VisibleForFrame": false,
+            "Name": "pnlBoy",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 24,
+            "LabelText": "Selección de Personaje\n",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 585.3035
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.9145
+            },
+            "PreSize": {
+              "X": 0.4688,
+              "Y": 0.0781
+            },
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 170.0,
+            "RightMargin": 170.0,
+            "TopMargin": 29.6965,
+            "BottomMargin": 560.3035,
+            "Tag": 95,
+            "ActionTag": 2068887668,
+            "Size": {
+              "X": 300.0,
+              "Y": 50.0
+            },
+            "Name": "Text_4",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "ButtonText": "Continuar",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Normal",
+              "Path": "botonGenerico.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "botonGenerico.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "botonGenerico.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 163,
+            "Scale9Height": 33,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 63.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.0984
+            },
+            "PreSize": {
+              "X": 0.3016,
+              "Y": 0.0859
+            },
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 223.5,
+            "RightMargin": 223.5,
+            "TopMargin": 549.5,
+            "BottomMargin": 35.5,
+            "Tag": 96,
+            "ActionTag": -1033521345,
+            "Size": {
+              "X": 193.0,
+              "Y": 55.0
+            },
+            "Name": "btnContinue",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "ninoFrente1.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 448.0,
+              "Y": 300.8
+            },
+            "Scale": {
+              "ScaleX": 0.6,
+              "ScaleY": 0.6
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7,
+              "Y": 0.47
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 338.0,
+            "RightMargin": 82.0,
+            "TopMargin": 81.2,
+            "BottomMargin": 42.8,
+            "Tag": 99,
+            "ActionTag": 2129913486,
+            "Size": {
+              "X": 220.0,
+              "Y": 516.0
+            },
+            "Name": "sprtBoy",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "ninaFrente1.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 192.0,
+              "Y": 300.8
+            },
+            "Scale": {
+              "ScaleX": 0.6,
+              "ScaleY": 0.6
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3,
+              "Y": 0.47
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 82.0,
+            "RightMargin": 338.0,
+            "TopMargin": 81.2,
+            "BottomMargin": 42.8,
+            "Tag": 102,
+            "ActionTag": 1659822265,
+            "Size": {
+              "X": 220.0,
+              "Y": 516.0
+            },
+            "Name": "sprtGirl",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "FontSize": 20,
+            "IsCustomSize": true,
+            "LabelText": "",
+            "PlaceHolderText": "Escriba aqui",
+            "MaxLengthEnable": true,
+            "MaxLengthText": 15,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 1.0,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 544.0,
+              "Y": 505.6778
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.85,
+              "Y": 0.7901
+            },
+            "PreSize": {
+              "X": 0.4375,
+              "Y": 0.0781
+            },
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 264.0,
+            "RightMargin": 96.0,
+            "TopMargin": 109.3222,
+            "BottomMargin": 480.6778,
+            "Tag": 104,
+            "ActionTag": -1819666705,
+            "Size": {
+              "X": 280.0,
+              "Y": 50.0
+            },
+            "Name": "txtName",
+            "ctype": "TextFieldObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 20,
+            "LabelText": "Nombre:",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Right",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 96.0,
+              "Y": 505.68
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.15,
+              "Y": 0.7901
+            },
+            "PreSize": {
+              "X": 0.2188,
+              "Y": 0.0781
+            },
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 96.0,
+            "RightMargin": 404.0,
+            "TopMargin": 109.32,
+            "BottomMargin": 480.68,
+            "Tag": 18,
+            "ActionTag": -613433938,
+            "Size": {
+              "X": 140.0,
+              "Y": 50.0
+            },
+            "Name": "Text_1",
+            "ctype": "TextObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "../botonGenerico.png",
+        "../ninaFrente1.png",
+        "../ninoFrente1.png",
+        "../THE MINION.ttf",
+        "../wallpaper_selector.jpg"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

@@ -1,4 +1,4 @@
-var networkErrorMsg = "Error de comunicaci?n con el servidor. Verifique su conexion a internet."
+var networkErrorMsg = "Error de comunicacion con el servidor. Verifique su conexion a internet."
 
 var MainSceneC = (function(){
     var pub = {};
@@ -28,8 +28,47 @@ var MainSceneC = (function(){
                         LevelGraphC.setLevelGraph(ajax2.responseJSON.levels);
                         btnAction();
                     })
+                }else{
+                    CharacterScreenC.loadScene(ID);
+                    cc.director.runScene(CharacterScreenC.getScene());
                 }
             });
+        });
+    }
+
+    return pub;
+})();
+
+var TitleScreenC = (function(){
+    var pub = {};
+    var scene = null;
+
+    pub.loadScene = function(){
+        if(scene!=null) return;
+        var root = ccs.load(res.main_view_json);
+        LevelSelectionC.loadScene();
+        scene = root.node;
+        elementsSetup();
+    }
+
+    pub.getScene = function(){
+        return scene;
+    }
+
+    var elementsSetup = function(){
+        var btnStart = scene.getChildByName("btnStart");
+        btnStart.addClickEventListener(function(){
+            var newScene =LevelSelectionC.getScene();
+            cc.director.runScene(newScene);
+        });
+        var btnOptions = scene.getChildByName("btnOptions");
+        btnOptions.addClickEventListener(function(){
+            OptionsModalC.load(scene);
+            OptionsModalC.show();
+        });
+        var btnInstructions = scene.getChildByName("btnInstructions");
+        btnInstructions.addClickEventListener(function(){
+            alert("TODO");
         });
     }
 
@@ -39,9 +78,7 @@ var MainSceneC = (function(){
 var LevelSelectionC = (function(){
     var pub = {};
     var levelBtns = [];
-    var scene;
-    var btnStart;
-    var txtID;
+    var scene=null;
 
     var startLevel = function(){
         var id = this.getTag();
@@ -49,12 +86,12 @@ var LevelSelectionC = (function(){
     }
 
     pub.loadScene = function(){
+        if(scene!=null) return;
         var root = ccs.load(res.level_selector_view_json);
         scene = root.node;
         LevelModalC.load(scene);
         elementsSetup();
         pub.updateLevelStatus();
-        return root.node;
     }
 
     pub.getScene = function(){
@@ -68,6 +105,10 @@ var LevelSelectionC = (function(){
             levelBtns[i-1].addClickEventListener(startLevel);
             levelBtns[i-1].setTouchEnabled(true);
         }
+        var btnBack = scene.getChildByName("btnBack");
+        btnBack.addClickEventListener(function(){
+            cc.director.runScene(TitleScreenC.getScene());
+        })
     }
 
     pub.updateLevelStatus =  function(){
@@ -90,7 +131,6 @@ var LevelSelectionC = (function(){
 
     return pub;
 })();
-
 
 var LevelModalC = (function(){
     var pub = {};
@@ -383,7 +423,7 @@ PauseModalC = (function(){
         var btnLevels = layer.getChildByName("btnReturnLevelSelector");
         var btnOptions = layer.getChildByName("btnOptions");
 
-        OptionsModalC.load(layer);
+        OptionsModalC.load(pScene);
 
         btnContinue.addClickEventListener(function(){
             pub.hide();
@@ -427,7 +467,7 @@ OptionsModalC = (function(){
         var obj =  ccs.load(res.options_json);
         pScene = parentScene;
         layer = obj.node;
-        layer.setPosition(cc.p(-140,-160));
+        layer.setPosition(cc.p(0,0));
         layer.setVisible(false);
         pScene.addChild(layer,9);
 
@@ -498,6 +538,90 @@ VictoryScreenC = (function(){
             btnReturn.setEnabled(true);
         });
 
+    }
+
+    return pub;
+})();
+
+CharacterScreenC = (function(){
+    var pub = {};
+    var facebookID;
+    var listener;
+    var pnlGirl;
+    var pnlBoy;
+    var txtName;
+    var sprtBoy;
+    var sprtGirl;
+    var scene = null;
+    var male = null;
+
+    pub.loadScene = function(facebookId){
+        facebookID = facebookId;
+        if(scene!=null) return;
+        var root = ccs.load(res.character_view_json);
+        scene = root.node;
+        elementsSetup();
+    }
+
+    pub.getScene = function(){
+        return scene;
+    }
+
+    var elementsSetup = function(){
+        txtName = scene.getChildByName("txtName");
+        var btnCont = scene.getChildByName("btnContinue");
+        btnCont.addClickEventListener(function(){
+            var name = txtName.getString();
+            if(name =="" || name==null || male == null) return;
+
+            var variation = male? 0 : 1;
+            var ajax = WSHandler.registerPlayer(name, facebookID ,variation);
+            $.when(ajax).done(function(){
+                playerInfo={
+                    childName: name,
+                    facebookId:facebookID,
+                    clothesVariation: variation,
+                    coins: 0,
+                    continues: 0,
+                }
+
+                var ajax2 = WSHandler.getLevelGraph(facebookID);
+                $.when(ajax2).done(function(){
+                    LevelGraphC.setLevelGraph(ajax2.responseJSON.levels);
+                    TitleScreenC.loadScene();
+                    cc.eventManager.removeListener(listener);
+                    cc.director.runScene(TitleScreenC.getScene());
+                })
+            });
+        });
+
+        pnlGirl = scene.getChildByName("pnlGirl");
+        pnlBoy = scene.getChildByName("pnlBoy");
+
+        sprtGirl = scene.getChildByName("sprtGirl");
+        sprtBoy = scene.getChildByName("sprtBoy");
+
+        listener = cc.EventListener.create({
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            swallowTouches: true,
+            onTouchBegan: function (touch, event) {
+                var target = event.getCurrentTarget();
+                var touch = event.getTouches()[0];
+                var locationInNode = target.convertToNodeSpace(touch.getLocation());
+                var s = target.getContentSize();
+                var rect = cc.rect(0, 0, s.width, s.height);
+
+                if (cc.rectContainsPoint(rect, locationInNode)) {
+                    var name = target.getName();
+                    pnlGirl.setVisible(name=="sprtGirl");
+                    pnlBoy.setVisible(!(name=="sprtGirl"));
+                    male = !(name=="sprtGirl");
+                }
+            }
+        });
+
+        cc.eventManager.addListener(listener,sprtGirl);
+        cc.eventManager.addListener(listener.clone(), sprtBoy);
     }
 
     return pub;
