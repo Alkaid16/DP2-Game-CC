@@ -62,7 +62,10 @@
         <Image Name="pantalla-16.png" />
         <Image Name="pantalla-15.png" />
         <Image Name="pantalla-17.png" />
-        <Image Name="botonGenerico.png" />
+        <Image Name="mapa.png" />
+        <Image Name="boton.png" />
+        <Image Name="pantallas-16.png" />
+        <Image Name="pantallas-03.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

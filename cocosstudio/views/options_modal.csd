@@ -70,11 +70,11 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnBack" ActionTag="1187510147" Tag="28" IconVisible="False" LeftMargin="-54.6875" RightMargin="-87.3125" TopMargin="447.2326" BottomMargin="-46.2326" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="752" Scale9Height="217" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnBack" ActionTag="1187510147" Tag="28" IconVisible="False" LeftMargin="-54.6528" RightMargin="-87.3472" TopMargin="447.2339" BottomMargin="-46.2339" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="752" Scale9Height="217" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="782.0000" Y="239.0000" />
             <AnchorPoint ScaleX="0.4961" ScaleY="0.5118" />
-            <Position X="333.2975" Y="76.0863" />
-            <Scale ScaleX="0.5523" ScaleY="0.3577" />
+            <Position X="333.2974" Y="76.0863" />
+            <Scale ScaleX="0.3101" ScaleY="0.1674" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5208" Y="0.1189" />
             <PreSize X="1.2219" Y="0.3734" />

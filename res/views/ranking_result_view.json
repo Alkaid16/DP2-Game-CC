@@ -208,8 +208,8 @@
               "Y": 64.0
             },
             "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 0.7441,
+              "ScaleY": 0.7952
             },
             "CColor": {},
             "IconVisible": false,
@@ -276,7 +276,7 @@
               "Y": 0.35
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.3125
             },
             "HorizontalEdge": "BothEdge",
@@ -380,7 +380,7 @@
               "Y": 0.65
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.2188
             },
             "HorizontalEdge": "BothEdge",
