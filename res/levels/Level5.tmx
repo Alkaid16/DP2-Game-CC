@@ -32,12 +32,82 @@
     <property name="collectableId" value="1"/>
    </properties>
   </tile>
+  <tile id="497">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="498">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="499">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="500">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="501">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
   <tile id="506">
    <properties>
     <property name="powerupId" value="3"/>
    </properties>
   </tile>
   <tile id="507">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="509">
+   <properties>
+    <property name="collectableId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="510">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="516">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="517">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="518">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="519">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="523">
+   <properties>
+    <property name="collectableId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="527">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="528">
    <properties>
     <property name="collectableId" value="5"/>
    </properties>
@@ -80,12 +150,12 @@
  </layer>
  <layer name="Powerups" width="30" height="161">
   <data encoding="base64" compression="zlib">
-   eJzt2ksOgCAMBUC8/zXVS7gxLtyZiMZQCzMngMjnWVoKEG2ZokcAjKynM2itmMvc0XyhVk/7HLje0+43aKsmd8KdTBltSzRWAACIJj/De2ou8C+Z6lcALTgX4zx5D5cpAb511Lrcgfn4ZpDL0wyrXxQAyCLLv8nZ56G2yCisdaLpr+Nvdrq0F84=
+   eJzt2sENgCAMBVDcf011CS/GgzcT0Rhq4b0JIAT4lJYCRFum6BEAI+vpDFor5jJ3NF+o1dM+B673tPsN2qrJnXAnU0bbEo0VAACiyc/wnpoL/Eum+hVAC87FOE/+w2VKgG8dtS53YD7WDHJ5mmH1iwIAWWR5m5x9HnIWo1BHJ5r+Ov5mB6qsF8w=
   </data>
  </layer>
  <layer name="Collectables" width="30" height="161">
   <data encoding="base64" compression="zlib">
-   eJzt2jsOgzAMAFB6/6N2YmfoVAlVNBBwIJ/3VqQoOLaTIKapPfMrZpx30DhPjR8tKq5Avhrrb1nNqcb5Ma71/rrIzVPUdNui1k8e5PuNWU8x7OldAEq42if1WXqS+uYp19ly5O4+u+tDUfozMJK9nleqJ+q1Y3J2pSeR+awnoj+S0to/lTWL+qZmTeA+W7Vq3+QKZ++0VHxG3/9Gf/+eXF1LucBISu6bznT3EGeeIO/GdHTPcCfLU2s91TovnuOeFEd97cvJN/GkVd/cTeX7v2fynrt8ACgYN1I=
+   eJzt2zsOwjAMANCChFgY4P5HZOI7IlaEWiBq2pj6vRNESuLYTtJ1sRzWrUeQ02nVegS8upkPArhbh5DCdiD3OgeKAZdAY4EshmIDdTwqxjUxklZ2SeNEpBwJItgkjQWUKc1X9KoByGqq3ErONh01ItlE6geJbXG4T+CdN0+Uulozo9S8d6Qd+yCPvjzWPoZpfNtb2fs66ur/N2YOI/V4YMh+4et0TA7o3yXM59N56/02U3DnEkvtuslf3Vyi9x30pOM4FszF0s4J/anfLOn8GPoj0Fcj618xtyfjlhrf
   </data>
  </layer>
 </map>

@@ -1,59 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="70" tilewidth="32" tileheight="32" nextobjectid="1">
- <tileset firstgid="1" name="terrain" tilewidth="32" tileheight="32" tilecount="483">
-  <image source="Tilesets/terrain.png" width="672" height="736"/>
+ <tileset firstgid="1" name="integrado" tilewidth="32" tileheight="32" tilecount="630">
+  <image source="Tilesets/integrado.png" width="672" height="960"/>
   <tile id="15">
    <properties>
     <property name="trapId" value="1"/>
    </properties>
   </tile>
- </tileset>
- <tileset firstgid="484" name="random" tilewidth="32" tileheight="32" tilecount="3072">
-  <image source="Tilesets/random.png" width="2048" height="1536"/>
-  <tile id="1462">
+  <tile id="483">
+   <properties>
+    <property name="powerupId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="484">
+   <properties>
+    <property name="powerupId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="485">
    <properties>
     <property name="powerupId" value="2"/>
    </properties>
   </tile>
-  <tile id="1464">
+  <tile id="486">
    <properties>
     <property name="collectableId" value="2"/>
    </properties>
   </tile>
-  <tile id="1466">
+  <tile id="487">
    <properties>
     <property name="collectableId" value="2"/>
    </properties>
   </tile>
-  <tile id="1468">
+  <tile id="488">
    <properties>
     <property name="collectableId" value="2"/>
    </properties>
   </tile>
-  <tile id="1499">
+  <tile id="489">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="490">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="491">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="492">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="493">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="494">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="495">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="496">
    <properties>
     <property name="collectableId" value="1"/>
    </properties>
   </tile>
-  <tile id="1500">
+  <tile id="497">
    <properties>
     <property name="collectableId" value="1"/>
    </properties>
   </tile>
-  <tile id="1510">
+  <tile id="498">
    <properties>
     <property name="collectableId" value="1"/>
    </properties>
   </tile>
-  <tile id="1517">
+  <tile id="499">
    <properties>
     <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="500">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="501">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="502">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="503">
+   <properties>
+    <property name="trapId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="504">
+   <properties>
+    <property name="trapId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="505">
+   <properties>
+    <property name="trapId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="506">
+   <properties>
+    <property name="powerupId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="507">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="508">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="509">
+   <properties>
+    <property name="collectableId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="510">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="511">
+   <properties>
+    <property name="trapId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="512">
+   <properties>
+    <property name="trapId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="514">
+   <properties>
+    <property name="trapId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="515">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="516">
+   <properties>
+    <property name="collectableId" value="4"/>
    </properties>
   </tile>
  </tileset>
  <layer name="Background" width="20" height="70">
   <data encoding="base64" compression="zlib">
-   eJyVlVsOglAMBdn/Sq+swh9NyGSm1Q+igdLbnhfnuq7X5zqf3/tzfe/dqPneO4/7N+r47o0zDq57OPtI//uaZ2H/5/Nnv+e7rHvhfPbmPtzhyDvE0jDlTMT04Azb3XD4BVPD8F8sjH+72O9czd3GfeHL/nxmGqGe7L7VTzokDr9w9w8H5PCpb55rnJvmLAMKS9aazq3WdEkMTK+1F9/hLsYnz+DMk+ctM0sfpTHLKGZIYVdZQFxZY5jaHMbf5BHD2/xGHtlv8+HkJdOS4VSasHrzIus3n1tmmXatvvRte06YWX/ztWFVGjfuDAP612Zl/03vrCUmpTvbi1op3VQ+2wz1zdhys7iub4CdVzNZ9lv95lubtTw/5X1lqtVt81ZGGVbUgOnMMJj8WX2fM1eWmAeI6/ZdIPaW3+aR0tnmNWJNHokt/5vOLOOLw9JC6WvKrilfN8yZcbYX+5tPDMOak2cb96Y5y5zy86Rz46l2ND5N01tWcI5t3imfTBfWh7Wm/+eOxqN5l9lgOWceq7y45Tzb386wXDdP2szlK85cs05YlRdrn8omywnzCrEpj1tumv/Lt+X5wpkzG3fm0S0rCufygPFoOWu4VtZMeV+ZU7tXJnGHOou+s6t0UBxMeuIeG0f0WeUdcbD9jYtfs96+ScxByzbixN/KPvOT+ady2/pPHildG+ebVy2POc+0i9VYxtkub1zi+kY=
+   eJyN1llu5DAQA1Df/6SSoUNMAsQA88Jyz4fQtizVSrJ6X9d1ftb9tdbX2j/P+2d/xfvm+Xk/sX9zf8fzifML28+zMTzn8u6Jcxu/nm3271h5dl+/Y2j3nm/GkX7y3d9TnvXx2LFmz8q8n3Pr+htvxngPd3K1ettXY7CmUw2fO2l38c265p1Wo8SYeGnf9J8xPHbbnfR9Ece5fvtd+Jpwul/uG797GXvra8Nz5mifGq8Se433iZ/W26YpYlO/6sMU38G/+ct/YxA71qXV6w3zWePNvtiU/xlz1lGeZV5qqBySr74n/9Vr66BWTrpozLlnPZrW5vfUUX/llDVLfL3NKXXxFP9ZW7n2aRbKH/klFqxN43k70+aJdXrLPXNoPXZWNwxr/xNmJx/TnGwYaNqqNujHGdd06G2O2Q/x0TSz6ULjd8ZrHlkPe6LG2Yf2n8G49Nu0s2mbupa19ZvxyQXP2197N9W3zQvPyYvWw/+pX8OZ+J/4fV9/c211NFb522a29hu/1+BfHDQb4qNpqfp18CWms0fiTsy1HKa52eZ/q7G9lAd5R+w5j9JG45f6m3mrX01r1enmw5gmHKkVTUdaj+StdtXLxX6bIwe7zc4095p2JQbSjv2b/sfk/i7fm95lj5wf2n3Dq7/trLX2efpPoba32TphUQyqOXLGWjReNV7L7xZv82ce9tF8Gu/Svv1vtuV8q5+a5p3Fs/hq94ytxZK8b7hxNjjbzavhWF21XpvvbY6anz0XG02rWo5Nc1a5O+lA65vY1J51vK/PWFKr1Bs11DktzsSePc/cmra3+do41PKx/i3uxuE2c5q+ORvlVzszafg0B9qcbxrqLG76scqdjHWz90mXWl/E4ff6B5fu/eg=
   </data>
  </layer>
  <layer name="StartFinish" width="20" height="70">
@@ -63,12 +185,12 @@
    <property name="start" value="3,69"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt2DEBAAAIw7BZw78pJLCDM7mroMltigYAAAAAgN7Hd12sKwCD
+   eJzt2DEBAAAIw7BhDv+SkAAHZ3JXQZNd1yECAAAAAODs47sOMDgAjw==
   </data>
  </layer>
  <layer name="Intersection" width="20" height="70">
   <data encoding="base64" compression="zlib">
-   eJzt1cENACAIBDBWc/+l/PsjkojaTkAOLkRArXF6gM9l8reremumMu5FP+BeOrlHfm/z3yBPF8hwL3Q3AWTvA04=
+   eJzt1cENACAIBDBdzv1H8u+PSCJqOwE5uNAa5Br99AR/i+RvV/nWTGVci37AvXRyj/ze5r9BnC4Q4V6obgI1DgOc
   </data>
  </layer>
  <layer name="Maze" width="20" height="70">
@@ -88,12 +210,12 @@
  </layer>
  <layer name="Powerups" width="20" height="70">
   <data encoding="base64" compression="zlib">
-   eJzt08EJADAMA7H8sv+305bukBIM0gQGc1UAwHN6ewE+gB1J7SVthZ+0AHP0RLoLNpsDxw==
+   eJzt0zEKACAIQNG8/zWjS7REU1NbEsJ7k4ODCL81AGCbceYR9z3y+Dv8Uam9SrdCJi3AO11PFLcA/fUGZQ==
   </data>
  </layer>
  <layer name="Collectables" width="20" height="70">
   <data encoding="base64" compression="zlib">
-   eJzt1LENwCAMRFG67N9HUTYhNR0b0UcRki0E5PzfBHC2LyUAFuex+gXjKP1lNw/ZumRyW+aakH30u7BkTD/3Rd+lN+/9VnKUYZnljL6Hjlt4X+hAWJSPfVG+D/xPAxxjDEA=
+   eJzt1jEKgDAMBdBW6P0v6uKu4NCxaAnF2uG9MdkSEn5KEHPm9/7R6bOO3a4+17sX/ucO5rnMmgHyBTyL5A2/GCoZkIiytTX/lJXcWDQKpA==
   </data>
  </layer>
 </map>

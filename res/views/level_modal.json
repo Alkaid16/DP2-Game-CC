@@ -188,7 +188,7 @@
           {
             "IsCustomSize": true,
             "FontSize": 18,
-            "LabelText": "Descripción",
+            "LabelText": "Nombre del Nivel",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
@@ -211,8 +211,8 @@
               "ScaleY": 0.595
             },
             "Position": {
-              "X": 70.2334,
-              "Y": 249.2007
+              "X": 78.8034,
+              "Y": 252.9208
             },
             "Scale": {
               "ScaleX": 0.8531,
@@ -225,22 +225,22 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.2195,
-              "Y": 0.7788
+              "X": 0.2463,
+              "Y": 0.7904
             },
             "PreSize": {
-              "X": 0.4625,
-              "Y": 0.0719
+              "X": 0.4688,
+              "Y": 0.0562
             },
-            "LeftMargin": 38.3224,
-            "RightMargin": 215.6776,
-            "TopMargin": 64.7243,
-            "BottomMargin": 240.2757,
+            "LeftMargin": 6.2784,
+            "RightMargin": 163.7216,
+            "TopMargin": 59.7892,
+            "BottomMargin": 242.2108,
             "Tag": 151,
             "ActionTag": -394469845,
             "Size": {
-              "X": 66.0,
-              "Y": 15.0
+              "X": 150.0,
+              "Y": 18.0
             },
             "Name": "txtNameLevel",
             "ctype": "TextObjectData"
@@ -562,32 +562,32 @@
               "ScaleY": 0.5257
             },
             "Position": {
-              "X": 299.058,
-              "Y": 300.0544
+              "X": 302.7561,
+              "Y": 302.1294
             },
             "Scale": {
-              "ScaleX": 0.0606,
-              "ScaleY": 0.0516
+              "ScaleX": 0.0355,
+              "ScaleY": 0.0349
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.9346,
-              "Y": 0.9377
+              "X": 0.9461,
+              "Y": 0.9442
             },
             "PreSize": {
-              "X": 0.7656,
-              "Y": 0.7656
+              "X": 0.9438,
+              "Y": 0.975
             },
-            "LeftMargin": 191.716,
-            "RightMargin": -116.716,
-            "TopMargin": -96.2459,
-            "BottomMargin": 171.2459,
+            "LeftMargin": 170.4499,
+            "RightMargin": -152.4499,
+            "TopMargin": -130.111,
+            "BottomMargin": 138.111,
             "Tag": 16,
             "ActionTag": -1224243608,
             "Size": {
-              "X": 245.0,
-              "Y": 245.0
+              "X": 302.0,
+              "Y": 312.0
             },
             "Name": "btnExit",
             "ctype": "ButtonObjectData"
@@ -655,7 +655,7 @@
               "Y": 0.1196
             },
             "PreSize": {
-              "X": 0.4062,
+              "X": 0.4063,
               "Y": 0.0938
             },
             "HorizontalEdge": "BothEdge",
@@ -680,16 +680,6 @@
               "R": 65,
               "G": 65,
               "B": 70
-            },
-            "DisabledFileData": {
-              "Type": "Normal",
-              "Path": "btnContinuar.png",
-              "Plist": ""
-            },
-            "PressedFileData": {
-              "Type": "Normal",
-              "Path": "btnContinuar.png",
-              "Plist": ""
             },
             "NormalFileData": {
               "Type": "Normal",
@@ -717,8 +707,8 @@
               "ScaleY": 0.4118
             },
             "Position": {
-              "X": 230.3198,
-              "Y": 35.634
+              "X": 231.8285,
+              "Y": 35.9618
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -727,17 +717,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.7197,
-              "Y": 0.1114
+              "X": 0.7245,
+              "Y": 0.1124
             },
             "PreSize": {
               "X": 0.375,
               "Y": 0.0938
             },
-            "LeftMargin": 170.4312,
-            "RightMargin": 29.5688,
-            "TopMargin": 266.7197,
-            "BottomMargin": 23.2803,
+            "LeftMargin": 171.9365,
+            "RightMargin": 28.0635,
+            "TopMargin": 266.3922,
+            "BottomMargin": 23.6078,
             "Tag": 152,
             "ActionTag": -1673047390,
             "Size": {

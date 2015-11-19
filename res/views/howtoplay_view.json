@@ -664,7 +664,7 @@
           },
           {
             "FontSize": 10,
-            "LabelText": "Red: Con las teclas direccionales,\nsigue la secuencia de flechas",
+            "LabelText": "Soga: Con las teclas direccionales,\nsigue la secuencia de flechas",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
@@ -686,8 +686,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 443.3564,
-              "Y": 112.4162
+              "X": 444.4613,
+              "Y": 120.1441
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -700,21 +700,21 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.6927,
-              "Y": 0.1757
+              "X": 0.6945,
+              "Y": 0.1877
             },
             "PreSize": {
               "X": 0.2937,
               "Y": 0.0469
             },
-            "LeftMargin": 349.3564,
-            "RightMargin": 102.6437,
-            "TopMargin": 512.5838,
-            "BottomMargin": 97.4162,
+            "LeftMargin": 347.4613,
+            "RightMargin": 98.5387,
+            "TopMargin": 504.8559,
+            "BottomMargin": 105.1441,
             "Tag": 38,
             "ActionTag": 305943118,
             "Size": {
-              "X": 188.0,
+              "X": 194.0,
               "Y": 30.0
             },
             "Name": "Text_2_0_0_0_0_0",
@@ -744,8 +744,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 443.47,
-              "Y": 54.8374
+              "X": 439.47,
+              "Y": 61.8374
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -758,18 +758,18 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.6929,
-              "Y": 0.0857
+              "X": 0.6867,
+              "Y": 0.0966
             },
             "PreSize": {
               "X": 0.2625,
               "Y": 0.0469
             },
             "HorizontalEdge": "LeftEdge",
-            "LeftMargin": 359.47,
-            "RightMargin": 112.53,
-            "TopMargin": 570.1626,
-            "BottomMargin": 39.8374,
+            "LeftMargin": 355.47,
+            "RightMargin": 116.53,
+            "TopMargin": 563.1626,
+            "BottomMargin": 46.8374,
             "Tag": 39,
             "ActionTag": -1223435719,
             "Size": {
@@ -889,8 +889,8 @@
             "Tag": 45,
             "ActionTag": -896165827,
             "Size": {
-              "X": 135.0,
-              "Y": 13.0
+              "X": 154.0,
+              "Y": 15.0
             },
             "Name": "Text_2_0_0_0_1_0",
             "ctype": "TextObjectData"
@@ -1012,307 +1012,6 @@
             "ctype": "TextObjectData"
           },
           {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "red_trap.png",
-              "Plist": ""
-            },
-            "Scale9Width": 109,
-            "Scale9Height": 87,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.4427
-            },
-            "Position": {
-              "X": 311.51,
-              "Y": 110.0026
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4867,
-              "Y": 0.1719
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0625
-            },
-            "LeftMargin": 281.51,
-            "RightMargin": 298.49,
-            "TopMargin": 507.7054,
-            "BottomMargin": 92.2946,
-            "Tag": 54,
-            "ActionTag": -448565194,
-            "Size": {
-              "X": 60.0,
-              "Y": 40.0
-            },
-            "Name": "Image_15",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "escudo_powerup.png",
-              "Plist": ""
-            },
-            "Scale9Width": 85,
-            "Scale9Height": 114,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 63.51,
-              "Y": 111.1553
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0992,
-              "Y": 0.1737
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0625
-            },
-            "LeftMargin": 33.51,
-            "RightMargin": 546.49,
-            "TopMargin": 508.8447,
-            "BottomMargin": 91.1553,
-            "Tag": 56,
-            "ActionTag": -496606408,
-            "Size": {
-              "X": 60.0,
-              "Y": 40.0
-            },
-            "Name": "Image_17",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "botas_powerup.png",
-              "Plist": ""
-            },
-            "Scale9Width": 60,
-            "Scale9Height": 40,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 63.0,
-              "Y": 167.845
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0984,
-              "Y": 0.2623
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0625
-            },
-            "LeftMargin": 33.0,
-            "RightMargin": 547.0,
-            "TopMargin": 452.155,
-            "BottomMargin": 147.845,
-            "Tag": 59,
-            "ActionTag": -1341006323,
-            "Size": {
-              "X": 60.0,
-              "Y": 40.0
-            },
-            "Name": "Image_20",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "lonchera_trap.png",
-              "Plist": ""
-            },
-            "Scale9Width": 46,
-            "Scale9Height": 36,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 311.5104,
-              "Y": 176.3597
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4867,
-              "Y": 0.2756
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0625
-            },
-            "LeftMargin": 281.5104,
-            "RightMargin": 298.4896,
-            "TopMargin": 443.6403,
-            "BottomMargin": 156.3597,
-            "Tag": 60,
-            "ActionTag": 1831374459,
-            "Size": {
-              "X": 60.0,
-              "Y": 40.0
-            },
-            "Name": "Image_21",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "antorcha_powerup.png",
-              "Plist": ""
-            },
-            "Scale9Width": 49,
-            "Scale9Height": 62,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 63.0,
-              "Y": 225.8651
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0984,
-              "Y": 0.3529
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0625
-            },
-            "LeftMargin": 33.0,
-            "RightMargin": 547.0,
-            "TopMargin": 394.1349,
-            "BottomMargin": 205.8651,
-            "Tag": 62,
-            "ActionTag": -910904942,
-            "Size": {
-              "X": 60.0,
-              "Y": 40.0
-            },
-            "Name": "Image_22_0",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "huecos_trap.png",
-              "Plist": ""
-            },
-            "Scale9Width": 48,
-            "Scale9Height": 40,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 311.51,
-              "Y": 227.1391
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4867,
-              "Y": 0.3549
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0625
-            },
-            "LeftMargin": 281.51,
-            "RightMargin": 298.49,
-            "TopMargin": 392.8609,
-            "BottomMargin": 207.1391,
-            "Tag": 63,
-            "ActionTag": 409355099,
-            "Size": {
-              "X": 60.0,
-              "Y": 40.0
-            },
-            "Name": "Image_22_0_0",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "pizarra_trap.png",
-              "Plist": ""
-            },
-            "Scale9Width": 51,
-            "Scale9Height": 58,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 311.51,
-              "Y": 56.3761
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4867,
-              "Y": 0.0881
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0625
-            },
-            "LeftMargin": 281.51,
-            "RightMargin": 298.49,
-            "TopMargin": 563.6239,
-            "BottomMargin": 36.3761,
-            "Tag": 64,
-            "ActionTag": -1235738299,
-            "Size": {
-              "X": 60.0,
-              "Y": 40.0
-            },
-            "Name": "Image_22_0_0_0",
-            "ctype": "ImageViewObjectData"
-          },
-          {
             "FontSize": 14,
             "ButtonText": "Button",
             "TextColor": {
@@ -1390,18 +1089,190 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "reloj_powerup.PNG",
+              "Path": "lunchbox.png",
               "Plist": ""
             },
-            "Scale9Width": 46,
-            "Scale9Height": 54,
+            "Scale9Width": 32,
+            "Scale9Height": 32,
             "AnchorPoint": {
               "ScaleX": 0.5,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 63.0,
-              "Y": 58.9536
+              "X": 309.9652,
+              "Y": 174.4571
+            },
+            "Scale": {
+              "ScaleX": 1.47,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4843,
+              "Y": 0.2726
+            },
+            "PreSize": {
+              "X": 0.05,
+              "Y": 0.05
+            },
+            "LeftMargin": 293.9652,
+            "RightMargin": 314.0348,
+            "TopMargin": 449.5429,
+            "BottomMargin": 158.4571,
+            "Tag": 29,
+            "ActionTag": -1211079692,
+            "Size": {
+              "X": 32.0,
+              "Y": 32.0
+            },
+            "Name": "Image_5",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "rope.png",
+              "Plist": ""
+            },
+            "Scale9Width": 32,
+            "Scale9Height": 32,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 311.7726,
+              "Y": 121.2713
+            },
+            "Scale": {
+              "ScaleX": 1.345,
+              "ScaleY": 1.207
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4871,
+              "Y": 0.1895
+            },
+            "PreSize": {
+              "X": 0.05,
+              "Y": 0.05
+            },
+            "LeftMargin": 295.7726,
+            "RightMargin": 312.2274,
+            "TopMargin": 502.7287,
+            "BottomMargin": 105.2713,
+            "Tag": 30,
+            "ActionTag": 2016626566,
+            "Size": {
+              "X": 32.0,
+              "Y": 32.0
+            },
+            "Name": "Image_6",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "antorcha.PNG",
+              "Plist": ""
+            },
+            "Scale9Width": 9,
+            "Scale9Height": 31,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 63.5646,
+              "Y": 227.8947
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0993,
+              "Y": 0.3561
+            },
+            "PreSize": {
+              "X": 0.0141,
+              "Y": 0.0484
+            },
+            "LeftMargin": 59.0646,
+            "RightMargin": 571.9354,
+            "TopMargin": 396.6053,
+            "BottomMargin": 212.3947,
+            "Tag": 31,
+            "ActionTag": -2048772768,
+            "Size": {
+              "X": 9.0,
+              "Y": 31.0
+            },
+            "Name": "Image_7",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "botas.PNG",
+              "Plist": ""
+            },
+            "Scale9Width": 31,
+            "Scale9Height": 25,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 62.4753,
+              "Y": 168.8932
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0976,
+              "Y": 0.2639
+            },
+            "PreSize": {
+              "X": 0.0484,
+              "Y": 0.0391
+            },
+            "LeftMargin": 46.9753,
+            "RightMargin": 562.0247,
+            "TopMargin": 458.6068,
+            "BottomMargin": 156.3932,
+            "Tag": 32,
+            "ActionTag": -259242407,
+            "Size": {
+              "X": 31.0,
+              "Y": 25.0
+            },
+            "Name": "Image_8",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "escudo.PNG",
+              "Plist": ""
+            },
+            "Scale9Width": 29,
+            "Scale9Height": 28,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 62.9719,
+              "Y": 112.3871
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -1411,23 +1282,152 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.0984,
-              "Y": 0.0921
+              "Y": 0.1756
             },
             "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0625
+              "X": 0.0453,
+              "Y": 0.0437
             },
-            "LeftMargin": 33.0,
-            "RightMargin": 547.0,
-            "TopMargin": 561.0464,
-            "BottomMargin": 38.9536,
-            "Tag": 118,
-            "ActionTag": -544607750,
+            "LeftMargin": 48.4719,
+            "RightMargin": 562.5281,
+            "TopMargin": 513.6129,
+            "BottomMargin": 98.3871,
+            "Tag": 33,
+            "ActionTag": -451788485,
             "Size": {
-              "X": 60.0,
-              "Y": 40.0
+              "X": 29.0,
+              "Y": 28.0
             },
-            "Name": "Image_1",
+            "Name": "Image_9",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "hueco.PNG",
+              "Plist": ""
+            },
+            "Scale9Width": 81,
+            "Scale9Height": 79,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 313.5626,
+              "Y": 226.507
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4899,
+              "Y": 0.3539
+            },
+            "PreSize": {
+              "X": 0.0547,
+              "Y": 0.0547
+            },
+            "LeftMargin": 296.0626,
+            "RightMargin": 308.9374,
+            "TopMargin": 395.993,
+            "BottomMargin": 209.007,
+            "Tag": 36,
+            "ActionTag": 2011591730,
+            "Size": {
+              "X": 35.0,
+              "Y": 35.0
+            },
+            "Name": "Image_12",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "reloj.PNG",
+              "Plist": ""
+            },
+            "Scale9Width": 32,
+            "Scale9Height": 31,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 63.3995,
+              "Y": 59.2643
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0991,
+              "Y": 0.0926
+            },
+            "PreSize": {
+              "X": 0.05,
+              "Y": 0.0484
+            },
+            "LeftMargin": 47.3995,
+            "RightMargin": 560.6005,
+            "TopMargin": 565.2357,
+            "BottomMargin": 43.7643,
+            "Tag": 38,
+            "ActionTag": 130301812,
+            "Size": {
+              "X": 32.0,
+              "Y": 31.0
+            },
+            "Name": "Image_14",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pizarra.PNG",
+              "Plist": ""
+            },
+            "Scale9Width": 31,
+            "Scale9Height": 32,
+            "AnchorPoint": {
+              "ScaleX": 0.5149,
+              "ScaleY": 0.4509
+            },
+            "Position": {
+              "X": 315.9594,
+              "Y": 60.6104
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4937,
+              "Y": 0.0947
+            },
+            "PreSize": {
+              "X": 0.0484,
+              "Y": 0.05
+            },
+            "LeftMargin": 299.9976,
+            "RightMargin": 309.0024,
+            "TopMargin": 561.819,
+            "BottomMargin": 46.181,
+            "Tag": 39,
+            "ActionTag": 1407506102,
+            "Size": {
+              "X": 31.0,
+              "Y": 32.0
+            },
+            "Name": "Image_15",
             "ctype": "ImageViewObjectData"
           }
         ],
@@ -1439,20 +1439,20 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "antorcha_powerup.png",
-        "botas_powerup.png",
+        "antorcha.PNG",
+        "botas.PNG",
         "btnRegresar.png",
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
-        "escudo_powerup.png",
+        "escudo.PNG",
         "example_movement.png",
         "fondo1.png",
-        "huecos_trap.png",
+        "hueco.PNG",
         "keyboards.png",
-        "lonchera_trap.png",
-        "pizarra_trap.png",
-        "red_trap.png",
-        "reloj_powerup.PNG",
+        "lunchbox.png",
+        "pizarra.PNG",
+        "reloj.PNG",
+        "rope.png",
         "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"

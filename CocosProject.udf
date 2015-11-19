@@ -4,7 +4,7 @@
       <Value ctype="CocosRecentOperation">
         <LastPublishType Value="Resource" />
         <IsLastPublish Value="True" />
-        <LastRunType Value="Web" />
+        <LastRunType Value="Windows" />
       </Value>
     </Item>
     <Item Key="PackageParamsKey">
@@ -18,7 +18,7 @@
         <iOS_Target Value="CocosProject-mobile" />
         <iOS_BundleID Value="" />
         <Platform Value="None" />
-        <RunPlatform Value="Web" />
+        <RunPlatform Value="None" />
         <FrameworkVersion Value="cocos2d-x-3.8.1" />
         <IsDebugKeystore Value="True" />
         <KeystorePassword Value="" />
@@ -31,11 +31,11 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="defeat_view.csd" />
-          <FilePathData Path="level_modal.csd" />
-          <FilePathData Path="level_selector_view.csd" />
+          <FilePathData Path="views/main_view.csd" />
+          <FilePathData Path="views/character_view.csd" />
+          <FilePathData Path="MainScreen.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="defeat_view.csd" />
+        <ActiveDocument Path="views/character_view.csd" />
       </Value>
     </Item>
   </Properties>

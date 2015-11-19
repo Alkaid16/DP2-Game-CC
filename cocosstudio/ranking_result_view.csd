@@ -19,7 +19,7 @@
           <AbstractNodeData Name="lblVictory" ActionTag="-22948474" Tag="45" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="155.4093" RightMargin="164.5907" TopMargin="47.3197" BottomMargin="547.6803" IsCustomSize="True" FontSize="48" LabelText="¡Ganaste!" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="320.0000" Y="45.0000" />
             <AnchorPoint ScaleX="0.4998" ScaleY="0.5000" />
-            <Position X="315.3453" Y="570.1803" />
+            <Position X="315.3280" Y="570.1760" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.4927" Y="0.8909" />
@@ -40,18 +40,18 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnLevels" ActionTag="-1312379699" Tag="60" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="128.0000" RightMargin="128.0000" TopMargin="528.0000" BottomMargin="16.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1247" Scale9Height="205" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="384.0000" Y="96.0000" />
+          <AbstractNodeData Name="btnLevels" ActionTag="-1312379699" Tag="60" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="222.3040" RightMargin="222.3040" TopMargin="544.0000" BottomMargin="32.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1247" Scale9Height="205" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="195.3920" Y="64.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="320.0000" Y="64.0000" />
-            <Scale ScaleX="0.7441" ScaleY="0.7952" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.1000" />
-            <PreSize X="0.6000" Y="0.1500" />
+            <PreSize X="0.3053" Y="0.1000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
             <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Normal" Path="pantallas-13.png" Plist="" />
+            <NormalFileData Type="Normal" Path="btnSelecNiveles.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>

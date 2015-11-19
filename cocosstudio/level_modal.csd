@@ -119,7 +119,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnExit" ActionTag="-1224243608" Tag="16" IconVisible="False" LeftMargin="170.4499" RightMargin="-152.4499" TopMargin="-130.1110" BottomMargin="138.1110" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="272" Scale9Height="290" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnExit" ActionTag="-1224243608" Tag="16" IconVisible="False" LeftMargin="170.4499" RightMargin="-152.4499" TopMargin="-130.1110" BottomMargin="138.1110" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="215" Scale9Height="223" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="302.0000" Y="312.0000" />
             <AnchorPoint ScaleX="0.4381" ScaleY="0.5257" />
             <Position X="302.7561" Y="302.1294" />
@@ -148,17 +148,15 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnContinue" ActionTag="-1673047390" Tag="152" IconVisible="False" LeftMargin="170.4312" RightMargin="29.5688" TopMargin="266.7197" BottomMargin="23.2803" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="774" Scale9Height="206" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnContinue" ActionTag="-1673047390" Tag="152" IconVisible="False" LeftMargin="171.9365" RightMargin="28.0635" TopMargin="266.3922" BottomMargin="23.6078" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="774" Scale9Height="206" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="120.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.4991" ScaleY="0.4118" />
-            <Position X="230.3198" Y="35.6340" />
+            <Position X="231.8285" Y="35.9618" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.7197" Y="0.1114" />
+            <PrePosition X="0.7245" Y="0.1124" />
             <PreSize X="0.3750" Y="0.0938" />
             <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Normal" Path="btnContinuar.png" Plist="" />
-            <PressedFileData Type="Normal" Path="btnContinuar.png" Plist="" />
             <NormalFileData Type="Normal" Path="btnContinuar.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
