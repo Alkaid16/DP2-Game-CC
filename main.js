@@ -71,11 +71,14 @@ cc.game.onStart = function(){
         } else {
             cc.log("Login failed, error #" + code + ": " + response);
         }
+        loadInfoAfterLogin();
     });
 
 
+};
+cc.game.run();
 
-
+function loadInfoAfterLogin(){
     //load resources
     cc.LoaderScene.preload(g_resources, function () {
         var mainScreen = new cc.Scene();
@@ -104,7 +107,7 @@ cc.game.onStart = function(){
                 });
                 cc.log(response["id"]);
 
-            //Opcion local
+                //Opcion local
             } else {
                 cc.log("Graph API request failed, error #" + type + ": " + response);
                 var mainScreenLayer = MainSceneC.loadMainScreen(function(){
@@ -118,5 +121,4 @@ cc.game.onStart = function(){
         });
 
     }, this);
-};
-cc.game.run();
+}
