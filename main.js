@@ -87,7 +87,7 @@ function loadInfoAfterLogin(){
 
         fbAgent.api("/me", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
             if (type == plugin.FacebookAgent.CODE_SUCCEED) {
-                var ajax = WSHandler.getPlayerInfo(response[id]);
+                var ajax = WSHandler.getPlayerInfo(response["id"]);
 
                 $.when(ajax).done(function(){
                     playerInfo = ajax.player;
@@ -101,7 +101,7 @@ function loadInfoAfterLogin(){
                         })
 
                     }else{
-                        CharacterScreenC.loadScene(response[id]);
+                        CharacterScreenC.loadScene(response["id"]);
                         cc.director.runScene(CharacterScreenC.getScene());
                     }
                 });
