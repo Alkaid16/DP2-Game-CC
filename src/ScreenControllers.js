@@ -68,7 +68,8 @@ var TitleScreenC = (function(){
         });
         var btnInstructions = scene.getChildByName("btnInstructions");
         btnInstructions.addClickEventListener(function(){
-            alert("TODO");
+           HowToPlaySceneC.loadScene();
+            cc.director.runScene(HowToPlaySceneC.getScene());
         });
     }
 
@@ -461,8 +462,22 @@ OptionsModalC = (function(){
     var layer;
     var pScene;
     var btnBack;
-    var pScene;
+    var cLayer;
 
+    function createCoverLayer(){
+        cLayer = new cc.LayerColor(cc.color(0,0,0), 640,640);
+        cLayer.setOpacity(0);
+        cLayer.setPosition(cc.p(0,0));
+        pScene.addChild(cLayer,9);
+        cLayer.cListener = cc.EventListener.create({
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            swallowTouches: false,
+            onTouchBegan: function (touch, event) {
+                return true;
+            }
+        });
+        cc.eventManager.addListener(cLayer.cListener,cLayer);
+    }
 
     pub.load = function(parentScene){
         var obj =  ccs.load(res.options_json);
@@ -470,24 +485,29 @@ OptionsModalC = (function(){
         layer = obj.node;
         layer.setPosition(cc.p(0,0));
         layer.setVisible(false);
-        pScene.addChild(layer,9);
-
+        pScene.addChild(layer,10);
+        createCoverLayer();
         var btnBack = layer.getChildByName("btnBack");
 
         btnBack.addClickEventListener(function(){
             pub.hide();
         });
 
-
     };
 
     pub.show = function(){
+        cLayer.cListener.swallowTouches = true;
         layer.setVisible(true);
-
+        cLayer.runAction(cc.fadeTo(0.3,160));
     }
 
     pub.hide = function(){
         layer.setVisible(false);
+        cLayer.runAction(cc.fadeTo(0.3,0));
+        setTimeout(function(){
+            layer.setVisible(false);
+            cLayer.cListener.swallowTouches = false;
+        },400);
     }
 
     pub.getLayer = function(){
@@ -623,6 +643,32 @@ CharacterScreenC = (function(){
 
         cc.eventManager.addListener(listener,sprtGirl);
         cc.eventManager.addListener(listener.clone(), sprtBoy);
+    }
+
+    return pub;
+})();
+
+var HowToPlaySceneC = (function(){
+    var scene;
+    var txtScore;
+    var txtCoins;
+    var txtTime;
+    var btnReturn;
+    var pub = {};
+    var btnBack;
+
+    pub.loadScene = function(){
+        var obj = ccs.load(res.howtoplay_json);
+        scene = obj.node;
+
+        btnBack = scene.getChildByName("btnBack");
+        btnBack.addClickEventListener(function(event){
+            cc.director.runScene(TitleScreenC.getScene());
+        });
+    }
+
+    pub.getScene = function(){
+        return scene;
     }
 
     return pub;

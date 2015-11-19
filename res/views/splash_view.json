@@ -209,7 +209,7 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../Default/ImageFile.png"
+        "Default/ImageFile.png"
       ],
       "ctype": "GameProjectData"
     }

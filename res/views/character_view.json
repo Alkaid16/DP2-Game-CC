@@ -513,11 +513,11 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../botonGenerico.png",
-        "../ninaFrente1.png",
-        "../ninoFrente1.png",
-        "../THE MINION.ttf",
-        "../wallpaper_selector.jpg"
+        "botonGenerico.png",
+        "ninaFrente1.png",
+        "ninoFrente1.png",
+        "THE MINION.ttf",
+        "wallpaper_selector.jpg"
       ],
       "ctype": "GameProjectData"
     }

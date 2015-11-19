@@ -17,43 +17,37 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "wallpaper_selector.jpg",
+              "Path": "fondo1.png",
               "Plist": ""
             },
-            "Scale9Width": 259,
-            "Scale9Height": 194,
-            "AnchorPoint": {
-              "ScaleY": 0.5
-            },
+            "Scale9Width": 2667,
+            "Scale9Height": 2667,
+            "AnchorPoint": {},
             "Position": {
-              "X": 3.8529,
-              "Y": 317.2679
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
-              "ScaleX": 2.4357,
-              "ScaleY": 3.2292
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.006,
-              "Y": 0.4957
+              "X": 0.0,
+              "Y": 0.0
             },
             "PreSize": {
-              "X": 0.4047,
-              "Y": 0.3031
+              "X": 1.0,
+              "Y": 1.0
             },
-            "LeftMargin": 3.8529,
-            "RightMargin": 377.1471,
-            "TopMargin": 225.7321,
-            "BottomMargin": 220.2679,
-            "Tag": 46,
-            "ActionTag": -803670824,
+            "Tag": 77,
+            "ActionTag": 1959928105,
             "Size": {
-              "X": 259.0,
-              "Y": 194.0
+              "X": 640.0,
+              "Y": 640.0
             },
-            "Name": "imgSelectWallpaper",
+            "Name": "Image_1",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -111,8 +105,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": -2.2067,
-                  "Y": 100.61
+                  "X": -2.7871,
+                  "Y": 97.4785
                 },
                 "Scale": {
                   "ScaleX": 0.1029,
@@ -121,17 +115,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": -0.011,
-                  "Y": 0.503
+                  "X": -0.0139,
+                  "Y": 0.4874
                 },
                 "PreSize": {
                   "X": 3.0609,
                   "Y": 2.6906
                 },
-                "LeftMargin": -2.2067,
-                "RightMargin": -1756.7932,
-                "TopMargin": -761.61,
-                "BottomMargin": -760.39,
+                "LeftMargin": -2.7871,
+                "RightMargin": -1756.2129,
+                "TopMargin": -758.4785,
+                "BottomMargin": -763.5215,
                 "Tag": 116,
                 "ActionTag": -718499982,
                 "Size": {
@@ -186,8 +180,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 100.1611,
-                  "Y": 185.8765
+                  "X": 91.3688,
+                  "Y": 183.7313
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -196,17 +190,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5008,
-                  "Y": 0.9294
+                  "X": 0.4568,
+                  "Y": 0.9187
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.445
                 },
-                "LeftMargin": 55.6611,
-                "RightMargin": 55.3389,
-                "TopMargin": -30.3765,
-                "BottomMargin": 141.3765,
+                "LeftMargin": 46.8688,
+                "RightMargin": 64.1312,
+                "TopMargin": -28.2313,
+                "BottomMargin": 139.2313,
                 "Tag": 1,
                 "ActionTag": 609633163,
                 "Size": {
@@ -261,8 +255,8 @@
                   "ScaleY": 0.6525
                 },
                 "Position": {
-                  "X": 104.4215,
-                  "Y": 158.9573
+                  "X": 95.6292,
+                  "Y": 156.8123
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -271,17 +265,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5221,
-                  "Y": 0.7948
+                  "X": 0.4781,
+                  "Y": 0.7841
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.445
                 },
-                "LeftMargin": 36.213,
-                "RightMargin": 74.787,
-                "TopMargin": 10.1154,
-                "BottomMargin": 100.8846,
+                "LeftMargin": 27.4196,
+                "RightMargin": 83.5804,
+                "TopMargin": 12.2602,
+                "BottomMargin": 98.7398,
                 "Tag": 2,
                 "ActionTag": 449092712,
                 "Size": {
@@ -336,8 +330,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 46.2577,
-                  "Y": 135.1673
+                  "X": 37.4654,
+                  "Y": 133.0224
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -346,17 +340,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2313,
-                  "Y": 0.6758
+                  "X": 0.1873,
+                  "Y": 0.6651
                 },
                 "PreSize": {
                   "X": 0.44,
                   "Y": 0.44
                 },
-                "LeftMargin": 2.2577,
-                "RightMargin": 109.7423,
-                "TopMargin": 20.8327,
-                "BottomMargin": 91.1673,
+                "LeftMargin": -6.5346,
+                "RightMargin": 118.5346,
+                "TopMargin": 22.9776,
+                "BottomMargin": 89.0224,
                 "Tag": 3,
                 "ActionTag": -1770287611,
                 "Size": {
@@ -411,8 +405,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 158.3685,
-                  "Y": 135.7557
+                  "X": 149.5764,
+                  "Y": 133.6107
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -421,17 +415,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7918,
-                  "Y": 0.6788
+                  "X": 0.7479,
+                  "Y": 0.6681
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.445
                 },
-                "LeftMargin": 113.8685,
-                "RightMargin": -2.8685,
-                "TopMargin": 19.7443,
-                "BottomMargin": 91.2557,
+                "LeftMargin": 105.0764,
+                "RightMargin": 5.9236,
+                "TopMargin": 21.8893,
+                "BottomMargin": 89.1107,
                 "Tag": 4,
                 "ActionTag": -15558320,
                 "Size": {
@@ -486,8 +480,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 46.8866,
-                  "Y": 107.0939
+                  "X": 38.0942,
+                  "Y": 104.949
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -496,17 +490,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2344,
-                  "Y": 0.5355
+                  "X": 0.1905,
+                  "Y": 0.5247
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.445
                 },
-                "LeftMargin": 2.3866,
-                "RightMargin": 108.6134,
-                "TopMargin": 48.4061,
-                "BottomMargin": 62.5939,
+                "LeftMargin": -6.4058,
+                "RightMargin": 117.4057,
+                "TopMargin": 50.551,
+                "BottomMargin": 60.449,
                 "Tag": 5,
                 "ActionTag": -1353768769,
                 "Size": {
@@ -561,8 +555,8 @@
                   "ScaleY": 0.4742
                 },
                 "Position": {
-                  "X": 134.4303,
-                  "Y": 103.8031
+                  "X": 125.638,
+                  "Y": 101.6581
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -571,17 +565,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6722,
-                  "Y": 0.519
+                  "X": 0.6282,
+                  "Y": 0.5083
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.445
                 },
-                "LeftMargin": 91.7373,
-                "RightMargin": 19.2627,
-                "TopMargin": 49.3964,
-                "BottomMargin": 61.6036,
+                "LeftMargin": 82.9447,
+                "RightMargin": 28.0553,
+                "TopMargin": 51.5457,
+                "BottomMargin": 59.4543,
                 "Tag": 6,
                 "ActionTag": 1971731476,
                 "Size": {
@@ -636,8 +630,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 186.1778,
-                  "Y": 104.7244
+                  "X": 177.3857,
+                  "Y": 102.5796
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -646,17 +640,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.9309,
-                  "Y": 0.5236
+                  "X": 0.8869,
+                  "Y": 0.5129
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.44
                 },
-                "LeftMargin": 141.6778,
-                "RightMargin": -30.6778,
-                "TopMargin": 51.2756,
-                "BottomMargin": 60.7244,
+                "LeftMargin": 132.8857,
+                "RightMargin": -21.8857,
+                "TopMargin": 53.4204,
+                "BottomMargin": 58.5796,
                 "Tag": 7,
                 "ActionTag": -807504317,
                 "Size": {
@@ -711,8 +705,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 18.4116,
-                  "Y": 76.8608
+                  "X": 20.1282,
+                  "Y": 83.1759
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -721,17 +715,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0921,
-                  "Y": 0.3843
+                  "X": 0.1006,
+                  "Y": 0.4159
                 },
                 "PreSize": {
                   "X": 0.44,
                   "Y": 0.44
                 },
-                "LeftMargin": -25.5884,
-                "RightMargin": 137.5884,
-                "TopMargin": 79.1392,
-                "BottomMargin": 32.8608,
+                "LeftMargin": -23.8718,
+                "RightMargin": 135.8718,
+                "TopMargin": 72.8241,
+                "BottomMargin": 39.1759,
                 "Tag": 8,
                 "ActionTag": -737313899,
                 "Size": {
@@ -782,12 +776,12 @@
                 "ShadowOffsetY": -2.0,
                 "TouchEnable": true,
                 "AnchorPoint": {
-                  "ScaleX": 0.5134,
-                  "ScaleY": 0.4976
+                  "ScaleX": 0.6177,
+                  "ScaleY": 0.5287
                 },
                 "Position": {
-                  "X": 70.625,
-                  "Y": 78.0098
+                  "X": 57.3948,
+                  "Y": 84.2477
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -796,17 +790,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3531,
-                  "Y": 0.39
+                  "X": 0.287,
+                  "Y": 0.4212
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.445
                 },
-                "LeftMargin": 24.9299,
-                "RightMargin": 86.0701,
-                "TopMargin": 77.2776,
-                "BottomMargin": 33.7224,
+                "LeftMargin": 2.4195,
+                "RightMargin": 108.5805,
+                "TopMargin": 73.8066,
+                "BottomMargin": 37.1934,
                 "Tag": 9,
                 "ActionTag": 784872171,
                 "Size": {
@@ -861,8 +855,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 135.8994,
-                  "Y": 74.9496
+                  "X": 127.1072,
+                  "Y": 72.8046
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -871,17 +865,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6795,
-                  "Y": 0.3747
+                  "X": 0.6355,
+                  "Y": 0.364
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.44
                 },
-                "LeftMargin": 91.3994,
-                "RightMargin": 19.6006,
-                "TopMargin": 81.0504,
-                "BottomMargin": 30.9496,
+                "LeftMargin": 82.6072,
+                "RightMargin": 28.3928,
+                "TopMargin": 83.1954,
+                "BottomMargin": 28.8046,
                 "Tag": 10,
                 "ActionTag": 1818587688,
                 "Size": {
@@ -936,8 +930,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 185.808,
-                  "Y": 73.6861
+                  "X": 177.0159,
+                  "Y": 71.5411
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -946,17 +940,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.929,
-                  "Y": 0.3684
+                  "X": 0.8851,
+                  "Y": 0.3577
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.445
                 },
-                "LeftMargin": 141.308,
-                "RightMargin": -30.308,
-                "TopMargin": 81.8139,
-                "BottomMargin": 29.1861,
+                "LeftMargin": 132.5159,
+                "RightMargin": -21.5159,
+                "TopMargin": 83.9589,
+                "BottomMargin": 27.0411,
                 "Tag": 11,
                 "ActionTag": 1795653075,
                 "Size": {
@@ -1011,8 +1005,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 21.6584,
-                  "Y": 39.3118
+                  "X": 20.2175,
+                  "Y": 40.4778
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -1021,17 +1015,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1083,
-                  "Y": 0.1966
+                  "X": 0.1011,
+                  "Y": 0.2024
                 },
                 "PreSize": {
                   "X": 0.44,
                   "Y": 0.445
                 },
-                "LeftMargin": -22.3416,
-                "RightMargin": 134.3416,
-                "TopMargin": 116.1882,
-                "BottomMargin": -5.1882,
+                "LeftMargin": -23.7825,
+                "RightMargin": 135.7825,
+                "TopMargin": 115.0222,
+                "BottomMargin": -4.0222,
                 "Tag": 12,
                 "ActionTag": -459293525,
                 "Size": {
@@ -1086,8 +1080,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 119.5547,
-                  "Y": 41.214
+                  "X": 110.7625,
+                  "Y": 39.0691
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -1096,17 +1090,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5978,
-                  "Y": 0.2061
+                  "X": 0.5538,
+                  "Y": 0.1953
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.44
                 },
-                "LeftMargin": 75.0547,
-                "RightMargin": 35.9453,
-                "TopMargin": 114.786,
-                "BottomMargin": -2.786,
+                "LeftMargin": 66.2625,
+                "RightMargin": 44.7375,
+                "TopMargin": 116.9309,
+                "BottomMargin": -4.9309,
                 "Tag": 13,
                 "ActionTag": 1878983078,
                 "Size": {
@@ -1161,8 +1155,8 @@
                   "ScaleY": 0.4662
                 },
                 "Position": {
-                  "X": 160.0466,
-                  "Y": 40.6605
+                  "X": 151.2544,
+                  "Y": 38.5156
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -1171,17 +1165,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.8002,
-                  "Y": 0.2033
+                  "X": 0.7563,
+                  "Y": 0.1926
                 },
                 "PreSize": {
                   "X": 0.445,
                   "Y": 0.445
                 },
-                "LeftMargin": 105.0485,
-                "RightMargin": 5.9515,
-                "TopMargin": 111.8346,
-                "BottomMargin": -0.8346,
+                "LeftMargin": 96.2524,
+                "RightMargin": 14.7476,
+                "TopMargin": 113.9762,
+                "BottomMargin": -2.9762,
                 "Tag": 14,
                 "ActionTag": -1345818170,
                 "Size": {
@@ -1236,8 +1230,8 @@
                   "ScaleY": 0.4689
                 },
                 "Position": {
-                  "X": 158.6804,
-                  "Y": 14.1757
+                  "X": 149.8882,
+                  "Y": 12.0307
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -1246,17 +1240,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7934,
-                  "Y": 0.0709
+                  "X": 0.7494,
+                  "Y": 0.0602
                 },
                 "PreSize": {
                   "X": 0.44,
                   "Y": 0.44
                 },
-                "LeftMargin": 118.3414,
-                "RightMargin": -6.3414,
-                "TopMargin": 139.0872,
-                "BottomMargin": -27.0872,
+                "LeftMargin": 109.549,
+                "RightMargin": 2.451,
+                "TopMargin": 141.2325,
+                "BottomMargin": -29.2325,
                 "Tag": 15,
                 "ActionTag": -1064210583,
                 "Size": {
@@ -1320,27 +1314,27 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 328.609,
-              "Y": 71.2099
+              "X": 323.987,
+              "Y": 68.866
             },
             "Scale": {
-              "ScaleX": 0.505,
-              "ScaleY": 0.3016
+              "ScaleX": 0.2293,
+              "ScaleY": 0.1938
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5135,
-              "Y": 0.1113
+              "X": 0.5062,
+              "Y": 0.1076
             },
             "PreSize": {
               "X": 1.2219,
               "Y": 0.3734
             },
-            "LeftMargin": -62.391,
-            "RightMargin": -79.609,
-            "TopMargin": 449.29,
-            "BottomMargin": -48.2901,
+            "LeftMargin": -67.013,
+            "RightMargin": -74.9869,
+            "TopMargin": 451.634,
+            "BottomMargin": -50.634,
             "Tag": 43,
             "ActionTag": 1542275581,
             "Size": {
@@ -1374,35 +1368,667 @@
               "ScaleY": 0.4724
             },
             "Position": {
-              "X": 323.5506,
-              "Y": 584.2365
+              "X": 321.9325,
+              "Y": 576.1467
             },
             "Scale": {
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5055,
-              "Y": 0.9129
+              "X": 0.503,
+              "Y": 0.9002
             },
             "PreSize": {
               "X": 0.1406,
               "Y": 0.0359
             },
-            "LeftMargin": 278.4379,
-            "RightMargin": 271.5621,
-            "TopMargin": 43.6289,
-            "BottomMargin": 573.3711,
+            "LeftMargin": 267.7921,
+            "RightMargin": 264.2079,
+            "TopMargin": 55.9393,
+            "BottomMargin": 569.0607,
             "Tag": 112,
             "ActionTag": 1814634778,
             "Size": {
-              "X": 422.0,
-              "Y": 55.0
+              "X": 108.0,
+              "Y": 15.0
             },
             "Name": "Text_1",
             "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 304.9942,
+              "Y": 465.3276
+            },
+            "Scale": {
+              "ScaleX": 0.4951,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4766,
+              "Y": 0.7271
+            },
+            "PreSize": {
+              "X": 0.0156,
+              "Y": 0.0313
+            },
+            "LeftMargin": 299.9942,
+            "RightMargin": 330.0058,
+            "TopMargin": 164.6724,
+            "BottomMargin": 455.3276,
+            "Tag": 42,
+            "ActionTag": -1625239873,
+            "Size": {
+              "X": 10.0,
+              "Y": 20.0
+            },
+            "Name": "Image_10",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.5907,
+              "ScaleY": 0.43
+            },
+            "Position": {
+              "X": 237.7207,
+              "Y": 416.5359
+            },
+            "Scale": {
+              "ScaleX": 1.0222,
+              "ScaleY": 0.5242
+            },
+            "RotationSkewX": -10.9371,
+            "RotationSkewY": -10.9369,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3714,
+              "Y": 0.6508
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0156
+            },
+            "LeftMargin": 163.8832,
+            "RightMargin": 351.1168,
+            "TopMargin": 217.7641,
+            "BottomMargin": 412.2359,
+            "Tag": 43,
+            "ActionTag": 928870879,
+            "Size": {
+              "X": 125.0,
+              "Y": 10.0
+            },
+            "Name": "Image_10_0",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.4848,
+              "ScaleY": 0.4859
+            },
+            "Position": {
+              "X": 149.8829,
+              "Y": 366.4547
+            },
+            "Scale": {
+              "ScaleX": 0.0598,
+              "ScaleY": 3.599
+            },
+            "RotationSkewX": -0.5403,
+            "RotationSkewY": -0.6433,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2342,
+              "Y": 0.5726
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0078
+            },
+            "LeftMargin": 89.2829,
+            "RightMargin": 425.7171,
+            "TopMargin": 270.9749,
+            "BottomMargin": 364.0251,
+            "Tag": 44,
+            "ActionTag": 586808321,
+            "Size": {
+              "X": 125.0,
+              "Y": 5.0
+            },
+            "Name": "Image_10_0_0",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.4848,
+              "ScaleY": 0.4859
+            },
+            "Position": {
+              "X": 124.6509,
+              "Y": 320.3927
+            },
+            "Scale": {
+              "ScaleX": 0.0598,
+              "ScaleY": 6.2842
+            },
+            "RotationSkewX": 56.6148,
+            "RotationSkewY": 56.5532,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1948,
+              "Y": 0.5006
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0078
+            },
+            "LeftMargin": 64.0509,
+            "RightMargin": 450.9491,
+            "TopMargin": 317.0368,
+            "BottomMargin": 317.9632,
+            "Tag": 45,
+            "ActionTag": -2031665315,
+            "Size": {
+              "X": 125.0,
+              "Y": 5.0
+            },
+            "Name": "Image_10_0_0_0",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.4848,
+              "ScaleY": 0.4859
+            },
+            "Position": {
+              "X": 177.3417,
+              "Y": 319.0944
+            },
+            "Scale": {
+              "ScaleX": 0.0598,
+              "ScaleY": 5.9008
+            },
+            "RotationSkewX": -44.3774,
+            "RotationSkewY": -44.4728,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2771,
+              "Y": 0.4986
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0078
+            },
+            "LeftMargin": 116.7417,
+            "RightMargin": 398.2583,
+            "TopMargin": 318.3351,
+            "BottomMargin": 316.6649,
+            "Tag": 46,
+            "ActionTag": 1504168866,
+            "Size": {
+              "X": 125.0,
+              "Y": 5.0
+            },
+            "Name": "Image_10_0_0_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.4848,
+              "ScaleY": 0.4859
+            },
+            "Position": {
+              "X": 98.2356,
+              "Y": 254.5343
+            },
+            "Scale": {
+              "ScaleX": 0.0592,
+              "ScaleY": 11.8318
+            },
+            "RotationSkewX": 1.4135,
+            "RotationSkewY": 1.2701,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1535,
+              "Y": 0.3977
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0063
+            },
+            "LeftMargin": 37.6356,
+            "RightMargin": 477.3643,
+            "TopMargin": 383.4093,
+            "BottomMargin": 252.5907,
+            "Tag": 47,
+            "ActionTag": -1128295130,
+            "Size": {
+              "X": 125.0,
+              "Y": 4.0
+            },
+            "Name": "Image_10_0_0_0_0",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.5907,
+              "ScaleY": 0.43
+            },
+            "Position": {
+              "X": 375.9156,
+              "Y": 419.9041
+            },
+            "Scale": {
+              "ScaleX": 1.054,
+              "ScaleY": 0.5242
+            },
+            "RotationSkewX": -167.1061,
+            "RotationSkewY": -167.1126,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5874,
+              "Y": 0.6561
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0156
+            },
+            "LeftMargin": 302.0781,
+            "RightMargin": 212.9219,
+            "TopMargin": 214.3959,
+            "BottomMargin": 415.6041,
+            "Tag": 48,
+            "ActionTag": -1883341585,
+            "Size": {
+              "X": 125.0,
+              "Y": 10.0
+            },
+            "Name": "Image_10_0_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.4848,
+              "ScaleY": 0.4859
+            },
+            "Position": {
+              "X": 434.2953,
+              "Y": 367.2007
+            },
+            "Scale": {
+              "ScaleX": 0.0598,
+              "ScaleY": 10.9162
+            },
+            "RotationSkewX": -132.1367,
+            "RotationSkewY": -132.2698,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6786,
+              "Y": 0.5738
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0078
+            },
+            "LeftMargin": 373.6953,
+            "RightMargin": 141.3047,
+            "TopMargin": 270.2288,
+            "BottomMargin": 364.7712,
+            "Tag": 49,
+            "ActionTag": -750758088,
+            "Size": {
+              "X": 125.0,
+              "Y": 5.0
+            },
+            "Name": "Image_10_0_0_1_0",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.4848,
+              "ScaleY": 0.4859
+            },
+            "Position": {
+              "X": 508.9351,
+              "Y": 368.093
+            },
+            "Scale": {
+              "ScaleX": 0.0598,
+              "ScaleY": 12.4961
+            },
+            "RotationSkewX": -233.6181,
+            "RotationSkewY": -233.7147,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7952,
+              "Y": 0.5751
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0078
+            },
+            "LeftMargin": 448.3351,
+            "RightMargin": 66.6649,
+            "TopMargin": 269.3365,
+            "BottomMargin": 365.6635,
+            "Tag": 50,
+            "ActionTag": -1298574117,
+            "Size": {
+              "X": 125.0,
+              "Y": 5.0
+            },
+            "Name": "Image_10_0_0_1_0_0",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.4848,
+              "ScaleY": 0.4859
+            },
+            "Position": {
+              "X": 403.7576,
+              "Y": 306.6354
+            },
+            "Scale": {
+              "ScaleX": 0.0598,
+              "ScaleY": 3.599
+            },
+            "RotationSkewX": -0.5403,
+            "RotationSkewY": -0.6434,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6309,
+              "Y": 0.4791
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0078
+            },
+            "LeftMargin": 343.1576,
+            "RightMargin": 171.8424,
+            "TopMargin": 330.7941,
+            "BottomMargin": 304.2059,
+            "Tag": 51,
+            "ActionTag": 1861446267,
+            "Size": {
+              "X": 125.0,
+              "Y": 5.0
+            },
+            "Name": "Image_10_0_0_2",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.4848,
+              "ScaleY": 0.4859
+            },
+            "Position": {
+              "X": 549.7158,
+              "Y": 304.8428
+            },
+            "Scale": {
+              "ScaleX": 0.0598,
+              "ScaleY": 4.0895
+            },
+            "RotationSkewX": -0.5387,
+            "RotationSkewY": -0.6431,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8589,
+              "Y": 0.4763
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0078
+            },
+            "LeftMargin": 489.1158,
+            "RightMargin": 25.8842,
+            "TopMargin": 332.5867,
+            "BottomMargin": 302.4133,
+            "Tag": 52,
+            "ActionTag": -1446466964,
+            "Size": {
+              "X": 125.0,
+              "Y": 5.0
+            },
+            "Name": "Image_10_0_0_2_0",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.3434,
+              "ScaleY": 0.5918
+            },
+            "Position": {
+              "X": 380.1886,
+              "Y": 239.5495
+            },
+            "Scale": {
+              "ScaleX": 0.0598,
+              "ScaleY": 8.8746
+            },
+            "RotationSkewX": -142.7572,
+            "RotationSkewY": -142.8201,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.594,
+              "Y": 0.3743
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0078
+            },
+            "LeftMargin": 337.2636,
+            "RightMargin": 177.7365,
+            "TopMargin": 398.4095,
+            "BottomMargin": 236.5905,
+            "Tag": 53,
+            "ActionTag": 174901602,
+            "Size": {
+              "X": 125.0,
+              "Y": 5.0
+            },
+            "Name": "Image_10_0_0_1_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.3434,
+              "ScaleY": 0.5918
+            },
+            "Position": {
+              "X": 442.6548,
+              "Y": 243.2369
+            },
+            "Scale": {
+              "ScaleX": 0.0521,
+              "ScaleY": 11.4584
+            },
+            "RotationSkewX": -231.7685,
+            "RotationSkewY": -231.8748,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6916,
+              "Y": 0.3801
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0078
+            },
+            "LeftMargin": 399.7298,
+            "RightMargin": 115.2702,
+            "TopMargin": 394.7221,
+            "BottomMargin": 240.2779,
+            "Tag": 54,
+            "ActionTag": -1747806221,
+            "Size": {
+              "X": 125.0,
+              "Y": 5.0
+            },
+            "Name": "Image_10_0_0_1_1_0",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "pantallas-16.png",
+              "Plist": ""
+            },
+            "Scale9Width": 1754,
+            "Scale9Height": 219,
+            "AnchorPoint": {
+              "ScaleX": 0.4848,
+              "ScaleY": 0.4859
+            },
+            "Position": {
+              "X": 471.7448,
+              "Y": 187.5737
+            },
+            "Scale": {
+              "ScaleX": 0.0598,
+              "ScaleY": 2.9691
+            },
+            "RotationSkewX": -0.5377,
+            "RotationSkewY": -0.6434,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7371,
+              "Y": 0.2931
+            },
+            "PreSize": {
+              "X": 0.1953,
+              "Y": 0.0078
+            },
+            "LeftMargin": 411.1448,
+            "RightMargin": 103.8552,
+            "TopMargin": 449.8558,
+            "BottomMargin": 185.1442,
+            "Tag": 55,
+            "ActionTag": -1072725941,
+            "Size": {
+              "X": 125.0,
+              "Y": 5.0
+            },
+            "Name": "Image_10_0_0_2_0_0",
+            "ctype": "ImageViewObjectData"
           }
         ],
         "Size": {
@@ -1413,27 +2039,28 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../1.png",
-        "../10-19.png",
-        "../11-19.png",
-        "../12-19.png",
-        "../13-19.png",
-        "../14-19.png",
-        "../15-19.png",
-        "../2-19.png",
-        "../3-19.png",
-        "../4-19.png",
-        "../5-19.png",
-        "../6-19.png",
-        "../7-19.png",
-        "../8-19.png",
-        "../9-19.png",
-        "../caja-02.png",
-        "../Default/Button_Disable.png",
-        "../Default/Button_Press.png",
-        "../pantallas-11.png",
-        "../THE MINION.ttf",
-        "../wallpaper_selector.jpg"
+        "1.png",
+        "10-19.png",
+        "11-19.png",
+        "12-19.png",
+        "13-19.png",
+        "14-19.png",
+        "15-19.png",
+        "2-19.png",
+        "3-19.png",
+        "4-19.png",
+        "5-19.png",
+        "6-19.png",
+        "7-19.png",
+        "8-19.png",
+        "9-19.png",
+        "caja-02.png",
+        "Default/Button_Disable.png",
+        "Default/Button_Press.png",
+        "fondo1.png",
+        "pantallas-11.png",
+        "pantallas-16.png",
+        "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"
     }
