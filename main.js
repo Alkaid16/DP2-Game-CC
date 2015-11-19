@@ -60,6 +60,7 @@ cc.game.onStart = function(){
     // The game will be resized when browser size change
     cc.view.resizeWithBrowserSize(true);
     cc.FIX_ARTIFACTS_BY_STRECHING_TEXEL = 1;
+    fbAgent = plugin.FacebookAgent.getInstance();
 
     //load resources
     cc.LoaderScene.preload(g_resources, function () {
@@ -67,13 +68,41 @@ cc.game.onStart = function(){
         ChildSM.initAnimations();
         DefeatModalC.load();
 
-        var mainScreenLayer = MainSceneC.loadMainScreen(function(){
-            TitleScreenC.loadScene();
-            cc.director.runScene(TitleScreenC.getScene());
+        fbAgent.api("/me", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
+            if (type == plugin.FacebookAgent.CODE_SUCCEED) {
+                var ajax = WSHandler.getPlayerInfo(response[id]);
+
+                $.when(ajax).done(function(){
+                    playerInfo = ajax.player;
+
+                    if('idPlayer' in playerInfo) {
+                        var ajax2 = WSHandler.getLevelGraph(playerInfo.idPlayer);
+                        $.when(ajax2).done(function(){
+                            LevelGraphC.setLevelGraph(ajax2.responseJSON.levels);
+                            TitleScreenC.loadScene();
+                            cc.director.runScene(TitleScreenC.getScene());
+                        })
+
+                    }else{
+                        CharacterScreenC.loadScene(response[id]);
+                        cc.director.runScene(CharacterScreenC.getScene());
+                    }
+                });
+                cc.log(response["id"]);
+
+            //Opcion local
+            } else {
+                cc.log("Graph API request failed, error #" + type + ": " + response);
+                var mainScreenLayer = MainSceneC.loadMainScreen(function(){
+                    TitleScreenC.loadScene();
+                    cc.director.runScene(TitleScreenC.getScene());
+                });
+
+                mainScreen.addChild(mainScreenLayer);
+                cc.director.runScene(mainScreen);
+            }
         });
 
-        mainScreen.addChild(mainScreenLayer);
-        cc.director.runScene(mainScreen);
     }, this);
 };
 cc.game.run();
