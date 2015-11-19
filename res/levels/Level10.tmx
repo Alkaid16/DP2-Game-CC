@@ -142,6 +142,11 @@
     <property name="trapId" value="4"/>
    </properties>
   </tile>
+  <tile id="516">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="Background" width="35" height="205">
   <data encoding="base64" compression="zlib">
@@ -185,7 +190,7 @@
  </layer>
  <layer name="Collectables" width="35" height="205">
   <data encoding="base64" compression="zlib">
-   eJzt3MkKwjAUBdD2/3/CvyuIA047p40bizhgEvKSc3ZCERLb9Pry2mEAIjmNz5+n8fVxABHM17RlR2vapqOxvrNLPA9X88rMyjkRymUcFim/b36fIS7re149ZTC+d3BeQFPWrmkqJedBfiVqI2qdgDosv1BzSC96rlbLB4gh+v3mH1PifWxolb2ItPx3gnh6zkstSt3fXJtt4fHJCTEd/W5/aanueWtoLABADLnyh1xDT1qvbQDkZq+uHHVIAKB232TD0nvwEI1nkPPbm2Me9Gn1oeS6mvq9kEDdSvbDt9RjCXxWsmdHfxA1OMvRwAt31LIxbw==
+   eJzt2LEOgjAUBVA18f9/1NFVY5gcpLXQtLSPc0bigOH13QuXCzCy13X9+iNxHWA091vb33NuqZxcyEoiizrf76D/i3pm46tFV9K/zmFrduw5d7luBoyp9KxH7Z/0kZsfPW+fGfrbDPeYMvO9rznqnOmG/dilLPS1Pkp2m2fxX7SsHYEsICo7lchmzEN5c065DpybCd8FoI0t/WjGrGEssh9+ORf15NOczP4+5r3e0+xBNd9o2rDjOYpsZCSt5nEtu+xdjhL1fdiZYla6UDxbnqndBW34dgRjKMk5XQggppL97n3onDx3RqCDAin2A9BTaTe2mwCYwQeZJSs/
   </data>
  </layer>
 </map>

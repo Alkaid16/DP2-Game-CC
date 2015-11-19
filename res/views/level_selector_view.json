@@ -105,7 +105,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": -2.7871,
+                  "X": -1.6873,
                   "Y": 97.4785
                 },
                 "Scale": {
@@ -115,15 +115,15 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": -0.0139,
+                  "X": -0.0084,
                   "Y": 0.4874
                 },
                 "PreSize": {
                   "X": 3.0609,
                   "Y": 2.6906
                 },
-                "LeftMargin": -2.7871,
-                "RightMargin": -1756.2129,
+                "LeftMargin": -1.6873,
+                "RightMargin": -1757.3127,
                 "TopMargin": -758.4785,
                 "BottomMargin": -763.5215,
                 "Tag": 116,
@@ -144,13 +144,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "1.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "1.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -219,13 +219,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "2-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "2-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -270,17 +270,17 @@
                 },
                 "PreSize": {
                   "X": 0.445,
-                  "Y": 0.445
+                  "Y": 0.44
                 },
                 "LeftMargin": 27.4196,
                 "RightMargin": 83.5804,
-                "TopMargin": 12.2602,
-                "BottomMargin": 98.7398,
+                "TopMargin": 12.6077,
+                "BottomMargin": 99.3923,
                 "Tag": 2,
                 "ActionTag": 449092712,
                 "Size": {
                   "X": 89.0,
-                  "Y": 89.0
+                  "Y": 88.0
                 },
                 "Name": "btn2",
                 "ctype": "ButtonObjectData"
@@ -294,13 +294,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "3-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "3-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -344,18 +344,18 @@
                   "Y": 0.6651
                 },
                 "PreSize": {
-                  "X": 0.44,
-                  "Y": 0.44
+                  "X": 0.445,
+                  "Y": 0.445
                 },
-                "LeftMargin": -6.5346,
-                "RightMargin": 118.5346,
-                "TopMargin": 22.9776,
-                "BottomMargin": 89.0224,
+                "LeftMargin": -7.0346,
+                "RightMargin": 118.0346,
+                "TopMargin": 22.4776,
+                "BottomMargin": 88.5224,
                 "Tag": 3,
                 "ActionTag": -1770287611,
                 "Size": {
-                  "X": 88.0,
-                  "Y": 88.0
+                  "X": 89.0,
+                  "Y": 89.0
                 },
                 "Name": "btn3",
                 "ctype": "ButtonObjectData"
@@ -369,13 +369,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "4-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "4-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -444,13 +444,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "5-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "5-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -498,7 +498,7 @@
                   "Y": 0.445
                 },
                 "LeftMargin": -6.4058,
-                "RightMargin": 117.4057,
+                "RightMargin": 117.4058,
                 "TopMargin": 50.551,
                 "BottomMargin": 60.449,
                 "Tag": 5,
@@ -519,13 +519,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "6-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "6-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -556,7 +556,7 @@
                 },
                 "Position": {
                   "X": 125.638,
-                  "Y": 101.6581
+                  "Y": 104.4198
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -566,7 +566,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.6282,
-                  "Y": 0.5083
+                  "Y": 0.5221
                 },
                 "PreSize": {
                   "X": 0.445,
@@ -574,8 +574,8 @@
                 },
                 "LeftMargin": 82.9447,
                 "RightMargin": 28.0553,
-                "TopMargin": 51.5457,
-                "BottomMargin": 59.4543,
+                "TopMargin": 48.784,
+                "BottomMargin": 62.216,
                 "Tag": 6,
                 "ActionTag": 1971731476,
                 "Size": {
@@ -594,13 +594,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "7-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "7-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -631,7 +631,7 @@
                 },
                 "Position": {
                   "X": 177.3857,
-                  "Y": 102.5796
+                  "Y": 105.0643
                 },
                 "Scale": {
                   "ScaleX": 0.1553,
@@ -641,7 +641,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.8869,
-                  "Y": 0.5129
+                  "Y": 0.5253
                 },
                 "PreSize": {
                   "X": 0.445,
@@ -649,8 +649,8 @@
                 },
                 "LeftMargin": 132.8857,
                 "RightMargin": -21.8857,
-                "TopMargin": 53.4204,
-                "BottomMargin": 58.5796,
+                "TopMargin": 50.9357,
+                "BottomMargin": 61.0643,
                 "Tag": 7,
                 "ActionTag": -807504317,
                 "Size": {
@@ -669,13 +669,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "8-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "8-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -744,13 +744,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "9-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "9-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -819,13 +819,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "10-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "10-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -894,13 +894,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "11-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "11-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -969,13 +969,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "12-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "12-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -1044,13 +1044,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "13-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "13-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -1119,13 +1119,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "14-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "14-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -1194,13 +1194,13 @@
                   "B": 70
                 },
                 "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
+                  "Type": "Normal",
+                  "Path": "15-19.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "15-19.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -1278,21 +1278,20 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnRegresar.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnRegresar.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-11.png",
+              "Path": "btnRegresar.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 752,
@@ -1314,32 +1313,33 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 323.987,
-              "Y": 68.866
+              "X": 320.0002,
+              "Y": 65.866
             },
             "Scale": {
-              "ScaleX": 0.2293,
-              "ScaleY": 0.1938
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5062,
-              "Y": 0.1076
+              "X": 0.5,
+              "Y": 0.1029
             },
             "PreSize": {
-              "X": 1.2219,
-              "Y": 0.3734
+              "X": 0.3125,
+              "Y": 0.0859
             },
-            "LeftMargin": -67.013,
-            "RightMargin": -74.9869,
-            "TopMargin": 451.634,
-            "BottomMargin": -50.634,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 220.0002,
+            "RightMargin": 219.9998,
+            "TopMargin": 546.634,
+            "BottomMargin": 38.366,
             "Tag": 43,
             "ActionTag": 1542275581,
             "Size": {
-              "X": 782.0,
-              "Y": 239.0
+              "X": 200.0,
+              "Y": 55.0
             },
             "Name": "btnBack",
             "ctype": "ButtonObjectData"
@@ -1368,7 +1368,7 @@
               "ScaleY": 0.4724
             },
             "Position": {
-              "X": 321.9325,
+              "X": 320.0,
               "Y": 576.1467
             },
             "Scale": {
@@ -1382,15 +1382,16 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.503,
+              "X": 0.5,
               "Y": 0.9002
             },
             "PreSize": {
               "X": 0.1406,
               "Y": 0.0359
             },
-            "LeftMargin": 267.7921,
-            "RightMargin": 264.2079,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 265.8596,
+            "RightMargin": 266.1404,
             "TopMargin": 55.9393,
             "BottomMargin": 569.0607,
             "Tag": 112,
@@ -1728,29 +1729,29 @@
               "ScaleY": 0.4859
             },
             "Position": {
-              "X": 434.2953,
-              "Y": 367.2007
+              "X": 436.2632,
+              "Y": 369.1687
             },
             "Scale": {
               "ScaleX": 0.0598,
-              "ScaleY": 10.9162
+              "ScaleY": 9.7112
             },
             "RotationSkewX": -132.1367,
             "RotationSkewY": -132.2698,
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.6786,
-              "Y": 0.5738
+              "X": 0.6817,
+              "Y": 0.5768
             },
             "PreSize": {
               "X": 0.1953,
               "Y": 0.0078
             },
-            "LeftMargin": 373.6953,
-            "RightMargin": 141.3047,
-            "TopMargin": 270.2288,
-            "BottomMargin": 364.7712,
+            "LeftMargin": 375.6632,
+            "RightMargin": 139.3368,
+            "TopMargin": 268.2608,
+            "BottomMargin": 366.7392,
             "Tag": 49,
             "ActionTag": -750758088,
             "Size": {
@@ -1818,29 +1819,29 @@
               "ScaleY": 0.4859
             },
             "Position": {
-              "X": 403.7576,
-              "Y": 306.6354
+              "X": 403.7578,
+              "Y": 309.4226
             },
             "Scale": {
               "ScaleX": 0.0598,
-              "ScaleY": 3.599
+              "ScaleY": 4.8309
             },
-            "RotationSkewX": -0.5403,
+            "RotationSkewX": -0.5393,
             "RotationSkewY": -0.6434,
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
               "X": 0.6309,
-              "Y": 0.4791
+              "Y": 0.4835
             },
             "PreSize": {
               "X": 0.1953,
               "Y": 0.0078
             },
-            "LeftMargin": 343.1576,
-            "RightMargin": 171.8424,
-            "TopMargin": 330.7941,
-            "BottomMargin": 304.2059,
+            "LeftMargin": 343.1577,
+            "RightMargin": 171.8423,
+            "TopMargin": 328.0069,
+            "BottomMargin": 306.9931,
             "Tag": 51,
             "ActionTag": 1861446267,
             "Size": {
@@ -1859,33 +1860,33 @@
             "Scale9Width": 1754,
             "Scale9Height": 219,
             "AnchorPoint": {
-              "ScaleX": 0.4848,
-              "ScaleY": 0.4859
+              "ScaleX": 0.4865,
+              "ScaleY": 0.6666
             },
             "Position": {
-              "X": 549.7158,
-              "Y": 304.8428
+              "X": 549.6941,
+              "Y": 312.5378
             },
             "Scale": {
               "ScaleX": 0.0598,
-              "ScaleY": 4.0895
+              "ScaleY": 5.5061
             },
-            "RotationSkewX": -0.5387,
+            "RotationSkewX": -0.5373,
             "RotationSkewY": -0.6431,
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
               "X": 0.8589,
-              "Y": 0.4763
+              "Y": 0.4883
             },
             "PreSize": {
               "X": 0.1953,
               "Y": 0.0078
             },
-            "LeftMargin": 489.1158,
-            "RightMargin": 25.8842,
-            "TopMargin": 332.5867,
-            "BottomMargin": 302.4133,
+            "LeftMargin": 488.8835,
+            "RightMargin": 26.1165,
+            "TopMargin": 325.7952,
+            "BottomMargin": 309.2048,
             "Tag": 52,
             "ActionTag": -1446466964,
             "Size": {
@@ -2054,11 +2055,9 @@
         "7-19.png",
         "8-19.png",
         "9-19.png",
+        "btnRegresar.png",
         "caja-02.png",
-        "Default/Button_Disable.png",
-        "Default/Button_Press.png",
         "fondo1.png",
-        "pantallas-11.png",
         "pantallas-16.png",
         "THE MINION.ttf"
       ],
