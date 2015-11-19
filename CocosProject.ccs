@@ -88,6 +88,8 @@
         <Project Name="pause_modal.csd" Type="Layer" />
         <Project Name="ranking_result_view.csd" Type="Scene" />
         <Project Name="splash_view.csd" Type="Scene" />
+        <Image Name="lunchbox.png" />
+        <Image Name="rope.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>
