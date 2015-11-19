@@ -76,8 +76,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 315.3453,
-              "Y": 570.1803
+              "X": 315.328,
+              "Y": 570.176
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -188,7 +188,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-13.png",
+              "Path": "btnSelecNiveles.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -217,8 +217,8 @@
               "Y": 64.0
             },
             "Scale": {
-              "ScaleX": 0.7441,
-              "ScaleY": 0.7952
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -231,20 +231,20 @@
             "PercentWidthEnabled": true,
             "PercentHeightEnabled": true,
             "PreSize": {
-              "X": 0.6,
-              "Y": 0.15
+              "X": 0.3053,
+              "Y": 0.1
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 128.0,
-            "RightMargin": 128.0,
-            "TopMargin": 528.0,
-            "BottomMargin": 16.0,
+            "LeftMargin": 222.304,
+            "RightMargin": 222.304,
+            "TopMargin": 544.0,
+            "BottomMargin": 32.0,
             "Tag": 60,
             "ActionTag": -1312379699,
             "Size": {
-              "X": 384.0,
-              "Y": 96.0
+              "X": 195.392,
+              "Y": 64.0
             },
             "Name": "btnLevels",
             "ctype": "ButtonObjectData"
@@ -285,7 +285,7 @@
               "Y": 0.35
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.3125
             },
             "HorizontalEdge": "BothEdge",
@@ -394,7 +394,7 @@
               "Y": 0.65
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.2188
             },
             "HorizontalEdge": "BothEdge",
@@ -720,10 +720,10 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
+        "btnSelecNiveles.png",
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
         "fondo1.png",
-        "pantallas-13.png",
         "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"

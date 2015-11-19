@@ -195,7 +195,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantalla-17.png",
+              "Path": "btnSalir.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -239,10 +239,10 @@
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 148.3745,
-            "RightMargin": 151.6255,
-            "TopMargin": 340.8061,
-            "BottomMargin": 75.1939,
+            "LeftMargin": 148.368,
+            "RightMargin": 151.632,
+            "TopMargin": 340.8192,
+            "BottomMargin": 75.1808,
             "CallBackType": "Click",
             "Tag": 106,
             "ActionTag": -1949964052,
@@ -273,7 +273,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantalla-16.png",
+              "Path": "btnReintentar.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -350,7 +350,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantalla-15.png",
+              "Path": "btnAyuda.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -396,8 +396,8 @@
             "VerticalEdge": "BothEdge",
             "LeftMargin": 150.5,
             "RightMargin": 150.5,
-            "TopMargin": 278.4799,
-            "BottomMargin": 149.5201,
+            "TopMargin": 278.4576,
+            "BottomMargin": 149.5424,
             "Tag": 108,
             "ActionTag": -107116174,
             "Size": {
@@ -416,12 +416,12 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "btnAyuda.png",
+        "btnReintentar.png",
+        "btnSalir.png",
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
         "fondo1.png",
-        "pantalla-15.png",
-        "pantalla-16.png",
-        "pantalla-17.png",
         "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"

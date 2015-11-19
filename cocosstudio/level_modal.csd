@@ -16,18 +16,18 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="fondo1.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnStart" ActionTag="2129562416" Tag="157" IconVisible="False" LeftMargin="-311.1943" RightMargin="-171.8057" TopMargin="152.7197" BottomMargin="-60.7197" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="773" Scale9Height="206" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="803.0000" Y="228.0000" />
+          <AbstractNodeData Name="btnStart" ActionTag="2129562416" Tag="157" IconVisible="False" LeftMargin="30.3057" RightMargin="169.6943" TopMargin="266.7197" BottomMargin="23.2803" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="773" Scale9Height="206" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="120.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="90.3057" Y="53.2803" />
-            <Scale ScaleX="0.1268" ScaleY="0.0840" />
+            <Position X="90.3057" Y="38.2803" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2822" Y="0.1665" />
-            <PreSize X="2.5094" Y="0.7125" />
+            <PrePosition X="0.2822" Y="0.1196" />
+            <PreSize X="0.3750" Y="0.0938" />
             <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Normal" Path="pantallas-09.png" Plist="" />
+            <DisabledFileData Type="Normal" Path="btnComenzar.png" Plist="" />
+            <PressedFileData Type="Normal" Path="btnComenzar.png" Plist="" />
+            <NormalFileData Type="Normal" Path="btnComenzar.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -43,38 +43,38 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="txtNameLevel" ActionTag="-394469845" Tag="151" IconVisible="False" LeftMargin="38.3224" RightMargin="215.6776" TopMargin="64.7243" BottomMargin="240.2757" FontSize="18" LabelText="Descripción" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="66.0000" Y="15.0000" />
+          <AbstractNodeData Name="txtNameLevel" ActionTag="-394469845" Tag="151" IconVisible="False" LeftMargin="6.2784" RightMargin="163.7216" TopMargin="59.7892" BottomMargin="242.2108" IsCustomSize="True" FontSize="18" LabelText="Nombre del Nivel" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="150.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.4835" ScaleY="0.5950" />
-            <Position X="70.2334" Y="249.2007" />
+            <Position X="78.8034" Y="252.9208" />
             <Scale ScaleX="0.8531" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.2195" Y="0.7788" />
-            <PreSize X="0.4625" Y="0.0719" />
+            <PrePosition X="0.2463" Y="0.7904" />
+            <PreSize X="0.4688" Y="0.0562" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblScore" ActionTag="-1383551644" Tag="152" IconVisible="False" LeftMargin="22.2406" RightMargin="197.7594" TopMargin="115.5685" BottomMargin="179.4315" IsCustomSize="True" FontSize="24" LabelText="Score:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="100.0000" Y="25.0000" />
+          <AbstractNodeData Name="lblScore" ActionTag="-1383551644" Tag="152" IconVisible="False" LeftMargin="16.9323" RightMargin="163.0677" TopMargin="114.9499" BottomMargin="180.0501" IsCustomSize="True" FontSize="18" LabelText="Score:" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="140.0000" Y="25.0000" />
             <AnchorPoint ScaleX="0.4077" ScaleY="0.4743" />
-            <Position X="63.0106" Y="191.2890" />
+            <Position X="74.0103" Y="191.9076" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.1969" Y="0.5978" />
-            <PreSize X="0.3125" Y="0.0781" />
+            <PrePosition X="0.2313" Y="0.5997" />
+            <PreSize X="0.4375" Y="0.0781" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDefeatPos" ActionTag="-801968946" Tag="153" IconVisible="False" LeftMargin="22.6877" RightMargin="197.3123" TopMargin="166.6412" BottomMargin="128.3588" IsCustomSize="True" FontSize="24" LabelText="Posición:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="100.0000" Y="25.0000" />
+          <AbstractNodeData Name="lblDefeatPos" ActionTag="-801968946" Tag="153" IconVisible="False" LeftMargin="16.9323" RightMargin="163.0677" TopMargin="166.0225" BottomMargin="128.9775" IsCustomSize="True" FontSize="18" LabelText="Posición:" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="140.0000" Y="25.0000" />
             <AnchorPoint ScaleX="0.5045" ScaleY="0.4745" />
-            <Position X="73.1376" Y="140.2213" />
+            <Position X="87.5623" Y="140.8400" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.2286" Y="0.4382" />
-            <PreSize X="0.3125" Y="0.0781" />
+            <PrePosition X="0.2736" Y="0.4401" />
+            <PreSize X="0.4375" Y="0.0781" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -82,16 +82,30 @@
           <AbstractNodeData Name="Panel_3" ActionTag="2096014276" Tag="154" IconVisible="False" LeftMargin="130.8940" RightMargin="-10.8940" TopMargin="56.3829" BottomMargin="63.6171" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="200.0000" Y="200.0000" />
             <Children>
-              <AbstractNodeData Name="Text_27" ActionTag="-1631867381" Tag="155" IconVisible="False" LeftMargin="13.1404" RightMargin="96.8596" TopMargin="5.7721" BottomMargin="171.2279" FontSize="20" LabelText="Ranking" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="70.0000" Y="23.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="58.1404" Y="182.7279" />
+              <AbstractNodeData Name="Text_27" ActionTag="-1631867381" Tag="155" IconVisible="False" LeftMargin="10.0000" RightMargin="100.0000" TopMargin="10.0000" BottomMargin="170.0000" IsCustomSize="True" FontSize="16" LabelText="Ranking" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="90.0000" Y="20.0000" />
+                <AnchorPoint ScaleY="1.0000" />
+                <Position X="10.0000" Y="190.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2907" Y="0.9136" />
-                <PreSize X="0.0000" Y="0.0000" />
+                <CColor A="255" R="0" G="0" B="0" />
+                <PrePosition X="0.0500" Y="0.9500" />
+                <PreSize X="0.4500" Y="0.1000" />
+                <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="listRanking" ActionTag="-1045167597" Tag="163" IconVisible="False" LeftMargin="10.0000" RightMargin="10.0000" TopMargin="30.0000" BottomMargin="10.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+                <Size X="180.0000" Y="160.0000" />
+                <AnchorPoint ScaleY="1.0000" />
+                <Position X="10.0000" Y="170.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0500" Y="0.8500" />
+                <PreSize X="0.9000" Y="0.8000" />
+                <SingleColor A="255" R="150" G="150" B="255" />
+                <FirstColor A="255" R="150" G="150" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
@@ -105,46 +119,45 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnExit" ActionTag="-1224243608" Tag="16" IconVisible="False" LeftMargin="191.7160" RightMargin="-116.7160" TopMargin="-96.2459" BottomMargin="171.2459" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="215" Scale9Height="223" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="245.0000" Y="245.0000" />
+          <AbstractNodeData Name="btnExit" ActionTag="-1224243608" Tag="16" IconVisible="False" LeftMargin="170.4499" RightMargin="-152.4499" TopMargin="-130.1110" BottomMargin="138.1110" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="215" Scale9Height="223" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="302.0000" Y="312.0000" />
             <AnchorPoint ScaleX="0.4381" ScaleY="0.5257" />
-            <Position X="299.0580" Y="300.0544" />
-            <Scale ScaleX="0.0606" ScaleY="0.0516" />
+            <Position X="302.7561" Y="302.1294" />
+            <Scale ScaleX="0.0355" ScaleY="0.0349" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.9346" Y="0.9377" />
-            <PreSize X="0.7656" Y="0.7656" />
+            <PrePosition X="0.9461" Y="0.9442" />
+            <PreSize X="0.9438" Y="0.9750" />
             <TextColor A="255" R="65" G="65" B="70" />
             <NormalFileData Type="Normal" Path="exit.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnBuy" ActionTag="-1482677735" VisibleForFrame="False" Tag="33" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="60.0000" RightMargin="60.0000" TopMargin="246.6631" BottomMargin="37.3369" TouchEnable="True" FontSize="14" ButtonText="Comprar" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="200.0000" Y="36.0000" />
+          <AbstractNodeData Name="btnBuy" ActionTag="-1482677735" VisibleForFrame="False" Tag="33" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="95.0000" RightMargin="95.0000" TopMargin="266.7197" BottomMargin="23.2803" TouchEnable="True" FontSize="20" ButtonText="Comprar" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="163" Scale9Height="33" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="130.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="160.0000" Y="55.3369" />
+            <Position X="160.0000" Y="38.2803" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.1729" />
-            <PreSize X="0.6250" Y="0.1125" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+            <PrePosition X="0.5000" Y="0.1196" />
+            <PreSize X="0.4063" Y="0.0938" />
+            <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
+            <TextColor A="255" R="0" G="0" B="0" />
+            <DisabledFileData Type="Normal" Path="botonGenerico.png" Plist="" />
+            <PressedFileData Type="Normal" Path="botonGenerico.png" Plist="" />
+            <NormalFileData Type="Normal" Path="botonGenerico.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnContinue" ActionTag="-1673047390" Tag="152" IconVisible="False" LeftMargin="-171.5916" RightMargin="-312.4084" TopMargin="152.0565" BottomMargin="-60.0564" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="774" Scale9Height="206" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="804.0000" Y="228.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="230.4084" Y="53.9436" />
-            <Scale ScaleX="0.1194" ScaleY="0.0886" />
+          <AbstractNodeData Name="btnContinue" ActionTag="-1673047390" Tag="152" IconVisible="False" LeftMargin="171.9365" RightMargin="28.0635" TopMargin="266.3922" BottomMargin="23.6078" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="774" Scale9Height="206" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="120.0000" Y="30.0000" />
+            <AnchorPoint ScaleX="0.4991" ScaleY="0.4118" />
+            <Position X="231.8285" Y="35.9618" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.7200" Y="0.1686" />
-            <PreSize X="2.5125" Y="0.7125" />
+            <PrePosition X="0.7245" Y="0.1124" />
+            <PreSize X="0.3750" Y="0.0938" />
             <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Normal" Path="pantallas-14.png" Plist="" />
+            <NormalFileData Type="Normal" Path="btnContinuar.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>

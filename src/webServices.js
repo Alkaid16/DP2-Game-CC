@@ -2,7 +2,7 @@ var WSHandler = (function(){
     var pub = {};
     //Servidor de la cato 200.16.7.111
     //Servidor nube 162.243.118.33
-    var host = "http://200.16.7.111/afiperularavel/public/game";
+    var host = "http://162.243.118.33/afiperularavel/public/game";
 
     //Funcion que obtiene el objeto Player, con toda la informacion del jugador. Si la llamada falla, se retorna -1.
     pub.getPlayerInfo= function(fbID){

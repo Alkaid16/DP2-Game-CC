@@ -130,7 +130,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-09.png",
+              "Path": "btnComenzar.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -172,10 +172,10 @@
               "X": 1.2547,
               "Y": 0.3562
             },
-            "LeftMargin": -2.8086,
-            "RightMargin": -160.1914,
-            "TopMargin": 301.3325,
-            "BottomMargin": 110.6675,
+            "LeftMargin": -2.8393,
+            "RightMargin": -160.1607,
+            "TopMargin": 301.3309,
+            "BottomMargin": 110.6691,
             "Tag": 21,
             "ActionTag": -1857035129,
             "Size": {
@@ -205,7 +205,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-10.png",
+              "Path": "btnOpciones.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -245,12 +245,12 @@
             },
             "PreSize": {
               "X": 1.2969,
-              "Y": 0.4063
+              "Y": 0.4062
             },
-            "LeftMargin": -98.3454,
-            "RightMargin": -91.6545,
-            "TopMargin": 325.4443,
-            "BottomMargin": 54.5557,
+            "LeftMargin": -98.3234,
+            "RightMargin": -91.6766,
+            "TopMargin": 325.4406,
+            "BottomMargin": 54.5594,
             "Tag": 22,
             "ActionTag": -1440041637,
             "Size": {
@@ -399,11 +399,11 @@
       },
       "UsedResources": [
         "botones-howto.png",
+        "btnComenzar.png",
+        "btnOpciones.png",
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
         "pantallas-03.png",
-        "pantallas-09.png",
-        "pantallas-10.png",
         "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"

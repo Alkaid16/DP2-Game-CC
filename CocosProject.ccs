@@ -90,6 +90,15 @@
         <Project Name="splash_view.csd" Type="Scene" />
         <Image Name="lunchbox.png" />
         <Image Name="rope.png" />
+        <Image Name="btnRegresar.png" />
+        <Image Name="btnComenzar.png" />
+        <Image Name="btnOpciones.png" />
+        <Image Name="btnReanudar.png" />
+        <Image Name="btnSelecNiveles.png" />
+        <Image Name="btnContinuar.png" />
+        <Image Name="btnReintentar.png" />
+        <Image Name="btnAyuda.png" />
+        <Image Name="btnSalir.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -28,7 +28,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnStart" ActionTag="-1857035129" Tag="21" IconVisible="False" LeftMargin="-2.8086" RightMargin="-160.1914" TopMargin="301.3325" BottomMargin="110.6675" TouchEnable="True" FontSize="8" ButtonText="Comenzar" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="773" Scale9Height="206" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnStart" ActionTag="-1857035129" Tag="21" IconVisible="False" LeftMargin="-2.8393" RightMargin="-160.1607" TopMargin="301.3309" BottomMargin="110.6691" TouchEnable="True" FontSize="8" ButtonText="Comenzar" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="773" Scale9Height="206" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="803.0000" Y="228.0000" />
             <AnchorPoint ScaleX="0.3753" ScaleY="0.5152" />
             <Position X="298.5266" Y="228.1347" />
@@ -39,11 +39,11 @@
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
             <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Normal" Path="pantallas-09.png" Plist="" />
+            <NormalFileData Type="Normal" Path="btnComenzar.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnOptions" ActionTag="-1440041637" Tag="22" IconVisible="False" LeftMargin="-98.3454" RightMargin="-91.6545" TopMargin="325.4443" BottomMargin="54.5557" TouchEnable="True" FontSize="8" ButtonText="Opciones" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="800" Scale9Height="238" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnOptions" ActionTag="-1440041637" Tag="22" IconVisible="False" LeftMargin="-98.3234" RightMargin="-91.6766" TopMargin="325.4406" BottomMargin="54.5594" TouchEnable="True" FontSize="8" ButtonText="Opciones" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="800" Scale9Height="238" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="830.0000" Y="260.0000" />
             <AnchorPoint ScaleX="0.5014" ScaleY="0.4368" />
             <Position X="317.8386" Y="168.1274" />
@@ -54,7 +54,7 @@
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
             <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Normal" Path="pantallas-10.png" Plist="" />
+            <NormalFileData Type="Normal" Path="btnOpciones.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
