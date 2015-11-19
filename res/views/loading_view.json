@@ -204,9 +204,9 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../Default/ImageFile.png",
-        "../Default/LoadingBarFile.png",
-        "../Default/Sprite.png"
+        "Default/ImageFile.png",
+        "Default/LoadingBarFile.png",
+        "Default/Sprite.png"
       ],
       "ctype": "GameProjectData"
     }

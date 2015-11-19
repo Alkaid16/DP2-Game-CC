@@ -221,12 +221,12 @@
             "ShadowOffsetY": -2.0,
             "TouchEnable": true,
             "AnchorPoint": {
-              "ScaleX": 0.5031,
-              "ScaleY": 0.463
+              "ScaleX": 0.5014,
+              "ScaleY": 0.4368
             },
             "Position": {
-              "X": 318.0759,
-              "Y": 169.3243
+              "X": 317.8386,
+              "Y": 168.1274
             },
             "Scale": {
               "ScaleX": 0.1708,
@@ -235,17 +235,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.497,
-              "Y": 0.2646
+              "X": 0.4966,
+              "Y": 0.2627
             },
             "PreSize": {
               "X": 1.2969,
-              "Y": 0.4062
+              "Y": 0.4063
             },
-            "LeftMargin": -99.5197,
-            "RightMargin": -90.4803,
-            "TopMargin": 331.0433,
-            "BottomMargin": 48.9567,
+            "LeftMargin": -98.3454,
+            "RightMargin": -91.6545,
+            "TopMargin": 325.4443,
+            "BottomMargin": 54.5557,
             "Tag": 22,
             "ActionTag": -1440041637,
             "Size": {
@@ -303,6 +303,81 @@
             },
             "Name": "lblCopyright",
             "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 8,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "botones-howto.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 163,
+            "Scale9Height": 33,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5014,
+              "ScaleY": 0.4368
+            },
+            "Position": {
+              "X": 317.1964,
+              "Y": 120.5867
+            },
+            "Scale": {
+              "ScaleX": 0.7078,
+              "ScaleY": 0.7177
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4956,
+              "Y": 0.1884
+            },
+            "PreSize": {
+              "X": 0.3016,
+              "Y": 0.0859
+            },
+            "LeftMargin": 220.4211,
+            "RightMargin": 226.5789,
+            "TopMargin": 488.438,
+            "BottomMargin": 96.562,
+            "Tag": 49,
+            "ActionTag": -1450932278,
+            "Size": {
+              "X": 193.0,
+              "Y": 55.0
+            },
+            "Name": "btnInstructions",
+            "ctype": "ButtonObjectData"
           }
         ],
         "Size": {
@@ -313,11 +388,12 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../Default/Button_Disable.png",
-        "../Default/Button_Press.png",
-        "../pantallas-03.png",
-        "../pantallas-09.png",
-        "../pantallas-10.png"
+        "botones-howto.png",
+        "Default/Button_Disable.png",
+        "Default/Button_Press.png",
+        "pantallas-03.png",
+        "pantallas-09.png",
+        "pantallas-10.png"
       ],
       "ctype": "GameProjectData"
     }

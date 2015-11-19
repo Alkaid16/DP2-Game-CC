@@ -276,7 +276,7 @@
               "Y": 0.35
             },
             "PreSize": {
-              "X": 0.7812,
+              "X": 0.7813,
               "Y": 0.3125
             },
             "HorizontalEdge": "BothEdge",
@@ -380,7 +380,7 @@
               "Y": 0.65
             },
             "PreSize": {
-              "X": 0.7812,
+              "X": 0.7813,
               "Y": 0.2188
             },
             "HorizontalEdge": "BothEdge",
@@ -706,11 +706,11 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../Default/Button_Disable.png",
-        "../Default/Button_Press.png",
-        "../modal_level_wallpaper.jpg",
-        "../pantallas-13.png",
-        "../THE MINION.ttf"
+        "Default/Button_Disable.png",
+        "Default/Button_Press.png",
+        "modal_level_wallpaper.jpg",
+        "pantallas-13.png",
+        "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"
     }

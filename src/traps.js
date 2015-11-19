@@ -267,20 +267,20 @@ var MeshController = (function(){
             switch(arrowsCombination[i])
             {
                 case 0:
-                    arrowsImg[i] = new cc.Sprite("res/up.png");
-                    arrowsImgPress[i] = new cc.Sprite("res/upPress.png");
+                    arrowsImg[i] = new cc.Sprite("res/views/up.png");
+                    arrowsImgPress[i] = new cc.Sprite("res/views/upPress.png");
                     break;
                 case 1:
-                    arrowsImg[i] = new cc.Sprite("res/down.png");
-                    arrowsImgPress[i] = new cc.Sprite("res/downPress.png");
+                    arrowsImg[i] = new cc.Sprite("res/views/down.png");
+                    arrowsImgPress[i] = new cc.Sprite("res/views/downPress.png");
                     break;
                 case 2:
-                    arrowsImg[i] = new cc.Sprite("res/left.png");
+                    arrowsImg[i] = new cc.Sprite("res/views/left.png");
                     arrowsImgPress[i] = new cc.Sprite("res/leftPress.png");
                     break;
                 case 3:
-                    arrowsImg[i] = new cc.Sprite("res/right.png");
-                    arrowsImgPress[i] = new cc.Sprite("res/rightPress.png");
+                    arrowsImg[i] = new cc.Sprite("res/views/right.png");
+                    arrowsImgPress[i] = new cc.Sprite("res/views/rightPress.png");
                     break;
             }
             arrowsImg[i].setScale(0.4);
@@ -421,17 +421,17 @@ var lunchBoxController = (function(){
     //Esta función unicamente carga los spritres
     var chargeSprites = function(){
 
-        spritesLunchBox[0] = new cc.Sprite("res/apple.png");
+        spritesLunchBox[0] = new cc.Sprite("res/views/apple.png");
         flagNutritious[0]=1;
-        spritesLunchBox[1] = new cc.Sprite("res/banana.png");
+        spritesLunchBox[1] = new cc.Sprite("res/views/banana.png");
         flagNutritious[1]=1;
-        spritesLunchBox[2] = new cc.Sprite("res/jugo.png");
+        spritesLunchBox[2] = new cc.Sprite("res/views/jugo.png");
         flagNutritious[2]=1;
-        spritesLunchBox[3] = new cc.Sprite("res/chocolate.png");
+        spritesLunchBox[3] = new cc.Sprite("res/views/chocolate.png");
         flagNutritious[3]=0;
-        spritesLunchBox[4] = new cc.Sprite("res/candy.png");
+        spritesLunchBox[4] = new cc.Sprite("res/views/candy.png");
         flagNutritious[4]=0;
-        spritesLunchBox[5] = new cc.Sprite("res/sandwich.png");
+        spritesLunchBox[5] = new cc.Sprite("res/views/sandwich.png");
         flagNutritious[5]=1;
 
         numElmentNutri = 4;

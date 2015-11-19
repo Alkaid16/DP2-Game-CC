@@ -841,7 +841,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
 function initFog(map){
 
     //Se carga el sprite que representa la oscuridad
-    var fog = new cc.Sprite("res/GameFog.png");
+    var fog = new cc.Sprite("res/views/GameFog.png");
     fog.setScale(1.25, 1.25);
 
     //El sprite que representa la oscuridad siempre esta encima del niño

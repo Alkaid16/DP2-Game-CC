@@ -13,22 +13,6 @@
         <Project Name="MainScreen.csd" Type="Scene" />
         <Image Name="buttonNormal.png" />
         <Image Name="buttonPressed.png" />
-        <Folder Name="views">
-          <Project Name="ranking_result_view.csd" Type="Scene" />
-          <Project Name="level_selector_view.csd" Type="Scene" />
-          <Project Name="main_view.csd" Type="Scene" />
-          <Project Name="splash_view.csd" Type="Scene" />
-          <Project Name="loading_view.csd" Type="Scene" />
-          <Project Name="cinematic_view.csd" Type="Scene" />
-          <Project Name="invitation_view.csd" Type="Scene" />
-          <Project Name="credits_view.csd" Type="Scene" />
-          <Project Name="level_modal.csd" Type="Layer" />
-          <Project Name="gameHUD.csd" Type="Layer" />
-          <Project Name="defeat_view.csd" Type="Layer" />
-          <Project Name="options_modal.csd" Type="Layer" />
-          <Project Name="pause_modal.csd" Type="Layer" />
-          <Project Name="character_view.csd" Type="Scene" />
-        </Folder>
         <Image Name="pantallas-12.png" />
         <Image Name="pantallas-13.png" />
         <Image Name="pantallas-10.png" />
@@ -68,6 +52,42 @@
         <Image Name="botonGenerico.png" />
         <Image Name="ninaFrente1.png" />
         <Image Name="ninoFrente1.png" />
+        <Image Name="example_movement.png" />
+        <Image Name="keyboards.png" />
+        <Image Name="hueco.PNG" />
+        <Image Name="lonchera.PNG" />
+        <Image Name="red.PNG" />
+        <Image Name="pizarra.PNG" />
+        <Image Name="antorcha.PNG" />
+        <Image Name="botas.PNG" />
+        <Image Name="reloj.PNG" />
+        <Image Name="escudo.PNG" />
+        <Image Name="botones-howto.png" />
+        <Image Name="logo.png" />
+        <Image Name="reloj_powerup.PNG" />
+        <Image Name="red_trap.png" />
+        <Image Name="botas_powerup.png" />
+        <Image Name="escudo_powerup.png" />
+        <Image Name="lonchera_trap.png" />
+        <Image Name="antorcha_powerup.png" />
+        <Image Name="huecos_trap.png" />
+        <Image Name="pizarra_trap.png" />
+        <Image Name="fondo1.png" />
+        <Project Name="character_view.csd" Type="Scene" />
+        <Project Name="cinematic_view.csd" Type="Scene" />
+        <Project Name="credits_view.csd" Type="Scene" />
+        <Project Name="defeat_view.csd" Type="Layer" />
+        <Project Name="gameHUD.csd" Type="Layer" />
+        <Project Name="howtoplay_view.csd" Type="Scene" />
+        <Project Name="invitation_view.csd" Type="Scene" />
+        <Project Name="level_modal.csd" Type="Layer" />
+        <Project Name="level_selector_view.csd" Type="Scene" />
+        <Project Name="loading_view.csd" Type="Scene" />
+        <Project Name="main_view.csd" Type="Scene" />
+        <Project Name="options_modal.csd" Type="Layer" />
+        <Project Name="pause_modal.csd" Type="Layer" />
+        <Project Name="ranking_result_view.csd" Type="Scene" />
+        <Project Name="splash_view.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>

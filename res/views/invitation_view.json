@@ -281,10 +281,10 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "../Default/Button_Disable.png",
-        "../Default/Button_Normal.png",
-        "../Default/Button_Press.png",
-        "../Default/ImageFile.png"
+        "Default/Button_Disable.png",
+        "Default/Button_Normal.png",
+        "Default/Button_Press.png",
+        "Default/ImageFile.png"
       ],
       "ctype": "GameProjectData"
     }

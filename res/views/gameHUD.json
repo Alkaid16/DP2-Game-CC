@@ -264,7 +264,7 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "../willpoint.png"
+        "willpoint.png"
       ],
       "ctype": "GameProjectData"
     }

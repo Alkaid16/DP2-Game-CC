@@ -17,43 +17,37 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "wallpaper_selector.jpg",
+              "Path": "fondo1.png",
               "Plist": ""
             },
-            "Scale9Width": 259,
-            "Scale9Height": 194,
-            "AnchorPoint": {
-              "ScaleY": 0.5
-            },
+            "Scale9Width": 2667,
+            "Scale9Height": 2667,
+            "AnchorPoint": {},
             "Position": {
-              "X": 2.2467,
-              "Y": 324.9132
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
-              "ScaleX": 2.4315,
-              "ScaleY": 3.301
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0035,
-              "Y": 0.5077
+              "X": 0.0,
+              "Y": 0.0
             },
             "PreSize": {
-              "X": 0.4047,
-              "Y": 0.3031
+              "X": 1.0,
+              "Y": 1.0
             },
-            "LeftMargin": 2.2467,
-            "RightMargin": 378.7533,
-            "TopMargin": 218.0868,
-            "BottomMargin": 227.9132,
-            "Tag": 67,
-            "ActionTag": -1087728245,
+            "Tag": 39,
+            "ActionTag": -2082610952,
             "Size": {
-              "X": 259.0,
-              "Y": 194.0
+              "X": 640.0,
+              "Y": 640.0
             },
-            "Name": "imgWallpaper",
+            "Name": "img_wallpaper",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -87,7 +81,11 @@
               "ScaleX": 1.9446,
               "ScaleY": 1.6136
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5071,
@@ -104,8 +102,8 @@
             "Tag": 21,
             "ActionTag": 1487045513,
             "Size": {
-              "X": 203.0,
-              "Y": 110.0
+              "X": 53.0,
+              "Y": 30.0
             },
             "Name": "lblTitle",
             "ctype": "TextObjectData"
@@ -158,60 +156,6 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "Música",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.4996,
-              "ScaleY": 0.4131
-            },
-            "Position": {
-              "X": 196.0596,
-              "Y": 213.9456
-            },
-            "Scale": {
-              "ScaleX": 2.9291,
-              "ScaleY": 3.3097
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.3063,
-              "Y": 0.3343
-            },
-            "PreSize": {
-              "X": 0.0984,
-              "Y": 0.0359
-            },
-            "LeftMargin": 164.5828,
-            "RightMargin": 412.4172,
-            "TopMargin": 412.5567,
-            "BottomMargin": 204.4433,
-            "Tag": 25,
-            "ActionTag": 1425744888,
-            "Size": {
-              "X": 63.0,
-              "Y": 23.0
-            },
-            "Name": "lblMusic",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 20,
             "IsCustomSize": true,
             "LabelText": "",
             "PlaceHolderText": "On",
@@ -255,60 +199,6 @@
             },
             "Name": "txtSound",
             "ctype": "TextFieldObjectData"
-          },
-          {
-            "FontSize": 20,
-            "LabelText": "Sonido",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 201.6176,
-              "Y": 330.1204
-            },
-            "Scale": {
-              "ScaleX": 3.5523,
-              "ScaleY": 2.9559
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.315,
-              "Y": 0.5158
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0359
-            },
-            "LeftMargin": 171.6176,
-            "RightMargin": 408.3824,
-            "TopMargin": 298.3796,
-            "BottomMargin": 318.6204,
-            "Tag": 23,
-            "ActionTag": 1550137827,
-            "Size": {
-              "X": 60.0,
-              "Y": 23.0
-            },
-            "Name": "lblSound",
-            "ctype": "TextObjectData"
           },
           {
             "FontSize": 14,
@@ -359,8 +249,8 @@
               "Y": 76.0863
             },
             "Scale": {
-              "ScaleX": 0.3101,
-              "ScaleY": 0.1674
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -369,21 +259,137 @@
               "Y": 0.1189
             },
             "PreSize": {
-              "X": 1.2219,
-              "Y": 0.3734
+              "X": 0.3125,
+              "Y": 0.0781
             },
-            "LeftMargin": -54.6528,
-            "RightMargin": -87.3472,
-            "TopMargin": 447.2339,
-            "BottomMargin": -46.2339,
+            "LeftMargin": 234.0774,
+            "RightMargin": 205.9226,
+            "TopMargin": 539.5037,
+            "BottomMargin": 50.4963,
             "Tag": 28,
             "ActionTag": 1187510147,
             "Size": {
-              "X": 782.0,
-              "Y": 239.0
+              "X": 200.0,
+              "Y": 50.0
             },
             "Name": "btnBack",
             "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 48,
+            "LabelText": "Sonido",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 218.86,
+              "Y": 198.7236
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.342,
+              "Y": 0.3105
+            },
+            "PreSize": {
+              "X": 0.0938,
+              "Y": 0.0359
+            },
+            "LeftMargin": 188.86,
+            "RightMargin": 391.14,
+            "TopMargin": 429.7764,
+            "BottomMargin": 187.2236,
+            "Tag": 40,
+            "ActionTag": -1808784428,
+            "Size": {
+              "X": 60.0,
+              "Y": 23.0
+            },
+            "Name": "lblSound",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 48,
+            "LabelText": "Música",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 218.8576,
+              "Y": 319.9435
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.342,
+              "Y": 0.4999
+            },
+            "PreSize": {
+              "X": 0.2359,
+              "Y": 0.0859
+            },
+            "LeftMargin": 143.3576,
+            "RightMargin": 345.6424,
+            "TopMargin": 292.5565,
+            "BottomMargin": 292.4435,
+            "Tag": 41,
+            "ActionTag": 1852688942,
+            "Size": {
+              "X": 151.0,
+              "Y": 55.0
+            },
+            "Name": "lblMusic",
+            "ctype": "TextObjectData"
           }
         ],
         "Size": {
@@ -394,11 +400,11 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "../Default/Button_Disable.png",
-        "../Default/Button_Press.png",
-        "../pantallas-11.png",
-        "../THE MINION.ttf",
-        "../wallpaper_selector.jpg"
+        "Default/Button_Disable.png",
+        "Default/Button_Press.png",
+        "fondo1.png",
+        "pantallas-11.png",
+        "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"
     }

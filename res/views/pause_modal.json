@@ -345,13 +345,13 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "../Default/Button_Disable.png",
-        "../Default/Button_Press.png",
-        "../pantallas-10.png",
-        "../pantallas-12.png",
-        "../pantallas-13.png",
-        "../THE MINION.ttf",
-        "../wallpaper_selector.jpg"
+        "Default/Button_Disable.png",
+        "Default/Button_Press.png",
+        "pantallas-10.png",
+        "pantallas-12.png",
+        "pantallas-13.png",
+        "THE MINION.ttf",
+        "wallpaper_selector.jpg"
       ],
       "ctype": "GameProjectData"
     }

@@ -1,8 +1,8 @@
 var res = {
-    HelloWorld_png : "res/HelloWorld.png",
-    ButtonNormal_png : "res/buttonNormal.png",
-    ButtonPressed_png : "res/buttonPressed.png",
-    MainScreen_json: "res/MainScreen.json",
+    HelloWorld_png : "res/views/HelloWorld.png",
+    ButtonNormal_png : "res/views/buttonNormal.png",
+    ButtonPressed_png : "res/views/buttonPressed.png",
+    MainScreen_json: "res/views/MainScreen.json",
     defeat_view_json: "res/views/defeat_view.json",
     level_selector_view_json : "res/views/level_selector_view.json",
     level_modal_json : "res/views/level_modal.json",
@@ -24,18 +24,19 @@ var res = {
     Level13_tmx: "res/levels/Level13.tmx",
     Level14_tmx: "res/levels/Level14.tmx",
     Level15_tmx: "res/levels/Level15.tmx",
-    GameFog_png: "res/GameFog.png",
+    GameFog_png: "res/views/GameFog.png",
     terrain_png: "res/levels/Tilesets/terrain.png",
     gameHUD_json: "res/views/gameHUD.json",
-    exMark_png: "res/exMark.png",
-    arrow_png: "res/arrow.png",
-    lock_png: "res/lock.png",
+    exMark_png: "res/views/exMark.png",
+    arrow_png: "res/views/arrow.png",
+    lock_png: "res/views/lock.png",
     integrado_png:"res/levels/Tilesets/integrado.png",
     random_png: "res/levels/Tilesets/random.png",
     spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist",
     monstruo_plist: "res/spritesheets/monstruo.plist",
     pause_modal_json: "res/views/pause_modal.json",
-    options_json: "res/views/options_modal.json"
+    options_json: "res/views/options_modal.json",
+    howtoplay_json: "res/views/howtoplay_view.json"
 };
 
 var g_resources = [];
