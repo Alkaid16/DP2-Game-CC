@@ -17,7 +17,52 @@
     <property name="powerupId" value="2"/>
    </properties>
   </tile>
+  <tile id="486">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="487">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="488">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="489">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
   <tile id="490">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="491">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="492">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="493">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="494">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="495">
    <properties>
     <property name="collectableId" value="2"/>
    </properties>
@@ -27,7 +72,92 @@
     <property name="collectableId" value="1"/>
    </properties>
   </tile>
+  <tile id="497">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="498">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="499">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="500">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="501">
+   <properties>
+    <property name="collectableId" value="1"/>
+   </properties>
+  </tile>
+  <tile id="504">
+   <properties>
+    <property name="trapId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="505">
+   <properties>
+    <property name="trapId" value="3"/>
+   </properties>
+  </tile>
   <tile id="507">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="509">
+   <properties>
+    <property name="collectableId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="516">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="520">
+   <properties>
+    <property name="collectableId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="521">
+   <properties>
+    <property name="collectableId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="523">
+   <properties>
+    <property name="collectableId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="524">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="525">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="526">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="527">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="528">
    <properties>
     <property name="collectableId" value="5"/>
    </properties>
@@ -50,32 +180,32 @@
  </layer>
  <layer name="Intersection" width="25" height="126">
   <data encoding="base64" compression="zlib">
-   eJzt2rsNwCAMBUBWy/5LRVFaR3FBPsZ3HR3yA4MEY3DYbsbUFOV4la3MT+oAOfZKPzIHIMN5AdCHng8wz8o91ZsEX7LO5lPTZ6lvTF3gfe5w/fg39m8V8qgwR4hk/lda38BKdvWgBps=
+   eJzt2kEKwCAMBEC/1v9/qkivKQYqbaMzN2+S1Shoa3THYExNUY532cr8og6QY6/sR+YAZDgvAPah5wPMs3JP9SbBl6yz+Z7UVB5jahRTF3ifO9x+/Bv7twp5VJgjRDL/K61vYCUnb4sG3A==
   </data>
  </layer>
  <layer name="Maze" width="25" height="126">
   <data encoding="base64" compression="zlib">
-   eJzt2FkOgzAMBFCu1vtfqr8VauJtxpBkLPFRSPOMs0B7XWvHJ9g2eyDyuV+L9CvD1x/iyObsbWdd6zBG7qwekVqNDCu/6lpjGFZNqoYnh1E+LIMRuxqMMZndB8Kw8kYZkc8rGYgxZ9ff6kdGj2GNM2LvWLk+JxqZd8+IgfqOjFj7zIEI1ruOjLzBHG/LliFDRp/Rsd67/2uQ0W94509lnlV+r3pzYRioWNWIzI2KgWxXNbLvz8j512Ww19HTtcrcV6VWjLm8k4Eaj4i5s+Hdr57Y1yJ9vdHoqFVkP7PyQhrefrI5ZQ1EdBmjWiDn+t0c+QzDc14GzkDv697cPN+X0Wt0j3l1XZxmVPbfzH0gns1VI3NOhozM3GU+A2e5sEPG/75YY/prsEPGeQYyvn/vgsQ=
+   eJzt2FkOgzAMBFCu1vtfqr8VauJtxpBkLPFRGvKMs0B7XWvHJ9g2eyDyuX8X6VeGrz/2GFfbWdcjcvEYI3dWl0i9RoaVY3WtMQyrJlXDk8MoH5bBiF0NxpjM7gNhWHmjjMjnlQzEmLPrb/Ujo8ewxhmxd6xcnxONyjuox0BdIyPWPnMggvWuIyNvMMfbsmXIkNFndKz37v8aZPQb3vlTmWeV36veXBgGKlY1InOjYiDbVY3s+zNy/nUZ7HX0dK0y91WpFWMu72SgxiNi7mx496sn9rVIX280OmoV2c+svJCGt59sTlkDEV3GqBbIuX43Rz7D8JyXgTPQ+7o3N8/1MnqN7jGvrovTjMr+m7kPxLO5amTOyZCRmbvMZ+AsF3bI+N8Xa0x/DXbIOM9AxheimoIB
   </data>
  </layer>
  <layer name="Collision" width="25" height="126">
   <data encoding="base64" compression="zlib">
-   eJztmgtOwzAMhgscYtxhcIdod4BdleOxSlgKnn+/NzZWSxUscfM5TWwnaZflMjJ+/h4cuvvT9Za4XgOMYWroEmE8n65Pdr2wOv57vY4BhmQPr9N0r8mQxpfGbueom3+/GzZH5OtJLpf6sp/skMZXG2upTnu2cz3yjXnucx3NL4ix2nZkZUgOio5njnAumvtDKEd+Qbrz/Jn7LdmAbEMylDrOmMcgEpc+FjyP5meCxiDq25JIjGhcyjA6bLcYPL6g+FFhcKn0a44zu+U85mjxwytj+n+NgRQHq3lDYiC7Oxm8TZ43ogzNl4d0Q4IhtcMZnjjoYUi+THVVH9TauXWGNs7ZeI7sm0WbSxWGNs7VeE7t3OM4RxnSmjSSOzwMJN7+aQy0pojmDo3Rdc81GWhcq3vLmZERL8MaV21fUl3DjaCtt86o+riHgaSjf10+npGxMTbGnTDQ2Qj5/734OzF4jO/0d2LwtlD5IzG8Z2zEyJw7DFCOGJaedu5q7S15fkHzDNki6VpCbSGGtL7J7on/cm507SMvxbDmBul51tN83nvtG0b9LNlngOb4s1DG+5o9E5BsG+dqv6STgfJHNF5pDPSsuHjngPdZreeY1D9vXpQY3rW1dK+XYelGzzAzDC6dDG/+qDC891prwI53zmPpl0gejF5WPvc+f+3dfVceHKaGfx2GYhvpS7GfylAe9NiDbLL8W4pF3nfIHpuQUDsao7oeo3ak3KPxIzJA+QHwM/tBLdZJ/O49zsx/9P1g5FsTqbyyT/NKJEdr8ah6/kcMaX2l3e/RuRWGluMz349F1u2zVBl8XZuNvRojuq7tYGS/z4gwuEj90uKGh+HZdyB7vAzP+HB7kE0dDMunN8Z1GdK6UitDv6NzNyMSQ/sWLvq+s/rOcyh2dkknw/OdaFWGUd/JQGPb/S3ipWRj/G/GN4ER1Pc=
+   eJztmg1OwzAMhQscYtxhcAdrd4BdleOxSkQKnp//NzbWJ1WMNM3nNImdpFmWy4h+/h4cefen6y1xvQYYZObQFWE8n65Pdr2we/z/9ToGGJI9/J6W95oMqX1H2+0c9zztTMo9pK+n8zTE2E92SO2rtTVPRwwS7EBjY34ne5CuMVbbjiwN6QDyWIyDkLZyUd8nkK4x5v4z112yAdmGRMo9zoi0wayPBfej+Z1E2yAiiRH1SxlGh+0Wg/uX9wswuCr1mv3Mbjn3OZYP8Yim36sPHH6wGjckBrK7k8HLjMQNSdpYJumBBEMqhzN4/IiOQ6kc7vOrY1Ar59YZWjtn/Tmyb5bWlyoMrZ2r/nyUc4/tHGVIc9JI7PAwkLz10xhoThGNHRqj65lrMlC7VteWMyMjL8NqV21dUp3DUdDWW2dUx7iHgdRRv64xnhFtjI1xJwy+f8L3lu5lvA8G9/Gd430weFko/ZEYqB8hRmbfgUA6Ylj5tH1Xa23J4wvqZ8gWKa+lURZiSPOb7Jr4L/tG1zryUgyrb4x8nvk07/de+8i4Pyv7DlAffxbSeF2zewKSbXSe7Zc6GSh+RP2VxkDvisvbB7zvat3HHPXzxkWJ4Z1bS896GVbe6B5mhsHVyfDGjwrD+6w1B+z45kxLvyJxMHpZ8dz7/rVv911xkMwc/nkY8m0jv+T7RxqKgx57kE3W+JZ8kTaWojYhjXI0RnU+NsqRYo/Gj4hA+gHwM+tBzddJ/O41zsx/9PVg5KyJlF5Zp3kVidGaP6ru/w2GNL/SnvfkuRWGFuMz58ci8/ZZVQaf12Z9r8aIzms7GNnzGREGl1QvzW94GJ51B7LHy/C0D7cH2dTBsMb0xrguQ5pXammRc5YkpFUkMbSzcNHvndVvnqTY2aVOhuecaFVk3O9koLbtPot4KW2M/834BvzU1B0=
   </data>
  </layer>
  <layer name="Traps" width="25" height="126">
   <data encoding="base64" compression="zlib">
-   eJzt1bEJADAIBEBHyP7Tpk2RzkgE73pBeOUjAKDW+r0AABTTdQDoAgB0Aczj7zm5BwDI06f9yWieTOa32a431HUvAN7aofsAwQ==
+   eJzt1TEOgCAQBED4gf//qVa2FsQGkYOb6Uku2SVbCgCMdcw+4AdXnX0BK9KbnE65bynD1gHwzhYAYAsgH/+eJ30AgH72ND4Z5dOTeett1A5FvQuAb91+iwOx
   </data>
  </layer>
  <layer name="Powerups" width="25" height="126">
   <data encoding="base64" compression="zlib">
-   eJzt2bENACAIBEDcf06dwwVMxFiJdxU1BZAnAgD4SW/rGgC4N+xWAAAAKCubqcsH9vSICvzZ6jKjAHiFewTgzASZ+Agb
+   eJzt2bENACAIBEDcf06dwwVMRDvxrqKmAPJEAAA/6W1dAwD3hp0KAAAA5WUzdTnBnh5RgT9bXWYUAK9wjwCcmaEwCBs=
   </data>
  </layer>
  <layer name="Collectables" width="25" height="126">
   <data encoding="base64" compression="zlib">
-   eJzt17sSgCAMRFH9/0+1srewsHEcYBjCI2bvKbERSBbYNm3Hnh6/MuMenIV/K32Dnee6eLPUQa4nlLEmfUXNqb/kA/xYlS1Re9Cj6LlALUFdSw/QN3HxZgA05HKcDIBFbf14u0dEf++s4m2fR/vOV2H+nBn1WKs+yGs9K/ecesMsCncGzNWaX+RebGTNw1ud804AbFLZ1tLnZGQMozKe+qjn7ZxVcQNo6CgT
+   eJzt2bEKwjAQANAYcBHb//9DHaoglM6lkxipggRCzve2QIYQLndJLiUiGfPreD60WQf9Oefvc4B3g7MDAOxwxwaI6VTkd/ke4OlaoSfx0NeggaN6zg8W+aqayV5CeOVbuhdyPZuLOOCDm/j4Cz3VsZr/1XfxDQS0AmcdCPM=
   </data>
  </layer>
 </map>
