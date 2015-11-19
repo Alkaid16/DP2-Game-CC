@@ -35,7 +35,8 @@ var res = {
     spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist",
     monstruo_plist: "res/spritesheets/monstruo.plist",
     pause_modal_json: "res/views/pause_modal.json",
-    options_json: "res/views/options_modal.json"
+    options_json: "res/views/options_modal.json",
+    correct_wav: "res/correct.wav"
 };
 
 var g_resources = [];

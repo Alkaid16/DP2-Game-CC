@@ -1,6 +1,8 @@
 var WSHandler = (function(){
     var pub = {};
-    var host = "http://162.243.118.33/afiperularavel/public/game";
+    //Servidor de la cato 200.16.7.111
+    //Servidor nube 162.243.118.33
+    var host = "http://200.16.7.111/afiperularavel/public/game";
 
     //Funcion que obtiene el objeto Player, con toda la informacion del jugador. Si la llamada falla, se retorna -1.
     pub.getPlayerInfo= function(fbID){
@@ -113,18 +115,55 @@ var WSHandler = (function(){
     };
 
     pub.getFriendsScore = function(idPlayers, idLevel, numPlayers){
-        var string = "";
-        for(var i=0; i<idPlayers.length; i++){
-            string += "idPlayers[]=" + idPlayers[i] + "&";
+        var object = {
+            idPlayers: idPlayers,
+            idLevel: idLevel,
+            numPlayers: numPlayers
         }
 
+
         var ajax = $.ajax({
-            url: host + "/friends/score?" + string
-            + "idLevel=" + idLevel + "&"
-            + "numPlayers=" + numPlayers,
-            type: "GET",
+            url: host + "/friends/score",
+            type: "POST",
+            data: JSON.stringify(object),
+            crossDomain: true,
+            success: function(data){
+                return;
+            }
+        });
+
+        return ajax;
+    };
+
+    pub.registerContinuePurchase = function(idPlayerBuying, idPlayerHelped, price){
+        if(!price) price = 50;
+
+        var ajax = $.ajax({
+            url: host + "/friends/help?" + "idPlayerBuying=" + idPlayerBuying + "&"
+            + "idPlayerHelped=" + idPlayerHelped + "&"
+            + "price=" + price,
+            type: "POST",
             crossDomain: true,
             contentType: "application/json",
+        });
+
+        return ajax;
+    };
+
+    pub.getFriendsInNeed = function(idPlayers){
+        var object = {
+            idPlayers: idPlayers,
+        }
+
+
+        var ajax = $.ajax({
+            url: host + "/friends/helpNeeded",
+            type: "POST",
+            data: JSON.stringify(object),
+            crossDomain: true,
+            success: function(data){
+                return;
+            }
         });
 
         return ajax;

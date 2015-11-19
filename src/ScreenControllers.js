@@ -237,6 +237,7 @@ var LevelModalC = (function(){
         btnStart = layer.getChildByName("btnStart");
         btnStart.addClickEventListener(function(){
             layer.setVisible(false);
+            cc.audioEngine.playEffect(res.correct_wav, false);
             var scene = new GameplayScene(level);
             cc.director.runScene(scene);
         });
@@ -623,6 +624,60 @@ CharacterScreenC = (function(){
         cc.eventManager.addListener(listener,sprtGirl);
         cc.eventManager.addListener(listener.clone(), sprtBoy);
     }
+
+    return pub;
+})();
+
+MessageModalC = (function(){
+    var pub = {};
+    var layer;
+    var cLayer;
+
+    function createCoverLayer(){
+        cLayer = new cc.LayerColor(cc.color(0,0,0), 640,640);
+        cLayer.setOpacity(0);
+        cLayer.setPosition(cc.p(0,0));
+        cLayer.cListener = cc.EventListener.create({
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            swallowTouches: false,
+            onTouchBegan: function (touch, event) {
+                return true;
+            }
+        });
+        cc.eventManager.addListener(cLayer.cListener,cLayer);
+    }
+
+
+    pub.load = function(){
+        var obj =  ccs.load("");
+        layer = obj.node;
+        layer.setVisible(false);
+        createCoverLayer();
+
+        var btnContinue = layer.getChildByName("btnContinue");
+
+        btnContinue.addClickEventListener(function(){
+            pub.hide();
+        });
+    };
+
+    pub.show = function(pScene){
+        pScene.addChild(layer, 9001);
+        pScene.addChild(cLayer, 9000);
+        layer.setVisible(true);
+        cLayer.cListener.swallowTouches = true;
+    }
+
+    pub.hide = function(){
+        cLayer.cListener.swallowTouches = false;
+        layer.removeFromParentAndCleanup(false);
+        cLayer.removeFromParentAndCleanup(false);
+        layer.setVisible(false);
+    }
+
+    pub.getLayer = function(){
+        return layer;
+    };
 
     return pub;
 })();

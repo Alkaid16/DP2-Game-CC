@@ -7,8 +7,15 @@
     "id" : "gameCanvas",
     "renderMode" : 0,
     "engineDir":"frameworks/cocos2d-html5",
+    "plugin": {
+        "facebook":{
+            "appId": "1662609900674914",
+            "xfbml": true,
+            "version": "v2.5"
+        }
+    },
 
-    "modules" : ["cocos2d", "cocostudio", "chipmunk"],
+    "modules" : ["cocos2d","pluginx", "cocostudio", "plugin-facebook"],
 
     "jsList" : [
         "src/resource.js",

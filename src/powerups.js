@@ -33,9 +33,8 @@ function pickCollectable(tile){
     var collectableLayer = gameplayMap.getLayer("Collectables");
     var idCollectable = tile.collectable;
     var collVal = 10;
-    console.log("id de objeto: " + idCollectable);
     var coinsLabel = new cc.LabelTTF(gameplayMap.score,'Arial', 18, cc.size(110,40) ,cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
-
+    coinsLabel.setFontFillColor(cc.color(242,240,102));
 
     delete tile.collectable;
     tile.rect.width=0;
@@ -50,15 +49,9 @@ function pickCollectable(tile){
 
     coinsLabel.setPosition(gameplayMap.sprite.getPositionX(), gameplayMap.sprite.getPositionY() + 40);
     currentGameplayScene.gameplayLayer.addChild(coinsLabel,20);
-    var currentFontSize = coinsLabel.getFontSize();
-
-    for(var i = 1;i<=currentFontSize;i++){
-        (function (x) {
-            setTimeout(function () {
-                coinsLabel.setFontSize(currentFontSize - x);
-            },i*100);
-        })(i);
-    }
+    var spawn = cc.spawn([cc.fadeOut(1.5), cc.moveBy(1.5, 0, 20)]);
+    var seq = cc.sequence([spawn, cc.removeSelf(true)]);
+    coinsLabel.runAction(seq);
 }
 
 function showScore(){
