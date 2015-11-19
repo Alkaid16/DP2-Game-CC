@@ -57,8 +57,13 @@
             "ctype": "ImageViewObjectData"
           },
           {
-            "FontSize": 12,
-            "LabelText": "<<Nombre del Juego>",
+            "FontSize": 48,
+            "LabelText": "THE KONFIMAZE",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -79,8 +84,8 @@
               "Y": 574.7129
             },
             "Scale": {
-              "ScaleX": 1.97,
-              "ScaleY": 3.4747
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -89,18 +94,18 @@
               "Y": 0.898
             },
             "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.6016,
+              "Y": 0.0859
             },
-            "LeftMargin": 259.0748,
-            "RightMargin": 257.9252,
-            "TopMargin": 57.7871,
-            "BottomMargin": 567.2129,
+            "LeftMargin": 128.0748,
+            "RightMargin": 126.9252,
+            "TopMargin": 37.7871,
+            "BottomMargin": 547.2129,
             "Tag": 14,
             "ActionTag": 382820312,
             "Size": {
-              "X": 123.0,
-              "Y": 15.0
+              "X": 385.0,
+              "Y": 55.0
             },
             "Name": "lblGameName",
             "ctype": "TextObjectData"
@@ -256,8 +261,13 @@
             "ctype": "ButtonObjectData"
           },
           {
-            "FontSize": 20,
+            "FontSize": 10,
             "LabelText": "KEINIONS © 2015\n",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -274,32 +284,32 @@
               "ScaleY": 1.0
             },
             "Position": {
-              "X": 554.491,
-              "Y": 18.5049
+              "X": 585.8739,
+              "Y": 22.5982
             },
             "Scale": {
               "ScaleX": 1.0,
-              "ScaleY": 0.6571
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.8664,
-              "Y": 0.0289
+              "X": 0.9154,
+              "Y": 0.0353
             },
             "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.1344,
+              "Y": 0.0406
             },
-            "LeftMargin": 472.491,
-            "RightMargin": 3.509,
-            "TopMargin": 621.4951,
-            "BottomMargin": -27.4951,
+            "LeftMargin": 542.8739,
+            "RightMargin": 11.1261,
+            "TopMargin": 617.4018,
+            "BottomMargin": -3.4018,
             "Tag": 23,
             "ActionTag": -322946789,
             "Size": {
-              "X": 164.0,
-              "Y": 46.0
+              "X": 86.0,
+              "Y": 26.0
             },
             "Name": "lblCopyright",
             "ctype": "TextObjectData"
@@ -393,7 +403,8 @@
         "Default/Button_Press.png",
         "pantallas-03.png",
         "pantallas-09.png",
-        "pantallas-10.png"
+        "pantallas-10.png",
+        "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"
     }

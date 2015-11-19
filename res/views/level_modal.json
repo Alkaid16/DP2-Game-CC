@@ -188,7 +188,7 @@
           },
           {
             "FontSize": 18,
-            "LabelText": "Nombre del Nivel",
+            "LabelText": "Descripción",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
@@ -210,32 +210,36 @@
               "ScaleY": 0.595
             },
             "Position": {
-              "X": 83.8734,
-              "Y": 252.9208
+              "X": 70.2334,
+              "Y": 249.2007
             },
             "Scale": {
               "ScaleX": 0.8531,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.2621,
-              "Y": 0.7904
+              "X": 0.2195,
+              "Y": 0.7788
             },
             "PreSize": {
               "X": 0.4625,
               "Y": 0.0719
             },
-            "LeftMargin": 12.3154,
-            "RightMargin": 159.6846,
-            "TopMargin": 57.7642,
-            "BottomMargin": 239.2358,
+            "LeftMargin": 38.3224,
+            "RightMargin": 215.6776,
+            "TopMargin": 64.7243,
+            "BottomMargin": 240.2757,
             "Tag": 151,
             "ActionTag": -394469845,
             "Size": {
-              "X": 148.0,
-              "Y": 23.0
+              "X": 66.0,
+              "Y": 15.0
             },
             "Name": "txtNameLevel",
             "ctype": "TextObjectData"
@@ -476,8 +480,8 @@
             "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 272,
-            "Scale9Height": 290,
+            "Scale9Width": 215,
+            "Scale9Height": 223,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -495,32 +499,32 @@
               "ScaleY": 0.5257
             },
             "Position": {
-              "X": 301.7558,
-              "Y": 304.1295
+              "X": 299.058,
+              "Y": 300.0544
             },
             "Scale": {
-              "ScaleX": 0.0355,
-              "ScaleY": 0.0349
+              "ScaleX": 0.0606,
+              "ScaleY": 0.0516
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.943,
-              "Y": 0.9504
+              "X": 0.9346,
+              "Y": 0.9377
             },
             "PreSize": {
-              "X": 0.9438,
-              "Y": 0.975
+              "X": 0.7656,
+              "Y": 0.7656
             },
-            "LeftMargin": 169.4404,
-            "RightMargin": -151.4404,
-            "TopMargin": -132.0958,
-            "BottomMargin": 140.0958,
+            "LeftMargin": 191.716,
+            "RightMargin": -116.716,
+            "TopMargin": -96.2459,
+            "BottomMargin": 171.2459,
             "Tag": 16,
             "ActionTag": -1224243608,
             "Size": {
-              "X": 302.0,
-              "Y": 312.0
+              "X": 245.0,
+              "Y": 245.0
             },
             "Name": "btnExit",
             "ctype": "ButtonObjectData"

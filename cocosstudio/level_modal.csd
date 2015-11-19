@@ -43,13 +43,13 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="txtNameLevel" ActionTag="-394469845" Tag="151" IconVisible="False" LeftMargin="12.3154" RightMargin="159.6846" TopMargin="57.7642" BottomMargin="239.2358" FontSize="18" LabelText="Nombre del Nivel" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="148.0000" Y="23.0000" />
+          <AbstractNodeData Name="txtNameLevel" ActionTag="-394469845" Tag="151" IconVisible="False" LeftMargin="38.3224" RightMargin="215.6776" TopMargin="64.7243" BottomMargin="240.2757" FontSize="18" LabelText="Descripción" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="66.0000" Y="15.0000" />
             <AnchorPoint ScaleX="0.4835" ScaleY="0.5950" />
-            <Position X="83.8734" Y="252.9208" />
+            <Position X="70.2334" Y="249.2007" />
             <Scale ScaleX="0.8531" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2621" Y="0.7904" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.2195" Y="0.7788" />
             <PreSize X="0.4625" Y="0.0719" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
@@ -105,14 +105,14 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnExit" ActionTag="-1224243608" Tag="16" IconVisible="False" LeftMargin="169.4404" RightMargin="-151.4404" TopMargin="-132.0958" BottomMargin="140.0958" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="272" Scale9Height="290" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="302.0000" Y="312.0000" />
+          <AbstractNodeData Name="btnExit" ActionTag="-1224243608" Tag="16" IconVisible="False" LeftMargin="191.7160" RightMargin="-116.7160" TopMargin="-96.2459" BottomMargin="171.2459" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="215" Scale9Height="223" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="245.0000" Y="245.0000" />
             <AnchorPoint ScaleX="0.4381" ScaleY="0.5257" />
-            <Position X="301.7558" Y="304.1295" />
-            <Scale ScaleX="0.0355" ScaleY="0.0349" />
+            <Position X="299.0580" Y="300.0544" />
+            <Scale ScaleX="0.0606" ScaleY="0.0516" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.9430" Y="0.9504" />
-            <PreSize X="0.9438" Y="0.9750" />
+            <PrePosition X="0.9346" Y="0.9377" />
+            <PreSize X="0.7656" Y="0.7656" />
             <TextColor A="255" R="65" G="65" B="70" />
             <NormalFileData Type="Normal" Path="exit.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />

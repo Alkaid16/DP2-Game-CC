@@ -17,14 +17,14 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "wallpaper_selector.jpg",
+              "Path": "fondo1.png",
               "Plist": ""
             },
-            "Scale9Width": 259,
-            "Scale9Height": 194,
+            "Scale9Width": 2667,
+            "Scale9Height": 2667,
             "AnchorPoint": {},
             "Position": {
-              "X": 1.3006,
+              "X": 0.0,
               "Y": 0.0
             },
             "Scale": {
@@ -34,26 +34,20 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.002,
+              "X": 0.0,
               "Y": 0.0
             },
-            "PercentWidthEnable": true,
-            "PercentHeightEnable": true,
-            "PercentWidthEnabled": true,
-            "PercentHeightEnabled": true,
             "PreSize": {
               "X": 1.0,
               "Y": 1.0
             },
-            "LeftMargin": 1.3006,
-            "RightMargin": -1.3007,
-            "Tag": 94,
-            "ActionTag": 517391132,
+            "Tag": 164,
+            "ActionTag": 1987840150,
             "Size": {
               "X": 640.0,
               "Y": 640.0
             },
-            "Name": "Image_2",
+            "Name": "Image_1",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -193,28 +187,32 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 320.0,
-              "Y": 585.3035
+              "X": 322.0974,
+              "Y": 581.1084
             },
             "Scale": {
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5,
-              "Y": 0.9145
+              "X": 0.5033,
+              "Y": 0.908
             },
             "PreSize": {
               "X": 0.4688,
               "Y": 0.0781
             },
             "HorizontalEdge": "BothEdge",
-            "LeftMargin": 170.0,
-            "RightMargin": 170.0,
-            "TopMargin": 29.6965,
-            "BottomMargin": 560.3035,
+            "LeftMargin": 172.0974,
+            "RightMargin": 167.9026,
+            "TopMargin": 33.8916,
+            "BottomMargin": 556.1084,
             "Tag": 95,
             "ActionTag": 2068887668,
             "Size": {
@@ -480,7 +478,11 @@
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
               "X": 0.15,
@@ -514,10 +516,10 @@
       },
       "UsedResources": [
         "botonGenerico.png",
+        "fondo1.png",
         "ninaFrente1.png",
         "ninoFrente1.png",
-        "THE MINION.ttf",
-        "wallpaper_selector.jpg"
+        "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"
     }

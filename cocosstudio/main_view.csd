@@ -16,14 +16,15 @@
             <PreSize X="0.6250" Y="0.6250" />
             <FileData Type="Normal" Path="pantallas-03.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblGameName" ActionTag="382820312" Tag="14" IconVisible="False" LeftMargin="259.0748" RightMargin="257.9252" TopMargin="57.7871" BottomMargin="567.2129" FontSize="12" LabelText="&lt;&lt;Nombre del Juego&gt;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="123.0000" Y="15.0000" />
+          <AbstractNodeData Name="lblGameName" ActionTag="382820312" Tag="14" IconVisible="False" LeftMargin="128.0748" RightMargin="126.9252" TopMargin="37.7871" BottomMargin="547.2129" FontSize="48" LabelText="THE KONFIMAZE" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="385.0000" Y="55.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="320.5748" Y="574.7129" />
-            <Scale ScaleX="1.9700" ScaleY="3.4747" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5009" Y="0.8980" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PreSize X="0.6016" Y="0.0859" />
+            <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -57,14 +58,15 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblCopyright" ActionTag="-322946789" Tag="23" IconVisible="False" LeftMargin="472.4910" RightMargin="3.5090" TopMargin="621.4951" BottomMargin="-27.4951" FontSize="20" LabelText="KEINIONS © 2015&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="164.0000" Y="46.0000" />
+          <AbstractNodeData Name="lblCopyright" ActionTag="-322946789" Tag="23" IconVisible="False" LeftMargin="542.8739" RightMargin="11.1261" TopMargin="617.4018" BottomMargin="-3.4018" FontSize="10" LabelText="KEINIONS © 2015&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="86.0000" Y="26.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
-            <Position X="554.4910" Y="18.5049" />
-            <Scale ScaleX="1.0000" ScaleY="0.6571" />
+            <Position X="585.8739" Y="22.5982" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.8664" Y="0.0289" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="0.9154" Y="0.0353" />
+            <PreSize X="0.1344" Y="0.0406" />
+            <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>

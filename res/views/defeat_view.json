@@ -17,45 +17,42 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "modal_level_wallpaper.jpg",
+              "Path": "fondo1.png",
               "Plist": ""
             },
-            "Scale9Width": 259,
-            "Scale9Height": 194,
+            "Scale9Width": 2667,
+            "Scale9Height": 2667,
             "AnchorPoint": {
-              "ScaleY": 0.5
+              "ScaleX": 0.4868,
+              "ScaleY": 0.4939
             },
             "Position": {
-              "X": -0.0001,
-              "Y": 239.2151
+              "X": 231.7302,
+              "Y": 235.0472
             },
             "Scale": {
-              "ScaleX": 1.8476,
-              "ScaleY": 2.4563
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0,
-              "Y": 0.4984
+              "X": 0.4828,
+              "Y": 0.4897
             },
-            "PercentWidthEnable": true,
-            "PercentHeightEnable": true,
-            "PercentWidthEnabled": true,
-            "PercentHeightEnabled": true,
             "PreSize": {
-              "X": 0.5396,
-              "Y": 0.4042
+              "X": 1.0,
+              "Y": 1.0
             },
-            "LeftMargin": -0.0001,
-            "RightMargin": 220.9921,
-            "TopMargin": 143.7769,
-            "BottomMargin": 142.2071,
-            "Tag": 103,
-            "ActionTag": 207637160,
+            "LeftMargin": -1.9484,
+            "RightMargin": 1.9484,
+            "TopMargin": 2.0462,
+            "BottomMargin": -2.0462,
+            "Tag": 172,
+            "ActionTag": 674899838,
             "Size": {
-              "X": 259.008,
-              "Y": 194.016
+              "X": 480.0,
+              "Y": 480.0
             },
             "Name": "Image_1",
             "ctype": "ImageViewObjectData"
@@ -149,7 +146,11 @@
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
@@ -219,8 +220,8 @@
               "ScaleY": 0.4648
             },
             "Position": {
-              "X": 238.3745,
-              "Y": 104.9411
+              "X": 238.368,
+              "Y": 104.928
             },
             "Scale": {
               "ScaleX": 1.0829,
@@ -375,7 +376,7 @@
             },
             "Position": {
               "X": 240.0,
-              "Y": 173.6897
+              "Y": 173.712
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -417,7 +418,7 @@
       "UsedResources": [
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
-        "modal_level_wallpaper.jpg",
+        "fondo1.png",
         "pantalla-15.png",
         "pantalla-16.png",
         "pantalla-17.png",

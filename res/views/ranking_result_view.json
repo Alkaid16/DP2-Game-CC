@@ -17,11 +17,11 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "modal_level_wallpaper.jpg",
+              "Path": "fondo1.png",
               "Plist": ""
             },
-            "Scale9Width": 259,
-            "Scale9Height": 194,
+            "Scale9Width": 2667,
+            "Scale9Height": 2667,
             "AnchorPoint": {},
             "Position": {
               "X": 0.0,
@@ -41,13 +41,13 @@
               "X": 1.0,
               "Y": 1.0
             },
-            "Tag": 106,
-            "ActionTag": 1958832379,
+            "Tag": 187,
+            "ActionTag": 685287735,
             "Size": {
               "X": 640.0,
               "Y": 640.0
             },
-            "Name": "imgRankingWallpaper",
+            "Name": "Image_1",
             "ctype": "ImageViewObjectData"
           },
           {
@@ -76,18 +76,22 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 320.0,
-              "Y": 588.8
+              "X": 315.3453,
+              "Y": 570.1803
             },
             "Scale": {
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5,
-              "Y": 0.92
+              "X": 0.4927,
+              "Y": 0.8909
             },
             "PreSize": {
               "X": 0.5,
@@ -95,10 +99,10 @@
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 160.0569,
-            "RightMargin": 159.9431,
-            "TopMargin": 28.7,
-            "BottomMargin": 566.3,
+            "LeftMargin": 155.4093,
+            "RightMargin": 164.5907,
+            "TopMargin": 47.3197,
+            "BottomMargin": 547.6803,
             "Tag": 45,
             "ActionTag": -22948474,
             "Size": {
@@ -111,6 +115,11 @@
           {
             "FontSize": 16,
             "LabelText": "Has logrado que <<niño>> <<objetivo>>.",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -141,15 +150,15 @@
               "Y": 0.8
             },
             "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.4406,
+              "Y": 0.0281
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 188.0,
-            "RightMargin": 188.0,
-            "TopMargin": 120.0,
-            "BottomMargin": 504.0,
+            "LeftMargin": 179.0,
+            "RightMargin": 179.0,
+            "TopMargin": 119.0,
+            "BottomMargin": 503.0,
             "Tag": 47,
             "ActionTag": 1415416434,
             "Size": {
@@ -276,7 +285,7 @@
               "Y": 0.35
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.3125
             },
             "HorizontalEdge": "BothEdge",
@@ -290,6 +299,11 @@
               {
                 "FontSize": 24,
                 "LabelText": "Ranking Amigos",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -319,15 +333,15 @@
                   "Y": 0.95
                 },
                 "PreSize": {
-                  "X": 0.5,
-                  "Y": 0.1333
+                  "X": 0.348,
+                  "Y": 0.135
                 },
                 "HorizontalEdge": "BothEdge",
                 "VerticalEdge": "BothEdge",
                 "LeftMargin": 25.0,
-                "RightMargin": 319.0,
+                "RightMargin": 301.0,
                 "TopMargin": 10.0,
-                "BottomMargin": 166.0,
+                "BottomMargin": 163.0,
                 "Tag": 54,
                 "ActionTag": -270504741,
                 "Size": {
@@ -380,7 +394,7 @@
               "Y": 0.65
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.2188
             },
             "HorizontalEdge": "BothEdge",
@@ -708,7 +722,7 @@
       "UsedResources": [
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
-        "modal_level_wallpaper.jpg",
+        "fondo1.png",
         "pantallas-13.png",
         "THE MINION.ttf"
       ],
