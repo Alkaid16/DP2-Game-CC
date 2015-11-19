@@ -6,13 +6,13 @@
       <ObjectData Name="Scene" Tag="9" ctype="GameNodeObjectData">
         <Size X="640.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="Image_2" ActionTag="517391132" Tag="94" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="1.3006" RightMargin="-1.3006" Scale9Width="2667" Scale9Height="2667" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_1" ActionTag="1987840150" Tag="164" IconVisible="False" Scale9Width="2667" Scale9Height="2667" ctype="ImageViewObjectData">
             <Size X="640.0000" Y="640.0000" />
             <AnchorPoint />
-            <Position X="1.3006" />
+            <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0020" />
+            <PrePosition />
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="fondo1.png" Plist="" />
           </AbstractNodeData>
@@ -42,13 +42,13 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_4" ActionTag="2068887668" Tag="95" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="170.0000" RightMargin="170.0000" TopMargin="29.6965" BottomMargin="560.3035" IsCustomSize="True" FontSize="24" LabelText="Selección de Personaje&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_4" ActionTag="2068887668" Tag="95" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="172.0974" RightMargin="167.9026" TopMargin="33.8916" BottomMargin="556.1084" IsCustomSize="True" FontSize="24" LabelText="Selección de Personaje&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="300.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.0000" Y="585.3035" />
+            <Position X="322.0974" Y="581.1084" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.5000" Y="0.9145" />
+            <PrePosition X="0.5033" Y="0.9080" />
             <PreSize X="0.4688" Y="0.0781" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
@@ -63,7 +63,7 @@
             <PrePosition X="0.5000" Y="0.0984" />
             <PreSize X="0.3016" Y="0.0859" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
-            <TextColor A="255" R="0" G="0" B="0" />
+            <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Normal" Path="botonGenerico.png" Plist="" />
             <PressedFileData Type="Normal" Path="botonGenerico.png" Plist="" />
             <NormalFileData Type="Normal" Path="botonGenerico.png" Plist="" />
