@@ -62,6 +62,20 @@ cc.game.onStart = function(){
     cc.FIX_ARTIFACTS_BY_STRECHING_TEXEL = 1;
     fbAgent = plugin.FacebookAgent.getInstance();
 
+
+    fbAgent.login(["public_profile", "user_friends"], function(code, response){
+        if(code == plugin.FacebookAgent.CODE_SUCCEED){
+            cc.log("AccessToken: " + response["accessToken"]);
+            fbToken = response["accessToken"];
+            var permissions = response["permissions"];
+        } else {
+            cc.log("Login failed, error #" + code + ": " + response);
+        }
+    });
+
+
+
+
     //load resources
     cc.LoaderScene.preload(g_resources, function () {
         var mainScreen = new cc.Scene();
