@@ -1031,7 +1031,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-11.png",
+              "Path": "btnRegresar.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -1441,6 +1441,7 @@
       "UsedResources": [
         "antorcha.PNG",
         "botas.PNG",
+        "btnRegresar.png",
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
         "escudo.PNG",
@@ -1449,7 +1450,6 @@
         "hueco.PNG",
         "keyboards.png",
         "lunchbox.png",
-        "pantallas-11.png",
         "pizarra.PNG",
         "reloj.PNG",
         "rope.png",
