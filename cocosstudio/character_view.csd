@@ -6,7 +6,7 @@
       <ObjectData Name="Scene" Tag="9" ctype="GameNodeObjectData">
         <Size X="640.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="Image_2" ActionTag="517391132" Tag="94" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="1.3006" RightMargin="-1.3007" Scale9Width="259" Scale9Height="194" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_2" ActionTag="517391132" Tag="94" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="1.3006" RightMargin="-1.3006" Scale9Width="2667" Scale9Height="2667" ctype="ImageViewObjectData">
             <Size X="640.0000" Y="640.0000" />
             <AnchorPoint />
             <Position X="1.3006" />
@@ -14,7 +14,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0020" />
             <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="wallpaper_selector.jpg" Plist="" />
+            <FileData Type="Normal" Path="fondo1.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="pnlGirl" ActionTag="-542383906" VisibleForFrame="False" Tag="108" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="82.0000" RightMargin="338.0000" TopMargin="81.2000" BottomMargin="42.8000" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="220.0000" Y="516.0000" />
@@ -47,7 +47,7 @@
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="320.0000" Y="585.3035" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
+            <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.5000" Y="0.9145" />
             <PreSize X="0.4688" Y="0.0781" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
@@ -63,7 +63,7 @@
             <PrePosition X="0.5000" Y="0.0984" />
             <PreSize X="0.3016" Y="0.0859" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
-            <TextColor A="255" R="65" G="65" B="70" />
+            <TextColor A="255" R="0" G="0" B="0" />
             <DisabledFileData Type="Normal" Path="botonGenerico.png" Plist="" />
             <PressedFileData Type="Normal" Path="botonGenerico.png" Plist="" />
             <NormalFileData Type="Normal" Path="botonGenerico.png" Plist="" />
@@ -107,7 +107,7 @@
             <AnchorPoint ScaleY="0.5000" />
             <Position X="96.0000" Y="505.6800" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
+            <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.1500" Y="0.7901" />
             <PreSize X="0.2188" Y="0.0781" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />

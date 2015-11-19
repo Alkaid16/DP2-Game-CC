@@ -99,8 +99,8 @@
             "Tag": 14,
             "ActionTag": 382820312,
             "Size": {
-              "X": 123.0,
-              "Y": 15.0
+              "X": 111.0,
+              "Y": 12.0
             },
             "Name": "lblGameName",
             "ctype": "TextObjectData"
@@ -114,21 +114,20 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnComenzar.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnComenzar.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-09.png",
+              "Path": "btnComenzar.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 773,
@@ -167,10 +166,10 @@
               "X": 1.2547,
               "Y": 0.3562
             },
-            "LeftMargin": -2.8086,
-            "RightMargin": -160.1914,
-            "TopMargin": 301.3325,
-            "BottomMargin": 110.6675,
+            "LeftMargin": -2.8393,
+            "RightMargin": -160.1607,
+            "TopMargin": 301.3309,
+            "BottomMargin": 110.6691,
             "Tag": 21,
             "ActionTag": -1857035129,
             "Size": {
@@ -189,18 +188,18 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnOpciones.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnOpciones.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-10.png",
+              "Path": "btnOpciones.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -225,27 +224,27 @@
               "ScaleY": 0.4368
             },
             "Position": {
-              "X": 317.8386,
-              "Y": 168.1274
+              "X": 316.6031,
+              "Y": 172.1274
             },
             "Scale": {
-              "ScaleX": 0.1708,
+              "ScaleX": 0.1808,
               "ScaleY": 0.1758
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4966,
-              "Y": 0.2627
+              "X": 0.4947,
+              "Y": 0.2689
             },
             "PreSize": {
               "X": 1.2969,
-              "Y": 0.4063
+              "Y": 0.4062
             },
-            "LeftMargin": -98.3454,
-            "RightMargin": -91.6545,
-            "TopMargin": 325.4443,
-            "BottomMargin": 54.5557,
+            "LeftMargin": -99.5588,
+            "RightMargin": -90.4412,
+            "TopMargin": 321.4406,
+            "BottomMargin": 58.5594,
             "Tag": 22,
             "ActionTag": -1440041637,
             "Size": {
@@ -298,8 +297,8 @@
             "Tag": 23,
             "ActionTag": -322946789,
             "Size": {
-              "X": 164.0,
-              "Y": 46.0
+              "X": 150.0,
+              "Y": 40.0
             },
             "Name": "lblCopyright",
             "ctype": "TextObjectData"
@@ -313,13 +312,13 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "botones-howto.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "botones-howto.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -353,7 +352,7 @@
               "Y": 120.5867
             },
             "Scale": {
-              "ScaleX": 0.7078,
+              "ScaleX": 0.72,
               "ScaleY": 0.7177
             },
             "CColor": {},
@@ -366,10 +365,10 @@
               "X": 0.3016,
               "Y": 0.0859
             },
-            "LeftMargin": 220.4211,
-            "RightMargin": 226.5789,
-            "TopMargin": 488.438,
-            "BottomMargin": 96.562,
+            "LeftMargin": 220.4262,
+            "RightMargin": 226.5738,
+            "TopMargin": 488.4373,
+            "BottomMargin": 96.5627,
             "Tag": 49,
             "ActionTag": -1450932278,
             "Size": {
@@ -389,11 +388,9 @@
       },
       "UsedResources": [
         "botones-howto.png",
-        "Default/Button_Disable.png",
-        "Default/Button_Press.png",
-        "pantallas-03.png",
-        "pantallas-09.png",
-        "pantallas-10.png"
+        "btnComenzar.png",
+        "btnOpciones.png",
+        "pantallas-03.png"
       ],
       "ctype": "GameProjectData"
     }

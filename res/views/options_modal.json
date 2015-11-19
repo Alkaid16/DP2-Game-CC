@@ -220,7 +220,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-11.png",
+              "Path": "btnRegresar.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -400,10 +400,10 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "btnRegresar.png",
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
         "fondo1.png",
-        "pantallas-11.png",
         "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"

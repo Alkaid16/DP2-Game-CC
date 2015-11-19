@@ -17,11 +17,11 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "wallpaper_selector.jpg",
+              "Path": "fondo1.png",
               "Plist": ""
             },
-            "Scale9Width": 259,
-            "Scale9Height": 194,
+            "Scale9Width": 2667,
+            "Scale9Height": 2667,
             "AnchorPoint": {},
             "Position": {
               "X": 1.3006,
@@ -46,7 +46,7 @@
               "Y": 1.0
             },
             "LeftMargin": 1.3006,
-            "RightMargin": -1.3007,
+            "RightMargin": -1.3006,
             "Tag": 94,
             "ActionTag": 517391132,
             "Size": {
@@ -200,7 +200,11 @@
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
@@ -233,9 +237,9 @@
               "Plist": ""
             },
             "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
+              "R": 0,
+              "G": 0,
+              "B": 0
             },
             "DisabledFileData": {
               "Type": "Normal",
@@ -480,7 +484,11 @@
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
               "X": 0.15,
@@ -514,10 +522,10 @@
       },
       "UsedResources": [
         "botonGenerico.png",
+        "fondo1.png",
         "ninaFrente1.png",
         "ninoFrente1.png",
-        "THE MINION.ttf",
-        "wallpaper_selector.jpg"
+        "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"
     }

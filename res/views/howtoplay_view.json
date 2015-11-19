@@ -1327,7 +1327,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-11.png",
+              "Path": "btnRegresar.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -1393,6 +1393,7 @@
       "UsedResources": [
         "antorcha_powerup.png",
         "botas_powerup.png",
+        "btnRegresar.png",
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
         "escudo_powerup.png",
@@ -1401,7 +1402,6 @@
         "huecos_trap.png",
         "keyboards.png",
         "lonchera_trap.png",
-        "pantallas-11.png",
         "pizarra_trap.png",
         "red_trap.png",
         "THE MINION.ttf"

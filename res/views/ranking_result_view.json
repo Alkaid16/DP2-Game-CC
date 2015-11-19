@@ -153,8 +153,8 @@
             "Tag": 47,
             "ActionTag": 1415416434,
             "Size": {
-              "X": 282.0,
-              "Y": 18.0
+              "X": 264.0,
+              "Y": 16.0
             },
             "Name": "lblDescription",
             "ctype": "TextObjectData"
@@ -168,21 +168,20 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnSelecNiveles.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnSelecNiveles.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-13.png",
+              "Path": "btnSelecNiveles.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 1247,
@@ -204,38 +203,38 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 320.0,
-              "Y": 64.0
+              "X": 320.0001,
+              "Y": 56.0001
             },
             "Scale": {
-              "ScaleX": 0.7441,
-              "ScaleY": 0.7952
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
-              "Y": 0.1
+              "Y": 0.0875
             },
             "PercentWidthEnable": true,
             "PercentHeightEnable": true,
             "PercentWidthEnabled": true,
             "PercentHeightEnabled": true,
             "PreSize": {
-              "X": 0.6,
-              "Y": 0.15
+              "X": 0.55,
+              "Y": 0.12
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 128.0,
-            "RightMargin": 128.0,
-            "TopMargin": 528.0,
-            "BottomMargin": 16.0,
+            "LeftMargin": 144.0001,
+            "RightMargin": 143.9999,
+            "TopMargin": 545.6,
+            "BottomMargin": 17.6001,
             "Tag": 60,
             "ActionTag": -1312379699,
             "Size": {
-              "X": 384.0,
-              "Y": 96.0
+              "X": 352.0,
+              "Y": 76.8
             },
             "Name": "btnLevels",
             "ctype": "ButtonObjectData"
@@ -276,7 +275,7 @@
               "Y": 0.35
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.3125
             },
             "HorizontalEdge": "BothEdge",
@@ -331,8 +330,8 @@
                 "Tag": 54,
                 "ActionTag": -270504741,
                 "Size": {
-                  "X": 174.0,
-                  "Y": 27.0
+                  "X": 156.0,
+                  "Y": 24.0
                 },
                 "Name": "lblRanking",
                 "ctype": "TextObjectData"
@@ -380,7 +379,7 @@
               "Y": 0.65
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.2188
             },
             "HorizontalEdge": "BothEdge",
@@ -441,8 +440,8 @@
                 "Tag": 49,
                 "ActionTag": -852286057,
                 "Size": {
-                  "X": 131.0,
-                  "Y": 41.0
+                  "X": 121.0,
+                  "Y": 36.0
                 },
                 "Name": "lblScore",
                 "ctype": "TextObjectData"
@@ -497,8 +496,8 @@
                 "Tag": 50,
                 "ActionTag": -172652360,
                 "Size": {
-                  "X": 128.0,
-                  "Y": 41.0
+                  "X": 116.0,
+                  "Y": 36.0
                 },
                 "Name": "lblTime",
                 "ctype": "TextObjectData"
@@ -553,8 +552,8 @@
                 "Tag": 24,
                 "ActionTag": 504288472,
                 "Size": {
-                  "X": 120.0,
-                  "Y": 41.0
+                  "X": 113.0,
+                  "Y": 36.0
                 },
                 "Name": "lblCoins",
                 "ctype": "TextObjectData"
@@ -706,10 +705,8 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "Default/Button_Disable.png",
-        "Default/Button_Press.png",
+        "btnSelecNiveles.png",
         "modal_level_wallpaper.jpg",
-        "pantallas-13.png",
         "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"

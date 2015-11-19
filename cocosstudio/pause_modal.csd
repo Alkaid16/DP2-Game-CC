@@ -27,7 +27,7 @@
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
             <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Normal" Path="pantallas-12.png" Plist="" />
+            <NormalFileData Type="Normal" Path="btnReanudar.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -42,7 +42,7 @@
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
             <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Normal" Path="pantallas-13.png" Plist="" />
+            <NormalFileData Type="Normal" Path="btnSelecNiveles.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -57,7 +57,7 @@
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
             <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Normal" Path="pantallas-10.png" Plist="" />
+            <NormalFileData Type="Normal" Path="btnOpciones.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>

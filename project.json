@@ -18,6 +18,7 @@
     "modules" : ["cocos2d","pluginx", "cocostudio", "plugin-facebook"],
 
     "jsList" : [
+        "src/globals.js",
         "src/resource.js",
         "src/childSM.js",
         "src/app.js",
@@ -25,7 +26,6 @@
         "src/jquery-2.1.4.min.js",
         "src/ScreenControllers.js",
         "src/traps.js",
-        "src/powerups.js",
-        "src/globals.js"
+        "src/powerups.js"
     ]
 }

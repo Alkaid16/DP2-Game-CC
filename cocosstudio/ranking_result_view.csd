@@ -29,7 +29,7 @@
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
           <AbstractNodeData Name="lblDescription" ActionTag="1415416434" Tag="47" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="188.0000" RightMargin="188.0000" TopMargin="120.0000" BottomMargin="504.0000" FontSize="16" LabelText="Has logrado que &lt;&lt;niño&gt;&gt; &lt;&lt;objetivo&gt;&gt;." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="282.0000" Y="18.0000" />
+            <Size X="264.0000" Y="16.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="320.0000" Y="512.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -39,18 +39,18 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnLevels" ActionTag="-1312379699" Tag="60" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="128.0000" RightMargin="128.0000" TopMargin="528.0000" BottomMargin="16.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1247" Scale9Height="205" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="384.0000" Y="96.0000" />
+          <AbstractNodeData Name="btnLevels" ActionTag="-1312379699" Tag="60" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="144.0001" RightMargin="143.9999" TopMargin="545.6000" BottomMargin="17.6001" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1247" Scale9Height="205" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="352.0000" Y="76.8000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.0000" Y="64.0000" />
-            <Scale ScaleX="0.7441" ScaleY="0.7952" />
+            <Position X="320.0001" Y="56.0001" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.1000" />
-            <PreSize X="0.6000" Y="0.1500" />
+            <PrePosition X="0.5000" Y="0.0875" />
+            <PreSize X="0.5500" Y="0.1200" />
             <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Normal" Path="pantallas-13.png" Plist="" />
+            <DisabledFileData Type="Normal" Path="btnSelecNiveles.png" Plist="" />
+            <PressedFileData Type="Normal" Path="btnSelecNiveles.png" Plist="" />
+            <NormalFileData Type="Normal" Path="btnSelecNiveles.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -58,7 +58,7 @@
             <Size X="500.0000" Y="200.0000" />
             <Children>
               <AbstractNodeData Name="lblRanking" ActionTag="-270504741" Tag="54" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="25.0000" RightMargin="319.0000" TopMargin="10.0000" BottomMargin="166.0000" FontSize="24" LabelText="Ranking Amigos" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="174.0000" Y="27.0000" />
+                <Size X="156.0000" Y="24.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="25.0000" Y="190.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -84,7 +84,7 @@
             <Size X="500.0000" Y="140.0000" />
             <Children>
               <AbstractNodeData Name="lblScore" ActionTag="-852286057" Tag="49" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="94.0000" RightMargin="275.0000" TopMargin="14.0000" BottomMargin="85.0000" FontSize="36" LabelText="Puntaje:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="131.0000" Y="41.0000" />
+                <Size X="121.0000" Y="36.0000" />
                 <AnchorPoint ScaleX="1.0000" ScaleY="1.0000" />
                 <Position X="225.0000" Y="126.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -96,7 +96,7 @@
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
               <AbstractNodeData Name="lblTime" ActionTag="-172652360" Tag="50" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="97.0000" RightMargin="275.0000" TopMargin="56.0000" BottomMargin="43.0000" FontSize="36" LabelText="Tiempo:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="128.0000" Y="41.0000" />
+                <Size X="116.0000" Y="36.0000" />
                 <AnchorPoint ScaleX="1.0000" ScaleY="1.0000" />
                 <Position X="225.0000" Y="84.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -108,7 +108,7 @@
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
               <AbstractNodeData Name="lblCoins" ActionTag="504288472" Tag="24" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="TopEdge" LeftMargin="105.0000" RightMargin="275.0000" TopMargin="98.0000" BottomMargin="1.0000" FontSize="36" LabelText="Puntos:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="120.0000" Y="41.0000" />
+                <Size X="113.0000" Y="36.0000" />
                 <AnchorPoint ScaleX="1.0000" ScaleY="1.0000" />
                 <Position X="225.0000" Y="42.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />

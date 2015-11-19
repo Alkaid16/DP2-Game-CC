@@ -76,7 +76,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-12.png",
+              "Path": "btnReanudar.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -152,7 +152,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-13.png",
+              "Path": "btnSelecNiveles.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -227,7 +227,7 @@
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantallas-10.png",
+              "Path": "btnOpciones.png",
               "Plist": ""
             },
             "Scale9Enable": true,
@@ -345,11 +345,11 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "btnOpciones.png",
+        "btnReanudar.png",
+        "btnSelecNiveles.png",
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
-        "pantallas-10.png",
-        "pantallas-12.png",
-        "pantallas-13.png",
         "THE MINION.ttf",
         "wallpaper_selector.jpg"
       ],

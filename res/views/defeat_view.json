@@ -110,8 +110,8 @@
             "Tag": 104,
             "ActionTag": -1241845164,
             "Size": {
-              "X": 161.0,
-              "Y": 55.0
+              "X": 153.0,
+              "Y": 48.0
             },
             "Name": "lblDefeatTitle",
             "ctype": "TextObjectData"
@@ -175,33 +175,37 @@
             "ctype": "TextObjectData"
           },
           {
-            "FontSize": 18,
-            "ButtonText": "",
+            "FontSize": 20,
+            "ButtonText": "Salir",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
             "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
+              "R": 0,
+              "G": 0,
+              "B": 0
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantalla-17.png",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 150,
-            "Scale9Height": 42,
+            "Scale9Width": 163,
+            "Scale9Height": 33,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -219,12 +223,12 @@
               "ScaleY": 0.4648
             },
             "Position": {
-              "X": 238.3745,
-              "Y": 104.9411
+              "X": 238.368,
+              "Y": 104.928
             },
             "Scale": {
-              "ScaleX": 1.0829,
-              "ScaleY": 0.6448
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -233,53 +237,57 @@
               "Y": 0.2186
             },
             "PreSize": {
-              "X": 0.375,
-              "Y": 0.1333
+              "X": 0.4167,
+              "Y": 0.0729
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 148.3745,
-            "RightMargin": 151.6255,
-            "TopMargin": 340.8061,
-            "BottomMargin": 75.1939,
+            "LeftMargin": 138.368,
+            "RightMargin": 141.632,
+            "TopMargin": 356.34,
+            "BottomMargin": 88.66,
             "CallBackType": "Click",
             "Tag": 106,
             "ActionTag": -1949964052,
             "Size": {
-              "X": 180.0,
-              "Y": 64.0
+              "X": 200.0,
+              "Y": 35.0
             },
             "Name": "btnExit",
             "ctype": "ButtonObjectData"
           },
           {
-            "FontSize": 18,
-            "ButtonText": "",
+            "FontSize": 20,
+            "ButtonText": "Reintentar",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
             "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
+              "R": 0,
+              "G": 0,
+              "B": 0
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantalla-16.png",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 180,
-            "Scale9Height": 50,
+            "Scale9Width": 163,
+            "Scale9Height": 33,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -301,8 +309,8 @@
               "Y": 240.0
             },
             "Scale": {
-              "ScaleX": 0.9432,
-              "ScaleY": 0.6162
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -311,52 +319,56 @@
               "Y": 0.5
             },
             "PreSize": {
-              "X": 0.4375,
-              "Y": 0.15
+              "X": 0.4167,
+              "Y": 0.0729
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 135.0,
-            "RightMargin": 135.0,
-            "TopMargin": 204.0,
-            "BottomMargin": 204.0,
+            "LeftMargin": 140.0,
+            "RightMargin": 140.0,
+            "TopMargin": 222.5,
+            "BottomMargin": 222.5,
             "Tag": 107,
             "ActionTag": -1437654066,
             "Size": {
-              "X": 210.0,
-              "Y": 72.0
+              "X": 200.0,
+              "Y": 35.0
             },
             "Name": "btnRetry",
             "ctype": "ButtonObjectData"
           },
           {
-            "FontSize": 18,
-            "ButtonText": "",
+            "FontSize": 20,
+            "ButtonText": "Pedir Ayuda",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
             "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
+              "R": 0,
+              "G": 0,
+              "B": 0
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "pantalla-15.png",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 149,
-            "Scale9Height": 30,
+            "Scale9Width": 163,
+            "Scale9Height": 33,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -375,33 +387,33 @@
             },
             "Position": {
               "X": 240.0,
-              "Y": 173.6897
+              "Y": 171.848
             },
             "Scale": {
               "ScaleX": 1.0,
-              "ScaleY": 0.6301
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
-              "Y": 0.3619
+              "Y": 0.358
             },
             "PreSize": {
-              "X": 0.3729,
-              "Y": 0.1083
+              "X": 0.4167,
+              "Y": 0.0729
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 150.5,
-            "RightMargin": 150.5,
-            "TopMargin": 278.4799,
-            "BottomMargin": 149.5201,
+            "LeftMargin": 140.0,
+            "RightMargin": 140.0,
+            "TopMargin": 289.42,
+            "BottomMargin": 155.58,
             "Tag": 108,
             "ActionTag": -107116174,
             "Size": {
-              "X": 179.0,
-              "Y": 52.0
+              "X": 200.0,
+              "Y": 35.0
             },
             "Name": "btnHelp",
             "ctype": "ButtonObjectData"
@@ -415,12 +427,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "Default/Button_Disable.png",
-        "Default/Button_Press.png",
+        "botonGenerico.png",
         "modal_level_wallpaper.jpg",
-        "pantalla-15.png",
-        "pantalla-16.png",
-        "pantalla-17.png",
         "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"
