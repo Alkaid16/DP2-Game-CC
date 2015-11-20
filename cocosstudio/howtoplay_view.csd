@@ -6,60 +6,60 @@
       <ObjectData Name="Scene" Tag="20" ctype="GameNodeObjectData">
         <Size X="640.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="Image_4" ActionTag="2111588224" Tag="38" IconVisible="False" LeftMargin="0.4556" RightMargin="-0.4556" TopMargin="0.8128" BottomMargin="-0.8128" Scale9Width="2667" Scale9Height="2667" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_4" ActionTag="2111588224" Tag="38" IconVisible="False" LeftMargin="1.5390" RightMargin="-1.5391" TopMargin="-0.1872" BottomMargin="0.1872" Scale9Width="2667" Scale9Height="2667" ctype="ImageViewObjectData">
             <Size X="640.0000" Y="640.0000" />
             <AnchorPoint />
-            <Position X="0.4556" Y="-0.8128" />
+            <Position X="1.5390" Y="0.1872" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0007" Y="-0.0013" />
+            <PrePosition X="0.0024" Y="0.0003" />
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="fondo1.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2" ActionTag="-1698446830" Tag="23" IconVisible="False" LeftMargin="87.8500" RightMargin="83.1500" TopMargin="77.8887" BottomMargin="502.1113" FontSize="20" LabelText=" ¡Un niño se encuentra en peligro! Está siendo perseguido por un monstruo originado&#xA; por sus problemas del día a día. Es tu misión, como voluntario de AFI Perú, ayudarlo&#xA; a escapar y ganar confianza en sí mismo para enfrentarlo.&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="469.0000" Y="60.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="322.3500" Y="532.1113" />
-            <Scale ScaleX="0.5925" ScaleY="0.7253" />
+          <AbstractNodeData Name="Text_2" ActionTag="-1698446830" Tag="23" IconVisible="False" PercentWidthEnable="True" PercentWidthEnabled="True" HorizontalEdge="BothEdge" LeftMargin="51.2000" RightMargin="51.2000" TopMargin="55.8881" BottomMargin="514.1119" IsCustomSize="True" FontSize="12" LabelText="¡Un niño se encuentra en peligro! Está siendo perseguido por un monstruo originado por sus problemas del día a día. Es tu misión, como voluntario de AFI Perú, ayudarlo a escapar y ganar confianza en sí mismo para enfrentarlo.&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="537.6000" Y="70.0000" />
+            <AnchorPoint ScaleY="0.5000" />
+            <Position X="51.2000" Y="549.1119" />
+            <Scale ScaleX="1.0000" ScaleY="0.9800" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.5037" Y="0.8314" />
-            <PreSize X="1.1750" Y="0.1437" />
+            <PrePosition X="0.0800" Y="0.8580" />
+            <PreSize X="0.8400" Y="0.1094" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_3" ActionTag="925378311" Tag="24" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="51.2000" RightMargin="531.8000" TopMargin="42.6896" BottomMargin="582.3104" FontSize="20" LabelText="OBJETIVO" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_3" ActionTag="925378311" Tag="24" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="51.2000" RightMargin="531.8000" TopMargin="35.6891" BottomMargin="589.3109" FontSize="20" LabelText="OBJETIVO" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="57.0000" Y="15.0000" />
             <AnchorPoint ScaleY="0.5000" />
-            <Position X="51.2000" Y="589.8104" />
+            <Position X="51.2000" Y="596.8109" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.0800" Y="0.9216" />
+            <PrePosition X="0.0800" Y="0.9325" />
             <PreSize X="0.1547" Y="0.0359" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_3_0" ActionTag="-1046968340" Tag="25" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="51.2000" RightMargin="457.8000" TopMargin="145.3482" BottomMargin="479.6518" FontSize="20" LabelText="MECÁNICA DEL JUEGO" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_3_0" ActionTag="-1046968340" Tag="25" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="51.2000" RightMargin="457.8000" TopMargin="140.3482" BottomMargin="484.6518" FontSize="20" LabelText="MECÁNICA DEL JUEGO" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="131.0000" Y="15.0000" />
             <AnchorPoint ScaleY="0.5000" />
-            <Position X="51.2000" Y="487.1518" />
+            <Position X="51.2000" Y="492.1518" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.0800" Y="0.7612" />
+            <PrePosition X="0.0800" Y="0.7690" />
             <PreSize X="0.3422" Y="0.0359" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2_0" ActionTag="-117639538" Tag="26" IconVisible="False" LeftMargin="84.6277" RightMargin="92.3723" TopMargin="184.0884" BottomMargin="425.9116" FontSize="20" LabelText="Guía al niño a través de los pasillos de los diversos laberintos. El niño camina por si&#xA;sólo, ayúdalo a decidir en los caminos de diferentes decisiones." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="463.0000" Y="30.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="316.1277" Y="440.9116" />
-            <Scale ScaleX="0.5733" ScaleY="1.0000" />
+          <AbstractNodeData Name="Text_2_0" ActionTag="-117639538" Tag="26" IconVisible="False" PercentWidthEnable="True" PercentWidthEnabled="True" HorizontalEdge="LeftEdge" LeftMargin="51.2000" RightMargin="51.2000" TopMargin="161.0879" BottomMargin="408.9121" IsCustomSize="True" FontSize="12" LabelText="Guía al niño a través de los pasillos de los diversos laberintos. El niño camina por si sólo, ayúdalo a decidir en los caminos de diferentes decisiones." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="537.6000" Y="70.0000" />
+            <AnchorPoint ScaleY="0.5000" />
+            <Position X="51.2000" Y="443.9121" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.4939" Y="0.6889" />
-            <PreSize X="1.1500" Y="0.0719" />
+            <PrePosition X="0.0800" Y="0.6936" />
+            <PreSize X="0.8400" Y="0.1094" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -74,47 +74,47 @@
             <PreSize X="0.1563" Y="0.1563" />
             <FileData Type="Normal" Path="example_movement.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_3" ActionTag="860014532" Tag="28" IconVisible="False" LeftMargin="302.9954" RightMargin="237.0046" TopMargin="237.9851" BottomMargin="302.0149" Scale9Width="260" Scale9Height="180" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_3" ActionTag="860014532" Tag="28" IconVisible="False" LeftMargin="299.9956" RightMargin="240.0044" TopMargin="237.9851" BottomMargin="302.0149" Scale9Width="260" Scale9Height="180" ctype="ImageViewObjectData">
             <Size X="100.0000" Y="100.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="352.9954" Y="352.0149" />
+            <Position X="349.9956" Y="352.0149" />
             <Scale ScaleX="1.0000" ScaleY="0.7473" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5516" Y="0.5500" />
+            <PrePosition X="0.5469" Y="0.5500" />
             <PreSize X="0.1563" Y="0.1563" />
             <FileData Type="Normal" Path="keyboards.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2_0_0" ActionTag="1406267728" Tag="29" IconVisible="False" LeftMargin="411.6314" RightMargin="62.3685" TopMargin="271.1026" BottomMargin="338.8974" FontSize="20" LabelText="Utiliza las teclas direccionales&#xA;para guiar al niño" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="166.0000" Y="30.0000" />
+          <AbstractNodeData Name="Text_2_0_0" ActionTag="1406267728" Tag="29" IconVisible="False" LeftMargin="415.6314" RightMargin="44.3687" TopMargin="249.1026" BottomMargin="310.8974" IsCustomSize="True" FontSize="14" LabelText="Utiliza las teclas direccionales&#xA;para guiar al niño" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="180.0000" Y="80.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="494.6314" Y="353.8974" />
-            <Scale ScaleX="0.5399" ScaleY="1.0000" />
+            <Position X="505.6314" Y="350.8974" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.7729" Y="0.5530" />
-            <PreSize X="0.4063" Y="0.0719" />
+            <PrePosition X="0.7900" Y="0.5483" />
+            <PreSize X="0.2813" Y="0.1250" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_3_0_0" ActionTag="-899738406" Tag="30" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="51.2000" RightMargin="518.8000" TopMargin="363.6150" BottomMargin="261.3850" FontSize="20" LabelText="POWERUPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_3_0_0" ActionTag="-899738406" Tag="30" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="51.2000" RightMargin="518.8000" TopMargin="368.6149" BottomMargin="256.3851" FontSize="20" LabelText="POWERUPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="70.0000" Y="15.0000" />
             <AnchorPoint ScaleY="0.5000" />
-            <Position X="51.2000" Y="268.8850" />
+            <Position X="51.2000" Y="263.8851" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.0800" Y="0.4201" />
+            <PrePosition X="0.0800" Y="0.4123" />
             <PreSize X="0.1781" Y="0.0359" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_3_0_0_0" ActionTag="-2088914733" Tag="31" IconVisible="False" LeftMargin="292.4684" RightMargin="308.5316" TopMargin="363.6150" BottomMargin="261.3850" FontSize="20" LabelText="TRAPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="39.0000" Y="15.0000" />
+          <AbstractNodeData Name="Text_3_0_0_0" ActionTag="-2088914733" Tag="31" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="292.4686" RightMargin="293.5314" TopMargin="368.6149" BottomMargin="256.3851" FontSize="20" LabelText="TRAMPAS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="54.0000" Y="15.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="311.9684" Y="268.8850" />
+            <Position X="319.4686" Y="263.8851" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.4875" Y="0.4201" />
+            <PrePosition X="0.4992" Y="0.4123" />
             <PreSize X="0.1016" Y="0.0359" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />

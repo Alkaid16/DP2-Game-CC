@@ -2098,19 +2098,19 @@
               "Y": 0.11
             },
             "PreSize": {
-              "X": 0.3,
+              "X": 0.3125,
               "Y": 0.0781
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 96.0,
-            "RightMargin": 352.0,
+            "LeftMargin": 92.0,
+            "RightMargin": 348.0,
             "TopMargin": 544.6,
             "BottomMargin": 45.4,
             "Tag": 45,
             "ActionTag": 875339152,
             "Size": {
-              "X": 192.0,
+              "X": 200.0,
               "Y": 50.0
             },
             "Name": "btnHelpFriends",

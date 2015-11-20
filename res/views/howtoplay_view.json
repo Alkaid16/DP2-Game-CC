@@ -24,8 +24,8 @@
             "Scale9Height": 2667,
             "AnchorPoint": {},
             "Position": {
-              "X": 0.4556,
-              "Y": -0.8128
+              "X": 1.539,
+              "Y": 0.1872
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -34,17 +34,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0007,
-              "Y": -0.0013
+              "X": 0.0024,
+              "Y": 0.0003
             },
             "PreSize": {
               "X": 1.0,
               "Y": 1.0
             },
-            "LeftMargin": 0.4556,
-            "RightMargin": -0.4556,
-            "TopMargin": 0.8128,
-            "BottomMargin": -0.8128,
+            "LeftMargin": 1.539,
+            "RightMargin": -1.5391,
+            "TopMargin": -0.1872,
+            "BottomMargin": 0.1872,
             "Tag": 38,
             "ActionTag": 2111588224,
             "Size": {
@@ -55,8 +55,9 @@
             "ctype": "ImageViewObjectData"
           },
           {
-            "FontSize": 20,
-            "LabelText": " ¡Un niño se encuentra en peligro! Está siendo perseguido por un monstruo originado\n por sus problemas del día a día. Es tu misión, como voluntario de AFI Perú, ayudarlo\n a escapar y ganar confianza en sí mismo para enfrentarlo.\n",
+            "IsCustomSize": true,
+            "FontSize": 12,
+            "LabelText": "¡Un niño se encuentra en peligro! Está siendo perseguido por un monstruo originado por sus problemas del día a día. Es tu misión, como voluntario de AFI Perú, ayudarlo a escapar y ganar confianza en sí mismo para enfrentarlo.\n",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
@@ -74,16 +75,15 @@
             "ShadowOffsetX": 2.0,
             "ShadowOffsetY": -2.0,
             "AnchorPoint": {
-              "ScaleX": 0.5,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 322.35,
-              "Y": 532.1113
+              "X": 51.2,
+              "Y": 549.1119
             },
             "Scale": {
-              "ScaleX": 0.5925,
-              "ScaleY": 0.7253
+              "ScaleX": 1.0,
+              "ScaleY": 0.98
             },
             "CColor": {
               "R": 0,
@@ -92,22 +92,25 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5037,
-              "Y": 0.8314
+              "X": 0.08,
+              "Y": 0.858
             },
+            "PercentWidthEnable": true,
+            "PercentWidthEnabled": true,
             "PreSize": {
-              "X": 1.175,
-              "Y": 0.1437
+              "X": 0.84,
+              "Y": 0.1094
             },
-            "LeftMargin": 87.85,
-            "RightMargin": 83.15,
-            "TopMargin": 77.8887,
-            "BottomMargin": 502.1113,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 51.2,
+            "RightMargin": 51.2,
+            "TopMargin": 55.8881,
+            "BottomMargin": 514.1119,
             "Tag": 23,
             "ActionTag": -1698446830,
             "Size": {
-              "X": 469.0,
-              "Y": 60.0
+              "X": 537.6,
+              "Y": 70.0
             },
             "Name": "Text_2",
             "ctype": "TextObjectData"
@@ -136,7 +139,7 @@
             },
             "Position": {
               "X": 51.2,
-              "Y": 589.8104
+              "Y": 596.8109
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -150,7 +153,7 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.08,
-              "Y": 0.9216
+              "Y": 0.9325
             },
             "PreSize": {
               "X": 0.1547,
@@ -159,8 +162,8 @@
             "HorizontalEdge": "BothEdge",
             "LeftMargin": 51.2,
             "RightMargin": 531.8,
-            "TopMargin": 42.6896,
-            "BottomMargin": 582.3104,
+            "TopMargin": 35.6891,
+            "BottomMargin": 589.3109,
             "Tag": 24,
             "ActionTag": 925378311,
             "Size": {
@@ -194,7 +197,7 @@
             },
             "Position": {
               "X": 51.2,
-              "Y": 487.1518
+              "Y": 492.1518
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -208,7 +211,7 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.08,
-              "Y": 0.7612
+              "Y": 0.769
             },
             "PreSize": {
               "X": 0.3422,
@@ -217,8 +220,8 @@
             "HorizontalEdge": "BothEdge",
             "LeftMargin": 51.2,
             "RightMargin": 457.8,
-            "TopMargin": 145.3482,
-            "BottomMargin": 479.6518,
+            "TopMargin": 140.3482,
+            "BottomMargin": 484.6518,
             "Tag": 25,
             "ActionTag": -1046968340,
             "Size": {
@@ -229,8 +232,9 @@
             "ctype": "TextObjectData"
           },
           {
-            "FontSize": 20,
-            "LabelText": "Guía al niño a través de los pasillos de los diversos laberintos. El niño camina por si\nsólo, ayúdalo a decidir en los caminos de diferentes decisiones.",
+            "IsCustomSize": true,
+            "FontSize": 12,
+            "LabelText": "Guía al niño a través de los pasillos de los diversos laberintos. El niño camina por si sólo, ayúdalo a decidir en los caminos de diferentes decisiones.",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
@@ -248,15 +252,14 @@
             "ShadowOffsetX": 2.0,
             "ShadowOffsetY": -2.0,
             "AnchorPoint": {
-              "ScaleX": 0.5,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 316.1277,
-              "Y": 440.9116
+              "X": 51.2,
+              "Y": 443.9121
             },
             "Scale": {
-              "ScaleX": 0.5733,
+              "ScaleX": 1.0,
               "ScaleY": 1.0
             },
             "CColor": {
@@ -266,22 +269,25 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4939,
-              "Y": 0.6889
+              "X": 0.08,
+              "Y": 0.6936
             },
+            "PercentWidthEnable": true,
+            "PercentWidthEnabled": true,
             "PreSize": {
-              "X": 1.15,
-              "Y": 0.0719
+              "X": 0.84,
+              "Y": 0.1094
             },
-            "LeftMargin": 84.6277,
-            "RightMargin": 92.3723,
-            "TopMargin": 184.0884,
-            "BottomMargin": 425.9116,
+            "HorizontalEdge": "LeftEdge",
+            "LeftMargin": 51.2,
+            "RightMargin": 51.2,
+            "TopMargin": 161.0879,
+            "BottomMargin": 408.9121,
             "Tag": 26,
             "ActionTag": -117639538,
             "Size": {
-              "X": 463.0,
-              "Y": 30.0
+              "X": 537.6,
+              "Y": 70.0
             },
             "Name": "Text_2_0",
             "ctype": "TextObjectData"
@@ -342,7 +348,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 352.9954,
+              "X": 349.9956,
               "Y": 352.0149
             },
             "Scale": {
@@ -352,15 +358,15 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5516,
+              "X": 0.5469,
               "Y": 0.55
             },
             "PreSize": {
               "X": 0.1563,
               "Y": 0.1563
             },
-            "LeftMargin": 302.9954,
-            "RightMargin": 237.0046,
+            "LeftMargin": 299.9956,
+            "RightMargin": 240.0044,
             "TopMargin": 237.9851,
             "BottomMargin": 302.0149,
             "Tag": 28,
@@ -373,13 +379,15 @@
             "ctype": "ImageViewObjectData"
           },
           {
-            "FontSize": 20,
+            "IsCustomSize": true,
+            "FontSize": 14,
             "LabelText": "Utiliza las teclas direccionales\npara guiar al niño",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
               "Plist": ""
             },
+            "VerticalAlignmentType": "VT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -396,11 +404,11 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 494.6314,
-              "Y": 353.8974
+              "X": 505.6314,
+              "Y": 350.8974
             },
             "Scale": {
-              "ScaleX": 0.5399,
+              "ScaleX": 1.0,
               "ScaleY": 1.0
             },
             "CColor": {
@@ -410,22 +418,22 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.7729,
-              "Y": 0.553
+              "X": 0.79,
+              "Y": 0.5483
             },
             "PreSize": {
-              "X": 0.4063,
-              "Y": 0.0719
+              "X": 0.2813,
+              "Y": 0.125
             },
-            "LeftMargin": 411.6314,
-            "RightMargin": 62.3685,
-            "TopMargin": 271.1026,
-            "BottomMargin": 338.8974,
+            "LeftMargin": 415.6314,
+            "RightMargin": 44.3687,
+            "TopMargin": 249.1026,
+            "BottomMargin": 310.8974,
             "Tag": 29,
             "ActionTag": 1406267728,
             "Size": {
-              "X": 166.0,
-              "Y": 30.0
+              "X": 180.0,
+              "Y": 80.0
             },
             "Name": "Text_2_0_0",
             "ctype": "TextObjectData"
@@ -454,7 +462,7 @@
             },
             "Position": {
               "X": 51.2,
-              "Y": 268.885
+              "Y": 263.8851
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -468,17 +476,17 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.08,
-              "Y": 0.4201
+              "Y": 0.4123
             },
             "PreSize": {
               "X": 0.1781,
               "Y": 0.0359
             },
-            "HorizontalEdge": "BothEdge",
+            "HorizontalEdge": "LeftEdge",
             "LeftMargin": 51.2,
             "RightMargin": 518.8,
-            "TopMargin": 363.615,
-            "BottomMargin": 261.385,
+            "TopMargin": 368.6149,
+            "BottomMargin": 256.3851,
             "Tag": 30,
             "ActionTag": -899738406,
             "Size": {
@@ -490,7 +498,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "TRAPS",
+            "LabelText": "TRAMPAS",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
@@ -512,8 +520,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 311.9684,
-              "Y": 268.885
+              "X": 319.4686,
+              "Y": 263.8851
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -526,21 +534,22 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4875,
-              "Y": 0.4201
+              "X": 0.4992,
+              "Y": 0.4123
             },
             "PreSize": {
               "X": 0.1016,
               "Y": 0.0359
             },
-            "LeftMargin": 292.4684,
-            "RightMargin": 308.5316,
-            "TopMargin": 363.615,
-            "BottomMargin": 261.385,
+            "HorizontalEdge": "LeftEdge",
+            "LeftMargin": 292.4686,
+            "RightMargin": 293.5314,
+            "TopMargin": 368.6149,
+            "BottomMargin": 256.3851,
             "Tag": 31,
             "ActionTag": -2088914733,
             "Size": {
-              "X": 39.0,
+              "X": 54.0,
               "Y": 15.0
             },
             "Name": "Text_3_0_0_0",

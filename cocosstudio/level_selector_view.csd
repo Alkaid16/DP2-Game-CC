@@ -433,14 +433,14 @@
             <PreSize X="0.1953" Y="0.0078" />
             <FileData Type="Normal" Path="pantallas-16.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnHelpFriends" ActionTag="875339152" Tag="45" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="96.0000" RightMargin="352.0000" TopMargin="544.6000" BottomMargin="45.4000" TouchEnable="True" FontSize="22" ButtonText="Ayudar Amigos" LeftEage="15" RightEage="15" TopEage="4" BottomEage="5" Scale9OriginX="15" Scale9OriginY="4" Scale9Width="163" Scale9Height="46" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="192.0000" Y="50.0000" />
+          <AbstractNodeData Name="btnHelpFriends" ActionTag="875339152" Tag="45" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="92.0000" RightMargin="348.0000" TopMargin="544.6000" BottomMargin="45.4000" TouchEnable="True" FontSize="22" ButtonText="Ayudar Amigos" LeftEage="15" RightEage="15" TopEage="4" BottomEage="5" Scale9OriginX="15" Scale9OriginY="4" Scale9Width="163" Scale9Height="46" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="200.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="192.0000" Y="70.4000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.3000" Y="0.1100" />
-            <PreSize X="0.3000" Y="0.0781" />
+            <PreSize X="0.3125" Y="0.0781" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <TextColor A="255" R="0" G="0" B="0" />
             <DisabledFileData Type="Normal" Path="botonGenerico.png" Plist="" />

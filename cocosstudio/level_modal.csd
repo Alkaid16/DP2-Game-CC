@@ -6,13 +6,13 @@
       <ObjectData Name="Layer" Tag="113" ctype="GameLayerObjectData">
         <Size X="320.0000" Y="320.0000" />
         <Children>
-          <AbstractNodeData Name="img_wallpaper" ActionTag="671989342" Tag="90" IconVisible="False" LeftMargin="0.0000" RightMargin="0.0000" TopMargin="1.6739" BottomMargin="-1.6739" Scale9Width="2667" Scale9Height="2667" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="img_wallpaper" ActionTag="671989342" Tag="90" IconVisible="False" TopMargin="1.6739" BottomMargin="-1.6739" Scale9Width="2667" Scale9Height="2667" ctype="ImageViewObjectData">
             <Size X="320.0000" Y="320.0000" />
             <AnchorPoint />
-            <Position X="0.0000" Y="-1.6739" />
+            <Position Y="-1.6739" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0000" Y="-0.0052" />
+            <PrePosition Y="-0.0052" />
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="fondo1.png" Plist="" />
           </AbstractNodeData>
@@ -31,7 +31,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblLevel" ActionTag="-88717324" Tag="150" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="110.0000" RightMargin="110.0000" TopMargin="19.6877" BottomMargin="270.3123" IsCustomSize="True" FontSize="24" LabelText="Nivel X" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="lblLevel" ActionTag="-88717324" Tag="150" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="110.0000" RightMargin="110.0000" TopMargin="19.6877" BottomMargin="270.3123" IsCustomSize="True" FontSize="24" LabelText="Nivel X" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="160.0000" Y="285.3123" />
@@ -55,13 +55,13 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDefeatPos" ActionTag="-801968946" Tag="153" IconVisible="False" LeftMargin="16.9323" RightMargin="163.0677" TopMargin="111.0235" BottomMargin="183.9765" IsCustomSize="True" FontSize="18" LabelText="Posición:" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="lblDefeatPos" ActionTag="-801968946" Tag="153" IconVisible="False" LeftMargin="16.9323" RightMargin="163.0677" TopMargin="96.0232" BottomMargin="198.9768" IsCustomSize="True" FontSize="18" LabelText="Posición:" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="140.0000" Y="25.0000" />
             <AnchorPoint ScaleX="0.5045" ScaleY="0.4745" />
-            <Position X="87.5623" Y="195.8390" />
+            <Position X="87.5623" Y="210.8393" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.2736" Y="0.6120" />
+            <PrePosition X="0.2736" Y="0.6589" />
             <PreSize X="0.4375" Y="0.0781" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />

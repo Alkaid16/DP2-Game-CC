@@ -135,6 +135,7 @@
               "Path": "THE MINION.ttf",
               "Plist": ""
             },
+            "HorizontalAlignmentType": "HT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -273,7 +274,7 @@
             },
             "Position": {
               "X": 87.5623,
-              "Y": 195.839
+              "Y": 210.8393
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -287,7 +288,7 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.2736,
-              "Y": 0.612
+              "Y": 0.6589
             },
             "PreSize": {
               "X": 0.4375,
@@ -295,8 +296,8 @@
             },
             "LeftMargin": 16.9323,
             "RightMargin": 163.0677,
-            "TopMargin": 111.0235,
-            "BottomMargin": 183.9765,
+            "TopMargin": 96.0232,
+            "BottomMargin": 198.9768,
             "Tag": 153,
             "ActionTag": -801968946,
             "Size": {
