@@ -172,19 +172,19 @@
             "PercentHeightEnable": true,
             "PercentHeightEnabled": true,
             "PreSize": {
-              "X": 0.3906,
+              "X": 0.4062,
               "Y": 0.1
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 195.0,
-            "RightMargin": 195.0,
-            "TopMargin": 543.0,
-            "BottomMargin": 33.0,
+            "LeftMargin": 190.0,
+            "RightMargin": 190.0,
+            "TopMargin": 542.976,
+            "BottomMargin": 33.024,
             "Tag": 60,
             "ActionTag": -1312379699,
             "Size": {
-              "X": 250.0,
+              "X": 260.0,
               "Y": 64.0
             },
             "Name": "btnLevels",
@@ -226,7 +226,7 @@
               "Y": 0.3672
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.3125
             },
             "HorizontalEdge": "BothEdge",
@@ -260,7 +260,7 @@
                   "ScaleY": 1.0
                 },
                 "Position": {
-                  "X": 25.0,
+                  "X": 15.0,
                   "Y": 190.0
                 },
                 "Scale": {
@@ -270,19 +270,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.05,
+                  "X": 0.03,
                   "Y": 0.95
                 },
                 "PreSize": {
                   "X": 0.348,
                   "Y": 0.135
                 },
-                "HorizontalEdge": "BothEdge",
-                "VerticalEdge": "BothEdge",
-                "LeftMargin": 25.0,
-                "RightMargin": 301.0,
+                "LeftMargin": 15.0,
+                "RightMargin": 329.0,
                 "TopMargin": 10.0,
-                "BottomMargin": 163.0,
+                "BottomMargin": 166.0,
                 "Tag": 54,
                 "ActionTag": -270504741,
                 "Size": {
@@ -291,6 +289,59 @@
                 },
                 "Name": "lblRanking",
                 "ctype": "TextObjectData"
+              },
+              {
+                "ItemMargin": 5,
+                "DirectionType": "Vertical",
+                "ScrollDirectionType": 0,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 150
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 150
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 15.0,
+                  "Y": 170.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.03,
+                  "Y": 0.85
+                },
+                "PreSize": {
+                  "X": 0.94,
+                  "Y": 0.8
+                },
+                "LeftMargin": 15.0,
+                "RightMargin": 15.0,
+                "TopMargin": 30.0,
+                "BottomMargin": 10.0,
+                "Tag": 34,
+                "ActionTag": 292874210,
+                "Size": {
+                  "X": 470.0,
+                  "Y": 160.0
+                },
+                "Name": "listRanking",
+                "ctype": "ListViewObjectData"
               }
             ],
             "ActionTag": -244467705,
@@ -335,7 +386,7 @@
               "Y": 0.7234
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.2188
             },
             "HorizontalEdge": "BothEdge",
@@ -401,8 +452,8 @@
                 "Tag": 49,
                 "ActionTag": -852286057,
                 "Size": {
-                  "X": 121.0,
-                  "Y": 36.0
+                  "X": 45.0,
+                  "Y": 15.0
                 },
                 "Name": "lblScore",
                 "ctype": "TextObjectData"
@@ -462,8 +513,8 @@
                 "Tag": 50,
                 "ActionTag": -172652360,
                 "Size": {
-                  "X": 116.0,
-                  "Y": 36.0
+                  "X": 45.0,
+                  "Y": 15.0
                 },
                 "Name": "lblTime",
                 "ctype": "TextObjectData"
@@ -523,8 +574,8 @@
                 "Tag": 24,
                 "ActionTag": 504288472,
                 "Size": {
-                  "X": 113.0,
-                  "Y": 36.0
+                  "X": 42.0,
+                  "Y": 15.0
                 },
                 "Name": "lblCoins",
                 "ctype": "TextObjectData"

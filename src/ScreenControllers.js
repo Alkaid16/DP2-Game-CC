@@ -618,6 +618,8 @@ VictoryScreenC = (function(){
         cc.director.runScene(scene);
 
         var lvlInfo = LevelGraphC.getCurrentLevel();
+        updateRankingList(scene.getChildByName("pnlRanking").getChildByName("listRanking"), lvlInfo.idLevel,14,scene);
+
         var ajax = WSHandler.registerLevelClear(playerInfo.idPlayer, lvlInfo.idLevel, score, coins);
         $.when(ajax).then(function(){
             if(score > lvlInfo.score) lvlInfo.score = score;
@@ -830,8 +832,7 @@ function updateRankingList(listRanking, lvlNum, fontSize, parent){
                         }
                     }
                     cc.log("Nombre de amigo en ranking: " + name + " " + rank[i].score);
-                    var lbl = new ccui.Text(name + " " + rank[i].score, "THE MINION", fontSize*2);
-                    lbl.setScale(0.5);
+                    var lbl = new ccui.Text(name + " " + rank[i].score, "THE MINION", fontSize);
                     lbl.setColor(cc.color(0,0,0));
                     listRanking.addChild(lbl);
                 }
