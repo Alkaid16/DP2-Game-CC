@@ -773,7 +773,7 @@ function updateRankingList(listRanking, lvlNum, parent){
             cc.log(JSON.stringify(response));
 
             var ids = [];
-            for(var i=0;i<facebookIds; i++) {
+            for(var i=0;i<facebookIds.length; i++) {
                 ids[i] = facebookIds[i].id;
                 cc.log(facebookIds[i].id);
             }
