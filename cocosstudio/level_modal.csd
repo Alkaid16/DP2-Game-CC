@@ -82,7 +82,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="listRanking" ActionTag="-1045167597" Tag="163" IconVisible="False" LeftMargin="10.0000" RightMargin="10.0000" TopMargin="40.0003" BottomMargin="9.9997" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+              <AbstractNodeData Name="listRanking" ActionTag="-1045167597" Tag="163" IconVisible="False" LeftMargin="10.0000" RightMargin="10.0000" TopMargin="40.0003" BottomMargin="9.9997" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ScrollDirectionType="0" ItemMargin="5" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="180.0000" Y="150.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="10.0000" Y="159.9997" />

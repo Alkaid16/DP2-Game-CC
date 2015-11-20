@@ -46,7 +46,7 @@
           <AbstractNodeData Name="pnlRanking" ActionTag="-244467705" Tag="53" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="71.9500" RightMargin="68.0500" TopMargin="304.9920" BottomMargin="135.0080" TouchEnable="True" BackColorAlpha="134" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="500.0000" Y="200.0000" />
             <Children>
-              <AbstractNodeData Name="lblRanking" ActionTag="-270504741" Tag="54" IconVisible="False" LeftMargin="15.0000" RightMargin="329.0000" TopMargin="10.0000" BottomMargin="166.0000" FontSize="24" LabelText="Ranking Amigos" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="lblRanking" ActionTag="-270504741" Tag="54" IconVisible="False" LeftMargin="15.0000" RightMargin="329.0000" TopMargin="10.0000" BottomMargin="166.0000" FontSize="22" LabelText="Ranking Amigos" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="156.0000" Y="24.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="15.0000" Y="190.0000" />

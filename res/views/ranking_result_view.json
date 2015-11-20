@@ -172,7 +172,7 @@
             "PercentHeightEnable": true,
             "PercentHeightEnabled": true,
             "PreSize": {
-              "X": 0.4062,
+              "X": 0.4063,
               "Y": 0.1
             },
             "HorizontalEdge": "BothEdge",
@@ -238,7 +238,7 @@
             "Tag": 53,
             "Children": [
               {
-                "FontSize": 24,
+                "FontSize": 22,
                 "LabelText": "Ranking Amigos",
                 "FontResource": {
                   "Type": "Normal",

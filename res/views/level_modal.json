@@ -409,6 +409,7 @@
                 "ctype": "TextObjectData"
               },
               {
+                "ItemMargin": 5,
                 "DirectionType": "Vertical",
                 "ScrollDirectionType": 0,
                 "BackColorAlpha": 102,
