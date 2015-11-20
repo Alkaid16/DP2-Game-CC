@@ -189,7 +189,7 @@ var LevelModalC = (function(){
     pub.updateButtons = function(){
         var levelInfo = LevelGraphC.getLevelInfo(level);
         var canBuy = (levelInfo.cost > 0 && levelInfo.bought == 0);
-        btnBuy.setTitleText("Desbloquear: " + levelInfo.cost + "pt.");
+        btnBuy.setTitleText("Desbloquear: " + levelInfo.cost + "crd");
         btnBuy.setVisible(canBuy);
         btnBuy.setTouchEnabled(canBuy);
         btnStart.setVisible(!canBuy);
@@ -570,7 +570,7 @@ VictoryScreenC2 = (function(){
 
             btnInvitation = scene.getChildByName("btnInvitation");
             btnInvitation.addClickEventListener(function(){
-                var win = window.open("http://162.243.118.33/afiperudrupal/corporativo", '_blank');
+                var win = window.open("http://162.243.118.33/afiperudrupal/voluntarios", '_blank');
                 win.focus();
             });
 
@@ -623,6 +623,7 @@ VictoryScreenC = (function(){
         var ajax = WSHandler.registerLevelClear(playerInfo.idPlayer, lvlInfo.idLevel, score, coins);
         $.when(ajax).then(function(){
             if(score > lvlInfo.score) lvlInfo.score = score;
+            playerInfo.coins+=coins;
             LevelGraphC.clearLevel();
             btnReturn.setEnabled(true);
         }, function(){

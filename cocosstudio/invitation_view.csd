@@ -16,37 +16,39 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="fondo1.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblTitle" ActionTag="-414286772" Tag="29" IconVisible="False" LeftMargin="121.0175" RightMargin="105.9825" TopMargin="148.5901" BottomMargin="471.4099" FontSize="20" LabelText="Muchas gracias por jugar &lt;&lt;Nombre del Juego&gt;&gt;!!" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="413.0000" Y="20.0000" />
+          <AbstractNodeData Name="lblTitle" ActionTag="-414286772" Tag="29" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="184.5174" RightMargin="183.4826" TopMargin="67.2648" BottomMargin="518.7352" FontSize="36" LabelText="Muchas gracias por jugar&#xA;Confimaze" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="272.0000" Y="54.0000" />
             <AnchorPoint ScaleX="0.4981" ScaleY="0.5217" />
-            <Position X="326.7328" Y="481.8438" />
+            <Position X="320.0006" Y="546.9070" />
             <Scale ScaleX="1.3801" ScaleY="1.6508" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5105" Y="0.7529" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.5000" Y="0.8545" />
+            <PreSize X="0.4250" Y="0.0844" />
+            <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDescription" ActionTag="796398798" Tag="30" IconVisible="False" LeftMargin="272.7750" RightMargin="207.2250" TopMargin="216.3519" BottomMargin="403.6481" FontSize="20" LabelText="Texto de Invitación" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="160.0000" Y="20.0000" />
+          <AbstractNodeData Name="lblDescription" ActionTag="796398798" Tag="30" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="177.3237" BottomMargin="412.6763" IsCustomSize="True" FontSize="14" LabelText="Al igual que en Confimaze buscas ayudar a * a ganar confianza, AFI se encarga de apoyar niños y necesita tu ayuda." HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="560.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="352.7750" Y="413.6481" />
+            <Position X="320.0000" Y="437.6763" />
             <Scale ScaleX="1.0000" ScaleY="1.4411" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5512" Y="0.6463" />
-            <PreSize X="0.0000" Y="0.0000" />
+            <PrePosition X="0.5000" Y="0.6839" />
+            <PreSize X="0.8750" Y="0.0781" />
+            <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="imgLogo" ActionTag="297076349" Tag="31" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="297.0000" RightMargin="297.0000" TopMargin="317.9214" BottomMargin="276.0786" Scale9Width="46" Scale9Height="46" ctype="ImageViewObjectData">
-            <Size X="46.0000" Y="46.0000" />
+          <AbstractNodeData Name="imgLogo" ActionTag="297076349" Tag="31" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="284.9999" RightMargin="285.0001" TopMargin="289.9213" BottomMargin="270.0787" Scale9Width="160" Scale9Height="160" ctype="ImageViewObjectData">
+            <Size X="70.0000" Y="80.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.0000" Y="299.0786" />
+            <Position X="319.9999" Y="310.0787" />
             <Scale ScaleX="3.5154" ScaleY="2.3835" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.4673" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
+            <PrePosition X="0.5000" Y="0.4845" />
+            <PreSize X="0.1094" Y="0.1250" />
+            <FileData Type="Normal" Path="logo.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="btnInvitation" ActionTag="-366999809" Tag="32" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="170.0000" RightMargin="170.0000" TopMargin="453.4850" BottomMargin="131.5150" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="1231" Scale9Height="189" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="300.0000" Y="55.0000" />

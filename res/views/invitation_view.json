@@ -51,8 +51,14 @@
             "ctype": "ImageViewObjectData"
           },
           {
-            "FontSize": 20,
-            "LabelText": "Muchas gracias por jugar <<Nombre del Juego>>!!",
+            "FontSize": 36,
+            "LabelText": "Muchas gracias por jugar\nConfimaze",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -69,39 +75,51 @@
               "ScaleY": 0.5217
             },
             "Position": {
-              "X": 326.7328,
-              "Y": 481.8438
+              "X": 320.0006,
+              "Y": 546.907
             },
             "Scale": {
               "ScaleX": 1.3801,
               "ScaleY": 1.6508
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5105,
-              "Y": 0.7529
+              "X": 0.5,
+              "Y": 0.8545
             },
             "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.425,
+              "Y": 0.0844
             },
-            "LeftMargin": 121.0175,
-            "RightMargin": 105.9825,
-            "TopMargin": 148.5901,
-            "BottomMargin": 471.4099,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 184.5174,
+            "RightMargin": 183.4826,
+            "TopMargin": 67.2648,
+            "BottomMargin": 518.7352,
             "Tag": 29,
             "ActionTag": -414286772,
             "Size": {
-              "X": 413.0,
-              "Y": 20.0
+              "X": 272.0,
+              "Y": 54.0
             },
             "Name": "lblTitle",
             "ctype": "TextObjectData"
           },
           {
-            "FontSize": 20,
-            "LabelText": "Texto de Invitación",
+            "IsCustomSize": true,
+            "FontSize": 14,
+            "LabelText": "Al igual que en Confimaze buscas ayudar a * a ganar confianza, AFI se encarga de apoyar niños y necesita tu ayuda.",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -118,8 +136,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 352.775,
-              "Y": 413.6481
+              "X": 320.0,
+              "Y": 437.6763
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -128,41 +146,42 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5512,
-              "Y": 0.6463
+              "X": 0.5,
+              "Y": 0.6839
             },
             "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.875,
+              "Y": 0.0781
             },
-            "LeftMargin": 272.775,
-            "RightMargin": 207.225,
-            "TopMargin": 216.3519,
-            "BottomMargin": 403.6481,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 40.0,
+            "RightMargin": 40.0,
+            "TopMargin": 177.3237,
+            "BottomMargin": 412.6763,
             "Tag": 30,
             "ActionTag": 796398798,
             "Size": {
-              "X": 160.0,
-              "Y": 20.0
+              "X": 560.0,
+              "Y": 50.0
             },
             "Name": "lblDescription",
             "ctype": "TextObjectData"
           },
           {
             "FileData": {
-              "Type": "Default",
-              "Path": "Default/ImageFile.png",
+              "Type": "Normal",
+              "Path": "logo.png",
               "Plist": ""
             },
-            "Scale9Width": 46,
-            "Scale9Height": 46,
+            "Scale9Width": 160,
+            "Scale9Height": 160,
             "AnchorPoint": {
               "ScaleX": 0.5,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 320.0,
-              "Y": 299.0786
+              "X": 319.9999,
+              "Y": 310.0787
             },
             "Scale": {
               "ScaleX": 3.5154,
@@ -172,22 +191,22 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
-              "Y": 0.4673
+              "Y": 0.4845
             },
             "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.1094,
+              "Y": 0.125
             },
             "HorizontalEdge": "BothEdge",
-            "LeftMargin": 297.0,
-            "RightMargin": 297.0,
-            "TopMargin": 317.9214,
-            "BottomMargin": 276.0786,
+            "LeftMargin": 284.9999,
+            "RightMargin": 285.0001,
+            "TopMargin": 289.9213,
+            "BottomMargin": 270.0787,
             "Tag": 31,
             "ActionTag": 297076349,
             "Size": {
-              "X": 46.0,
-              "Y": 46.0
+              "X": 70.0,
+              "Y": 80.0
             },
             "Name": "imgLogo",
             "ctype": "ImageViewObjectData"
@@ -352,8 +371,9 @@
       "UsedResources": [
         "btnAFI.png",
         "btnContinuar.png",
-        "Default/ImageFile.png",
-        "fondo1.png"
+        "fondo1.png",
+        "logo.png",
+        "THE MINION.ttf"
       ],
       "ctype": "GameProjectData"
     }

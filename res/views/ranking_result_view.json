@@ -226,7 +226,7 @@
               "Y": 0.3672
             },
             "PreSize": {
-              "X": 0.7812,
+              "X": 0.7813,
               "Y": 0.3125
             },
             "HorizontalEdge": "BothEdge",
@@ -261,7 +261,7 @@
                 },
                 "Position": {
                   "X": 15.0,
-                  "Y": 190.0
+                  "Y": 192.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -271,7 +271,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.03,
-                  "Y": 0.95
+                  "Y": 0.96
                 },
                 "PreSize": {
                   "X": 0.348,
@@ -279,13 +279,13 @@
                 },
                 "LeftMargin": 15.0,
                 "RightMargin": 329.0,
-                "TopMargin": 10.0,
-                "BottomMargin": 166.0,
+                "TopMargin": 8.0,
+                "BottomMargin": 167.0,
                 "Tag": 54,
                 "ActionTag": -270504741,
                 "Size": {
-                  "X": 144.0,
-                  "Y": 22.0
+                  "X": 156.0,
+                  "Y": 25.0
                 },
                 "Name": "lblRanking",
                 "ctype": "TextObjectData"
@@ -305,8 +305,7 @@
                 },
                 "EndColor": {},
                 "ColorVector": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 0.0
+                  "ScaleX": 1.0
                 },
                 "TouchEnable": true,
                 "AnchorPoint": {
@@ -314,7 +313,7 @@
                 },
                 "Position": {
                   "X": 15.0,
-                  "Y": 161.0
+                  "Y": 160.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -324,7 +323,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.03,
-                  "Y": 0.805
+                  "Y": 0.8
                 },
                 "PreSize": {
                   "X": 0.94,
@@ -332,8 +331,8 @@
                 },
                 "LeftMargin": 15.0,
                 "RightMargin": 15.0,
-                "TopMargin": 39.0,
-                "BottomMargin": 11.0,
+                "TopMargin": 40.0,
+                "BottomMargin": 10.0,
                 "Tag": 34,
                 "ActionTag": 292874210,
                 "Size": {
@@ -386,7 +385,7 @@
               "Y": 0.7234
             },
             "PreSize": {
-              "X": 0.7812,
+              "X": 0.7813,
               "Y": 0.2188
             },
             "HorizontalEdge": "BothEdge",
