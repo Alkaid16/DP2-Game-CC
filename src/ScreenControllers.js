@@ -624,7 +624,7 @@ VictoryScreenC = (function(){
         var ajax = WSHandler.registerLevelClear(playerInfo.idPlayer, lvlInfo.idLevel, score, coins);
         $.when(ajax).then(function(){
             if(score > lvlInfo.score) lvlInfo.score = score;
-            playerInfo.coins+=coins;
+            playerInfo.coins= parseInt(playerInfo.coins) + coins;
             LevelGraphC.clearLevel();
             btnReturn.setEnabled(true);
         }, function(){

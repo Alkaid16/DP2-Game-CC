@@ -261,7 +261,7 @@
                 },
                 "Position": {
                   "X": 15.0,
-                  "Y": 194.9999
+                  "Y": 193.9999
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -271,16 +271,16 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.03,
-                  "Y": 0.975
+                  "Y": 0.97
                 },
                 "PreSize": {
                   "X": 0.348,
                   "Y": 0.135
                 },
                 "LeftMargin": 15.0,
-                "RightMargin": 329.0001,
-                "TopMargin": 5.0001,
-                "BottomMargin": 169.9999,
+                "RightMargin": 329.0,
+                "TopMargin": 6.0001,
+                "BottomMargin": 168.9999,
                 "Tag": 54,
                 "ActionTag": -270504741,
                 "Size": {
@@ -314,7 +314,7 @@
                 },
                 "Position": {
                   "X": 15.0,
-                  "Y": 160.0
+                  "Y": 149.9999
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -324,21 +324,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.03,
-                  "Y": 0.8
+                  "Y": 0.75
                 },
                 "PreSize": {
                   "X": 0.94,
-                  "Y": 0.75
+                  "Y": 0.7
                 },
                 "LeftMargin": 15.0,
                 "RightMargin": 15.0,
-                "TopMargin": 40.0,
-                "BottomMargin": 10.0,
+                "TopMargin": 50.0001,
+                "BottomMargin": 9.9999,
                 "Tag": 34,
                 "ActionTag": 292874210,
                 "Size": {
                   "X": 470.0,
-                  "Y": 150.0
+                  "Y": 140.0
                 },
                 "Name": "listRanking",
                 "ctype": "ListViewObjectData"
