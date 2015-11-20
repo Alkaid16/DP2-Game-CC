@@ -28,37 +28,37 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_3" ActionTag="925378311" Tag="24" IconVisible="False" LeftMargin="52.1300" RightMargin="530.8700" TopMargin="42.6896" BottomMargin="582.3104" FontSize="20" LabelText="OBJETIVO" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_3" ActionTag="925378311" Tag="24" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="51.2000" RightMargin="531.8000" TopMargin="42.6896" BottomMargin="582.3104" FontSize="20" LabelText="OBJETIVO" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="57.0000" Y="15.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="80.6300" Y="589.8104" />
+            <AnchorPoint ScaleY="0.5000" />
+            <Position X="51.2000" Y="589.8104" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.1260" Y="0.9216" />
+            <PrePosition X="0.0800" Y="0.9216" />
             <PreSize X="0.1547" Y="0.0359" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_3_0" ActionTag="-1046968340" Tag="25" IconVisible="False" LeftMargin="91.1300" RightMargin="417.8700" TopMargin="145.3482" BottomMargin="479.6518" FontSize="20" LabelText="MECÁNICA DEL JUEGO" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_3_0" ActionTag="-1046968340" Tag="25" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="51.2000" RightMargin="457.8000" TopMargin="145.3482" BottomMargin="479.6518" FontSize="20" LabelText="MECÁNICA DEL JUEGO" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="131.0000" Y="15.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="156.6300" Y="487.1518" />
+            <AnchorPoint ScaleY="0.5000" />
+            <Position X="51.2000" Y="487.1518" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.2447" Y="0.7612" />
+            <PrePosition X="0.0800" Y="0.7612" />
             <PreSize X="0.3422" Y="0.0359" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2_0" ActionTag="-117639538" Tag="26" IconVisible="False" LeftMargin="90.5100" RightMargin="86.4900" TopMargin="184.0884" BottomMargin="425.9116" FontSize="20" LabelText="Guía al niño a través de los pasillos de los diversos laberintos. El niño camina por si&#xA;sólo, ayúdalo a decidir en los caminos de diferentes decisiones." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_2_0" ActionTag="-117639538" Tag="26" IconVisible="False" LeftMargin="84.6277" RightMargin="92.3723" TopMargin="184.0884" BottomMargin="425.9116" FontSize="20" LabelText="Guía al niño a través de los pasillos de los diversos laberintos. El niño camina por si&#xA;sólo, ayúdalo a decidir en los caminos de diferentes decisiones." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="463.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="322.0100" Y="440.9116" />
+            <Position X="316.1277" Y="440.9116" />
             <Scale ScaleX="0.5733" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.5031" Y="0.6889" />
+            <PrePosition X="0.4939" Y="0.6889" />
             <PreSize X="1.1500" Y="0.0719" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
@@ -84,61 +84,61 @@
             <PreSize X="0.1563" Y="0.1563" />
             <FileData Type="Normal" Path="keyboards.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2_0_0" ActionTag="1406267728" Tag="29" IconVisible="False" LeftMargin="381.6294" RightMargin="-1.6294" TopMargin="262.1027" BottomMargin="331.8973" FontSize="20" LabelText="Utiliza las teclas direccionales&#xA;para guiar al niño" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_2_0_0" ActionTag="1406267728" Tag="29" IconVisible="False" LeftMargin="411.6314" RightMargin="62.3685" TopMargin="271.1026" BottomMargin="338.8974" FontSize="20" LabelText="Utiliza las teclas direccionales&#xA;para guiar al niño" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="166.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="511.6294" Y="354.8973" />
+            <Position X="494.6314" Y="353.8974" />
             <Scale ScaleX="0.5399" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.7994" Y="0.5545" />
+            <PrePosition X="0.7729" Y="0.5530" />
             <PreSize X="0.4063" Y="0.0719" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_3_0_0" ActionTag="-899738406" Tag="30" IconVisible="False" LeftMargin="30.2931" RightMargin="495.7069" TopMargin="352.4671" BottomMargin="264.5329" FontSize="20" LabelText="POWERUPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_3_0_0" ActionTag="-899738406" Tag="30" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="51.2000" RightMargin="518.8000" TopMargin="363.6150" BottomMargin="261.3850" FontSize="20" LabelText="POWERUPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="70.0000" Y="15.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="87.2931" Y="276.0329" />
+            <AnchorPoint ScaleY="0.5000" />
+            <Position X="51.2000" Y="268.8850" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.1364" Y="0.4313" />
+            <PrePosition X="0.0800" Y="0.4201" />
             <PreSize X="0.1781" Y="0.0359" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_3_0_0_0" ActionTag="-2088914733" Tag="31" IconVisible="False" LeftMargin="414.4557" RightMargin="160.5443" TopMargin="349.6151" BottomMargin="267.3849" FontSize="20" LabelText="TRAPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_3_0_0_0" ActionTag="-2088914733" Tag="31" IconVisible="False" LeftMargin="292.4684" RightMargin="308.5316" TopMargin="363.6150" BottomMargin="261.3850" FontSize="20" LabelText="TRAPS" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="39.0000" Y="15.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="446.9557" Y="278.8849" />
+            <Position X="311.9684" Y="268.8850" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.6984" Y="0.4358" />
+            <PrePosition X="0.4875" Y="0.4201" />
             <PreSize X="0.1016" Y="0.0359" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2_0_0_0" ActionTag="-1987692874" Tag="36" IconVisible="False" LeftMargin="350.7338" RightMargin="158.2662" TopMargin="396.6923" BottomMargin="213.3077" FontSize="10" LabelText="Huecos: Utiliza la barra&#xA;espaciadora para saltar" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_2_0_0_0" ActionTag="-1987692874" Tag="36" IconVisible="False" LeftMargin="347.4613" RightMargin="161.5387" TopMargin="396.6923" BottomMargin="213.3077" FontSize="10" LabelText="Huecos: Utiliza la barra&#xA;espaciadora para saltar" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="131.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="416.2338" Y="228.3077" />
+            <Position X="412.9613" Y="228.3077" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.6504" Y="0.3567" />
+            <PrePosition X="0.6453" Y="0.3567" />
             <PreSize X="0.2047" Y="0.0469" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2_0_0_0_0" ActionTag="-2136729507" Tag="37" IconVisible="False" LeftMargin="347.5645" RightMargin="123.4355" TopMargin="448.0437" BottomMargin="161.9563" FontSize="10" LabelText="Lonchera: Con el mouse, elige&#xA;la comida saludable." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_2_0_0_0_0" ActionTag="-2136729507" Tag="37" IconVisible="False" LeftMargin="347.4614" RightMargin="123.5386" TopMargin="448.0437" BottomMargin="161.9563" FontSize="10" LabelText="Lonchera: Con el mouse, elige&#xA;la comida saludable." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="169.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="432.0645" Y="176.9563" />
+            <Position X="431.9614" Y="176.9563" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.6751" Y="0.2765" />
+            <PrePosition X="0.6749" Y="0.2765" />
             <PreSize X="0.2641" Y="0.0469" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
@@ -156,37 +156,37 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2_0_0_0_0_0_0" ActionTag="-1223435719" Tag="39" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="355.4700" RightMargin="116.5300" TopMargin="563.1626" BottomMargin="46.8374" FontSize="10" LabelText="Pizarra: Escribe la palabra que&#xA;aparecerá en el mapa" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_2_0_0_0_0_0_0" ActionTag="-1223435719" Tag="39" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="347.4613" RightMargin="124.5387" TopMargin="563.1626" BottomMargin="46.8374" FontSize="10" LabelText="Pizarra: Escribe la palabra que&#xA;aparecerá en el mapa" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="168.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="439.4700" Y="61.8374" />
+            <Position X="431.4613" Y="61.8374" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.6867" Y="0.0966" />
+            <PrePosition X="0.6742" Y="0.0966" />
             <PreSize X="0.2625" Y="0.0469" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2_0_0_0_1" ActionTag="-1975480143" Tag="44" IconVisible="False" LeftMargin="108.9951" RightMargin="392.0049" TopMargin="398.4145" BottomMargin="211.5855" FontSize="10" LabelText="Antorcha: Amplia el rango&#xA;de visión" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_2_0_0_0_1" ActionTag="-1975480143" Tag="44" IconVisible="False" LeftMargin="100.1026" RightMargin="400.8974" TopMargin="398.4145" BottomMargin="211.5855" FontSize="10" LabelText="Antorcha: Amplia el rango&#xA;de visión" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="139.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="178.4951" Y="226.5855" />
+            <Position X="169.6026" Y="226.5855" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.2789" Y="0.3540" />
+            <PrePosition X="0.2650" Y="0.3540" />
             <PreSize X="0.2172" Y="0.0469" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2_0_0_0_1_0" ActionTag="-896165827" Tag="45" IconVisible="False" LeftMargin="113.2225" RightMargin="391.7775" TopMargin="467.9904" BottomMargin="159.0096" FontSize="10" LabelText="Botas: Aumenta la velocidad" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_2_0_0_0_1_0" ActionTag="-896165827" Tag="45" IconVisible="False" LeftMargin="100.1026" RightMargin="385.8974" TopMargin="466.9904" BottomMargin="158.0096" FontSize="10" LabelText="Botas: Aumenta la velocidad" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="154.0000" Y="15.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="180.7225" Y="165.5096" />
+            <Position X="177.1026" Y="165.5096" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.2824" Y="0.2586" />
+            <PrePosition X="0.2767" Y="0.2586" />
             <PreSize X="0.2109" Y="0.0203" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
@@ -204,19 +204,19 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_2_0_0_0_1_0_0_0" ActionTag="993802838" Tag="47" IconVisible="False" LeftMargin="105.2682" RightMargin="380.7318" TopMargin="565.8781" BottomMargin="44.1219" FontSize="10" LabelText="Reloj: Ralentiza la velocidad&#xA;del mounstro" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_2_0_0_0_1_0_0_0" ActionTag="993802838" Tag="47" IconVisible="False" LeftMargin="100.1026" RightMargin="385.8974" TopMargin="565.8781" BottomMargin="44.1219" FontSize="10" LabelText="Reloj: Ralentiza la velocidad&#xA;del mounstro" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="154.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="182.2682" Y="59.1219" />
+            <Position X="177.1026" Y="59.1219" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.2848" Y="0.0924" />
+            <PrePosition X="0.2767" Y="0.0924" />
             <PreSize X="0.2406" Y="0.0469" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnBack" ActionTag="1453603842" Tag="66" IconVisible="False" LeftMargin="174.3414" RightMargin="-316.3414" TopMargin="477.5237" BottomMargin="-76.5237" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="752" Scale9Height="217" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnBack" ActionTag="1453603842" Tag="66" IconVisible="False" LeftMargin="174.3414" RightMargin="-316.3414" TopMargin="477.5237" BottomMargin="-76.5237" TouchEnable="True" FontSize="14" ButtonText="Button" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="752" Scale9Height="217" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="782.0000" Y="239.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="565.3414" Y="42.9763" />
@@ -225,8 +225,8 @@
             <PrePosition X="0.8833" Y="0.0672" />
             <PreSize X="1.2219" Y="0.3734" />
             <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+            <DisabledFileData Type="Normal" Path="btnRegresar.png" Plist="" />
+            <PressedFileData Type="Normal" Path="btnRegresar.png" Plist="" />
             <NormalFileData Type="Normal" Path="btnRegresar.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />

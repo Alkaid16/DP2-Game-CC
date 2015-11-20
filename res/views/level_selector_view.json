@@ -1316,8 +1316,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 448.0001,
-              "Y": 69.3165
+              "X": 448.0,
+              "Y": 69.312
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -2036,7 +2036,7 @@
             "ctype": "ImageViewObjectData"
           },
           {
-            "FontSize": 20,
+            "FontSize": 22,
             "ButtonText": "Ayudar Amigos",
             "FontResource": {
               "Type": "Normal",

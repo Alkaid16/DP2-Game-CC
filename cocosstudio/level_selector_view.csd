@@ -269,7 +269,7 @@
           <AbstractNodeData Name="btnBack" ActionTag="1542275581" Tag="43" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="348.0001" RightMargin="91.9999" TopMargin="543.1835" BottomMargin="41.8165" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="752" Scale9Height="217" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="200.0000" Y="55.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="448.0001" Y="69.3165" />
+            <Position X="448.0000" Y="69.3120" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.7000" Y="0.1083" />
@@ -433,7 +433,7 @@
             <PreSize X="0.1953" Y="0.0078" />
             <FileData Type="Normal" Path="pantallas-16.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnHelpFriends" ActionTag="875339152" Tag="45" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="96.0000" RightMargin="352.0000" TopMargin="544.6000" BottomMargin="45.4000" TouchEnable="True" FontSize="20" ButtonText="Ayudar Amigos" LeftEage="15" RightEage="15" TopEage="4" BottomEage="5" Scale9OriginX="15" Scale9OriginY="4" Scale9Width="163" Scale9Height="46" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnHelpFriends" ActionTag="875339152" Tag="45" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="96.0000" RightMargin="352.0000" TopMargin="544.6000" BottomMargin="45.4000" TouchEnable="True" FontSize="22" ButtonText="Ayudar Amigos" LeftEage="15" RightEage="15" TopEage="4" BottomEage="5" Scale9OriginX="15" Scale9OriginY="4" Scale9Width="163" Scale9Height="46" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="192.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="192.0000" Y="70.4000" />

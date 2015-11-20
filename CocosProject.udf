@@ -31,9 +31,9 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="level_selector_view.csd" />
+          <FilePathData Path="howtoplay_view.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="level_selector_view.csd" />
+        <ActiveDocument Path="howtoplay_view.csd" />
       </Value>
     </Item>
   </Properties>
