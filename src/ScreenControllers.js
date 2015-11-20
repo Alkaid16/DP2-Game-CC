@@ -824,13 +824,15 @@ function updateRankingList(listRanking, lvlNum, fontSize, parent){
                 for(var i=0; i<rank.length; i++){
                     var name;
                     for(var j=0;j<facebookIds.length; j++){
-                        if(rank[i].idFacebook = facebookIds[j].id) {
+                        if(rank[i].idFacebook == facebookIds[j].id) {
                             name = facebookIds[j].name;
                             break;
                         }
                     }
                     cc.log("Nombre de amigo en ranking: " + name + " " + rank[i].score);
-                    var lbl = new ccui.Text(name + " " + rank[i].score, "THE MINION", fontSize);
+                    var lbl = new ccui.Text(name + " " + rank[i].score, "THE MINION", fontSize*2);
+                    lbl.setScale(0.5);
+                    lbl.setColor(cc.color(0,0,0));
                     listRanking.addChild(lbl);
                 }
             });
