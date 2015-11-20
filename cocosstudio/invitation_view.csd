@@ -16,10 +16,10 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="fondo1.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblTitle" ActionTag="-414286772" Tag="29" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="184.5174" RightMargin="183.4826" TopMargin="67.2648" BottomMargin="518.7352" FontSize="36" LabelText="Muchas gracias por jugar&#xA;Confimaze" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="272.0000" Y="54.0000" />
+          <AbstractNodeData Name="lblTitle" ActionTag="-414286772" Tag="29" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="184.5174" RightMargin="183.4826" TopMargin="67.2648" BottomMargin="518.7352" FontSize="24" LabelText="Muchas gracias por jugar&#xA;Confimaze" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="139.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.4981" ScaleY="0.5217" />
-            <Position X="320.0006" Y="546.9070" />
+            <Position X="320.0000" Y="546.9070" />
             <Scale ScaleX="1.3801" ScaleY="1.6508" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.5000" Y="0.8545" />
@@ -28,7 +28,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDescription" ActionTag="796398798" Tag="30" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="177.3237" BottomMargin="412.6763" IsCustomSize="True" FontSize="14" LabelText="Al igual que en Confimaze buscas ayudar a * a ganar confianza, AFI se encarga de apoyar niños y necesita tu ayuda." HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="lblDescription" ActionTag="796398798" Tag="30" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="177.3237" BottomMargin="412.6763" IsCustomSize="True" FontSize="12" LabelText="Al igual que en Confimaze buscas ayudar a * a ganar confianza, AFI se encarga de apoyar niños y necesita tu ayuda." HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="560.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="320.0000" Y="437.6763" />
@@ -43,7 +43,7 @@
           <AbstractNodeData Name="imgLogo" ActionTag="297076349" Tag="31" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="284.9999" RightMargin="285.0001" TopMargin="289.9213" BottomMargin="270.0787" Scale9Width="160" Scale9Height="160" ctype="ImageViewObjectData">
             <Size X="70.0000" Y="80.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="319.9999" Y="310.0787" />
+            <Position X="320.0000" Y="310.0787" />
             <Scale ScaleX="3.5154" ScaleY="2.3835" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.4845" />

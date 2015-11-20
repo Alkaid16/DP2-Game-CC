@@ -51,7 +51,7 @@
             "ctype": "ImageViewObjectData"
           },
           {
-            "FontSize": 36,
+            "FontSize": 24,
             "LabelText": "Muchas gracias por jugar\nConfimaze",
             "FontResource": {
               "Type": "Normal",
@@ -75,7 +75,7 @@
               "ScaleY": 0.5217
             },
             "Position": {
-              "X": 320.0006,
+              "X": 320.0,
               "Y": 546.907
             },
             "Scale": {
@@ -104,15 +104,15 @@
             "Tag": 29,
             "ActionTag": -414286772,
             "Size": {
-              "X": 272.0,
-              "Y": 54.0
+              "X": 139.0,
+              "Y": 30.0
             },
             "Name": "lblTitle",
             "ctype": "TextObjectData"
           },
           {
             "IsCustomSize": true,
-            "FontSize": 14,
+            "FontSize": 12,
             "LabelText": "Al igual que en Confimaze buscas ayudar a * a ganar confianza, AFI se encarga de apoyar niños y necesita tu ayuda.",
             "FontResource": {
               "Type": "Normal",
@@ -180,7 +180,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 319.9999,
+              "X": 320.0,
               "Y": 310.0787
             },
             "Scale": {
