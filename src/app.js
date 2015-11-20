@@ -834,7 +834,8 @@ var GameplayMap = cc.TMXTiledMap.extend({
         var totalTime = Math.round(+new Date / 1000) - this.initTime;
         this.unscheduleAllCallbacks();
         currentGameplayScene.customCleanup();
-        VictoryScreenC.loadAndRun(this.score, totalTime, this.coins);
+        VictoryScreenC2.loadAndRun(this.score, totalTime, this.coins);
+        //VictoryScreenC.loadAndRun(this.score, totalTime, this.coins);
     }
 
 });

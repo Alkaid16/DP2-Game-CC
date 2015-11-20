@@ -544,6 +544,48 @@ OptionsModalC = (function(){
     return pub;
 })();
 
+VictoryScreenC2 = (function(){
+    var scene;
+    var btnReturn;
+    var pub = {};
+    var count=0;
+
+    pub.loadAndRun = function(score, time, coins){
+        count++;
+
+        if(count==2)
+        {
+            count=0;
+            var obj = ccs.load(res.invitation_view_json);
+            scene = obj.node;
+            var pnl = scene.getChildByName("pnlGeneral");        
+
+            btnReturn = scene.getChildByName("btnContinue");
+            btnReturn.addClickEventListener(function(){
+                scene = null;
+                LevelModalC.hide();
+                LevelSelectionC.updateLevelStatus();
+                cc.director.runScene(LevelSelectionC.getScene());
+            });
+
+            btnInvitation = scene.getChildByName("btnInvitation");
+            btnInvitation.addClickEventListener(function(){
+                var win = window.open("http://162.243.118.33/afiperudrupal/corporativo", '_blank');
+                win.focus();
+            });
+
+            cc.director.runScene(scene);
+
+            var lvlInfo = LevelGraphC.getCurrentLevel();
+        }else{            
+            VictoryScreenC.loadAndRun(score, time, coins);
+        }
+        
+    }
+
+    return pub;
+})();
+
 VictoryScreenC = (function(){
     var scene;
     var txtScore;
