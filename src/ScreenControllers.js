@@ -564,9 +564,7 @@ VictoryScreenC2 = (function(){
             btnReturn = scene.getChildByName("btnContinue");
             btnReturn.addClickEventListener(function(){
                 scene = null;
-                LevelModalC.hide();
-                LevelSelectionC.updateLevelStatus();
-                cc.director.runScene(LevelSelectionC.getScene());
+                VictoryScreenC.loadAndRun(score, time, coins);
             });
 
             btnInvitation = scene.getChildByName("btnInvitation");
