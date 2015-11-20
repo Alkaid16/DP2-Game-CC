@@ -160,10 +160,11 @@ var LevelModalC = (function(){
     var pub = {};
     var btnBuy;
     var btnCont;
+    var listRanking
     var btnExit;
     var btnStart;
     var layer;
-    var lblLevel; var lblDefeatPos; var lblScore;
+    var lblLevel; var lblDefeatPos; var lblScore; var lblDesc;
     var cLayer;
     var pScene;
     var visiblePos = cc.p(80,80);
@@ -207,6 +208,8 @@ var LevelModalC = (function(){
         pScene.addChild(layer,10);
         createCoverLayer();
 
+        listRanking = layer.getChildByName("listRanking");
+        lblDesc = layer.getChildByName("lblDesc");
         lblLevel = layer.getChildByName("lblLevel");
         lblScore = layer.getChildByName("lblScore");
         lblDefeatPos = layer.getChildByName("lblDefeatPos");
@@ -272,8 +275,9 @@ var LevelModalC = (function(){
         if(levelInfo == null) return;
         level = levelInfo.idLevel;
 
+        updateRankingList(listRanking, lvlNum);
         pub.updateButtons();
-
+        lblDesc.setString(levelInfo.milestone.replace("*",playerInfo.childName));
         lblLevel.setString("Nivel " + level);
         if(levelInfo.score!= null) lblScore.setString("Score: " + levelInfo.score);
         else lblScore.setString("Score: -");
@@ -759,3 +763,42 @@ MessageModalC = (function(){
 
     return pub;
 })();
+
+
+function updateRankingList(listRanking, lvlNum){
+    listRanking.removeAllChildren(true);
+    var req= fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
+        if (type == plugin.FacebookAgent.CODE_SUCCEED) {
+            var data = response["data"];
+            req.facebookIds = data;
+        }
+    });
+
+    $.when(req).done(function(){
+        if(!req.facebookIds) return;
+        var ids = [];
+        for(var i=0;i<req.facebookIds; i++) {
+            ids[i] = req.facebookIds[i].id;
+            cc.log(req.facebookIds[i].id);
+        }
+
+        var ajax = WSHandler.getFriendsScore(ids, lvlNum, 5);
+        $.when(ajax).done(function(){
+            var rank = ajax.responseJSON.scores;
+            for(var i=0; i<rank.length; i++){
+                var name;
+                for(var j=0;i<req.facebookIds; j++){
+                    if(rank[i].idFacebook = req.facebookIds[j].id) {
+                        name = req.facebookIds[j].name;
+                        break;
+                    }
+                }
+                cc.log("Nombre de amigo en ranking: " + name + " " + rank[i].score);
+
+                var lbl = new cc.LabelTTF(name + " " + rank[i].score,'Arial', 16, cc.size(150,40) ,
+                    cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+                listRanking.addChild(lbl);
+            }
+        });
+    });
+}
