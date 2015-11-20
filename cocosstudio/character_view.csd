@@ -42,28 +42,28 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_4" ActionTag="2068887668" Tag="95" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="172.0974" RightMargin="167.9026" TopMargin="33.8916" BottomMargin="556.1084" IsCustomSize="True" FontSize="24" LabelText="Selección de Personaje&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="300.0000" Y="50.0000" />
+          <AbstractNodeData Name="Text_4" ActionTag="2068887668" Tag="95" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="147.1120" RightMargin="142.8880" TopMargin="33.8916" BottomMargin="556.1084" IsCustomSize="True" FontSize="24" LabelText="Selección de Personaje&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="350.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="322.0974" Y="581.1084" />
+            <Position X="322.1120" Y="581.1084" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.5033" Y="0.9080" />
-            <PreSize X="0.4688" Y="0.0781" />
+            <PreSize X="0.5469" Y="0.0781" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnContinue" ActionTag="-1033521345" Tag="96" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="223.5000" RightMargin="223.5000" TopMargin="549.5000" BottomMargin="35.5000" TouchEnable="True" FontSize="20" ButtonText="Continuar" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="163" Scale9Height="33" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnContinue" ActionTag="-1033521345" Tag="96" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="223.5003" RightMargin="223.4997" TopMargin="546.5000" BottomMargin="38.5000" TouchEnable="True" FontSize="20" ButtonText="Continuar" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="163" Scale9Height="33" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="193.0000" Y="55.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.0000" Y="63.0000" />
+            <Position X="320.0003" Y="66.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.0984" />
+            <PrePosition X="0.5000" Y="0.1031" />
             <PreSize X="0.3016" Y="0.0859" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
-            <TextColor A="255" R="65" G="65" B="70" />
+            <TextColor A="255" R="0" G="0" B="0" />
             <DisabledFileData Type="Normal" Path="botonGenerico.png" Plist="" />
             <PressedFileData Type="Normal" Path="botonGenerico.png" Plist="" />
             <NormalFileData Type="Normal" Path="botonGenerico.png" Plist="" />

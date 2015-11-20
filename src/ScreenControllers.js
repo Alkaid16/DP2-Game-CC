@@ -109,7 +109,21 @@ var LevelSelectionC = (function(){
         var btnBack = scene.getChildByName("btnBack");
         btnBack.addClickEventListener(function(){
             cc.director.runScene(TitleScreenC.getScene());
-        })
+        });
+
+        var btnFriends = scene.getChildByName("btnHelpFriends");
+        btnBack.addClickEventListener(function(){
+            fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
+                if (type == plugin.FacebookAgent.CODE_SUCCEED) {
+                    var data = response["data"];
+                    for(var i=0;i<data.length; i++){
+                        cc.log(data[i].name + " " + "ID:" + data[i].id);
+                    }
+                } else {
+                    cc.log("Graph API request failed, error #" + type + ": " + response);
+                }
+            });
+        });
     }
 
     pub.updateLevelStatus =  function(){

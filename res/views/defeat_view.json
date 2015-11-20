@@ -28,7 +28,7 @@
             },
             "Position": {
               "X": 231.7302,
-              "Y": 235.0472
+              "Y": 234.0472
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -38,16 +38,16 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.4828,
-              "Y": 0.4897
+              "Y": 0.4876
             },
             "PreSize": {
               "X": 1.0,
               "Y": 1.0
             },
-            "LeftMargin": -1.9484,
-            "RightMargin": 1.9484,
-            "TopMargin": 2.0462,
-            "BottomMargin": -2.0462,
+            "LeftMargin": -1.9338,
+            "RightMargin": 1.9337,
+            "TopMargin": 3.0248,
+            "BottomMargin": -3.0248,
             "Tag": 172,
             "ActionTag": 674899838,
             "Size": {
@@ -107,8 +107,8 @@
             "Tag": 104,
             "ActionTag": -1241845164,
             "Size": {
-              "X": 161.0,
-              "Y": 55.0
+              "X": 153.0,
+              "Y": 48.0
             },
             "Name": "lblDefeatTitle",
             "ctype": "TextObjectData"
@@ -184,13 +184,13 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnSalir.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnSalir.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -198,7 +198,6 @@
               "Path": "btnSalir.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 150,
@@ -224,8 +223,8 @@
               "Y": 104.928
             },
             "Scale": {
-              "ScaleX": 1.0829,
-              "ScaleY": 0.6448
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -234,21 +233,21 @@
               "Y": 0.2186
             },
             "PreSize": {
-              "X": 0.375,
-              "Y": 0.1333
+              "X": 0.4375,
+              "Y": 0.1146
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 148.368,
-            "RightMargin": 151.632,
-            "TopMargin": 340.8192,
-            "BottomMargin": 75.1808,
+            "LeftMargin": 133.368,
+            "RightMargin": 136.632,
+            "TopMargin": 345.636,
+            "BottomMargin": 79.364,
             "CallBackType": "Click",
             "Tag": 106,
             "ActionTag": -1949964052,
             "Size": {
-              "X": 180.0,
-              "Y": 64.0
+              "X": 210.0,
+              "Y": 55.0
             },
             "Name": "btnExit",
             "ctype": "ButtonObjectData"
@@ -262,13 +261,13 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnReintentar.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnReintentar.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -276,7 +275,6 @@
               "Path": "btnReintentar.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 180,
@@ -302,8 +300,8 @@
               "Y": 240.0
             },
             "Scale": {
-              "ScaleX": 0.9432,
-              "ScaleY": 0.6162
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
@@ -313,19 +311,19 @@
             },
             "PreSize": {
               "X": 0.4375,
-              "Y": 0.15
+              "Y": 0.1146
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
             "LeftMargin": 135.0,
             "RightMargin": 135.0,
-            "TopMargin": 204.0,
-            "BottomMargin": 204.0,
+            "TopMargin": 212.5,
+            "BottomMargin": 212.5,
             "Tag": 107,
             "ActionTag": -1437654066,
             "Size": {
               "X": 210.0,
-              "Y": 72.0
+              "Y": 55.0
             },
             "Name": "btnRetry",
             "ctype": "ButtonObjectData"
@@ -339,13 +337,13 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnAyuda.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnAyuda.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -376,33 +374,33 @@
             },
             "Position": {
               "X": 240.0,
-              "Y": 173.712
+              "Y": 172.024
             },
             "Scale": {
               "ScaleX": 1.0,
-              "ScaleY": 0.6301
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
-              "Y": 0.3619
+              "Y": 0.3584
             },
             "PreSize": {
-              "X": 0.3729,
-              "Y": 0.1083
+              "X": 0.4063,
+              "Y": 0.0938
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 150.5,
-            "RightMargin": 150.5,
-            "TopMargin": 278.4576,
-            "BottomMargin": 149.5424,
+            "LeftMargin": 142.5,
+            "RightMargin": 142.5,
+            "TopMargin": 283.892,
+            "BottomMargin": 151.108,
             "Tag": 108,
             "ActionTag": -107116174,
             "Size": {
-              "X": 179.0,
-              "Y": 52.0
+              "X": 195.0,
+              "Y": 45.0
             },
             "Name": "btnHelp",
             "ctype": "ButtonObjectData"
@@ -419,8 +417,6 @@
         "btnAyuda.png",
         "btnReintentar.png",
         "btnSalir.png",
-        "Default/Button_Disable.png",
-        "Default/Button_Press.png",
         "fondo1.png",
         "THE MINION.ttf"
       ],

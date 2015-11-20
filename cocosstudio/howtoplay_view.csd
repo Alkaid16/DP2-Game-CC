@@ -259,7 +259,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0993" Y="0.3561" />
             <PreSize X="0.0141" Y="0.0484" />
-            <FileData Type="Normal" Path="antorcha.PNG" Plist="" />
+            <FileData Type="Normal" Path="antorcha.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="Image_8" ActionTag="-259242407" Tag="32" IconVisible="False" LeftMargin="46.9753" RightMargin="562.0247" TopMargin="458.6068" BottomMargin="156.3932" Scale9Width="31" Scale9Height="25" ctype="ImageViewObjectData">
             <Size X="31.0000" Y="25.0000" />
@@ -269,7 +269,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0976" Y="0.2639" />
             <PreSize X="0.0484" Y="0.0391" />
-            <FileData Type="Normal" Path="botas.PNG" Plist="" />
+            <FileData Type="Normal" Path="botas.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="Image_9" ActionTag="-451788485" Tag="33" IconVisible="False" LeftMargin="48.4719" RightMargin="562.5281" TopMargin="513.6129" BottomMargin="98.3871" Scale9Width="29" Scale9Height="28" ctype="ImageViewObjectData">
             <Size X="29.0000" Y="28.0000" />
@@ -279,7 +279,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0984" Y="0.1756" />
             <PreSize X="0.0453" Y="0.0437" />
-            <FileData Type="Normal" Path="escudo.PNG" Plist="" />
+            <FileData Type="Normal" Path="escudo.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="Image_12" ActionTag="2011591730" Tag="36" IconVisible="False" LeftMargin="296.0626" RightMargin="308.9374" TopMargin="395.9930" BottomMargin="209.0070" Scale9Width="81" Scale9Height="79" ctype="ImageViewObjectData">
             <Size X="35.0000" Y="35.0000" />
@@ -289,7 +289,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4899" Y="0.3539" />
             <PreSize X="0.0547" Y="0.0547" />
-            <FileData Type="Normal" Path="hueco.PNG" Plist="" />
+            <FileData Type="Normal" Path="hueco.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="Image_14" ActionTag="130301812" Tag="38" IconVisible="False" LeftMargin="47.3995" RightMargin="560.6005" TopMargin="565.2357" BottomMargin="43.7643" Scale9Width="32" Scale9Height="31" ctype="ImageViewObjectData">
             <Size X="32.0000" Y="31.0000" />
@@ -299,7 +299,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0991" Y="0.0926" />
             <PreSize X="0.0500" Y="0.0484" />
-            <FileData Type="Normal" Path="reloj.PNG" Plist="" />
+            <FileData Type="Normal" Path="reloj.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="Image_15" ActionTag="1407506102" Tag="39" IconVisible="False" LeftMargin="299.9976" RightMargin="309.0024" TopMargin="561.8190" BottomMargin="46.1810" Scale9Width="31" Scale9Height="32" ctype="ImageViewObjectData">
             <Size X="31.0000" Y="32.0000" />
@@ -309,7 +309,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4937" Y="0.0947" />
             <PreSize X="0.0484" Y="0.0500" />
-            <FileData Type="Normal" Path="pizarra.PNG" Plist="" />
+            <FileData Type="Normal" Path="pizarra.png" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

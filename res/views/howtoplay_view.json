@@ -1175,7 +1175,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "antorcha.PNG",
+              "Path": "antorcha.png",
               "Plist": ""
             },
             "Scale9Width": 9,
@@ -1218,7 +1218,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "botas.PNG",
+              "Path": "botas.png",
               "Plist": ""
             },
             "Scale9Width": 31,
@@ -1261,7 +1261,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "escudo.PNG",
+              "Path": "escudo.png",
               "Plist": ""
             },
             "Scale9Width": 29,
@@ -1304,7 +1304,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "hueco.PNG",
+              "Path": "hueco.png",
               "Plist": ""
             },
             "Scale9Width": 81,
@@ -1347,7 +1347,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "reloj.PNG",
+              "Path": "reloj.png",
               "Plist": ""
             },
             "Scale9Width": 32,
@@ -1390,7 +1390,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "pizarra.PNG",
+              "Path": "pizarra.png",
               "Plist": ""
             },
             "Scale9Width": 31,
@@ -1439,19 +1439,19 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "antorcha.PNG",
-        "botas.PNG",
+        "antorcha.png",
+        "botas.png",
         "btnRegresar.png",
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
-        "escudo.PNG",
+        "escudo.png",
         "example_movement.png",
         "fondo1.png",
-        "hueco.PNG",
+        "hueco.png",
         "keyboards.png",
         "lunchbox.png",
-        "pizarra.PNG",
-        "reloj.PNG",
+        "pizarra.png",
+        "reloj.png",
         "rope.png",
         "THE MINION.ttf"
       ],

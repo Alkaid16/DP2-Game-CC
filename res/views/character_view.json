@@ -187,7 +187,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 322.0974,
+              "X": 322.112,
               "Y": 581.1084
             },
             "Scale": {
@@ -205,18 +205,18 @@
               "Y": 0.908
             },
             "PreSize": {
-              "X": 0.4688,
+              "X": 0.5469,
               "Y": 0.0781
             },
             "HorizontalEdge": "BothEdge",
-            "LeftMargin": 172.0974,
-            "RightMargin": 167.9026,
+            "LeftMargin": 147.112,
+            "RightMargin": 142.888,
             "TopMargin": 33.8916,
             "BottomMargin": 556.1084,
             "Tag": 95,
             "ActionTag": 2068887668,
             "Size": {
-              "X": 300.0,
+              "X": 350.0,
               "Y": 50.0
             },
             "Name": "Text_4",
@@ -231,9 +231,9 @@
               "Plist": ""
             },
             "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
+              "R": 0,
+              "G": 0,
+              "B": 0
             },
             "DisabledFileData": {
               "Type": "Normal",
@@ -272,8 +272,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 320.0,
-              "Y": 63.0
+              "X": 320.0003,
+              "Y": 66.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -283,17 +283,17 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
-              "Y": 0.0984
+              "Y": 0.1031
             },
             "PreSize": {
               "X": 0.3016,
               "Y": 0.0859
             },
             "HorizontalEdge": "BothEdge",
-            "LeftMargin": 223.5,
-            "RightMargin": 223.5,
-            "TopMargin": 549.5,
-            "BottomMargin": 35.5,
+            "LeftMargin": 223.5003,
+            "RightMargin": 223.4997,
+            "TopMargin": 546.5,
+            "BottomMargin": 38.5,
             "Tag": 96,
             "ActionTag": -1033521345,
             "Size": {

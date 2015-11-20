@@ -4,9 +4,6 @@
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
         <Image Name="HelloWorld.png" />
-        <Folder Name="levels">
-          <TmxFile Name="map2.tmx" />
-        </Folder>
         <Image Name="GameFog.png" />
         <Project Name="MainScreen.csd" Type="Scene" />
         <Image Name="buttonNormal.png" />
@@ -41,12 +38,12 @@
         <Image Name="ninoFrente1.png" />
         <Image Name="example_movement.png" />
         <Image Name="keyboards.png" />
-        <Image Name="hueco.PNG" />
-        <Image Name="pizarra.PNG" />
-        <Image Name="antorcha.PNG" />
-        <Image Name="botas.PNG" />
-        <Image Name="reloj.PNG" />
-        <Image Name="escudo.PNG" />
+        <Image Name="hueco.png" />
+        <Image Name="pizarra.png" />
+        <Image Name="antorcha.png" />
+        <Image Name="botas.png" />
+        <Image Name="reloj.png" />
+        <Image Name="escudo.png" />
         <Image Name="botones-howto.png" />
         <Image Name="logo.png" />
         <Image Name="escudo_powerup.png" />
