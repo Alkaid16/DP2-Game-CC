@@ -33,8 +33,9 @@
         <OpenedDocuments>
           <FilePathData Path="level_modal.csd" />
           <FilePathData Path="ranking_result_view.csd" />
+          <FilePathData Path="defeat_view.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="level_modal.csd" />
+        <ActiveDocument Path="ranking_result_view.csd" />
       </Value>
     </Item>
   </Properties>

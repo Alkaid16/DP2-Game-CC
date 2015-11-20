@@ -47,7 +47,7 @@
             <Size X="500.0000" Y="200.0000" />
             <Children>
               <AbstractNodeData Name="lblRanking" ActionTag="-270504741" Tag="54" IconVisible="False" LeftMargin="15.0000" RightMargin="329.0000" TopMargin="10.0000" BottomMargin="166.0000" FontSize="22" LabelText="Ranking Amigos" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="156.0000" Y="24.0000" />
+                <Size X="144.0000" Y="22.0000" />
                 <AnchorPoint ScaleY="1.0000" />
                 <Position X="15.0000" Y="190.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
@@ -58,14 +58,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="listRanking" ActionTag="292874210" Tag="34" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="30.0000" BottomMargin="10.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="360.0000" ScrollDirectionType="0" ItemMargin="5" DirectionType="Vertical" ctype="ListViewObjectData">
-                <Size X="470.0000" Y="160.0000" />
+              <AbstractNodeData Name="listRanking" ActionTag="292874210" Tag="34" IconVisible="False" LeftMargin="15.0000" RightMargin="15.0000" TopMargin="39.0000" BottomMargin="11.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="360.0000" ScrollDirectionType="0" ItemMargin="5" DirectionType="Vertical" ctype="ListViewObjectData">
+                <Size X="470.0000" Y="150.0000" />
                 <AnchorPoint ScaleY="1.0000" />
-                <Position X="15.0000" Y="170.0000" />
+                <Position X="15.0000" Y="161.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0300" Y="0.8500" />
-                <PreSize X="0.9400" Y="0.8000" />
+                <PrePosition X="0.0300" Y="0.8050" />
+                <PreSize X="0.9400" Y="0.7500" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
