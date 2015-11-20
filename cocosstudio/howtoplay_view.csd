@@ -251,65 +251,65 @@
             <PreSize X="0.0500" Y="0.0500" />
             <FileData Type="Normal" Path="rope.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_7" ActionTag="-2048772768" Tag="31" IconVisible="False" LeftMargin="59.0646" RightMargin="571.9354" TopMargin="396.6053" BottomMargin="212.3947" Scale9Width="9" Scale9Height="31" ctype="ImageViewObjectData">
-            <Size X="9.0000" Y="31.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="63.5646" Y="227.8947" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0993" Y="0.3561" />
-            <PreSize X="0.0141" Y="0.0484" />
-            <FileData Type="Normal" Path="antorcha.png" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Image_8" ActionTag="-259242407" Tag="32" IconVisible="False" LeftMargin="46.9753" RightMargin="562.0247" TopMargin="458.6068" BottomMargin="156.3932" Scale9Width="31" Scale9Height="25" ctype="ImageViewObjectData">
-            <Size X="31.0000" Y="25.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="62.4753" Y="168.8932" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0976" Y="0.2639" />
-            <PreSize X="0.0484" Y="0.0391" />
-            <FileData Type="Normal" Path="botas.png" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Image_9" ActionTag="-451788485" Tag="33" IconVisible="False" LeftMargin="48.4719" RightMargin="562.5281" TopMargin="513.6129" BottomMargin="98.3871" Scale9Width="29" Scale9Height="28" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_1" ActionTag="319632272" Tag="29" IconVisible="False" LeftMargin="45.9668" RightMargin="565.0332" TopMargin="511.1678" BottomMargin="100.8322" Scale9Width="29" Scale9Height="28" ctype="ImageViewObjectData">
             <Size X="29.0000" Y="28.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="62.9719" Y="112.3871" />
+            <Position X="60.4668" Y="114.8322" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0984" Y="0.1756" />
+            <PrePosition X="0.0945" Y="0.1794" />
             <PreSize X="0.0453" Y="0.0437" />
-            <FileData Type="Normal" Path="escudo.png" Plist="" />
+            <FileData Type="Normal" Path="shield.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_12" ActionTag="2011591730" Tag="36" IconVisible="False" LeftMargin="296.0626" RightMargin="308.9374" TopMargin="395.9930" BottomMargin="209.0070" Scale9Width="81" Scale9Height="79" ctype="ImageViewObjectData">
-            <Size X="35.0000" Y="35.0000" />
+          <AbstractNodeData Name="Image_7" ActionTag="583267131" Tag="30" IconVisible="False" LeftMargin="58.8836" RightMargin="572.1163" TopMargin="398.7122" BottomMargin="210.2878" Scale9Width="9" Scale9Height="31" ctype="ImageViewObjectData">
+            <Size X="9.0000" Y="31.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="313.5626" Y="226.5070" />
+            <Position X="63.3836" Y="225.7878" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4899" Y="0.3539" />
-            <PreSize X="0.0547" Y="0.0547" />
-            <FileData Type="Normal" Path="hueco.png" Plist="" />
+            <PrePosition X="0.0990" Y="0.3528" />
+            <PreSize X="0.0141" Y="0.0484" />
+            <FileData Type="Normal" Path="torch.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_14" ActionTag="130301812" Tag="38" IconVisible="False" LeftMargin="47.3995" RightMargin="560.6005" TopMargin="565.2357" BottomMargin="43.7643" Scale9Width="32" Scale9Height="31" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_8" ActionTag="-781510117" Tag="31" IconVisible="False" LeftMargin="45.7485" RightMargin="563.2515" TopMargin="463.7987" BottomMargin="151.2013" Scale9Width="31" Scale9Height="25" ctype="ImageViewObjectData">
+            <Size X="31.0000" Y="25.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="61.2485" Y="163.7013" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.0957" Y="0.2558" />
+            <PreSize X="0.0484" Y="0.0391" />
+            <FileData Type="Normal" Path="boots.png" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Image_9" ActionTag="-1498677401" Tag="32" IconVisible="False" LeftMargin="295.7843" RightMargin="314.2157" TopMargin="396.9054" BottomMargin="213.0946" Scale9Width="81" Scale9Height="79" ctype="ImageViewObjectData">
+            <Size X="30.0000" Y="30.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="310.7843" Y="228.0946" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.4856" Y="0.3564" />
+            <PreSize X="0.0469" Y="0.0469" />
+            <FileData Type="Normal" Path="hole.png" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Image_10" ActionTag="1837250400" Tag="33" IconVisible="False" LeftMargin="43.2399" RightMargin="564.7601" TopMargin="563.2523" BottomMargin="45.7477" Scale9Width="32" Scale9Height="31" ctype="ImageViewObjectData">
             <Size X="32.0000" Y="31.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="63.3995" Y="59.2643" />
+            <Position X="59.2399" Y="61.2477" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0991" Y="0.0926" />
+            <PrePosition X="0.0926" Y="0.0957" />
             <PreSize X="0.0500" Y="0.0484" />
-            <FileData Type="Normal" Path="reloj.png" Plist="" />
+            <FileData Type="Normal" Path="clock.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_15" ActionTag="1407506102" Tag="39" IconVisible="False" LeftMargin="299.9976" RightMargin="309.0024" TopMargin="561.8190" BottomMargin="46.1810" Scale9Width="31" Scale9Height="32" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_11" ActionTag="1704760864" Tag="34" IconVisible="False" LeftMargin="299.1648" RightMargin="309.8352" TopMargin="560.9112" BottomMargin="47.0888" Scale9Width="31" Scale9Height="32" ctype="ImageViewObjectData">
             <Size X="31.0000" Y="32.0000" />
-            <AnchorPoint ScaleX="0.5149" ScaleY="0.4509" />
-            <Position X="315.9594" Y="60.6104" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="314.6648" Y="63.0888" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4937" Y="0.0947" />
+            <PrePosition X="0.4917" Y="0.0986" />
             <PreSize X="0.0484" Y="0.0500" />
-            <FileData Type="Normal" Path="pizarra.png" Plist="" />
+            <FileData Type="Normal" Path="board.png" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

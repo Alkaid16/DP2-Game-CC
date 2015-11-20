@@ -75,6 +75,12 @@
         <Image Name="btnReintentar.png" />
         <Image Name="btnAyuda.png" />
         <Image Name="btnSalir.png" />
+        <Image Name="shield.png" />
+        <Image Name="torch.png" />
+        <Image Name="boots.png" />
+        <Image Name="hole.png" />
+        <Image Name="clock.png" />
+        <Image Name="board.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>
