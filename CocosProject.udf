@@ -32,13 +32,8 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="level_modal.csd" />
-          <FilePathData Path="gameHUD.csd" />
-          <FilePathData Path="defeat_view.csd" />
-          <FilePathData Path="level_selector_view.csd" />
-          <FilePathData Path="ranking_result_view.csd" />
-          <FilePathData Path="options_modal.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="defeat_view.csd" />
+        <ActiveDocument Path="level_modal.csd" />
       </Value>
     </Item>
   </Properties>

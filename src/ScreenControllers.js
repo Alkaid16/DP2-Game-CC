@@ -79,7 +79,13 @@ var TitleScreenC = (function(){
 var LevelSelectionC = (function(){
     var pub = {};
     var levelBtns = [];
+    var lblCoins;
     var scene=null;
+
+    var updateCoinsLbl = function(){
+        if(!lblCoins || !playerInfo || !playerInfo.coins) return;
+        lblCoins.setString("Creditos: " + playerInfo.coins);
+    }
 
     var startLevel = function(){
         var id = this.getTag();
@@ -92,6 +98,7 @@ var LevelSelectionC = (function(){
         scene = root.node;
         LevelModalC.load(scene);
         elementsSetup();
+        scene.schedule(updateCoinsLbl);
         pub.updateLevelStatus();
     }
 
@@ -106,6 +113,8 @@ var LevelSelectionC = (function(){
             levelBtns[i-1].addClickEventListener(startLevel);
             levelBtns[i-1].setTouchEnabled(true);
         }
+        lblCoins = scene.getChildByName("lblCoins");
+
         var btnBack = scene.getChildByName("btnBack");
         btnBack.addClickEventListener(function(){
             cc.director.runScene(TitleScreenC.getScene());

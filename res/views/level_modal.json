@@ -213,8 +213,8 @@
               "ScaleY": 0.4743
             },
             "Position": {
-              "X": 74.0103,
-              "Y": 250.4746
+              "X": 74.0104,
+              "Y": 209.475
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -228,16 +228,16 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.2313,
-              "Y": 0.7827
+              "Y": 0.6546
             },
             "PreSize": {
               "X": 0.4375,
               "Y": 0.0781
             },
-            "LeftMargin": 16.9323,
-            "RightMargin": 163.0677,
-            "TopMargin": 56.3829,
-            "BottomMargin": 238.6171,
+            "LeftMargin": 16.9324,
+            "RightMargin": 163.0676,
+            "TopMargin": 97.3825,
+            "BottomMargin": 197.6175,
             "Tag": 152,
             "ActionTag": -1383551644,
             "Size": {
@@ -274,7 +274,7 @@
             },
             "Position": {
               "X": 87.5623,
-              "Y": 210.8393
+              "Y": 175.8394
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -288,7 +288,7 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.2736,
-              "Y": 0.6589
+              "Y": 0.5495
             },
             "PreSize": {
               "X": 0.4375,
@@ -296,8 +296,8 @@
             },
             "LeftMargin": 16.9323,
             "RightMargin": 163.0677,
-            "TopMargin": 96.0232,
-            "BottomMargin": 198.9768,
+            "TopMargin": 131.0231,
+            "BottomMargin": 163.9769,
             "Tag": 153,
             "ActionTag": -801968946,
             "Size": {
@@ -328,8 +328,8 @@
               "ScaleY": 1.0
             },
             "Position": {
-              "X": 230.894,
-              "Y": 263.6171
+              "X": 230.8939,
+              "Y": 222.6175
             },
             "Scale": {
               "ScaleX": 0.6752,
@@ -339,16 +339,16 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.7215,
-              "Y": 0.8238
+              "Y": 0.6957
             },
             "PreSize": {
               "X": 0.625,
               "Y": 0.625
             },
-            "LeftMargin": 130.894,
-            "RightMargin": -10.894,
-            "TopMargin": 56.3829,
-            "BottomMargin": 63.6171,
+            "LeftMargin": 130.8939,
+            "RightMargin": -10.8939,
+            "TopMargin": 97.3825,
+            "BottomMargin": 22.6175,
             "Tag": 154,
             "Children": [
               {
@@ -688,6 +688,66 @@
             },
             "Name": "btnContinue",
             "ctype": "ButtonObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 12,
+            "LabelText": "Descripcion",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 160.0,
+              "Y": 251.908
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.7872
+            },
+            "PreSize": {
+              "X": 0.875,
+              "Y": 0.1406
+            },
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 20.0,
+            "RightMargin": 20.0,
+            "TopMargin": 45.592,
+            "BottomMargin": 229.408,
+            "Tag": 20,
+            "ActionTag": 455830541,
+            "Size": {
+              "X": 280.0,
+              "Y": 45.0
+            },
+            "Name": "lblDesc",
+            "ctype": "TextObjectData"
           }
         ],
         "Size": {
