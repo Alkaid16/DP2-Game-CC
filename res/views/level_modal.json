@@ -535,7 +535,7 @@
             "ctype": "ButtonObjectData"
           },
           {
-            "FontSize": 20,
+            "FontSize": 16,
             "ButtonText": "Comprar",
             "FontResource": {
               "Type": "Normal",
@@ -597,18 +597,18 @@
               "Y": 0.1196
             },
             "PreSize": {
-              "X": 0.4063,
+              "X": 0.5625,
               "Y": 0.0938
             },
             "HorizontalEdge": "BothEdge",
-            "LeftMargin": 95.0,
-            "RightMargin": 95.0,
+            "LeftMargin": 70.0,
+            "RightMargin": 70.0,
             "TopMargin": 266.7197,
             "BottomMargin": 23.2803,
             "Tag": 33,
             "ActionTag": -1482677735,
             "Size": {
-              "X": 130.0,
+              "X": 180.0,
               "Y": 30.0
             },
             "VisibleForFrame": false,

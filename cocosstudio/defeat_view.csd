@@ -16,19 +16,19 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="fondo1.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDefeatTitle" ActionTag="-1241845164" Tag="104" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="159.5000" RightMargin="159.5000" TopMargin="20.5000" BottomMargin="404.5000" FontSize="48" LabelText="Derrota" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="153.0000" Y="48.0000" />
+          <AbstractNodeData Name="lblDefeatTitle" ActionTag="-1241845164" Tag="104" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="219.5000" RightMargin="219.5000" TopMargin="53.1000" BottomMargin="411.9000" FontSize="48" LabelText="Derrota" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="41.0000" Y="15.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="240.0000" Y="432.0000" />
+            <Position X="240.0000" Y="419.4000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.9000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.5000" Y="0.8737" />
             <PreSize X="0.3354" Y="0.1146" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDescription" ActionTag="769088611" Tag="105" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="65.0000" RightMargin="65.0000" TopMargin="106.9080" BottomMargin="304.0920" FontSize="21" LabelText="El monstruo ha alcanzado a &lt;nombre&gt;. &#xA;¿Qué deseas hacer?&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="lblDescription" ActionTag="769088611" Tag="105" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="65.0000" RightMargin="65.0000" TopMargin="106.9080" BottomMargin="304.0920" FontSize="20" LabelText="El monstruo ha alcanzado a &lt;nombre&gt;. &#xA;¿Qué deseas hacer?&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="219.0000" Y="45.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="240.0000" Y="338.5920" />
@@ -73,7 +73,7 @@
           <AbstractNodeData Name="btnHelp" ActionTag="-107116174" Tag="108" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="142.5000" RightMargin="142.5000" TopMargin="283.8920" BottomMargin="151.1080" TouchEnable="True" FontSize="18" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="149" Scale9Height="30" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="195.0000" Y="45.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.4648" />
-            <Position X="240.0000" Y="172.0240" />
+            <Position X="240.0000" Y="172.0320" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.3584" />

@@ -120,14 +120,14 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnBuy" ActionTag="-1482677735" VisibleForFrame="False" Tag="33" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="95.0000" RightMargin="95.0000" TopMargin="266.7197" BottomMargin="23.2803" TouchEnable="True" FontSize="20" ButtonText="Comprar" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="163" Scale9Height="33" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="130.0000" Y="30.0000" />
+          <AbstractNodeData Name="btnBuy" ActionTag="-1482677735" VisibleForFrame="False" Tag="33" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="70.0000" RightMargin="70.0000" TopMargin="266.7197" BottomMargin="23.2803" TouchEnable="True" FontSize="16" ButtonText="Comprar" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="163" Scale9Height="33" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="180.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="160.0000" Y="38.2803" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.1196" />
-            <PreSize X="0.4063" Y="0.0938" />
+            <PreSize X="0.5625" Y="0.0938" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <TextColor A="255" R="0" G="0" B="0" />
             <DisabledFileData Type="Normal" Path="botonGenerico.png" Plist="" />

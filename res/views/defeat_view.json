@@ -82,17 +82,21 @@
             },
             "Position": {
               "X": 240.0,
-              "Y": 432.0
+              "Y": 419.4
             },
             "Scale": {
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
-              "Y": 0.9
+              "Y": 0.8737
             },
             "PreSize": {
               "X": 0.3354,
@@ -100,21 +104,21 @@
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 159.5,
-            "RightMargin": 159.5,
-            "TopMargin": 20.5,
-            "BottomMargin": 404.5,
+            "LeftMargin": 219.5,
+            "RightMargin": 219.5,
+            "TopMargin": 53.1,
+            "BottomMargin": 411.9,
             "Tag": 104,
             "ActionTag": -1241845164,
             "Size": {
-              "X": 153.0,
-              "Y": 48.0
+              "X": 41.0,
+              "Y": 15.0
             },
             "Name": "lblDefeatTitle",
             "ctype": "TextObjectData"
           },
           {
-            "FontSize": 21,
+            "FontSize": 20,
             "LabelText": "El monstruo ha alcanzado a <nombre>. \n¿Qué deseas hacer?\n",
             "FontResource": {
               "Type": "Normal",
@@ -374,7 +378,7 @@
             },
             "Position": {
               "X": 240.0,
-              "Y": 172.024
+              "Y": 172.032
             },
             "Scale": {
               "ScaleX": 1.0,
