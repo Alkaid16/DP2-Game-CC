@@ -769,13 +769,11 @@ function updateRankingList(listRanking, lvlNum, parent){
     listRanking.removeAllChildren(true);
     fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
         if (type == plugin.FacebookAgent.CODE_SUCCEED) {
-            var facebookIds = response["data"];
-            cc.log(JSON.stringify(response));
+            var facebookIds = response["data"];;
 
             var ids = [];
             for(var i=0;i<facebookIds.length; i++) {
                 ids[i] = facebookIds[i].id;
-                cc.log(facebookIds[i].id);
             }
 
             var ajax = WSHandler.getFriendsScore(ids, lvlNum, 5);
@@ -783,7 +781,7 @@ function updateRankingList(listRanking, lvlNum, parent){
                 var rank = ajax.responseJSON.scores;
                 for(var i=0; i<rank.length; i++){
                     var name;
-                    for(var j=0;i<facebookIds; j++){
+                    for(var j=0;i<facebookIds.length; j++){
                         if(rank[i].idFacebook = facebookIds[j].id) {
                             name = facebookIds[j].name;
                             break;
