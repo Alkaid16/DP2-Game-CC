@@ -1,4 +1,8 @@
 var playerInfo;
+
+var fbAgent;
+var fbToken;
+
 var LevelGraphC = (function(){
     var levelGraph;
     var pub = {};

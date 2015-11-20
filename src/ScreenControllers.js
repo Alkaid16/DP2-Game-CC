@@ -79,7 +79,13 @@ var TitleScreenC = (function(){
 var LevelSelectionC = (function(){
     var pub = {};
     var levelBtns = [];
+    var lblCoins;
     var scene=null;
+
+    var updateCoinsLbl = function(){
+        if(!lblCoins || !playerInfo || !playerInfo.coins) return;
+        lblCoins.setString("Creditos: " + playerInfo.coins);
+    }
 
     var startLevel = function(){
         var id = this.getTag();
@@ -92,6 +98,7 @@ var LevelSelectionC = (function(){
         scene = root.node;
         LevelModalC.load(scene);
         elementsSetup();
+        scene.schedule(updateCoinsLbl);
         pub.updateLevelStatus();
     }
 
@@ -106,10 +113,26 @@ var LevelSelectionC = (function(){
             levelBtns[i-1].addClickEventListener(startLevel);
             levelBtns[i-1].setTouchEnabled(true);
         }
+        lblCoins = scene.getChildByName("lblCoins");
+
         var btnBack = scene.getChildByName("btnBack");
         btnBack.addClickEventListener(function(){
             cc.director.runScene(TitleScreenC.getScene());
-        })
+        });
+
+        var btnFriends = scene.getChildByName("btnHelpFriends");
+        btnFriends.addClickEventListener(function(){
+            fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
+                if (type == plugin.FacebookAgent.CODE_SUCCEED) {
+                    var data = response["data"];
+                    for(var i=0;i<data.length; i++){
+                        cc.log(data[i].name + " " + "ID:" + data[i].id);
+                    }
+                } else {
+                    cc.log("Graph API request failed, error #" + type + ": " + response);
+                }
+            });
+        });
     }
 
     pub.updateLevelStatus =  function(){
@@ -165,7 +188,7 @@ var LevelModalC = (function(){
     pub.updateButtons = function(){
         var levelInfo = LevelGraphC.getLevelInfo(level);
         var canBuy = (levelInfo.cost > 0 && levelInfo.bought == 0);
-        btnBuy.setTitleText("Comprar: " + levelInfo.cost + "pt.");
+        btnBuy.setTitleText("Desbloquear: " + levelInfo.cost + "pt.");
         btnBuy.setVisible(canBuy);
         btnBuy.setTouchEnabled(canBuy);
         btnStart.setVisible(!canBuy);
@@ -196,7 +219,7 @@ var LevelModalC = (function(){
         btnCont = layer.getChildByName("btnContinue");
         btnCont.addClickEventListener(function(){
             if(playerInfo.continues<=0 ){
-                alert("No tienes puntos para continuar este nivel.")
+                MessageModalC.show("Error", "No tienes puntos para continuar este nivel.", layer);
                 return;
             }
             layer.pause();
@@ -207,7 +230,7 @@ var LevelModalC = (function(){
                 cc.director.runScene(scene);
                 layer.resume();
             }, function(){
-                alert(networkErrorMsg);
+                MessageModalC.show("Error", networkErrorMsg, layer);
                 layer.resume();
             });
 
@@ -225,13 +248,13 @@ var LevelModalC = (function(){
                     LevelSelectionC.updateLevelStatus();
                     layer.resume();
                     pub.updateButtons();
-                    alert("Compra exitosa");
+                    MessageModalC.show("Exito", "La compra se realizo satisfactoriamente.", layer);
                 }, function(){
-                    alert(networkErrorMsg);
+                    MessageModalC.show("Error", networkErrorMsg, layer);
                     layer.resume();
                 });
             }else{
-                alert("No tiene suficientes puntos para comprar el nivel.")
+                MessageModalC.show("Error","No tiene suficientes puntos para comprar el nivel.", layer);
             }
         });
 
@@ -517,6 +540,48 @@ OptionsModalC = (function(){
     return pub;
 })();
 
+VictoryScreenC2 = (function(){
+    var scene;
+    var btnReturn;
+    var pub = {};
+    var count=0;
+
+    pub.loadAndRun = function(score, time, coins){
+        count++;
+
+        if(count==2)
+        {
+            count=0;
+            var obj = ccs.load(res.invitation_view_json);
+            scene = obj.node;
+            var pnl = scene.getChildByName("pnlGeneral");        
+
+            btnReturn = scene.getChildByName("btnContinue");
+            btnReturn.addClickEventListener(function(){
+                scene = null;
+                LevelModalC.hide();
+                LevelSelectionC.updateLevelStatus();
+                cc.director.runScene(LevelSelectionC.getScene());
+            });
+
+            btnInvitation = scene.getChildByName("btnInvitation");
+            btnInvitation.addClickEventListener(function(){
+                var win = window.open("http://162.243.118.33/afiperudrupal/corporativo", '_blank');
+                win.focus();
+            });
+
+            cc.director.runScene(scene);
+
+            var lvlInfo = LevelGraphC.getCurrentLevel();
+        }else{            
+            VictoryScreenC.loadAndRun(score, time, coins);
+        }
+        
+    }
+
+    return pub;
+})();
+
 VictoryScreenC = (function(){
     var scene;
     var txtScore;
@@ -555,7 +620,7 @@ VictoryScreenC = (function(){
             LevelGraphC.clearLevel();
             btnReturn.setEnabled(true);
         }, function(){
-            alert(networkErrorMsg);
+            MessageModalC.show("Error", networkErrorMsg, scene);
             btnReturn.setEnabled(true);
         });
 
@@ -677,6 +742,8 @@ var HowToPlaySceneC = (function(){
 MessageModalC = (function(){
     var pub = {};
     var layer;
+    var lblTitle;
+    var lblDesc;
     var cLayer;
 
     function createCoverLayer(){
@@ -695,19 +762,26 @@ MessageModalC = (function(){
 
 
     pub.load = function(){
-        var obj =  ccs.load("");
+        var obj =  ccs.load(res.alert_view_json);
         layer = obj.node;
+        layer.setAnchorPoint(cc.p(0.5,0.5));
         layer.setVisible(false);
         createCoverLayer();
 
-        var btnContinue = layer.getChildByName("btnContinue");
+        lblTitle = layer.getChildByName("lblTitle");
+        lblDesc = layer.getChildByName("lblDesc");
+        var btnContinue = layer.getChildByName("btnAccept");
 
         btnContinue.addClickEventListener(function(){
             pub.hide();
         });
     };
 
-    pub.show = function(pScene){
+    pub.show = function(title, desc, pScene){
+        lblTitle.setString(title);
+        lblDesc.setString(desc);
+        layer.setPosition(cc.p(pScene.width/2, pScene.height/2));
+        layer.setScale(1/pScene.getScale());
         pScene.addChild(layer, 9001);
         pScene.addChild(cLayer, 9000);
         layer.setVisible(true);
@@ -716,8 +790,8 @@ MessageModalC = (function(){
 
     pub.hide = function(){
         cLayer.cListener.swallowTouches = false;
-        layer.removeFromParentAndCleanup(false);
-        cLayer.removeFromParentAndCleanup(false);
+        layer.removeFromParent(false);
+        cLayer.removeFromParent(false);
         layer.setVisible(false);
     }
 

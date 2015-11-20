@@ -59,13 +59,13 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnReanudar.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnReanudar.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -73,7 +73,6 @@
               "Path": "btnReanudar.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 668,
@@ -95,53 +94,54 @@
               "ScaleY": 0.5043
             },
             "Position": {
-              "X": 187.358,
-              "Y": 199.9722
+              "X": 179.677,
+              "Y": 204.9721
             },
             "Scale": {
-              "ScaleX": 0.2161,
-              "ScaleY": 0.1316
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5204,
-              "Y": 0.5555
+              "X": 0.4991,
+              "Y": 0.5694
             },
             "PreSize": {
-              "X": 1.9389,
-              "Y": 0.6056
+              "X": 0.4722,
+              "Y": 0.1111
             },
-            "LeftMargin": -160.3158,
-            "RightMargin": -177.6842,
-            "TopMargin": 51.9652,
-            "BottomMargin": 90.0348,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 95.0,
+            "RightMargin": 95.0,
+            "TopMargin": 135.1999,
+            "BottomMargin": 184.8001,
             "CallBackType": "Touch",
             "Tag": 37,
             "ActionTag": 1073933199,
             "Size": {
-              "X": 698.0,
-              "Y": 218.0
+              "X": 170.0,
+              "Y": 40.0
             },
             "Name": "btnContinue",
             "ctype": "ButtonObjectData"
           },
           {
             "FontSize": 14,
-            "ButtonText": "Button",
+            "ButtonText": "",
             "TextColor": {
               "R": 65,
               "G": 65,
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnSelecNiveles.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnSelecNiveles.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -149,7 +149,6 @@
               "Path": "btnSelecNiveles.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 1247,
@@ -171,52 +170,53 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 186.6336,
-              "Y": 134.6629
+              "X": 180.0,
+              "Y": 143.1707
             },
             "Scale": {
-              "ScaleX": 0.1245,
-              "ScaleY": 0.1528
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5184,
-              "Y": 0.3741
+              "X": 0.5,
+              "Y": 0.3977
             },
             "PreSize": {
-              "X": 3.5472,
-              "Y": 0.6306
+              "X": 0.4722,
+              "Y": 0.125
             },
-            "LeftMargin": -451.8665,
-            "RightMargin": -465.1335,
-            "TopMargin": 111.8371,
-            "BottomMargin": 21.1629,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 95.0,
+            "RightMargin": 95.0,
+            "TopMargin": 194.3293,
+            "BottomMargin": 120.6707,
             "Tag": 38,
             "ActionTag": -1381030052,
             "Size": {
-              "X": 1277.0,
-              "Y": 227.0
+              "X": 170.0,
+              "Y": 45.0
             },
             "Name": "btnReturnLevelSelector",
             "ctype": "ButtonObjectData"
           },
           {
             "FontSize": 14,
-            "ButtonText": "Button",
+            "ButtonText": "",
             "TextColor": {
               "R": 65,
               "G": 65,
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnOpciones.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnOpciones.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -224,7 +224,6 @@
               "Path": "btnOpciones.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 800,
@@ -246,32 +245,32 @@
               "ScaleY": 0.4226
             },
             "Position": {
-              "X": 183.0806,
-              "Y": 79.1673
+              "X": 174.849,
+              "Y": 78.4454
             },
             "Scale": {
-              "ScaleX": 0.1807,
-              "ScaleY": 0.0914
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5086,
-              "Y": 0.2199
+              "X": 0.4857,
+              "Y": 0.2179
             },
             "PreSize": {
-              "X": 2.3056,
-              "Y": 0.7222
+              "X": 0.4722,
+              "Y": 0.1111
             },
-            "LeftMargin": -206.7704,
-            "RightMargin": -263.2296,
-            "TopMargin": 130.7087,
-            "BottomMargin": -30.7087,
+            "LeftMargin": 95.0,
+            "RightMargin": 95.0001,
+            "TopMargin": 258.4586,
+            "BottomMargin": 61.5414,
             "Tag": 39,
             "ActionTag": -713696180,
             "Size": {
-              "X": 830.0,
-              "Y": 260.0
+              "X": 170.0,
+              "Y": 40.0
             },
             "Name": "btnOptions",
             "ctype": "ButtonObjectData"
@@ -300,8 +299,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 184.8029,
-              "Y": 263.7319
+              "X": 180.0,
+              "Y": 289.7315
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -314,17 +313,18 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5133,
-              "Y": 0.7326
+              "X": 0.5,
+              "Y": 0.8048
             },
             "PreSize": {
               "X": 0.4417,
               "Y": 0.1528
             },
-            "LeftMargin": 165.8029,
-            "RightMargin": 156.1971,
-            "TopMargin": 88.7681,
-            "BottomMargin": 256.2319,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 161.0,
+            "RightMargin": 161.0,
+            "TopMargin": 62.7685,
+            "BottomMargin": 282.2315,
             "Tag": 40,
             "ActionTag": 422292445,
             "Size": {
@@ -346,8 +346,6 @@
         "btnOpciones.png",
         "btnReanudar.png",
         "btnSelecNiveles.png",
-        "Default/Button_Disable.png",
-        "Default/Button_Press.png",
         "fondo1.png",
         "THE MINION.ttf"
       ],

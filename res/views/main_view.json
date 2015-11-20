@@ -58,7 +58,7 @@
           },
           {
             "FontSize": 48,
-            "LabelText": "THE KONFIMAZE",
+            "LabelText": "CONFIMAZE",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
@@ -104,28 +104,28 @@
             "Tag": 14,
             "ActionTag": 382820312,
             "Size": {
-              "X": 385.0,
-              "Y": 55.0
+              "X": 68.0,
+              "Y": 15.0
             },
             "Name": "lblGameName",
             "ctype": "TextObjectData"
           },
           {
             "FontSize": 8,
-            "ButtonText": "Comenzar",
+            "ButtonText": "",
             "TextColor": {
               "R": 65,
               "G": 65,
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnComenzar.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnComenzar.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -133,7 +133,6 @@
               "Path": "btnComenzar.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 773,
@@ -151,56 +150,57 @@
             "ShadowOffsetY": -2.0,
             "TouchEnable": true,
             "AnchorPoint": {
-              "ScaleX": 0.3753,
-              "ScaleY": 0.5152
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
             },
             "Position": {
-              "X": 298.5266,
-              "Y": 228.1347
+              "X": 317.5998,
+              "Y": 227.3747
             },
             "Scale": {
-              "ScaleX": 0.1797,
-              "ScaleY": 0.1987
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4664,
-              "Y": 0.3565
+              "X": 0.4962,
+              "Y": 0.3553
             },
             "PreSize": {
-              "X": 1.2547,
-              "Y": 0.3562
+              "X": 0.2188,
+              "Y": 0.0703
             },
-            "LeftMargin": -2.8393,
-            "RightMargin": -160.1607,
-            "TopMargin": 301.3309,
-            "BottomMargin": 110.6691,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 247.5998,
+            "RightMargin": 252.4002,
+            "TopMargin": 390.1253,
+            "BottomMargin": 204.8747,
             "Tag": 21,
             "ActionTag": -1857035129,
             "Size": {
-              "X": 803.0,
-              "Y": 228.0
+              "X": 140.0,
+              "Y": 45.0
             },
             "Name": "btnStart",
             "ctype": "ButtonObjectData"
           },
           {
             "FontSize": 8,
-            "ButtonText": "Opciones",
+            "ButtonText": "",
             "TextColor": {
               "R": 65,
               "G": 65,
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnOpciones.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnOpciones.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -208,7 +208,6 @@
               "Path": "btnOpciones.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 800,
@@ -230,32 +229,32 @@
               "ScaleY": 0.4368
             },
             "Position": {
-              "X": 317.8386,
-              "Y": 168.1274
+              "X": 317.8,
+              "Y": 101.9175
             },
             "Scale": {
-              "ScaleX": 0.1708,
-              "ScaleY": 0.1758
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
               "X": 0.4966,
-              "Y": 0.2627
+              "Y": 0.1592
             },
             "PreSize": {
-              "X": 1.2969,
-              "Y": 0.4062
+              "X": 0.2234,
+              "Y": 0.0781
             },
-            "LeftMargin": -98.3234,
-            "RightMargin": -91.6766,
-            "TopMargin": 325.4406,
-            "BottomMargin": 54.5594,
+            "LeftMargin": 246.0998,
+            "RightMargin": 250.9002,
+            "TopMargin": 509.9225,
+            "BottomMargin": 80.0775,
             "Tag": 22,
             "ActionTag": -1440041637,
             "Size": {
-              "X": 830.0,
-              "Y": 260.0
+              "X": 143.0,
+              "Y": 50.0
             },
             "Name": "btnOptions",
             "ctype": "ButtonObjectData"
@@ -308,8 +307,8 @@
             "Tag": 23,
             "ActionTag": -322946789,
             "Size": {
-              "X": 86.0,
-              "Y": 26.0
+              "X": 74.0,
+              "Y": 20.0
             },
             "Name": "lblCopyright",
             "ctype": "TextObjectData"
@@ -323,13 +322,13 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "botones-howto.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "botones-howto.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -359,32 +358,32 @@
               "ScaleY": 0.4368
             },
             "Position": {
-              "X": 317.1964,
-              "Y": 120.5867
+              "X": 317.7958,
+              "Y": 164.6321
             },
             "Scale": {
-              "ScaleX": 0.7078,
-              "ScaleY": 0.7177
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4956,
-              "Y": 0.1884
+              "X": 0.4966,
+              "Y": 0.2572
             },
             "PreSize": {
-              "X": 0.3016,
-              "Y": 0.0859
+              "X": 0.2125,
+              "Y": 0.0703
             },
-            "LeftMargin": 220.4211,
-            "RightMargin": 226.5789,
-            "TopMargin": 488.438,
-            "BottomMargin": 96.562,
+            "LeftMargin": 249.6054,
+            "RightMargin": 254.3946,
+            "TopMargin": 450.0239,
+            "BottomMargin": 144.9761,
             "Tag": 49,
             "ActionTag": -1450932278,
             "Size": {
-              "X": 193.0,
-              "Y": 55.0
+              "X": 136.0,
+              "Y": 45.0
             },
             "Name": "btnInstructions",
             "ctype": "ButtonObjectData"
@@ -401,8 +400,6 @@
         "botones-howto.png",
         "btnComenzar.png",
         "btnOpciones.png",
-        "Default/Button_Disable.png",
-        "Default/Button_Press.png",
         "pantallas-03.png",
         "THE MINION.ttf"
       ],

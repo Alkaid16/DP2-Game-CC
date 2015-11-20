@@ -24,7 +24,7 @@
             "Scale9Height": 2667,
             "AnchorPoint": {},
             "Position": {
-              "X": 0.0,
+              "X": 1.0,
               "Y": 0.0
             },
             "Scale": {
@@ -34,13 +34,15 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0,
+              "X": 0.0016,
               "Y": 0.0
             },
             "PreSize": {
               "X": 1.0,
               "Y": 1.0
             },
+            "LeftMargin": 1.0,
+            "RightMargin": -1.0,
             "Tag": 39,
             "ActionTag": -2082610952,
             "Size": {
@@ -51,7 +53,7 @@
             "ctype": "ImageViewObjectData"
           },
           {
-            "FontSize": 48,
+            "FontSize": 36,
             "LabelText": "Opciones\n",
             "FontResource": {
               "Type": "Normal",
@@ -71,15 +73,15 @@
             "ShadowOffsetY": -2.0,
             "AnchorPoint": {
               "ScaleX": 0.4999,
-              "ScaleY": 1.1659
+              "ScaleY": 0.5
             },
             "Position": {
-              "X": 324.5234,
-              "Y": 583.7219
+              "X": 320.0001,
+              "Y": 551.4865
             },
             "Scale": {
-              "ScaleX": 1.9446,
-              "ScaleY": 1.6136
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {
               "R": 0,
@@ -88,44 +90,49 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5071,
-              "Y": 0.9121
+              "X": 0.5,
+              "Y": 0.8617
             },
             "PreSize": {
               "X": 0.3172,
               "Y": 0.1719
             },
-            "LeftMargin": 223.0437,
-            "RightMargin": 213.9563,
-            "TopMargin": 74.5272,
-            "BottomMargin": 455.4729,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 250.0141,
+            "RightMargin": 249.9859,
+            "TopMargin": 52.5135,
+            "BottomMargin": 515.4865,
             "Tag": 21,
             "ActionTag": 1487045513,
             "Size": {
-              "X": 53.0,
-              "Y": 30.0
+              "X": 140.0,
+              "Y": 72.0
             },
             "Name": "lblTitle",
             "ctype": "TextObjectData"
           },
           {
-            "FontSize": 20,
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "FontSize": 24,
             "IsCustomSize": true,
             "LabelText": "",
             "PlaceHolderText": "On",
             "MaxLengthText": 10,
             "TouchEnable": true,
             "AnchorPoint": {
-              "ScaleX": 0.5,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 482.438,
-              "Y": 209.3723
+              "X": 336.0,
+              "Y": 448.0
             },
             "Scale": {
-              "ScaleX": 1.1908,
-              "ScaleY": 2.3196
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {
               "G": 165,
@@ -133,17 +140,19 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.7538,
-              "Y": 0.3271
+              "X": 0.525,
+              "Y": 0.7
             },
             "PreSize": {
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 432.438,
-            "RightMargin": 107.562,
-            "TopMargin": 417.1277,
-            "BottomMargin": 195.8723,
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 336.0,
+            "RightMargin": 204.0,
+            "TopMargin": 178.5,
+            "BottomMargin": 434.5,
             "CallBackType": "Click",
             "Tag": 26,
             "ActionTag": -918644193,
@@ -155,6 +164,11 @@
             "ctype": "TextFieldObjectData"
           },
           {
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
             "FontSize": 20,
             "IsCustomSize": true,
             "LabelText": "",
@@ -162,16 +176,15 @@
             "MaxLengthText": 10,
             "TouchEnable": true,
             "AnchorPoint": {
-              "ScaleX": 0.5,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 477.2956,
-              "Y": 313.707
+              "X": 336.0,
+              "Y": 352.0
             },
             "Scale": {
-              "ScaleX": 1.1161,
-              "ScaleY": 2.4845
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {
               "G": 165,
@@ -179,17 +192,19 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.7458,
-              "Y": 0.4902
+              "X": 0.525,
+              "Y": 0.55
             },
             "PreSize": {
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 427.2956,
-            "RightMargin": 112.7044,
-            "TopMargin": 312.793,
-            "BottomMargin": 300.207,
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 336.0,
+            "RightMargin": 204.0,
+            "TopMargin": 274.5,
+            "BottomMargin": 338.5,
             "CallBackType": "Click",
             "Tag": 24,
             "ActionTag": 340662474,
@@ -209,13 +224,13 @@
               "B": 70
             },
             "DisabledFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Disable.png",
+              "Type": "Normal",
+              "Path": "btnRegresar.png",
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "btnRegresar.png",
               "Plist": ""
             },
             "NormalFileData": {
@@ -223,7 +238,6 @@
               "Path": "btnRegresar.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
             "Scale9Width": 752,
@@ -245,8 +259,8 @@
               "ScaleY": 0.5118
             },
             "Position": {
-              "X": 333.2974,
-              "Y": 76.0863
+              "X": 320.0,
+              "Y": 71.0863
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -255,17 +269,18 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5208,
-              "Y": 0.1189
+              "X": 0.5,
+              "Y": 0.1111
             },
             "PreSize": {
               "X": 0.3125,
               "Y": 0.0781
             },
-            "LeftMargin": 234.0774,
-            "RightMargin": 205.9226,
-            "TopMargin": 539.5037,
-            "BottomMargin": 50.4963,
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 220.7801,
+            "RightMargin": 219.2199,
+            "TopMargin": 544.5037,
+            "BottomMargin": 45.4963,
             "Tag": 28,
             "ActionTag": 1187510147,
             "Size": {
@@ -276,13 +291,15 @@
             "ctype": "ButtonObjectData"
           },
           {
-            "FontSize": 48,
+            "FontSize": 24,
             "LabelText": "Sonido",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
               "Plist": ""
             },
+            "HorizontalAlignmentType": "HT_Right",
+            "VerticalAlignmentType": "VT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -295,12 +312,12 @@
             "ShadowOffsetX": 2.0,
             "ShadowOffsetY": -2.0,
             "AnchorPoint": {
-              "ScaleX": 0.5,
+              "ScaleX": 1.0,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 218.86,
-              "Y": 198.7236
+              "X": 304.0,
+              "Y": 352.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -313,34 +330,38 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.342,
-              "Y": 0.3105
+              "X": 0.475,
+              "Y": 0.55
             },
             "PreSize": {
               "X": 0.0938,
               "Y": 0.0359
             },
-            "LeftMargin": 188.86,
-            "RightMargin": 391.14,
-            "TopMargin": 429.7764,
-            "BottomMargin": 187.2236,
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 265.0,
+            "RightMargin": 336.0,
+            "TopMargin": 280.5,
+            "BottomMargin": 344.5,
             "Tag": 40,
             "ActionTag": -1808784428,
             "Size": {
-              "X": 60.0,
-              "Y": 23.0
+              "X": 39.0,
+              "Y": 15.0
             },
             "Name": "lblSound",
             "ctype": "TextObjectData"
           },
           {
-            "FontSize": 48,
+            "FontSize": 24,
             "LabelText": "Música",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
               "Plist": ""
             },
+            "HorizontalAlignmentType": "HT_Right",
+            "VerticalAlignmentType": "VT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -353,12 +374,12 @@
             "ShadowOffsetX": 2.0,
             "ShadowOffsetY": -2.0,
             "AnchorPoint": {
-              "ScaleX": 0.5,
+              "ScaleX": 1.0,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 218.8576,
-              "Y": 319.9435
+              "X": 304.0,
+              "Y": 448.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -371,22 +392,24 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.342,
-              "Y": 0.4999
+              "X": 0.475,
+              "Y": 0.7
             },
             "PreSize": {
-              "X": 0.2359,
-              "Y": 0.0859
+              "X": 0.0609,
+              "Y": 0.0234
             },
-            "LeftMargin": 143.3576,
-            "RightMargin": 345.6424,
-            "TopMargin": 292.5565,
-            "BottomMargin": 292.4435,
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 265.0,
+            "RightMargin": 336.0,
+            "TopMargin": 184.5,
+            "BottomMargin": 440.5,
             "Tag": 41,
             "ActionTag": 1852688942,
             "Size": {
-              "X": 151.0,
-              "Y": 55.0
+              "X": 39.0,
+              "Y": 15.0
             },
             "Name": "lblMusic",
             "ctype": "TextObjectData"
@@ -401,8 +424,6 @@
       },
       "UsedResources": [
         "btnRegresar.png",
-        "Default/Button_Disable.png",
-        "Default/Button_Press.png",
         "fondo1.png",
         "THE MINION.ttf"
       ],

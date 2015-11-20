@@ -1,5 +1,5 @@
 var res = {
-    HelloWorld_png : "res/views/HelloWorld.png",
+    invitation_view_json: "res/views/invitation_view.json",
     ButtonNormal_png : "res/views/buttonNormal.png",
     ButtonPressed_png : "res/views/buttonPressed.png",
     MainScreen_json: "res/views/MainScreen.json",
@@ -9,6 +9,7 @@ var res = {
     ranking_result_view_json : "res/views/ranking_result_view.json",
     main_view_json : "res/views/main_view.json",
     character_view_json: "res/views/character_view.json",
+    alert_view_json: "res/views/alert_view.json",
     Level1_tmx: "res/levels/Level1.tmx",
     Level2_tmx: "res/levels/Level2.tmx",
     Level3_tmx: "res/levels/Level3.tmx",
