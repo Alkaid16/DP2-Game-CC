@@ -65,7 +65,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblScoreName_0" ActionTag="-550708078" Tag="80" IconVisible="False" LeftMargin="429.0000" RightMargin="121.0000" TopMargin="20.0000" BottomMargin="588.0000" IsCustomSize="True" FontSize="20" LabelText="Voluntad" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="lblConfidence" ActionTag="-550708078" Tag="80" IconVisible="False" LeftMargin="429.0000" RightMargin="121.0000" TopMargin="20.0000" BottomMargin="588.0000" IsCustomSize="True" FontSize="20" LabelText="Voluntad" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="90.0000" Y="32.0000" />
             <AnchorPoint ScaleY="1.0000" />
             <Position X="429.0000" Y="620.0000" />

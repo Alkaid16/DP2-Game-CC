@@ -302,7 +302,7 @@
               "X": 90.0,
               "Y": 32.0
             },
-            "Name": "lblScoreName_0",
+            "Name": "lblConfidence",
             "ctype": "TextObjectData"
           }
         ],

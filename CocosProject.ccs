@@ -38,16 +38,8 @@
         <Image Name="ninoFrente1.png" />
         <Image Name="example_movement.png" />
         <Image Name="keyboards.png" />
-        <Image Name="hueco.png" />
-        <Image Name="pizarra.png" />
-        <Image Name="antorcha.png" />
-        <Image Name="botas.png" />
-        <Image Name="reloj.png" />
-        <Image Name="escudo.png" />
         <Image Name="botones-howto.png" />
         <Image Name="logo.png" />
-        <Image Name="escudo_powerup.png" />
-        <Image Name="huecos_trap.png" />
         <Image Name="fondo1.png" />
         <Project Name="character_view.csd" Type="Scene" />
         <Project Name="cinematic_view.csd" Type="Scene" />

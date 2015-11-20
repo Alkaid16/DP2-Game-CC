@@ -920,6 +920,8 @@ var GameplayScene = cc.Scene.extend({
         this.gameplayLayer = new cc.Layer();
         var root = ccs.load(res.gameHUD_json);
         this.hudLayer = root.node;
+        var lblSc = this.hudLayer.getChildByName("lblScore");
+        lblSc.setFontName("THE MINION");
 
         var map = new GameplayMap("levels/Level" + levelNum + ".tmx");
         HoleController.exMark = new cc.Sprite(res.exMark_png);

@@ -37,7 +37,8 @@ var res = {
     pause_modal_json: "res/views/pause_modal.json",
     options_json: "res/views/options_modal.json",
     howtoplay_json: "res/views/howtoplay_view.json",
-    correct_wav: "res/correct.wav"
+    correct_wav: "res/correct.wav",
+    MINION_ttf: {type: "font", name: "THE MINION", srcs: ["res/views/THE MINION.ttf"]}
 };
 
 var g_resources = [];

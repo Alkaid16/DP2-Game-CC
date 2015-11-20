@@ -16,13 +16,13 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="fondo1.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDefeatTitle" ActionTag="-1241845164" Tag="104" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="219.5000" RightMargin="219.5000" TopMargin="53.1000" BottomMargin="411.9000" FontSize="48" LabelText="Derrota" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="lblDefeatTitle" ActionTag="-1241845164" Tag="104" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="219.5000" RightMargin="219.5000" TopMargin="58.1240" BottomMargin="406.8760" FontSize="48" LabelText="Derrota" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="41.0000" Y="15.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="240.0000" Y="419.4000" />
+            <Position X="240.0000" Y="414.3760" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.5000" Y="0.8737" />
+            <PrePosition X="0.5000" Y="0.8633" />
             <PreSize X="0.3354" Y="0.1146" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />

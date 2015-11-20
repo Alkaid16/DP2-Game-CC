@@ -275,7 +275,7 @@ var LevelModalC = (function(){
         if(levelInfo == null) return;
         level = levelInfo.idLevel;
 
-        updateRankingList(listRanking, lvlNum, layer);
+        updateRankingList(listRanking, lvlNum,12, layer);
         pub.updateButtons();
         lblDesc.setString(levelInfo.milestone.replace("*",playerInfo.childName));
         lblLevel.setString("Nivel " + level);
@@ -765,7 +765,7 @@ MessageModalC = (function(){
 })();
 
 
-function updateRankingList(listRanking, lvlNum, parent){
+function updateRankingList(listRanking, lvlNum, fontSize, parent){
     listRanking.removeAllChildren(true);
     fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
         if (type == plugin.FacebookAgent.CODE_SUCCEED) {
@@ -781,16 +781,14 @@ function updateRankingList(listRanking, lvlNum, parent){
                 var rank = ajax.responseJSON.scores;
                 for(var i=0; i<rank.length; i++){
                     var name;
-                    for(var j=0;i<facebookIds.length; j++){
+                    for(var j=0;j<facebookIds.length; j++){
                         if(rank[i].idFacebook = facebookIds[j].id) {
                             name = facebookIds[j].name;
                             break;
                         }
                     }
                     cc.log("Nombre de amigo en ranking: " + name + " " + rank[i].score);
-
-                    var lbl = new cc.LabelTTF(name + " " + rank[i].score,'Arial', 16, cc.size(150,40) ,
-                        cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+                    var lbl = new ccui.Text(name + " " + rank[i].score, "THE MINION", fontSize);
                     listRanking.addChild(lbl);
                 }
             });
