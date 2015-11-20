@@ -770,6 +770,7 @@ function updateRankingList(listRanking, lvlNum, parent){
     fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
         if (type == plugin.FacebookAgent.CODE_SUCCEED) {
             var facebookIds = response["data"];
+            cc.log(JSON.stringify(response));
 
             var ids = [];
             for(var i=0;i<facebookIds; i++) {
