@@ -136,6 +136,7 @@ var LevelSelectionC = (function(){
     }
 
     pub.updateLevelStatus =  function(){
+        updateCoinsLbl();
         for(var i=1; i<16; i++){
             var btn = levelBtns[i-1];
             var levelInfo = LevelGraphC.getLevelInfo(i);

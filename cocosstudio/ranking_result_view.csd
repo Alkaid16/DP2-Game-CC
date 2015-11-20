@@ -46,13 +46,13 @@
           <AbstractNodeData Name="pnlRanking" ActionTag="-244467705" Tag="53" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="71.9500" RightMargin="68.0500" TopMargin="304.9920" BottomMargin="135.0080" TouchEnable="True" BackColorAlpha="134" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
             <Size X="500.0000" Y="200.0000" />
             <Children>
-              <AbstractNodeData Name="lblRanking" ActionTag="-270504741" Tag="54" IconVisible="False" LeftMargin="15.0000" RightMargin="329.0000" TopMargin="8.0000" BottomMargin="167.0000" FontSize="22" LabelText="Ranking Amigos" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="lblRanking" ActionTag="-270504741" Tag="54" IconVisible="False" LeftMargin="15.0000" RightMargin="329.0001" TopMargin="5.0001" BottomMargin="169.9999" FontSize="22" LabelText="Ranking Amigos" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="156.0000" Y="25.0000" />
                 <AnchorPoint ScaleY="1.0000" />
-                <Position X="15.0000" Y="192.0000" />
+                <Position X="15.0000" Y="194.9999" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0300" Y="0.9600" />
+                <PrePosition X="0.0300" Y="0.9750" />
                 <PreSize X="0.3480" Y="0.1350" />
                 <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
