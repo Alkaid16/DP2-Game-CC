@@ -276,7 +276,7 @@ var MeshController = (function(){
                     break;
                 case 2:
                     arrowsImg[i] = new cc.Sprite("res/views/left.png");
-                    arrowsImgPress[i] = new cc.Sprite("res/leftPress.png");
+                    arrowsImgPress[i] = new cc.Sprite("res/views/leftPress.png");
                     break;
                 case 3:
                     arrowsImg[i] = new cc.Sprite("res/views/right.png");
@@ -520,7 +520,7 @@ var lunchBoxController = (function(){
             spritesLunchBoxCtrl[i]=1;
             spritesLunchBox[i].setScale(0.4);
 
-            //Se escoge una posición vacía de forma aleatoria
+            //Se escoge una posición vacú} de forma aleatoria
             //Esto en base a la cantidad de espacios en los que se ha divido la pizarra
             //menos la cantidad de posiciones usadas, luego se escoge la posición ignorando las posiciones que fueron usadas
             var rand= parseInt(Math.random()*(numBoxBoard-numBoxBoardUsed-5));

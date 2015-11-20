@@ -112,7 +112,7 @@ var LevelSelectionC = (function(){
         });
 
         var btnFriends = scene.getChildByName("btnHelpFriends");
-        btnBack.addClickEventListener(function(){
+        btnFriends.addClickEventListener(function(){
             fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
                 if (type == plugin.FacebookAgent.CODE_SUCCEED) {
                     var data = response["data"];
