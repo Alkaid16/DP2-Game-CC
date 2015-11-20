@@ -1,4 +1,9 @@
 var res = {
+    
+    invitation_view_json: "res/views/invitation_view.json",
+    btnContinue_png : "res/views/btnContinue.png",
+    btnInvitation_png : "res/views/btnInvitation.png",
+
     ButtonNormal_png : "res/views/buttonNormal.png",
     ButtonPressed_png : "res/views/buttonPressed.png",
     MainScreen_json: "res/views/MainScreen.json",
