@@ -28,12 +28,12 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDescription" ActionTag="796398798" Tag="30" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="177.3237" BottomMargin="412.6763" IsCustomSize="True" FontSize="12" LabelText="Al igual que en Confimaze buscas ayudar a * a ganar confianza, AFI se encarga de apoyar niños y necesita tu ayuda." HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="lblDescription" ActionTag="796398798" Tag="30" IconVisible="False" HorizontalEdge="BothEdge" LeftMargin="40.0000" RightMargin="40.0000" TopMargin="177.3237" BottomMargin="412.6763" IsCustomSize="True" FontSize="14" LabelText="Al igual que en Confimaze buscas ayudar a * a ganar confianza, AFI se encarga de apoyar niños y necesita tu ayuda." HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="560.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="320.0000" Y="437.6763" />
             <Scale ScaleX="1.0000" ScaleY="1.4411" />
-            <CColor A="255" R="255" G="255" B="255" />
+            <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.5000" Y="0.6839" />
             <PreSize X="0.8750" Y="0.0781" />
             <FontResource Type="Normal" Path="THE MINION.ttf" Plist="" />

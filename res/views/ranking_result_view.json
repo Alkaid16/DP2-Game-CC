@@ -226,7 +226,7 @@
               "Y": 0.3672
             },
             "PreSize": {
-              "X": 0.7812,
+              "X": 0.7813,
               "Y": 0.3125
             },
             "HorizontalEdge": "BothEdge",
@@ -305,8 +305,7 @@
                 },
                 "EndColor": {},
                 "ColorVector": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 0.0
+                  "ScaleX": 1.0
                 },
                 "TouchEnable": true,
                 "AnchorPoint": {
@@ -386,7 +385,7 @@
               "Y": 0.7234
             },
             "PreSize": {
-              "X": 0.7812,
+              "X": 0.7813,
               "Y": 0.2188
             },
             "HorizontalEdge": "BothEdge",

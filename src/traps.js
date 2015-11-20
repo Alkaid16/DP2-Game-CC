@@ -612,7 +612,7 @@ var lunchBoxController = (function(){
                             },i*100);
                         })(i);
                     }
-                    gameplayMap.coins += 8000 - totalTime;
+                    gameplayMap.score += 8000 - totalTime;
                     //fin puntaje
 
                     
