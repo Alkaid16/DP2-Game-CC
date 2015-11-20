@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="Dust" tilewidth="32" tileheight="32" tilecount="48">
+  <image source="res_map/tile2.jpg" width="260" height="194"/>
+ </tileset>
+ <tileset firstgid="49" name="Walls" tilewidth="32" tileheight="32" tilecount="49">
+  <image source="res_map/tile1.jpg" width="225" height="225"/>
+ </tileset>
+ <layer name="Background" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYBzFo3gUj+JRPIpJxADrnAGR
+  </data>
+ </layer>
+ <layer name="Collidable Walls" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJytlFsKQCEIRN2S+99cvyHNSxIisBpP3jt1VfXn8QqUV+ub/ORAfIy7x4zW1L2Y3qyNOFifpx47++JBnIiP1XLq3ntdPZXf9CL9vi6PunfqA8WZ+GDqIT84XCjYf4D679bd9k/5P9VjexP/qvcoeV+ccFjScQByBCGA
+  </data>
+ </layer>
+</map>
