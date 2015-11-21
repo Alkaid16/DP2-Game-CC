@@ -110,8 +110,8 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="lblCoins" ActionTag="504288472" Tag="24" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="TopEdge" LeftMargin="124.5000" RightMargin="262.5000" TopMargin="98.0000" BottomMargin="1.0000" FontSize="36" LabelText="Puntos:" HorizontalAlignmentType="HT_Right" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="42.0000" Y="15.0000" />
+              <AbstractNodeData Name="lblCoins" ActionTag="504288472" Tag="24" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="TopEdge" LeftMargin="124.5000" RightMargin="262.5000" TopMargin="98.0000" BottomMargin="1.0000" FontSize="36" LabelText="Créditos:" HorizontalAlignmentType="HT_Right" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="50.0000" Y="15.0000" />
                 <AnchorPoint ScaleX="1.0000" ScaleY="1.0000" />
                 <Position X="237.5000" Y="42.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />

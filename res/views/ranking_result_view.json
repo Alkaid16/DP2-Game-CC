@@ -226,7 +226,7 @@
               "Y": 0.3672
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.3125
             },
             "HorizontalEdge": "BothEdge",
@@ -305,7 +305,8 @@
                 },
                 "EndColor": {},
                 "ColorVector": {
-                  "ScaleX": 1.0
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.0
                 },
                 "TouchEnable": true,
                 "AnchorPoint": {
@@ -385,7 +386,7 @@
               "Y": 0.7234
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.2188
             },
             "HorizontalEdge": "BothEdge",
@@ -520,7 +521,7 @@
               },
               {
                 "FontSize": 36,
-                "LabelText": "Puntos:",
+                "LabelText": "Créditos:",
                 "FontResource": {
                   "Type": "Normal",
                   "Path": "THE MINION.ttf",
@@ -573,7 +574,7 @@
                 "Tag": 24,
                 "ActionTag": 504288472,
                 "Size": {
-                  "X": 42.0,
+                  "X": 50.0,
                   "Y": 15.0
                 },
                 "Name": "lblCoins",

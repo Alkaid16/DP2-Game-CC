@@ -132,7 +132,10 @@ var LevelSelectionC = (function(){
                     cc.log("Graph API request failed, error #" + type + ": " + response);
                 }
             });
+            inviteFriends();
         });
+
+
     }
 
     pub.updateLevelStatus =  function(){
@@ -549,7 +552,7 @@ VictoryScreenC2 = (function(){
     var scene;
     var btnReturn;
     var pub = {};
-    var count=0;
+    var count=1;
 
     pub.loadAndRun = function(score, time, coins){
         count++;
@@ -559,7 +562,9 @@ VictoryScreenC2 = (function(){
             count=0;
             var obj = ccs.load(res.invitation_view_json);
             scene = obj.node;
-            var pnl = scene.getChildByName("pnlGeneral");        
+            var pnl = scene.getChildByName("pnlGeneral");
+            var lblDescription = scene.getChildByName("lblDescription");
+            lblDescription.setString(lblDescription.getString().replace("*", playerInfo.childName));
 
             btnReturn = scene.getChildByName("btnContinue");
             btnReturn.addClickEventListener(function(){
@@ -575,7 +580,6 @@ VictoryScreenC2 = (function(){
 
             cc.director.runScene(scene);
 
-            var lvlInfo = LevelGraphC.getCurrentLevel();
         }else{            
             VictoryScreenC.loadAndRun(score, time, coins);
         }
@@ -839,6 +843,21 @@ function updateRankingList(listRanking, lvlNum, fontSize, parent){
             });
         }else{
             MessageModalC.show("Error", networkErrorMsg, parent);
+        }
+    });
+}
+
+function inviteFriends(){
+    var info = {
+        "message": "Este es un mensaje de prueba",
+        "title": "Invitación"
+    };
+    var facebook = plugin.FacebookAgent.getInstance();
+    facebook.appRequest(info, function (code, response) {
+        if(code == plugin.FacebookAgent.CODE_SUCCEED){
+            cc.log(JSON.stringify(response));
+        } else {
+            cc.log("Sending request failed, error #" + code + ": " + response);
         }
     });
 }
