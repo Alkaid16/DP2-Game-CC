@@ -79,11 +79,11 @@ var TitleScreenC = (function(){
 var LevelSelectionC = (function(){
     var pub = {};
     var levelBtns = [];
-    var lblCoins;
+    var lblCoins = null;
     var scene=null;
 
     var updateCoinsLbl = function(){
-        if(!lblCoins || !playerInfo || !playerInfo.coins) return;
+        if(lblCoins==null || !playerInfo) return;
         lblCoins.setString("Creditos: " + playerInfo.coins);
     }
 
@@ -685,6 +685,7 @@ CharacterScreenC = (function(){
                 $.when(ajax2).done(function(){
                     LevelGraphC.setLevelGraph(ajax2.responseJSON.levels);
                     TitleScreenC.loadScene();
+                    LevelSelectionC.updateLevelStatus();
                     cc.eventManager.removeListener(listener);
                     cc.director.runScene(TitleScreenC.getScene());
                 })
@@ -853,12 +854,16 @@ function inviteFriends(){
     function(type,response){
         if (type == plugin.FacebookAgent.CODE_SUCCEED) {
             var fbIds = response["data"];
-            cc.log(JSON.stringify(fbIds));
+            var arr=[];
+            for (var i=0;i<fbIds.length; i++){
+                arr[i] = fbIds[i].id;
+            }
+            cc.log(JSON.stringify(arr));
 
             var info = {
                 "method": "apprequests",
                 "message": "Este es un mensaje de prueba",
-                "exclude_ids": fbIds
+                "exclude_ids": arr
             };
 
             FB.ui(info, function (response2) {
