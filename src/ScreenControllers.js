@@ -849,13 +849,15 @@ function updateRankingList(listRanking, lvlNum, fontSize, parent){
 
 function inviteFriends(){
     var info = {
+        "method": 'apprequests',
         "message": "Este es un mensaje de prueba",
-        "title": "Invitación"
+        "title": "Invitacion"
     };
-    var facebook = plugin.FacebookAgent.getInstance();
-    facebook.appRequest(info, function (code, response) {
+
+    fbAgent.dialog(info, function (code, response) {
         if(code == plugin.FacebookAgent.CODE_SUCCEED){
-            cc.log(JSON.stringify(response));
+            var recievers = response.to;
+            if(recievers.length>=3) alert("Ganaste una vida!");
         } else {
             cc.log("Sending request failed, error #" + code + ": " + response);
         }
