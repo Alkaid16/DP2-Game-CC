@@ -668,7 +668,19 @@ CharacterScreenC = (function(){
         var btnCont = scene.getChildByName("btnContinue");
         btnCont.addClickEventListener(function(){
             var name = txtName.getString();
-            if(name =="" || name==null || male == null) return;
+            if(name =="" || name==null || male == null){
+                if(name=="" || name == null)
+                    MessageModalC.show("Error", "Escriba un nombre para el niño.", scene);
+                else{
+                    MessageModalC.show("Error", "Elija el género del personaje.", scene);
+                }
+                return;
+            }
+
+            var regex = /^[a-zA-Z0-9]+$/;
+            if(!regex.test(name)){
+                MessageModalC.show("Error", "El nombre solo puede contener letras y números.", scene);
+            };
 
             var variation = male? 0 : 1;
             var ajax = WSHandler.registerPlayer(name, facebookID ,variation);
@@ -858,7 +870,6 @@ function inviteFriends(){
             for (var i=0;i<fbIds.length; i++){
                 arr[i] = fbIds[i].id;
             }
-            cc.log(JSON.stringify(arr));
 
             var info = {
                 "method": "apprequests",
@@ -868,7 +879,7 @@ function inviteFriends(){
 
             FB.ui(info, function (response2) {
                 var recievers = response2.to;
-                if(recievers.length>=3) alert("Ganaste una vida!");
+                if(recievers && recievers.length>=3) alert("Ganaste una vida!");
             });
         }
     });
