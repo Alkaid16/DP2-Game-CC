@@ -853,12 +853,9 @@ function inviteFriends(){
         "message": "Este es un mensaje de prueba"
     };
 
-    fbAgent.dialog(info, function (code, response) {
-        if(code == plugin.FacebookAgent.CODE_SUCCEED){
-            var recievers = response.to;
-            if(recievers.length>=3) alert("Ganaste una vida!");
-        } else {
-            cc.log("Sending request failed, error #" + code + ": " + JSON.stringify(response));
-        }
+    FB.ui(info, function (response) {
+        var recievers = response.to;
+        if(recievers.length>=3) alert("Ganaste una vida!");
+        cc.log(JSON.stringify(response));
     });
 }
