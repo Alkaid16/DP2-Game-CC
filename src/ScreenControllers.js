@@ -849,9 +849,8 @@ function updateRankingList(listRanking, lvlNum, fontSize, parent){
 
 function inviteFriends(){
     var info = {
-        "method": 'apprequests',
-        "message": "Este es un mensaje de prueba",
-        "title": "Invitacion"
+        "method": "apprequests",
+        "message": "Este es un mensaje de prueba"
     };
 
     fbAgent.dialog(info, function (code, response) {
@@ -859,7 +858,7 @@ function inviteFriends(){
             var recievers = response.to;
             if(recievers.length>=3) alert("Ganaste una vida!");
         } else {
-            cc.log("Sending request failed, error #" + code + ": " + response);
+            cc.log("Sending request failed, error #" + code + ": " + JSON.stringify(response));
         }
     });
 }
