@@ -884,3 +884,26 @@ function inviteFriends(){
         }
     });
 }
+
+function requestHelp(){
+    fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET,
+        function(type,response){
+            if (type == plugin.FacebookAgent.CODE_SUCCEED) {
+                var fbIds = response["data"];
+                var arr=[];
+                for (var i=0;i<fbIds.length; i++){
+                    arr[i] = fbIds[i].id;
+                }
+
+                var info = {
+                    "method": "apprequests",
+                    "message": "¡# necesita se ha quedado atrapado en un laberinto y necesita tu ayuda!",
+                    "to": arr
+                };
+
+                fbAgent.appRequest(info, function (response2) {
+                    return;
+                });
+            }
+        });
+}
