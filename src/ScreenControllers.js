@@ -848,14 +848,23 @@ function updateRankingList(listRanking, lvlNum, fontSize, parent){
 }
 
 function inviteFriends(){
-    var info = {
-        "method": "apprequests",
-        "message": "Este es un mensaje de prueba"
-    };
 
-    FB.ui(info, function (response) {
-        var recievers = response.to;
-        if(recievers.length>=3) alert("Ganaste una vida!");
-        cc.log(JSON.stringify(response));
+    fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET,
+    function(type,response){
+        if (type == plugin.FacebookAgent.CODE_SUCCEED) {
+            var fbIds = response["data"];
+            cc.log(JSON.stringify(fbIds));
+
+            var info = {
+                "method": "apprequests",
+                "message": "Este es un mensaje de prueba",
+                "exclude_ids": fbIds
+            };
+
+            FB.ui(info, function (response2) {
+                var recievers = response2.to;
+                if(recievers.length>=3) alert("Ganaste una vida!");
+            });
+        }
     });
 }
