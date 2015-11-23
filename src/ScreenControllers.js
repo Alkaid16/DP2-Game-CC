@@ -122,17 +122,7 @@ var LevelSelectionC = (function(){
 
         var btnFriends = scene.getChildByName("btnHelpFriends");
         btnFriends.addClickEventListener(function(){
-            fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
-                if (type == plugin.FacebookAgent.CODE_SUCCEED) {
-                    var data = response["data"];
-                    for(var i=0;i<data.length; i++){
-                        cc.log(data[i].name + " " + "ID:" + data[i].id);
-                    }
-                } else {
-                    cc.log("Graph API request failed, error #" + type + ": " + response);
-                }
-            });
-            inviteFriends();
+            helpFriends();
         });
 
 
@@ -994,6 +984,25 @@ function requestHelp(){
                             cc.director.runScene(LevelSelectionC.getScene());
                         });
                     }
+                });
+            }
+        });
+}
+
+function helpFriends(){
+    fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET,
+        function(type,response){
+            if (type == plugin.FacebookAgent.CODE_SUCCEED) {
+                var fbIds = response["data"];
+                var arr=[];
+                for (var i=0;i<fbIds.length; i++){
+                    arr[i] = fbIds[i].id;
+                }
+
+                var ajax = WSHandler.getFriendsInNeed(arr);
+                $.when(ajax).done(function(){
+                    var ids = ajax.responseJSON.friends;
+                    cc.log(JSON.stringify(ids));
                 });
             }
         });
