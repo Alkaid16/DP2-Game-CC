@@ -81,6 +81,8 @@
         <Image Name="hole.png" />
         <Image Name="clock.png" />
         <Image Name="board.png" />
+        <Image Name="enter.png" />
+        <Image Name="coins.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

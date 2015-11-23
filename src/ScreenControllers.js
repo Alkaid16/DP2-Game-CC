@@ -670,12 +670,13 @@ var HowToPlaySceneC = (function(){
     var btnReturn;
     var pub = {};
     var btnBack;
+    var scrollView;
 
     pub.loadScene = function(){
         var obj = ccs.load(res.howtoplay_json);
         scene = obj.node;
-
-        btnBack = scene.getChildByName("btnBack");
+        scrollView = scene.getChildByName("scrollView")
+        btnBack = scrollView.getChildByName("btnBack");
         btnBack.addClickEventListener(function(event){
             cc.director.runScene(TitleScreenC.getScene());
         });
