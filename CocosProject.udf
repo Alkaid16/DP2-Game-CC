@@ -18,7 +18,7 @@
         <iOS_Target Value="CocosProject-mobile" />
         <iOS_BundleID Value="" />
         <Platform Value="None" />
-        <RunPlatform Value="None" />
+        <RunPlatform Value="Windows" />
         <FrameworkVersion Value="cocos2d-x-3.8.1" />
         <IsDebugKeystore Value="True" />
         <KeystorePassword Value="" />
@@ -26,17 +26,6 @@
         <KeystoreAliasPassword Value="" />
         <EnableSourceMap Value="False" />
         <EnableHTML5Advanced Value="False" />
-      </Value>
-    </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="invitation_view.csd" />
-          <FilePathData Path="level_modal.csd" />
-          <FilePathData Path="friend_request_view.csd" />
-          <FilePathData Path="defeat_view.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="friend_request_view.csd" />
       </Value>
     </Item>
   </Properties>

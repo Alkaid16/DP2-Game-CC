@@ -15,17 +15,29 @@
         "Tag": 20,
         "Children": [
           {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "fondo1.png",
-              "Plist": ""
+            "InnerNodeSize": {
+              "Width": 640,
+              "Height": 960
             },
-            "Scale9Width": 2667,
-            "Scale9Height": 2667,
+            "ScrollDirectionType": "Vertical",
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "G": 150,
+              "B": 100
+            },
+            "FirstColor": {
+              "G": 150,
+              "B": 100
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 1.539,
-              "Y": 0.1872
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -34,1409 +46,1902 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0024,
-              "Y": 0.0003
+              "X": 0.0,
+              "Y": 0.0
             },
             "PreSize": {
               "X": 1.0,
               "Y": 1.0
             },
-            "LeftMargin": 1.539,
-            "RightMargin": -1.5391,
-            "TopMargin": -0.1872,
-            "BottomMargin": 0.1872,
-            "Tag": 38,
-            "ActionTag": 2111588224,
+            "CallBackType": "Click",
+            "Tag": 30,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "fondo1.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 2667,
+                "Scale9Height": 2667,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.5
+                },
+                "Tag": 38,
+                "ActionTag": 2111588224,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 960.0
+                },
+                "Name": "Image_4",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "board.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 31,
+                "Scale9Height": 32,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 338.1937,
+                  "Y": 95.6639
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5284,
+                  "Y": 0.0996
+                },
+                "PreSize": {
+                  "X": 0.0484,
+                  "Y": 0.05
+                },
+                "LeftMargin": 322.6937,
+                "RightMargin": 286.3063,
+                "TopMargin": 848.3361,
+                "BottomMargin": 79.6639,
+                "Tag": 34,
+                "ActionTag": 1704760864,
+                "Size": {
+                  "X": 31.0,
+                  "Y": 32.0
+                },
+                "Name": "imgBoard",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "clock.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 32,
+                "Scale9Height": 31,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 82.771,
+                  "Y": 93.821
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1293,
+                  "Y": 0.0977
+                },
+                "PreSize": {
+                  "X": 0.05,
+                  "Y": 0.0484
+                },
+                "LeftMargin": 66.771,
+                "RightMargin": 541.2289,
+                "TopMargin": 850.6791,
+                "BottomMargin": 78.321,
+                "Tag": 33,
+                "ActionTag": 1837250400,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 31.0
+                },
+                "Name": "imgClock",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "hole.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 81,
+                "Scale9Height": 79,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 334.3124,
+                  "Y": 260.6674
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5224,
+                  "Y": 0.2715
+                },
+                "PreSize": {
+                  "X": 0.0469,
+                  "Y": 0.0469
+                },
+                "LeftMargin": 319.3124,
+                "RightMargin": 290.6876,
+                "TopMargin": 684.3326,
+                "BottomMargin": 245.6674,
+                "Tag": 32,
+                "ActionTag": -1498677401,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 30.0
+                },
+                "Name": "imgHole",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "boots.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 31,
+                "Scale9Height": 25,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 84.7772,
+                  "Y": 196.2741
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1325,
+                  "Y": 0.2045
+                },
+                "PreSize": {
+                  "X": 0.0484,
+                  "Y": 0.0391
+                },
+                "LeftMargin": 69.2772,
+                "RightMargin": 539.7228,
+                "TopMargin": 751.2259,
+                "BottomMargin": 183.7741,
+                "Tag": 31,
+                "ActionTag": -781510117,
+                "Size": {
+                  "X": 31.0,
+                  "Y": 25.0
+                },
+                "Name": "imgBoots",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "torch.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 9,
+                "Scale9Height": 31,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 86.9148,
+                  "Y": 258.3603
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1358,
+                  "Y": 0.2691
+                },
+                "PreSize": {
+                  "X": 0.0141,
+                  "Y": 0.0484
+                },
+                "LeftMargin": 82.4148,
+                "RightMargin": 548.5852,
+                "TopMargin": 686.1396,
+                "BottomMargin": 242.8603,
+                "Tag": 30,
+                "ActionTag": 583267131,
+                "Size": {
+                  "X": 9.0,
+                  "Y": 31.0
+                },
+                "Name": "imgTorch",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "shield.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 29,
+                "Scale9Height": 28,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 83.9971,
+                  "Y": 147.4066
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1312,
+                  "Y": 0.1535
+                },
+                "PreSize": {
+                  "X": 0.0453,
+                  "Y": 0.0437
+                },
+                "LeftMargin": 69.4971,
+                "RightMargin": 541.5029,
+                "TopMargin": 798.5934,
+                "BottomMargin": 133.4066,
+                "Tag": 29,
+                "ActionTag": 319632272,
+                "Size": {
+                  "X": 29.0,
+                  "Y": 28.0
+                },
+                "Name": "imgShield",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "rope.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 32,
+                "Scale9Height": 32,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 335.3027,
+                  "Y": 153.8451
+                },
+                "Scale": {
+                  "ScaleX": 1.345,
+                  "ScaleY": 1.207
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5239,
+                  "Y": 0.1603
+                },
+                "PreSize": {
+                  "X": 0.05,
+                  "Y": 0.05
+                },
+                "LeftMargin": 319.3027,
+                "RightMargin": 288.6973,
+                "TopMargin": 790.1549,
+                "BottomMargin": 137.8451,
+                "Tag": 30,
+                "ActionTag": 2016626566,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 32.0
+                },
+                "Name": "imgRope",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "lunchbox.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 32,
+                "Scale9Height": 32,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 333.4946,
+                  "Y": 207.032
+                },
+                "Scale": {
+                  "ScaleX": 1.47,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5211,
+                  "Y": 0.2157
+                },
+                "PreSize": {
+                  "X": 0.05,
+                  "Y": 0.05
+                },
+                "LeftMargin": 317.4946,
+                "RightMargin": 290.5054,
+                "TopMargin": 736.968,
+                "BottomMargin": 191.032,
+                "Tag": 29,
+                "ActionTag": -1211079692,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 32.0
+                },
+                "Name": "imgLunchBox",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "Button",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "btnRegresar.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "btnRegresar.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "btnRegresar.png",
+                  "Plist": ""
+                },
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 752,
+                "Scale9Height": 217,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 566.6238,
+                  "Y": 55.5997
+                },
+                "Scale": {
+                  "ScaleX": 0.1225,
+                  "ScaleY": 0.1308
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8853,
+                  "Y": 0.0579
+                },
+                "PreSize": {
+                  "X": 1.2219,
+                  "Y": 0.3734
+                },
+                "LeftMargin": 175.6238,
+                "RightMargin": -317.6238,
+                "TopMargin": 784.9003,
+                "BottomMargin": -63.9003,
+                "Tag": 66,
+                "ActionTag": 1453603842,
+                "Size": {
+                  "X": 782.0,
+                  "Y": 239.0
+                },
+                "Name": "btnBack",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 10,
+                "LabelText": "Reloj: Ralentiza la velocidad\ndel mounstro",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 200.6315,
+                  "Y": 91.6954
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3135,
+                  "Y": 0.0955
+                },
+                "PreSize": {
+                  "X": 0.2406,
+                  "Y": 0.0469
+                },
+                "LeftMargin": 123.6315,
+                "RightMargin": 362.3685,
+                "TopMargin": 853.3046,
+                "BottomMargin": 76.6954,
+                "Tag": 47,
+                "ActionTag": 993802838,
+                "Size": {
+                  "X": 154.0,
+                  "Y": 30.0
+                },
+                "Name": "txtClockDesc",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 10,
+                "LabelText": "Escudo: Protege de las trampas",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 212.1304,
+                  "Y": 145.4076
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3315,
+                  "Y": 0.1515
+                },
+                "PreSize": {
+                  "X": 0.2766,
+                  "Y": 0.0234
+                },
+                "LeftMargin": 123.6304,
+                "RightMargin": 339.3696,
+                "TopMargin": 807.0924,
+                "BottomMargin": 137.9076,
+                "Tag": 46,
+                "ActionTag": 410625260,
+                "Size": {
+                  "X": 177.0,
+                  "Y": 15.0
+                },
+                "Name": "txtShieldDesc",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 10,
+                "LabelText": "Botas: Aumenta la velocidad",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 200.6315,
+                  "Y": 198.0845
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3135,
+                  "Y": 0.2063
+                },
+                "PreSize": {
+                  "X": 0.2109,
+                  "Y": 0.0203
+                },
+                "LeftMargin": 123.6315,
+                "RightMargin": 362.3685,
+                "TopMargin": 754.4155,
+                "BottomMargin": 190.5845,
+                "Tag": 45,
+                "ActionTag": -896165827,
+                "Size": {
+                  "X": 154.0,
+                  "Y": 15.0
+                },
+                "Name": "txtBootsDesc",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 10,
+                "LabelText": "Antorcha: Amplia el rango\nde visión",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 193.1308,
+                  "Y": 259.1581
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3018,
+                  "Y": 0.27
+                },
+                "PreSize": {
+                  "X": 0.2172,
+                  "Y": 0.0469
+                },
+                "LeftMargin": 123.6308,
+                "RightMargin": 377.3692,
+                "TopMargin": 685.8419,
+                "BottomMargin": 244.1581,
+                "Tag": 44,
+                "ActionTag": -1975480143,
+                "Size": {
+                  "X": 139.0,
+                  "Y": 30.0
+                },
+                "Name": "txtTorchDesc",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 10,
+                "LabelText": "Pizarra: Escribe la palabra que\naparecerá en el mapa",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 454.9902,
+                  "Y": 94.4102
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7109,
+                  "Y": 0.0983
+                },
+                "PreSize": {
+                  "X": 0.2625,
+                  "Y": 0.0469
+                },
+                "HorizontalEdge": "LeftEdge",
+                "LeftMargin": 370.9902,
+                "RightMargin": 101.0098,
+                "TopMargin": 850.5898,
+                "BottomMargin": 79.4102,
+                "Tag": 39,
+                "ActionTag": -1223435719,
+                "Size": {
+                  "X": 168.0,
+                  "Y": 30.0
+                },
+                "Name": "txtBoardDesc",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 10,
+                "LabelText": "Soga: Con las teclas direccionales,\nsigue la secuencia de flechas",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 467.9896,
+                  "Y": 152.7164
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7312,
+                  "Y": 0.1591
+                },
+                "PreSize": {
+                  "X": 0.2937,
+                  "Y": 0.0469
+                },
+                "LeftMargin": 370.9896,
+                "RightMargin": 75.0104,
+                "TopMargin": 792.2836,
+                "BottomMargin": 137.7164,
+                "Tag": 38,
+                "ActionTag": 305943118,
+                "Size": {
+                  "X": 194.0,
+                  "Y": 30.0
+                },
+                "Name": "txtRopeDesc",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 10,
+                "LabelText": "Lonchera: Con el mouse, elige\nla comida saludable.",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 455.4904,
+                  "Y": 209.5283
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7117,
+                  "Y": 0.2183
+                },
+                "PreSize": {
+                  "X": 0.2641,
+                  "Y": 0.0469
+                },
+                "LeftMargin": 370.9904,
+                "RightMargin": 100.0096,
+                "TopMargin": 735.4717,
+                "BottomMargin": 194.5283,
+                "Tag": 37,
+                "ActionTag": -2136729507,
+                "Size": {
+                  "X": 169.0,
+                  "Y": 30.0
+                },
+                "Name": "txtLunchBoxDesc",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 10,
+                "LabelText": "Huecos: Utiliza la barra\nespaciadora para saltar",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 436.4901,
+                  "Y": 260.8811
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.682,
+                  "Y": 0.2718
+                },
+                "PreSize": {
+                  "X": 0.2047,
+                  "Y": 0.0469
+                },
+                "LeftMargin": 370.9901,
+                "RightMargin": 138.0099,
+                "TopMargin": 684.1189,
+                "BottomMargin": 245.8811,
+                "Tag": 36,
+                "ActionTag": -1987692874,
+                "Size": {
+                  "X": 131.0,
+                  "Y": 30.0
+                },
+                "Name": "txtHoleDesc",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "TRAMPAS",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 342.9979,
+                  "Y": 296.4601
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5359,
+                  "Y": 0.3088
+                },
+                "PreSize": {
+                  "X": 0.1016,
+                  "Y": 0.0359
+                },
+                "HorizontalEdge": "LeftEdge",
+                "LeftMargin": 315.9979,
+                "RightMargin": 270.0021,
+                "TopMargin": 656.0399,
+                "BottomMargin": 288.9601,
+                "Tag": 31,
+                "ActionTag": -2088914733,
+                "Size": {
+                  "X": 54.0,
+                  "Y": 15.0
+                },
+                "Name": "txtTitleTraps",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "POWERUPS",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 74.7288,
+                  "Y": 296.4601
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1168,
+                  "Y": 0.3088
+                },
+                "PreSize": {
+                  "X": 0.1781,
+                  "Y": 0.0359
+                },
+                "HorizontalEdge": "LeftEdge",
+                "LeftMargin": 74.7288,
+                "RightMargin": 495.2712,
+                "TopMargin": 656.0399,
+                "BottomMargin": 288.9601,
+                "Tag": 30,
+                "ActionTag": -899738406,
+                "Size": {
+                  "X": 70.0,
+                  "Y": 15.0
+                },
+                "Name": "txtTitlePowerups",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "Utiliza las teclas direccionales\npara guiar al niño",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 516.1376,
+                  "Y": 705.2096
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8065,
+                  "Y": 0.7346
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.125
+                },
+                "LeftMargin": 426.1376,
+                "RightMargin": 33.8624,
+                "TopMargin": 214.7904,
+                "BottomMargin": 665.2096,
+                "Tag": 29,
+                "ActionTag": 1406267728,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 80.0
+                },
+                "Name": "txtDescriptionKeyboards",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "keyboards.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 260,
+                "Scale9Height": 180,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 356.061,
+                  "Y": 711.8795
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.7473
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5563,
+                  "Y": 0.7415
+                },
+                "PreSize": {
+                  "X": 0.1563,
+                  "Y": 0.1563
+                },
+                "LeftMargin": 306.061,
+                "RightMargin": 233.939,
+                "TopMargin": 198.1205,
+                "BottomMargin": 661.8795,
+                "Tag": 28,
+                "ActionTag": 860014532,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 100.0
+                },
+                "Name": "imgKeyboards",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "example_movement.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 229,
+                "Scale9Height": 168,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 220.6307,
+                  "Y": 685.2711
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3447,
+                  "Y": 0.7138
+                },
+                "PreSize": {
+                  "X": 0.1563,
+                  "Y": 0.1563
+                },
+                "LeftMargin": 170.6307,
+                "RightMargin": 369.3693,
+                "TopMargin": 224.7289,
+                "BottomMargin": 635.2711,
+                "Tag": 27,
+                "ActionTag": -1646794561,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 100.0
+                },
+                "Name": "imgGameplay",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 12,
+                "LabelText": "Guía al niño a través de los pasillos de los diversos laberintos. El niño camina por si sólo, ayúdalo a decidir en los caminos de diferentes decisiones.",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.4887,
+                  "Y": 756.0354
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.093,
+                  "Y": 0.7875
+                },
+                "PercentWidthEnable": true,
+                "PercentWidthEnabled": true,
+                "PreSize": {
+                  "X": 0.84,
+                  "Y": 0.1094
+                },
+                "HorizontalEdge": "LeftEdge",
+                "LeftMargin": 59.4887,
+                "RightMargin": 42.9113,
+                "TopMargin": 168.9646,
+                "BottomMargin": 721.0354,
+                "Tag": 26,
+                "ActionTag": -117639538,
+                "Size": {
+                  "X": 537.6,
+                  "Y": 70.0
+                },
+                "Name": "txtGameplay",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "MECÁNICA DEL JUEGO",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.52,
+                  "Y": 804.2745
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.093,
+                  "Y": 0.8378
+                },
+                "PreSize": {
+                  "X": 0.3422,
+                  "Y": 0.0359
+                },
+                "HorizontalEdge": "BothEdge",
+                "LeftMargin": 59.4887,
+                "RightMargin": 449.5113,
+                "TopMargin": 148.2255,
+                "BottomMargin": 796.7745,
+                "Tag": 25,
+                "ActionTag": -1046968340,
+                "Size": {
+                  "X": 131.0,
+                  "Y": 15.0
+                },
+                "Name": "txtTitleGameplay",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "OBJETIVO",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.52,
+                  "Y": 908.9342
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.093,
+                  "Y": 0.9468
+                },
+                "PreSize": {
+                  "X": 0.1547,
+                  "Y": 0.0359
+                },
+                "HorizontalEdge": "BothEdge",
+                "LeftMargin": 59.4887,
+                "RightMargin": 523.5113,
+                "TopMargin": 43.5658,
+                "BottomMargin": 901.4342,
+                "Tag": 24,
+                "ActionTag": 925378311,
+                "Size": {
+                  "X": 57.0,
+                  "Y": 15.0
+                },
+                "Name": "txtTitleDescription",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 12,
+                "LabelText": "¡Un niño se encuentra en peligro! Está siendo perseguido por un monstruo originado por sus problemas del día a día. Es tu misión, como voluntario de AFI Perú, ayudarlo a escapar y ganar confianza en sí mismo para enfrentarlo.\n",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.52,
+                  "Y": 861.2366
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.98
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.093,
+                  "Y": 0.8971
+                },
+                "PercentWidthEnable": true,
+                "PercentWidthEnabled": true,
+                "PreSize": {
+                  "X": 0.84,
+                  "Y": 0.1094
+                },
+                "HorizontalEdge": "BothEdge",
+                "LeftMargin": 59.4887,
+                "RightMargin": 42.9113,
+                "TopMargin": 63.7634,
+                "BottomMargin": 826.2366,
+                "Tag": 23,
+                "ActionTag": -1698446830,
+                "Size": {
+                  "X": 537.6,
+                  "Y": 70.0
+                },
+                "Name": "txtDescription",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "enter.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 325,
+                "Scale9Height": 155,
+                "AnchorPoint": {
+                  "ScaleX": 0.3499,
+                  "ScaleY": 6.6051
+                },
+                "Position": {
+                  "X": 343.1718,
+                  "Y": 874.0173
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5362,
+                  "Y": 0.9104
+                },
+                "PreSize": {
+                  "X": 0.125,
+                  "Y": 0.0625
+                },
+                "LeftMargin": 315.1824,
+                "RightMargin": 244.8176,
+                "TopMargin": 310.1852,
+                "BottomMargin": 609.8148,
+                "Tag": 32,
+                "ActionTag": -1594984940,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 40.0
+                },
+                "Name": "Image_1",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "coins.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 1438,
+                "Scale9Height": 1438,
+                "AnchorPoint": {
+                  "ScaleX": 0.5407,
+                  "ScaleY": 0.4081
+                },
+                "Position": {
+                  "X": 520.2302,
+                  "Y": 373.1788
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8129,
+                  "Y": 0.3887
+                },
+                "PreSize": {
+                  "X": 0.1563,
+                  "Y": 0.1042
+                },
+                "LeftMargin": 466.164,
+                "RightMargin": 73.836,
+                "TopMargin": 527.6354,
+                "BottomMargin": 332.3646,
+                "Tag": 39,
+                "ActionTag": -1708086260,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 100.0
+                },
+                "Name": "Image_7",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "Presiona Enter para entrar al menú de pausa",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 512.134,
+                  "Y": 629.3262
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8002,
+                  "Y": 0.6555
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.125
+                },
+                "LeftMargin": 422.134,
+                "RightMargin": 37.866,
+                "TopMargin": 290.6738,
+                "BottomMargin": 589.3262,
+                "Tag": 33,
+                "ActionTag": 1473304273,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 80.0
+                },
+                "Name": "txtDescriptionKeyboards_Enter",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "willpoint.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 32,
+                "Scale9Height": 32,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 498.6682,
+                  "Y": 563.5583
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7792,
+                  "Y": 0.587
+                },
+                "PreSize": {
+                  "X": 0.05,
+                  "Y": 0.05
+                },
+                "LeftMargin": 482.6682,
+                "RightMargin": 125.3318,
+                "TopMargin": 380.4417,
+                "BottomMargin": 547.5583,
+                "Tag": 35,
+                "ActionTag": 866494377,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 32.0
+                },
+                "Name": "Image_2",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "willpoint.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 32,
+                "Scale9Height": 32,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 532.6808,
+                  "Y": 563.5577
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8323,
+                  "Y": 0.587
+                },
+                "PreSize": {
+                  "X": 0.05,
+                  "Y": 0.05
+                },
+                "LeftMargin": 516.6808,
+                "RightMargin": 91.3192,
+                "TopMargin": 380.4423,
+                "BottomMargin": 547.5577,
+                "Tag": 36,
+                "ActionTag": 52410218,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 32.0
+                },
+                "Name": "Image_3",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 12,
+                "LabelText": "En cada partida, contarás con dos puntos de voluntad",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 50.2229,
+                  "Y": 554.9578
+                },
+                "Scale": {
+                  "ScaleX": 0.9856,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0785,
+                  "Y": 0.5781
+                },
+                "PercentWidthEnable": true,
+                "PercentWidthEnabled": true,
+                "PreSize": {
+                  "X": 0.6,
+                  "Y": 0.0302
+                },
+                "HorizontalEdge": "LeftEdge",
+                "LeftMargin": 50.2229,
+                "RightMargin": 205.7771,
+                "TopMargin": 390.5422,
+                "BottomMargin": 540.4578,
+                "Tag": 34,
+                "ActionTag": -1545345521,
+                "Size": {
+                  "X": 384.0,
+                  "Y": 29.0
+                },
+                "Name": "txtGameplay_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 12,
+                "LabelText": "Podrás perder cada uno en caso no ayudes al niño a salir de diversas trampas ubicadas alrededor del laberinto. En caso el niño pierda todos sus puntos de voluntad, pide ayuda a tus amigos, ellos te darán la chance a ti y al niño en continuar en la aventura donde se quedaron.",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 189.3813,
+                  "Y": 474.6995
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2959,
+                  "Y": 0.4945
+                },
+                "PercentWidthEnable": true,
+                "PercentWidthEnabled": true,
+                "PreSize": {
+                  "X": 0.6,
+                  "Y": 0.0938
+                },
+                "HorizontalEdge": "LeftEdge",
+                "LeftMargin": 189.3813,
+                "RightMargin": 66.6187,
+                "TopMargin": 440.3005,
+                "BottomMargin": 429.6995,
+                "Tag": 38,
+                "ActionTag": -95630595,
+                "Size": {
+                  "X": 384.0,
+                  "Y": 90.0
+                },
+                "Name": "txtGameplay_0_0_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 12,
+                "LabelText": "No todos los niveles son fáciles de acceder, algunos requieren de créditos. Acumula una buena cantidad de ellos y podrás desbloquear los demás niveles y a ayudar al niño a seguir avanzando.",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "THE MINION.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 47.848,
+                  "Y": 370.675
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0748,
+                  "Y": 0.3861
+                },
+                "PercentWidthEnable": true,
+                "PercentWidthEnabled": true,
+                "PreSize": {
+                  "X": 0.6,
+                  "Y": 0.0833
+                },
+                "HorizontalEdge": "LeftEdge",
+                "LeftMargin": 47.848,
+                "RightMargin": 208.152,
+                "TopMargin": 549.325,
+                "BottomMargin": 330.675,
+                "Tag": 40,
+                "ActionTag": -730503611,
+                "Size": {
+                  "X": 384.0,
+                  "Y": 80.0
+                },
+                "Name": "txtGameplay_0_0_0_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "btnAyuda.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 179,
+                "Scale9Height": 52,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 109.75,
+                  "Y": 482.8061
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1715,
+                  "Y": 0.5029
+                },
+                "PreSize": {
+                  "X": 0.125,
+                  "Y": 0.0625
+                },
+                "LeftMargin": 69.75,
+                "RightMargin": 490.25,
+                "TopMargin": 457.1939,
+                "BottomMargin": 462.8061,
+                "Tag": 39,
+                "ActionTag": -827665672,
+                "Size": {
+                  "X": 80.0,
+                  "Y": 40.0
+                },
+                "Name": "Image_5",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1773768000,
             "Size": {
               "X": 640.0,
               "Y": 640.0
             },
-            "Name": "Image_4",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "IsCustomSize": true,
-            "FontSize": 12,
-            "LabelText": "¡Un niño se encuentra en peligro! Está siendo perseguido por un monstruo originado por sus problemas del día a día. Es tu misión, como voluntario de AFI Perú, ayudarlo a escapar y ganar confianza en sí mismo para enfrentarlo.\n",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 51.2,
-              "Y": 549.1119
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 0.98
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.08,
-              "Y": 0.858
-            },
-            "PercentWidthEnable": true,
-            "PercentWidthEnabled": true,
-            "PreSize": {
-              "X": 0.84,
-              "Y": 0.1094
-            },
-            "HorizontalEdge": "BothEdge",
-            "LeftMargin": 51.2,
-            "RightMargin": 51.2,
-            "TopMargin": 55.8881,
-            "BottomMargin": 514.1119,
-            "Tag": 23,
-            "ActionTag": -1698446830,
-            "Size": {
-              "X": 537.6,
-              "Y": 70.0
-            },
-            "Name": "Text_2",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 20,
-            "LabelText": "OBJETIVO",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 51.2,
-              "Y": 596.8109
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.08,
-              "Y": 0.9325
-            },
-            "PreSize": {
-              "X": 0.1547,
-              "Y": 0.0359
-            },
-            "HorizontalEdge": "BothEdge",
-            "LeftMargin": 51.2,
-            "RightMargin": 531.8,
-            "TopMargin": 35.6891,
-            "BottomMargin": 589.3109,
-            "Tag": 24,
-            "ActionTag": 925378311,
-            "Size": {
-              "X": 57.0,
-              "Y": 15.0
-            },
-            "Name": "Text_3",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 20,
-            "LabelText": "MECÁNICA DEL JUEGO",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 51.2,
-              "Y": 492.1518
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.08,
-              "Y": 0.769
-            },
-            "PreSize": {
-              "X": 0.3422,
-              "Y": 0.0359
-            },
-            "HorizontalEdge": "BothEdge",
-            "LeftMargin": 51.2,
-            "RightMargin": 457.8,
-            "TopMargin": 140.3482,
-            "BottomMargin": 484.6518,
-            "Tag": 25,
-            "ActionTag": -1046968340,
-            "Size": {
-              "X": 131.0,
-              "Y": 15.0
-            },
-            "Name": "Text_3_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "IsCustomSize": true,
-            "FontSize": 12,
-            "LabelText": "Guía al niño a través de los pasillos de los diversos laberintos. El niño camina por si sólo, ayúdalo a decidir en los caminos de diferentes decisiones.",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 51.2,
-              "Y": 443.9121
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.08,
-              "Y": 0.6936
-            },
-            "PercentWidthEnable": true,
-            "PercentWidthEnabled": true,
-            "PreSize": {
-              "X": 0.84,
-              "Y": 0.1094
-            },
-            "HorizontalEdge": "LeftEdge",
-            "LeftMargin": 51.2,
-            "RightMargin": 51.2,
-            "TopMargin": 161.0879,
-            "BottomMargin": 408.9121,
-            "Tag": 26,
-            "ActionTag": -117639538,
-            "Size": {
-              "X": 537.6,
-              "Y": 70.0
-            },
-            "Name": "Text_2_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "example_movement.png",
-              "Plist": ""
-            },
-            "Scale9Width": 229,
-            "Scale9Height": 168,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 212.3423,
-              "Y": 350.9426
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.3318,
-              "Y": 0.5483
-            },
-            "PreSize": {
-              "X": 0.1563,
-              "Y": 0.1563
-            },
-            "LeftMargin": 162.3423,
-            "RightMargin": 377.6577,
-            "TopMargin": 239.0574,
-            "BottomMargin": 300.9426,
-            "Tag": 27,
-            "ActionTag": -1646794561,
-            "Size": {
-              "X": 100.0,
-              "Y": 100.0
-            },
-            "Name": "Image_2",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "keyboards.png",
-              "Plist": ""
-            },
-            "Scale9Width": 260,
-            "Scale9Height": 180,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 349.9956,
-              "Y": 352.0149
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 0.7473
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.5469,
-              "Y": 0.55
-            },
-            "PreSize": {
-              "X": 0.1563,
-              "Y": 0.1563
-            },
-            "LeftMargin": 299.9956,
-            "RightMargin": 240.0044,
-            "TopMargin": 237.9851,
-            "BottomMargin": 302.0149,
-            "Tag": 28,
-            "ActionTag": 860014532,
-            "Size": {
-              "X": 100.0,
-              "Y": 100.0
-            },
-            "Name": "Image_3",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "IsCustomSize": true,
-            "FontSize": 14,
-            "LabelText": "Utiliza las teclas direccionales\npara guiar al niño",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "VerticalAlignmentType": "VT_Center",
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 505.6314,
-              "Y": 350.8974
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.79,
-              "Y": 0.5483
-            },
-            "PreSize": {
-              "X": 0.2813,
-              "Y": 0.125
-            },
-            "LeftMargin": 415.6314,
-            "RightMargin": 44.3687,
-            "TopMargin": 249.1026,
-            "BottomMargin": 310.8974,
-            "Tag": 29,
-            "ActionTag": 1406267728,
-            "Size": {
-              "X": 180.0,
-              "Y": 80.0
-            },
-            "Name": "Text_2_0_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 20,
-            "LabelText": "POWERUPS",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 51.2,
-              "Y": 263.8851
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.08,
-              "Y": 0.4123
-            },
-            "PreSize": {
-              "X": 0.1781,
-              "Y": 0.0359
-            },
-            "HorizontalEdge": "LeftEdge",
-            "LeftMargin": 51.2,
-            "RightMargin": 518.8,
-            "TopMargin": 368.6149,
-            "BottomMargin": 256.3851,
-            "Tag": 30,
-            "ActionTag": -899738406,
-            "Size": {
-              "X": 70.0,
-              "Y": 15.0
-            },
-            "Name": "Text_3_0_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 20,
-            "LabelText": "TRAMPAS",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 319.4686,
-              "Y": 263.8851
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4992,
-              "Y": 0.4123
-            },
-            "PreSize": {
-              "X": 0.1016,
-              "Y": 0.0359
-            },
-            "HorizontalEdge": "LeftEdge",
-            "LeftMargin": 292.4686,
-            "RightMargin": 293.5314,
-            "TopMargin": 368.6149,
-            "BottomMargin": 256.3851,
-            "Tag": 31,
-            "ActionTag": -2088914733,
-            "Size": {
-              "X": 54.0,
-              "Y": 15.0
-            },
-            "Name": "Text_3_0_0_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 10,
-            "LabelText": "Huecos: Utiliza la barra\nespaciadora para saltar",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 412.9613,
-              "Y": 228.3077
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.6453,
-              "Y": 0.3567
-            },
-            "PreSize": {
-              "X": 0.2047,
-              "Y": 0.0469
-            },
-            "LeftMargin": 347.4613,
-            "RightMargin": 161.5387,
-            "TopMargin": 396.6923,
-            "BottomMargin": 213.3077,
-            "Tag": 36,
-            "ActionTag": -1987692874,
-            "Size": {
-              "X": 131.0,
-              "Y": 30.0
-            },
-            "Name": "Text_2_0_0_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 10,
-            "LabelText": "Lonchera: Con el mouse, elige\nla comida saludable.",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 431.9614,
-              "Y": 176.9563
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.6749,
-              "Y": 0.2765
-            },
-            "PreSize": {
-              "X": 0.2641,
-              "Y": 0.0469
-            },
-            "LeftMargin": 347.4614,
-            "RightMargin": 123.5386,
-            "TopMargin": 448.0437,
-            "BottomMargin": 161.9563,
-            "Tag": 37,
-            "ActionTag": -2136729507,
-            "Size": {
-              "X": 169.0,
-              "Y": 30.0
-            },
-            "Name": "Text_2_0_0_0_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 10,
-            "LabelText": "Soga: Con las teclas direccionales,\nsigue la secuencia de flechas",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 444.4613,
-              "Y": 120.1441
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.6945,
-              "Y": 0.1877
-            },
-            "PreSize": {
-              "X": 0.2937,
-              "Y": 0.0469
-            },
-            "LeftMargin": 347.4613,
-            "RightMargin": 98.5387,
-            "TopMargin": 504.8559,
-            "BottomMargin": 105.1441,
-            "Tag": 38,
-            "ActionTag": 305943118,
-            "Size": {
-              "X": 194.0,
-              "Y": 30.0
-            },
-            "Name": "Text_2_0_0_0_0_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 10,
-            "LabelText": "Pizarra: Escribe la palabra que\naparecerá en el mapa",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 431.4613,
-              "Y": 61.8374
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.6742,
-              "Y": 0.0966
-            },
-            "PreSize": {
-              "X": 0.2625,
-              "Y": 0.0469
-            },
-            "HorizontalEdge": "LeftEdge",
-            "LeftMargin": 347.4613,
-            "RightMargin": 124.5387,
-            "TopMargin": 563.1626,
-            "BottomMargin": 46.8374,
-            "Tag": 39,
-            "ActionTag": -1223435719,
-            "Size": {
-              "X": 168.0,
-              "Y": 30.0
-            },
-            "Name": "Text_2_0_0_0_0_0_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 10,
-            "LabelText": "Antorcha: Amplia el rango\nde visión",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 169.6026,
-              "Y": 226.5855
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.265,
-              "Y": 0.354
-            },
-            "PreSize": {
-              "X": 0.2172,
-              "Y": 0.0469
-            },
-            "LeftMargin": 100.1026,
-            "RightMargin": 400.8974,
-            "TopMargin": 398.4145,
-            "BottomMargin": 211.5855,
-            "Tag": 44,
-            "ActionTag": -1975480143,
-            "Size": {
-              "X": 139.0,
-              "Y": 30.0
-            },
-            "Name": "Text_2_0_0_0_1",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 10,
-            "LabelText": "Botas: Aumenta la velocidad",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 177.1026,
-              "Y": 165.5096
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.2767,
-              "Y": 0.2586
-            },
-            "PreSize": {
-              "X": 0.2109,
-              "Y": 0.0203
-            },
-            "LeftMargin": 100.1026,
-            "RightMargin": 385.8974,
-            "TopMargin": 466.9904,
-            "BottomMargin": 158.0096,
-            "Tag": 45,
-            "ActionTag": -896165827,
-            "Size": {
-              "X": 154.0,
-              "Y": 15.0
-            },
-            "Name": "Text_2_0_0_0_1_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 10,
-            "LabelText": "Escudo: Protege de las trampas",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 188.6026,
-              "Y": 112.8336
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.2947,
-              "Y": 0.1763
-            },
-            "PreSize": {
-              "X": 0.2766,
-              "Y": 0.0234
-            },
-            "LeftMargin": 100.1026,
-            "RightMargin": 362.8973,
-            "TopMargin": 519.6664,
-            "BottomMargin": 105.3336,
-            "Tag": 46,
-            "ActionTag": 410625260,
-            "Size": {
-              "X": 177.0,
-              "Y": 15.0
-            },
-            "Name": "Text_2_0_0_0_1_0_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 10,
-            "LabelText": "Reloj: Ralentiza la velocidad\ndel mounstro",
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 177.1026,
-              "Y": 59.1219
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.2767,
-              "Y": 0.0924
-            },
-            "PreSize": {
-              "X": 0.2406,
-              "Y": 0.0469
-            },
-            "LeftMargin": 100.1026,
-            "RightMargin": 385.8974,
-            "TopMargin": 565.8781,
-            "BottomMargin": 44.1219,
-            "Tag": 47,
-            "ActionTag": 993802838,
-            "Size": {
-              "X": 154.0,
-              "Y": 30.0
-            },
-            "Name": "Text_2_0_0_0_1_0_0_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 14,
-            "ButtonText": "Button",
-            "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
-            },
-            "DisabledFileData": {
-              "Type": "Normal",
-              "Path": "btnRegresar.png",
-              "Plist": ""
-            },
-            "PressedFileData": {
-              "Type": "Normal",
-              "Path": "btnRegresar.png",
-              "Plist": ""
-            },
-            "NormalFileData": {
-              "Type": "Normal",
-              "Path": "btnRegresar.png",
-              "Plist": ""
-            },
-            "Scale9OriginX": 15,
-            "Scale9OriginY": 11,
-            "Scale9Width": 752,
-            "Scale9Height": 217,
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "TouchEnable": true,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 565.3414,
-              "Y": 42.9763
-            },
-            "Scale": {
-              "ScaleX": 0.1225,
-              "ScaleY": 0.1308
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.8833,
-              "Y": 0.0672
-            },
-            "PreSize": {
-              "X": 1.2219,
-              "Y": 0.3734
-            },
-            "LeftMargin": 174.3414,
-            "RightMargin": -316.3414,
-            "TopMargin": 477.5237,
-            "BottomMargin": -76.5237,
-            "Tag": 66,
-            "ActionTag": 1453603842,
-            "Size": {
-              "X": 782.0,
-              "Y": 239.0
-            },
-            "Name": "btnBack",
-            "ctype": "ButtonObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "lunchbox.png",
-              "Plist": ""
-            },
-            "Scale9Width": 32,
-            "Scale9Height": 32,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 309.9652,
-              "Y": 174.4571
-            },
-            "Scale": {
-              "ScaleX": 1.47,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4843,
-              "Y": 0.2726
-            },
-            "PreSize": {
-              "X": 0.05,
-              "Y": 0.05
-            },
-            "LeftMargin": 293.9652,
-            "RightMargin": 314.0348,
-            "TopMargin": 449.5429,
-            "BottomMargin": 158.4571,
-            "Tag": 29,
-            "ActionTag": -1211079692,
-            "Size": {
-              "X": 32.0,
-              "Y": 32.0
-            },
-            "Name": "Image_5",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "rope.png",
-              "Plist": ""
-            },
-            "Scale9Width": 32,
-            "Scale9Height": 32,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 311.7726,
-              "Y": 121.2713
-            },
-            "Scale": {
-              "ScaleX": 1.345,
-              "ScaleY": 1.207
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4871,
-              "Y": 0.1895
-            },
-            "PreSize": {
-              "X": 0.05,
-              "Y": 0.05
-            },
-            "LeftMargin": 295.7726,
-            "RightMargin": 312.2274,
-            "TopMargin": 502.7287,
-            "BottomMargin": 105.2713,
-            "Tag": 30,
-            "ActionTag": 2016626566,
-            "Size": {
-              "X": 32.0,
-              "Y": 32.0
-            },
-            "Name": "Image_6",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "shield.png",
-              "Plist": ""
-            },
-            "Scale9Width": 29,
-            "Scale9Height": 28,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 60.4668,
-              "Y": 114.8322
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0945,
-              "Y": 0.1794
-            },
-            "PreSize": {
-              "X": 0.0453,
-              "Y": 0.0437
-            },
-            "LeftMargin": 45.9668,
-            "RightMargin": 565.0332,
-            "TopMargin": 511.1678,
-            "BottomMargin": 100.8322,
-            "Tag": 29,
-            "ActionTag": 319632272,
-            "Size": {
-              "X": 29.0,
-              "Y": 28.0
-            },
-            "Name": "Image_1",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "torch.png",
-              "Plist": ""
-            },
-            "Scale9Width": 9,
-            "Scale9Height": 31,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 63.3836,
-              "Y": 225.7878
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.099,
-              "Y": 0.3528
-            },
-            "PreSize": {
-              "X": 0.0141,
-              "Y": 0.0484
-            },
-            "LeftMargin": 58.8836,
-            "RightMargin": 572.1163,
-            "TopMargin": 398.7122,
-            "BottomMargin": 210.2878,
-            "Tag": 30,
-            "ActionTag": 583267131,
-            "Size": {
-              "X": 9.0,
-              "Y": 31.0
-            },
-            "Name": "Image_7",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "boots.png",
-              "Plist": ""
-            },
-            "Scale9Width": 31,
-            "Scale9Height": 25,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 61.2485,
-              "Y": 163.7013
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0957,
-              "Y": 0.2558
-            },
-            "PreSize": {
-              "X": 0.0484,
-              "Y": 0.0391
-            },
-            "LeftMargin": 45.7485,
-            "RightMargin": 563.2515,
-            "TopMargin": 463.7987,
-            "BottomMargin": 151.2013,
-            "Tag": 31,
-            "ActionTag": -781510117,
-            "Size": {
-              "X": 31.0,
-              "Y": 25.0
-            },
-            "Name": "Image_8",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "hole.png",
-              "Plist": ""
-            },
-            "Scale9Width": 81,
-            "Scale9Height": 79,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 310.7843,
-              "Y": 228.0946
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4856,
-              "Y": 0.3564
-            },
-            "PreSize": {
-              "X": 0.0469,
-              "Y": 0.0469
-            },
-            "LeftMargin": 295.7843,
-            "RightMargin": 314.2157,
-            "TopMargin": 396.9054,
-            "BottomMargin": 213.0946,
-            "Tag": 32,
-            "ActionTag": -1498677401,
-            "Size": {
-              "X": 30.0,
-              "Y": 30.0
-            },
-            "Name": "Image_9",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "clock.png",
-              "Plist": ""
-            },
-            "Scale9Width": 32,
-            "Scale9Height": 31,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 59.2399,
-              "Y": 61.2477
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0926,
-              "Y": 0.0957
-            },
-            "PreSize": {
-              "X": 0.05,
-              "Y": 0.0484
-            },
-            "LeftMargin": 43.2399,
-            "RightMargin": 564.7601,
-            "TopMargin": 563.2523,
-            "BottomMargin": 45.7477,
-            "Tag": 33,
-            "ActionTag": 1837250400,
-            "Size": {
-              "X": 32.0,
-              "Y": 31.0
-            },
-            "Name": "Image_10",
-            "ctype": "ImageViewObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "board.png",
-              "Plist": ""
-            },
-            "Scale9Width": 31,
-            "Scale9Height": 32,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 314.6648,
-              "Y": 63.0888
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4917,
-              "Y": 0.0986
-            },
-            "PreSize": {
-              "X": 0.0484,
-              "Y": 0.05
-            },
-            "LeftMargin": 299.1648,
-            "RightMargin": 309.8352,
-            "TopMargin": 560.9112,
-            "BottomMargin": 47.0888,
-            "Tag": 34,
-            "ActionTag": 1704760864,
-            "Size": {
-              "X": 31.0,
-              "Y": 32.0
-            },
-            "Name": "Image_11",
-            "ctype": "ImageViewObjectData"
+            "Name": "scrollView",
+            "ctype": "ScrollViewObjectData"
           }
         ],
         "Size": {
@@ -1449,8 +1954,11 @@
       "UsedResources": [
         "board.png",
         "boots.png",
+        "btnAyuda.png",
         "btnRegresar.png",
         "clock.png",
+        "coins.png",
+        "enter.png",
         "example_movement.png",
         "fondo1.png",
         "hole.png",
@@ -1459,7 +1967,8 @@
         "rope.png",
         "shield.png",
         "THE MINION.ttf",
-        "torch.png"
+        "torch.png",
+        "willpoint.png"
       ],
       "ctype": "GameProjectData"
     }
