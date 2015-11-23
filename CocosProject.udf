@@ -32,11 +32,11 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="invitation_view.csd" />
-          <FilePathData Path="ranking_result_view.csd" />
           <FilePathData Path="level_modal.csd" />
-          <FilePathData Path="level_selector_view.csd" />
+          <FilePathData Path="friend_request_view.csd" />
+          <FilePathData Path="defeat_view.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="level_selector_view.csd" />
+        <ActiveDocument Path="friend_request_view.csd" />
       </Value>
     </Item>
   </Properties>

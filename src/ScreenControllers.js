@@ -84,7 +84,7 @@ var LevelSelectionC = (function(){
 
     var updateCoinsLbl = function(){
         if(lblCoins==null || !playerInfo) return;
-        lblCoins.setString("Cr\u00Editos: " + playerInfo.coins);
+        lblCoins.setString("Cr\u00e9ditos: " + playerInfo.coins);
     }
 
     var startLevel = function(){
@@ -233,6 +233,12 @@ var LevelModalC = (function(){
             var ajax = WSHandler.registerContinue(playerInfo.idPlayer, level);
             $.when(ajax).then(function(){
                 layer.setVisible(false);
+
+                var lvlInfo = LevelGraphC.getLevelInfo(level);
+                lvlInfo.defeatPosX = -1;
+                lvlInfo.defeatPosY = -1;
+                lvlInfo.defeated = 0;
+
                 var scene = new GameplayScene(level, true);
                 cc.director.runScene(scene);
                 layer.resume();
@@ -340,34 +346,21 @@ var DefeatModalC = (function(){
         lblDesc = layer.getChildByName("lblDescription");
         btnExit = layer.getChildByName("btnExit");
         btnExit.addClickEventListener(function(){
-            currentGameplayScene.customCleanup();
+            pub.cleanup();
             LevelModalC.hide();
             cc.director.runScene(LevelSelectionC.getScene());
         });
 
         btnRetry = layer.getChildByName("btnRetry");
         btnRetry.addClickEventListener(function(){
-            currentGameplayScene.customCleanup();
+            pub.cleanup();
             var newScene = new GameplayScene(LevelGraphC.getCurrentLevel().idLevel);
             cc.director.runScene(newScene);
         });
 
         btnHelp = layer.getChildByName("btnHelp");
         btnHelp.addClickEventListener(function(){
-            var child = gameplayMap.sprite;
-            var lvlInfo = LevelGraphC.getCurrentLevel();
-            var tileWidth = gameplayMap.getTileSize().width;
-            var posX = gameplayMap.getMatrixPosX(child.getPositionX(), tileWidth);
-            var posY = gameplayMap.getMatrixPosY(child.getPositionY(), tileWidth);
-            var ajax = WSHandler.registerDefeat(playerInfo.idPlayer,lvlInfo.idLevel, posX, posY);
-            $.when(ajax).done(function(){
-                lvlInfo.defeatPosX = posX;
-                lvlInfo.defeatPosY = posY;
-                lvlInfo.defeated = 1;
-            });
-            currentGameplayScene.customCleanup();
-            LevelModalC.hide();
-            cc.director.runScene(LevelSelectionC.getScene());
+            FriendRequestViewC.show(layer);
         });
         setListenerState(false);
     };
@@ -376,10 +369,10 @@ var DefeatModalC = (function(){
         if(byMonster){
             btnHelp.setVisible(false);
             lblDesc.setString("El monstruo ha alcanzado a " + playerInfo.childName + ".\n" +
-            "Que desea hacer?");
+            "Qu\u00e9 desea hacer?");
         }else{
             lblDesc.setString(playerInfo.childName + " no tiene suficiente voluntad\npara seguir avanzando.\n" +
-                "Que desea hacer?");
+                "Qu\u00e9 desea hacer?");
         }
         layer.setVisible(true);
         cLayer.runAction(cc.fadeIn(1.5));
@@ -405,6 +398,7 @@ var DefeatModalC = (function(){
         cLayer.removeFromParent();
         cLayer.setOpacity(0);
         setListenerState(false);
+        currentGameplayScene.customCleanup();
     }
 
     function createCoverLayer(){
@@ -574,7 +568,7 @@ VictoryScreenC2 = (function(){
 
             btnInvitation = scene.getChildByName("btnInvitation");
             btnInvitation.addClickEventListener(function(){
-                var win = window.open("http://162.243.118.33/afiperudrupal/voluntarios", '_blank');
+                var win = window.open(WSHost + "/afiperudrupal/voluntarios", '_blank');
                 win.focus();
             });
 
@@ -670,30 +664,32 @@ CharacterScreenC = (function(){
             var name = txtName.getString();
             if(name =="" || name==null || male == null){
                 if(name=="" || name == null)
-                    MessageModalC.show("Error", "Escriba un nombre para el niño.", scene);
+                    MessageModalC.show("Error", "Escriba un nombre para el ni\u00f1o",scene);
                 else{
-                    MessageModalC.show("Error", "Elija el género del personaje.", scene);
+                    MessageModalC.show("Error", "Elija el g\u00e9nero del personaje.", scene);
                 }
                 return;
             }
 
             var regex = /^[a-zA-Z0-9]+$/;
             if(!regex.test(name)){
-                MessageModalC.show("Error", "El nombre solo puede contener letras y números.", scene);
+                MessageModalC.show("Error", "El nombre solo puede contener\nletras y n\u00fameros.", scene);
+                return;
             };
 
             var variation = male? 0 : 1;
             var ajax = WSHandler.registerPlayer(name, facebookID ,variation);
             $.when(ajax).done(function(){
                 playerInfo={
+                    idPlayer: ajax.responseJSON.idPlayer,
                     childName: name,
-                    facebookId:facebookID,
+                    idFacebook:facebookID,
                     clothesVariation: variation,
                     coins: 0,
                     continues: 0,
                 }
 
-                var ajax2 = WSHandler.getLevelGraph(facebookID);
+                var ajax2 = WSHandler.getLevelGraph(playerInfo.idPlayer);
                 $.when(ajax2).done(function(){
                     LevelGraphC.setLevelGraph(ajax2.responseJSON.levels);
                     TitleScreenC.loadScene();
@@ -825,6 +821,84 @@ MessageModalC = (function(){
     return pub;
 })();
 
+FriendRequestViewC = (function(){
+    var pub = {};
+    var layer;
+    var cLayer;
+
+    function createCoverLayer(){
+        cLayer = new cc.LayerColor(cc.color(0,0,0), 640,640);
+        cLayer.setOpacity(0);
+        cLayer.setPosition(cc.p(0,0));
+        cLayer.cListener = cc.EventListener.create({
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            swallowTouches: false,
+            onTouchBegan: function (touch, event) {
+                return true;
+            }
+        });
+        cc.eventManager.addListener(cLayer.cListener,cLayer);
+    }
+
+
+    pub.load = function(){
+        var obj =  ccs.load(res.friend_request_view_json);
+        layer = obj.node;
+        layer.setAnchorPoint(cc.p(0.5,0.5));
+        layer.setVisible(false);
+        createCoverLayer();
+
+        var btnExit = layer.getChildByName("btnExit");
+        btnExit.addClickEventListener(function(){
+            pub.hide();
+        });
+
+        var btnInvite = layer.getChildByName("btnInvite");
+        btnInvite.addClickEventListener(function(){
+            inviteFriends();
+        });
+
+        var btnHelp = layer.getChildByName("btnHelp");
+        btnHelp.addClickEventListener(function(){
+            requestHelp();
+            var child = gameplayMap.sprite;
+            var lvlInfo = LevelGraphC.getCurrentLevel();
+            var tileWidth = gameplayMap.getTileSize().width;
+            var posX = gameplayMap.getMatrixPosX(child.getPositionX(), tileWidth);
+            var posY = gameplayMap.getMatrixPosY(child.getPositionY(), tileWidth);
+            var ajax = WSHandler.registerDefeat(playerInfo.idPlayer,lvlInfo.idLevel, posX, posY);
+            $.when(ajax).done(function(){
+                lvlInfo.defeatPosX = posX;
+                lvlInfo.defeatPosY = posY;
+                lvlInfo.defeated = 1;
+            });
+        });
+
+    };
+
+    pub.show = function(pScene){
+        layer.setPosition(cc.p(pScene.width/2, pScene.height/2));
+        layer.setScale(1/pScene.getScale());
+        pScene.addChild(layer, 9001);
+        pScene.addChild(cLayer, 9000);
+        layer.setVisible(true);
+        cLayer.cListener.swallowTouches = true;
+    }
+
+    pub.hide = function(){
+        cLayer.cListener.swallowTouches = false;
+        layer.removeFromParent(false);
+        cLayer.removeFromParent(false);
+        layer.setVisible(false);
+    }
+
+    pub.getLayer = function(){
+        return layer;
+    };
+
+    return pub;
+})();
+
 
 function updateRankingList(listRanking, lvlNum, fontSize, parent){
     listRanking.removeAllChildren(true);
@@ -897,12 +971,28 @@ function requestHelp(){
 
                 var info = {
                     "method": "apprequests",
-                    "message": "¡# necesita se ha quedado atrapado en un laberinto y necesita tu ayuda!",
+                    "message": "@[" + playerInfo.idFacebook + "] se ha quedado atrapado en un laberinto y necesita tu ayuda!",
                     "to": arr
                 };
 
                 fbAgent.appRequest(info, function (response2) {
-                    return;
+                    var recievers = response2.to;
+                    if(recievers){
+                        var child = gameplayMap.sprite;
+                        var lvlInfo = LevelGraphC.getCurrentLevel();
+                        var tileWidth = gameplayMap.getTileSize().width;
+                        var posX = gameplayMap.getMatrixPosX(child.getPositionX(), tileWidth);
+                        var posY = gameplayMap.getMatrixPosY(child.getPositionY(), tileWidth);
+                        var ajax = WSHandler.registerDefeat(playerInfo.idPlayer,lvlInfo.idLevel, posX, posY);
+                        $.when(ajax).done(function(){
+                            lvlInfo.defeatPosX = posX;
+                            lvlInfo.defeatPosY = posY;
+                            lvlInfo.defeated = 1;
+                            DefeatModalC.cleanup();
+                            LevelModalC.hide();
+                            cc.director.runScene(LevelSelectionC.getScene());
+                        });
+                    }
                 });
             }
         });

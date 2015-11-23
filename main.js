@@ -125,5 +125,6 @@ function loadInfoAfterLogin(){
 function initGlobalVariables(){
     ChildSM.initAnimations();
     DefeatModalC.load();
+    FriendRequestViewC.load();
     MessageModalC.load();
 }

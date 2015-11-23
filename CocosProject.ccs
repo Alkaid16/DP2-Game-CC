@@ -68,6 +68,7 @@
         <Image Name="btnAyuda.png" />
         <Image Name="btnSalir.png" />
         <Project Name="alert_view.csd" Type="Layer" />
+        <Project Name="friend_request_view.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -25,7 +25,7 @@ var WSHandler = (function(){
     //Funcion para registrar un nuevo jugador en la base de datos
     pub.registerPlayer = function(childName, idFacebook, clothesVariation){
 
-        $.ajax({
+        var ajax = $.ajax({
             url: host + "/player?" + "childName=" + childName + "&"
             + "idFacebook=" + idFacebook + "&"
             + "coins=" + 0 + "&"
@@ -35,12 +35,12 @@ var WSHandler = (function(){
             type: "POST",
             crossDomain: true,
             contentType: "application/json",
-            complete: function(){
-                return 1;
+            success: function(data){
+                ajax.cResponse = data;
             }
         });
 
-        return -1;
+        return ajax;
     };
 
     pub.getLevelGraph= function(idPlayer){

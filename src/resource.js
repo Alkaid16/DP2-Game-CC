@@ -10,6 +10,7 @@ var res = {
     main_view_json : "res/views/main_view.json",
     character_view_json: "res/views/character_view.json",
     alert_view_json: "res/views/alert_view.json",
+    friend_request_view_json: "res/views/friend_request_view.json",
     Level1_tmx: "res/levels/Level1.tmx",
     Level2_tmx: "res/levels/Level2.tmx",
     Level3_tmx: "res/levels/Level3.tmx",

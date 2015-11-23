@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e1ef11f-d0c1-46fc-a3d0-ca4d948b8233" name="Default" comment="Merge de niveles mas algunas pantallas&#10;">
+    <list default="true" id="3e1ef11f-d0c1-46fc-a3d0-ca4d948b8233" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CocosProject.ccs" afterPath="$PROJECT_DIR$/CocosProject.ccs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CocosProject.udf" afterPath="$PROJECT_DIR$/CocosProject.udf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ScreenControllers.js" afterPath="$PROJECT_DIR$/src/ScreenControllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.js" afterPath="$PROJECT_DIR$/src/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource.js" afterPath="$PROJECT_DIR$/src/resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/webServices.js" afterPath="$PROJECT_DIR$/src/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CocosProject.iws" />
@@ -24,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.8487487">
-              <caret line="931" column="44" selection-start-line="931" selection-start-column="44" selection-end-line="931" selection-end-column="44" />
+            <state vertical-scroll-proportion="-16.275862">
+              <caret line="1024" column="15" selection-start-line="1024" selection-start-column="4" selection-end-line="1024" selection-end-column="15" />
               <folding>
                 <element signature="e#4132#5133#0" expanded="false" />
                 <element signature="e#5310#5451#0" expanded="false" />
@@ -43,27 +49,32 @@
                 <element signature="e#26518#26969#0" expanded="false" />
                 <element signature="e#27033#28216#0" expanded="false" />
                 <element signature="e#28252#28400#0" expanded="false" />
-                <element signature="e#29232#30512#0" expanded="false" />
+                <element signature="e#32225#33349#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resource.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resource.js">
+      <file leaf-file-name="ScreenControllers.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ScreenControllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-              <folding />
+            <state vertical-scroll-proportion="0.46966293">
+              <caret line="238" column="40" selection-start-line="238" selection-start-column="40" selection-end-line="238" selection-end-column="40" />
+              <folding>
+                <element signature="e#1361#2393#0" expanded="false" />
+                <element signature="e#14044#15345#0" expanded="false" />
+                <element signature="e#15378#16892#0" expanded="false" />
+                <element signature="e#18134#19747#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.js">
+      <file leaf-file-name="webServices.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/webServices.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,15 +108,16 @@
         <option value="$PROJECT_DIR$/res/views/main_view.json" />
         <option value="$PROJECT_DIR$/cocosstudio/howtoplay_view.csd" />
         <option value="$PROJECT_DIR$/CocosProject.ccs" />
-        <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/src/webServices.js" />
         <option value="$PROJECT_DIR$/src/globals.js" />
         <option value="$PROJECT_DIR$/src/childSM.js" />
-        <option value="$PROJECT_DIR$/src/resource.js" />
         <option value="$PROJECT_DIR$/src/traps.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/ScreenControllers.js" />
+        <option value="chrome-extension://ehkepjiconegkhpodgoaeamnpckdbblp/content.js" />
+        <option value="$PROJECT_DIR$/src/resource.js" />
         <option value="$PROJECT_DIR$/src/app.js" />
+        <option value="$PROJECT_DIR$/src/webServices.js" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/src/ScreenControllers.js" />
       </list>
     </option>
   </component>
@@ -174,6 +186,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GamePrototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DP2-Game-CC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -566,14 +592,20 @@
       <option name="project" value="LOCAL" />
       <updated>1448250853056</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Acentos en mensajes&#10;">
+      <created>1448252373484</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1448252373484</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.50208336" order="11" side_tool="true" content_ui="tabs" />
@@ -609,7 +641,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="Botas arregladas&#10;" />
     <MESSAGE value="Zapato y escudo arreglados. Web service para conseguir puntajes de amigos implementado&#10;" />
     <MESSAGE value="Pantalla de victoria implementada&#10;" />
     <MESSAGE value="Niveles actualizados. Pantalla de victoria terminada" />
@@ -634,7 +665,8 @@
     <MESSAGE value="FB pt3.6&#10;" />
     <MESSAGE value="FB pt3.7 - Finalizado&#10;" />
     <MESSAGE value="Correccion de bugs&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correccion de bugs&#10;" />
+    <MESSAGE value="Acentos en mensajes&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Acentos en mensajes&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -648,7 +680,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="183" />
+      <option name="time" value="186" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -941,26 +973,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/globals.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/traps.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5408053">
           <caret line="317" column="22" selection-start-line="317" selection-start-column="22" selection-end-line="317" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.141458">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -986,32 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ScreenControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11969532">
-          <caret line="289" column="48" selection-start-line="289" selection-start-column="48" selection-end-line="289" selection-end-column="48" />
-          <folding>
-            <element signature="e#1361#2393#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/cocos2d/core/base-nodes/CCNode.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33297062">
@@ -1020,10 +1010,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28726876">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83242655">
+          <caret line="127" column="30" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.8487487">
-          <caret line="931" column="44" selection-start-line="931" selection-start-column="44" selection-end-line="931" selection-end-column="44" />
+        <state vertical-scroll-proportion="-16.275862">
+          <caret line="1024" column="15" selection-start-line="1024" selection-start-column="4" selection-end-line="1024" selection-end-column="15" />
           <folding>
             <element signature="e#4132#5133#0" expanded="false" />
             <element signature="e#5310#5451#0" expanded="false" />
@@ -1038,7 +1044,36 @@
             <element signature="e#26518#26969#0" expanded="false" />
             <element signature="e#27033#28216#0" expanded="false" />
             <element signature="e#28252#28400#0" expanded="false" />
-            <element signature="e#29232#30512#0" expanded="false" />
+            <element signature="e#32225#33349#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/globals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.14907508">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ScreenControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46966293">
+          <caret line="238" column="40" selection-start-line="238" selection-start-column="40" selection-end-line="238" selection-end-column="40" />
+          <folding>
+            <element signature="e#1361#2393#0" expanded="false" />
+            <element signature="e#14044#15345#0" expanded="false" />
+            <element signature="e#15378#16892#0" expanded="false" />
+            <element signature="e#18134#19747#0" expanded="false" />
           </folding>
         </state>
       </provider>
