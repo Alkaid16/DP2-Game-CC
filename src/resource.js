@@ -1,9 +1,5 @@
 var res = {
-    
     invitation_view_json: "res/views/invitation_view.json",
-    btnContinue_png : "res/views/btnContinue.png",
-    btnInvitation_png : "res/views/btnInvitation.png",
-
     ButtonNormal_png : "res/views/buttonNormal.png",
     ButtonPressed_png : "res/views/buttonPressed.png",
     MainScreen_json: "res/views/MainScreen.json",
@@ -35,6 +31,14 @@ var res = {
     exMark_png: "res/views/exMark.png",
     arrow_png: "res/views/arrow.png",
     lock_png: "res/views/lock.png",
+    arrowUp_png: "res/views/up.png",
+    arrowUpPress_png: "res/views/upPress.png",
+    arrowDown_png: "res/views/down.png",
+    arrowDownPress_png: "res/views/downPress.png",
+    arrowLeft_png: "res/views/left.png",
+    arrowLeftPress_png: "res/views/leftPress.png",
+    arrowRight_png: "res/views/right.png",
+    arrowRightPress_png: "res/views/rightPress.png",
     integrado_png:"res/levels/Tilesets/integrado.png",
     random_png: "res/levels/Tilesets/random.png",
     spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist",

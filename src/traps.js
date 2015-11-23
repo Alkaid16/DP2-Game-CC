@@ -38,6 +38,8 @@ function initTraps(){
     HoleController.init();
     BoardController.init();
     MeshController.init();
+    lunchBoxController.init();
+
 }
 
 function loseWillPoint(){
@@ -206,8 +208,8 @@ var MeshController = (function(){
     var arrowsCombination = {};
     var started = false;
 
-    var arrowsImg = {};
-    var arrowsImgPress = {};
+    var arrowsImg = [];
+    var arrowsImgPress = [];
     var arrowsImgCtrl = {};
     var arrowsImgPressCtrl = {};
 
@@ -216,8 +218,8 @@ var MeshController = (function(){
     var timeMesh = null;
 
     pub.init = function(){
-         arrowsImg = {};
-         arrowsImgPress = {};
+         arrowsImg = [];
+         arrowsImgPress = [];
          arrowsImgCtrl = {};
          arrowsImgPressCtrl = {};
          timeMesh = null;
@@ -267,20 +269,20 @@ var MeshController = (function(){
             switch(arrowsCombination[i])
             {
                 case 0:
-                    arrowsImg[i] = new cc.Sprite("res/views/up.png");
-                    arrowsImgPress[i] = new cc.Sprite("res/views/upPress.png");
+                    arrowsImg[i] = new cc.Sprite(res.arrowUp_png);
+                    arrowsImgPress[i] = new cc.Sprite(res.arrowUpPress_png);
                     break;
                 case 1:
-                    arrowsImg[i] = new cc.Sprite("res/views/down.png");
-                    arrowsImgPress[i] = new cc.Sprite("res/views/downPress.png");
+                    arrowsImg[i] = new cc.Sprite(res.arrowDown_png);
+                    arrowsImgPress[i] = new cc.Sprite(res.arrowDownPress_png);
                     break;
                 case 2:
-                    arrowsImg[i] = new cc.Sprite("res/views/left.png");
-                    arrowsImgPress[i] = new cc.Sprite("res/views/leftPress.png");
+                    arrowsImg[i] = new cc.Sprite(res.arrowLeft_png);
+                    arrowsImgPress[i] = new cc.Sprite(res.arrowLeftPress_png);
                     break;
                 case 3:
-                    arrowsImg[i] = new cc.Sprite("res/views/right.png");
-                    arrowsImgPress[i] = new cc.Sprite("res/views/rightPress.png");
+                    arrowsImg[i] = new cc.Sprite(res.arrowRight_png);
+                    arrowsImgPress[i] = new cc.Sprite(res.arrowRightPress_png);
                     break;
             }
             arrowsImg[i].setScale(0.4);
@@ -307,12 +309,6 @@ var MeshController = (function(){
     }
 
     pub.keyboardInput = function(keyPress){
-
-        //up    0
-        //down  1
-        //left  2
-        //right 3
-
         var arrowPress;
 
         switch(keyPress)
@@ -417,9 +413,16 @@ var lunchBoxController = (function(){
     var pub = {};
     var timeLunch = null;
 
+    pub.init = function(){
+        chargeSprites();
+        numRemElmentNutri=numElmentNutri;
+        started = false;
+        numBoxBoardUsed=0;
+    };
 
     //Esta función unicamente carga los spritres
     var chargeSprites = function(){
+        if(flagChargeSprites) return;
 
         spritesLunchBox[0] = new cc.Sprite("res/views/apple.png");
         flagNutritious[0]=1;
@@ -458,9 +461,6 @@ var lunchBoxController = (function(){
         var X00 = gameplayMap.sprite.getPositionX() - parseInt(W/2);
         var Y00 = gameplayMap.sprite.getPositionY() - parseInt(H/2);
 
-        /*console.log(gameplayMap.sprite.getPositionX()+" - "+gameplayMap.sprite.getPositionY());
-        console.log(X00+" - "+Y00);*/
-
         //División de la pantalla
         for(var i=0; i<numBoxBoard; i++)
         {
@@ -476,12 +476,9 @@ var lunchBoxController = (function(){
                 currentRow++;
                 currentColumn = 0;
             }
-            /*console.log(boxXinf[i]+" - "+boxYinf[i])*/
         }
 
         numBoxBoardUsed=0;
-
-        flagChargeBox = true;
     }
 
     //Esta función limpia la pantalla
@@ -498,7 +495,6 @@ var lunchBoxController = (function(){
             boxBoardCtrol[j]==-1
 
         ChildSM.startRunning();
-        flagChargeBox=false;
         started = false;
         numRemElmentNutri=numElmentNutri;
     }
@@ -511,8 +507,8 @@ var lunchBoxController = (function(){
         //Carga de los Sprites
         if(!flagChargeSprites)
             chargeSprites();
-        if(!flagChargeBox)
-            prepareBoard();
+
+        prepareBoard();
 
         //Generación aleatoria de las posiciones
         for(var i=0;i<numSprites;i++)
@@ -550,8 +546,10 @@ var lunchBoxController = (function(){
         started = true;
         
         setTimeout(function(){
-            if(pub.isActivated())loseWillPoint();
-            boardCleanup();
+            if(pub.isActivated()){
+                loseWillPoint();
+                boardCleanup();
+            }
         }, 8000);
 
 
@@ -560,9 +558,6 @@ var lunchBoxController = (function(){
     }
 
     pub.onClickMouse = function(xCord, yCord){
-
-        //console.log("coordenadas: "+xCord+"-"+yCord);
-
         //Obtengo el box en el que se ha realizado el click
 
         var boxSelected=-1;
@@ -612,10 +607,10 @@ var lunchBoxController = (function(){
                             },i*100);
                         })(i);
                     }
+
                     gameplayMap.score += 8000 - totalTime;
                     //fin puntaje
 
-                    
                 }
 
             }else//Caso en que un elemento no sea saludable

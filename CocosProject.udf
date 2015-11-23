@@ -33,8 +33,10 @@
         <OpenedDocuments>
           <FilePathData Path="invitation_view.csd" />
           <FilePathData Path="ranking_result_view.csd" />
+          <FilePathData Path="level_modal.csd" />
+          <FilePathData Path="level_selector_view.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="ranking_result_view.csd" />
+        <ActiveDocument Path="level_selector_view.csd" />
       </Value>
     </Item>
   </Properties>

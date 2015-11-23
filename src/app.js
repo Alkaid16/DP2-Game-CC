@@ -12,6 +12,16 @@ var interHandler = {
     sameTileDetected : false,
     collisionDelay : 0,
 
+    init: function(){
+        this.choiceAvailable = false;
+        this.choiceExecuted = false;
+        this.currentChoices= [];
+        this.storedDecision= -1;
+        this.intersectTile= null;
+        this.sameTileDetected = false;
+        this.collisionDelay = 0;
+    },
+
     //Función que hace un scan de [offset] tiles en adelante, buscando si se aproxima una interseccion
     detectIntersection: function(tilePosX, tilePosY, direction, tileMatrix){
         var targetPoint = [];
@@ -567,6 +577,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this._super();
         this.initWithTMXFile("res/" + levelName);
         initTraps();
+        interHandler.init();
 
         var mapHeight = this.getMapSize().height;
         var mapWidth = this.getMapSize().width;
@@ -614,6 +625,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
                     return this.getMapSize().height -1 -parseInt(pixelY / tileWidth);
             }
         }
+
         this.initStartnFinish();
 
         //Se crea el listener para el teclado, se podria usar tambien un CASE en vez de IFs
@@ -920,8 +932,6 @@ var GameplayScene = cc.Scene.extend({
         this.gameplayLayer = new cc.Layer();
         var root = ccs.load(res.gameHUD_json);
         this.hudLayer = root.node;
-        var lblSc = this.hudLayer.getChildByName("lblScore");
-        lblSc.setFontName("THE MINION");
 
         var map = new GameplayMap("levels/Level" + levelNum + ".tmx");
         HoleController.exMark = new cc.Sprite(res.exMark_png);

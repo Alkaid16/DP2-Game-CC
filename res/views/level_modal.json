@@ -255,7 +255,6 @@
               "Path": "THE MINION.ttf",
               "Plist": ""
             },
-            "VerticalAlignmentType": "VT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -273,7 +272,7 @@
             },
             "Position": {
               "X": 87.5623,
-              "Y": 167.8394
+              "Y": 152.8394
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -287,21 +286,21 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.2736,
-              "Y": 0.5245
+              "Y": 0.4776
             },
             "PreSize": {
               "X": 0.4375,
-              "Y": 0.0781
+              "Y": 0.1719
             },
-            "LeftMargin": 16.9324,
+            "LeftMargin": 16.9323,
             "RightMargin": 163.0677,
-            "TopMargin": 139.0231,
-            "BottomMargin": 155.9769,
+            "TopMargin": 138.2581,
+            "BottomMargin": 126.7419,
             "Tag": 153,
             "ActionTag": -801968946,
             "Size": {
               "X": 140.0,
-              "Y": 25.0
+              "Y": 55.0
             },
             "Name": "lblDefeatPos",
             "ctype": "TextObjectData"

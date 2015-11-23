@@ -149,7 +149,7 @@ var LevelSelectionC = (function(){
             }else{
                 btn.setTouchEnabled(false);
                 var lock = new cc.Sprite(res.lock_png);
-                lock.setScale(0.5);
+                lock.setScale(1);
                 lock.setAnchorPoint(0,0);
                 lock.setPosition(-5,0);
                 btn.addChild(lock, 5);
@@ -378,7 +378,6 @@ var DefeatModalC = (function(){
             lblDesc.setString("El monstruo ha alcanzado a " + playerInfo.childName + ".\n" +
             "Que desea hacer?");
         }else{
-            btnHelp.setVisible(true);
             lblDesc.setString(playerInfo.childName + " no tiene suficiente voluntad\npara seguir avanzando.\n" +
                 "Que desea hacer?");
         }
@@ -401,6 +400,7 @@ var DefeatModalC = (function(){
 
     pub.cleanup = function(){
         layer.removeFromParent();
+        btnHelp.setVisible(true);
         layer.setOpacity(0);
         cLayer.removeFromParent();
         cLayer.setOpacity(0);
