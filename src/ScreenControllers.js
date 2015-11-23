@@ -233,13 +233,13 @@ var LevelModalC = (function(){
             var ajax = WSHandler.registerContinue(playerInfo.idPlayer, level);
             $.when(ajax).then(function(){
                 layer.setVisible(false);
+                var scene = new GameplayScene(level, true);
 
                 var lvlInfo = LevelGraphC.getLevelInfo(level);
                 lvlInfo.defeatPosX = -1;
                 lvlInfo.defeatPosY = -1;
                 lvlInfo.defeated = 0;
 
-                var scene = new GameplayScene(level, true);
                 cc.director.runScene(scene);
                 layer.resume();
             }, function(){
