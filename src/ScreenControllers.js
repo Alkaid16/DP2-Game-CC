@@ -962,8 +962,8 @@ function requestHelp(){
 
                 var info = {
                     "method": "apprequests",
-                    "message": "@[" + playerInfo.idFacebook + "] se ha quedado atrapado en un laberinto y necesita tu ayuda!",
-                    "to": arr
+                    "filters": "app_users",
+                    "message": playerInfo.childName + " se ha quedado atrapado en un laberinto y necesito tu ayuda para continuar!",
                 };
 
                 fbAgent.appRequest(info, function (response2) {
