@@ -209,12 +209,11 @@
             "ShadowOffsetX": 2.0,
             "ShadowOffsetY": -2.0,
             "AnchorPoint": {
-              "ScaleX": 0.4077,
               "ScaleY": 0.4743
             },
             "Position": {
-              "X": 74.0103,
-              "Y": 250.4746
+              "X": 16.9324,
+              "Y": 201.4749
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -227,17 +226,17 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.2313,
-              "Y": 0.7827
+              "X": 0.0529,
+              "Y": 0.6296
             },
             "PreSize": {
               "X": 0.4375,
               "Y": 0.0781
             },
-            "LeftMargin": 16.9323,
-            "RightMargin": 163.0677,
-            "TopMargin": 56.3829,
-            "BottomMargin": 238.6171,
+            "LeftMargin": 16.9324,
+            "RightMargin": 163.0676,
+            "TopMargin": 105.3826,
+            "BottomMargin": 189.6174,
             "Tag": 152,
             "ActionTag": -1383551644,
             "Size": {
@@ -256,7 +255,6 @@
               "Path": "THE MINION.ttf",
               "Plist": ""
             },
-            "VerticalAlignmentType": "VT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -274,7 +272,7 @@
             },
             "Position": {
               "X": 87.5623,
-              "Y": 210.8393
+              "Y": 152.8394
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -288,21 +286,21 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.2736,
-              "Y": 0.6589
+              "Y": 0.4776
             },
             "PreSize": {
               "X": 0.4375,
-              "Y": 0.0781
+              "Y": 0.1719
             },
             "LeftMargin": 16.9323,
             "RightMargin": 163.0677,
-            "TopMargin": 96.0232,
-            "BottomMargin": 198.9768,
+            "TopMargin": 138.2581,
+            "BottomMargin": 126.7419,
             "Tag": 153,
             "ActionTag": -801968946,
             "Size": {
               "X": 140.0,
-              "Y": 25.0
+              "Y": 55.0
             },
             "Name": "lblDefeatPos",
             "ctype": "TextObjectData"
@@ -328,8 +326,8 @@
               "ScaleY": 1.0
             },
             "Position": {
-              "X": 230.894,
-              "Y": 263.6171
+              "X": 230.8939,
+              "Y": 214.6175
             },
             "Scale": {
               "ScaleX": 0.6752,
@@ -339,16 +337,16 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.7215,
-              "Y": 0.8238
+              "Y": 0.6707
             },
             "PreSize": {
               "X": 0.625,
-              "Y": 0.625
+              "Y": 0.5938
             },
-            "LeftMargin": 130.894,
-            "RightMargin": -10.894,
-            "TopMargin": 56.3829,
-            "BottomMargin": 63.6171,
+            "LeftMargin": 130.8939,
+            "RightMargin": -10.8939,
+            "TopMargin": 105.3825,
+            "BottomMargin": 24.6175,
             "Tag": 154,
             "Children": [
               {
@@ -376,7 +374,7 @@
                 },
                 "Position": {
                   "X": 10.0,
-                  "Y": 190.0
+                  "Y": 180.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -390,7 +388,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.05,
-                  "Y": 0.95
+                  "Y": 0.9474
                 },
                 "PreSize": {
                   "X": 0.45,
@@ -399,7 +397,7 @@
                 "LeftMargin": 10.0,
                 "RightMargin": 100.0,
                 "TopMargin": 10.0,
-                "BottomMargin": 170.0,
+                "BottomMargin": 160.0,
                 "Tag": 155,
                 "ActionTag": -1631867381,
                 "Size": {
@@ -410,6 +408,7 @@
                 "ctype": "TextObjectData"
               },
               {
+                "ItemMargin": 5,
                 "DirectionType": "Vertical",
                 "ScrollDirectionType": 0,
                 "BackColorAlpha": 102,
@@ -431,7 +430,7 @@
                 },
                 "Position": {
                   "X": 10.0,
-                  "Y": 170.0
+                  "Y": 159.9997
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -441,21 +440,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.05,
-                  "Y": 0.85
+                  "Y": 0.8
                 },
                 "PreSize": {
                   "X": 0.9,
-                  "Y": 0.8
+                  "Y": 0.75
                 },
                 "LeftMargin": 10.0,
                 "RightMargin": 10.0,
-                "TopMargin": 30.0,
-                "BottomMargin": 10.0,
+                "TopMargin": 40.0003,
+                "BottomMargin": 9.9997,
                 "Tag": 163,
                 "ActionTag": -1045167597,
                 "Size": {
                   "X": 180.0,
-                  "Y": 160.0
+                  "Y": 150.0
                 },
                 "Name": "listRanking",
                 "ctype": "ListViewObjectData"
@@ -464,7 +463,7 @@
             "ActionTag": 2096014276,
             "Size": {
               "X": 200.0,
-              "Y": 200.0
+              "Y": 190.0
             },
             "Name": "Panel_3",
             "ctype": "PanelObjectData"
@@ -535,7 +534,7 @@
             "ctype": "ButtonObjectData"
           },
           {
-            "FontSize": 20,
+            "FontSize": 14,
             "ButtonText": "Comprar",
             "FontResource": {
               "Type": "Normal",
@@ -597,18 +596,18 @@
               "Y": 0.1196
             },
             "PreSize": {
-              "X": 0.4063,
+              "X": 0.5625,
               "Y": 0.0938
             },
             "HorizontalEdge": "BothEdge",
-            "LeftMargin": 95.0,
-            "RightMargin": 95.0,
+            "LeftMargin": 70.0,
+            "RightMargin": 70.0,
             "TopMargin": 266.7197,
             "BottomMargin": 23.2803,
             "Tag": 33,
             "ActionTag": -1482677735,
             "Size": {
-              "X": 130.0,
+              "X": 180.0,
               "Y": 30.0
             },
             "VisibleForFrame": false,
@@ -688,6 +687,66 @@
             },
             "Name": "btnContinue",
             "ctype": "ButtonObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 10,
+            "LabelText": "Descripcion",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 160.0,
+              "Y": 237.9079
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.7435
+            },
+            "PreSize": {
+              "X": 0.875,
+              "Y": 0.1875
+            },
+            "HorizontalEdge": "BothEdge",
+            "LeftMargin": 20.0,
+            "RightMargin": 20.0,
+            "TopMargin": 52.0921,
+            "BottomMargin": 207.9079,
+            "Tag": 20,
+            "ActionTag": 455830541,
+            "Size": {
+              "X": 280.0,
+              "Y": 60.0
+            },
+            "Name": "lblDesc",
+            "ctype": "TextObjectData"
           }
         ],
         "Size": {

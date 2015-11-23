@@ -13,7 +13,8 @@ var ChildSM = (function(){
     pub.initSM = function(){
         currDir = -1;
         state = 0;
-        pub.hideArrows()
+        currShownArrows=[];
+        pub.hideArrows();
     }
 
     pub.initAnimations= function(){
@@ -139,8 +140,8 @@ var ChildSM = (function(){
     }
 
     pub.hideArrows = function(){
-        for(var i= 0; i<currShownArrows.length; i++ ){
-            if(i>=0 && i<4) child.removeChild(arrows[currShownArrows[i]], 10);
+        for(var i= 0; i<arrows.length; i++ ){
+            if(arrows[i].getParent()) child.removeChild(arrows[i], false);
         }
     }
 

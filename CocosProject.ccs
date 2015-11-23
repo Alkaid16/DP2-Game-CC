@@ -83,6 +83,7 @@
         <Image Name="board.png" />
         <Image Name="enter.png" />
         <Image Name="coins.png" />
+        <Project Name="friend_request_view.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

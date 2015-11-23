@@ -82,8 +82,7 @@ function loadInfoAfterLogin(){
     //load resources
     cc.LoaderScene.preload(g_resources, function () {
         var mainScreen = new cc.Scene();
-        ChildSM.initAnimations();
-        DefeatModalC.load();
+        initGlobalVariables();
 
         fbAgent.api("/me", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
             if (type == plugin.FacebookAgent.CODE_SUCCEED) {
@@ -121,4 +120,11 @@ function loadInfoAfterLogin(){
         });
 
     }, this);
+}
+
+function initGlobalVariables(){
+    ChildSM.initAnimations();
+    DefeatModalC.load();
+    FriendRequestViewC.load();
+    MessageModalC.load();
 }

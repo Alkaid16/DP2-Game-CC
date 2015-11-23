@@ -1,4 +1,5 @@
 var res = {
+    invitation_view_json: "res/views/invitation_view.json",
     ButtonNormal_png : "res/views/buttonNormal.png",
     ButtonPressed_png : "res/views/buttonPressed.png",
     MainScreen_json: "res/views/MainScreen.json",
@@ -8,6 +9,8 @@ var res = {
     ranking_result_view_json : "res/views/ranking_result_view.json",
     main_view_json : "res/views/main_view.json",
     character_view_json: "res/views/character_view.json",
+    alert_view_json: "res/views/alert_view.json",
+    friend_request_view_json: "res/views/friend_request_view.json",
     Level1_tmx: "res/levels/Level1.tmx",
     Level2_tmx: "res/levels/Level2.tmx",
     Level3_tmx: "res/levels/Level3.tmx",
@@ -29,6 +32,14 @@ var res = {
     exMark_png: "res/views/exMark.png",
     arrow_png: "res/views/arrow.png",
     lock_png: "res/views/lock.png",
+    arrowUp_png: "res/views/up.png",
+    arrowUpPress_png: "res/views/upPress.png",
+    arrowDown_png: "res/views/down.png",
+    arrowDownPress_png: "res/views/downPress.png",
+    arrowLeft_png: "res/views/left.png",
+    arrowLeftPress_png: "res/views/leftPress.png",
+    arrowRight_png: "res/views/right.png",
+    arrowRightPress_png: "res/views/rightPress.png",
     integrado_png:"res/levels/Tilesets/integrado.png",
     random_png: "res/levels/Tilesets/random.png",
     spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist",
@@ -36,7 +47,8 @@ var res = {
     pause_modal_json: "res/views/pause_modal.json",
     options_json: "res/views/options_modal.json",
     howtoplay_json: "res/views/howtoplay_view.json",
-    correct_wav: "res/correct.wav"
+    correct_wav: "res/correct.wav",
+    MINION_ttf: {type: "font", name: "THE MINION", srcs: ["res/views/THE MINION.ttf"]}
 };
 
 var g_resources = [];

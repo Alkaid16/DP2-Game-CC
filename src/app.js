@@ -12,6 +12,16 @@ var interHandler = {
     sameTileDetected : false,
     collisionDelay : 0,
 
+    init: function(){
+        this.choiceAvailable = false;
+        this.choiceExecuted = false;
+        this.currentChoices= [];
+        this.storedDecision= -1;
+        this.intersectTile= null;
+        this.sameTileDetected = false;
+        this.collisionDelay = 0;
+    },
+
     //Función que hace un scan de [offset] tiles en adelante, buscando si se aproxima una interseccion
     detectIntersection: function(tilePosX, tilePosY, direction, tileMatrix){
         var targetPoint = [];
@@ -551,6 +561,7 @@ var childMoveAction = (function(){
 var GameplayMap = cc.TMXTiledMap.extend({
     scoreLabel:0,
     sprite:null,
+    initTime:0,
     gameStarted:false,
     monster:null,
     finishPoint: null,
@@ -566,6 +577,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this._super();
         this.initWithTMXFile("res/" + levelName);
         initTraps();
+        interHandler.init();
 
         var mapHeight = this.getMapSize().height;
         var mapWidth = this.getMapSize().width;
@@ -613,6 +625,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
                     return this.getMapSize().height -1 -parseInt(pixelY / tileWidth);
             }
         }
+
         this.initStartnFinish();
 
         //Se crea el listener para el teclado, se podria usar tambien un CASE en vez de IFs
@@ -830,9 +843,10 @@ var GameplayMap = cc.TMXTiledMap.extend({
     },
 
     victory: function(){
+        var totalTime = Math.round(+new Date / 1000) - this.initTime;
         this.unscheduleAllCallbacks();
         currentGameplayScene.customCleanup();
-        VictoryScreenC.loadAndRun(this.score,0, this.coins);
+        VictoryScreenC2.loadAndRun(this.score, totalTime, this.coins);
     }
 
 });
@@ -861,11 +875,13 @@ var zoomGame = {
     //zoom_Range:   indica el incremento del zoom
     //initZoom:     indica el zoom inicial del mapa
     //time_Zoom:    indica el tiempo de zoom
-    ctor: function(type_Zoom, zoom_Range, time_Zoom, init_Zoom)
+    ctor: function(zoom_Range, time_Zoom, init_Zoom, layer)
     {
         gameplayMap.setScale(init_Zoom);
-        this.typeZoom = type_Zoom;
         this.zoomRange= zoom_Range;
+        this.layer  = layer;
+        this.action = cc.moveTo(time_Zoom,gameplayMap.sprite.getPosition());
+        this.zoomActivate=true;
         this.timeZoom = time_Zoom;
         this.scaleInit = init_Zoom;
         this.timeLeft = this.timeZoom;
@@ -888,6 +904,10 @@ var zoomGame = {
 
         if(this.currentScale<1)
         {
+            if(this.action){
+                this.layer.runAction(this.action);
+                this.action = null;
+            }
             this.currentScale+=this.zoomRange;
             gameplayMap.setScale(this.currentScale);
             return true;
@@ -897,11 +917,12 @@ var zoomGame = {
     },
 
     zoomRange:0.01,
-    typeZoom:1,
     scaleInit:1,
     currentScale:0.1,
     timeZoom:38000,
     timeLeft:38000,
+    layer: null,
+    action: null,
     zoomActivate:true
 }
 
@@ -933,7 +954,7 @@ var GameplayScene = cc.Scene.extend({
         this.gameplayLayer.addChild(map.scoreLabel,20);
 
         //inicializo el zoom
-        zoomGame.ctor(0,0.01,1600,0.280);
+        zoomGame.ctor(0.01,1600,0.280, this.gameplayLayer);
 
         //Se inicializa el modulo de movimiento del niño
         childMoveAction.setMainLayer(map);
@@ -983,6 +1004,7 @@ var GameplayScene = cc.Scene.extend({
     startMaze: function(){
         gameplayMap.sprite.setVisible(true);
         gameplayMap.monster.runAction(cc.fadeIn(0.5));
+        gameplayMap.initTime = Math.round(+new Date / 1000);
         this.fog.setOpacity(0);
         this.fog.setVisible(true);
         this.fog.runAction(cc.fadeIn(1.5));
@@ -1004,7 +1026,6 @@ var GameplayScene = cc.Scene.extend({
         this.unscheduleAllCallbacks();
         this.gameplayLayer.removeAllChildren();
         this.hudLayer.removeAllChildren();
-        DefeatModalC.cleanup();
         this.removeAllChildren();
     },
 

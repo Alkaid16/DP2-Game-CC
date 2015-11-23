@@ -1,6 +1,9 @@
 var playerInfo;
 
+var WSHost = "http://162.243.118.33";
+
 var fbAgent;
+
 var fbToken;
 
 var LevelGraphC = (function(){

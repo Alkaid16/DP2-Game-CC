@@ -22,7 +22,37 @@
     <property name="powerupId" value="2"/>
    </properties>
   </tile>
+  <tile id="488">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="489">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="490">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
   <tile id="491">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="492">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="493">
+   <properties>
+    <property name="collectableId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="494">
    <properties>
     <property name="collectableId" value="2"/>
    </properties>
@@ -47,6 +77,11 @@
     <property name="collectableId" value="1"/>
    </properties>
   </tile>
+  <tile id="502">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
   <tile id="504">
    <properties>
     <property name="trapId" value="4"/>
@@ -67,6 +102,11 @@
     <property name="collectableId" value="5"/>
    </properties>
   </tile>
+  <tile id="508">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
   <tile id="509">
    <properties>
     <property name="collectableId" value="3"/>
@@ -75,6 +115,46 @@
   <tile id="512">
    <properties>
     <property name="trapId" value="2"/>
+   </properties>
+  </tile>
+  <tile id="516">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="518">
+   <properties>
+    <property name="collectableId" value="4"/>
+   </properties>
+  </tile>
+  <tile id="521">
+   <properties>
+    <property name="collectableId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="523">
+   <properties>
+    <property name="collectableId" value="3"/>
+   </properties>
+  </tile>
+  <tile id="524">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="525">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="527">
+   <properties>
+    <property name="collectableId" value="5"/>
+   </properties>
+  </tile>
+  <tile id="528">
+   <properties>
+    <property name="collectableId" value="5"/>
    </properties>
   </tile>
  </tileset>
@@ -120,7 +200,7 @@
  </layer>
  <layer name="Collectables" width="35" height="225">
   <data encoding="base64" compression="zlib">
-   eJzt28FugzAMANDu/3+1l2nTTlO10zTEQggNpMa8d6pcVS3gOCG4t9vrfL298MsD+3Beij4TnZfH5Fjuk9eufRyZ8o0/D9f1MO/OLStqObJH/qjb8Yy4Jt+z78i+lsp+fJHNc41+6jacV+vaLcs9gvkXzitLHcoseo21lziGscpZ3eVuGurQsaLP9xE5Z3nYVwZ+1Wr79HnJvG5E7a1cq29Rfzd5ybn9WItCXKVat9Z3UXrfOIdxWu8D5uwnEN2WZ6jymStqGSNb1mTGUSxXeUZ89HHKa+iXsR6V5tCMx8m63uuu7xP6qb9Esde9g5wGKHumh36ppqq1wAjP9AkufaYUb40BsF1p7dkaq8UBIin1A7XGanEA2pX2KZf2LrP2FujNY6Qr7Z15DmK9epSs8xHQr/T/09ZYLQ7Af1v6CpbiV7o/Aqj5AWLtWSk=
+   eJzt3F1rwjAUAFA3kIFsw/3/X6jTjem2JxXxbUiapSRt0/acx1ihaO7NzQdZLKjN+nHoN6Brl4dw+5v/Ptuz35AG4gvqseogHuV/btTRUKdzw/wHmLYxxv5phO8MMGZjHCvIExprQ236BtCVd/kFAGjh795jzpmTl8h3l5HPXu19QhJnwsr5MGeCQe0TY3Cb+Nwu8JycCf2J1fqbSByLU6ZEfckcfRbu9z/iiAF9639Qrdh8Y0pi+yvQlnEN0j3Jv1SiVM2jTwPk+2+dUq4F+lByTazp/sd78htAGb/WZ4EJaXM3lbtRAYbnDCZ0R60zL6E11a9AW+raKwBxh8R82lTvHuVjgGxt1hRCtTHAHF0BY7IgLg==
   </data>
  </layer>
 </map>

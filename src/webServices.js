@@ -2,7 +2,7 @@ var WSHandler = (function(){
     var pub = {};
     //Servidor de la cato 200.16.7.111
     //Servidor nube 162.243.118.33
-    var host = "http://162.243.118.33/afiperularavel/public/game";
+    var host = WSHost + "/afiperularavel/public/game";
 
     //Funcion que obtiene el objeto Player, con toda la informacion del jugador. Si la llamada falla, se retorna -1.
     pub.getPlayerInfo= function(fbID){
@@ -25,7 +25,7 @@ var WSHandler = (function(){
     //Funcion para registrar un nuevo jugador en la base de datos
     pub.registerPlayer = function(childName, idFacebook, clothesVariation){
 
-        $.ajax({
+        var ajax = $.ajax({
             url: host + "/player?" + "childName=" + childName + "&"
             + "idFacebook=" + idFacebook + "&"
             + "coins=" + 0 + "&"
@@ -35,12 +35,12 @@ var WSHandler = (function(){
             type: "POST",
             crossDomain: true,
             contentType: "application/json",
-            complete: function(){
-                return 1;
+            success: function(data){
+                ajax.cResponse = data;
             }
         });
 
-        return -1;
+        return ajax;
     };
 
     pub.getLevelGraph= function(idPlayer){

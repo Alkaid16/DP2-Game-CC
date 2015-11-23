@@ -1,7 +1,7 @@
 {
-  "ID": "3b50ad99-68bf-4bd6-b601-8029cdd0b0b6",
+  "ID": "169d3bbb-cb3d-4faa-a2f9-fef75eb074ce",
   "Version": "2.3.2.3",
-  "Name": "defeat_view",
+  "Name": "friend_request_view",
   "Content": {
     "Content": {
       "Animation": {
@@ -12,7 +12,7 @@
       },
       "AnimationList": [],
       "ObjectData": {
-        "Tag": 90,
+        "Tag": 45,
         "Children": [
           {
             "FileData": {
@@ -23,12 +23,12 @@
             "Scale9Width": 2667,
             "Scale9Height": 2667,
             "AnchorPoint": {
-              "ScaleX": 0.4868,
-              "ScaleY": 0.4939
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
             },
             "Position": {
-              "X": 231.7302,
-              "Y": 234.0472
+              "X": 240.0,
+              "Y": 240.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -37,19 +37,15 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4828,
-              "Y": 0.4876
+              "X": 0.5,
+              "Y": 0.5
             },
             "PreSize": {
               "X": 1.0,
               "Y": 1.0
             },
-            "LeftMargin": -1.9338,
-            "RightMargin": 1.9337,
-            "TopMargin": 3.0248,
-            "BottomMargin": -3.0248,
-            "Tag": 172,
-            "ActionTag": 674899838,
+            "Tag": 46,
+            "ActionTag": 1486623481,
             "Size": {
               "X": 480.0,
               "Y": 480.0
@@ -59,7 +55,7 @@
           },
           {
             "FontSize": 48,
-            "LabelText": "Derrota",
+            "LabelText": "Pedir Ayuda",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
@@ -82,7 +78,7 @@
             },
             "Position": {
               "X": 240.0,
-              "Y": 414.376
+              "Y": 414.384
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -108,25 +104,25 @@
             "RightMargin": 219.5,
             "TopMargin": 58.124,
             "BottomMargin": 406.876,
-            "Tag": 104,
-            "ActionTag": -1241845164,
+            "Tag": 81,
+            "ActionTag": 656466265,
             "Size": {
-              "X": 41.0,
+              "X": 64.0,
               "Y": 15.0
             },
             "Name": "lblDefeatTitle",
             "ctype": "TextObjectData"
           },
           {
-            "FontSize": 20,
-            "LabelText": "El monstruo ha alcanzado a <nombre>. \n¿Qué deseas hacer?\n",
+            "IsCustomSize": true,
+            "FontSize": 14,
+            "LabelText": "Puedes invitar a jugar Confimaze a 3 o más amigos para continuar donde te quedaste.\n",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
               "Plist": ""
             },
             "HorizontalAlignmentType": "HT_Center",
-            "VerticalAlignmentType": "VT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -144,7 +140,7 @@
             },
             "Position": {
               "X": 240.0,
-              "Y": 338.592
+              "Y": 350.4
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -158,131 +154,61 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
-              "Y": 0.7054
+              "Y": 0.73
             },
+            "PercentWidthEnable": true,
+            "PercentWidthEnabled": true,
             "PreSize": {
-              "X": 0.7292,
-              "Y": 0.1437
+              "X": 0.85,
+              "Y": 0.1146
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 65.0,
-            "RightMargin": 65.0,
-            "TopMargin": 106.908,
-            "BottomMargin": 304.092,
-            "Tag": 105,
-            "ActionTag": 769088611,
+            "LeftMargin": 36.0,
+            "RightMargin": 36.0,
+            "TopMargin": 102.1,
+            "BottomMargin": 322.9,
+            "Tag": 82,
+            "ActionTag": 1622999602,
             "Size": {
-              "X": 219.0,
-              "Y": 45.0
+              "X": 408.0,
+              "Y": 55.0
             },
             "Name": "lblDescription",
             "ctype": "TextObjectData"
           },
           {
-            "FontSize": 18,
-            "ButtonText": "",
+            "FontSize": 20,
+            "ButtonText": "Invitar",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
             "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
-            },
-            "DisabledFileData": {
-              "Type": "Normal",
-              "Path": "btnSalir.png",
-              "Plist": ""
-            },
-            "PressedFileData": {
-              "Type": "Normal",
-              "Path": "btnSalir.png",
-              "Plist": ""
-            },
-            "NormalFileData": {
-              "Type": "Normal",
-              "Path": "btnSalir.png",
-              "Plist": ""
-            },
-            "Scale9OriginX": 15,
-            "Scale9OriginY": 11,
-            "Scale9Width": 150,
-            "Scale9Height": 42,
-            "OutlineColor": {
+              "R": 0,
               "G": 0,
               "B": 0
             },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "TouchEnable": true,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.4648
-            },
-            "Position": {
-              "X": 238.368,
-              "Y": 104.928
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4966,
-              "Y": 0.2186
-            },
-            "PreSize": {
-              "X": 0.4375,
-              "Y": 0.1146
-            },
-            "HorizontalEdge": "BothEdge",
-            "VerticalEdge": "BothEdge",
-            "LeftMargin": 133.368,
-            "RightMargin": 136.632,
-            "TopMargin": 345.636,
-            "BottomMargin": 79.364,
-            "CallBackType": "Click",
-            "Tag": 106,
-            "ActionTag": -1949964052,
-            "Size": {
-              "X": 210.0,
-              "Y": 55.0
-            },
-            "Name": "btnExit",
-            "ctype": "ButtonObjectData"
-          },
-          {
-            "FontSize": 18,
-            "ButtonText": "",
-            "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
-            },
             "DisabledFileData": {
               "Type": "Normal",
-              "Path": "btnReintentar.png",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "PressedFileData": {
               "Type": "Normal",
-              "Path": "btnReintentar.png",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "btnReintentar.png",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 180,
-            "Scale9Height": 50,
+            "Scale9Width": 163,
+            "Scale9Height": 33,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -301,7 +227,7 @@
             },
             "Position": {
               "X": 240.0,
-              "Y": 240.0
+              "Y": 297.6
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -311,55 +237,122 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
-              "Y": 0.5
+              "Y": 0.62
             },
             "PreSize": {
-              "X": 0.4375,
+              "X": 0.4167,
+              "Y": 0.1042
+            },
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 140.0,
+            "RightMargin": 140.0,
+            "TopMargin": 157.4,
+            "BottomMargin": 272.6,
+            "Tag": 83,
+            "ActionTag": -471290700,
+            "Size": {
+              "X": 200.0,
+              "Y": 50.0
+            },
+            "Name": "btnInvite",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 14,
+            "LabelText": "O puedes pedir a tus amigos que ya están jugando que te ayuden.\n",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "HorizontalAlignmentType": "HT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 240.0,
+              "Y": 196.8
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.41
+            },
+            "PercentWidthEnable": true,
+            "PercentWidthEnabled": true,
+            "PreSize": {
+              "X": 0.85,
               "Y": 0.1146
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 135.0,
-            "RightMargin": 135.0,
-            "TopMargin": 212.5,
-            "BottomMargin": 212.5,
-            "Tag": 107,
-            "ActionTag": -1437654066,
+            "LeftMargin": 36.0,
+            "RightMargin": 36.0,
+            "TopMargin": 255.7,
+            "BottomMargin": 169.3,
+            "Tag": 84,
+            "ActionTag": -1871055217,
             "Size": {
-              "X": 210.0,
+              "X": 408.0,
               "Y": 55.0
             },
-            "Name": "btnRetry",
-            "ctype": "ButtonObjectData"
+            "Name": "lblDescription_0",
+            "ctype": "TextObjectData"
           },
           {
-            "FontSize": 18,
-            "ButtonText": "",
+            "FontSize": 20,
+            "ButtonText": "Ayuda",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
             "TextColor": {
-              "R": 65,
-              "G": 65,
-              "B": 70
+              "R": 0,
+              "G": 0,
+              "B": 0
             },
             "DisabledFileData": {
               "Type": "Normal",
-              "Path": "btnAyuda.png",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "PressedFileData": {
               "Type": "Normal",
-              "Path": "btnAyuda.png",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
             "NormalFileData": {
               "Type": "Normal",
-              "Path": "btnAyuda.png",
+              "Path": "botonGenerico.png",
               "Plist": ""
             },
-            "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 149,
-            "Scale9Height": 30,
+            "Scale9Width": 163,
+            "Scale9Height": 33,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -374,11 +367,11 @@
             "TouchEnable": true,
             "AnchorPoint": {
               "ScaleX": 0.5,
-              "ScaleY": 0.4648
+              "ScaleY": 0.5
             },
             "Position": {
               "X": 240.0,
-              "Y": 172.032
+              "Y": 144.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -388,25 +381,98 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
-              "Y": 0.3584
+              "Y": 0.3
             },
             "PreSize": {
-              "X": 0.4063,
-              "Y": 0.0938
+              "X": 0.4167,
+              "Y": 0.1042
             },
-            "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 142.5,
-            "RightMargin": 142.5,
-            "TopMargin": 283.892,
-            "BottomMargin": 151.108,
-            "Tag": 108,
-            "ActionTag": -107116174,
+            "LeftMargin": 140.0,
+            "RightMargin": 140.0,
+            "TopMargin": 311.0,
+            "BottomMargin": 119.0,
+            "Tag": 85,
+            "ActionTag": -509949345,
             "Size": {
-              "X": 195.0,
-              "Y": 45.0
+              "X": 200.0,
+              "Y": 50.0
             },
             "Name": "btnHelp",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Normal",
+              "Path": "exit.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "exit.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "exit.png",
+              "Plist": ""
+            },
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 215,
+            "Scale9Height": 223,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 450.0,
+              "Y": 450.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9375,
+              "Y": 0.9375
+            },
+            "PreSize": {
+              "X": 0.0521,
+              "Y": 0.0521
+            },
+            "LeftMargin": 437.5,
+            "RightMargin": 17.5,
+            "TopMargin": 17.5,
+            "BottomMargin": 437.5,
+            "Tag": 86,
+            "ActionTag": 1143053139,
+            "Size": {
+              "X": 25.0,
+              "Y": 25.0
+            },
+            "Name": "btnExit",
             "ctype": "ButtonObjectData"
           }
         ],
@@ -418,9 +484,8 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
-        "btnAyuda.png",
-        "btnReintentar.png",
-        "btnSalir.png",
+        "botonGenerico.png",
+        "exit.png",
         "fondo1.png",
         "THE MINION.ttf"
       ],
