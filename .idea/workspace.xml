@@ -1,165 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e1ef11f-d0c1-46fc-a3d0-ca4d948b8233" name="Default" comment="Continue implementado. Compra de niveles implementada&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/antorcha_powerup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/antorcha_powerup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/botas_powerup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/botas_powerup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/botones-howto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/botones-howto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/escudo_powerup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/escudo_powerup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/example_movement.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/example_movement.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/fondo1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/fondo1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/huecos_trap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/huecos_trap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/keyboards.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/keyboards.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/lonchera_trap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/lonchera_trap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/pantallas-03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/pantallas-03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/pantallas-16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/pantallas-16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/pizarra_trap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/pizarra_trap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/red_trap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/red_trap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/reloj_powerup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/howtoplay_view.csd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/views/howtoplay_view.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/main_view.csd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocosstudio/splash_view.udf" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\main_view.csd" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\pause.csd" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\10-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\11-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\12-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\13-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\14-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\15-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\2-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\3-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\4-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\5-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\6-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\7-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\8-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\9-19.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\HelloWorld.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\Layer.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\Marco.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\THE MINION.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\block.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\botonGenerico.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\buttonNormal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\buttonPressed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\caja-02.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\exit.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\mapa.tmx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\modal_level_wallpaper.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\monster.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\ninaFrente1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\ninoFrente1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\pantalla-15.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\pantalla-16.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\pantalla-17.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\pantallas-09.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\pantallas-10.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\pantallas-11.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\pantallas-12.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\pantallas-13.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\pantallas-14.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_map\tile1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_map\tile2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_map\tile3.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_map\tile4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_views\exit.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_views\minion_font\the_minion\COVER THE MINION FONT.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_views\minion_font\the_minion\READ THIS.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_views\minion_font\the_minion\THE MINION.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_views\minion_font\the_minion\theminion.otf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_views\modal_level_wallpaper.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_views\wallpaper1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_views\wallpaper_selector.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_views\willpoint.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\views\Marco.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\views\wallpaper1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\wallpaper_selector.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\willpoint.png" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\character_view.csd" afterPath="$PROJECT_DIR$/cocosstudio/character_view.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\character_view.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/ranking_result_view.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\cinematic_view.csd" afterPath="$PROJECT_DIR$/cocosstudio/cinematic_view.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\cinematic_view.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/pause_modal.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\credits_view.csd" afterPath="$PROJECT_DIR$/cocosstudio/credits_view.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\defeat_view.csd" afterPath="$PROJECT_DIR$/cocosstudio/defeat_view.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\defeat_view.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/options_modal.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\gameHUD.csd" afterPath="$PROJECT_DIR$/cocosstudio/gameHUD.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\gameHUD.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/options_modal.csd.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\invitation_view.csd" afterPath="$PROJECT_DIR$/cocosstudio/invitation_view.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\invitation_view.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/main_view.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\level_modal.csd" afterPath="$PROJECT_DIR$/cocosstudio/level_modal.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\level_modal.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/level_modal.csd.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\level_selector_view.csd" afterPath="$PROJECT_DIR$/cocosstudio/level_selector_view.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\level_selector_view.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/level_selector_view.csd.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\level_selector_view.udf" afterPath="$PROJECT_DIR$/cocosstudio/level_selector_view.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\loading_view.csd" afterPath="$PROJECT_DIR$/cocosstudio/loading_view.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\loading_view.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/loading_view.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\main_view.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/level_modal.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\options_modal.csd" afterPath="$PROJECT_DIR$/cocosstudio/options_modal.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\options_modal.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/invitation_view.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\pause.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/howtoplay_view.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\pause_modal.csd" afterPath="$PROJECT_DIR$/cocosstudio/pause_modal.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\pause_modal.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/gameHUD.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\ranking_result_view.csd" afterPath="$PROJECT_DIR$/cocosstudio/ranking_result_view.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\ranking_result_view.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/defeat_view.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\ranking_result_view.udf" afterPath="$PROJECT_DIR$/cocosstudio/cinematic_view.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\splash_view.csd" afterPath="$PROJECT_DIR$/cocosstudio/splash_view.csd" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\cocosstudio\views\splash_view.csd.udf" afterPath="$PROJECT_DIR$/cocosstudio/character_view.udf" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\GameFog.png" afterPath="$PROJECT_DIR$/res/views/GameFog.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\MainScreen.json" afterPath="$PROJECT_DIR$/res/views/MainScreen.json" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\apple.png" afterPath="$PROJECT_DIR$/res/views/apple.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\arrow.png" afterPath="$PROJECT_DIR$/res/views/arrow.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\banana.png" afterPath="$PROJECT_DIR$/res/views/banana.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\candy.png" afterPath="$PROJECT_DIR$/res/views/candy.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\chocolate.png" afterPath="$PROJECT_DIR$/res/views/chocolate.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\down.png" afterPath="$PROJECT_DIR$/res/views/down.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\downPress.png" afterPath="$PROJECT_DIR$/res/views/downPress.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\exMark.png" afterPath="$PROJECT_DIR$/res/views/exMark.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\jugo.png" afterPath="$PROJECT_DIR$/res/views/jugo.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\left.png" afterPath="$PROJECT_DIR$/res/views/left.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\leftPress.png" afterPath="$PROJECT_DIR$/res/views/leftPress.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\lock.png" afterPath="$PROJECT_DIR$/res/views/lock.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\lollipop.png" afterPath="$PROJECT_DIR$/res/views/lollipop.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\res_views\logo.png" afterPath="$PROJECT_DIR$/cocosstudio/logo.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\right.png" afterPath="$PROJECT_DIR$/res/views/right.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\rightPress.png" afterPath="$PROJECT_DIR$/res/views/rightPress.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\sandwich.png" afterPath="$PROJECT_DIR$/res/views/sandwich.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\up.png" afterPath="$PROJECT_DIR$/res/views/up.png" />
-      <change type="MOVED" beforePath="C:\Users\Usuario\Documents\GitHub\DP2-Game-CC\res\upPress.png" afterPath="$PROJECT_DIR$/res/views/upPress.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CocosProject.ccs" afterPath="$PROJECT_DIR$/CocosProject.ccs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CocosProject.cfg" afterPath="$PROJECT_DIR$/CocosProject.cfg" />
+    <list default="true" id="3e1ef11f-d0c1-46fc-a3d0-ca4d948b8233" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ScreenControllers.js" afterPath="$PROJECT_DIR$/src/ScreenControllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.js" afterPath="$PROJECT_DIR$/src/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/character_view.json" afterPath="$PROJECT_DIR$/res/views/character_view.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/cinematic_view.json" afterPath="$PROJECT_DIR$/res/views/cinematic_view.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/defeat_view.json" afterPath="$PROJECT_DIR$/res/views/defeat_view.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/gameHUD.json" afterPath="$PROJECT_DIR$/res/views/gameHUD.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/invitation_view.json" afterPath="$PROJECT_DIR$/res/views/invitation_view.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/level_modal.json" afterPath="$PROJECT_DIR$/res/views/level_modal.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/level_selector_view.json" afterPath="$PROJECT_DIR$/res/views/level_selector_view.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/loading_view.json" afterPath="$PROJECT_DIR$/res/views/loading_view.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/main_view.json" afterPath="$PROJECT_DIR$/res/views/main_view.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/options_modal.json" afterPath="$PROJECT_DIR$/res/views/options_modal.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/pause_modal.json" afterPath="$PROJECT_DIR$/res/views/pause_modal.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/ranking_result_view.json" afterPath="$PROJECT_DIR$/res/views/ranking_result_view.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource.js" afterPath="$PROJECT_DIR$/src/resource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/views/splash_view.json" afterPath="$PROJECT_DIR$/res/views/splash_view.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/traps.js" afterPath="$PROJECT_DIR$/src/traps.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CocosProject.iws" />
@@ -185,15 +28,8 @@
         <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
-              <folding>
-                <element signature="e#138#6267#0" expanded="false" />
-                <element signature="e#3855#4856#0" expanded="false" />
-                <element signature="e#5033#5174#0" expanded="false" />
-                <element signature="e#5231#5769#0" expanded="false" />
-                <element signature="e#5807#6265#0" expanded="false" />
-                <element signature="e#6304#6963#0" expanded="false" />
-              </folding>
+              <caret line="350" column="20" selection-start-line="350" selection-start-column="20" selection-end-line="350" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -201,48 +37,29 @@
       <file leaf-file-name="ScreenControllers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ScreenControllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.609358">
-              <caret line="625" column="53" selection-start-line="625" selection-start-column="53" selection-end-line="625" selection-end-column="53" />
-              <folding />
+            <state vertical-scroll-proportion="0.38955387">
+              <caret line="969" column="49" selection-start-line="969" selection-start-column="49" selection-end-line="969" selection-end-column="49" />
+              <folding>
+                <element signature="e#4574#10245#0" expanded="false" />
+                <element signature="e#10281#13496#0" expanded="false" />
+                <element signature="e#13527#14828#0" expanded="false" />
+                <element signature="e#14861#16375#0" expanded="false" />
+                <element signature="e#16410#17583#0" expanded="false" />
+                <element signature="e#17617#19230#0" expanded="false" />
+                <element signature="e#19266#22667#0" expanded="false" />
+                <element signature="e#22706#23279#0" expanded="false" />
+                <element signature="e#23312#25018#0" expanded="false" />
+                <element signature="e#25056#27447#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_view.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/views/main_view.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="325" column="1" selection-start-line="325" selection-start-column="1" selection-end-line="325" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CocosProject.ccs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CocosProject.ccs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CCDebugger.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/CCDebugger.js">
+      <file leaf-file-name="webServices.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/webServices.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="321" column="23" selection-start-line="321" selection-start-column="23" selection-end-line="321" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UIWidget.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/base-classes/UIWidget.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1038" column="6" selection-start-line="1038" selection-start-column="6" selection-end-line="1038" selection-end-column="6" />
+              <caret line="152" column="4" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -252,29 +69,7 @@
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="58" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resource.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-              <folding>
-                <marker date="1447904982679" expanded="true" signature="10:38" placeholder="{&quot;HelloWorld_png&quot;: &quot;res/views/HelloWorld.png&quot;...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="powerups.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/powerups.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -354,6 +149,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -372,24 +168,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GamePrototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DP2-Game-CC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -627,7 +408,19 @@
       <option name="project" value="LOCAL" />
       <updated>1447438149152</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="FB pt5">
+      <created>1448309226642</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1448309226642</updated>
+    </task>
+    <task id="LOCAL-00026" summary="FB pt5.1">
+      <created>1448310190109</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1448310190109</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -636,6 +429,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.50208336" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11404435" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -645,7 +439,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4276663" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="89" y="89" width="1742" height="842" />
@@ -712,7 +505,9 @@
     <MESSAGE value="Zapato y escudo arreglados. Web service para conseguir puntajes de amigos implementado&#10;" />
     <MESSAGE value="Pantalla de victoria implementada&#10;" />
     <MESSAGE value="Niveles actualizados. Pantalla de victoria terminada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Niveles actualizados. Pantalla de victoria terminada" />
+    <MESSAGE value="FB pt5" />
+    <MESSAGE value="FB pt5.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="FB pt5.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -739,7 +534,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="e#4574#10245#0" expanded="false" />
+            <element signature="e#10281#13496#0" expanded="false" />
+            <element signature="e#13527#14828#0" expanded="false" />
+            <element signature="e#14861#16375#0" expanded="false" />
+            <element signature="e#16410#17583#0" expanded="false" />
+            <element signature="e#17617#19230#0" expanded="false" />
+            <element signature="e#19266#22667#0" expanded="false" />
+            <element signature="e#22706#23279#0" expanded="false" />
+            <element signature="e#23312#25018#0" expanded="false" />
+            <element signature="e#25056#27447#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -787,9 +593,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <marker date="1447904982679" expanded="true" signature="10:38" placeholder="{&quot;HelloWorld_png&quot;: &quot;res/views/HelloWorld.png&quot;...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35799783">
-          <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/powerups.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1052,24 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <marker date="1447904982679" expanded="true" signature="10:38" placeholder="{&quot;HelloWorld_png&quot;: &quot;res/views/HelloWorld.png&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="58" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/base-classes/UIWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1038" column="6" selection-start-line="1038" selection-start-column="6" selection-end-line="1038" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1082,26 +861,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CocosProject.ccs">
+    <entry file="file://$PROJECT_DIR$/frameworks/cocos2d-html5/extensions/ccui/base-classes/UIWidget.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+          <caret line="1038" column="6" selection-start-line="1038" selection-start-column="6" selection-end-line="1038" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.js">
+    <entry file="file://$PROJECT_DIR$/CocosProject.ccs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
-          <folding>
-            <element signature="e#138#6267#0" expanded="false" />
-            <element signature="e#3855#4856#0" expanded="false" />
-            <element signature="e#5033#5174#0" expanded="false" />
-            <element signature="e#5231#5769#0" expanded="false" />
-            <element signature="e#5807#6265#0" expanded="false" />
-            <element signature="e#6304#6963#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.37758434">
+          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,11 +885,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="350" column="20" selection-start-line="350" selection-start-column="20" selection-end-line="350" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="152" column="4" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ScreenControllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.609358">
-          <caret line="625" column="53" selection-start-line="625" selection-start-column="53" selection-end-line="625" selection-end-column="53" />
-          <folding />
+        <state vertical-scroll-proportion="0.38955387">
+          <caret line="969" column="49" selection-start-line="969" selection-start-column="49" selection-end-line="969" selection-end-column="49" />
+          <folding>
+            <element signature="e#4574#10245#0" expanded="false" />
+            <element signature="e#10281#13496#0" expanded="false" />
+            <element signature="e#13527#14828#0" expanded="false" />
+            <element signature="e#14861#16375#0" expanded="false" />
+            <element signature="e#16410#17583#0" expanded="false" />
+            <element signature="e#17617#19230#0" expanded="false" />
+            <element signature="e#19266#22667#0" expanded="false" />
+            <element signature="e#22706#23279#0" expanded="false" />
+            <element signature="e#23312#25018#0" expanded="false" />
+            <element signature="e#25056#27447#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

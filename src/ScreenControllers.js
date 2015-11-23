@@ -962,7 +962,7 @@ function requestHelp(){
 
                 var info = {
                     "method": "apprequests",
-                    "filters": "app_users",
+                    "filters": ["app_users"],
                     "message": playerInfo.childName + " se ha quedado atrapado en un laberinto y necesito tu ayuda para continuar!",
                 };
 
