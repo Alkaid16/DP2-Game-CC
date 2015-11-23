@@ -1,4 +1,4 @@
-var networkErrorMsg = "Error de comunicacion con el servidor. Verifique su conexion a internet."
+var networkErrorMsg = "Error de comunicaci\u00f3n con el servidor. Verifique su conexi\u00f3n a internet."
 
 var MainSceneC = (function(){
     var pub = {};
@@ -84,7 +84,7 @@ var LevelSelectionC = (function(){
 
     var updateCoinsLbl = function(){
         if(lblCoins==null || !playerInfo) return;
-        lblCoins.setString("Creditos: " + playerInfo.coins);
+        lblCoins.setString("Cr\u00Editos: " + playerInfo.coins);
     }
 
     var startLevel = function(){
@@ -255,13 +255,13 @@ var LevelModalC = (function(){
                     LevelSelectionC.updateLevelStatus();
                     layer.resume();
                     pub.updateButtons();
-                    MessageModalC.show("Exito", "La compra se realizo satisfactoriamente.", layer);
+                    MessageModalC.show("Exito", "La compra se realiz\u00f3 satisfactoriamente.", layer);
                 }, function(){
                     MessageModalC.show("Error", networkErrorMsg, layer);
                     layer.resume();
                 });
             }else{
-                MessageModalC.show("Error","No tiene suficientes puntos para comprar el nivel.", layer);
+                MessageModalC.show("Error","No tiene suficientes cr\u00E9ditos para desbloquear el nivel.\nJuegue otros niveles para ganar cr\u00E9ditos.", layer);
             }
         });
 
@@ -286,8 +286,8 @@ var LevelModalC = (function(){
         if(levelInfo.score!= null) lblScore.setString("Score: " + levelInfo.score);
         else lblScore.setString("Score: -");
         if(levelInfo.defeatPosX != null && levelInfo.defeatPosX != -1)lblDefeatPos.setString(
-            "Posicion: (" + levelInfo.defeatPosX + ","+ levelInfo.defeatPosY + ")");
-        else lblDefeatPos.setString("Posicion: -");
+            "Posicion:\n(" + levelInfo.defeatPosX + ","+ levelInfo.defeatPosY + ")");
+        else lblDefeatPos.setString("Posicion:\n-");
 
         cLayer.cListener.swallowTouches = true;
         layer.setVisible(true);
