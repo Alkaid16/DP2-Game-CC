@@ -374,21 +374,22 @@ var DefeatModalC = (function(){
 
     pub.setParentScene = function(parentScene){
         if(pScene != null){
-            pub.cleanup();
+            pub.cleanup(false);
         }
         pScene = parentScene;
         pScene.addChild(layer, 51);
         setupCoverLayer(50);
     };
 
-    pub.cleanup = function(){
+    pub.cleanup = function(pSceneCleanup){
+        if(typeof pSceneCleanup === undefined) pSceneCleanup = true;
         layer.removeFromParent();
         btnHelp.setVisible(true);
         layer.setOpacity(0);
         cLayer.removeFromParent();
         cLayer.setOpacity(0);
         setListenerState(false);
-        currentGameplayScene.customCleanup();
+        if(pSceneCleanup) currentGameplayScene.customCleanup();
     }
 
     function createCoverLayer(){
@@ -966,7 +967,7 @@ function requestHelp(){
                     "message": playerInfo.childName + " se ha quedado atrapado en un laberinto y necesito tu ayuda para continuar!",
                 };
 
-                fbAgent.appRequest(info, function (response2) {
+                fbAgent.appRequest(info, function (code, response2) {
                     var recievers = response2.to;
                     if(recievers){
                         var child = gameplayMap.sprite;
