@@ -995,7 +995,7 @@ HelpFriendsC = (function(){
             checkBox.setSizePercent(cc.p(0.08, 0.9));
             checkBox.setScale(0.9);
             checkBox.idPlayer = fbIds[i].idPlayer;
-            checkBox.idFacebook = fbIds[i].idFacebook;
+            checkBox.idFacebook = fbIds[i].id;
             checkboxes.push(checkBox);
 
             var label = new ccui.Text()
