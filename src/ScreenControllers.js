@@ -918,7 +918,7 @@ HelpFriendsC = (function(){
             var ids = [];
             for(var i=0; i<checkboxes.length; i++){
                 if(checkboxes[i].isSelected() ){
-                    ids.push(checkboxes[i].idFacebook);
+                    ids.push(checkboxes[i].idPlayer);
                     count++;
                 }
             }
@@ -940,7 +940,7 @@ HelpFriendsC = (function(){
     }
 
     function updateFriendsList(){
-        fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET,
+        fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET,
             function(type,response){
                 if (type == plugin.FacebookAgent.CODE_SUCCEED) {
                     var fbIds = response["data"];
@@ -956,7 +956,8 @@ HelpFriendsC = (function(){
                         var ids = ajax.responseJSON.friends;
                         for (var i = 0; i < fbIds.length; i++) {
                             for (var j = 0; j < ids.length; j++) {
-                                if (ids[j] == fbIds[i].id) {
+                                if (ids[j].idFacebook == fbIds[i].id) {
+                                    fbIds[i].idPlayer = ids[j].idPlayer;
                                     printedFbIds.push(fbIds[i]);
                                     break;
                                 }
@@ -989,7 +990,7 @@ HelpFriendsC = (function(){
             checkBox.setSizeType(ccui.Widget.SIZE_PERCENT);
             checkBox.setSizePercent(cc.p(0.08, 0.9));
             checkBox.setScale(0.9);
-            checkBox.idFacebook = fbIds[i].id;
+            checkBox.idPlayer = fbIds[i].idPlayer;
             checkboxes.push(checkBox);
 
             var label = new ccui.Text()
@@ -1014,7 +1015,7 @@ HelpFriendsC = (function(){
             fbAgent.api("/"+element+"/notifications", plugin.FacebookAgent.HttpMethod.POST, info, function (type, response) {
                 return;
             });
-            WSHandler.registerContinuePurchase(playerInfo.idFacebook,element, HELP_COST);
+            WSHandler.registerContinuePurchase(playerInfo.idPlayer,element, HELP_COST);
             playerInfo.coins = parseInt(playerInfo.coins) - HELP_COST;
         });
 
