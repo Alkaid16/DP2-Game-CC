@@ -127,4 +127,5 @@ function initGlobalVariables(){
     DefeatModalC.load();
     FriendRequestViewC.load();
     MessageModalC.load();
+    HelpFriendsC.loadScene();
 }

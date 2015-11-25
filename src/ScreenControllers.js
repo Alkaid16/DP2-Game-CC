@@ -122,7 +122,7 @@ var LevelSelectionC = (function(){
 
         var btnFriends = scene.getChildByName("btnHelpFriends");
         btnFriends.addClickEventListener(function(){
-            helpFriends();
+            HelpFriendsC.show();
         });
 
 
@@ -891,6 +891,140 @@ FriendRequestViewC = (function(){
     return pub;
 })();
 
+HelpFriendsC = (function(){
+    var HELP_COST = 50;
+    var pub = {};
+    var checkboxes = [];
+    var scene = null;
+    var listFriends;
+
+    pub.loadScene = function(){
+        if(scene!=null) return;
+        var root = ccs.load(res.help_friends_view_json);
+        scene = root.node;
+        elementsSetup();
+    }
+
+    pub.show = function(){
+        updateFriendsList();
+        cc.director.runScene(scene);
+    }
+
+    function elementsSetup(){
+        listFriends = scene.getChildByName("listFriends");
+        var btnHelp = scene.getChildByName("btnHelp");
+        btnHelp.addClickEventListener(function(){
+            var count = 0;
+            var ids = [];
+            for(var i=0; i<checkboxes.length; i++){
+                if(checkboxes[i].isSelected() ){
+                    ids.push(checkboxes[i].idFacebook);
+                    count++;
+                }
+            }
+
+            if(count*HELP_COST > parseInt(playerInfo.coins)){
+                MessageModalC.show("Error", "No tienes suficientes cr\u00e9ditos para ayudar a todos los amigos seleccionados." +
+                    "\nActualmente tienes " + playerInfo.coins + ", pero necesitas " + count*HELP_COST + ".");
+                return;
+            }
+
+            executeHelp(ids);
+        });
+
+        var btnExit = scene.getChildByName("btnExit");
+        btnExit.addClickEventListener(function(){
+            LevelModalC.hide();
+            cc.director.runScene(LevelSelectionC.getScene());
+        });
+    }
+
+    function updateFriendsList(){
+        fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET,
+            function(type,response){
+                if (type == plugin.FacebookAgent.CODE_SUCCEED) {
+                    var fbIds = response["data"];
+                    var printedFbIds = [];
+                    var arr = [];
+
+                    for (var i = 0; i < fbIds.length; i++) {
+                        arr[i] = fbIds[i].id;
+                    }
+
+                    var ajax = WSHandler.getFriendsInNeed(arr);
+                    $.when(ajax).done(function () {
+                        var ids = ajax.responseJSON.friends;
+                        for (var i = 0; i < fbIds.length; i++) {
+                            for (var j = 0; j < ids.length; j++) {
+                                if (ids[j] == fbIds[i].id) {
+                                    printedFbIds.push(fbIds[i]);
+                                    break;
+                                }
+                            }
+                        }
+                        buildPanel(printedFbIds);
+                    });
+                }
+            });
+    }
+
+    function buildPanel(fbIds){
+        checkboxes = [];
+        listFriends.removeAllChildren();
+
+        for(var i=0; i<fbIds.length; i++){
+            var panel = new ccui.Layout();
+            panel.setSizeType(ccui.Widget.SIZE_PERCENT);
+            panel.setSizePercent(cc.p(1,0.1));
+            panel.setBackGroundColorType(ccui.Layout.BG_COLOR_SOLID);
+            if(i % 2 == 0) panel.setBackGroundColor(cc.color(150,50,150));
+            else panel.setBackGroundColor(cc.color(75,10,50));
+            panel.setBackGroundColorOpacity(30);
+
+            var checkBox = new ccui.CheckBox("res/views/checkboxUnchecked.png",
+                "res/views/checkboxUnchecked.png", "res/views/checkboxCheck.png",
+                "res/views/checkboxUnchecked.png", "res/views/checkboxUnchecked.png");
+            checkBox.setPositionType(ccui.Widget.POSITION_PERCENT);
+            checkBox.setPositionPercent(cc.p(0.9,0.5));
+            checkBox.setSizeType(ccui.Widget.SIZE_PERCENT);
+            checkBox.setSizePercent(cc.p(0.08, 0.9));
+            checkBox.setScale(0.9);
+            checkBox.idFacebook = fbIds[i].id;
+            checkboxes.push(checkBox);
+
+            var label = new ccui.Text()
+            label.setPositionType(ccui.Widget.POSITION_PERCENT);
+            label.setString(fbIds[i].name);
+            label.setFontName("THE MINION");
+            label.setContentSize(cc.size(250,40));
+            label.setAnchorPoint(cc.p(0,0.5));
+            label.setPositionPercent(cc.p(0.05,0.3));
+
+            panel.addChild(label);
+            panel.addChild(checkBox);
+            listFriends.addChild(panel);
+        }
+    }
+
+    function executeHelp(ids){
+        ids.forEach(function(element, i, array){
+            var info = {"href": "",
+                "template": "@["+playerInfo.idFacebook+"] te ha ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!"
+            };
+            fbAgent.api("/"+element+"/notifications", plugin.FacebookAgent.HttpMethod.POST, info, function (type, response) {
+                return;
+            });
+            WSHandler.registerContinuePurchase(playerInfo.idFacebook,element, HELP_COST);
+            playerInfo.coins = parseInt(playerInfo.coins) - HELP_COST;
+        });
+
+    }
+
+    return pub;
+})();
+
+
+
 
 function updateRankingList(listRanking, lvlNum, fontSize, parent){
     listRanking.removeAllChildren(true);
@@ -985,25 +1119,6 @@ function requestHelp(){
                             cc.director.runScene(LevelSelectionC.getScene());
                         });
                     }
-                });
-            }
-        });
-}
-
-function helpFriends(){
-    fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET,
-        function(type,response){
-            if (type == plugin.FacebookAgent.CODE_SUCCEED) {
-                var fbIds = response["data"];
-                var arr=[];
-                for (var i=0;i<fbIds.length; i++){
-                    arr[i] = fbIds[i].id;
-                }
-
-                var ajax = WSHandler.getFriendsInNeed(arr);
-                $.when(ajax).done(function(){
-                    var ids = ajax.responseJSON.friends;
-                    cc.log(JSON.stringify(ids));
                 });
             }
         });

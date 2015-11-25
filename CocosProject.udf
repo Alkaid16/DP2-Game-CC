@@ -28,5 +28,14 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="help_friends_view.csd" />
+          <FilePathData Path="friend_request_view.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="help_friends_view.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

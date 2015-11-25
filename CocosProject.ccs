@@ -9,7 +9,6 @@
         <Image Name="buttonNormal.png" />
         <Image Name="buttonPressed.png" />
         <TTF Name="THE MINION.ttf" />
-        <Image Name="pantallas-15.png" />
         <Image Name="Marco.png" />
         <Image Name="wallpaper_selector.jpg" />
         <Image Name="caja-02.png" />
@@ -38,16 +37,8 @@
         <Image Name="ninoFrente1.png" />
         <Image Name="example_movement.png" />
         <Image Name="keyboards.png" />
-        <Image Name="hueco.png" />
-        <Image Name="pizarra.png" />
-        <Image Name="antorcha.png" />
-        <Image Name="botas.png" />
-        <Image Name="reloj.png" />
-        <Image Name="escudo.png" />
         <Image Name="botones-howto.png" />
         <Image Name="logo.png" />
-        <Image Name="escudo_powerup.png" />
-        <Image Name="huecos_trap.png" />
         <Image Name="fondo1.png" />
         <Project Name="character_view.csd" Type="Scene" />
         <Project Name="cinematic_view.csd" Type="Scene" />
@@ -84,6 +75,7 @@
         <Image Name="enter.png" />
         <Image Name="coins.png" />
         <Project Name="friend_request_view.csd" Type="Layer" />
+        <Project Name="help_friends_view.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>
