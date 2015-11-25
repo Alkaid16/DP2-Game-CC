@@ -63,6 +63,7 @@ var TitleScreenC = (function(){
         });
         var btnOptions = scene.getChildByName("btnOptions");
         btnOptions.addClickEventListener(function(){
+            notificationTest();
             OptionsModalC.load(scene);
             OptionsModalC.show();
         });
@@ -1010,7 +1011,8 @@ HelpFriendsC = (function(){
     function executeHelp(ids){
         ids.forEach(function(element, i, array){
             var info = {"href": "",
-                "template": "@["+playerInfo.idFacebook+"] te ha ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!"
+                "template": "@["+playerInfo.idFacebook+"] te ha ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!",
+                "access_token": fbToken
             };
             fbAgent.api("/"+element+"/notifications", plugin.FacebookAgent.HttpMethod.POST, info, function (type, response) {
                 cc.log("" + type + " " + JSON.stringify(response));
@@ -1025,6 +1027,16 @@ HelpFriendsC = (function(){
     return pub;
 })();
 
+function notificationTest(){
+    var info = {"href": "",
+        "template": "@["+playerInfo.idFacebook+"] te ha ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!",
+        "access_token": fbToken
+    };
+    fbAgent.api("/10207981573086347/notifications", plugin.FacebookAgent.HttpMethod.POST, info, function (type, response) {
+        cc.log("" + type + " " + JSON.stringify(response));
+        return;
+    });
+}
 
 
 
