@@ -917,9 +917,12 @@ HelpFriendsC = (function(){
         btnHelp.addClickEventListener(function(){
             var count = 0;
             var ids = [];
+            var fbIds = [];
+
             for(var i=0; i<checkboxes.length; i++){
                 if(checkboxes[i].isSelected() ){
                     ids.push(checkboxes[i].idPlayer);
+                    fbIds.push(checkboxes[i].idFacebook);
                     count++;
                 }
             }
@@ -930,7 +933,7 @@ HelpFriendsC = (function(){
                 return;
             }
 
-            executeHelp(ids);
+            executeHelp(ids, fbIds);
         });
 
         var btnExit = scene.getChildByName("btnExit");
@@ -992,6 +995,7 @@ HelpFriendsC = (function(){
             checkBox.setSizePercent(cc.p(0.08, 0.9));
             checkBox.setScale(0.9);
             checkBox.idPlayer = fbIds[i].idPlayer;
+            checkBox.idFacebook = fbIds[i].idFacebook;
             checkboxes.push(checkBox);
 
             var label = new ccui.Text()
@@ -1008,37 +1012,31 @@ HelpFriendsC = (function(){
         }
     }
 
-    function executeHelp(ids){
-        ids.forEach(function(element, i, array){
-            var info = {"href": "",
-                "template": "@["+playerInfo.idFacebook+"] te ha ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!",
-                "access_token": fbToken
-            };
-            fbAgent.api("/"+element+"/notifications", plugin.FacebookAgent.HttpMethod.POST, info, function (type, response) {
-                cc.log("" + type + " " + JSON.stringify(response));
-                return;
-            });
-            WSHandler.registerContinuePurchase(playerInfo.idPlayer,element, HELP_COST);
-            playerInfo.coins = parseInt(playerInfo.coins) - HELP_COST;
-        });
+    function executeHelp(ids, fbIds){
+        var info = {
+            "to": fbIds,
+            "title":"Notificar sobre ayuda",
+            "message": "Te he ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!"
+        };
 
+        fbAgent.appRequest(info, function (code, response) {
+            var recievers = response.to;
+            if(recievers){
+                ids.forEach(function(element, i, array){
+                    var info = {"href": "",
+                        "template": "@["+playerInfo.idFacebook+"] te ha ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!",
+                        "access_token": fbToken
+                    };
+                    WSHandler.registerContinuePurchase(playerInfo.idPlayer,element, HELP_COST);
+                    playerInfo.coins = parseInt(playerInfo.coins) - HELP_COST;
+                });
+                updateFriendsList();
+            }
+        });
     }
 
     return pub;
 })();
-
-function notificationTest(){
-    var info = {"href": "",
-        "template": "@["+playerInfo.idFacebook+"] te ha ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!",
-        "access_token": fbToken
-    };
-    fbAgent.api("/10207981573086347/notifications", plugin.FacebookAgent.HttpMethod.POST, info, function (type, response) {
-        cc.log("" + type + " " + JSON.stringify(response));
-        return;
-    });
-}
-
-
 
 function updateRankingList(listRanking, lvlNum, fontSize, parent){
     listRanking.removeAllChildren(true);
