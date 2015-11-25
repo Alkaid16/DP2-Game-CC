@@ -63,7 +63,6 @@ var TitleScreenC = (function(){
         });
         var btnOptions = scene.getChildByName("btnOptions");
         btnOptions.addClickEventListener(function(){
-            notificationTest();
             OptionsModalC.load(scene);
             OptionsModalC.show();
         });

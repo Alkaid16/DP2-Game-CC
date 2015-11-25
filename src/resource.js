@@ -41,6 +41,8 @@ var res = {
     arrowLeftPress_png: "res/views/leftPress.png",
     arrowRight_png: "res/views/right.png",
     arrowRightPress_png: "res/views/rightPress.png",
+    checkboxUnchecked_png:"res/views/checkboxUnchecked.png",
+    checkboxCheck_png:"res/views/checkboxCheck.png",
     integrado_png:"res/levels/Tilesets/integrado.png",
     random_png: "res/levels/Tilesets/random.png",
     spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist",
