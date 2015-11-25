@@ -9,7 +9,6 @@
         <Image Name="buttonNormal.png" />
         <Image Name="buttonPressed.png" />
         <TTF Name="THE MINION.ttf" />
-        <Image Name="btnAFI.png" />
         <Image Name="Marco.png" />
         <Image Name="wallpaper_selector.jpg" />
         <Image Name="caja-02.png" />
@@ -67,8 +66,16 @@
         <Image Name="btnReintentar.png" />
         <Image Name="btnAyuda.png" />
         <Image Name="btnSalir.png" />
-        <Project Name="alert_view.csd" Type="Layer" />
+        <Image Name="shield.png" />
+        <Image Name="torch.png" />
+        <Image Name="boots.png" />
+        <Image Name="hole.png" />
+        <Image Name="clock.png" />
+        <Image Name="board.png" />
+        <Image Name="enter.png" />
+        <Image Name="coins.png" />
         <Project Name="friend_request_view.csd" Type="Layer" />
+        <Project Name="help_friends_view.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -122,17 +122,7 @@ var LevelSelectionC = (function(){
 
         var btnFriends = scene.getChildByName("btnHelpFriends");
         btnFriends.addClickEventListener(function(){
-            fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
-                if (type == plugin.FacebookAgent.CODE_SUCCEED) {
-                    var data = response["data"];
-                    for(var i=0;i<data.length; i++){
-                        cc.log(data[i].name + " " + "ID:" + data[i].id);
-                    }
-                } else {
-                    cc.log("Graph API request failed, error #" + type + ": " + response);
-                }
-            });
-            inviteFriends();
+            HelpFriendsC.show();
         });
 
 
@@ -384,21 +374,22 @@ var DefeatModalC = (function(){
 
     pub.setParentScene = function(parentScene){
         if(pScene != null){
-            pub.cleanup();
+            pub.cleanup(false);
         }
         pScene = parentScene;
         pScene.addChild(layer, 51);
         setupCoverLayer(50);
     };
 
-    pub.cleanup = function(){
+    pub.cleanup = function(pSceneCleanup){
+        if(typeof pSceneCleanup === undefined) pSceneCleanup = true;
         layer.removeFromParent();
         btnHelp.setVisible(true);
         layer.setOpacity(0);
         cLayer.removeFromParent();
         cLayer.setOpacity(0);
         setListenerState(false);
-        currentGameplayScene.customCleanup();
+        if(pSceneCleanup) currentGameplayScene.customCleanup();
     }
 
     function createCoverLayer(){
@@ -740,12 +731,13 @@ var HowToPlaySceneC = (function(){
     var btnReturn;
     var pub = {};
     var btnBack;
+    var scrollView;
 
     pub.loadScene = function(){
         var obj = ccs.load(res.howtoplay_json);
         scene = obj.node;
-
-        btnBack = scene.getChildByName("btnBack");
+        scrollView = scene.getChildByName("scrollView")
+        btnBack = scrollView.getChildByName("btnBack");
         btnBack.addClickEventListener(function(event){
             cc.director.runScene(TitleScreenC.getScene());
         });
@@ -899,6 +891,149 @@ FriendRequestViewC = (function(){
     return pub;
 })();
 
+HelpFriendsC = (function(){
+    var HELP_COST = 50;
+    var pub = {};
+    var checkboxes = [];
+    var scene = null;
+    var listFriends;
+
+    pub.loadScene = function(){
+        if(scene!=null) return;
+        var root = ccs.load(res.help_friends_view_json);
+        scene = root.node;
+        elementsSetup();
+    }
+
+    pub.show = function(){
+        updateFriendsList();
+        cc.director.runScene(scene);
+    }
+
+    function elementsSetup(){
+        listFriends = scene.getChildByName("listFriends");
+        var btnHelp = scene.getChildByName("btnHelp");
+        btnHelp.addClickEventListener(function(){
+            var count = 0;
+            var ids = [];
+            var fbIds = [];
+
+            for(var i=0; i<checkboxes.length; i++){
+                if(checkboxes[i].isSelected() ){
+                    ids.push(checkboxes[i].idPlayer);
+                    fbIds.push(checkboxes[i].idFacebook);
+                    count++;
+                }
+            }
+
+            if(count*HELP_COST > parseInt(playerInfo.coins)){
+                MessageModalC.show("Error", "No tienes suficientes cr\u00e9ditos para ayudar a todos los amigos seleccionados." +
+                    "\nActualmente tienes " + playerInfo.coins + ", pero necesitas " + count*HELP_COST + ".", scene);
+                return;
+            }
+
+            executeHelp(ids, fbIds);
+        });
+
+        var btnExit = scene.getChildByName("btnExit");
+        btnExit.addClickEventListener(function(){
+            LevelModalC.hide();
+            cc.director.runScene(LevelSelectionC.getScene());
+        });
+    }
+
+    function updateFriendsList(){
+        fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET,
+            function(type,response){
+                if (type == plugin.FacebookAgent.CODE_SUCCEED) {
+                    var fbIds = response["data"];
+                    var printedFbIds = [];
+                    var arr = [];
+
+                    for (var i = 0; i < fbIds.length; i++) {
+                        arr[i] = fbIds[i].id;
+                    }
+
+                    var ajax = WSHandler.getFriendsInNeed(arr);
+                    $.when(ajax).done(function () {
+                        var ids = ajax.responseJSON.friends;
+                        for (var i = 0; i < fbIds.length; i++) {
+                            for (var j = 0; j < ids.length; j++) {
+                                if (ids[j].idFacebook == fbIds[i].id) {
+                                    fbIds[i].idPlayer = ids[j].idPlayer;
+                                    printedFbIds.push(fbIds[i]);
+                                    break;
+                                }
+                            }
+                        }
+                        buildPanel(printedFbIds);
+                    });
+                }
+            });
+    }
+
+    function buildPanel(fbIds){
+        checkboxes = [];
+        listFriends.removeAllChildren();
+
+        for(var i=0; i<fbIds.length; i++){
+            var panel = new ccui.Layout();
+            panel.setSizeType(ccui.Widget.SIZE_PERCENT);
+            panel.setSizePercent(cc.p(1,0.1));
+            panel.setBackGroundColorType(ccui.Layout.BG_COLOR_SOLID);
+            if(i % 2 == 0) panel.setBackGroundColor(cc.color(150,50,150));
+            else panel.setBackGroundColor(cc.color(75,10,50));
+            panel.setBackGroundColorOpacity(30);
+
+            var checkBox = new ccui.CheckBox("res/views/checkboxUnchecked.png",
+                "res/views/checkboxUnchecked.png", "res/views/checkboxCheck.png",
+                "res/views/checkboxUnchecked.png", "res/views/checkboxUnchecked.png");
+            checkBox.setPositionType(ccui.Widget.POSITION_PERCENT);
+            checkBox.setPositionPercent(cc.p(0.9,0.5));
+            checkBox.setSizeType(ccui.Widget.SIZE_PERCENT);
+            checkBox.setSizePercent(cc.p(0.08, 0.9));
+            checkBox.setScale(0.9);
+            checkBox.idPlayer = fbIds[i].idPlayer;
+            checkBox.idFacebook = fbIds[i].id;
+            checkboxes.push(checkBox);
+
+            var label = new ccui.Text()
+            label.setPositionType(ccui.Widget.POSITION_PERCENT);
+            label.setString(fbIds[i].name);
+            label.setFontName("THE MINION");
+            label.setContentSize(cc.size(250,40));
+            label.setAnchorPoint(cc.p(0,0.5));
+            label.setPositionPercent(cc.p(0.05,0.3));
+
+            panel.addChild(label);
+            panel.addChild(checkBox);
+            listFriends.addChild(panel);
+        }
+    }
+
+    function executeHelp(ids, fbIds){
+        var info = {
+            "to": fbIds,
+            "title":"Notificar sobre ayuda",
+            "message": "Te he ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!"
+        };
+
+        if(ids.length == 0) return;
+
+        fbAgent.appRequest(info, function (code, response) {
+            var recievers = response.to;
+            if(recievers){
+                ids.forEach(function(element, i, array){
+                    WSHandler.registerContinuePurchase(playerInfo.idPlayer,element, HELP_COST);
+                    playerInfo.coins = parseInt(playerInfo.coins) - HELP_COST;
+                });
+                updateFriendsList();
+            }
+        });
+    }
+
+    return pub;
+})();
 
 function updateRankingList(listRanking, lvlNum, fontSize, parent){
     listRanking.removeAllChildren(true);
@@ -971,11 +1106,11 @@ function requestHelp(){
 
                 var info = {
                     "method": "apprequests",
-                    "message": "@[" + playerInfo.idFacebook + "] se ha quedado atrapado en un laberinto y necesita tu ayuda!",
-                    "to": arr
+                    "filters": ["app_users"],
+                    "message": playerInfo.childName + " se ha quedado atrapado en un laberinto y necesito tu ayuda para continuar!",
                 };
 
-                fbAgent.appRequest(info, function (response2) {
+                fbAgent.appRequest(info, function (code, response2) {
                     var recievers = response2.to;
                     if(recievers){
                         var child = gameplayMap.sprite;
