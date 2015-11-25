@@ -925,7 +925,7 @@ HelpFriendsC = (function(){
 
             if(count*HELP_COST > parseInt(playerInfo.coins)){
                 MessageModalC.show("Error", "No tienes suficientes cr\u00e9ditos para ayudar a todos los amigos seleccionados." +
-                    "\nActualmente tienes " + playerInfo.coins + ", pero necesitas " + count*HELP_COST + ".");
+                    "\nActualmente tienes " + playerInfo.coins + ", pero necesitas " + count*HELP_COST + ".", scene);
                 return;
             }
 
@@ -1013,6 +1013,7 @@ HelpFriendsC = (function(){
                 "template": "@["+playerInfo.idFacebook+"] te ha ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!"
             };
             fbAgent.api("/"+element+"/notifications", plugin.FacebookAgent.HttpMethod.POST, info, function (type, response) {
+                cc.log("" + type + " " + JSON.stringify(response));
                 return;
             });
             WSHandler.registerContinuePurchase(playerInfo.idPlayer,element, HELP_COST);
