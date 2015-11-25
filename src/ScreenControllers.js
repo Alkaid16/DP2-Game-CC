@@ -23,6 +23,7 @@ var MainSceneC = (function(){
             $.when(ajax).done( function(){
                 playerInfo = ajax.player;
                 if('idPlayer' in playerInfo) {
+                    ChildSM.initAnimations(playerInfo.clothesVariation);
                     var ajax2 = WSHandler.getLevelGraph(playerInfo.idPlayer);
                     $.when(ajax2).done(function(){
                         LevelGraphC.setLevelGraph(ajax2.responseJSON.levels);
@@ -679,6 +680,7 @@ CharacterScreenC = (function(){
                     coins: 0,
                     continues: 0,
                 }
+                ChildSM.initAnimations(variation);
 
                 var ajax2 = WSHandler.getLevelGraph(playerInfo.idPlayer);
                 $.when(ajax2).done(function(){

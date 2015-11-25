@@ -46,6 +46,7 @@ var res = {
     integrado_png:"res/levels/Tilesets/integrado.png",
     random_png: "res/levels/Tilesets/random.png",
     spritesheetNino_plist: "res/spritesheets/spritesheetNino.plist",
+    spritesheetNina_plist: "res/spritesheets/spritesheetNina.plist",
     monstruo_plist: "res/spritesheets/monstruo.plist",
     pause_modal_json: "res/views/pause_modal.json",
     options_json: "res/views/options_modal.json",

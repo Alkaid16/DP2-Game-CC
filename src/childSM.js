@@ -17,12 +17,20 @@ var ChildSM = (function(){
         pub.hideArrows();
     }
 
-    pub.initAnimations= function(){
-        cc.spriteFrameCache.addSpriteFrames(res.spritesheetNino_plist);
+    pub.initAnimations= function(variation){
+        var prefix;
+        if(variation==0) {
+            prefix = "nino";
+            cc.spriteFrameCache.addSpriteFrames(res.spritesheetNino_plist);
+        }
+        else {
+            prefix = "nina";
+            cc.spriteFrameCache.addSpriteFrames(res.spritesheetNina_plist);
+        }
         cc.spriteFrameCache.addSpriteFrames(res.monstruo_plist);
-        loadAnimation(1,8,"ninoFrente");
-        loadAnimation(1,8,"ninoPost");
-        loadAnimation(1,9,"ninoPerf");
+        loadAnimation(1,8,prefix+"Frente");
+        loadAnimation(1,8,prefix+"Post");
+        loadAnimation(1,9,prefix+"Perf");
         loadMonsterAnimation();
         loadArrows();
     }

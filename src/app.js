@@ -591,7 +591,11 @@ var GameplayMap = cc.TMXTiledMap.extend({
         this.initTileMatrix();
         this.initObstacles();
 
-        this.sprite= new cc.Sprite("#ninoPost1.png");
+        var prefix;
+        if(playerInfo.clothesVariation==0) prefix = "nino";
+        else prefix = "nina";
+
+        this.sprite= new cc.Sprite("#"+prefix+"Post1.png");
         this.sprite.setVisible(false);
 
         this.monster = new cc.Sprite("#monstruo1.png");

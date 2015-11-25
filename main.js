@@ -93,6 +93,7 @@ function loadInfoAfterLogin(){
 
                     if('idPlayer' in playerInfo) {
                         var ajax2 = WSHandler.getLevelGraph(playerInfo.idPlayer);
+                        ChildSM.initAnimations(playerInfo.clothesVariation);
                         $.when(ajax2).done(function(){
                             LevelGraphC.setLevelGraph(ajax2.responseJSON.levels);
                             TitleScreenC.loadScene();
@@ -123,7 +124,6 @@ function loadInfoAfterLogin(){
 }
 
 function initGlobalVariables(){
-    ChildSM.initAnimations();
     DefeatModalC.load();
     FriendRequestViewC.load();
     MessageModalC.load();
