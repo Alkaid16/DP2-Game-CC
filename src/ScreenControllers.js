@@ -1019,14 +1019,12 @@ HelpFriendsC = (function(){
             "message": "Te he ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!"
         };
 
+        if(ids.length == 0) return;
+
         fbAgent.appRequest(info, function (code, response) {
             var recievers = response.to;
             if(recievers){
                 ids.forEach(function(element, i, array){
-                    var info = {"href": "",
-                        "template": "@["+playerInfo.idFacebook+"] te ha ayudado a continuar en un laberinto de tu elección. ¡Aprovecha la oportunidad!",
-                        "access_token": fbToken
-                    };
                     WSHandler.registerContinuePurchase(playerInfo.idPlayer,element, HELP_COST);
                     playerInfo.coins = parseInt(playerInfo.coins) - HELP_COST;
                 });
