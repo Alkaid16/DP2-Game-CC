@@ -60,16 +60,19 @@ var TitleScreenC = (function(){
         var btnStart = scene.getChildByName("btnStart");
         btnStart.addClickEventListener(function(){
             var newScene =LevelSelectionC.getScene();
+            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
             cc.director.runScene(newScene);
         });
         var btnOptions = scene.getChildByName("btnOptions");
         btnOptions.addClickEventListener(function(){
             OptionsModalC.load(scene);
+            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
             OptionsModalC.show();
         });
         var btnInstructions = scene.getChildByName("btnInstructions");
         btnInstructions.addClickEventListener(function(){
-           HowToPlaySceneC.loadScene();
+            HowToPlaySceneC.loadScene();
+            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
             cc.director.runScene(HowToPlaySceneC.getScene());
         });
     }
@@ -118,11 +121,13 @@ var LevelSelectionC = (function(){
 
         var btnBack = scene.getChildByName("btnBack");
         btnBack.addClickEventListener(function(){
+            cc.audioEngine.playEffect(res.btnSoundBack_mp3, false);
             cc.director.runScene(TitleScreenC.getScene());
         });
 
         var btnFriends = scene.getChildByName("btnHelpFriends");
         btnFriends.addClickEventListener(function(){
+            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
             HelpFriendsC.show();
         });
 
@@ -265,7 +270,7 @@ var LevelModalC = (function(){
         btnStart = layer.getChildByName("btnStart");
         btnStart.addClickEventListener(function(){
             layer.setVisible(false);
-            cc.audioEngine.playEffect(res.correct_wav, false);
+            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
             var scene = new GameplayScene(level);
             cc.director.runScene(scene);
         });
@@ -339,6 +344,7 @@ var DefeatModalC = (function(){
         btnExit.addClickEventListener(function(){
             pub.cleanup();
             LevelModalC.hide();
+            cc.audioEngine.playEffect(res.btnSoundBack_mp3, false);
             cc.director.runScene(LevelSelectionC.getScene());
         });
 
@@ -507,6 +513,7 @@ OptionsModalC = (function(){
         var btnBack = layer.getChildByName("btnBack");
 
         btnBack.addClickEventListener(function(){
+            cc.audioEngine.playEffect(res.btnSoundBack_mp3, false);
             pub.hide();
         });
 
@@ -671,6 +678,7 @@ CharacterScreenC = (function(){
 
             var variation = male? 0 : 1;
             var ajax = WSHandler.registerPlayer(name, facebookID ,variation);
+            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
             $.when(ajax).done(function(){
                 playerInfo={
                     idPlayer: ajax.responseJSON.idPlayer,
@@ -741,6 +749,7 @@ var HowToPlaySceneC = (function(){
         scrollView = scene.getChildByName("scrollView")
         btnBack = scrollView.getChildByName("btnBack");
         btnBack.addClickEventListener(function(event){
+            cc.audioEngine.playEffect(res.btnSoundBack_mp3, false);
             cc.director.runScene(TitleScreenC.getScene());
         });
     }
@@ -786,6 +795,7 @@ MessageModalC = (function(){
         var btnContinue = layer.getChildByName("btnAccept");
 
         btnContinue.addClickEventListener(function(){
+            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
             pub.hide();
         });
     };
@@ -844,6 +854,7 @@ FriendRequestViewC = (function(){
 
         var btnExit = layer.getChildByName("btnExit");
         btnExit.addClickEventListener(function(){
+            cc.audioEngine.playEffect(res.btnSoundBack_mp3, false);
             pub.hide();
         });
 
@@ -939,6 +950,7 @@ HelpFriendsC = (function(){
 
         var btnExit = scene.getChildByName("btnExit");
         btnExit.addClickEventListener(function(){
+            cc.audioEngine.playEffect(res.btnSoundBack_mp3, false);
             LevelModalC.hide();
             cc.director.runScene(LevelSelectionC.getScene());
         });

@@ -52,6 +52,8 @@ var res = {
     options_json: "res/views/options_modal.json",
     howtoplay_json: "res/views/howtoplay_view.json",
     correct_wav: "res/correct.wav",
+    btnSoundAccept_mp3: "res/btnSoundAccept.mp3",
+    btnSoundBack_mp3: "res/btnSoundBack.mp3",
     MINION_ttf: {type: "font", name: "THE MINION", srcs: ["res/views/THE MINION.ttf"]}
 };
 
