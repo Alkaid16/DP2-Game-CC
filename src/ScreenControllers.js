@@ -216,7 +216,8 @@ var LevelModalC = (function(){
 
         btnExit = layer.getChildByName("btnExit");
         btnExit.addClickEventListener(function(){
-           pub.hide();
+            cc.audioEngine.playEffect(res.btnSoundBack_mp3, false);
+            pub.hide();
         });
 
         btnCont = layer.getChildByName("btnContinue");
@@ -235,7 +236,7 @@ var LevelModalC = (function(){
                 lvlInfo.defeatPosX = -1;
                 lvlInfo.defeatPosY = -1;
                 lvlInfo.defeated = 0;
-
+                cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
                 cc.director.runScene(scene);
                 layer.resume();
             }, function(){
@@ -248,6 +249,7 @@ var LevelModalC = (function(){
         btnBuy = layer.getChildByName("btnBuy");
         btnBuy.setTouchEnabled(false);
         btnBuy.addClickEventListener(function(){
+            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
             var lvlInfo = LevelGraphC.getLevelInfo(level);
             if(parseInt(playerInfo.coins) >= parseInt(lvlInfo.cost)){
                 var ajax = WSHandler.registerPurchase(playerInfo.idPlayer, level);
@@ -998,7 +1000,7 @@ HelpFriendsC = (function(){
     }
 
     function updateFriendsList(){
-        c._canvas.style.cursor = "wait";
+        cc._canvas.style.cursor = "wait";
         fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET,
             function(type,response){
                 if (type == plugin.FacebookAgent.CODE_SUCCEED) {
@@ -1022,9 +1024,11 @@ HelpFriendsC = (function(){
                                 }
                             }
                         }
-                        c._canvas.style.cursor = "auto";
+                        cc._canvas.style.cursor = "auto";
                         buildPanel(printedFbIds);
                     });
+                }else{
+                    cc._canvas.style.cursor = "auto";
                 }
             });
     }
@@ -1130,10 +1134,10 @@ function updateRankingList(listRanking, lvlNum, fontSize, parent){
 }
 
 function inviteFriends(){
-    c._canvas.style.cursor = "wait";
+    cc._canvas.style.cursor = "wait";
     fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET,
     function(type,response){
-        c._canvas.style.cursor = "auto";
+        cc._canvas.style.cursor = "auto";
         if (type == plugin.FacebookAgent.CODE_SUCCEED) {
             var fbIds = response["data"];
             var arr=[];
@@ -1150,13 +1154,13 @@ function inviteFriends(){
             FB.ui(info, function (response2) {
                 var recievers = response2.to;
                 if(recievers && recievers.length>=1){
-                    c._canvas.style.cursor = "wait";
+                    cc._canvas.style.cursor = "wait";
                     var ajax2 = WSHandler.registerContinuePurchase(0,playerInfo.idPlayer, 0);
                     $.when(ajax2).then(function(){
                         var ajax = WSHandler.registerContinue(playerInfo.idPlayer,
                         LevelGraphC.getCurrentLevel().idLevel);
                         $.when(ajax).then(function(){
-                            c._canvas.style.cursor = "auto";
+                            cc._canvas.style.cursor = "auto";
                             var scene = new GameplayScene(LevelGraphC.getCurrentLevel().idLevel, true);
                             DefeatModalC.cleanup();
 
@@ -1167,7 +1171,7 @@ function inviteFriends(){
                             cc.director.runScene(scene);
                         }, function(){
                             MessageModalC.show("Error", networkErrorMsg,  FriendRequestViewC.getLayer());
-                            c._canvas.style.cursor = "auto";
+                            cc._canvas.style.cursor = "auto";
                         });
                     });
                 }
@@ -1181,9 +1185,9 @@ function inviteFriends(){
 }
 
 function requestHelp(){
-    c._canvas.style.cursor = "wait";
+    cc._canvas.style.cursor = "wait";
     fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET, function(type,response){
-        c._canvas.style.cursor = "auto";
+        cc._canvas.style.cursor = "auto";
         if (type == plugin.FacebookAgent.CODE_SUCCEED) {
             var fbIds = response["data"];
             var arr=[];

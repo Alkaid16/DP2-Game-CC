@@ -129,6 +129,8 @@ function deleteAppRequests(){
         var requests = response["data"];
         cc.log(JSON.stringify(response));
 
+        if(typeof requests === "undefined") return;
+
         requests.forEach(function(element, i, array){
             var id = element.id;
             fbAgent.api("/" + id, plugin.FacebookAgent.HttpMethod.DELETE, function(type2,response2){
