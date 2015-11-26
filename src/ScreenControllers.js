@@ -352,11 +352,13 @@ var DefeatModalC = (function(){
         btnRetry.addClickEventListener(function(){
             pub.cleanup();
             var newScene = new GameplayScene(LevelGraphC.getCurrentLevel().idLevel);
+            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
             cc.director.runScene(newScene);
         });
 
         btnHelp = layer.getChildByName("btnHelp");
         btnHelp.addClickEventListener(function(){
+            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
             FriendRequestViewC.show(layer);
         });
         setListenerState(false);
@@ -370,6 +372,19 @@ var DefeatModalC = (function(){
         }else{
             lblDesc.setString(playerInfo.childName + " no tiene suficiente voluntad\npara seguir avanzando.\n" +
                 "Qu\u00e9 desea hacer?");
+            var child = gameplayMap.sprite;
+            var lvlInfo = LevelGraphC.getCurrentLevel();
+            var tileWidth = gameplayMap.getTileSize().width;
+            var posX = gameplayMap.getMatrixPosX(child.getPositionX(), tileWidth);
+            var posY = gameplayMap.getMatrixPosY(child.getPositionY(), tileWidth);
+            cc._canvas.style.cursor = "wait";
+            var ajax = WSHandler.registerDefeat(playerInfo.idPlayer,lvlInfo.idLevel, posX, posY);
+            $.when(ajax).done(function(){
+               cc._canvas.style.cursor = "auto";
+                lvlInfo.defeatPosX = posX;
+                lvlInfo.defeatPosY = posY;
+                lvlInfo.defeated = 1;
+            });
         }
         layer.setVisible(true);
         cLayer.runAction(cc.fadeIn(1.5));
@@ -428,8 +443,6 @@ PauseModalC = (function(){
     var pub = {};
     var layer;
     var pScene;
-    var btnContinue;
-    var btnLevels;
     var btnOptions;
     var pScene;
     var gameplay;
@@ -486,6 +499,8 @@ OptionsModalC = (function(){
     var pScene;
     var btnBack;
     var cLayer;
+    var musicEnabled = true;
+    var soundEnabled = true;
 
     function createCoverLayer(){
         cLayer = new cc.LayerColor(cc.color(0,0,0), 640,640);
@@ -516,6 +531,39 @@ OptionsModalC = (function(){
             cc.audioEngine.playEffect(res.btnSoundBack_mp3, false);
             pub.hide();
         });
+
+        var txtMusic = layer.getChildByName("txtMusic");
+        txtMusic.setTouchEnabled(true);
+        txtMusic.addClickEventListener(function(){
+            musicEnabled = !musicEnabled;
+            if(!musicEnabled) {
+                txtMusic.setString("Off");
+                cc.audioEngine.setMusicVolume(0);
+            }
+            else {
+                txtMusic.setString("On");
+                cc.audioEngine.setMusicVolume(1);
+            }
+        });
+
+        var txtSound = layer.getChildByName("txtSound");
+        txtSound.setTouchEnabled(true);
+        txtSound.addClickEventListener(function(){
+            soundEnabled = !soundEnabled;
+            if(!soundEnabled) {
+                txtSound.setString("Off");
+                cc.audioEngine.setEffectsVolume(0);
+            }
+            else {
+                txtSound.setString("On");
+                cc.audioEngine.setEffectsVolume(1);
+            }
+        });
+
+        if(!musicEnabled) txtMusic.setString("Off");
+        else txtMusic.setString("On");
+        if(!soundEnabled) txtSound.setString("Off");
+        else txtSound.setString("On");
 
     };
 
@@ -562,11 +610,13 @@ VictoryScreenC2 = (function(){
             btnReturn = scene.getChildByName("btnContinue");
             btnReturn.addClickEventListener(function(){
                 scene = null;
+                cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
                 VictoryScreenC.loadAndRun(score, time, coins);
             });
 
-            btnInvitation = scene.getChildByName("btnInvitation");
+            var btnInvitation = scene.getChildByName("btnInvitation");
             btnInvitation.addClickEventListener(function(){
+                cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
                 var win = window.open(WSHost + "/afiperudrupal/voluntarios", '_blank');
                 win.focus();
             });
@@ -679,6 +729,7 @@ CharacterScreenC = (function(){
             var variation = male? 0 : 1;
             var ajax = WSHandler.registerPlayer(name, facebookID ,variation);
             cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
+            cc._canvas.style.cursor = "wait";
             $.when(ajax).done(function(){
                 playerInfo={
                     idPlayer: ajax.responseJSON.idPlayer,
@@ -692,6 +743,7 @@ CharacterScreenC = (function(){
 
                 var ajax2 = WSHandler.getLevelGraph(playerInfo.idPlayer);
                 $.when(ajax2).done(function(){
+                    cc._canvas.style.cursor = "auto";
                     LevelGraphC.setLevelGraph(ajax2.responseJSON.levels);
                     TitleScreenC.loadScene();
                     LevelSelectionC.updateLevelStatus();
@@ -795,7 +847,7 @@ MessageModalC = (function(){
         var btnContinue = layer.getChildByName("btnAccept");
 
         btnContinue.addClickEventListener(function(){
-            cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
+            cc.audioEngine.playEffect(res.btnSoundBack_mp3, false);
             pub.hide();
         });
     };
@@ -866,17 +918,6 @@ FriendRequestViewC = (function(){
         var btnHelp = layer.getChildByName("btnHelp");
         btnHelp.addClickEventListener(function(){
             requestHelp();
-            var child = gameplayMap.sprite;
-            var lvlInfo = LevelGraphC.getCurrentLevel();
-            var tileWidth = gameplayMap.getTileSize().width;
-            var posX = gameplayMap.getMatrixPosX(child.getPositionX(), tileWidth);
-            var posY = gameplayMap.getMatrixPosY(child.getPositionY(), tileWidth);
-            var ajax = WSHandler.registerDefeat(playerInfo.idPlayer,lvlInfo.idLevel, posX, posY);
-            $.when(ajax).done(function(){
-                lvlInfo.defeatPosX = posX;
-                lvlInfo.defeatPosY = posY;
-                lvlInfo.defeated = 1;
-            });
         });
 
     };
@@ -957,6 +998,7 @@ HelpFriendsC = (function(){
     }
 
     function updateFriendsList(){
+        c._canvas.style.cursor = "wait";
         fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET,
             function(type,response){
                 if (type == plugin.FacebookAgent.CODE_SUCCEED) {
@@ -980,6 +1022,7 @@ HelpFriendsC = (function(){
                                 }
                             }
                         }
+                        c._canvas.style.cursor = "auto";
                         buildPanel(printedFbIds);
                     });
                 }
@@ -1051,6 +1094,7 @@ HelpFriendsC = (function(){
 
 function updateRankingList(listRanking, lvlNum, fontSize, parent){
     listRanking.removeAllChildren(true);
+    cc._canvas.style.cursor = "wait";
     fbAgent.api("/me/friends", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
         if (type == plugin.FacebookAgent.CODE_SUCCEED) {
             var facebookIds = response["data"];;
@@ -1076,17 +1120,20 @@ function updateRankingList(listRanking, lvlNum, fontSize, parent){
                     lbl.setColor(cc.color(0,0,0));
                     listRanking.addChild(lbl);
                 }
+                cc._canvas.style.cursor = "auto";
             });
         }else{
+            cc._canvas.style.cursor = "auto";
             MessageModalC.show("Error", networkErrorMsg, parent);
         }
     });
 }
 
 function inviteFriends(){
-
+    c._canvas.style.cursor = "wait";
     fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET,
     function(type,response){
+        c._canvas.style.cursor = "auto";
         if (type == plugin.FacebookAgent.CODE_SUCCEED) {
             var fbIds = response["data"];
             var arr=[];
@@ -1102,47 +1149,43 @@ function inviteFriends(){
 
             FB.ui(info, function (response2) {
                 var recievers = response2.to;
-                if(recievers && recievers.length>=3) alert("Ganaste una vida!");
+                if(recievers && recievers.length>=3){
+                    DefeatModalC.cleanup();
+                    var scene = new GameplayScene(LevelGraphC.getCurrentLevel().idLevel,true);
+                }
+                else{
+                    MessageModalC.show("Aviso", "Debes invitar a minimo tres amigos para poder continuar el laberinto.",
+                    FriendRequestViewC.getLayer());
+                }
             });
         }
     });
 }
 
 function requestHelp(){
-    fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET,
-        function(type,response){
-            if (type == plugin.FacebookAgent.CODE_SUCCEED) {
-                var fbIds = response["data"];
-                var arr=[];
-                for (var i=0;i<fbIds.length; i++){
-                    arr[i] = fbIds[i].id;
-                }
-
-                var info = {
-                    "method": "apprequests",
-                    "filters": ["app_users"],
-                    "message": playerInfo.childName + " se ha quedado atrapado en un laberinto y necesito tu ayuda para continuar!",
-                };
-
-                fbAgent.appRequest(info, function (code, response2) {
-                    var recievers = response2.to;
-                    if(recievers){
-                        var child = gameplayMap.sprite;
-                        var lvlInfo = LevelGraphC.getCurrentLevel();
-                        var tileWidth = gameplayMap.getTileSize().width;
-                        var posX = gameplayMap.getMatrixPosX(child.getPositionX(), tileWidth);
-                        var posY = gameplayMap.getMatrixPosY(child.getPositionY(), tileWidth);
-                        var ajax = WSHandler.registerDefeat(playerInfo.idPlayer,lvlInfo.idLevel, posX, posY);
-                        $.when(ajax).done(function(){
-                            lvlInfo.defeatPosX = posX;
-                            lvlInfo.defeatPosY = posY;
-                            lvlInfo.defeated = 1;
-                            DefeatModalC.cleanup();
-                            LevelModalC.hide();
-                            cc.director.runScene(LevelSelectionC.getScene());
-                        });
-                    }
-                });
+    c._canvas.style.cursor = "wait";
+    fbAgent.api("/me/friends?fields=id", plugin.FacebookAgent.HttpMethod.GET, function(type,response){
+        c._canvas.style.cursor = "auto";
+        if (type == plugin.FacebookAgent.CODE_SUCCEED) {
+            var fbIds = response["data"];
+            var arr=[];
+            for (var i=0;i<fbIds.length; i++){
+                arr[i] = fbIds[i].id;
             }
-        });
+            var info = {
+                "method": "apprequests",
+                "filters": ["app_users"],
+                "message": playerInfo.childName + " se ha quedado atrapado en un laberinto y necesito tu ayuda para continuar!",
+            };
+
+            fbAgent.appRequest(info, function (code, response2) {
+                var recievers = response2.to;
+                if(recievers){
+                    DefeatModalC.cleanup();
+                    LevelModalC.hide();
+                    cc.director.runScene(LevelSelectionC.getScene());
+                }
+            });
+        }
+    });
 }

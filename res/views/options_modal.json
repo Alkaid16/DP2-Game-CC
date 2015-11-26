@@ -76,7 +76,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 320.0001,
+              "X": 320.0,
               "Y": 551.4865
             },
             "Scale": {
@@ -105,115 +105,11 @@
             "Tag": 21,
             "ActionTag": 1487045513,
             "Size": {
-              "X": 140.0,
-              "Y": 72.0
+              "X": 53.0,
+              "Y": 30.0
             },
             "Name": "lblTitle",
             "ctype": "TextObjectData"
-          },
-          {
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "FontSize": 24,
-            "IsCustomSize": true,
-            "LabelText": "",
-            "PlaceHolderText": "On",
-            "MaxLengthText": 10,
-            "TouchEnable": true,
-            "AnchorPoint": {
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 336.0,
-              "Y": 448.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "G": 165,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.525,
-              "Y": 0.7
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "HorizontalEdge": "BothEdge",
-            "VerticalEdge": "BothEdge",
-            "LeftMargin": 336.0,
-            "RightMargin": 204.0,
-            "TopMargin": 178.5,
-            "BottomMargin": 434.5,
-            "CallBackType": "Click",
-            "Tag": 26,
-            "ActionTag": -918644193,
-            "Size": {
-              "X": 100.0,
-              "Y": 27.0
-            },
-            "Name": "txtMusic",
-            "ctype": "TextFieldObjectData"
-          },
-          {
-            "FontResource": {
-              "Type": "Normal",
-              "Path": "THE MINION.ttf",
-              "Plist": ""
-            },
-            "FontSize": 20,
-            "IsCustomSize": true,
-            "LabelText": "",
-            "PlaceHolderText": "On",
-            "MaxLengthText": 10,
-            "TouchEnable": true,
-            "AnchorPoint": {
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 336.0,
-              "Y": 352.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "G": 165,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.525,
-              "Y": 0.55
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "HorizontalEdge": "BothEdge",
-            "VerticalEdge": "BothEdge",
-            "LeftMargin": 336.0,
-            "RightMargin": 204.0,
-            "TopMargin": 274.5,
-            "BottomMargin": 338.5,
-            "CallBackType": "Click",
-            "Tag": 24,
-            "ActionTag": 340662474,
-            "Size": {
-              "X": 100.0,
-              "Y": 27.0
-            },
-            "Name": "txtSound",
-            "ctype": "TextFieldObjectData"
           },
           {
             "FontSize": 14,
@@ -291,6 +187,7 @@
             "ctype": "ButtonObjectData"
           },
           {
+            "IsCustomSize": true,
             "FontSize": 24,
             "LabelText": "Sonido",
             "FontResource": {
@@ -299,7 +196,7 @@
               "Plist": ""
             },
             "HorizontalAlignmentType": "HT_Right",
-            "VerticalAlignmentType": "VT_Center",
+            "VerticalAlignmentType": "VT_Bottom",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -317,7 +214,7 @@
             },
             "Position": {
               "X": 304.0,
-              "Y": 352.0
+              "Y": 350.272
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -331,28 +228,29 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.475,
-              "Y": 0.55
+              "Y": 0.5473
             },
             "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0359
+              "X": 0.1563,
+              "Y": 0.0469
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 265.0,
+            "LeftMargin": 204.0,
             "RightMargin": 336.0,
-            "TopMargin": 280.5,
-            "BottomMargin": 344.5,
+            "TopMargin": 274.733,
+            "BottomMargin": 335.267,
             "Tag": 40,
             "ActionTag": -1808784428,
             "Size": {
-              "X": 39.0,
-              "Y": 15.0
+              "X": 100.0,
+              "Y": 30.0
             },
             "Name": "lblSound",
             "ctype": "TextObjectData"
           },
           {
+            "IsCustomSize": true,
             "FontSize": 24,
             "LabelText": "Música",
             "FontResource": {
@@ -361,7 +259,7 @@
               "Plist": ""
             },
             "HorizontalAlignmentType": "HT_Right",
-            "VerticalAlignmentType": "VT_Center",
+            "VerticalAlignmentType": "VT_Bottom",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -396,22 +294,143 @@
               "Y": 0.7
             },
             "PreSize": {
-              "X": 0.0609,
-              "Y": 0.0234
+              "X": 0.1563,
+              "Y": 0.0469
             },
             "HorizontalEdge": "BothEdge",
             "VerticalEdge": "BothEdge",
-            "LeftMargin": 265.0,
+            "LeftMargin": 204.0,
             "RightMargin": 336.0,
-            "TopMargin": 184.5,
-            "BottomMargin": 440.5,
+            "TopMargin": 177.0,
+            "BottomMargin": 433.0,
             "Tag": 41,
             "ActionTag": 1852688942,
             "Size": {
-              "X": 39.0,
-              "Y": 15.0
+              "X": 100.0,
+              "Y": 30.0
             },
             "Name": "lblMusic",
+            "ctype": "TextObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 24,
+            "LabelText": "On\n",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "VerticalAlignmentType": "VT_Bottom",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 336.0,
+              "Y": 448.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "G": 165,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.525,
+              "Y": 0.7
+            },
+            "PreSize": {
+              "X": 0.1563,
+              "Y": 0.0469
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 336.0,
+            "RightMargin": 204.0,
+            "TopMargin": 177.0,
+            "BottomMargin": 433.0,
+            "Tag": 16,
+            "ActionTag": 1629950561,
+            "Size": {
+              "X": 100.0,
+              "Y": 30.0
+            },
+            "Name": "txtMusic",
+            "ctype": "TextObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 24,
+            "LabelText": "On\n",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "THE MINION.ttf",
+              "Plist": ""
+            },
+            "VerticalAlignmentType": "VT_Bottom",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 385.984,
+              "Y": 350.272
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "G": 165,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6031,
+              "Y": 0.5473
+            },
+            "PreSize": {
+              "X": 0.1563,
+              "Y": 0.0469
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 336.0,
+            "RightMargin": 204.0,
+            "TopMargin": 274.733,
+            "BottomMargin": 335.267,
+            "Tag": 17,
+            "ActionTag": -1217208064,
+            "Size": {
+              "X": 100.0,
+              "Y": 30.0
+            },
+            "Name": "txtSound",
             "ctype": "TextObjectData"
           }
         ],

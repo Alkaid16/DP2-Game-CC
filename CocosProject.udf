@@ -33,8 +33,9 @@
         <OpenedDocuments>
           <FilePathData Path="help_friends_view.csd" />
           <FilePathData Path="friend_request_view.csd" />
+          <FilePathData Path="options_modal.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="help_friends_view.csd" />
+        <ActiveDocument Path="options_modal.csd" />
       </Value>
     </Item>
   </Properties>
