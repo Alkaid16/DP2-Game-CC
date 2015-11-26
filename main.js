@@ -83,6 +83,7 @@ function loadInfoAfterLogin(){
     cc.LoaderScene.preload(g_resources, function () {
         var mainScreen = new cc.Scene();
         initGlobalVariables();
+        deleteAppRequests();
 
         fbAgent.api("/me", plugin.FacebookAgent.HttpMethod.GET, function (type, response) {
             if (type == plugin.FacebookAgent.CODE_SUCCEED) {
@@ -122,6 +123,21 @@ function loadInfoAfterLogin(){
 
     }, this);
 }
+
+function deleteAppRequests(){
+    fbAgent.api("/me/apprequests", plugin.FacebookAgent.HttpMethod.GET, function(type, response){
+        var requests = response["data"];
+        cc.log(JSON.stringify(response));
+
+        requests.forEach(function(element, i, array){
+            var id = element.id;
+            fbAgent.api("/" + id, plugin.FacebookAgent.HttpMethod.DELETE, function(type2,response2){
+                cc.log(JSON.stringify(response2));
+            });
+        })
+    });
+}
+
 
 function initGlobalVariables(){
     DefeatModalC.load();
