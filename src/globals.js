@@ -56,6 +56,9 @@ var LevelGraphC = (function(){
     }
 
     pub.clearLevel = function(){
+        currLevel.defeatPosX = -1;
+        currLevel.defeatPosY = -1;
+        currLevel.defeated = 0;
         var childLvls = pub.getCurrentLevel().childLevel;
         for(var i=0; i<childLvls.length; i++){
             getLevelInfo(childLvls[i].idLevel).unlocked = 1;
