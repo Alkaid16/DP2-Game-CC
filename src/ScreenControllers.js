@@ -1149,9 +1149,27 @@ function inviteFriends(){
 
             FB.ui(info, function (response2) {
                 var recievers = response2.to;
-                if(recievers && recievers.length>=3){
-                    DefeatModalC.cleanup();
-                    var scene = new GameplayScene(LevelGraphC.getCurrentLevel().idLevel,true);
+                if(recievers && recievers.length>=1){
+                    c._canvas.style.cursor = "wait";
+                    var ajax2 = WSHandler.registerContinuePurchase(0,playerInfo.idPlayer, 0);
+                    $.when(ajax2).then(function(){
+                        var ajax = WSHandler.registerContinue(playerInfo.idPlayer,
+                        LevelGraphC.getCurrentLevel().idLevel);
+                        $.when(ajax).then(function(){
+                            c._canvas.style.cursor = "auto";
+                            var scene = new GameplayScene(LevelGraphC.getCurrentLevel().idLevel, true);
+                            DefeatModalC.cleanup();
+
+                            var lvlInfo = LevelGraphC.getCurrentLevel();
+                            lvlInfo.defeatPosX = -1;
+                            lvlInfo.defeatPosY = -1;
+                            lvlInfo.defeated = 0;
+                            cc.director.runScene(scene);
+                        }, function(){
+                            MessageModalC.show("Error", networkErrorMsg,  FriendRequestViewC.getLayer());
+                            c._canvas.style.cursor = "auto";
+                        });
+                    });
                 }
                 else{
                     MessageModalC.show("Aviso", "Debes invitar a minimo tres amigos para poder continuar el laberinto.",
@@ -1175,7 +1193,7 @@ function requestHelp(){
             var info = {
                 "method": "apprequests",
                 "filters": ["app_users"],
-                "message": playerInfo.childName + " se ha quedado atrapado en un laberinto y necesito tu ayuda para continuar!",
+                "message": playerInfo.childName + " se ha quedado atrapado en un laberinto y necesita tu ayuda para continuar!",
             };
 
             fbAgent.appRequest(info, function (code, response2) {
