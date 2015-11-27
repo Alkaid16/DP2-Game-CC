@@ -1154,7 +1154,7 @@ function inviteFriends(){
 
             FB.ui(info, function (response2) {
                 var recievers = response2.to;
-                if(recievers && recievers.length>=1){
+                if(recievers && recievers.length>=3){
                     cc._canvas.style.cursor = "wait";
                     var ajax2 = WSHandler.registerContinuePurchase(0,playerInfo.idPlayer, 0);
                     $.when(ajax2).then(function(){
