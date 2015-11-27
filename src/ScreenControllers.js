@@ -222,7 +222,7 @@ var LevelModalC = (function(){
 
         btnCont = layer.getChildByName("btnContinue");
         btnCont.addClickEventListener(function(){
-            if(playerInfo.continues<=0 ){
+            if(parseInt(playerInfo.continues)<=0 ){
                 MessageModalC.show("Error", "No tienes puntos para continuar este nivel.", layer);
                 return;
             }
@@ -236,6 +236,7 @@ var LevelModalC = (function(){
                 lvlInfo.defeatPosX = -1;
                 lvlInfo.defeatPosY = -1;
                 lvlInfo.defeated = 0;
+                playerInfo.continues = parseInt(playerInfo.continues) - 1 ;
                 cc.audioEngine.playEffect(res.btnSoundAccept_mp3, false);
                 cc.director.runScene(scene);
                 layer.resume();

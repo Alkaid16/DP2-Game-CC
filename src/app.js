@@ -1023,7 +1023,7 @@ var GameplayScene = cc.Scene.extend({
         var tileWidth = gameplayMap.getTileSize().width;
         child.setPosition(lvlInfo.defeatPosX*tileWidth + tileWidth/2 ,
             (gameplayMap.getMapSize().height - lvlInfo.defeatPosY -1)*tileWidth + tileWidth/2 );
-        monster.setPositionY(child.getPositionY() - monster.getContentSize().height/2 * 1.5);
+        monster.setPositionY(child.getPositionY() - monster.getContentSize().height/2 * 1.75);
     },
 
     customCleanup: function(){
