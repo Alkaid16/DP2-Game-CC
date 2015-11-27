@@ -512,7 +512,7 @@
               },
               {
                 "FontSize": 10,
-                "LabelText": "Reloj: Ralentiza la velocidad\ndel mounstro",
+                "LabelText": "Reloj: Ralentiza la velocidad\ndel monstruo",
                 "FontResource": {
                   "Type": "Normal",
                   "Path": "THE MINION.ttf",

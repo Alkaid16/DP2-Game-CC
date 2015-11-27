@@ -372,10 +372,10 @@ var DefeatModalC = (function(){
         if(byMonster){
             btnHelp.setVisible(false);
             lblDesc.setString("El monstruo ha alcanzado a " + playerInfo.childName + ".\n" +
-            "Qu\u00e9 desea hacer?");
+            "\u00BFQu\u00e9 desea hacer?");
         }else{
             lblDesc.setString(playerInfo.childName + " no tiene suficiente voluntad\npara seguir avanzando.\n" +
-                "Qu\u00e9 desea hacer?");
+                "\u00BFQu\u00e9 desea hacer?");
             var child = gameplayMap.sprite;
             var lvlInfo = LevelGraphC.getCurrentLevel();
             var tileWidth = gameplayMap.getTileSize().width;
@@ -1149,13 +1149,13 @@ function inviteFriends(){
 
             var info = {
                 "method": "apprequests",
-                "message": "Este es un mensaje de prueba",
+                "message": "Ayuda a un ni\u00f1o o ni\u00f1a a ganar confianza y superar sus problemas en Confimaze.",
                 "exclude_ids": arr
             };
 
             FB.ui(info, function (response2) {
                 var recievers = response2.to;
-                if(recievers && recievers.length>=3){
+                if(recievers && recievers.length>=2){
                     cc._canvas.style.cursor = "wait";
                     var ajax2 = WSHandler.registerContinuePurchase(0,playerInfo.idPlayer, 0);
                     $.when(ajax2).then(function(){
@@ -1178,7 +1178,7 @@ function inviteFriends(){
                     });
                 }
                 else{
-                    MessageModalC.show("Aviso", "Debes invitar a minimo tres amigos para poder continuar el laberinto.",
+                    MessageModalC.show("Aviso", "Debes invitar a m\u00CDnimo dos amigos para poder continuar el laberinto.",
                     FriendRequestViewC.getLayer());
                 }
             });

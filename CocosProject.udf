@@ -34,8 +34,9 @@
           <FilePathData Path="help_friends_view.csd" />
           <FilePathData Path="friend_request_view.csd" />
           <FilePathData Path="options_modal.csd" />
+          <FilePathData Path="howtoplay_view.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="options_modal.csd" />
+        <ActiveDocument Path="howtoplay_view.csd" />
       </Value>
     </Item>
   </Properties>

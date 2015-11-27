@@ -114,7 +114,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="txtClockDesc" ActionTag="993802838" Tag="47" IconVisible="False" LeftMargin="123.6315" RightMargin="362.3685" TopMargin="853.3046" BottomMargin="76.6954" FontSize="10" LabelText="Reloj: Ralentiza la velocidad&#xA;del mounstro" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="txtClockDesc" ActionTag="993802838" Tag="47" IconVisible="False" LeftMargin="123.6315" RightMargin="362.3685" TopMargin="853.3046" BottomMargin="76.6954" FontSize="10" LabelText="Reloj: Ralentiza la velocidad&#xA;del monstruo" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="154.0000" Y="30.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="200.6315" Y="91.6954" />

@@ -28,7 +28,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lblDescription" ActionTag="1622999602" Tag="82" IconVisible="False" PercentWidthEnable="True" PercentWidthEnabled="True" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="36.0000" RightMargin="36.0000" TopMargin="102.1000" BottomMargin="322.9000" IsCustomSize="True" FontSize="14" LabelText="Puedes invitar a jugar Confimaze a 3 o más amigos para continuar donde te quedaste.&#xA;" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="lblDescription" ActionTag="1622999602" Tag="82" IconVisible="False" PercentWidthEnable="True" PercentWidthEnabled="True" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="36.0000" RightMargin="36.0000" TopMargin="102.1000" BottomMargin="322.9000" IsCustomSize="True" FontSize="14" LabelText="Puedes invitar a jugar Confimaze a 2 o más amigos para continuar donde te quedaste.&#xA;" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="408.0000" Y="55.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="240.0000" Y="350.4000" />

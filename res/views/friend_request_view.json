@@ -116,7 +116,7 @@
           {
             "IsCustomSize": true,
             "FontSize": 14,
-            "LabelText": "Puedes invitar a jugar Confimaze a 3 o más amigos para continuar donde te quedaste.\n",
+            "LabelText": "Puedes invitar a jugar Confimaze a 2 o más amigos para continuar donde te quedaste.\n",
             "FontResource": {
               "Type": "Normal",
               "Path": "THE MINION.ttf",
