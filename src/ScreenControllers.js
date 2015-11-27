@@ -256,6 +256,7 @@ var LevelModalC = (function(){
                 layer.pause();
                 $.when(ajax).then(function(){
                     lvlInfo.bought = 1;
+                    playerInfo.coins = parseInt(playerInfo.coins) - parseInt(lvlInfo.cost);
                     LevelSelectionC.updateLevelStatus();
                     layer.resume();
                     pub.updateButtons();
