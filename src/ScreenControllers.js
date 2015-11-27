@@ -488,6 +488,7 @@ PauseModalC = (function(){
 
     pub.hide = function(){
         layer.setVisible(false);
+        cc.audioEngine.resumeMusic();
         gameplay.resume();
     }
 

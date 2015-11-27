@@ -641,6 +641,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
                     HoleController.jumped = true;
                 }else if(keyCode == 13 && gameplayMap.gameStarted){
                     //se mostrará el modal de Pausa, además se quitará el gameplay fueran del schedule
+                    cc.audioEngine.pauseMusic();
                     PauseModalC.show();
                 }
 
@@ -842,6 +843,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
 
     gameOver: function(byMonster){
         this.unscheduleAllCallbacks();
+        cc.audioEngine.stopMusic()
         currentGameplayScene.unscheduleAllCallbacks();
         DefeatModalC.executeDefeat(byMonster);
     },
@@ -849,6 +851,7 @@ var GameplayMap = cc.TMXTiledMap.extend({
     victory: function(){
         var totalTime = Math.round(+new Date / 1000) - this.initTime;
         this.unscheduleAllCallbacks();
+        cc.audioEngine.stopMusic();
         currentGameplayScene.customCleanup();
         VictoryScreenC2.loadAndRun(this.score, totalTime, this.coins);
     }
@@ -1009,6 +1012,7 @@ var GameplayScene = cc.Scene.extend({
         gameplayMap.sprite.setVisible(true);
         gameplayMap.monster.runAction(cc.fadeIn(0.5));
         gameplayMap.initTime = Math.round(+new Date / 1000);
+        cc.audioEngine.playMusic(res.bgmusic_mp3, true);
         this.fog.setOpacity(0);
         this.fog.setVisible(true);
         this.fog.runAction(cc.fadeIn(1.5));

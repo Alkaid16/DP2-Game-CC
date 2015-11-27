@@ -54,6 +54,7 @@ var res = {
     correct_wav: "res/correct.wav",
     btnSoundAccept_mp3: "res/btnSoundAccept.mp3",
     btnSoundBack_mp3: "res/btnSoundBack.mp3",
+    bgmusic_mp3: "res/bgmusic.mp3",
     MINION_ttf: {type: "font", name: "THE MINION", srcs: ["res/views/THE MINION.ttf"]}
 };
 
